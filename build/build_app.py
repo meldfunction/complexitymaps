@@ -21,6 +21,8 @@ out.write_text(tpl)
 import shutil
 for f in ("anime.umd.min.js", "anime-LICENSE.md"):
     shutil.copy(ROOT / "src" / "vendor" / f, out.parent / f)
+# Images (home photo: Annie Spratt on Unsplash, Unsplash License)
+shutil.copytree(ROOT / "src" / "img", out.parent / "img", dirs_exist_ok=True)
 if "\u2014" in tpl:
     raise SystemExit("em dash found in built app")
 print(f"ok: {out} ({out.stat().st_size // 1024} KB)")

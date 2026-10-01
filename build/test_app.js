@@ -94,8 +94,14 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       // motion: Anime.js loads beside the page; animations run, and every view also works with motion off
       await p.setViewportSize({width:1280,height:900}); await go(p, '#/'); await p.waitForTimeout(300);
       check(await p.evaluate(() => !!(window.anime && window.anime.animate)), 'motion: Anime.js loaded from dist');
-      await p.click('.loop button'); await p.waitForTimeout(3600);
-      check(await p.evaluate(() => document.querySelectorAll('.loop .lnode.moved').length) === 4, 'motion: feedback loop runs to the end');
+      check(await p.evaluate(() => { const i = document.querySelector('.photo img'); return i.complete && i.naturalWidth > 0; }), 'home photo loads');
+      await p.click('.concepts .iacts button'); await p.waitForTimeout(3600);
+      check(await p.evaluate(() => document.querySelectorAll('.concepts .lnode.moved').length) === 4, 'motion: feedback loop runs to the end');
+      const n = await p.locator('.concepts .ipick button').count();
+      for (let i = 0; i < n; i++) { await p.locator('.concepts .ipick button').nth(i).click(); await p.waitForTimeout(700); }
+      check(n >= 8 && (await p.textContent('.concepts h3')) === "Goodhart's law", `motion: carousel shows all ${n} ideas`);
+      await p.click('.concepts .nav[aria-label="Next idea"]'); await p.waitForTimeout(200);
+      check((await p.textContent('.concepts h3')) === 'Feedback loops', 'carousel wraps around');
       await go(p, '#/map?view=time'); await p.locator('.scrub input').fill('1950'); await p.waitForTimeout(150);
       check(/alive or active in 1950/.test(await p.textContent('.together')), 'motion: year scrubber lists who was alive');
       await p.evaluate(() => localStorage.setItem('pathways-my-trail', JSON.stringify(['power-analysis','service-design'])));

@@ -102,7 +102,6 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 
 /* home */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:48px;padding:36px 0 8px;align-items:center}
-.hero .loop:first-child{margin-top:0}.hero .heroimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;display:block}
 .hero h1{font-size:clamp(38px,5.2vw,58px);line-height:1.04;letter-spacing:-.015em;margin:10px 0 18px}
 .hero .lede{font-size:16.5px;line-height:1.6;max-width:44ch}
 .search{display:flex;align-items:center;border:1.5px solid var(--ink);border-radius:999px;background:var(--card);padding:4px 4px 4px 18px;margin-top:24px;max-width:500px;position:relative}
@@ -115,8 +114,9 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .results .k{font:11px var(--mono);color:var(--muted);margin-left:auto;flex:none}
 .popular{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:12px;font-size:12.5px;color:var(--muted)}
 .popular .pill{font-size:12.5px;padding:4px 10px}
-.photo{aspect-ratio:1/1;border:1.5px dashed var(--line);border-radius:16px;background:var(--paper2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:13px;text-align:center;padding:24px}
-.photo svg{width:22px;height:22px}
+.photo{margin:0;border-radius:16px;overflow:hidden;background:var(--paper2)}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.photo figcaption{font:11.5px var(--mono);color:var(--muted);padding:6px 2px 0;background:var(--paper)}
 .doors{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .door{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:16px 16px 22px;min-height:150px;text-decoration:none;color:var(--ink)}
 .door .label{color:var(--muted)}
@@ -270,8 +270,8 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .tl li{display:grid;grid-template-columns:68px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .tl b{font:600 13px var(--mono)}
 .ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
-.ideas .card{padding:14px 16px}
-.ideas b{font:600 15px var(--serif);display:block;margin-bottom:4px}
+.concepts .card{padding:14px 16px}
+.concepts b{font:600 15px var(--serif);display:block;margin-bottom:4px}
 .q{border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;margin-bottom:14px;background:var(--card)}
 .q .hd{padding:10px 18px;border-bottom:1px solid var(--line)}
 .q .pair{display:grid;grid-template-columns:1fr 1fr}
@@ -443,14 +443,53 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 }
 @media (prefers-reduced-motion:no-preference){ .door,.goal,.tile,.start,.branch{transition:border-color .15s,transform .15s} }
 /* motion: everything here is optional; with motion off the page renders in its final state */
-.loop{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:14px 16px;margin-top:14px}
-.loop svg{width:100%;height:auto;display:block;max-height:300px}
-.loop .lnode circle{fill:var(--card);stroke:var(--ink);stroke-width:1.5}
-.loop .lnode text{font:600 11.5px var(--sans);fill:var(--ink);text-anchor:middle}
-.loop .lnode.moved circle{fill:var(--paper2);stroke-width:2.5}
-.loop .arc{fill:none;stroke:var(--muted);stroke-width:1.4}
-.loop .pulse{fill:var(--chg)}
-.loop p{font:italic 14.5px/1.45 var(--serif);margin:6px 0 8px}
+.concepts{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:16px 20px 18px}
+.concepts .ibody{display:grid;gap:8px 32px}
+@media (min-width:860px){ .concepts .ibody{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center} .concepts .ifig svg{max-height:320px} }
+.concepts .ihead{display:flex;align-items:center;gap:8px}
+.concepts .ihead .label{flex:1}
+.concepts .ihead .mono{font-size:11.5px;color:var(--muted)}
+.concepts .nav{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink)}
+.concepts .ifig svg{width:100%;height:auto;display:block;max-height:230px;margin-top:6px}
+.concepts h3{font-size:22px;margin:8px 0 4px}
+.concepts .iexp{font:15.5px/1.5 var(--serif);margin:0}
+.concepts .ithe{font-size:13px;color:var(--muted);margin:8px 0 0}
+.concepts .iacts{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:14px}
+.concepts .ipick{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+.concepts .ipick .terms{margin-top:6px}
+.concepts .lbl{font:11.5px var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--card);stroke-width:4px;stroke-linejoin:round}
+.concepts .lbl.s{font-size:10.5px;fill:var(--muted)}
+.concepts .lbl.m{font:10.5px var(--mono);fill:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.concepts .lbl.l{font-weight:600}
+.concepts .lbl.big{font:700 22px var(--sans)}
+.concepts .lnode circle{fill:var(--card);stroke:var(--ink);stroke-width:1.5}
+.concepts .lnode text{font:600 11.5px var(--sans);fill:var(--ink);text-anchor:middle}
+.concepts .lnode.moved circle{fill:var(--paper2);stroke-width:2.5}
+.concepts .lnode,.concepts .thing{transform-box:fill-box;transform-origin:center}
+.concepts .arc{fill:none;stroke:var(--muted);stroke-width:1.4}
+.concepts .pulse,.concepts .hop{fill:var(--chg)}
+.concepts .boid{fill:var(--sci)}
+.concepts .quad{fill:var(--paper2);stroke:var(--line)}
+.concepts .quad.on{fill:var(--card);stroke:var(--ink)}
+.concepts .probe{stroke:var(--ink);stroke-width:1.4;stroke-dasharray:3 3}
+.concepts .ptip{fill:var(--card);stroke:var(--ink);stroke-width:1.5}
+.concepts .ptip.win{fill:var(--rel)}
+.concepts .ptip.fade{opacity:.35}
+.concepts .origin{fill:var(--ink)}
+.concepts .land{fill:none;stroke:var(--ink);stroke-width:2}
+.concepts .ball{fill:var(--chg)}
+.concepts .oldl{fill:none;stroke:var(--muted);stroke-width:3}
+.concepts .newl{fill:none;stroke:var(--rel);stroke-width:3}
+.concepts .thing circle{fill:var(--paper2);stroke:var(--ink)}
+.concepts .thing{transition:opacity .3s}
+.concepts .thing.off{opacity:.12}
+.concepts .flame{fill:var(--chg)}
+.concepts .smoke{fill:none;stroke:var(--muted);stroke-width:3;stroke-linecap:round}
+.concepts .slink{stroke:var(--muted);stroke-width:1.4}
+.concepts .axis{fill:none;stroke:var(--line);stroke-width:1.5}
+.concepts .tset{stroke:var(--ink);stroke-dasharray:4 4}
+.concepts .num{fill:none;stroke:var(--sci);stroke-width:3}
+.concepts .pur{fill:none;stroke:var(--chg);stroke-width:3}
 .road{--draw:1}
 .road::before{transform:scaleY(var(--draw));transform-origin:top}
 .treeline{--draw:1}
@@ -732,38 +771,146 @@ function searchBox(placeholder, big){
 
 // ---------------------------------------------------------------- home (11a)
 let browseBy = "goal";
-// (1) a small feedback loop: push one part and the others move, then the change comes back around
-function loopCard(){
-  const N = [["Housing",150,30],["Health",262,105],["Work",150,180],["Care",38,105]];
-  const ell = "M150,30 A112,75 0 1,1 149.99,30";
-  const arcs = N.map((n, i) => { const m = N[(i + 1) % 4]; const a0 = Math.atan2((n[2] - 105) / 75, (n[1] - 150) / 112), a1 = Math.atan2((m[2] - 105) / 75, (m[1] - 150) / 112);
-    const g = 0.42, p0 = [150 + 112 * Math.cos(a0 + g), 105 + 75 * Math.sin(a0 + g)], p1 = [150 + 112 * Math.cos(a1 - g), 105 + 75 * Math.sin(a1 - g)];
-    return s("path",{class:"arc",d:`M${p0[0].toFixed(1)},${p0[1].toFixed(1)} A112,75 0 0,1 ${p1[0].toFixed(1)},${p1[1].toFixed(1)}`,"marker-end":"url(#lp-arrow)"}); });
-  const nodes = N.map(([n, x, y]) => s("g",{transform:`translate(${x},${y})`}, s("g",{class:"lnode"}, s("circle",{r:"29"}), s("text",{y:"4",text:n}))));
-  const path = s("path",{d:ell,fill:"none",stroke:"none"});
-  const dot = s("circle",{class:"pulse",r:"6",cx:"0",cy:"0",opacity:"0"});
-  const svg = s("svg",{viewBox:"0 0 300 210",role:"img","aria-label":"A loop of four parts, Housing, Health, Work and Care, each affecting the next"},
-    s("defs",{}, s("marker",{id:"lp-arrow",viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto-start-reverse"}, s("path",{d:"M0,0 L10,5 L0,10 z",fill:"var(--muted)"}))),
-    arcs, path, nodes, dot);
-  const cap = el("p",{text:"Fixing one part moves another. Push housing and watch."});
-  let busy = false;
-  const push = () => {
-    if (busy) return; busy = true; const inner = nodes.map(g => g.firstChild); const a = AN();
-    const done = () => { busy = false; cap.textContent = "Housing changed, so health, work and care shifted, and the change came back around to housing. That is a feedback loop."; };
-    if (!a) { inner.forEach((g, i) => setTimeout(() => { g.classList.add("moved"); if (i === 3) done(); }, i * 350)); return; }
-    inner.forEach(g => g.classList.remove("moved"));
-    const mp = a.svg.createMotionPath(path);
-    const tl = a.createTimeline({onComplete:done});
-    tl.add(dot, {opacity:[0, 1], duration:150}, 0)
-      .add(dot, {translateX:mp.translateX, translateY:mp.translateY, duration:2600, ease:"linear"}, 0)
-      .add(dot, {opacity:[1, 0], duration:250}, 2600);
-    inner.forEach((g, i) => { const [, x, y] = N[i]; const dx = (x - 150) / 112 * 9, dy = (y - 105) / 75 * 9;
-      tl.add(g, {translateX:[0, dx, 0], translateY:[0, dy, 0], scale:[1, 1.18, 1], duration:700, ease:a.spring ? a.spring({bounce:.45, duration:700}) : "outElastic"}, i * 650)
-        .call(() => g.classList.add("moved"), i * 650 + 200); });
-    tl.add(inner[0], {scale:[1, 1.08, 1], duration:500}, 2600);
+// ---------------------------------------------------------------- ideas in motion (home carousel)
+// Each idea draws its diagram in its explanatory end state. play(a) re-runs it from the start with Anime.js;
+// still() is the no-motion version (a state change, nothing moves). Every idea links to the pathway it comes from.
+const SV = (w, h, label, ...kids) => s("svg",{viewBox:`0 0 ${w} ${h}`,role:"img","aria-label":label}, ...kids);
+const T = (x, y, t, cls, anchor) => s("text",{x, y, class:cls || "lbl","text-anchor":anchor || "middle",text:t});
+const seeded = n => { let x = n; return () => (x = (x * 9301 + 49297) % 233280) / 233280; };
+const IDEAS = [
+  {id:"loop", title:"Feedback loops", path:"cybernetics-the-shared-foundation",
+   explain:"Fix one part and the others move. Better housing changes health, which changes work, which changes the care people need, and that change comes back around to housing.",
+   theory:"Cybernetics: Norbert Wiener and W. Ross Ashby studied how systems steer themselves through feedback, in machines, bodies and societies.",
+   build(){
+    const N = [["Housing",150,30],["Health",262,105],["Work",150,180],["Care",38,105]];
+    const arcs = N.map((n, i) => { const m = N[(i + 1) % 4]; const a0 = Math.atan2((n[2] - 105) / 75, (n[1] - 150) / 112), a1 = Math.atan2((m[2] - 105) / 75, (m[1] - 150) / 112);
+      const g = 0.42, p0 = [150 + 112 * Math.cos(a0 + g), 105 + 75 * Math.sin(a0 + g)], p1 = [150 + 112 * Math.cos(a1 - g), 105 + 75 * Math.sin(a1 - g)];
+      return s("path",{class:"arc",d:`M${p0[0].toFixed(1)},${p0[1].toFixed(1)} A112,75 0 0,1 ${p1[0].toFixed(1)},${p1[1].toFixed(1)}`,"marker-end":"url(#id-arrow)"}); });
+    const nodes = N.map(([n, x, y]) => s("g",{transform:`translate(${x},${y})`}, s("g",{class:"lnode"}, s("circle",{r:"29"}), s("text",{y:"4",text:n}))));
+    const path = s("path",{d:"M150,30 A112,75 0 1,1 149.99,30",fill:"none",stroke:"none"}), dot = s("circle",{class:"pulse",r:"6",opacity:"0"});
+    const inner = nodes.map(g => g.firstChild);
+    return {svg:SV(300, 210, "A loop of four parts, Housing, Health, Work and Care, each affecting the next", arcs, path, nodes, dot),
+      still(){ inner.forEach(g => g.classList.add("moved")); },
+      play(a){ inner.forEach(g => g.classList.remove("moved")); const mp = a.svg.createMotionPath(path); const tl = a.createTimeline();
+        tl.add(dot, {opacity:[0, 1], duration:150}, 0).add(dot, {translateX:mp.translateX, translateY:mp.translateY, duration:2600, ease:"linear"}, 0).add(dot, {opacity:[1, 0], duration:250}, 2600);
+        inner.forEach((g, i) => { const [, x, y] = N[i];
+          tl.add(g, {translateX:[0, (x - 150) / 112 * 9, 0], translateY:[0, (y - 105) / 75 * 9, 0], scale:[1, 1.18, 1], duration:700, ease:a.spring({bounce:.45, duration:700})}, i * 650).call(() => g.classList.add("moved"), i * 650 + 200); });
+        tl.add(inner[0], {scale:[1, 1.08, 1], duration:500}, 2600); }}; }},
+  {id:"emerge", title:"Emergence", path:"the-formal-science-of-complex-systems",
+   explain:"Each dot follows three local rules: keep close, don't crowd, match your neighbours' heading. Nobody leads and nobody holds a plan, yet a flock forms and moves as one.",
+   theory:"Complexity science: Craig Reynolds' 1986 boids model, and the Santa Fe Institute's work on how simple local rules produce patterns no single part designed.",
+   build(){
+    const r = seeded(7), n = 34, start = Array.from({length:n}, () => [20 + r() * 260, 20 + r() * 170]);
+    const end = Array.from({length:n}, (_, i) => { const a = r() * Math.PI * 2, d = Math.sqrt(r()); return [195 + Math.cos(a) * 48 * d - (i % 5) * 3, 100 + Math.sin(a) * 26 * d]; });
+    const dots = end.map(([x, y]) => s("circle",{class:"boid",cx:x.toFixed(1),cy:y.toFixed(1),r:"4"}));
+    return {svg:SV(300, 210, "Scattered dots gather into a flock", T(150, 200, "no leader, no plan", "lbl m"), dots),
+      still(){},
+      play(a){ dots.forEach((d0, i) => a.utils.set(d0, {cx:start[i][0], cy:start[i][1]}));
+        dots.forEach((d0, i) => a.createTimeline({delay:i * 25})
+          .add(d0, {cx:[start[i][0], end[i][0] - 70], cy:[start[i][1], end[i][1] + 10], duration:1300, ease:"inOut(2)"})
+          .add(d0, {cx:end[i][0], cy:end[i][1], duration:1300, ease:"inOut(2)"})); }}; }},
+  {id:"probe", title:"Probe, sense, respond", path:"sensemaking-and-acting-in-uncertainty",
+   explain:"In a complex situation you can't analyse your way to the answer. Run several small, safe-to-fail probes, watch what happens, then amplify what works and quietly stop the rest.",
+   theory:"Sensemaking: Dave Snowden's Cynefin framework sorts situations into clear, complicated, complex and chaotic, each needing a different way to act.",
+   build(){
+    const q = (x, y, t, on) => [s("rect",{x, y, width:"144", height:"98", rx:"8", class:on ? "quad on" : "quad"}), T(x + 8, y + 16, t, "lbl l", "start")];
+    const o = [60, 70], tips = [[30, 40], [120, 32], [110, 92]];
+    const lines = tips.map(([x, y]) => s("line",{class:"probe",x1:o[0],y1:o[1],x2:x,y2:y}));
+    const ends = tips.map(([x, y], i) => s("circle",{class:"ptip" + (i === 1 ? " win" : " fade"),cx:x,cy:y,r:i === 1 ? 11 : 5}));
+    return {svg:SV(300, 210, "Cynefin's four domains, with three small probes in the complex domain; one is amplified", q(4, 4, "Complex", true), q(152, 4, "Complicated"), q(4, 108, "Chaotic"), q(152, 108, "Clear"),
+      lines, ends, s("circle",{cx:o[0],cy:o[1],r:"4",class:"origin"}), T(120, 58, "amplify", "lbl s")),
+      still(){},
+      play(a){ a.utils.set(ends, {r:0, opacity:1}); a.utils.set(lines, {opacity:1});
+        a.animate(a.svg.createDrawable(lines), {draw:["0 0", "0 1"], duration:600, delay:a.stagger(250)});
+        a.animate(ends, {r:5, duration:300, delay:a.stagger(250, {start:550})});
+        a.animate([ends[0], ends[2], lines[0], lines[2]], {opacity:[1, .25], duration:500, delay:1900});
+        a.animate(ends[1], {r:[5, 11], duration:700, delay:1900, ease:a.spring({bounce:.5, duration:700})}); }}; }},
+  {id:"tip", title:"Tipping points", path:"living-systems-and-regeneration",
+   explain:"Small shocks and a system bounces back to where it was. Push past a threshold and it flips into a different state, and it won't come back on its own.",
+   theory:"Resilience thinking: C.S. Holling and the Stockholm Resilience Centre study how ecosystems and societies absorb shocks, and the thresholds where they shift.",
+   build(){
+    const land = s("path",{class:"land",d:"M10,70 C40,70 50,170 80,170 C115,170 125,95 150,95 C175,95 185,170 220,170 C250,170 260,70 290,70"});
+    const ball = s("circle",{class:"ball",r:"10",cx:"220",cy:"159"});
+    return {svg:SV(300, 210, "A ball in one valley of a landscape is pushed over a hill into the other valley", land, ball, T(80, 196, "one state"), T(220, 196, "another state"), T(150, 84, "threshold", "lbl s")),
+      still(){},
+      play(a){ const L = land.getTotalLength(), at = f => { const p = land.getPointAtLength(L * f); return [p.x, p.y - 11]; };
+        const seg = (f0, f1, n) => Array.from({length:n + 1}, (_, i) => at(f0 + (f1 - f0) * i / n));
+        const small = [...seg(.25, .36, 5), ...seg(.36, .25, 5)], big = seg(.25, .75, 14);
+        a.utils.set(ball, {cx:at(.25)[0], cy:at(.25)[1]});
+        a.createTimeline().add(ball, {cx:small.map(p => p[0]), cy:small.map(p => p[1]), duration:1300, ease:"inOut(2)"}, 300)
+          .add(ball, {cx:big.map(p => p[0]), cy:big.map(p => p[1]), duration:1700, ease:"in(2)"}, "+=500"); }}; }},
+  {id:"loops2", title:"Two loops", path:"emergence-in-movements-and-social-change",
+   explain:"As an old system declines, some people leave it to build the new one. They start as small networks, grow into communities of practice, and become a new system. Others help the old one end well.",
+   theory:"Emergence in movements: the Berkana Institute's Two Loops model, from Margaret Wheatley and Deborah Frieze.",
+   build(){
+    const oldL = s("path",{class:"oldl",d:"M14,150 C70,30 130,20 180,70 S260,190 290,196"}), newL = s("path",{class:"newl",d:"M100,196 C150,190 200,160 230,100 S270,30 292,22"});
+    const r = seeded(3), hops = [[0.42, 0.25], [0.55, 0.45], [0.68, 0.6]];
+    const dots = hops.map(() => s("circle",{class:"hop",r:"5",opacity:"0"}));
+    return {svg:SV(300, 210, "A declining curve for the old system and a rising curve for the new one, with people moving between them", oldL, newL, dots,
+      T(70, 40, "the old system", "lbl"), T(222, 204, "hospice it well", "lbl s", "end"), T(244, 24, "the new one", "lbl", "end"), T(140, 182, "networks, then communities", "lbl s")),
+      still(){},
+      play(a){ a.animate(a.svg.createDrawable([oldL]), {draw:["0 0", "0 1"], duration:1400, ease:"linear"});
+        a.animate(a.svg.createDrawable([newL]), {draw:["0 0", "0 1"], duration:1400, delay:900, ease:"linear"});
+        const L1 = oldL.getTotalLength(), L2 = newL.getTotalLength();
+        dots.forEach((d0, i) => { const p = oldL.getPointAtLength(L1 * hops[i][0]), q2 = newL.getPointAtLength(L2 * hops[i][1]);
+          a.createTimeline({delay:1800 + i * 450}).add(d0, {opacity:[0, 1], cx:[p.x, p.x], cy:[p.y, p.y], duration:200})
+            .add(d0, {cx:[p.x, q2.x], cy:[p.y, Math.min(p.y, q2.y) - 30, q2.y], duration:900, ease:"inOut(2)"}); }); }}; }},
+  {id:"umwelt", title:"Umwelt: one place, many worlds", path:"biosemiotics-and-the-umwelt",
+   explain:"The same park is a different world for each creature. A bee notices flowers and sun. A tick notices only the warmth and smell of a passing mammal. Each lives among the signs that matter to its body and needs.",
+   theory:"Biosemiotics: Jakob von Uexküll's Umwelt (1934), developed by Jesper Hoffmeyer and Kalevi Kull into the study of signs in living systems.",
+   build(){
+    const items = [["flower",60,80,"bee human"],["sun",250,34,"bee human"],["dog",210,140,"tick human"],["bench",110,150,"human"],["path",160,95,"human"],["tree",30,150,"human"]];
+    const g = items.map(([n, x, y, who]) => s("g",{class:"thing","data-who":who}, s("circle",{cx:x,cy:y,r:"20"}), T(x, y + 4, n, "lbl s")));
+    const head = T(150, 200, "as a human", "lbl m");
+    const show = who => { head.textContent = "as a " + who; g.forEach(x => x.classList.toggle("off", !x.dataset.who.includes(who))); };
+    return {svg:SV(300, 210, "A park seen by a human, a bee and a tick; each notices different things", g, head),
+      still(){ show("tick"); },
+      play(a){ const order = ["human", "bee", "tick"]; const tl = a.createTimeline();
+        order.forEach((w, i) => tl.call(() => show(w), i * 1500).add(g, {scale:[.9, 1], duration:400, ease:"out(3)"}, i * 1500)); }}; }},
+  {id:"signs", title:"Icon, index, symbol", path:"semiotics-signs-codes-and-meaning-making",
+   explain:"A sign can point to its object in three ways: by looking like it (a picture of flames), by being caused by it (smoke), or by agreement (the word FIRE). Warnings that must work for everyone mix all three.",
+   theory:"Semiotics: Charles Sanders Peirce's types of sign, used by Thomas Sebeok when planning nuclear waste warnings meant to last 10,000 years.",
+   build(){
+    const flame = (x, y) => s("path",{class:"flame",d:`M${x},${y} c-12,-10 -8,-24 0,-34 c2,10 12,12 10,24 c-2,8 -6,10 -10,10 z`});
+    const col = (x, sign, how) => [sign, s("line",{class:"slink",x1:x,y1:"92",x2:x,y2:"140","marker-end":"url(#id-arrow)"}), flame(x, 190), T(x, 112, how, "lbl s")];
+    const smoke = s("path",{class:"smoke",d:"M150,80 c-10,-10 10,-20 0,-30 c-10,-10 10,-20 0,-30"});
+    const cols = [col(50, flame(50, 80), "looks like"), col(150, smoke, "caused by"), col(250, T(250, 70, "FIRE", "lbl big"), "agreed")];
+    const links = [...cols.map(c => c[1])];
+    return {svg:SV(300, 210, "Three signs for fire: a drawing of a flame, smoke, and the word FIRE", cols, T(50, 14, "icon", "lbl m"), T(150, 14, "index", "lbl m"), T(250, 14, "symbol", "lbl m")),
+      still(){},
+      play(a){ a.animate(a.svg.createDrawable(links), {draw:["0 0", "0 1"], duration:600, delay:a.stagger(700)}); }}; }},
+  {id:"goodhart", title:"Goodhart's law", path:"measurement-and-accountability",
+   explain:"When a measure becomes a target, people start working to the number. The number keeps improving while the thing it was meant to show quietly gets worse.",
+   theory:"Measurement and accountability: Charles Goodhart (1975) and Donald Campbell (1976), with evidence collected in Jerry Muller's The Tyranny of Metrics.",
+   build(){
+    const axis = s("path",{class:"axis",d:"M20,20 L20,180 L290,180"});
+    const mark = s("line",{class:"tset",x1:"120",y1:"24",x2:"120",y2:"180"});
+    const num = s("path",{class:"num",d:"M20,140 C60,138 100,132 120,128 C170,110 220,70 288,40"}), pur = s("path",{class:"pur",d:"M20,120 C60,116 100,112 120,110 C170,118 220,140 288,160"});
+    return {svg:SV(300, 210, "After a target is set, the measured number rises while the real purpose falls", axis, mark, num, pur, T(120, 196, "target set", "lbl s"), T(282, 34, "the number", "lbl s", "end"), T(282, 154, "the purpose", "lbl s", "end")),
+      still(){},
+      play(a){ a.animate(a.svg.createDrawable([num, pur]), {draw:["0 0", "0 1"], duration:2200, ease:"linear"}); a.animate(mark, {opacity:[0, 1], duration:300, delay:700}); }}; }},
+];
+let ideaAt = 0;
+function ideasCard(){
+  const box = el("section",{class:"concepts","aria-roledescription":"carousel","aria-label":"Ideas in motion"});
+  const draw = (autoplay) => {
+    const idea = IDEAS[ideaAt], d = idea.build(), p = byId(P, idea.path);
+    const go = i => { ideaAt = (i + IDEAS.length) % IDEAS.length; draw(true); };
+    const play = () => { const a = AN(); if (a) { try { d.play(a); } catch (e) { console.warn("motion skipped:", e); d.still(); } } else d.still(); };
+    fill(box,
+      el("div",{class:"ihead"}, el("span",{class:"label",text:"Ideas in motion"}), el("span",{class:"mono",text:`${ideaAt + 1} of ${IDEAS.length}`}),
+        el("button",{type:"button",class:"nav","aria-label":"Previous idea",onclick:()=>go(ideaAt - 1),text:"←"}), el("button",{type:"button",class:"nav","aria-label":"Next idea",onclick:()=>go(ideaAt + 1),text:"→"})),
+      s("svg",{width:"0",height:"0",style:"position:absolute"}, s("defs",{}, s("marker",{id:"id-arrow",viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto-start-reverse"}, s("path",{d:"M0,0 L10,5 L0,10 z",fill:"var(--muted)"})))),
+      el("div",{class:"ibody"}, el("div",{class:"ifig"}, d.svg),
+        el("div",{class:"icol"},
+          el("div",{"aria-live":"polite"}, el("h3",{text:idea.title}), el("p",{class:"iexp",text:idea.explain}), el("p",{class:"ithe"}, el("b",{text:"Where it comes from. "}), idea.theory)),
+          el("div",{class:"iacts"}, el("button",{type:"button",class:"btn ghost",onclick:play,text:motionOn() ? "▶ Play" : "Show it"}), p ? el("a",{href:wikiHref(p.id),text:"Read: " + short(p) + " →"}) : null),
+          el("div",{class:"ipick"}, el("span",{class:"label",text:"Want another example? Pick one"}),
+            el("div",{class:"terms"}, IDEAS.map((x, i) => el("button",{type:"button",class:"pill","aria-pressed":String(i === ideaAt),onclick:()=>go(i),text:x.title})))))));
+    if (autoplay) requestAnimationFrame(play);
   };
-  return el("div",{class:"loop"}, el("span",{class:"label",text:"How a system pushes back"}), svg, cap,
-    el("button",{type:"button",class:"btn ghost",onclick:push,text:"Push housing"}));
+  draw(false);
+  return box;
 }
 function viewHome(){
   const pop = [["Cynefin","sensemaking-and-acting-in-uncertainty"],["Power analysis","power-analysis"],["Warm Data","nora-bateson-and-warm-data"],["Service design","service-design"]];
@@ -796,8 +943,9 @@ function viewHome(){
           el("p",{class:"lede",text:"Care, housing, climate, health. They have no single owner and no single cause, and fixing one part moves another. The ideas that help are spread across dozens of fields, each with its own jargon, and most people never find them."}),
           searchBox("Search a topic, person or idea", true),
           el("div",{class:"popular"}, "Popular:", pop.map(([n, id]) => el("a",{class:"pill",href:wikiHref(id),text:n})))),
-        // the hero photo shows only once one is set (about.hero_photo); until then the loop diagram takes the column, so there is no empty box
-        el("div",{}, DATA.about.hero_photo && safeUrl(DATA.about.hero_photo) ? el("img",{class:"heroimg",src:safeUrl(DATA.about.hero_photo),alt:DATA.about.hero_alt || ""}) : null, loopCard())),
+        el("div",{}, el("figure",{class:"photo"}, el("img",{src:"img/home-farming.jpg",width:"1100",height:"1100",loading:"eager",alt:"People working a cleared field together among palm trees"}),
+          el("figcaption",{}, "Photo: ", ext("Annie Spratt", "https://unsplash.com/@anniespratt"), " on ", ext("Unsplash", "https://unsplash.com/photos/people-farming-on-field-during-daytime-SWP0hOIMzKg"))))),
+      el("section",{class:"sec",style:"padding-top:8px"}, ideasCard()),
       el("section",{class:"sec"}, el("h2",{text:"Where do you want to start?"}),
         el("nav",{class:"doors","aria-label":"Where to start"}, doors.map(([cls, lab, t, sub, href]) => el("a",{class:"door "+cls,href}, el("span",{class:"label",text:lab}), el("b",{text:t}), el("span",{text:sub}))))),
       el("section",{class:"sec"}, browse),

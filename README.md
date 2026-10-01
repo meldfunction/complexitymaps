@@ -30,8 +30,9 @@ stances stay in the browser. Anything not yet checked against sources is marked 
 
 ## Motion
 
-Ten small animations explain how ideas connect, what came before what, and where you are: a feedback loop on the
-home page, roads and lineages that draw themselves, the universe zoom, metro lines drawing in, trail replay and
+Small animations explain how ideas connect, what came before what, and where you are: an "Ideas in motion"
+carousel on the home page (feedback loops, emergence, probe-sense-respond, tipping points, Two Loops, Umwelt,
+icon/index/symbol, Goodhart's law, each linked to its pathway), roads and lineages that draw themselves, the universe zoom, metro lines drawing in, trail replay and
 drag-to-reorder, a "who was alive when" year scrubber, treemap fills, Find my work growing like a tree, and a
 "where I land" balance on profiles. They use [Anime.js](https://animejs.com) v4 (MIT), shipped beside the page as
 `dist/anime.umd.min.js` (from `src/vendor/`) and loaded with `defer`.
@@ -39,6 +40,9 @@ drag-to-reorder, a "who was alive when" year scrubber, treemap fills, Find my wo
 Every view renders in its final state first, and the motion is layered on top (`onMount` in `src/app.html`).
 Nothing animates when the device asks for reduced motion, when the visitor turns motion off in the footer,
 or when the script fails to load.
+
+Home photo: Annie Spratt on [Unsplash](https://unsplash.com/photos/people-farming-on-field-during-daytime-SWP0hOIMzKg)
+(Unsplash License), in `src/img/`.
 
 ## Build
 
