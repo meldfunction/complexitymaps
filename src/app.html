@@ -4,199 +4,505 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pathways into Complexity</title>
-<meta name="description" content="Lineages, practices, and methods for working in complex systems, with cases, organizations, and a live learning library.">
+<meta name="description" content="Ideas and practices for complex work, from many fields, in plain English: a wiki, a learning path, maps, people, and cases.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
+/* Field Atlas: paper, ink, four hue families at oklch(0.52 0.09 H). */
 :root{
   color-scheme: light;
-  --paper:#f4f6f5; --surface:#ffffff; --ink:#1f2a2e; --muted:#566562; --line:#d6dfdc;
-  --teal:#2f6f62; --gold:#9a6a17; --gold-soft:#fbf1dc; --focus:#1b5e9e; --callout:#eef4f2;
-  --ok:#2f7d4f; --warn:#a8741a; --err:#b0413a;
+  --paper:#f4f1ea; --paper2:#ece8de; --card:#fbfaf6; --ink:#1c211f; --muted:#5b625e; --line:#d9d4c7; --line2:#e6e1d5;
+  --link:#2f5873; --warn:#9a4a1c; --gold:#8a6a14;
+  --night:#151918; --night2:#1d2321; --night-line:#2e3633; --night-ink:#efece4; --night-muted:#9aa29c;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
   --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  /*CLUSTER_LIGHT*/
+  --sci:oklch(0.52 0.09 245); --rel:oklch(0.52 0.09 150); --chg:oklch(0.52 0.09 40); --prc:oklch(0.52 0.09 85);
+  --sci-t:oklch(0.92 0.035 245); --rel-t:oklch(0.92 0.035 150); --chg-t:oklch(0.92 0.035 40); --prc-t:oklch(0.92 0.035 85);
+  --sci-n:oklch(0.76 0.1 245); --rel-n:oklch(0.76 0.1 150); --chg-n:oklch(0.76 0.1 40); --prc-n:oklch(0.78 0.1 85);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     color-scheme: dark;
-    --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9dadaa; --line:#2f3a3d;
-    --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea; --callout:#1f2c2b;
-    --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
-    /*CLUSTER_DARK*/
+    --paper:#171b1a; --paper2:#1f2422; --card:#202624; --ink:#ece8de; --muted:#a3aaa5; --line:#38403c; --line2:#2c3330;
+    --link:#9cc3df; --warn:#e7a07a; --gold:#e0c070;
+    --sci:oklch(0.74 0.1 245); --rel:oklch(0.74 0.1 150); --chg:oklch(0.74 0.1 40); --prc:oklch(0.78 0.1 85);
+    --sci-t:oklch(0.3 0.04 245); --rel-t:oklch(0.3 0.04 150); --chg-t:oklch(0.3 0.04 40); --prc-t:oklch(0.32 0.04 85);
   }
 }
 :root[data-theme="dark"]{
   color-scheme: dark;
-  --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9dadaa; --line:#2f3a3d;
-  --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea; --callout:#1f2c2b;
-  --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
-  /*CLUSTER_DARK*/
+  --paper:#171b1a; --paper2:#1f2422; --card:#202624; --ink:#ece8de; --muted:#a3aaa5; --line:#38403c; --line2:#2c3330;
+  --link:#9cc3df; --warn:#e7a07a; --gold:#e0c070;
+  --sci:oklch(0.74 0.1 245); --rel:oklch(0.74 0.1 150); --chg:oklch(0.74 0.1 40); --prc:oklch(0.78 0.1 85);
+  --sci-t:oklch(0.3 0.04 245); --rel-t:oklch(0.3 0.04 150); --chg-t:oklch(0.3 0.04 40); --prc-t:oklch(0.32 0.04 85);
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 48px}
-a{color:var(--teal)}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans);-webkit-text-size-adjust:100%}
+body.dark{background:var(--night);color:var(--night-ink)}
+a{color:var(--link)}
+a:hover{color:var(--ink)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 .sr{position:absolute;left:-9999px}
-.wrap{max-width:1180px;margin:0 auto}
-header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:28px 14px}
-h1{font-size:clamp(26px,4vw,36px);line-height:1.1;margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
-h1 a{color:inherit;text-decoration:none}
-.lede{margin:6px 0 0;color:var(--muted);max-width:64ch}
-.status{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;font:500 12.5px/1.35 var(--mono);color:var(--muted);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 12px;max-width:100%}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
-.status[data-state="live"] .dot{background:var(--ok)}
-.status[data-state="cached"] .dot{background:var(--warn)}
-.status[data-state="error"] .dot{background:var(--err)}
-.status button{font:inherit;color:var(--teal);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
-nav.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:18px;scrollbar-width:thin}
-nav.tabs a{flex:none;font-weight:600;font-size:14px;color:var(--muted);text-decoration:none;padding:10px 12px;border-bottom:3px solid transparent}
-nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--teal)}
-nav.tabs a:hover{color:var(--ink)}
-.bar{display:grid;grid-template-columns:1fr auto;gap:10px;padding-bottom:12px}
-.bar input,.bar select{font:16px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px;width:100%}
-.bar select{font-size:14px;min-height:46px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:14px}
-.chip{font:500 12.5px/1 var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 11px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.chip i{width:8px;height:8px;border-radius:2px;display:inline-block;flex:none}
-.layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}
-nav.index{position:sticky;top:env(safe-area-inset-top,0px);max-height:calc(100vh - 20px);overflow:auto;padding-right:4px}
-.cl{margin:0 0 14px}
-.cl h2{font:700 11.5px/1.25 var(--sans);letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px;display:flex;align-items:center;gap:8px}
-.cl h2 i{width:10px;height:10px;border-radius:3px;display:inline-block;flex:none}
-.pw{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;font:14px/1.3 var(--sans);color:var(--ink);text-decoration:none;border-left:3px solid transparent;padding:6px 8px;border-radius:0 6px 6px 0}
-.pw:hover{background:var(--surface)}
-.pw[aria-current="true"]{background:var(--surface);font-weight:600}
-.pw .n{font:12px var(--mono);color:var(--muted);flex:none}
-.mobile-pick{display:none}
-main{min-width:0}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
-.eyebrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 12px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase}
-.kind{font:500 11.5px/1 var(--mono);letter-spacing:0;text-transform:none;border:1px solid currentColor;border-radius:999px;padding:4px 8px}
-h3.title{font-size:clamp(22px,3vw,28px);line-height:1.15;margin:10px 0 8px;font-weight:800;text-wrap:balance}
-.ov{font-size:16.5px;margin:0 0 16px;max-width:70ch}
-dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;margin:0}
-dt{font:700 12px/1.6 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-dd{margin:0;max-width:72ch}
-.policy{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;margin:18px 0 0}
-.policy b{color:var(--gold);font-size:12px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
-.callout{background:var(--callout);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 16px;margin:0 0 16px;max-width:80ch}
-.links{display:flex;flex-wrap:wrap;gap:8px}
-.links a{font-size:14px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
-.links a:hover{border-color:var(--teal);color:var(--teal)}
-a.ext::after{content:" \2197";color:var(--muted)}
-section.block{margin-top:26px}
-.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;margin-bottom:10px}
-.head h4{margin:0;font-size:17px;font-weight:700}
-.head p{margin:0;color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
-.r{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.r .t{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.3}
-.r a.t:hover{color:var(--teal);text-decoration:underline}
-.r p{margin:0;font-size:13.5px;color:var(--muted)}
-.r p.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-.r .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
-.tag{font:12px/1.2 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 6px}
-.tag.cap{color:var(--teal)}
-.star{color:var(--gold);font-size:12px;font-weight:600}
-.why{font-size:12px;color:var(--muted)}
-.meta{font:12.5px var(--mono);color:var(--muted)}
-.note{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
-.loadbtn{font:600 14px var(--sans);color:var(--paper);background:var(--teal);border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
-.empty{color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:16px}
-.media{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.media li{display:grid;grid-template-columns:92px 1fr;gap:10px;align-items:baseline}
-.media .k{font:12px var(--mono);color:var(--muted)}
-.pchips{display:flex;flex-wrap:wrap;gap:6px}
-.pchips a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;display:inline-flex;align-items:center;gap:6px}
-.pchips a i{width:8px;height:8px;border-radius:2px;display:inline-block}
-.stages{display:grid;gap:14px;counter-reset:st}
-.stage{position:relative;padding-left:44px}
-.stage::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:18px;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);font:700 14px/30px var(--sans);text-align:center}
-.levels{width:100%;border-collapse:collapse}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.serif{font-family:var(--serif)}
+.mono{font-family:var(--mono)}
+.label{font:500 10.5px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance}
+p{margin:0}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;padding:18px 0;flex-wrap:wrap}
+.brand{font:400 19px/1 var(--serif);color:var(--ink);text-decoration:none}
+body.dark .brand{color:var(--night-ink)}
+.nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav a{font-size:14px;color:var(--ink);text-decoration:none;padding:7px 12px;border-radius:999px}
+.nav a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+.nav a:hover:not([aria-current="page"]){background:var(--paper2)}
+
+/* shared bits */
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;text-decoration:none;cursor:pointer}
+.pill:hover{border-color:var(--ink);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{font:500 11px/1 var(--mono);border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);display:inline-block}
+.badge.dash{border-style:dashed}
+.draft{font:500 11.5px/1.4 var(--mono);color:var(--warn)}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px var(--sans);border-radius:999px;padding:11px 20px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;cursor:pointer;min-height:44px}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{opacity:.9;color:var(--paper)}
+.btn.ghost:hover{color:var(--ink);background:var(--paper2)}
+.ext::after{content:" \2197"}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:14px 16px;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;color:var(--ink);text-decoration:none;min-width:0}
+a.tile:hover{border-color:var(--ink);color:var(--ink)}
+.tile .t{font-weight:700;line-height:1.3}
+.tile p{font-size:13.5px;color:var(--muted)}
+.tile .meta{font:12px var(--mono);color:var(--muted)}
+.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+section.sec{margin-top:44px}
+section.sec>h2{font-size:28px;margin-bottom:14px}
+.sub{color:var(--muted);font-size:14px;margin:-6px 0 14px}
+footer.foot{margin-top:56px;background:var(--paper2);border-top:1px solid var(--line)}
+footer.foot .wrap{padding-top:22px;padding-bottom:28px;display:grid;gap:12px;font-size:13px;color:var(--muted)}
+footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+.status{display:inline-flex;align-items:center;gap:8px;font:500 12px/1.3 var(--mono);color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.status[data-state="live"] i{background:oklch(0.6 0.12 150)}
+.status[data-state="cached"] i{background:oklch(0.7 0.12 85)}
+.status[data-state="error"] i{background:oklch(0.6 0.14 30)}
+.status button{background:none;border:0;padding:0;color:var(--link);text-decoration:underline;cursor:pointer;font:inherit}
+
+/* home */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:48px;padding:36px 0 8px;align-items:start}
+.hero h1{font-size:clamp(38px,5.2vw,58px);line-height:1.04;letter-spacing:-.015em;margin:10px 0 18px}
+.hero .lede{font-size:16.5px;line-height:1.6;max-width:44ch}
+.search{display:flex;align-items:center;border:1.5px solid var(--ink);border-radius:999px;background:var(--card);padding:4px 4px 4px 18px;margin-top:24px;max-width:500px;position:relative}
+.search input{flex:1;min-width:0;border:0;background:transparent;font:15px var(--sans);color:var(--ink);padding:9px 0;outline:none}
+.search button{border:0;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:600;padding:9px 16px;cursor:pointer}
+.results[hidden]{display:none}
+.results{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:20;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.12);padding:6px;display:grid}
+.results a{display:flex;gap:10px;align-items:baseline;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--ink)}
+.results a:hover,.results a:focus{background:var(--paper2)}
+.results .k{font:11px var(--mono);color:var(--muted);margin-left:auto;flex:none}
+.popular{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:12px;font-size:12.5px;color:var(--muted)}
+.popular .pill{font-size:12.5px;padding:4px 10px}
+.photo{aspect-ratio:1/1;border:1.5px dashed var(--line);border-radius:16px;background:var(--paper2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:13px;text-align:center;padding:24px}
+.photo svg{width:22px;height:22px}
+.doors{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.door{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:16px 16px 22px;min-height:150px;text-decoration:none;color:var(--ink)}
+.door .label{color:var(--muted)}
+.door b{font:400 19px/1.2 var(--serif)}
+.door span:last-child{font-size:13px;color:var(--muted)}
+.door.blue{background:oklch(0.42 0.08 245);border-color:oklch(0.42 0.08 245);color:#f4f1ea}
+.door.black{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.door.blue .label,.door.black .label,.door.blue span:last-child,.door.black span:last-child{color:inherit;opacity:.78}
+.door.dashed{border-style:dashed;background:transparent}
+.door:hover{transform:translateY(-1px);color:inherit}
+.door.blue:hover{color:#f4f1ea}
+.door.black:hover{color:var(--paper)}
+.browse-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.browse-head h2{font-size:28px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--card)}
+.seg button{border:0;background:transparent;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.goals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.goal{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:16px;min-height:118px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;text-decoration:none;color:var(--ink)}
+.goal b{font:400 18px/1.25 var(--serif)}
+.goal span{font-size:12.5px;color:var(--muted)}
+.goal:hover{border-color:var(--ink);color:var(--ink)}
+.lenses{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 18px}
+.lens{border-left:1.5px solid var(--ink);padding:2px 0 2px 12px}
+.lens i{font:italic 15px/1.45 var(--serif);display:block;margin-top:4px}
+.mission{background:var(--ink);color:var(--paper);margin-top:56px}
+.mission .wrap{display:grid;grid-template-columns:180px 1fr;gap:24px;padding-top:56px;padding-bottom:60px;align-items:baseline}
+.mission .label{color:var(--paper);opacity:.6}
+.mission p{font:400 clamp(24px,3vw,32px)/1.25 var(--serif);max-width:28ch}
+.ctas{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cta{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:26px 28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);min-height:200px}
+.cta h3{font-size:32px}
+.cta p{color:var(--muted);max-width:40ch}
+.cta b{margin-top:auto;font-size:14px}
+.cta.blue{background:oklch(0.42 0.08 245);border-color:oklch(0.42 0.08 245);color:#f4f1ea}
+.cta.blue p,.cta.blue .label{color:#f4f1ea;opacity:.82}
+.cta:hover{color:inherit;border-color:var(--ink)}
+.featured{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;border-top:1px solid var(--line);padding-top:28px}
+.featured h3{font-size:30px;margin:8px 0 10px}
+.also a{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.also a:hover{color:var(--link)}
+
+/* wiki */
+.wiki{display:grid;grid-template-columns:150px minmax(0,1fr) 300px;gap:0;border-top:1px solid var(--line)}
+.wiki>aside.toc{border-right:1px solid var(--line);padding:24px 18px 24px 0}
+.toc a{display:block;font-size:13.5px;color:var(--ink);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line2)}
+.toc a:hover{color:var(--link)}
+.wiki>article{padding:24px 36px 40px;min-width:0}
+.wiki>aside.side{border-left:1px solid var(--line);padding:20px 0 20px 18px;min-width:0}
+.art-title{font-size:clamp(32px,4vw,44px);line-height:1.06;margin:8px 0 12px;max-width:16ch}
+.art-ov{font:italic 20px/1.45 var(--serif);max-width:34ch;margin:14px 0 6px}
+.art h2{font-size:26px;margin:40px 0 12px;scroll-margin-top:16px}
+.art .body p{font-size:15.5px;line-height:1.65;max-width:62ch;margin-bottom:12px}
+.terms{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.def{margin-top:10px;border-left:2px solid var(--ink);padding:6px 12px;font-size:14px;max-width:60ch}
+.lensbox{margin-top:28px;border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px 20px}
+.lensbox .h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.lensbox .h h3{font-size:20px}
+.lensbox p{font:italic 18px/1.5 var(--serif);margin-top:10px;max-width:56ch}
+.road{list-style:none;margin:0;padding:0;position:relative}
+.road::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;border-left:1.5px solid var(--ink)}
+.road>li{position:relative;padding:5px 0 5px 26px}
+.road>li::before{content:"";position:absolute;left:0;top:13px;width:11px;height:11px;border-radius:50%;border:1.5px solid var(--ink);background:var(--paper)}
+.road button.who,.road a.who{font:400 18px/1.3 var(--serif);background:none;border:0;padding:0;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;cursor:pointer}
+.road .n{font:11.5px var(--mono);color:var(--muted);margin-left:8px}
+.road .y{font:11.5px var(--mono);color:var(--gold);margin-left:8px}
+.road .pop{margin:8px 0 6px;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:10px 12px;font-size:13.5px}
+.gov{border-left:2px solid var(--ink);padding:2px 0 2px 12px;margin:6px 0 14px;max-width:62ch}
+.gov .label{color:var(--ink);font-weight:600}
+.sectors{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
+.sectors .badge{border-style:dashed}
+.casebox{background:var(--paper2);border-radius:12px;padding:14px 16px;margin-top:10px;display:block;color:var(--ink);text-decoration:none}
+.casebox:hover{color:var(--ink);outline:1px solid var(--line)}
+.casebox h4{font-size:18px;margin:4px 0}
+.casebox p{font-size:14px}
+.placeholder{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;font:12px var(--mono);color:var(--muted);margin-top:10px}
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.diff{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.diff .tile{border-style:dashed}
+.why{font:11.5px var(--mono);color:var(--muted)}
+.localmap{position:relative;aspect-ratio:36/32;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:14px 14px}
+.localmap svg{position:absolute;inset:0;width:100%;height:100%}
+.node{position:absolute;display:flex;align-items:center;gap:4px;text-align:center;font-size:11px;line-height:1.2;color:var(--ink);text-decoration:none;width:110px;cursor:pointer;background:none;border:0;padding:0}
+.node i{display:block;border-radius:50%;flex:none;border:1.5px solid;background:var(--card)}
+.node span{display:block}
+.node:hover span{text-decoration:underline}
+.key{margin-top:14px;padding:14px;font-size:12.5px;display:grid;gap:7px}
+.key div{display:flex;gap:8px;align-items:center}
+.key .ln{width:18px;border-top:1.5px solid var(--ink)}
+.key .ln.d{border-top-style:dashed;border-color:var(--muted)}
+.idx-filters{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 22px}
+.idx{columns:3 280px;column-gap:28px}
+.idx .cl{break-inside:avoid;margin-bottom:22px}
+.idx .cl h3{font:500 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.idx .cl a{display:block;color:var(--ink);text-decoration:none;padding:5px 0;border-bottom:1px solid var(--line2);font-size:14.5px}
+.idx .cl a:hover{color:var(--link)}
+.idx .cl a small{font:11px var(--mono);color:var(--muted);margin-left:6px}
+
+/* path (learning tree) */
+.steps{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 6px}
+.crumbs a{font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--card)}
+.crumbs a::after{content:" \00d7";color:var(--muted)}
+.qh{font-size:clamp(32px,4.4vw,48px);line-height:1.08;margin:18px 0 28px}
+.starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.start{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:26px;min-height:180px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none}
+.start b{font:400 26px/1.15 var(--serif)}
+.start span{color:var(--muted);font-size:14px}
+.start:hover{border-color:var(--ink);color:var(--ink)}
+.branchwrap{display:grid;grid-template-columns:auto 1fr;gap:0;align-items:center}
+.root{background:var(--ink);color:var(--paper);border-radius:12px;padding:10px 14px;margin-right:24px}
+.root .label{color:var(--paper);opacity:.65}
+.root b{display:block;font-size:16px}
+.branches{border-left:1.5px solid var(--ink);display:grid;gap:10px;padding:6px 0}
+.branch{position:relative;margin-left:24px;max-width:420px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink);display:block}
+.branch::before{content:"";position:absolute;left:-25px;top:50%;width:24px;border-top:1.5px solid var(--ink)}
+.branch:hover{border-color:var(--ink);color:var(--ink)}
+.branch b{font-size:16.5px;display:flex;align-items:center;gap:8px}
+.branch .m{font:12px/1.5 var(--mono);color:var(--muted);margin:2px 0 4px}
+.branch i{font:italic 14.5px/1.45 var(--serif);display:block}
+.branch.add{border-style:dashed;background:transparent}
+.addbox{margin:6px 0 0 24px;max-width:520px;border:1px dashed var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:10px}
+.addbox input{font:15px var(--sans);border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:var(--card);color:var(--ink);width:100%}
+.where{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.where .card{padding:18px 20px}
+.where h3{font-size:22px;margin-bottom:8px}
+.where li{margin:6px 0}
+.where ul{padding-left:18px;margin:0}
+
+/* people */
+.people{display:grid;grid-template-columns:200px minmax(0,1fr) 260px;border-top:1px solid var(--line);min-height:70vh}
+.people>nav{background:var(--paper2);padding:20px 12px;border-right:1px solid var(--line)}
+.people>nav a{display:block;text-decoration:none;color:var(--ink);padding:9px 10px;border-radius:10px;margin-bottom:4px}
+.people>nav a b{font:600 14.5px var(--serif);display:block}
+.people>nav a small{font:11px var(--mono);color:var(--muted)}
+.people>nav a[aria-current="true"]{background:var(--ink);color:var(--paper)}
+.people>nav a[aria-current="true"] small{color:var(--paper);opacity:.7}
+.people>article{padding:28px 40px 48px;min-width:0}
+.people>aside{border-left:1px solid var(--line);padding:24px 20px;background:var(--card)}
+.pname{font-size:clamp(36px,4.6vw,50px);line-height:1.05;margin:6px 0 10px}
+.known{font-size:17px;max-width:52ch}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:68px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.tl b{font:600 13px var(--mono)}
+.ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.ideas .card{padding:14px 16px}
+.ideas b{font:600 15px var(--serif);display:block;margin-bottom:4px}
+.q{border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;margin-bottom:14px;background:var(--card)}
+.q .hd{padding:10px 18px;border-bottom:1px solid var(--line)}
+.q .pair{display:grid;grid-template-columns:1fr 1fr}
+.q .pair>div{padding:16px 18px}
+.q .pair>div+div{background:var(--paper2);border-left:1px solid var(--line)}
+.q .claim{font:400 18.5px/1.45 var(--serif);margin:6px 0 10px}
+.q .who{font:600 12px var(--serif);color:var(--muted)}
+.q blockquote{margin:10px 0 0;border-left:2px solid var(--ink);padding:2px 0 2px 12px;font:italic 15.5px/1.45 var(--serif)}
+.q blockquote a{display:block;font:11px var(--mono);margin-top:4px}
+.q .more{padding:12px 18px;border-top:1px solid var(--line)}
+.q .more a{display:block;font-weight:600;font-size:14px;margin-top:8px}
+.q .more small{display:block;color:var(--muted);font-size:12.5px}
+.q .land{padding:10px 18px;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.reads li{list-style:none;padding:8px 0;border-bottom:1px solid var(--line)}
+.reads ul{padding:0;margin:0}
+.reads b{font:600 14px var(--serif)}
+.reads small{display:block;color:var(--muted);font-size:13px}
+.asks p{font:400 16px/1.45 var(--serif);padding:10px 0;border-bottom:1px solid var(--line)}
+.appears a{display:block;text-decoration:none;color:var(--ink);font-size:14.5px}
+.appears div{padding:10px 0;border-bottom:1px solid var(--line)}
+.appears small a{display:inline;font:12px var(--mono);color:var(--link);margin-right:10px}
+
+/* contribute / ack / about */
+.narrow{max-width:640px;margin:0 auto}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 16px;margin-bottom:8px;cursor:pointer;color:var(--ink);text-decoration:none}
+.opt b{font:600 16px var(--serif);display:block}
+.opt span{font-size:13.5px;color:var(--muted)}
+.opt:hover,.opt[aria-pressed="true"]{border-color:var(--ink)}
+.slot{border:1.5px dashed var(--line);border-radius:14px;padding:16px 20px;font:13px/1.6 var(--mono);color:var(--muted)}
+.slot .label{color:var(--warn)}
+.ack-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 36px;margin-top:28px}
+.ack-grid h3{font-size:24px;margin-bottom:6px}
+.ack-grid p{font:13px/1.65 var(--mono);color:var(--muted)}
+.orient{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.levels{width:100%;border-collapse:collapse;font-size:14px}
 .levels th,.levels td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
-.levels th{width:190px;font-size:14px}
-.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-.orient{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-.orient .r h5{margin:0;font-size:17px}
-.ask{font-style:italic;color:var(--ink)}
-footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;max-width:84ch}
-footer p{margin:0 0 8px}
-@media (max-width:820px){
-  .layout{grid-template-columns:1fr}
-  nav.index{display:none}
-  .mobile-pick{display:block;margin-bottom:14px}
-  .mobile-pick select{width:100%;font:15px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
-  .bar{grid-template-columns:1fr}
-  dl{grid-template-columns:1fr;gap:2px 0}
-  dd{margin-bottom:10px}
-  .card{padding:18px}
-  .media li{grid-template-columns:1fr;gap:2px}
-  .levels th{width:auto;min-width:130px}
-  .stage{padding-left:0}
-  .stage::before{position:static;display:block;margin-bottom:8px}
+.levels th{font:400 17px var(--serif);width:200px}
+.stage-list{display:grid;gap:12px}
+.media{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.media li{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+.media .k{font:11.5px var(--mono);color:var(--muted)}
+.libbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:14px 0}
+.libbar input,.libbar select{font:15px var(--sans);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 16px;width:100%}
+.star{color:var(--gold);font-size:12px;font-weight:600}
+
+/* map hub (always night) */
+.hub{background:var(--night);color:var(--night-ink);min-height:100vh}
+.hub .top{padding:18px 0}
+.tabs{display:flex;gap:2px;border:1px solid var(--night-line);border-radius:999px;padding:4px;overflow-x:auto;max-width:100%;scrollbar-width:none}
+.tabs a{flex:none;color:var(--night-ink);text-decoration:none;font-size:14px;padding:7px 15px;border-radius:999px}
+.hub .tabs a{color:var(--night-ink)}
+.hub .tabs a[aria-current="page"]{background:var(--night-ink);color:var(--night)}
+.hubnote{font:12px/1.4 var(--mono);color:var(--night-muted);max-width:32ch;text-align:right}
+.hubgrid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0;background:var(--night2);border-radius:16px;overflow:hidden;min-height:560px}
+.hubgrid.full{grid-template-columns:1fr}
+.hubmain{padding:20px 22px;min-width:0;position:relative}
+.hubside{border-left:1px solid var(--night-line);padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.hub .label{color:var(--night-muted)}
+.hub a{color:oklch(0.82 0.08 85)}
+.hub a.plain{color:var(--night-ink);text-decoration:none}
+.hub .btn{background:var(--night-ink);color:var(--night);border-color:var(--night-ink)}
+.hub .btn.ghost{background:transparent;color:var(--night-ink);border-color:var(--night-line)}
+.scrollx{overflow-x:auto;max-width:100%}
+.stage{position:relative;width:100%;aspect-ratio:1000/620;min-width:0}
+.label{overflow-wrap:anywhere}
+.stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.stage .lab{position:absolute;transform:translate(-50%,-50%);font:500 10.5px/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-align:center;white-space:nowrap;pointer-events:none}
+.stage .slab{position:absolute;font:12px/1.2 var(--serif);color:var(--night-ink);white-space:nowrap;pointer-events:none;text-shadow:0 0 4px var(--night)}
+.stage .hit{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer;padding:0}
+.stage .gal{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer}
+.stage .gal:hover{background:radial-gradient(rgba(255,255,255,.04),transparent 70%)}
+.mapfoot{font:12px/1.6 var(--mono);color:var(--night-muted);margin-top:10px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.panel h3{font-size:24px;line-height:1.15;margin:4px 0 8px;color:var(--night-ink)}
+.panel p{font-size:13.5px;color:var(--night-muted)}
+.panel .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.list a{display:block;padding:9px 0;border-bottom:1px solid var(--night-line);color:var(--night-ink);text-decoration:none;font-size:14.5px}
+.list a:hover{color:oklch(0.82 0.08 85)}
+.tree{position:relative;overflow-x:auto;padding-bottom:6px}
+.treeline{position:relative;display:flex;justify-content:space-between;min-width:560px;margin:56px 10px 0}
+.treeline::before{content:"";position:absolute;left:30px;right:30px;top:var(--y,64px);border-top:2.5px solid currentColor}
+.stop{position:relative;flex:1;text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0;padding:0 4px}
+.stop .num{font:11px var(--mono);color:var(--night-muted)}
+.stop b{font:600 13.5px/1.2 var(--serif)}
+.stop .nt{font:11px/1.2 var(--serif);color:var(--night-muted)}
+.stop .yr{font:11px var(--mono);color:oklch(0.82 0.08 85)}
+.stop .yr.no{color:var(--night-muted)}
+.stop .pt{width:14px;height:14px;border-radius:50%;background:currentColor;position:absolute;top:calc(var(--y,64px) - 7px)}
+.stop .pt.big{width:18px;height:18px;top:calc(var(--y,64px) - 9px);box-shadow:0 0 0 3px var(--night2)}
+.stop .boxes{margin-top:calc(var(--y,64px) - 44px + 40px);display:grid;gap:6px;width:100%}
+.stop .boxes a{border:1px solid currentColor;border-radius:8px;padding:6px 8px;font:12px/1.3 var(--serif);text-decoration:none;color:var(--night-ink);background:rgba(255,255,255,.03)}
+.stop .who{background:none;border:0;padding:0;cursor:pointer;color:inherit;text-decoration:underline;text-decoration-color:var(--night-line);text-underline-offset:3px}
+.tm{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.tm .cl{background:rgba(255,255,255,.03);border-radius:10px;padding:8px}
+.tm .cl h4{font:500 10.5px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tm .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(98px,1fr));gap:5px}
+.tm button{text-align:left;border:0;border-radius:6px;min-height:52px;padding:7px 8px;font:12px/1.25 var(--serif);color:var(--night-ink);cursor:pointer}
+.tm button.gap{background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 6px,transparent 6px 12px);outline:1px dashed var(--night-muted);outline-offset:-1px}
+.tm button[aria-pressed="true"]{outline:2px solid var(--night-ink);outline-offset:-2px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stats div{border:1px solid var(--night-line);border-radius:12px;padding:10px 12px}
+.stats b{font:400 26px var(--serif);display:block}
+.stats span{font:11px var(--mono);color:var(--night-muted)}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.hub .pill{background:transparent;color:var(--night-ink);border-color:var(--night-line)}
+.hub .pill[aria-pressed="true"]{background:var(--night-ink);color:var(--night)}
+.check{list-style:none;padding:0;margin:0;font-size:13.5px}
+.check li{padding:5px 0;border-bottom:1px solid var(--night-line)}
+.time{overflow:auto;max-height:600px;position:relative;border-top:1px solid var(--night-line)}
+.time .axis{position:sticky;top:0;z-index:2;background:var(--night2);height:28px;border-bottom:1px solid var(--night-line)}
+.time .axis span{position:absolute;top:7px;font:11px var(--mono);color:var(--night-muted);transform:translateX(-50%)}
+.time .grp{font:600 12px var(--serif);padding:10px 0 4px;position:sticky;left:0}
+.time .row{position:relative;height:26px}
+.time .bar{position:absolute;top:3px;height:20px;border-radius:999px;display:flex;align-items:center;gap:6px;padding:0 10px;white-space:nowrap;font:600 12px var(--serif);color:var(--night);text-decoration:none;min-width:max-content}
+.time .bar small{font:400 11px var(--mono);opacity:.75}
+.time .bar.inst{background:transparent!important;border:1px solid;color:var(--night-ink)}
+.time .bar.living{border-top-right-radius:0;border-bottom-right-radius:0}
+.time .grid-l{position:absolute;top:0;bottom:0;border-left:1px solid var(--night-line)}
+.addstops{display:flex;flex-wrap:wrap;gap:8px}
+.addstops button{background:transparent;border:1px solid var(--night-line);border-radius:12px;color:var(--night-ink);padding:8px 12px;text-align:left;cursor:pointer;font-size:13px}
+.addstops small{display:block;font:11px var(--mono);color:var(--night-muted)}
+
+@media (max-width:1060px){
+  .wiki{grid-template-columns:minmax(0,1fr) 280px}
+  .wiki>aside.toc{display:none}
+  .people{grid-template-columns:180px minmax(0,1fr)}
+  .people>aside{grid-column:2;border-left:0;border-top:1px solid var(--line)}
+  .goals,.lenses{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .doors{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@media (prefers-reduced-motion:no-preference){ .r{transition:border-color .15s} .r:hover{border-color:var(--teal)} }
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:24px}
+  .photo{aspect-ratio:16/10}
+  .doors{grid-template-columns:1fr}
+  .door{min-height:0;padding:14px 16px}
+  .goals,.lenses,.ctas,.featured,.starts,.where,.sim,.diff,.two,.ack-grid{grid-template-columns:1fr}
+  .mission .wrap{grid-template-columns:1fr;gap:10px}
+  .wiki{grid-template-columns:1fr}
+  .wiki>article{padding:18px 0 28px}
+  .wiki>aside.side{border-left:0;border-top:1px solid var(--line);padding:18px 0}
+  .people{grid-template-columns:1fr}
+  .people>nav{display:flex;overflow-x:auto;gap:6px;border-right:0;border-bottom:1px solid var(--line);padding:10px}
+  .people>nav a{flex:none;margin:0}
+  .people>article{padding:20px 0 28px}
+  .people>aside{grid-column:auto}
+  .q .pair{grid-template-columns:1fr}
+  .q .pair>div+div{border-left:0;border-top:1px solid var(--line)}
+  .hubgrid{grid-template-columns:1fr}
+  .hubside{border-left:0;border-top:1px solid var(--night-line)}
+  .hubnote{display:none}
+  .scrollx .stage{min-width:780px}
+  .branchwrap{grid-template-columns:1fr}
+  .root{margin:0 0 12px;justify-self:start}
+  .branch{margin-left:16px}
+  .branch::before{left:-17px;width:16px}
+  .addbox{margin-left:16px}
+  .levels th{width:auto}
+  .media li{grid-template-columns:1fr;gap:2px}
+  .libbar{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){ .door,.goal,.tile,.start,.branch{transition:border-color .15s,transform .15s} }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div>
-      <h1><a href="#pathways">Pathways into Complexity</a></h1>
-      <p class="lede" id="lede"></p>
-    </div>
-    <div class="status" id="status" data-state="idle" role="status" aria-live="polite"><span class="dot"></span><span id="status-text">Live library not loaded</span></div>
-  </header>
-  <nav class="tabs" id="tabs" aria-label="Sections"></nav>
-  <div id="view"></div>
-  <footer>
-    <p><b>Live library.</b> Resources under “From the live library” load only when you tap Load or open the Live library tab. They come from the public resource feed of the <a class="ext" href="https://welearnwegrow.github.io/capacities/" target="_blank" rel="noopener">Systems Change Learning Guide</a> by Jaya Ramchandani and Raisa Mirza, shown unmodified with their own learning-area tags (CC BY-NC-ND 4.0). This page only reads that feed. It never sends searches, conversations, or personal details anywhere, and it keeps a copy in your browser for 72 hours so a returning visit asks nothing of their server.</p>
-    <p><b>Sources.</b> Organization media and case sources were found by web search in September 2026. Cases include their limits and reversals so they read as learning, not proof. Matches between pathways and live resources are a starting point, not an endorsement.</p>
-  </footer>
-</div>
-
+<div id="app"></div>
 <script>
 const DATA = __DATA__;
 const WORKER = DATA.about.worker;
 const CACHE_KEY = "pic-live-library-v1";
 const CACHE_MS = 72 * 60 * 60 * 1000; // 72 hours
+const TRAIL_KEY = "pathways-my-trail", SEEN_KEY = "pathways-explored", STANCE_KEY = "pathways-stance";
+const REPO = "meldfunction/complexitymaps";
 
-const P = DATA.pathways, O = DATA.orgs, C = DATA.cases;
+const P = DATA.pathways, O = DATA.orgs, C = DATA.cases, PEOPLE = DATA.people, GL = DATA.glossary, A = DATA.atlas;
 const byId = (arr, id) => arr.find(x => x.id === id);
-const clusterOf = name => DATA.clusters.find(c => c.name === name);
-const color = cname => `var(--c-${clusterOf(cname).token})`;
-const KIND_NAMES = DATA.kinds.map(k => k.name);
-
-let LIB = [], libState = "loading";
-let activeKind = "", pathQuery = "";
-
+const bySlug = s => PEOPLE.find(x => x.slug === s);
+const FAM = A.families;
+const famOf = p => p.family;
+const fc = f => `var(--${f})`, ft = f => `var(--${f}-t)`, fn = f => `var(--${f}-n)`;
+const pc = p => fc(famOf(p));
 const $ = s => document.querySelector(s);
+const store = {
+  get(k, d){ try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch { return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
 function el(tag, attrs = {}, ...kids){
-  const n = document.createElement(tag);
+  const n = tag === "svg" || attrs.svg ? document.createElementNS("http://www.w3.org/2000/svg", tag) : document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
-    if (v == null) continue;
-    if (k === "class") n.className = v; else if (k === "text") n.textContent = v; else if (k === "html") n.innerHTML = v;
+    if (v == null || v === false || k === "svg") continue;
+    if (k === "class") n.setAttribute("class", v); else if (k === "text") n.textContent = v;
     else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v);
   }
   kids.flat(Infinity).forEach(k => k != null && k !== false && n.append(k));
   return n;
 }
-// Our own curated text may contain <i> for titles; allow only that tag.
-function rich(s){ const span = el("span"); String(s).split(/(<i>.*?<\/i>)/g).forEach(part => { const m = part.match(/^<i>(.*)<\/i>$/); span.append(m ? el("i",{text:m[1]}) : part); }); return span; }
+const s = (tag, attrs = {}, ...kids) => el(tag, {...attrs, svg:true}, ...kids);
+const fill = (n, ...kids) => { n.replaceChildren(...kids.flat(Infinity).filter(k => k != null && k !== false && k !== "")); return n; };
+const strip = t => String(t || "").replace(/<[^>]+>/g, "");
+function rich(t){ const span = el("span"); String(t || "").split(/(<i>.*?<\/i>)/g).forEach(part => { const m = part.match(/^<i>(.*)<\/i>$/); span.append(m ? el("i",{text:m[1]}) : part); }); return span; }
 const safeUrl = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : null; } catch { return null; } };
 const ext = (text, url, cls) => { const u = safeUrl(url); return u ? el("a",{href:u,target:"_blank",rel:"noopener noreferrer",class:("ext " + (cls||"")).trim(),text}) : el("span",{text}); };
-const pchip = id => { const p = byId(P, id); return p ? el("a",{href:"#p-"+p.id}, el("i",{style:`background:${color(p.cluster)}`}), p.name) : null; };
+const dot = (f, size) => el("i",{class:"dot",style:`background:${fc(f)}${size?`;width:${size}px;height:${size}px`:""}`});
+const short = p => p.name.split(/[,:]/)[0];
+const famLabel = f => FAM[f].name;
+const KIND = Object.fromEntries(DATA.kinds.map(k => [k.name, k.desc]));
+const goTo = h => { location.hash = h; };
+const wikiHref = id => "#/wiki/" + id, mapHref = (id, view) => `#/map?view=${view || "universe"}&p=${id}`;
+const personHref = slug => "#/people/" + slug;
+const personByName = name => { const n = name.toLowerCase(); return PEOPLE.find(x => x.name.toLowerCase() === n); };
 
-// ---------------------------------------------------------------- live library
-function setStatus(state, text, action){
-  $("#status").dataset.state = state;
-  const t = $("#status-text"); t.textContent = text;
-  if (action) { t.append(" "); t.append(el("button",{type:"button",onclick:()=>loadLibrary(action === "Retry"),text:action})); }
+// ---------------------------------------------------------------- explored pathways and my trail (this browser only)
+const seen = () => new Set(store.get(SEEN_KEY, []));
+const markSeen = id => { const s0 = store.get(SEEN_KEY, []); if (!s0.includes(id)) store.set(SEEN_KEY, [...s0, id].slice(-200)); };
+const trail = () => store.get(TRAIL_KEY, []).filter(id => byId(P, id));
+const setTrail = t => store.set(TRAIL_KEY, t);
+
+// ---------------------------------------------------------------- relations
+function similarTo(p, n = 4){
+  return P.filter(q => q.id !== p.id).map(q => {
+    const caps = q.caps.filter(c => p.caps.includes(c));
+    const orgs = q.orgs.filter(o => p.orgs.includes(o)).length, cases = q.cases.filter(c => p.cases.includes(c)).length;
+    const edge = A.edges.some(([a, b]) => (a === p.short && b === q.short) || (b === p.short && a === q.short));
+    return {q, caps, score: (q.cluster === p.cluster ? 3 : 0) + caps.length * 1.5 + orgs * 2 + cases * 2 + (edge ? 3 : 0) + (q.family === p.family ? 1 : 0)};
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, n);
 }
+function differentFrom(p, n = 3){
+  const simIds = new Set(similarTo(p, 4).map(x => x.q.id));
+  const pool = P.filter(q => q.family !== p.family && !simIds.has(q.id)).map(q => {
+    const caps = q.caps.filter(c => p.caps.includes(c)), goals = q.goals.filter(g => p.goals.includes(g));
+    return {q, caps, goals, score: caps.length * 2 + goals.length * 2 + (q.cases.length ? .5 : 0)};
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+  const out = [], fams = new Set();
+  for (const x of pool) { if (!fams.has(x.q.family)) { out.push(x); fams.add(x.q.family); } if (out.length === n) break; }
+  return out;
+}
+const weight = p => p.cases.length + p.orgs.length;
+
+// ---------------------------------------------------------------- live library (trigger-based, read-only)
+let LIB = [], libState = "idle";
+const libListeners = new Set();
+function setLib(state, text, action){ libState = state; libStatus = {state, text, action}; libListeners.forEach(f => f()); }
+let libStatus = {state:"idle", text:"Live library loads when you ask.", action:"Load"};
 function normalize(d){
   const arr = Array.isArray(d?.resources) ? d.resources : [];
   return arr.filter(r => r && r.name).map(r => ({
@@ -208,247 +514,819 @@ function normalize(d){
 function readCache(){ try { const c = JSON.parse(localStorage.getItem(CACHE_KEY)||"null"); return c && c.t && c.data ? c : null; } catch { return null; } }
 function writeCache(d){ try { localStorage.setItem(CACHE_KEY, JSON.stringify({t:Date.now(), data:d})); } catch {} }
 const hhmm = t => new Date(t).toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"});
-// Trigger-based: nothing is requested on page load. A fresh browser copy is used if present;
-// otherwise the feed is fetched only when a visitor taps Load or opens the Live library tab.
+// Nothing is requested on page load. A fresh browser copy is used if present; otherwise the feed is fetched
+// only when a visitor taps Load or opens the Live library page.
 function bootLibrary(){
   const cached = readCache();
-  if (cached && Date.now() - cached.t < CACHE_MS) {
-    LIB = normalize(cached.data); libState = "live";
-    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`);
-  } else { libState = "idle"; setStatus("idle", "Live library loads when you ask.", "Load"); }
+  if (cached && Date.now() - cached.t < CACHE_MS) { LIB = normalize(cached.data); setLib("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`); }
+  else setLib("idle", "Live library loads when you ask.", "Load");
 }
 async function loadLibrary(force){
   if (libState === "loading") return;
   const cached = readCache();
-  if (!force && cached && Date.now() - cached.t < CACHE_MS) {
-    LIB = normalize(cached.data); libState = "live";
-    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`); return route();
-  }
-  libState = "loading"; setStatus("loading","Connecting to live library…"); route(true);
+  if (!force && cached && Date.now() - cached.t < CACHE_MS) { LIB = normalize(cached.data); setLib("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`); return route(true); }
+  setLib("loading", "Connecting to live library…"); route(true);
   const ctl = new AbortController(); const timer = setTimeout(() => ctl.abort(), 12000);
   try {
     const res = await fetch(WORKER, {method:"GET", signal:ctl.signal, headers:{Accept:"application/json"}});
     if (!res.ok) throw new Error("HTTP " + res.status);
-    const d = await res.json(); LIB = normalize(d); writeCache(d); libState = "live";
-    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(Date.now())}`);
+    const d = await res.json(); LIB = normalize(d); writeCache(d);
+    setLib("live", `Live library · ${LIB.length} resources · fetched ${hhmm(Date.now())}`);
   } catch {
-    if (cached) { LIB = normalize(cached.data); libState = "cached"; setStatus("cached", `Offline copy from ${new Date(cached.t).toLocaleString()} · ${LIB.length} resources`, true); }
-    else { LIB = []; libState = "error"; setStatus("error", "Live library unreachable from here.", true); }
+    if (cached) { LIB = normalize(cached.data); setLib("cached", `Offline copy from ${new Date(cached.t).toLocaleString()} · ${LIB.length} resources`, "Retry"); }
+    else { LIB = []; setLib("error", "Live library unreachable from here.", "Retry"); }
   } finally { clearTimeout(timer); }
-  route();
+  route(true);
 }
-function matchFor(terms, caps, type){
-  return LIB.filter(r => !type || r.types.includes(type)).map(r => {
-    const hits = terms.filter(t => r.hay.includes(t));
-    const capHits = caps.filter(c => r.caps.includes(c));
+function statusEl(){
+  const n = el("div",{class:"status",id:"status",role:"status","aria-live":"polite"});
+  const draw = () => { n.dataset.state = libStatus.state;
+    n.replaceChildren(el("i"), el("span",{id:"status-text"}, libStatus.text, libStatus.action ? [" ", el("button",{type:"button",class:"loadbtn",onclick:()=>loadLibrary(libStatus.action === "Retry"),text:libStatus.action})] : null)); };
+  draw(); libListeners.clear(); libListeners.add(draw); return n;
+}
+function matchFor(terms, caps){
+  return LIB.map(r => {
+    const hits = terms.filter(t => r.hay.includes(t)), capHits = caps.filter(c => r.caps.includes(c));
     return {r, hits, capHits, score: hits.length*4 + capHits.length + (r.featured?0.5:0)};
   }).filter(x => x.hits.length || x.capHits.length >= 2 || (x.capHits.length && caps.length === 1))
     .sort((a,b) => b.score - a.score || a.r.name.localeCompare(b.r.name));
 }
 function libCard(x){
   const r = x.r || x;
-  return el("article",{class:"r"},
+  return el("article",{class:"tile r"},
     r.featured ? el("span",{class:"star",text:"★ Editor's pick"}) : null,
     r.url ? ext(r.name, r.url, "t") : el("span",{class:"t",text:r.name}),
     el("p",{class:"clamp",text:r.desc}),
     x.hits && x.hits.length ? el("div",{class:"why",text:"Matched on: "+x.hits.slice(0,3).join(", ")}) :
       x.capHits && x.capHits.length ? el("div",{class:"why",text:"Shared learning area: "+x.capHits.join(", ")}) : null,
-    el("div",{class:"tags"}, r.types.map(t => el("span",{class:"tag",text:t})), r.caps.slice(0,3).map(c => el("span",{class:"tag cap",text:c}))));
+    el("div",{class:"meta",text:[...r.types, ...r.caps.slice(0,2)].join(" · ")}));
 }
-function liveBlock(terms, caps, limit, blurb){
-  const sec = el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"From the live library"}), el("p",{text:blurb})));
-  if (libState === "idle") return sec.appendChild(el("div",{class:"empty"},
-    el("p",{style:"margin:0 0 10px",text:"Live resources from the Systems Change Learning Guide load only when you ask, to spare the Guide's server."}),
-    el("button",{type:"button",class:"loadbtn",onclick:()=>loadLibrary(false),text:"Load live resources"}))), sec;
-  if (libState === "loading") return sec.appendChild(el("div",{class:"empty",text:"Loading live resources…"})), sec;
-  if (libState === "error") return sec.appendChild(el("div",{class:"empty",text:"The live library could not be reached. This happens inside previews that block outside requests. Host this page, for example on GitHub Pages, or open the file in a browser, then use Retry at the top."})), sec;
-  const m = matchFor(terms, caps).slice(0, limit);
-  sec.append(m.length ? el("div",{class:"grid"}, m.map(libCard)) : el("div",{class:"empty",text:"No live resources match yet. That gap shows where the Guide's library and this map diverge."}));
-  return sec;
-}
-
-// ---------------------------------------------------------------- views
-const TABS = [["pathways","Pathways"],["orgs","Organizations"],["cases","Cases"],["journeys","Journeys"],["orientations","Orientations"],["levels","Levels of focus"],["library","Live library"]];
-function renderTabs(active){
-  $("#tabs").replaceChildren(...TABS.map(([id, label]) => el("a",{href:"#"+id,"aria-current":id===active?"page":null,text:label})));
+function liveBlock(terms, caps, limit){
+  const box = el("div");
+  if (libState === "idle") box.append(el("div",{class:"empty"},
+    el("p",{style:"margin:0 0 10px",text:"Resources from the Systems Change Learning Guide load only when you ask, to spare the Guide's server."}),
+    el("button",{type:"button",class:"btn loadbtn",onclick:()=>loadLibrary(false),text:"Load live resources"})));
+  else if (libState === "loading") box.append(el("div",{class:"empty",text:"Loading live resources…"}));
+  else if (libState === "error") box.append(el("div",{class:"empty",text:"The live library could not be reached. This happens inside previews that block outside requests; the hosted page works."}));
+  else { const m = matchFor(terms, caps).slice(0, limit);
+    box.append(m.length ? el("div",{class:"grid"}, m.map(libCard)) : el("div",{class:"empty",text:"No live resources match yet. That gap shows where the Guide's library and this map diverge."})); }
+  return box;
 }
 
-function pathwayIndex(currentId){
-  const vis = P.filter(p => (!activeKind || p.kind === activeKind) &&
-    (!pathQuery || (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.policy+" "+p.terms.join(" ")).toLowerCase().includes(pathQuery)));
-  const nav = el("nav",{class:"index","aria-label":"Pathways"});
-  const pick = el("select",{id:"pick","aria-label":"Choose a pathway",onchange:e=>{location.hash="p-"+e.target.value;}});
-  DATA.clusters.forEach(c => {
-    const ps = vis.filter(p => p.cluster === c.name); if (!ps.length) return;
-    const col = `var(--c-${c.token})`;
-    nav.append(el("div",{class:"cl"}, el("h2",{style:`color:${col}`}, el("i",{style:`background:${col}`}), c.name),
-      ps.map(p => el("a",{href:"#p-"+p.id,class:"pw",style:`border-left-color:${p.id===currentId?col:"transparent"}`,"aria-current":String(p.id===currentId)},
-        el("span",{}, p.name, p.gov ? el("span",{class:"star",title:"Strong track record inside government",text:" ★"}) : null), LIB.length ? el("span",{class:"n",title:"Matched live resources",text:String(matchFor(p.terms,p.caps).length)}) : null))));
-    pick.append(el("optgroup",{label:c.name}, ps.map(p => el("option",{value:p.id,text:p.name,selected:p.id===currentId?"":null}))));
+// ---------------------------------------------------------------- page chrome
+const NAV = [["home","Home","#/"],["wiki","Wiki","#/wiki"],["path","Find my work","#/path"],["map","Map","#/map"],["about","About","#/about"]];
+function topbar(active){
+  return el("div",{class:"wrap"}, el("header",{class:"top"},
+    el("a",{class:"brand",href:"#/",text:"Pathways into Complexity"}),
+    el("nav",{class:"nav","aria-label":"Main"}, NAV.map(([id, label, href]) => el("a",{href,"aria-current":id===active?"page":null,text:label})))));
+}
+function footer(){
+  return el("footer",{class:"foot"}, el("div",{class:"wrap"},
+    el("div",{class:"row"}, el("span",{class:"label",text:"With thanks to"}),
+      el("span",{}, "The ", ext("Systems Change Learning Guide", "https://welearnwegrow.github.io/capacities/"), " by Jaya Ramchandani and Raisa Mirza"),
+      el("span",{text:"The Present of Work"}),
+      el("span",{text:"Every lineage, tradition and community named here"}),
+      el("a",{href:"#/about/acknowledgment",text:"Full acknowledgments"})),
+    el("div",{class:"row"}, statusEl(), el("a",{href:"#/library",text:"Open the live library"}), el("a",{href:"#/orgs",text:"Organizations"}), el("a",{href:"#/cases",text:"Cases"}), el("a",{href:"#/people",text:"People"}), el("a",{href:"#/contribute",text:"Suggest a change"})),
+    el("p",{}, "Live resources come from the Systems Change Learning Guide's public feed, shown unmodified and credited (CC BY-NC-ND 4.0). They load only when you ask, and a copy stays in your browser for 72 hours. Your trail, explored pathways and notes stay in this browser; nothing personal is sent anywhere."),
+    el("p",{}, "Items marked ", el("span",{class:"draft",text:"Draft"}), " were written from general knowledge and have not been checked against sources yet.")));
+}
+const page = (active, ...body) => [topbar(active), el("main",{class:"wrap",id:"main"}, body), footer()];
+
+// ---------------------------------------------------------------- search
+function searchIndex(q){
+  q = q.trim().toLowerCase(); if (!q) return [];
+  const out = [];
+  P.forEach(p => { const hay = (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.terms.join(" ")).toLowerCase();
+    if (hay.includes(q)) out.push({score:p.name.toLowerCase().includes(q)?3:p.terms.some(t=>t.includes(q))?2:1, label:p.name, kind:"Pathway", href:wikiHref(p.id), f:p.family}); });
+  PEOPLE.forEach(x => { if (x.name.toLowerCase().includes(q)) out.push({score:3, label:x.name, kind:x.kind === "person" ? "Person" : "Institution", href:personHref(x.slug)}); });
+  GL.forEach(g => { if (g.term.includes(q)) out.push({score:2, label:g.term[0].toUpperCase()+g.term.slice(1), kind:"Idea", href:"#/wiki?q="+encodeURIComponent(g.term)}); });
+  O.forEach(o => { if ((o.name+" "+o.summary).toLowerCase().includes(q)) out.push({score:1, label:o.name, kind:"Organization", href:"#/orgs/"+o.id}); });
+  return out.sort((a, b) => b.score - a.score).slice(0, 8);
+}
+function searchBox(placeholder, big){
+  const wrapEl = el("form",{class:"search",role:"search",onsubmit:e=>{ e.preventDefault(); const r = searchIndex(inp.value); if (r.length) goTo(r[0].href); else goTo("#/wiki?q="+encodeURIComponent(inp.value.trim())); }});
+  const inp = el("input",{type:"search",id:"q",placeholder,autocomplete:"off","aria-label":"Search topics, people and ideas"});
+  const res = el("div",{class:"results",hidden:""});
+  inp.addEventListener("input", () => { const r = searchIndex(inp.value);
+    res.hidden = !r.length; fill(res, ...r.map(x => el("a",{href:x.href}, x.f ? dot(x.f) : null, x.label, el("span",{class:"k",text:x.kind})))); });
+  inp.addEventListener("keydown", e => { if (e.key === "Escape") res.hidden = true; });
+  wrapEl.append(inp, el("button",{type:"submit",text:"Search"}), res);
+  if (!big) wrapEl.style.marginTop = "0";
+  return wrapEl;
+}
+
+// ---------------------------------------------------------------- home (11a)
+let browseBy = "goal";
+function viewHome(){
+  const pop = [["Cynefin","sensemaking-and-acting-in-uncertainty"],["Power analysis","power-analysis"],["Warm Data","nora-bateson-and-warm-data"],["Service design","service-design"]];
+  const doors = [
+    ["","Library","Look something up","Search or browse the wiki of pathways.","#/wiki"],
+    ["blue","Choose a path","Find the work I want to do","Answer a few choices; get a trail to follow.","#/path"],
+    ["black","Maps","See the patterns that connect","Universe, metro, lineages, gaps and a timeline.","#/map"],
+    ["","People","Follow a thinker","Lives, ideas, critiques, and who disagrees.","#/people"],
+    ["dashed","Contribute","Help improve it","Fix a fact, add a source or a person.","#/contribute"]];
+  const browse = el("div");
+  const drawBrowse = () => {
+    const L = {
+      goal:["What are you trying to do?", A.goals.map(g => [g.label, g.sub, "#/wiki?goal="+g.id])],
+      type:["What kind of thing are you looking for?", Object.entries(A.type_labels).map(([k, [n, sub]]) => [n, sub, "#/wiki?kind="+k])],
+      scale:["At what scale do you work?", Object.entries(A.scale_labels).map(([k, [n, sub]]) => [n, sub, "#/wiki?scale="+k])]}[browseBy];
+    fill(browse, 
+      el("div",{class:"browse-head"}, el("h2",{text:L[0]}),
+        el("div",{class:"seg",role:"group","aria-label":"Browse by"}, [["goal","By goal"],["type","By type"],["scale","By scale"]].map(([k, n]) =>
+          el("button",{type:"button","aria-pressed":String(browseBy===k),onclick:()=>{ browseBy = k; drawBrowse(); },text:n})))),
+      el("div",{class:"goals"}, L[1].map(([n, sub, href]) => el("a",{class:"goal",href}, el("b",{text:n}), el("span",{text:sub})))));
+  };
+  drawBrowse();
+  const feat = byId(P, "sensemaking-and-acting-in-uncertainty");
+  const also = ["indigenous-and-land-based-knowledge","power-analysis","service-design","cybernetics-the-shared-foundation"].map(id => byId(P, id));
+  return [topbar("home"), el("main",{id:"main"},
+    el("div",{class:"wrap"},
+      el("section",{class:"hero"},
+        el("div",{}, el("span",{class:"label",text:"The problem"}),
+          el("h1",{text:"The problems we care about most don't come with a plan."}),
+          el("p",{class:"lede",text:"Care, housing, climate, health. They have no single owner and no single cause, and fixing one part moves another. The ideas that help are spread across dozens of fields, each with its own jargon, and most people never find them."}),
+          searchBox("Search a topic, person or idea", true),
+          el("div",{class:"popular"}, "Popular:", pop.map(([n, id]) => el("a",{class:"pill",href:wikiHref(id),text:n})))),
+        el("div",{class:"photo",role:"img","aria-label":"Photo slot: people working something out together, in a real place"},
+          s("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":"1.5"}, s("rect",{x:"3",y:"4",width:"18",height:"16",rx:"2"}), s("circle",{cx:"9",cy:"10",r:"2"}), s("path",{d:"M21 17l-5-5-9 8"})),
+          el("span",{text:"Photo: people working something out together, in a real place"}))),
+      el("section",{class:"sec"}, el("h2",{text:"Where do you want to start?"}),
+        el("nav",{class:"doors","aria-label":"Where to start"}, doors.map(([cls, lab, t, sub, href]) => el("a",{class:"door "+cls,href}, el("span",{class:"label",text:lab}), el("b",{text:t}), el("span",{text:sub}))))),
+      el("section",{class:"sec"}, browse),
+      el("section",{class:"sec"}, el("h2",{text:"Complexity is all around us. People just describe it differently."}),
+        el("div",{class:"lenses"}, A.branches.map(([id, name]) => el("div",{class:"lens"}, el("span",{class:"label",text:name}), el("i",{text:A.area_lens[id]})))))),
+    el("section",{class:"mission"}, el("div",{class:"wrap"}, el("span",{class:"label",text:"Our mission"}),
+      el("p",{text:"To make the ideas and practices for complex work easy to find, understand and use, for anyone, whatever work they do."}))),
+    el("div",{class:"wrap"},
+      el("section",{class:"sec ctas"},
+        el("a",{class:"cta",href:"#/wiki"}, el("span",{class:"label",text:"Look something up"}), el("h3",{text:"Browse the wiki"}),
+          el("p",{text:`${P.length} topics, each with what it is, where it came from, who uses it and how to try it.`}), el("b",{text:"Open the wiki →"})),
+        el("a",{class:"cta blue",href:"#/path"}, el("span",{class:"label",text:"For you"}), el("h3",{text:"Find the work I want to do"}),
+          el("p",{text:"Pick the work that draws you. We'll show what to learn, and the roles, sectors and groups where that work happens."}), el("b",{text:"Start →"}))),
+      el("section",{class:"sec featured"},
+        el("div",{}, el("span",{class:"label",style:"color:var(--sci)",text:"Featured topic"}), el("h3",{text:feat.name}),
+          el("p",{style:"max-width:52ch",text:(feat.plain_overview || strip(feat.overview)) + " Shaped by W. Ross Ashby, Karl Weick, Dave Snowden and Glenda Eoyang, and used by governments to prepare for shocks."}),
+          el("p",{style:"margin-top:12px"}, el("a",{href:wikiHref(feat.id),style:"font-weight:700;color:var(--ink)",text:"Read the article →"}))),
+        el("div",{class:"also"}, el("span",{class:"label",text:"Also in the wiki"}), also.map(p => el("a",{href:wikiHref(p.id)}, dot(p.family), p.name)))))),
+    footer()];
+}
+
+// ---------------------------------------------------------------- wiki index
+function viewWikiIndex(params){
+  const goal = params.get("goal"), kind = params.get("kind"), scale = params.get("scale");
+  let q = (params.get("q") || "").toLowerCase();
+  const head = goal ? A.goals.find(g => g.id === goal)?.label : kind ? A.type_labels[kind]?.[0] : scale ? A.scale_labels[scale]?.[0] : null;
+  const list = el("div");
+  const draw = () => {
+    const vis = P.filter(p => (!goal || p.goals.includes(goal)) && (!kind || p.kind === kind) && (!scale || p.scales.includes(scale)) &&
+      (!q || (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.terms.join(" ")).toLowerCase().includes(q)));
+    const sn = seen();
+    fill(list, vis.length ? el("div",{class:"idx"}, DATA.clusters.map(c => { const ps = vis.filter(p => p.cluster === c.name); if (!ps.length) return null;
+      return el("div",{class:"cl"}, el("h3",{style:`color:${fc(ps[0].family)}`}, dot(ps[0].family), c.name),
+        ps.map(p => el("a",{href:wikiHref(p.id)}, p.name, el("small",{text:p.kind + (sn.has(p.id) ? " · read" : "")})))); }))
+      : el("div",{class:"empty",text:"Nothing matches. Try a broader word."}));
+  };
+  const inp = el("input",{type:"search",id:"pq",value:params.get("q")||"",placeholder:"Filter the wiki: power, grief, procurement, Freire…",autocomplete:"off","aria-label":"Filter the wiki"});
+  inp.addEventListener("input", () => { q = inp.value.trim().toLowerCase(); draw(); });
+  draw();
+  const chip = (label, href, on) => el("a",{class:"pill",href,"aria-pressed":String(!!on),text:label});
+  return page("wiki",
+    el("span",{class:"label",text:"Library"}), el("h1",{style:"font-size:44px;margin:6px 0 4px",text:head ? head : "The wiki"}),
+    el("p",{class:"sub",style:"margin:6px 0 14px",text:head ? "Pathways tagged for this (draft tags, under review)." : `${P.length} pathways in ${DATA.clusters.length} areas. Each article says what it is, where it came from, who uses it and how to try it.`}),
+    el("form",{class:"search",onsubmit:e=>e.preventDefault()}, inp),
+    el("div",{class:"idx-filters"}, chip("All", "#/wiki", !goal && !kind && !scale),
+      A.goals.map(g => chip(g.label, "#/wiki?goal="+g.id, goal === g.id))),
+    el("div",{class:"key",style:"display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 0 18px"}, Object.entries(FAM).map(([k, f]) => el("div",{}, dot(k), f.name))),
+    list);
+}
+
+// ---------------------------------------------------------------- wiki article (10a)
+let openTerm = null, openStop = null;
+function localMap(p){
+  const sim = similarTo(p, 4), diff = differentFrom(p, 3);
+  const W = 360, H = 320, cx = 180, cy = 160;
+  const place = (list, a0, a1) => list.map((x, i) => { const a = (list.length === 1 ? (a0 + a1) / 2 : a0 + (a1 - a0) * i / (list.length - 1)) * Math.PI / 180;
+    return {x: cx + 118 * Math.cos(a), y: cy + 112 * Math.sin(a), q: x.q}; });
+  const sp = place(sim, -62, 62), dp = place(diff, 130, 230);
+  const svg = s("svg",{viewBox:`0 0 ${W} ${H}`,"aria-hidden":"true"},
+    sp.map(n => s("line",{x1:cx,y1:cy,x2:n.x,y2:n.y,stroke:"currentColor","stroke-width":"1.2"})),
+    dp.map(n => s("line",{x1:cx,y1:cy,x2:n.x,y2:n.y,stroke:"currentColor","stroke-opacity":".45","stroke-width":"1.2","stroke-dasharray":"4 4"})));
+  const node = (x, y, q, d, center) => {
+    const up = y < cy; const half = d / 2;
+    return el(center ? "span" : "a",{class:"node",href:center ? null : wikiHref(q.id),style:`left:${x / W * 100}%;top:${y / H * 100}%;flex-direction:${up ? "column-reverse" : "column"};transform:translate(-50%,${up ? `calc(-100% + ${half}px)` : `-${half}px`})${center ? ";font-weight:700;font-size:12.5px" : ""}`},
+      el("i",{style:`width:${d}px;height:${d}px;border-color:${pc(q)};background:${center ? pc(q) : "var(--card)"}${center ? `;box-shadow:0 0 0 6px ${ft(q.family)}` : ""}`}),
+      el("span",{text:short(q)}));
+  };
+  return el("div",{},
+    el("div",{style:"display:flex;justify-content:space-between",class:"label"}, el("span",{text:"Different ←"}), el("span",{text:"→ Similar"})),
+    el("div",{class:"localmap",style:"color:var(--ink)"}, svg, sp.map(n => node(n.x, n.y, n.q, 14)), dp.map(n => node(n.x, n.y, n.q, 14)), node(cx, cy, p, 26, true)),
+    el("div",{class:"card key"}, el("span",{class:"label",text:"Key"}),
+      Object.entries(FAM).map(([k, f]) => el("div",{}, dot(k), f.name)),
+      el("div",{}, el("span",{class:"ln"}), "Similar approach"), el("div",{}, el("span",{class:"ln d"}), "Different philosophy"),
+      el("div",{}, el("span",{text:"↗",style:"width:18px;text-align:center"}), "Opens another website"),
+      el("div",{}, el("span",{class:"badge dash",style:"padding:2px 6px",text:" "}), "Not written yet"),
+      el("div",{}, el("span",{class:"mono",style:"width:18px;text-decoration:underline;font-size:11px",text:"Aa"}), "Click for more"),
+      el("div",{}, el("span",{class:"draft",text:"Draft"}), "Not yet checked against sources")));
+}
+function viewArticle(id){
+  const p = byId(P, id); if (!p) return viewWikiIndex(new URLSearchParams());
+  markSeen(p.id);
+  const fam = p.family, col = fc(fam);
+  const peopleNames = p.stops.flatMap(s0 => [s0.name.toLowerCase(), ...s0.people.map(n => n.toLowerCase())]);
+  const glossary = Object.fromEntries(GL.map(g => [g.term, g.defn]));
+  const seenT = new Set();
+  const terms = p.terms.filter(t => glossary[t] || !peopleNames.some(n => n.includes(t))).filter(t => { const k = t.replace(/-/g, ""); if (seenT.has(k)) return false; seenT.add(k); return true; })
+    .sort((a, b) => (glossary[b] ? 1 : 0) - (glossary[a] ? 1 : 0)).slice(0, 8);
+  const termsBox = el("div");
+  const drawTerms = () => fill(termsBox, 
+    el("div",{class:"terms"}, terms.map(t => el("button",{type:"button",class:"pill","aria-pressed":String(openTerm===t),onclick:()=>{ openTerm = openTerm === t ? null : t; drawTerms(); },text:t[0].toUpperCase()+t.slice(1)}))),
+    openTerm && terms.includes(openTerm) ? el("div",{class:"def"}, el("b",{text:openTerm[0].toUpperCase()+openTerm.slice(1)+". "}),
+      glossary[openTerm] ? glossary[openTerm] : el("span",{class:"draft",text:"Definition still to write."}), glossary[openTerm] ? el("span",{class:"draft",text:" Draft"}) : null) : null);
+  drawTerms();
+  const road = el("div");
+  const drawRoad = () => fill(road, el("ol",{class:"road"}, p.stops.map((st, i) => {
+    const person = st.people.length === 1 ? personByName(st.people[0]) : null;
+    const others = st.people.map(personByName).filter(Boolean).flatMap(x => x.appears).filter((v, j, a) => v !== p.id && a.indexOf(v) === j);
+    return el("li",{},
+      person && person.profile ? el("a",{class:"who",href:personHref(person.slug),text:st.name})
+        : el("button",{type:"button",class:"who","aria-expanded":String(openStop===i),onclick:()=>{ openStop = openStop === i ? null : i; drawRoad(); },text:st.name}),
+      st.note && !(st.years && /^\u2020/.test(st.note)) ? el("span",{class:"n",text:strip(st.note)}) : null,
+      st.years ? el("span",{class:"y",text:st.years}) : null,
+      openStop === i ? el("div",{class:"pop"},
+        st.people.length ? st.people.map(n => { const x = personByName(n); return el("div",{}, el("a",{href:personHref(x.slug),text:x.name}), " · ", x.years, " ",
+          el("span",{class:x.status === "checked" ? "why" : "draft",text:x.status === "checked" ? "dates checked" : "dates draft"})); })
+          : el("span",{class:"draft",text:"No profile or dates yet. "}),
+        others.length ? el("div",{style:"margin-top:6px"}, el("span",{class:"label",text:`Also appears in ${others.length} other pathway${others.length>1?"s":""}: `}),
+          others.slice(0, 6).map((oid, j) => [j ? ", " : "", el("a",{href:wikiHref(oid),text:short(byId(P, oid))})])) : null) : null);
+  })));
+  drawRoad();
+  const orgs = p.orgs.map(o => byId(O, o));
+  const cases = p.cases.map(c => byId(C, c));
+  const sim = similarTo(p, 4), diff = differentFrom(p, 3);
+  const otherSectors = [["biz","Business"],["ngo","Nonprofits"],["health","Health"],["edu","Education"],["com","Community groups"]];
+  const toc = [["what","What it is"],["came","Where it came from"],["uses","Who uses it"],["how","How to use it"],["similar","Similar approaches"],["different","Entirely different"],["live","From the live library"]];
+  const inTrail = trail().includes(p.id);
+  const relational = /Relational|Indigenous/.test(p.cluster);
+  return [topbar("wiki"), el("main",{id:"main",class:"wrap"},
+    el("div",{style:"display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding-bottom:14px"},
+      el("div",{style:"flex:1;max-width:460px;min-width:0"}, searchBox("Search pathways, people, ideas…")),
+      el("div",{class:"label"}, "Your path ", el("b",{style:"color:var(--ink);font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px",text:trail().length ? short(byId(P, trail().slice(-1)[0])) : "not started"}))),
+    el("div",{class:"wiki"},
+      el("aside",{class:"toc"}, el("span",{class:"label",text:"On this page"}), toc.map(([id, n]) => el("a",{href:"#",onclick:e=>{ e.preventDefault(); document.getElementById("s-"+id)?.scrollIntoView({behavior:"smooth"}); },text:n}))),
+      el("article",{class:"art"},
+        el("span",{class:"label",style:`color:${col}`,text:p.cluster}),
+        el("h1",{class:"art-title",text:p.name}),
+        el("div",{style:"display:flex;gap:6px;flex-wrap:wrap"}, el("span",{class:"badge",title:KIND[p.kind],text:p.kind}), p.gov ? el("span",{class:"badge dash",text:"Used in government"}) : null),
+        relational ? el("p",{class:"why",style:"margin-top:10px"}, "This area draws on Indigenous and relational knowledge. ", el("a",{href:"#/about/acknowledgment",text:"How we handle that"})) : null,
+        el("p",{class:"art-ov"}, rich(p.plain_overview || p.overview)),
+        el("h2",{id:"s-what",text:"What it is"}),
+        el("div",{class:"body"}, p.explainer.length ? [p.explainer.map(t => el("p",{text:t})), el("p",{class:"draft",text:"Draft · check against sources"})]
+          : [el("p",{}, rich(p.overview)), el("div",{class:"placeholder",text:"A fuller plain-English explainer is still to write (new field: explainer)."})]),
+        terms.length ? [el("div",{class:"label",style:"margin-top:8px",text:"Key ideas · click one for a definition"}), termsBox] : null,
+        el("div",{class:"lensbox"}, el("div",{class:"h"}, el("h3",{text:"How this tradition sees complexity"}),
+          el("span",{class:p.lens_status === "draft" ? "draft" : "why",text:p.lens_status === "draft" ? "Draft · check against sources" : "Area-level view · a specific one still to write"})),
+          el("p",{text:p.lens})),
+        el("h2",{id:"s-came",text:"Where it came from"}), el("p",{class:"sub",text:"Click a name to see who they are and where else they appear."}), road,
+        p.mix ? el("p",{style:"margin-top:12px;max-width:62ch"}, el("b",{text:"Also shaped by: "}), rich(p.mix)) : null,
+        el("h2",{id:"s-uses",text:"Who uses it"}),
+        p.policy ? el("div",{class:"gov"}, el("div",{class:"label",text:"In government and policy"}), el("p",{}, rich(p.plain_policy || p.policy))) : null,
+        el("div",{class:"sectors"}, el("span",{class:"label",text:"Other sectors"}), otherSectors.map(([k, n]) => el("span",{class:"badge dash",title:"Still to write (new field: sectors)",text:n}))),
+        orgs.length ? el("div",{class:"grid",style:"grid-template-columns:repeat(auto-fill,minmax(220px,1fr))"}, orgs.map(o => el("a",{class:"tile",href:"#/orgs/"+o.id}, el("span",{class:"t",text:o.name}), el("p",{class:"clamp",text:o.summary})))) : null,
+        cases.length ? cases.map(c => el("a",{class:"casebox",href:"#/cases/"+c.id}, el("span",{class:"label",text:`Case · ${c.place} · ${c.years}`}), el("h4",{text:c.title}), el("p",{text:c.lesson}),
+          c.note ? el("p",{style:"margin-top:6px;color:var(--muted)"}, el("b",{text:"Limits: "}), c.note) : null))
+          : el("div",{class:"placeholder",text:"No documented case yet. Know one? Suggest it below."}),
+        el("h2",{id:"s-how",text:"How to use it"}),
+        el("div",{class:"terms"}, p.links.map(l => ext(l.t, l.u, "pill")), p.reading.map(m => ext(m.title, m.u, "pill"))),
+        el("div",{class:"placeholder",text:"Step-by-step practice goes here · new field: practice"}),
+        el("div",{style:"display:flex;gap:8px;flex-wrap:wrap;margin-top:16px"},
+          el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); setTrail(inTrail ? t.filter(x => x !== p.id) : [...t, p.id]); route(true); },text:inTrail ? "✓ On my trail" : "+ Add to my trail"}),
+          el("a",{class:"btn ghost",href:mapHref(p.id, "tree"),text:"See its lineage on the map"})),
+        el("h2",{id:"s-similar",text:"Similar approaches"}),
+        el("div",{class:"sim"}, sim.map(x => el("a",{class:"tile",href:wikiHref(x.q.id)}, el("span",{class:"t"}, dot(x.q.family), " ", x.q.name), el("p",{class:"clamp",text:x.q.plain_overview || strip(x.q.overview)}),
+          el("span",{class:"why",text:x.q.cluster === p.cluster ? "Same area" + (x.caps.length ? " · " + x.caps[0] : "") : x.caps.length ? "Shares: " + x.caps[0] : "Shared organizations or cases"})))),
+        el("h2",{id:"s-different",text:"Entirely different approaches"}), el("p",{class:"sub",text:"They care about the same things but start from a different philosophy."}),
+        el("div",{class:"diff"}, diff.map(x => el("a",{class:"tile",href:wikiHref(x.q.id),style:`border-color:${fc(x.q.family)}`}, el("span",{class:"t",text:x.q.name}), el("p",{class:"clamp",text:x.q.plain_overview || strip(x.q.overview)}),
+          el("span",{class:"why",style:`color:${fc(x.q.family)}`,text:(x.caps.length ? "Also about " + x.caps[0].toLowerCase() + ", " : "") + "from " + famLabel(x.q.family).toLowerCase()})))),
+        el("h2",{id:"s-live",text:"From the live library"}), liveBlock(p.terms, p.caps, 6),
+        el("p",{style:"margin-top:28px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(p.name),text:"Suggest a change to this article"}))),
+      el("aside",{class:"side"}, localMap(p)))),
+    footer()];
+}
+
+// ---------------------------------------------------------------- find my work (11b)
+function scorePathways(tr){
+  const [, , kinds, scales] = tr;
+  return P.map(p => ({p, sc: p.work_kinds.filter(k => kinds.includes(k)).length * 2 + p.scales.filter(x => scales.includes(x)).length}))
+    .filter(x => x.p.work_kinds.some(k => kinds.includes(k)))
+    .sort((a, b) => b.sc - a.sc || weight(b.p) - weight(a.p)).map(x => x.p);
+}
+function viewPath(params){
+  const st = params.get("start"), area = params.get("area"), tradeId = params.get("trade"), pid = params.get("p");
+  const PROMPTS = {interest:["Which area interests you?","Which is closest?","Pick where to start learning.","Here's where this shows up in work."],
+    now:["Which area is your work in now?","Which is closest to what you do?","Pick where to start learning.","Here's where your work connects."],
+    want:["What kind of work do you want to do?","Which is closest?","Pick where to start learning.","Here's where that work happens."]};
+  const STARTS = [["interest","Something I'm curious about","Follow an interest. No job needed."],["now","The work I do now","Paid or unpaid. Find what helps you do it better."],["want","Work I want to do","See what to learn and where that work happens."]];
+  const branch = A.branches.find(b => b[0] === area), tr = A.trades.find(t => t[0] === tradeId), p = pid ? byId(P, pid) : null;
+  const step = !st ? 0 : !branch ? 1 : !tr ? 2 : !p ? 3 : 4;
+  const q = (o) => { const u = new URLSearchParams(); Object.entries(o).forEach(([k, v]) => v && u.set(k, v)); return "#/path?" + u; };
+  const crumbs = [st && [STARTS.find(x => x[0] === st)[1], q({})], branch && [branch[1], q({start:st})], tr && [tr[1], q({start:st, area})], p && [short(p), q({start:st, area, trade:tradeId})]].filter(Boolean);
+  const startLabel = st ? {interest:"Curious about",now:"Work I do",want:"Work I want"}[st] : "";
+  const addOwn = (kind) => {
+    const box = el("div",{class:"addbox",hidden:""});
+    const inp = el("input",{type:"search",placeholder:kind === "trade" ? "Describe your work in a few words" : "Describe what you're curious about",autocomplete:"off","aria-label":"Describe it"});
+    const out = el("div",{style:"display:grid;gap:6px"});
+    inp.addEventListener("input", () => {
+      const w = inp.value.toLowerCase().split(/\W+/).filter(x => x.length > 2);
+      if (!w.length) return fill(out);
+      const trades = A.trades.map(t => ({t, sc: w.filter(x => (t[1] + " " + (A.roles[t[0]] || []).join(" ")).toLowerCase().includes(x)).length})).filter(x => x.sc).sort((a, b) => b.sc - a.sc).slice(0, 4);
+      const paths = P.map(pp => ({pp, sc: w.filter(x => (pp.name + " " + pp.terms.join(" ") + " " + strip(pp.overview)).toLowerCase().includes(x)).length})).filter(x => x.sc).sort((a, b) => b.sc - a.sc).slice(0, 4);
+      fill(out, 
+        trades.length ? [el("span",{class:"label",text:"Closest kinds of work"}), trades.map(x => el("a",{class:"opt",href:q({start:st||"now", area:A.branches.find(b => b[2].includes(x.t[0]))[0], trade:x.t[0]})}, el("b",{text:x.t[1]}), el("span",{text:(A.roles[x.t[0]] || []).join(" · ")})))] : null,
+        paths.length ? [el("span",{class:"label",text:"Or go straight to a pathway"}), paths.map(x => el("a",{class:"opt",href:wikiHref(x.pp.id)}, el("b",{text:x.pp.name}), el("span",{text:x.pp.plain_overview || strip(x.pp.overview).slice(0, 110)})))] : null,
+        !trades.length && !paths.length ? el("p",{class:"sub",style:"margin:0",text:"Nothing close yet. Try other words, or browse the list above."}) : null);
+    });
+    box.append(el("span",{class:"label",text:"Matched by keywords in this browser. Nothing you type is sent anywhere."}), inp, out);
+    return [el("button",{type:"button",class:"branch add",onclick:()=>{ box.hidden = !box.hidden; if (!box.hidden) inp.focus(); }}, el("b",{text:"+ Add your own"})), box];
+  };
+  let body;
+  if (step === 0) body = [el("h1",{class:"qh",text:"Where do you want to start?"}),
+    el("div",{class:"starts"}, STARTS.map(([k, n, sub]) => el("a",{class:"start",href:q({start:k})}, el("b",{text:n}), el("span",{text:sub}))))];
+  else if (step === 1) body = [el("h1",{class:"qh",text:PROMPTS[st][0]}),
+    el("div",{class:"branchwrap"}, el("div",{class:"root"}, el("span",{class:"label",text:"Starting from"}), el("b",{text:startLabel})),
+      el("div",{class:"branches"}, A.branches.map(([id, name, trades]) => el("a",{class:"branch",href:q({start:st, area:id})},
+        el("b",{}, el("i",{class:"dot",style:"background:var(--muted)"}), name),
+        el("div",{class:"m",text:trades.map(t => A.trades.find(x => x[0] === t)[1]).join(" · ")}), el("i",{text:A.area_lens[id]}))), addOwn("trade")))];
+  else if (step === 2) body = [el("h1",{class:"qh",text:PROMPTS[st][1]}),
+    el("div",{class:"branchwrap"}, el("div",{class:"root"}, el("span",{class:"label",text:startLabel}), el("b",{text:branch[1]})),
+      el("div",{class:"branches"}, branch[2].map(t => A.trades.find(x => x[0] === t)).map(t => el("a",{class:"branch",href:q({start:st, area, trade:t[0]})},
+        el("b",{text:t[1]}), el("div",{class:"m",text:(A.roles[t[0]] || []).join(" · ")}), el("i",{text:"A first small step: " + t[4]}))), addOwn("trade")))];
+  else if (step === 3) { const ps = scorePathways(tr).slice(0, 5);
+    body = [el("h1",{class:"qh",text:PROMPTS[st][2]}), el("p",{class:"sub",style:"margin-top:-14px",text:"Suggested from draft tags for this kind of work. Pick one to start; you can add the rest to your trail later."}),
+      el("div",{class:"branchwrap"}, el("div",{class:"root"}, el("span",{class:"label",text:branch[1]}), el("b",{text:tr[1]})),
+        el("div",{class:"branches"}, ps.map(pp => el("a",{class:"branch",href:q({start:st, area, trade:tradeId, p:pp.id})},
+          el("b",{}, dot(pp.family), pp.name), el("div",{class:"m",text:pp.kind + " · " + famLabel(pp.family)}), el("i",{text:pp.plain_overview || strip(pp.overview)})))))]; }
+  else { const roles = A.roles[tradeId] || [];
+    const inds = A.industries.filter(([, , sec]) => sec.some(x => p.sectors.includes(x)));
+    const orgs = p.orgs.map(o => byId(O, o));
+    const rest = scorePathways(tr).filter(x => x.id !== p.id).slice(0, 4);
+    body = [el("h1",{class:"qh",text:PROMPTS[st][3]}),
+      el("div",{class:"card",style:"padding:20px 22px;margin-bottom:16px;border-left:4px solid "+pc(p)},
+        el("span",{class:"label",text:"Start learning with"}), el("h2",{style:"font-size:30px;margin:4px 0 6px",text:p.name}),
+        el("p",{style:"max-width:60ch",text:p.plain_overview || strip(p.overview)}),
+        el("p",{style:"margin-top:8px;font:italic 15px var(--serif)",text:"A first small step: " + tr[4]}),
+        el("div",{style:"display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"},
+          el("a",{class:"btn",href:wikiHref(p.id),text:"Read the article"}),
+          el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); const add = [p.id, ...rest.slice(0, 2).map(x => x.id)].filter(x => !t.includes(x)); setTrail([...t, ...add]); goTo(mapHref(p.id, "mine")); },text:"Make it my trail"}))),
+      el("div",{class:"where"},
+        el("div",{class:"card"}, el("h3",{text:"Roles"}), el("p",{class:"sub",style:"margin:0 0 6px",text:"Paid and unpaid examples (draft)"}), el("ul",{}, roles.map(r => el("li",{text:r})))),
+        el("div",{class:"card"}, el("h3",{text:"Sectors"}), el("ul",{}, inds.length ? inds.map(i => el("li",{text:i[1]})) : el("li",{text:"No single place"}))),
+        el("div",{class:"card"}, el("h3",{text:"Groups to get involved with"}), orgs.length ? el("ul",{}, orgs.map(o => el("li",{}, el("a",{href:"#/orgs/"+o.id,text:o.name})))) : el("p",{class:"sub",text:"None profiled yet."}))),
+      rest.length ? el("section",{class:"sec"}, el("h2",{style:"font-size:24px",text:"Also worth learning"}),
+        el("div",{class:"grid"}, rest.map(x => el("a",{class:"tile",href:q({start:st, area, trade:tradeId, p:x.id})}, el("span",{class:"t"}, dot(x.family), " ", x.name), el("p",{class:"clamp",text:x.plain_overview || strip(x.overview)}))))) : null]; }
+  return page("path",
+    el("div",{class:"steps"}, el("span",{class:"label",text:"Find my work"}), el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:`Step ${step + 1} of 5`})),
+    crumbs.length ? el("nav",{class:"crumbs","aria-label":"Your choices"}, crumbs.map(([n, h]) => el("a",{href:h,title:"Change this choice",text:n}))) : null,
+    body);
+}
+
+// ---------------------------------------------------------------- map hub (15a)
+const VIEWS = [["universe","Universe"],["metro","Metro"],["tree","Tree"],["treemap","Treemap"],["mine","My trail"],["time","Timeline"]];
+const NOTES = {universe:"Every pathway, grouped by area. Click to zoom.", metro:"Known trails as lines; shared stops are interchanges.", tree:"One pathway's lineage and where its people reappear.",
+  treemap:"How much content each pathway has, and the gaps.", mine:"Your own trail, and where it meets others.", time:"Who came when. Click a name for the profile."};
+const clusterPos = (() => { const n = DATA.clusters.length; return DATA.clusters.map((c, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / n; return {c, x: 500 + 400 * Math.cos(a), y: 305 + 235 * Math.sin(a)}; }); })();
+function starPos(p, zoom){
+  const cp = clusterPos.find(x => x.c.name === p.cluster); const ps = P.filter(q => q.cluster === p.cluster); const i = ps.indexOf(p), n = ps.length;
+  if (zoom) { const a = -Math.PI / 2 + i * 2 * Math.PI / Math.max(n, 1); return n === 1 ? {x:500, y:300} : {x: 500 + 260 * Math.cos(a), y: 300 + 200 * Math.sin(a)}; }
+  if (n === 1) return {x: cp.x, y: cp.y};
+  const r = 16 + n * 3.4, a = -Math.PI / 2 + i * 2 * Math.PI / n; return {x: cp.x + r * Math.cos(a), y: cp.y + r * 0.85 * Math.sin(a)};
+}
+const pct = (x, y) => `left:${x / 10}%;top:${y / 6.2}%`;
+function sidePanel(p, view){
+  if (!p) return el("div",{class:"panel"}, el("span",{class:"label",text:"Nothing selected"}), el("p",{text:"Click a star or a stop to see what it is."}));
+  const inT = trail().includes(p.id);
+  return el("div",{class:"panel"},
+    el("span",{class:"label",style:`color:${fn(p.family)}`,text:p.cluster}), el("h3",{text:p.name}),
+    el("p",{text:p.plain_overview || strip(p.overview)}),
+    el("p",{class:"mono",style:"font-size:11.5px;margin-top:8px",text:`${p.kind} · ${p.cases.length} case${p.cases.length===1?"":"s"} · ${p.orgs.length} group${p.orgs.length===1?"":"s"}`}),
+    el("div",{class:"acts"}, el("a",{class:"btn",href:wikiHref(p.id),text:"Article"}),
+      view !== "tree" ? el("a",{class:"btn ghost",href:mapHref(p.id, "tree"),text:"Lineage"}) : null,
+      el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); setTrail(inT ? t.filter(x => x !== p.id) : [...t, p.id]); route(true); },text:inT ? "✓ On my trail" : "+ My trail"})));
+}
+function mapUniverse(p, params){
+  const zoom = params.get("zoom"), sn = seen();
+  const lines = s("svg",{viewBox:"0 0 1000 620","aria-hidden":"true"});
+  const stage = el("div",{class:"stage"}, lines);
+  const frame = el("div",{class:"scrollx"}, stage);
+  const href = (o) => { const u = new URLSearchParams(params); Object.entries(o).forEach(([k, v]) => v == null ? u.delete(k) : u.set(k, v)); return "#/map?" + u; };
+  if (!zoom) {
+    lines.append(s("defs",{}, Object.keys(FAM).map(f => s("radialGradient",{id:"g-"+f}, s("stop",{offset:"0","stop-color":`var(--${f}-n)`,"stop-opacity":".16"}), s("stop",{offset:"1","stop-color":`var(--${f}-n)`,"stop-opacity":"0"})))));
+    clusterPos.forEach(({c, x, y}) => { const f = P.find(q => q.cluster === c.name).family;
+      lines.append(s("circle",{cx:x,cy:y,r:78,fill:`url(#g-${f})`}));
+      stage.append(el("a",{class:"gal",href:href({zoom:c.token}),"aria-label":"Zoom into "+c.name,style:`${pct(x, y)};width:15%;aspect-ratio:1`}),
+        el("span",{class:"lab",style:`${pct(x, y + 62)};color:${fn(f)}`,text:c.name})); });
+  } else {
+    const c = DATA.clusters.find(x => x.token === zoom); const f = P.find(q => q.cluster === c.name).family;
+    lines.append(s("circle",{cx:500,cy:300,r:300,fill:fn(f),"fill-opacity":".05"}));
+    stage.append(el("span",{class:"lab",style:`${pct(500, 30)};color:${fn(f)};font-size:12px`,text:c.name}));
+    P.filter(q => q.cluster === c.name).forEach(q => { const a = starPos(q, true), b = P.filter(r => r.cluster === c.name);
+      b.forEach(r => { if (A.edges.some(([x, y]) => (x === q.short && y === r.short))) { const bp = starPos(r, true); lines.append(s("line",{x1:a.x,y1:a.y,x2:bp.x,y2:bp.y,stroke:fn(f),"stroke-opacity":".35"})); } }); });
+  }
+  P.filter(q => !zoom || DATA.clusters.find(x => x.token === zoom).name === q.cluster).forEach(q => {
+    const {x, y} = starPos(q, !!zoom); const r = (zoom ? 7 : 3.2) + Math.min(weight(q), 6) * (zoom ? 1.4 : .7);
+    const lit = sn.has(q.id) || trail().includes(q.id) || q.id === p?.id;
+    lines.append(s("circle",{cx:x,cy:y,r,fill:fn(q.family),"fill-opacity":lit ? 1 : .55}));
+    if (q.id === p?.id) lines.append(s("circle",{cx:x,cy:y,r:r + 5,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.6"}));
+    stage.append(el("a",{class:"hit",href:href({p:q.id}),"aria-label":q.name,title:q.name,style:`${pct(x, y)};width:${Math.max(r * 2 + 10, 22) / 10}%;aspect-ratio:1`}));
+    if (zoom || q.id === p?.id) { const up = y < 300;
+      stage.append(el("span",{class:"slab",style:`${pct(x, y)};transform:translate(-50%,${up ? "calc(-100% - " + (r + 6) + "px)" : (r + 6) + "px"});text-align:center;white-space:normal;width:140px`,text:zoom ? q.name : q.name})); }
   });
-  if (!vis.length) nav.append(el("div",{class:"empty",text:"No pathways match."}));
-  return {nav, pick};
+  return {main:[zoom ? el("p",{style:"margin:0 0 8px"}, el("a",{href:href({zoom:null}),text:"← All areas"})) : null, frame,
+    el("div",{class:"mapfoot"}, el("span",{text:p ? "You are here: " + p.name : "Click an area to zoom in"}), el("span",{text:"Bright stars = explored or on your trail · bigger stars = more cases and groups"}),
+      Object.entries(FAM).map(([k, f]) => el("span",{}, el("i",{class:"dot",style:`background:${fn(k)};margin-right:6px`}), f.name)))], side:sidePanel(p, "universe")};
 }
-function pathwayControls(){
-  const q = el("input",{type:"search",id:"pq",placeholder:"Filter pathways: power, grief, procurement, Freire…",value:pathQuery,autocomplete:"off"});
-  q.addEventListener("input", () => { pathQuery = q.value.trim().toLowerCase(); route(true); });
-  const chips = el("div",{class:"chips",role:"group","aria-label":"Filter by kind of path"},
-    ["", ...KIND_NAMES].map(k => { const n = P.filter(p => !k || p.kind === k).length;
-      return el("button",{type:"button",class:"chip","aria-pressed":String(activeKind===k),title:k?DATA.kinds.find(x=>x.name===k).desc:"",
-        onclick:()=>{ activeKind=k; route(true); }, text:(k||"All kinds")+" · "+n}); }));
-  return [el("div",{class:"bar",style:"grid-template-columns:1fr"}, el("label",{for:"pq",class:"sr",text:"Filter pathways"}), q), chips];
+function metroLayout(lines){
+  const pos = {}, rows = lines.map((l, ri) => ({l, ri, stations:[]})); const taken = new Set();
+  rows.forEach(row => { let cur = 0;
+    row.l.trail.forEach(sid => {
+      if (pos[sid] && pos[sid].x >= cur) { row.stations.push({sid, x:pos[sid].x, shared:true}); cur = pos[sid].x + 1; return; }
+      let x = cur; while (taken.has(row.ri + ":" + x)) x++;
+      taken.add(row.ri + ":" + x); if (!pos[sid]) pos[sid] = {x, row:row.ri};
+      row.stations.push({sid, x, transfer: pos[sid].row !== row.ri ? pos[sid] : null}); cur = x + 1; });
+  });
+  return {rows, pos};
 }
-function viewPathway(id){
-  const p = byId(P, id) || P[0];
-  const {nav, pick} = pathwayIndex(p.id);
-  const col = color(p.cluster);
-  const kind = DATA.kinds.find(k => k.name === p.kind);
-  const card = el("article",{class:"card"},
-    el("div",{class:"eyebrow",style:`color:${col}`}, p.cluster, el("span",{class:"kind",title:kind.desc,text:p.kind}), p.gov ? el("span",{class:"kind",style:"color:var(--gold)",text:"★ used in government"}) : null),
-    el("h3",{class:"title",text:p.name}),
-    el("p",{class:"ov"}, rich(p.overview)),
-    el("dl",{},
-      el("dt",{text:"Road"}), el("dd",{}, rich(p.road)),
-      el("dt",{text:"Mix in"}), el("dd",{}, rich(p.mix)),
-      el("dt",{text:"Engage"}), el("dd",{}, p.links.length ? el("div",{class:"links"}, p.links.map(l => ext(l.t, l.u))) : "Practiced widely, with no single home.")),
-    p.policy ? el("div",{class:"policy"}, el("b",{text:"Policy lens"}), p.policy) : null);
-  const blocks = [card];
-  if (p.orgs.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Go deeper with"}), el("p",{text:"Organization profiles with articles, talks, and podcasts"})),
-    el("div",{class:"grid"}, p.orgs.map(oid => orgCard(byId(O, oid))))));
-  if (p.reading && p.reading.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Read and watch"})),
-    el("div",{class:"card"}, mediaList(p.reading))));
-  if (p.cases.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Cases"}), el("p",{text:"Where this pathway met the world"})),
-    el("div",{class:"grid"}, p.cases.map(cid => caseCard(byId(C, cid))))));
-  blocks.push(liveBlock(p.terms, p.caps, 9, "Systems Change Learning Guide resources connected to this pathway"));
-  return [...pathwayControls(), el("div",{class:"mobile-pick"}, pick), el("div",{class:"layout"}, nav, el("main",{}, blocks))];
+const LINE_COLORS = ["oklch(0.72 0.12 245)","oklch(0.72 0.12 150)","oklch(0.7 0.12 40)","oklch(0.72 0.12 300)","oklch(0.76 0.11 85)"];
+const LINE_NAMES = {gov:"Public systems",host:"Holding groups",org:"Leading teams",move:"Community change",sci:"The science"};
+function metroSvg(withMine, p, params){
+  const lines = A.metro, {rows} = metroLayout(lines); const sid2p = Object.fromEntries(P.map(q => [q.short, q]));
+  const maxX = Math.max(...rows.flatMap(r => r.stations.map(s0 => s0.x)));
+  const X = x => 150 + x * (790 / Math.max(maxX, 1)), top = withMine ? 190 : 80, gap = withMine ? 80 : 104, Y = ri => top + ri * gap;
+  const svg = s("svg",{viewBox:"0 0 1000 620","aria-hidden":"true"}); const stage = el("div",{class:"stage"}, svg);
+  const mine = trail(); const mineS = new Set(mine.map(id => byId(P, id)?.short));
+  const href = (id) => { const u = new URLSearchParams(params); u.set("p", id); return "#/map?" + u; };
+  // interchanges: same short id on several rows at the same x
+  const at = {}; rows.forEach(r => r.stations.forEach(st => (at[st.sid] = at[st.sid] || []).push({x:st.x, ri:r.ri})));
+  Object.values(at).forEach(list => { if (list.length < 2) return; const xs = new Set(list.map(a => a.x)); xs.forEach(x => { const rr = list.filter(a => a.x === x).map(a => a.ri); if (rr.length > 1)
+    svg.append(s("rect",{x:X(x) - 7,y:Y(Math.min(...rr)) - 7,width:14,height:Y(Math.max(...rr)) - Y(Math.min(...rr)) + 14,rx:7,fill:"var(--night-ink)","fill-opacity":".9"})); }); });
+  rows.forEach(r => { const col = LINE_COLORS[r.ri % 5]; const dim = withMine && !r.stations.some(st => mineS.has(st.sid));
+    svg.append(s("line",{x1:X(r.stations[0].x),y1:Y(r.ri),x2:X(r.stations.slice(-1)[0].x),y2:Y(r.ri),stroke:col,"stroke-width":"6","stroke-opacity":dim ? .3 : 1,"stroke-linecap":"round"}));
+    stage.append(el("span",{class:"slab",style:`left:1%;top:${Y(r.ri) / 6.2}%;transform:translateY(-50%);color:${col};font-weight:600;opacity:${dim ? .5 : 1}`,text:LINE_NAMES[r.l.id] || r.l.label}));
+    r.stations.forEach((st, i) => { const q = sid2p[st.sid]; if (!q) return; const x = X(st.x), y = Y(r.ri); const own = mineS.has(st.sid);
+      if (st.transfer) svg.append(s("path",{d:`M${X(st.transfer.x)},${Y(st.transfer.row)} L${x},${y}`,stroke:"var(--night-ink)","stroke-opacity":".5","stroke-dasharray":"3 4",fill:"none"}));
+      svg.append(s("circle",{cx:x,cy:y,r:(at[st.sid].length > 1 ? 8 : 6),fill:own ? "var(--night-ink)" : "var(--night2)",stroke:col,"stroke-width":"3"}));
+      if (q.id === p?.id) svg.append(s("circle",{cx:x,cy:y,r:13,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.5"}));
+      stage.append(el("a",{class:"hit",href:href(q.id),title:q.name,"aria-label":q.name,style:`${pct(x, y)};width:3%;aspect-ratio:1`}));
+      stage.append(el("span",{class:"slab",style:`${pct(x, y)};transform:translate(-50%,calc(-100% - 12px));text-align:center;white-space:normal;width:120px;font-size:11.5px;opacity:${dim ? .5 : 1}`,text:q.short_name})); }); });
+  if (withMine && mine.length) {
+    const mx = i => 150 + i * (790 / Math.max(mine.length - 1, 1)), my = 70;
+    svg.append(s("line",{x1:mx(0),y1:my,x2:mx(mine.length - 1),y2:my,stroke:"var(--night-ink)","stroke-width":"6","stroke-linecap":"round"}));
+    stage.append(el("span",{class:"slab",style:`left:1%;top:${my / 6.2}%;transform:translateY(-50%);font-weight:600`,text:"My trail"}));
+    mine.forEach((id, i) => { const q = byId(P, id); const x = mx(i);
+      const hit = rows.flatMap(r => r.stations.filter(st => st.sid === q.short).map(st => ({x:X(st.x), y:Y(r.ri)})))[0];
+      if (hit) svg.append(s("path",{d:`M${x},${my} L${hit.x},${hit.y}`,stroke:"var(--night-ink)","stroke-opacity":".6","stroke-dasharray":"3 4",fill:"none"}));
+      svg.append(s("circle",{cx:x,cy:my,r:9,fill:"var(--night-ink)",stroke:"var(--night2)","stroke-width":"3"}));
+      stage.append(el("a",{class:"hit",href:href(q.id),title:q.name,"aria-label":q.name,style:`${pct(x, my)};width:3%;aspect-ratio:1`}));
+      stage.append(el("span",{class:"slab",style:`${pct(x, my)};transform:translate(-50%,calc(-100% - 14px));text-align:center;white-space:normal;width:150px;font-weight:600`,text:short(q)}));
+      stage.append(el("button",{type:"button",class:"hit",title:"Remove from my trail","aria-label":"Remove "+q.name+" from my trail",style:`${pct(x + 18, my + 18)};width:16px;height:16px;color:var(--night-muted);font-size:13px`,onclick:()=>{ setTrail(trail().filter(t => t !== id)); route(true); },text:"×"}));
+    });
+  }
+  return el("div",{class:"scrollx"}, stage);
 }
-function mediaList(items){ return el("ul",{class:"media"}, items.map(m => el("li",{}, el("span",{class:"k",text:m.kind}), ext(m.title, m.u)))); }
-function orgCard(o){
-  return el("article",{class:"r"},
-    el("a",{class:"t",href:"#o-"+o.id,text:o.name}),
-    el("p",{class:"clamp",text:o.summary}),
-    el("div",{class:"meta",text:`${o.media.length} item${o.media.length===1?"":"s"} to read, watch, or hear`}));
+function mapMetro(p, params){
+  return {main:[metroSvg(false, p, params), el("div",{class:"mapfoot"}, el("span",{text:"Each line is a starter trail from a fictional composite starting point"}), el("span",{text:"White bars are interchanges, where trails share a stop"}), el("span",{text:"Dashed = transfer to an earlier stop"}))],
+    side:[sidePanel(p, "metro"), el("div",{}, el("span",{class:"label",text:"The lines"}), el("div",{class:"list"}, A.metro.map((l, i) => el("div",{style:"padding:8px 0;border-bottom:1px solid var(--night-line);font-size:13px"},
+      el("b",{style:`color:${LINE_COLORS[i % 5]}`,text:LINE_NAMES[l.id] + ". "}), el("span",{style:"color:var(--night-muted)",text:l.why})))))]};
 }
-function caseCard(c){
-  return el("article",{class:"r"},
-    el("a",{class:"t",href:"#c-"+c.id,text:c.title}),
-    el("div",{class:"meta",text:`${c.place} · ${c.years}`}),
-    el("p",{class:"clamp",text:c.summary}));
+function mapTree(p, params){
+  if (!p) p = P[0];
+  const col = fn(p.family); const others = new Map();
+  const stops = p.stops.map((st, i) => { const ppl = st.people.map(personByName).filter(Boolean);
+    const app = [...new Set(ppl.flatMap(x => x.appears))].filter(id => id !== p.id); app.forEach(id => others.set(id, (others.get(id) || 0) + 1));
+    return {st, ppl, app, i}; });
+  const noYears = stops.filter(x => !x.st.years).length;
+  const href = (id) => { const u = new URLSearchParams(params); u.set("p", id); return "#/map?" + u; };
+  const recentre = [...others.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => byId(P, id)).concat(similarTo(p, 4).map(x => x.q)).filter((v, i, a) => a.indexOf(v) === i).slice(0, 4);
+  return {main:[
+    el("span",{class:"label",text:`Lineage of · ${p.cluster} · ${p.kind}`}), el("h2",{style:"font-size:30px;margin:6px 0 0",text:p.name}),
+    el("div",{class:"tree"}, el("div",{class:"treeline",style:`color:${col};--y:86px`}, stops.map(({st, ppl, app, i}) => el("div",{class:"stop"},
+      el("span",{class:"num",text:String(i + 1)}),
+      ppl.length === 1 ? el("a",{class:"who plain",href:personHref(ppl[0].slug)}, el("b",{text:st.name})) : el("b",{style:"color:var(--night-ink)",text:st.name}),
+      st.note ? el("span",{class:"nt",text:strip(st.note)}) : null,
+      el("span",{class:"yr" + (st.years ? "" : " no"),text:st.years || "years to add"}),
+      el("i",{class:"pt" + (app.length ? " big" : "")}),
+      app.length ? el("div",{class:"boxes",style:"margin-top:60px"}, app.slice(0, 2).map(id => { const q = byId(P, id); return el("a",{href:href(id),style:`border-color:${fn(q.family)}`,text:q.name}); })) : null)))),
+    p.mix ? el("div",{style:"margin-top:22px"}, el("span",{class:"label",text:"Mixed in from nearby"}), el("p",{style:"margin-top:6px;font:13.5px/1.5 var(--serif);border:1px dashed var(--night-line);border-radius:12px;padding:8px 12px;max-width:80ch"}, rich(p.mix))) : null,
+    el("div",{class:"mapfoot"}, el("span",{text:"Line = the road, oldest on the left"}), el("span",{text:"Big dot = appears in other pathways"}), el("span",{text:"Boxes below = those pathways"}), el("span",{text:"Gold = years (mostly draft) · grey = years to add"}))],
+    side:[el("div",{}, el("span",{class:"label",text:"Re-centre on"}), el("div",{class:"list"}, recentre.map(q => el("a",{href:href(q.id),text:q.name})))),
+      el("div",{}, el("span",{class:"label",text:"Learn more · records and sources"}), el("div",{style:"display:grid;gap:8px;margin-top:8px;font-size:14px"}, p.links.map(l => ext(l.t, l.u)))),
+      el("p",{class:"mono",style:"font-size:12px;color:var(--night-muted)",text:`${noYears} of ${stops.length} on this road have no years yet`}),
+      el("a",{class:"btn",style:"margin-top:auto",href:wikiHref(p.id),text:"Open the article →"})]};
 }
-function viewOrgs(){
-  const q = el("input",{type:"search",id:"oq",placeholder:"Filter organizations",autocomplete:"off"});
-  const grid = el("div",{class:"grid"});
-  const draw = () => { const s = q.value.trim().toLowerCase();
-    const list = O.filter(o => !s || (o.name+" "+o.summary).toLowerCase().includes(s));
-    grid.replaceChildren(...(list.length ? list.map(orgCard) : [el("div",{class:"empty",text:"No organizations match."})])); };
-  q.addEventListener("input", draw); draw();
-  return [el("div",{class:"callout"}, `${O.length} organizations carrying this work. Each profile links to public articles, talks, podcasts, and courses about the concepts, plus the pathways it connects to.`),
-    el("div",{class:"bar",style:"grid-template-columns:1fr"}, el("label",{for:"oq",class:"sr",text:"Filter organizations"}), q), grid];
+const METRICS = [["all","Overall"],["cases","Cases"],["orgs","Groups"],["lens","Lens text"],["reading","Reading"]];
+function coverage(p, m){
+  const checks = {cases:p.cases.length > 0, orgs:p.orgs.length > 0, lens:p.lens_status === "draft", explainer:p.explainer.length > 0, reading:(p.links.length + p.reading.length) >= 2, years:p.stops.every(s0 => s0.years)};
+  if (m === "all") { const n = Object.values(checks).filter(Boolean).length; return {lvl:n >= 5 ? 2 : n >= 2 ? 1 : 0, checks}; }
+  if (m === "cases") return {lvl:p.cases.length >= 2 ? 2 : p.cases.length ? 1 : 0, checks};
+  if (m === "orgs") return {lvl:p.orgs.length >= 3 ? 2 : p.orgs.length ? 1 : 0, checks};
+  if (m === "lens") return {lvl:p.lens_status === "draft" && p.explainer.length ? 2 : p.lens_status === "draft" || p.explainer.length ? 1 : 0, checks};
+  return {lvl:(p.links.length + p.reading.length) >= 4 ? 2 : (p.links.length + p.reading.length) >= 2 ? 1 : 0, checks};
 }
-function viewOrg(id){
-  const o = byId(O, id); if (!o) return viewOrgs();
-  const cases = C.filter(c => c.pathways.some(pid => o.pathways.includes(pid)));
-  const ps = o.pathways.map(pid => byId(P, pid));
-  const terms = [o.name.toLowerCase().split(/[(:,]/)[0].trim(), ...ps.flatMap(p => p.terms.slice(0,4))];
-  const caps = [...new Set(ps.flatMap(p => p.caps))].slice(0,2);
-  return [el("p",{}, el("a",{href:"#orgs",text:"← All organizations"})),
-    el("article",{class:"card"},
-      el("div",{class:"eyebrow",style:"color:var(--teal)",text:"Organization profile"}),
-      el("h3",{class:"title",text:o.name}),
-      el("p",{class:"ov",text:o.summary}),
-      el("dl",{},
-        el("dt",{text:"Website"}), el("dd",{}, ext(o.url.replace(/^https?:\/\//,"").replace(/\/$/,""), o.url)),
-        el("dt",{text:"Pathways"}), el("dd",{}, el("div",{class:"pchips"}, o.pathways.map(pchip))))),
-    el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Read, watch, listen"}), el("p",{text:"Public pieces about the concepts"})),
-      el("div",{class:"card"}, mediaList(o.media))),
-    cases.length ? el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Related cases"})), el("div",{class:"grid"}, cases.map(caseCard))) : null,
-    liveBlock(terms, caps, 6, "Related Systems Change Learning Guide resources")];
+function mapTreemap(p, params){
+  const m = params.get("m") || "all";
+  const href = (o) => { const u = new URLSearchParams(params); Object.entries(o).forEach(([k, v]) => u.set(k, v)); return "#/map?" + u; };
+  const cov = Object.fromEntries(P.map(q => [q.id, coverage(q, m)]));
+  const counts = [0, 0, 0]; Object.values(cov).forEach(c => counts[c.lvl]++);
+  const byCl = DATA.clusters.map(c => ({c, ps:P.filter(q => q.cluster === c.name)})).map(x => ({...x, gaps:x.ps.filter(q => cov[q.id].lvl === 0).length})).sort((a, b) => b.ps.length - a.ps.length);
+  const LBL = {cases:"Has a case", orgs:"Has a group", lens:"Own lens text", explainer:"Plain explainer", reading:"Two or more links", years:"Years for every stop"};
+  const sel = p ? cov[p.id] : null;
+  return {main:[el("div",{class:"tm"}, byCl.map(({c, ps}) => el("div",{class:"cl",style:`grid-column:span ${ps.length > 5 ? 2 : 1}`},
+    el("h4",{style:`color:${fn(ps[0].family)}`,title:c.name,text:c.name}),
+    el("div",{class:"tiles"}, ps.map(q => { const lv = cov[q.id].lvl;
+      return el("button",{type:"button",class:lv === 0 ? "gap" : "","aria-pressed":String(q.id === p?.id),onclick:()=>goTo(href({p:q.id})),
+        style:lv === 2 ? `background:oklch(0.62 0.09 ${FAM[q.family].hue});color:var(--night)` : lv === 1 ? `background:oklch(0.36 0.06 ${FAM[q.family].hue})` : "",text:q.name}); })))))],
+    side:[el("div",{}, el("span",{class:"label",text:"Measure"}), el("div",{class:"pills",style:"margin-top:8px"}, METRICS.map(([k, n]) => el("a",{class:"pill",href:href({m:k}),"aria-pressed":String(m===k),text:n})))),
+      el("div",{class:"stats"}, el("div",{}, el("b",{text:String(counts[2])}), el("span",{text:"Well covered"})), el("div",{}, el("b",{text:String(counts[1])}), el("span",{text:"Thin"})), el("div",{}, el("b",{text:String(counts[0])}), el("span",{text:"Gap"}))),
+      el("div",{}, el("span",{class:"label",text:"Most gaps · " + METRICS.find(x => x[0] === m)[1]}), el("div",{class:"list"}, byCl.filter(x => x.gaps).sort((a, b) => b.gaps / b.ps.length - a.gaps / a.ps.length).slice(0, 4).map(x =>
+        el("div",{style:"display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--night-line);font-size:14px"}, el("span",{text:x.c.name}), el("span",{class:"mono",style:"font-size:12px",text:`${x.gaps} of ${x.ps.length}`}))))),
+      p && sel ? el("div",{}, el("span",{class:"label",text:"Checklist · " + short(p)}), el("ul",{class:"check"}, Object.entries(sel.checks).map(([k, v]) => el("li",{}, v ? "✓ " : "– ", LBL[k]))),
+        el("div",{class:"acts",style:"display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"}, el("a",{class:"btn",href:wikiHref(p.id),text:"Article"}), el("a",{class:"btn ghost",href:"#/contribute?on="+encodeURIComponent(p.name),text:"Help fill a gap"})))
+        : el("p",{style:"font-size:14px;color:var(--night-muted)",text:"Click a tile to see its checklist."}),
+      el("div",{class:"mapfoot",style:"display:grid;margin-top:auto"}, el("span",{text:"Bright tile = well covered · dark = thin · striped = gap"}), el("span",{text:"Hue = area family · ✓ has it · – missing"}))]};
 }
-function viewCases(){
-  return [el("div",{class:"callout"}, "Real situations where a pathway met the world. Each case names its limits or later reversals, because the learning is in both."),
-    el("div",{class:"grid"}, C.map(caseCard))];
+function mapMine(p, params){
+  const mine = trail(); const last = mine.length ? byId(P, mine[mine.length - 1]) : null;
+  const sugg = last ? similarTo(last, 6).map(x => x.q).filter(q => !mine.includes(q.id)).slice(0, 3) : [];
+  const exportTrail = () => { const data = {exported:new Date().toISOString(), trail:mine.map(id => ({id, name:byId(P, id).name}))};
+    const a = el("a",{href:URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], {type:"application/json"})),download:"my-pathways-trail.json"}); document.body.append(a); a.click(); a.remove(); };
+  return {main:[mine.length ? metroSvg(true, p, params) : el("div",{class:"empty",style:"border-color:var(--night-line);color:var(--night-muted);margin:40px 0"}, "Your trail is empty. Add pathways from any article, or start from a suggestion on the right."),
+    el("div",{class:"mapfoot"}, el("span",{text:"White line = my trail"}), el("span",{text:"Filled stop below = one of mine"}), el("span",{text:"Dashed = transfer to that trail"}),
+      el("span",{text:`${mine.filter(id => A.metro.some(l => l.trail.includes(byId(P, id).short))).length} of ${mine.length} stops meet a starter trail`})),
+    sugg.length ? el("div",{style:"margin-top:16px"}, el("span",{class:"label",text:"Add a stop"}), el("div",{class:"addstops",style:"margin-top:8px"},
+      sugg.map(q => el("button",{type:"button",onclick:()=>{ setTrail([...trail(), q.id]); route(true); }}, el("b",{text:"+ " + q.name}), el("small",{text:"next to your last stop"}))))) : null],
+    side:[sidePanel(p, "mine"),
+      el("button",{type:"button",class:"btn",disabled:mine.length ? null : "",onclick:exportTrail,text:"Export my trail"}),
+      el("div",{}, el("span",{class:"label",text:"Start again from a suggestion"}), el("div",{class:"list"}, A.metro.map(l => el("a",{href:"#",onclick:e=>{ e.preventDefault(); setTrail(l.trail.map(sid => P.find(q => q.short === sid).id)); route(true); },text:l.label})))),
+      mine.length ? el("button",{type:"button",class:"btn ghost",onclick:()=>{ setTrail([]); route(true); },text:"Clear my trail"}) : null,
+      el("p",{class:"mono",style:"font-size:11.5px;color:var(--night-muted)",text:"Kept in this browser only. Nothing is sent anywhere."})]};
 }
-function viewCase(id){
-  const c = byId(C, id); if (!c) return viewCases();
-  return [el("p",{}, el("a",{href:"#cases",text:"← All cases"})),
-    el("article",{class:"card"},
-      el("div",{class:"eyebrow",style:"color:var(--teal)",text:"Case"}),
-      el("h3",{class:"title",text:c.title}),
-      el("div",{class:"meta",text:`${c.place} · ${c.years}`}),
-      el("p",{class:"ov",style:"margin-top:12px",text:c.summary}),
-      el("dl",{},
-        el("dt",{text:"Lesson"}), el("dd",{text:c.lesson}),
-        c.note ? [el("dt",{text:"Limits"}), el("dd",{text:c.note})] : null,
-        el("dt",{text:"Pathways"}), el("dd",{}, el("div",{class:"pchips"}, c.pathways.map(pchip))),
-        el("dt",{text:"Sources"}), el("dd",{}, el("div",{class:"links"}, c.sources.map(s => ext(s.t, s.u))))))];
+function mapTime(p, params){
+  const grp = params.get("g") || "all";
+  const G = [["sci","Science and systems"],["prc","Practice"],["rel","Relational and living"],["chg","Change and power"]];
+  const famFor = x => { const c = {}; x.appears.forEach(id => { const f = byId(P, id).family; c[f] = (c[f] || 0) + 1; }); return Object.entries(c).sort((a, b) => b[1] - a[1])[0]?.[0] || "sci"; };
+  const ppl = PEOPLE.filter(x => x.born || x.founded).map(x => ({x, f:famFor(x)}));
+  const y0 = 1850, y1 = 2030, X = y => (y - y0) / (y1 - y0) * 100;
+  const href = (o) => { const u = new URLSearchParams(params); Object.entries(o).forEach(([k, v]) => u.set(k, v)); return "#/map?" + u; };
+  const body = el("div",{class:"time"});
+  const inner = el("div",{style:"position:relative;min-width:760px;padding:0 10px"});
+  inner.append(el("div",{class:"axis"}, [1860,1880,1900,1920,1940,1960,1980,2000,2020].map(y => el("span",{style:`left:${X(y)}%`,text:String(y)}))));
+  const gridL = [1860,1880,1900,1920,1940,1960,1980,2000,2020].map(y => el("i",{class:"grid-l",style:`left:${X(y)}%`}));
+  G.filter(([k]) => grp === "all" || grp === k).forEach(([k, n]) => {
+    const list = ppl.filter(y => y.f === k).sort((a, b) => (a.x.born || a.x.founded) - (b.x.born || b.x.founded)); if (!list.length) return;
+    inner.append(el("div",{class:"grp",style:`color:${fn(k)}`}, n, el("span",{class:"mono",style:"font-size:11px;color:var(--night-muted);margin-left:8px",text:String(list.length)})));
+    list.forEach(({x}) => { const start = x.born || x.founded, end = x.died || 2026; const inst = x.kind === "institution";
+      inner.append(el("div",{class:"row"}, gridL.map(g => g.cloneNode()), el("a",{class:"bar" + (inst ? " inst" : "") + (!x.died && !inst ? " living" : ""),href:personHref(x.slug),
+        style:`left:${X(start)}%;width:${Math.max(X(end) - X(start), 4)}%;background:${fn(k)};border-color:${fn(k)}`},
+        x.name, el("small",{text:x.years + (x.status === "checked" ? " ✓" : "")})))); });
+  });
+  body.append(inner);
+  return {full:true, main:[el("div",{style:"display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:12px"},
+      el("div",{}, el("span",{class:"label",text:"Timeline · people and institutions on the roads"}), el("h2",{style:"font-size:28px;margin-top:4px",text:"Who came when, and who overlapped"})),
+      el("div",{class:"pills"}, [["all","All"], ...G].map(([k, n]) => el("a",{class:"pill",href:href({g:k}),"aria-pressed":String(grp===k),text:n})))),
+    body,
+    el("div",{class:"mapfoot"}, el("span",{text:`${ppl.length} shown · scroll for more`}), el("span",{text:"Solid = lifespan"}), el("span",{text:"Square end = living"}), el("span",{text:"Outline = institution"}),
+      el("span",{text:"✓ = dates checked"}), el("span",{style:"color:oklch(0.82 0.08 85)",text:"Other dates are drafts"}))]};
 }
-function viewJourneys(){
-  return [el("div",{class:"callout"}, "Worked examples of moving through the map as a career changes. Names are anonymous identifiers. Each stage shows the levels of focus in play and the pathways that help."),
-    ...DATA.journeys.map(j => el("section",{class:"block"},
-      el("div",{class:"head"}, el("h4",{text:j.title}), el("p",{class:"meta",text:j.id})),
-      el("p",{style:"max-width:72ch;margin:0 0 12px",text:j.who}),
-      el("div",{class:"stages"}, j.stages.map(s => el("div",{class:"stage"}, el("article",{class:"card"},
-        el("div",{class:"eyebrow",style:"color:var(--teal)",text:s.where}),
-        el("p",{style:"margin:10px 0",text:s.note}),
-        el("div",{class:"chips",style:"padding-bottom:10px"}, s.levels.map(l => el("a",{class:"chip",href:"#levels",text:l}))),
-        el("div",{class:"pchips"}, s.pathways.map(pchip)))))),
-      el("div",{class:"policy"}, el("b",{text:"The braid"}), j.braid)))];
+function viewMap(params){
+  document.body.classList.add("dark");
+  const view = VIEWS.some(v => v[0] === params.get("view")) ? params.get("view") : "universe";
+  const p = byId(P, params.get("p")) || (view === "tree" ? byId(P, "sensemaking-and-acting-in-uncertainty") : null);
+  const r = {universe:mapUniverse, metro:mapMetro, tree:mapTree, treemap:mapTreemap, mine:mapMine, time:mapTime}[view](p, params);
+  const tabHref = v => `#/map?view=${v}` + (p ? `&p=${p.id}` : "");
+  return [el("div",{class:"hub"}, el("div",{class:"wrap"},
+    el("header",{class:"top"}, el("a",{class:"brand",href:"#/",text:"Pathways into Complexity"}),
+      el("nav",{class:"tabs","aria-label":"Map views"}, VIEWS.map(([k, n]) => el("a",{href:tabHref(k),"aria-current":k===view?"page":null,text:n}))),
+      el("div",{class:"hubnote",text:NOTES[view]})),
+    el("div",{class:"hubgrid" + (r.full ? " full" : "")}, el("div",{class:"hubmain"}, r.main), r.full ? null : el("aside",{class:"hubside"}, r.side)),
+    el("div",{style:"display:flex;gap:16px;flex-wrap:wrap;padding:18px 0 28px;font-size:13px"}, el("a",{href:"#/",text:"← Home"}), el("a",{href:"#/wiki",text:"Wiki"}), el("a",{href:"#/path",text:"Find my work"}), el("a",{href:"#/people",text:"People"})))) ];
 }
-function viewOrientations(){
-  return [el("div",{class:"callout"}, "Our orientations, each drawn from a lineage on this map. Use them at hard junctions as questions, not badges. They will conflict with deadlines and funders; naming that friction is part of the work."),
-    el("div",{class:"orient"}, DATA.orientations.map(o => el("article",{class:"r"},
-      el("h5",{text:o.name}), el("p",{style:"color:var(--ink)",text:o.line}), el("p",{class:"ask",text:"Ask: "+o.ask}), el("div",{class:"meta",text:"From "+o.source})))),
-    el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Suggested braids"}), el("p",{text:"Pairings whose friction teaches"})),
-      el("div",{class:"grid"}, DATA.braids.map(b => el("article",{class:"r"}, el("span",{class:"t",text:b.pair}), el("p",{text:b.why})))))];
+
+// ---------------------------------------------------------------- people (16a)
+function viewPeople(slug){
+  const ORDER = ["Nora Bateson","Gregory Bateson","Donella Meadows","Dave Snowden","Paulo Freire","Elinor Ostrom"];
+  const profiled = PEOPLE.filter(x => x.profile).sort((a, b) => (ORDER.indexOf(a.name) + 99) % 99 - (ORDER.indexOf(b.name) + 99) % 99);
+  const x = slug ? bySlug(slug) : profiled[0];
+  if (!x) return viewPeople(null);
+  const prof = x.profile;
+  const stance = store.get(STANCE_KEY, {});
+  const qBox = (q, qi) => {
+    const key = x.slug + ":" + qi; const box = el("div",{class:"q"});
+    const draw = () => { const cur = store.get(STANCE_KEY, {})[key];
+      fill(box, el("div",{class:"hd label",text:"On: " + q.target}),
+        el("div",{class:"pair"},
+          el("div",{}, el("div",{class:"who",text:"Their view"}), el("p",{class:"claim",text:q.claim}),
+            q.quote ? el("blockquote",{}, `“${q.quote}”`, q.qsrc ? ext(q.qsrc[0], q.qsrc[1]) : null) : null,
+            q.quote2 ? el("blockquote",{}, `“…${q.quote2}”`, q.q2src ? ext(q.q2src[0], q.q2src[1]) : null) : null),
+          el("div",{}, el("div",{class:"who",text:"The other side · " + q.who}), el("p",{class:"claim",text:q.other}),
+            q.oquote ? el("blockquote",{}, `“…${q.oquote}”`, q.osrc ? ext(q.osrc[0], q.osrc[1]) : null) : null)),
+        q.more ? el("div",{class:"more"}, el("span",{class:"label",text:"Follow the debate"}), q.more.map(([t, u, n]) => el("div",{}, ext(t, u), el("small",{text:n})))) :
+          !q.quote ? el("div",{class:"more"}, el("span",{class:"draft",text:"Needs citations. "}), el("span",{style:"font-size:13px;color:var(--muted)",text:"A direct quote and link for each side still to add."})) : null,
+        el("div",{class:"land"}, "Where I land:", ["Convinced","Not sure","Not convinced"].map(v => el("button",{type:"button",class:"pill","aria-pressed":String(cur===v),
+          onclick:()=>{ const s0 = store.get(STANCE_KEY, {}); s0[key] = s0[key] === v ? undefined : v; store.set(STANCE_KEY, s0); draw(); },text:v})),
+          el("span",{class:"mono",style:"font-size:11px",text:"saved in this browser only"})));
+    };
+    draw(); return box;
+  };
+  return [topbar("people"), el("main",{id:"main",class:"wrap"},
+    el("div",{class:"people"},
+      el("nav",{"aria-label":"People"}, el("span",{class:"label",style:"display:block;padding:0 10px 8px",text:"People"}),
+        profiled.map(y => el("a",{href:personHref(y.slug),"aria-current":String(y.slug===x.slug)}, el("b",{text:y.name}), el("small",{text:y.years}))),
+        el("a",{href:"#/map?view=time",style:"font-size:13px;color:var(--link);text-decoration:underline"},"Everyone, on the timeline →")),
+      el("article",{},
+        el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:x.years}),
+        el("h1",{class:"pname",text:x.name}),
+        prof ? el("p",{class:"known",text:prof.known}) : null,
+        x.status === "checked" ? el("p",{class:"why",style:"margin-top:8px"}, "Dates checked against ", ext("this source", x.src), " on 1 October 2026.")
+          : el("p",{class:"draft",style:"margin-top:8px",text:"Draft. Dates and profile written from general knowledge; check every line against their own work before launch."}),
+        prof && prof.checked ? el("p",{class:"why",style:"margin-top:4px"}, "Checked: ", prof.checked.map(([t, u], i) => [i ? ", " : "", ext(t, u)])) : null,
+        prof ? [
+          el("section",{class:"sec"}, el("div",{style:"display:flex;justify-content:space-between;align-items:baseline"}, el("h2",{style:"font-size:26px",text:"Timeline"}), el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:`${prof.timeline[0][0]}–${prof.timeline.slice(-1)[0][0]}`})),
+            el("ul",{class:"tl",style:"margin-top:10px"}, prof.timeline.map(([y, t]) => el("li",{}, el("b",{text:String(y)}), el("span",{text:t}))))),
+          el("section",{class:"sec"}, el("h2",{style:"font-size:26px",text:"Key ideas"}), el("div",{class:"ideas",style:"margin-top:12px"}, prof.ideas.map(([n, t]) => el("div",{class:"card"}, el("b",{text:n}), el("span",{style:"font-size:14px",text:t}))))),
+          el("section",{class:"sec"}, el("h2",{style:"font-size:26px;margin-bottom:12px",text:"What they question, and who disagrees"}), prof.questions.map(qBox)),
+          el("section",{class:"sec two"},
+            el("div",{class:"reads"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Read for yourself"}), el("ul",{}, prof.sources.map(([t, n, u]) => el("li",{}, u ? ext(t, u) : el("b",{text:t}), el("small",{text:n}))))),
+            el("div",{class:"asks"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Questions to sit with"}), prof.ask.map(a => el("p",{text:a}))))]
+          : el("div",{class:"placeholder",style:"margin-top:24px",text:"Full profile still to write: timeline, key ideas, critiques with sources, and reading."})),
+      el("aside",{class:"appears"}, el("span",{class:"label",text:`Appears in ${x.appears.length} pathway${x.appears.length===1?"":"s"}`}),
+        x.appears.map(id => { const q = byId(P, id); return el("div",{}, el("a",{href:wikiHref(id),text:q.name}), el("small",{}, el("a",{href:wikiHref(id),text:"Article →"}), el("a",{href:mapHref(id, "tree"),text:"On the map →"}))); }),
+        el("p",{style:"margin-top:14px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(x.name),text:"Suggest a correction"}))))),
+    footer()];
 }
-function viewLevels(){
-  return [el("div",{class:"callout"}, el("b",{text:"Levels of focus, not rank. "}), "These are the scales where each person or practice mostly works. None sits above another, and working at a larger scale is not a sign of maturity. A ritual holder working with one family is not behind a policy advisor."),
-    el("div",{class:"tablewrap"}, el("table",{class:"levels"}, el("tbody",{}, DATA.levels.map(l => el("tr",{}, el("th",{scope:"row",text:l.name}), el("td",{text:l.who}))))))];
+
+// ---------------------------------------------------------------- contribute (17a)
+function viewContribute(params){
+  const on = params.get("on") || "", kind = params.get("kind"), section = params.get("sec");
+  const KINDS = [["fact","Fix a fact","A name, date or claim is wrong"],["source","Add a source","A book, talk or article we should link"],["person","Add a person to the road","Someone who shaped this is missing"],
+    ["pathway","Suggest a new pathway","A tradition that isn't here yet"],["case","Add a case","A documented situation where this was used"],["concern","Raise a concern","About how a community's knowledge is shown"]];
+  const SECS = ["What it is","How this tradition sees complexity","Where it came from","Who uses it","Cases","How to use it","A person's profile","Somewhere else"];
+  const q = o => { const u = new URLSearchParams(); if (on) u.set("on", on); Object.entries(o).forEach(([k, v]) => v && u.set(k, v)); return "#/contribute?" + u; };
+  const step = !kind ? 1 : kind === "concern" || kind === "pathway" || section ? 3 : 2;
+  const k = KINDS.find(x => x[0] === kind);
+  let body;
+  if (step === 1) body = [el("span",{class:"label",text:"What kind of change?"}), el("div",{style:"margin-top:8px"}, KINDS.map(([id, n, sub]) => el("a",{class:"opt",href:q({kind:id})}, el("b",{text:n}), el("span",{text:sub})))),
+    el("p",{class:"sub",style:"margin-top:8px",text:"Pick a kind of change to continue."})];
+  else if (step === 2) body = [el("span",{class:"label",text:"Which part?"}), el("div",{style:"margin-top:8px"}, SECS.map(n => el("a",{class:"opt",href:q({kind, sec:n})}, el("b",{text:n})))),
+    el("p",{style:"margin-top:8px"}, el("a",{href:q({}),text:"← Back"}))];
+  else {
+    const title = `${k[1]}${on ? ": " + on : ""}${section ? " (" + section + ")" : ""}`;
+    const bodyText = `What should change?\n\n\nSource (link to the person's own work where possible):\n\n\nPage: ${location.href.split("#")[0]}#/wiki\n`;
+    const gh = `https://github.com/${REPO}/issues/new?` + new URLSearchParams({title, body:bodyText, labels:kind === "concern" ? "concern" : "correction"});
+    body = kind === "concern" ? [el("div",{class:"slot"}, el("div",{class:"label",text:"Routes to the advisory group · contact still to be agreed with them"}),
+        "Concerns about how a community's knowledge is shown go to the advisory group, not a public issue tracker. Until the group confirms how it wants to be reached, please do not post details publicly."),
+      el("p",{style:"margin-top:14px"}, el("a",{href:"#/about/acknowledgment",text:"Read how we handle Indigenous knowledge"}))]
+      : [el("span",{class:"label",text:"Send it"}), el("p",{style:"margin:8px 0 14px;max-width:52ch",text:"Your write-up opens on GitHub with the title filled in. You'll need a free GitHub account. Please link to the person's own writing where you can."}),
+        el("div",{class:"card",style:"padding:14px 16px;margin-bottom:14px"}, el("span",{class:"label",text:"Title"}), el("p",{style:"font-weight:600;margin-top:4px",text:title})),
+        el("a",{class:"btn",href:gh,target:"_blank",rel:"noopener noreferrer",text:"Open a GitHub issue ↗"}),
+        el("p",{class:"draft",style:"margin-top:12px",text:"An email route is still to be set up."})];
+    body.push(el("p",{style:"margin-top:18px"}, el("a",{href:q({}),text:"← Start over"})));
+  }
+  return page("contribute", el("div",{class:"narrow card",style:"padding:30px 34px;margin-top:20px"},
+    el("div",{style:"display:flex;justify-content:space-between;align-items:baseline"}, el("h1",{style:"font-size:30px",text:"Suggest a change"}), el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:`Step ${step} of 3`})),
+    on ? el("p",{style:"margin:8px 0 18px;color:var(--muted)"}, "On: ", el("b",{style:"color:var(--ink)",text:on})) : el("div",{style:"height:16px"}),
+    k ? el("p",{style:"margin:-8px 0 14px"}, el("span",{class:"badge",text:k[1]}), section ? [" ", el("span",{class:"badge",text:section})] : null) : null,
+    body));
+}
+
+// ---------------------------------------------------------------- about, acknowledgment (17b), orgs, cases, library
+function viewAck(){
+  return page("about", el("div",{class:"narrow",style:"max-width:820px;margin-top:20px"},
+    el("span",{class:"label",text:"About · acknowledgment"}), el("h1",{style:"font-size:clamp(32px,4.4vw,44px);margin:8px 0 22px",text:"Indigenous knowledge in this guide"}),
+    el("div",{class:"slot"}, el("div",{class:"label",text:"Statement · to be written with advisors"}), "Two or three sentences in the advisors' words."),
+    el("div",{class:"ack-grid"},
+      el("div",{}, el("h3",{text:"Whose knowledge appears here"}), el("p",{text:"Nations, communities and authors named in the guide, in the names they use for themselves, each linked to where they appear. List to be reviewed with advisors."})),
+      el("div",{}, el("h3",{text:"How we use it, and what we don't do"}), el("p",{text:"Limits agreed with advisors, such as linking to sources in their own words rather than summarising them."})),
+      el("div",{}, el("h3",{text:"Advisors"}), el("p",{text:"Names and roles, only with consent."})),
+      el("div",{}, el("h3",{text:"Raise a concern"}), el("a",{class:"btn",href:"#/contribute?kind=concern",text:"Raise a concern"}))),
+    el("p",{class:"mono",style:"font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:28px",text:"Layout only. All copy on this page will be written with advisors before launch."})));
+}
+function viewAbout(){
+  return page("about",
+    el("span",{class:"label",text:"About"}), el("h1",{style:"font-size:44px;margin:6px 0 10px",text:"About this guide"}),
+    el("p",{style:"max-width:62ch;font-size:16.5px",text:DATA.about.lede}),
+    el("div",{style:"display:flex;flex-wrap:wrap;gap:8px;margin-top:16px"}, el("a",{class:"pill",href:"#/about/acknowledgment",text:"Indigenous knowledge in this guide"}), el("a",{class:"pill",href:"#/orgs",text:`${O.length} organizations`}),
+      el("a",{class:"pill",href:"#/cases",text:`${C.length} cases`}), el("a",{class:"pill",href:"#/people",text:"People"}), el("a",{class:"pill",href:"#/library",text:"Live library"}), el("a",{class:"pill",href:"#/contribute",text:"Suggest a change"})),
+    el("section",{class:"sec",id:"orientations"}, el("h2",{text:"Our orientations"}), el("p",{class:"sub",text:"Drawn from lineages on this map. Use them at hard junctions as questions, not badges."}),
+      el("div",{class:"orient"}, DATA.orientations.map(o => el("article",{class:"tile"}, el("h3",{style:"font-size:20px",text:o.name}), el("p",{style:"color:var(--ink)",text:o.line}), el("p",{style:"font-style:italic",text:"Ask: " + o.ask}), el("span",{class:"meta",text:"From " + o.source}))))),
+    el("section",{class:"sec",id:"levels"}, el("h2",{text:"Levels of focus, not rank"}), el("p",{class:"sub",text:"Where each person or practice mostly works. None sits above another."}),
+      el("div",{class:"card",style:"overflow-x:auto"}, el("table",{class:"levels"}, el("tbody",{}, DATA.levels.map(l => el("tr",{}, el("th",{scope:"row",text:l.name}), el("td",{text:l.who}))))))),
+    el("section",{class:"sec",id:"journeys"}, el("h2",{text:"Worked journeys"}), el("p",{class:"sub",text:"Fictional composites showing how someone moves through the map as their work changes."}),
+      DATA.journeys.map(j => el("div",{style:"margin-bottom:26px"}, el("h3",{style:"font-size:22px",text:j.title}), el("p",{style:"max-width:70ch;margin:6px 0 12px;color:var(--muted)",text:j.who}),
+        el("div",{class:"stage-list"}, j.stages.map((st, i) => el("div",{class:"card",style:"padding:14px 18px;min-width:0"}, el("span",{class:"label",text:`${i + 1} · ${st.where}`}), el("p",{style:"margin:6px 0 8px",text:st.note}),
+          el("div",{style:"display:flex;flex-wrap:wrap;gap:6px"}, st.pathways.map(id => el("a",{class:"pill",href:wikiHref(id)}, dot(byId(P, id).family), short(byId(P, id)))))))),
+        el("p",{style:"margin-top:10px"}, el("b",{text:"The braid: "}), j.braid)))),
+    el("section",{class:"sec",id:"braids"}, el("h2",{text:"Suggested braids"}), el("p",{class:"sub",text:"Pairings whose friction teaches."}),
+      el("div",{class:"grid"}, DATA.braids.map(b => el("article",{class:"tile"}, el("span",{class:"t",text:b.pair}), el("p",{text:b.why}))))));
+}
+const mediaList = items => el("ul",{class:"media"}, items.map(m => el("li",{}, el("span",{class:"k",text:m.kind}), ext(m.title, m.u))));
+const orgCard = o => el("a",{class:"tile r",href:"#/orgs/"+o.id}, el("span",{class:"t",text:o.name}), el("p",{class:"clamp",text:o.summary}), el("span",{class:"meta",text:`${o.media.length} item${o.media.length===1?"":"s"} to read, watch, or hear`}));
+const caseCard = c => el("a",{class:"tile r",href:"#/cases/"+c.id}, el("span",{class:"t",text:c.title}), el("span",{class:"meta",text:`${c.place} · ${c.years}`}), el("p",{class:"clamp",text:c.summary}));
+const pchips = ids => el("div",{style:"display:flex;flex-wrap:wrap;gap:6px"}, ids.map(id => { const q = byId(P, id); return el("a",{class:"pill",href:wikiHref(id)}, dot(q.family), q.name); }));
+function viewOrgs(id){
+  if (id) { const o = byId(O, id); if (o) {
+    const cases = C.filter(c => c.pathways.some(pid => o.pathways.includes(pid)));
+    const ps = o.pathways.map(pid => byId(P, pid));
+    const terms = [o.name.toLowerCase().split(/[(:,]/)[0].trim(), ...ps.flatMap(q => q.terms.slice(0, 4))], caps = [...new Set(ps.flatMap(q => q.caps))].slice(0, 2);
+    return page("about", el("p",{}, el("a",{href:"#/orgs",text:"← All organizations"})),
+      el("span",{class:"label",style:"display:block;margin-top:16px",text:"Organization"}), el("h1",{style:"font-size:40px;margin:6px 0 10px",text:o.name}),
+      el("p",{style:"max-width:62ch;font-size:16px",text:o.summary}), el("p",{style:"margin:10px 0 16px"}, ext(o.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), o.url)),
+      pchips(o.pathways),
+      el("section",{class:"sec"}, el("h2",{text:"Read, watch, listen"}), el("div",{class:"card",style:"padding:18px 20px"}, mediaList(o.media))),
+      cases.length ? el("section",{class:"sec"}, el("h2",{text:"Related cases"}), el("div",{class:"grid"}, cases.map(caseCard))) : null,
+      el("section",{class:"sec"}, el("h2",{text:"From the live library"}), liveBlock(terms, caps, 6))); } }
+  const inp = el("input",{type:"search",id:"oq",placeholder:"Filter organizations",autocomplete:"off","aria-label":"Filter organizations"}); const grid = el("div",{class:"grid"});
+  const draw = () => { const v = inp.value.trim().toLowerCase(); const list = O.filter(o => !v || (o.name + " " + o.summary).toLowerCase().includes(v));
+    fill(grid, ...(list.length ? list.map(orgCard) : [el("div",{class:"empty",text:"No organizations match."})])); };
+  inp.addEventListener("input", draw); draw();
+  return page("about", el("span",{class:"label",text:"Groups"}), el("h1",{style:"font-size:44px;margin:6px 0 8px",text:"Organizations"}),
+    el("p",{class:"sub",style:"margin:0 0 14px",text:`${O.length} organizations carrying this work, each with public articles, talks, podcasts and courses.`}),
+    el("form",{class:"search",style:"margin:0 0 18px",onsubmit:e=>e.preventDefault()}, inp), grid);
+}
+function viewCases(id){
+  if (id) { const c = byId(C, id); if (c) return page("about", el("p",{}, el("a",{href:"#/cases",text:"← All cases"})),
+    el("span",{class:"label",style:"display:block;margin-top:16px",text:`Case · ${c.place} · ${c.years}`}), el("h1",{style:"font-size:40px;margin:6px 0 12px",text:c.title}),
+    el("p",{style:"max-width:62ch;font-size:16.5px",text:c.summary}),
+    el("div",{class:"gov",style:"margin-top:18px"}, el("div",{class:"label",text:"Lesson"}), el("p",{text:c.lesson})),
+    c.note ? el("div",{class:"gov",style:"border-color:var(--muted)"}, el("div",{class:"label",text:"Limits"}), el("p",{text:c.note})) : null,
+    el("section",{class:"sec"}, el("h2",{style:"font-size:22px",text:"Pathways"}), pchips(c.pathways)),
+    el("section",{class:"sec"}, el("h2",{style:"font-size:22px",text:"Sources"}), el("div",{class:"links",style:"display:grid;gap:8px"}, c.sources.map(x => ext(x.t, x.u))))); }
+  const gaps = P.filter(p => !p.cases.length);
+  return page("about", el("span",{class:"label",text:"Cases"}), el("h1",{style:"font-size:44px;margin:6px 0 8px",text:"Cases"}),
+    el("p",{class:"sub",style:"margin:0 0 18px",text:"Real situations where a pathway met the world. Each names its limits or later reversals, because the learning is in both."}),
+    el("div",{class:"grid"}, C.map(caseCard)),
+    gaps.length ? el("section",{class:"sec"}, el("h2",{style:"font-size:22px",text:`Still without a documented case (${gaps.length})`}), pchips(gaps.map(p => p.id)),
+      el("p",{style:"margin-top:10px"}, el("a",{href:"#/contribute?kind=case",text:"Suggest a case"}))) : null);
 }
 function viewLibrary(){
-  const q = el("input",{type:"search",id:"lq",placeholder:"Search the live library: dialogue, power, policy, Ostrom…",autocomplete:"off"});
+  const inp = el("input",{type:"search",id:"lq",placeholder:"Search the live library: dialogue, power, policy, Ostrom…",autocomplete:"off","aria-label":"Search the live library"});
   const types = [...new Set(LIB.flatMap(r => r.types))].sort();
   const sel = el("select",{id:"lt","aria-label":"Filter by resource type"}, el("option",{value:"",text:"All resource types"}), types.map(t => el("option",{value:t,text:t})));
   const out = el("div");
   const draw = () => {
-    const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), type = sel.value;
-    if (libState === "error") return out.replaceChildren(el("div",{class:"empty",text:"Search needs the live library, which could not be reached from here."}));
-    if (libState === "idle" || libState === "loading") return out.replaceChildren(el("div",{class:"empty",text:"Loading live resources…"}));
-    const rs = LIB.filter(r => (!type || r.types.includes(type)) && words.every(w => r.hay.includes(w))).sort((a,b) => (b.featured-a.featured) || a.name.localeCompare(b.name));
+    const words = inp.value.trim().toLowerCase().split(/\s+/).filter(Boolean), type = sel.value;
+    if (libState === "error") return fill(out, el("div",{class:"empty",text:"Search needs the live library, which could not be reached from here."}));
+    if (libState === "idle" || libState === "loading") return fill(out, el("div",{class:"empty",text:"Loading live resources…"}));
+    const rs = LIB.filter(r => (!type || r.types.includes(type)) && words.every(w => r.hay.includes(w))).sort((a, b) => (b.featured - a.featured) || a.name.localeCompare(b.name));
     const ps = words.length ? P.filter(p => words.every(w => (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.terms.join(" ")).toLowerCase().includes(w))) : [];
-    out.replaceChildren(
-      ps.length ? el("div",{class:"pchips",style:"margin-bottom:14px"}, el("span",{class:"why",style:"align-self:center",text:"On our map:"}), ps.slice(0,10).map(p => pchip(p.id))) : "",
-      el("div",{class:"head"}, el("h4",{text:`${rs.length} live resource${rs.length===1?"":"s"}`}), el("p",{text:"Titles, descriptions, types, and learning areas"})),
-      rs.length ? el("div",{class:"grid"}, rs.slice(0,90).map(r => libCard(r))) : el("div",{class:"empty",text:"Nothing matches. Try a broader word or clear the type filter."}));
+    fill(out, ps.length ? el("div",{style:"margin-bottom:14px"}, el("span",{class:"label",text:"In the wiki"}), pchips(ps.slice(0, 10).map(p => p.id))) : "",
+      el("p",{class:"label",style:"margin:6px 0 10px",text:`${rs.length} live resource${rs.length===1?"":"s"}`}),
+      rs.length ? el("div",{class:"grid"}, rs.slice(0, 90).map(libCard)) : el("div",{class:"empty",text:"Nothing matches. Try a broader word or clear the type filter."}));
   };
-  let t; q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(draw, 150); }); sel.addEventListener("change", draw); draw();
-  return [el("div",{class:"bar"}, el("label",{for:"lq",class:"sr",text:"Search the live library"}), q, sel), out];
+  let t; inp.addEventListener("input", () => { clearTimeout(t); t = setTimeout(draw, 150); }); sel.addEventListener("change", draw); draw();
+  return page("about", el("span",{class:"label",text:"Live library"}), el("h1",{style:"font-size:44px;margin:6px 0 8px",text:"The live library"}),
+    el("p",{class:"sub",style:"margin:0 0 10px"}, "Resources from the ", ext("Systems Change Learning Guide", "https://welearnwegrow.github.io/capacities/"), " by Jaya Ramchandani and Raisa Mirza, shown unmodified with their own tags (CC BY-NC-ND 4.0)."),
+    el("div",{class:"libbar"}, inp, sel), out);
 }
 
 // ---------------------------------------------------------------- router
-let lastPathwayId = null;
-function route(keepFocus){
-  const h = location.hash.slice(1) || "pathways";
-  const focusId = keepFocus && document.activeElement ? document.activeElement.id : null;
-  let tab = "pathways", nodes;
-  if (h.startsWith("p-")) { lastPathwayId = h.slice(2); nodes = viewPathway(lastPathwayId); }
-  else if (h === "pathways") nodes = viewPathway(lastPathwayId || P[0].id);
-  else if (h.startsWith("o-")) { tab = "orgs"; nodes = viewOrg(h.slice(2)); }
-  else if (h === "orgs") { tab = "orgs"; nodes = viewOrgs(); }
-  else if (h.startsWith("c-")) { tab = "cases"; nodes = viewCase(h.slice(2)); }
-  else if (h === "cases") { tab = "cases"; nodes = viewCases(); }
-  else if (h === "journeys") { tab = "journeys"; nodes = viewJourneys(); }
-  else if (h === "orientations") { tab = "orientations"; nodes = viewOrientations(); }
-  else if (h === "levels") { tab = "levels"; nodes = viewLevels(); }
-  else if (h === "library") { tab = "library"; nodes = viewLibrary(); if (libState === "idle") setTimeout(() => loadLibrary(false), 0); }
-  else nodes = viewPathway(P[0].id);
-  renderTabs(tab);
-  $("#view").replaceChildren(...nodes.flat(Infinity).filter(Boolean));
-  if (focusId && document.getElementById(focusId)) { const f = document.getElementById(focusId); f.focus(); if (f.setSelectionRange && f.value) f.setSelectionRange(f.value.length, f.value.length); }
+// Routes: #/  #/wiki  #/wiki/:id  #/path  #/map?view=&p=  #/people/:slug  #/contribute  #/about  #/about/acknowledgment
+// #/orgs[/:id]  #/cases[/:id]  #/library. Old links (#p-…, #o-…, #c-…, #library…) still work.
+function legacy(h){
+  const m = h.match(/^#(p|o|c)-(.+)$/); if (m) return {p:"#/wiki/", o:"#/orgs/", c:"#/cases/"}[m[1]] + m[2];
+  return {"#pathways":"#/wiki","#orgs":"#/orgs","#cases":"#/cases","#journeys":"#/about","#orientations":"#/about","#levels":"#/about","#library":"#/library"}[h] || null;
 }
-let lastHash = location.hash;
-window.addEventListener("hashchange", () => { const wasSame = lastHash.split("-")[0] === location.hash.split("-")[0]; lastHash = location.hash; route(); if (!wasSame || !location.hash.startsWith("#p-")) window.scrollTo(0,0); });
-$("#lede").textContent = DATA.about.lede;
+let lastRoute = "";
+function route(keep){
+  const fixed = legacy(location.hash); if (fixed) { history.replaceState(null, "", fixed); }
+  const h = location.hash.replace(/^#\/?/, "");
+  const [path, qs] = h.split("?"); const parts = path.split("/").filter(Boolean).map(decodeURIComponent); const params = new URLSearchParams(qs || "");
+  const focusId = keep && document.activeElement ? document.activeElement.id : null;
+  const y = window.scrollY;
+  document.body.classList.remove("dark");
+  let nodes;
+  switch (parts[0]) {
+    case undefined: nodes = viewHome(); break;
+    case "wiki": nodes = parts[1] ? viewArticle(parts[1]) : viewWikiIndex(params); break;
+    case "path": nodes = viewPath(params); break;
+    case "map": nodes = viewMap(params); break;
+    case "people": nodes = viewPeople(parts[1]); break;
+    case "contribute": nodes = viewContribute(params); break;
+    case "about": nodes = parts[1] === "acknowledgment" ? viewAck() : viewAbout(); break;
+    case "orgs": nodes = viewOrgs(parts[1]); break;
+    case "cases": nodes = viewCases(parts[1]); break;
+    case "library": nodes = viewLibrary(); if (libState === "idle") setTimeout(() => loadLibrary(false), 0); break;
+    default: nodes = viewHome();
+  }
+  fill($("#app"), nodes);
+  const key = parts.slice(0, 2).join("/");
+  if (keep) { window.scrollTo(0, y); if (focusId && document.getElementById(focusId)) { const f = document.getElementById(focusId); f.focus(); if (f.setSelectionRange && f.value) f.setSelectionRange(f.value.length, f.value.length); } }
+  else if (key !== lastRoute || parts[0] !== "map") window.scrollTo(0, 0);
+  lastRoute = key;
+  const t = {wiki:parts[1] ? byId(P, parts[1])?.name : "Wiki", path:"Find my work", map:"Map", people:parts[1] ? bySlug(parts[1])?.name : "People", contribute:"Suggest a change", about:"About", orgs:"Organizations", cases:"Cases", library:"Live library"}[parts[0]];
+  document.title = t ? `${t} · Pathways into Complexity` : "Pathways into Complexity";
+}
+window.addEventListener("hashchange", () => { openTerm = null; openStop = null; route(); });
 bootLibrary(); route();
 </script>
 </body>

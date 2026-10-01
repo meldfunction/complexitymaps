@@ -7,11 +7,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 data = json.load(open(ROOT / "data" / "site-data.json"))
 tpl = (ROOT / "src" / "app.html").read_text()
 
-light = " ".join(f"--c-{c['token']}:{c['light']};" for c in data["clusters"])
-dark = " ".join(f"--c-{c['token']}:{c['dark']};" for c in data["clusters"])
 payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
-for marker, value in (("/*CLUSTER_LIGHT*/", light), ("/*CLUSTER_DARK*/", dark), ("__DATA__", payload)):
+for marker, value in (("__DATA__", payload),):
     if marker not in tpl:
         raise SystemExit(f"template marker missing: {marker}")
     tpl = tpl.replace(marker, value)

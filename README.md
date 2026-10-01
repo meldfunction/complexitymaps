@@ -2,12 +2,30 @@
 
 One source of truth, three outputs: a live web app, a linked PDF, and a map image.
 
-- **48 pathways** in 12 clusters, each with a kind of path, road, mix-ins, policy lens, and engage links
+- **48 pathways** in 12 clusters and 4 hue families, each with a kind of path, road, mix-ins, policy lens, and engage links
 - **66 organization profiles** with public articles, talks, podcasts, and courses
-- **16 cases** with lessons, limits, and sources
+- **34 cases** with lessons, limits, and sources (41 of 48 pathways have at least one)
+- **64 people and institutions** with life dates (12 checked, the rest draft) and **6 draft profiles**
 - **7 orientations**, **levels of focus** (not rank), **2 worked journeys**, and **suggested braids**
 - **Live library**: on request, the app reads the public resource feed of the
   [Systems Change Learning Guide](https://welearnwegrow.github.io/capacities/)
+
+## The app (Field Atlas design)
+
+`dist/index.html` is one file with a hash router:
+
+| Route | Screen |
+|---|---|
+| `#/` | Home: the problem, search, five doors, browse by goal / type / scale, lenses, mission, featured topic |
+| `#/wiki`, `#/wiki/<pathway-id>` | Wiki index (filters `?goal=`, `?kind=`, `?scale=`, `?q=`) and article |
+| `#/path` | Find my work: start, area, trade, first pathway, where that work happens (state in the query string) |
+| `#/map?view=universe\|metro\|tree\|treemap\|mine\|time&p=<id>` | Map hub; the selected pathway is shared across tabs |
+| `#/people/<slug>` | Person profile, with "where I land" kept in `localStorage` |
+| `#/contribute`, `#/about`, `#/about/acknowledgment` | Suggest a change (prefilled GitHub issue), about, acknowledgment layout |
+| `#/orgs`, `#/cases`, `#/library` | Organizations, cases, and the live library |
+
+Old links (`#p-…`, `#o-…`, `#c-…`, `#library`) redirect. The trail (`pathways-my-trail`), explored pathways and
+stances stay in the browser. Anything not yet checked against sources is marked **Draft** in the UI.
 
 ## Build
 
@@ -37,10 +55,14 @@ All content lives in `build/content_*.py`:
 | `content_orgs.py` | organization profiles and their media |
 | `content_cases.py` | cases with lessons, limits, and sources |
 | `content_misc.py` | orientations, levels, braids, journeys, and page text |
+| `content_atlas.py` | redesign drafts: families, goals, tags, trades, roles, lenses, explainers, glossary |
+| `content_people.py` | life dates (with a checked/draft status and source) and draft profiles |
+
+`python3 build/compile.py -v` lists warnings: road stops with no years and pathways whose lens still falls back to its area.
 
 The first 29 pathways come from `data/_base_pathways.json`. Pathways, orgs, cases, and journeys
 point at each other by name prefix; `compile.py` resolves them to ids and stops if a prefix matches
-zero or several pathways. Every link lands in `data/urls.txt` for a link check.
+zero or several pathways. Every link lands in `data/urls.txt`. Check them from your own machine with `python3 build/check_links.py` (many sites block cloud servers).
 
 ## Deploy
 

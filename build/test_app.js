@@ -6,6 +6,7 @@ const MOCK = {resources:[
   {name:"Mock: Dialogue primer",url:"https://example.org/a",desc:"About Bohm dialogue and thinking together.",types:["Books"],caps:["Observing & Listening"],featured:true},
   {name:"Mock: Policy lab guide",url:"https://example.org/b",desc:"Public sector innovation labs and government policy.",types:["Methods & Toolkits"],caps:["Advocacy & Political Participation"],featured:false},
   {name:"Mock: Power mapping",url:"javascript:alert(1)",desc:"Power analysis <img src=x onerror=alert(1)>.",types:["Methods & Toolkits"],caps:["Positionality & Power Analysis"],featured:false}]};
+const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForTimeout(150));
 (async () => {
   const b = await chromium.launch(); let fails = 0;
   const check = (ok, msg) => { console.log((ok ? "PASS " : "FAIL ") + msg); if (!ok) fails++; };
@@ -16,54 +17,66 @@ const MOCK = {resources:[
     await p.route('https://fonts.googleapis.com/**', r=>r.abort());
     await p.route('https://capacities.jayajohnyramchandani.workers.dev/**', r => mode==='down' ? r.abort() :
       r.fulfill({status:200, headers:{'content-type':'application/json','access-control-allow-origin':'*'}, body: JSON.stringify(MOCK)}));
-    await p.goto(FILE + '#p-power-analysis'); await p.waitForTimeout(900);
+    await p.goto(FILE + '#/wiki/power-analysis'); await p.waitForTimeout(700);
     check(gets.length === 0, `[${mode}] no request to the worker on page load`);
     check((await p.textContent('#status-text')).includes('loads when you ask'), `[${mode}] idle status on load`);
-    for (const h of ['#orgs','#o-hls','#cases','#journeys','#p-bohm-dialogue','#p-power-analysis']) { await p.evaluate(x => location.hash = x, h); await p.waitForTimeout(120); }
-    check(gets.length === 0, `[${mode}] browsing pathways, profiles, and cases makes no request`);
+    check(await p.textContent('h1.art-title') === 'Power analysis', `[${mode}] wiki article renders`);
+    for (const h of ['#/','#/wiki','#/path','#/map','#/map?view=metro','#/map?view=tree&p=bohm-dialogue','#/map?view=treemap','#/map?view=mine','#/map?view=time',
+        '#/people/nora-bateson','#/contribute','#/about','#/about/acknowledgment','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
+    check(gets.length === 0, `[${mode}] browsing every route makes no request`);
+    await go(p, '#/wiki/power-analysis');
     await p.click('button.loadbtn'); await p.waitForTimeout(700);
     check(gets.length === 1, `[${mode}] tapping Load makes exactly one request (${gets.length})`);
     const st = await p.textContent('#status-text');
     check(mode==='live' ? st.includes('3 resources') : st.includes('unreachable'), `[${mode}] status: ${st.trim()}`);
-    check(await p.textContent('h3.title') === 'Power analysis', `[${mode}] pathway route renders`);
-    check(await p.locator('nav.index .pw').count() === 48, `[${mode}] index lists 48 pathways`);
     if (mode==='live') {
-      const t = await p.locator('main .r .t').filter({hasText:'Mock: Power mapping'}).first().evaluate(n => n.tagName + ':' + (n.getAttribute('href')||'none'));
+      const t = await p.locator('#main .r').filter({hasText:'Mock: Power mapping'}).first().evaluate(n => { const a = n.querySelector('.t'); return a.tagName + ':' + (a.getAttribute('href')||'none'); });
       check(t === 'SPAN:none', 'javascript: URL is not rendered as a link');
-      check(await p.locator('main img').count() === 0, 'injected HTML is not rendered');
+      check(await p.locator('#main img').count() === 0, 'injected HTML is not rendered');
     }
-    for (const [hash, sel, min, label] of [['#orgs','.grid .r',60,'org list'],['#o-bateson-institute','.media li',3,'org profile media'],
-        ['#cases','.grid .r',16,'case list'],['#c-porto-alegre','dd .links a',3,'case sources'],['#journeys','.stage',6,'journey stages'],
-        ['#orientations','.orient .r',7,'orientations'],['#levels','.levels tr',7,'levels table'],['#library','#lq',1,'library search']]) {
-      await p.evaluate(h => location.hash = h, hash); await p.waitForTimeout(250);
+    for (const [hash, sel, min, label] of [
+        ['#/', '.door', 5, 'home doors'], ['#/', '.goal', 7, 'home goals'],
+        ['#/wiki', '.idx .cl a', 48, 'wiki index lists 48 pathways'], ['#/wiki?goal=power', '.idx .cl a', 3, 'goal filter'],
+        ['#/wiki/sensemaking-and-acting-in-uncertainty', '.road li', 5, 'article road'], ['#/wiki/sensemaking-and-acting-in-uncertainty', '.localmap .node', 6, 'article local map'],
+        ['#/path?start=want', '.branch', 7, 'path areas'], ['#/path?start=want&area=care&trade=teach', '.branch', 3, 'path pathways'],
+        ['#/path?start=want&area=care&trade=teach&p=experiential-learning-and-reflective-practice', '.where .card', 3, 'where this work happens'],
+        ['#/map', '.stage .hit', 48, 'universe stars'], ['#/map?view=metro', '.stage .hit', 20, 'metro stops'], ['#/map?view=tree&p=power-analysis', '.stop', 2, 'tree stops'],
+        ['#/map?view=treemap', '.tm button', 48, 'treemap tiles'], ['#/map?view=time', '.time .bar', 50, 'timeline bars'],
+        ['#/people/nora-bateson', '.q', 2, 'profile critiques'], ['#/people/karl-weick', '.appears div', 1, 'stub profile'],
+        ['#/contribute?on=X&kind=fact&sec=Cases', 'a.btn[href*="github.com"]', 1, 'contribute opens a prefilled issue'],
+        ['#/about', '.orient .tile', 7, 'orientations'], ['#/orgs', '.grid .r', 60, 'org list'], ['#/orgs/bateson-institute', '.media li', 3, 'org media'],
+        ['#/cases', '.grid .r', 30, 'case list'], ['#/cases/porto-alegre', '.links a', 3, 'case sources'], ['#/library', '#lq', 1, 'library search'],
+        ['#p-bohm-dialogue', 'h1.art-title', 1, 'old #p- links still work'], ['#o-hls', 'h1', 1, 'old #o- links still work']]) {
+      await go(p, hash); await p.waitForTimeout(100);
       check(await p.locator(sel).count() >= min, `[${mode}] ${label}`);
     }
-    await p.evaluate(() => location.hash = '#p-bohm-dialogue'); await p.waitForTimeout(250);
-    await p.click('button.chip:has-text("Practice")'); await p.waitForTimeout(200);
-    check(await p.locator('nav.index .pw').count() === await p.evaluate(() => DATA.pathways.filter(x=>x.kind==='Practice').length), `[${mode}] kind filter`);
-    await p.fill('#pq','grief'); await p.waitForTimeout(200);
+    await go(p, '#/map?view=tree&p=bohm-dialogue');
+    check(await p.evaluate(() => document.querySelector('.hub h2').textContent) === 'Bohm Dialogue', `[${mode}] deep link restores the map view and pathway`);
+    await p.evaluate(() => localStorage.removeItem('pathways-my-trail'));
+    await go(p, '#/wiki/power-analysis'); await p.click('button:has-text("Add to my trail")'); await p.waitForTimeout(150);
+    check(await p.evaluate(() => JSON.parse(localStorage.getItem('pathways-my-trail'))[0]) === 'power-analysis', `[${mode}] add to my trail stays in localStorage`);
+    await go(p, '#/wiki'); await p.fill('#pq','grief'); await p.waitForTimeout(150);
     check(await p.evaluate(() => document.activeElement.id) === 'pq', `[${mode}] filter keeps focus while typing`);
-    await p.setViewportSize({width:390,height:844}); await p.waitForTimeout(200);
-    for (const h of ['#p-crisis-disaster-and-high-reliability','#o-hls','#levels','#journeys']) {
-      await p.evaluate(x => location.hash = x, h); await p.waitForTimeout(200);
+    await p.setViewportSize({width:360,height:800}); await p.waitForTimeout(150);
+    for (const h of ['#/','#/wiki/crisis-disaster-and-high-reliability','#/path?start=now','#/path?start=want&area=care&trade=teach&p=experiential-learning-and-reflective-practice',
+        '#/map','#/map?view=metro','#/map?view=tree&p=power-analysis','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/people/nora-bateson','#/contribute','#/about','#/about/acknowledgment','#/orgs/hls','#/cases']) {
+      await go(p, h);
       const ov = await p.evaluate(() => document.documentElement.scrollWidth - innerWidth);
-      check(ov <= 0, `[${mode}] no sideways scroll at 390px on ${h} (${ov})`);
+      check(ov <= 0, `[${mode}] no sideways scroll at 360px on ${h} (${ov})`);
     }
-    if (mode==='live') { await p.evaluate(x => location.hash = x, '#p-crisis-disaster-and-high-reliability'); await p.waitForTimeout(200);
+    if (mode==='live') { await go(p, '#/wiki/crisis-disaster-and-high-reliability');
       await p.screenshot({path: path.resolve(__dirname,'../dist/_shot-mobile.png')});
-      await p.setViewportSize({width:1280,height:900}); await p.evaluate(x => location.hash = x, '#p-government-plumbing'); await p.waitForTimeout(250);
-      await p.screenshot({path: path.resolve(__dirname,'../dist/_shot-desktop.png')});
-      await p.evaluate(x => location.hash = x, '#o-nesta'); await p.waitForTimeout(250);
-      await p.screenshot({path: path.resolve(__dirname,'../dist/_shot-org.png')}); }
+      await p.setViewportSize({width:1280,height:900}); await go(p, '#/');
+      await p.screenshot({path: path.resolve(__dirname,'../dist/_shot-desktop.png')}); }
     check(posts.length === 0, `[${mode}] app never POSTs to the worker`);
     if (mode==='live') check(gets.length === 1, `[${mode}] still one request after browsing everything (${gets.length})`);
-    // A fresh visitor who opens the Live library tab triggers the load by opening it.
+    // A fresh visitor who opens the Live library page triggers the load by opening it.
     const q = await b.newPage(); const g2=[]; q.on('request', r => { if (r.url().includes('workers.dev')) g2.push(1); });
     await q.route('https://fonts.googleapis.com/**', r=>r.abort());
     await q.route('https://capacities.jayajohnyramchandani.workers.dev/**', r => mode==='down' ? r.abort() :
       r.fulfill({status:200, headers:{'content-type':'application/json'}, body: JSON.stringify(MOCK)}));
-    await q.goto(FILE + '#library'); await q.waitForTimeout(700);
-    check(g2.length === 1, `[${mode}] opening the Live library tab triggers one request`);
+    await q.goto(FILE + '#/library'); await q.waitForTimeout(700);
+    check(g2.length === 1, `[${mode}] opening the Live library page triggers one request`);
     if (mode==='live') check(await q.locator('.grid .r').count() === 3, `[${mode}] library shows results after the triggered load`);
     await q.close();
     check(errs.length === 0, `[${mode}] no page errors ${errs.join(' | ')}`);
