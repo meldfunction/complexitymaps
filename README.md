@@ -17,7 +17,7 @@ One source of truth, three outputs: a live web app, a linked PDF, and a map imag
 
 | Route | Screen |
 |---|---|
-| `#/` | Home: the problem, search, five doors, browse by goal / type / scale, lenses, mission, featured topic |
+| `#/` | Home: the problem, search, five doors, browse by goal / type / scale, lenses, mission, how to use this site (three kinds of visit, each with steps and a call to action), featured topic |
 | `#/wiki`, `#/wiki/<pathway-id>` | Wiki index (filters `?goal=`, `?kind=`, `?scale=`, `?q=`) and article |
 | `#/path` | Find my work: start, area, trade, first pathway, where that work happens (state in the query string) |
 | `#/map?view=universe\|metro\|tree\|treemap\|mine\|time&p=<id>` | Map hub; the selected pathway is shared across tabs. On the universe, `links=near\|shared` shows connections (designed neighbours, or shared cases and groups) |

@@ -148,14 +148,21 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .mstats{display:grid;grid-template-columns:repeat(2,auto);gap:18px 36px;align-self:center}
 .mstats b{display:block;font:400 40px/1 var(--serif)}.mstats span{font:12px var(--mono);opacity:.7;text-transform:uppercase;letter-spacing:.06em}
 .mission p{font:400 clamp(24px,3vw,32px)/1.25 var(--serif);max-width:28ch}
-.ctas{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.cta{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:26px 28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);min-height:200px}
-.cta h3{font-size:32px}
-.cta p{color:var(--muted);max-width:40ch}
-.cta b{margin-top:auto;font-size:14px}
-.cta.blue{background:oklch(0.42 0.08 245);border-color:oklch(0.42 0.08 245);color:#f4f1ea}
-.cta.blue p,.cta.blue .label{color:#f4f1ea;opacity:.82}
-.cta:hover{color:inherit;border-color:var(--ink)}
+.newhere{margin-top:14px;font-size:14px}.newhere a{font-weight:600}
+.howto h2{margin:6px 0 4px}
+.visits{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}
+.visit{flex:1 1 280px;min-width:0;border:1px solid var(--line);background:var(--card);border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.visit h3{font:400 24px/1.2 var(--serif);text-wrap:balance}
+.visit ol{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.visit li{display:flex;gap:12px;align-items:flex-start}
+.visit li b{display:block;font-size:15px}.visit li span{display:block;font-size:13.5px;color:var(--muted);line-height:1.45}
+.visit .n{flex:none;width:28px;height:28px;border-radius:50%;color:#fff;font:600 12px/28px var(--sans);text-align:center;font-style:normal}
+.visit .btn{margin-top:auto;align-self:flex-start}
+.visit.blue{background:oklch(0.42 0.08 245);border-color:oklch(0.42 0.08 245);color:#f4f1ea}
+.visit.dark{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.visit.blue li span,.visit.dark li span,.visit.blue .label,.visit.dark .label{color:inherit;opacity:.78}
+.visit .btn.inv{background:#f4f1ea;color:#1c211f;border-color:#f4f1ea}
+.along{margin-top:16px;font-size:14px;color:var(--muted)}
 .featured{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;border-top:1px solid var(--line);padding-top:28px}
 .featured h3{font-size:30px;margin:8px 0 10px}
 .also a{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);color:var(--link);text-decoration:none}
@@ -416,7 +423,7 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
   .photo{aspect-ratio:16/10}
   .doors{grid-template-columns:1fr}
   .door{min-height:0;padding:14px 16px}
-  .goals,.lenses,.ctas,.featured,.starts,.where,.sim,.diff,.two,.ack-grid{grid-template-columns:1fr}
+  .goals,.lenses,.featured,.starts,.where,.sim,.diff,.two,.ack-grid{grid-template-columns:1fr}
   .mission .wrap{grid-template-columns:1fr;gap:10px}
   .wiki{grid-template-columns:1fr}
   .wiki>article{padding:18px 0 28px}
@@ -949,7 +956,8 @@ function viewHome(){
           el("h1",{text:"The problems we care about most don't come with a plan."}),
           el("p",{class:"lede",text:"Care, housing, climate, health. They have no single owner and no single cause, and fixing one part moves another. The ideas that help are spread across dozens of fields, each with its own jargon, and most people never find them."}),
           searchBox("Search a topic, person or idea", true),
-          el("div",{class:"popular"}, "Popular:", pop.map(([n, id]) => el("a",{class:"pill",href:wikiHref(id),text:n})))),
+          el("div",{class:"popular"}, "Popular:", pop.map(([n, id]) => el("a",{class:"pill",href:wikiHref(id),text:n}))),
+          el("p",{class:"newhere"}, el("a",{href:"#",onclick:e => { e.preventDefault(); document.getElementById("how")?.scrollIntoView({behavior:motionOn() ? "smooth" : "auto"}); },text:"New here? See how to use this site ↓"}))),
         el("div",{}, el("figure",{class:"photo"}, el("img",{src:"img/home-farming.jpg",width:"1100",height:"1100",loading:"eager",alt:"People working a cleared field together among palm trees"}),
           el("figcaption",{}, "Photo: ", ext("Annie Spratt", "https://unsplash.com/@anniespratt"), " on ", ext("Unsplash", "https://unsplash.com/photos/people-farming-on-field-during-daytime-SWP0hOIMzKg"))))),
       el("section",{class:"sec",style:"padding-top:8px"}, ideasCard()),
@@ -963,11 +971,33 @@ function viewHome(){
       el("div",{class:"mstats"}, [[P.length,"pathways","#/wiki"],[C.length,"cases","#/cases"],[PEOPLE.length,"people","#/map?view=time"],[O.length,"groups","#/orgs"]].map(([n, t, h]) =>
         el("a",{href:h,style:"color:inherit;text-decoration:none"}, el("b",{text:String(n)}), el("span",{text:t})))))),
     el("div",{class:"wrap"},
-      el("section",{class:"sec ctas"},
-        el("a",{class:"cta",href:"#/wiki"}, el("span",{class:"label",text:"Look something up"}), el("h3",{text:"Browse the wiki"}),
-          el("p",{text:`${P.length} topics, each with what it is, where it came from, who uses it and how to try it.`}), el("b",{text:"Open the wiki →"})),
-        el("a",{class:"cta blue",href:"#/path"}, el("span",{class:"label",text:"For you"}), el("h3",{text:"Find the work I want to do"}),
-          el("p",{text:"Pick the work that draws you. We'll show what to learn, and the roles, sectors and groups where that work happens."}), el("b",{text:"Start →"}))),
+      // how to use this site: three kinds of visit, each with numbered steps and one clear next action
+      el("section",{class:"sec howto",id:"how"}, el("span",{class:"label",text:"How to use this site"}),
+        el("h2",{text:"Three ways to visit. Pick the one that fits today."}),
+        el("p",{class:"sub",text:"Nothing to sign up for. Your trail and notes stay in this browser."}),
+        el("div",{class:"visits"}, [
+          ["sci","5 minutes","I heard a word and want to know what it means", [
+              ["Search or browse", "Type a word like Cynefin or grief, or browse by goal."],
+              ["Read the article", "What it is in plain English, where it came from, who uses it."],
+              ["Try the first steps", "Each article ends with small steps you can try this week."]],
+            "Look something up", "#/wiki", ""],
+          ["prc","15 minutes","I want ideas for the work I do, or want to do", [
+              ["Answer five quick choices", "What draws you, your area, your trade."],
+              ["Get a starting pathway", "With the roles, sectors and groups where that work happens."],
+              ["Save it to your trail", "Come back to it any time, or export it."]],
+            "Find my work", "#/path", "blue"],
+          ["chg","As long as you like","I want to see how it all fits together", [
+              ["Open the map", "Every pathway as a star; switch on connections to see what links them."],
+              ["Follow a lineage", "See who shaped an idea, then open their profile."],
+              ["Decide where you land", "Each profile sets a view beside the people who disagree."]],
+            "Explore the map", "#/map", "dark"]
+        ].map(([fam, time, ask, steps, cta, href, cls]) => el("article",{class:"visit " + cls},
+          el("span",{class:"label",text:time}), el("h3",{text:ask}),
+          el("ol",{}, steps.map(([t, d], i) => el("li",{}, el("i",{class:"n",style:`background:${fc(fam)}`,text:String(i + 1)}), el("div",{}, el("b",{text:t}), el("span",{text:d}))))),
+          el("a",{class:"btn" + (cls ? " inv" : ""),href,text:cta + " →"})))),
+        el("p",{class:"along"}, "Along the way: ", el("a",{href:"#/people",text:"meet the people behind the ideas"}), " · ",
+          el("a",{href:"#/cases",text:"read real cases"}), " · ", el("a",{href:"#/library",text:"open the live library"}), " · ",
+          el("a",{href:"#/contribute",text:"suggest a change"}))),
       el("section",{class:"sec featured"},
         el("div",{}, el("span",{class:"label",style:"color:var(--sci)",text:"Featured topic"}), el("h3",{text:feat.name}),
           el("p",{style:"max-width:52ch",text:(feat.plain_overview || strip(feat.overview)) + " Shaped by W. Ross Ashby, Karl Weick, Dave Snowden and Glenda Eoyang, and used by governments to prepare for shocks."}),
