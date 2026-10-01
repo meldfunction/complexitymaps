@@ -32,6 +32,9 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       await go(p, '#/map?view=universe&links=shared&p=sensemaking-and-acting-in-uncertainty');
       check(await p.locator('.stage .conn.on').count() >= 1, '[live] selected pathway highlights its own connections');
       check(await p.locator('.connlist li').count() >= 1, '[live] side panel lists what the pathway connects to and why');
+      await go(p, '#/');
+      check(await p.locator('#how .visit').count() === 3, '[live] home shows how to use the site: three kinds of visit');
+      check(await p.locator('#how .visit a.btn').evaluateAll(a => a.map(x => x.getAttribute('href')).join()) === '#/wiki,#/path,#/map', '[live] each visit ends in a clear call to action');
       await go(p, '#/people/nora-bateson');
       check((await p.textContent('.q .qwhat')).includes('Stage theories say'), '[live] critique explains what is being questioned');
     }
