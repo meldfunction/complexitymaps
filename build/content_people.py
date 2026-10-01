@@ -405,3 +405,53 @@ PEOPLE += [
     dict(name="Jeremy Hope", years="d. 2011", kind="person", status="draft", src="https://www.thecfocoach.jp/blog/beyond_budgeting"),
     dict(name="Patricia Cranton", years="d. 2016", kind="person", status="draft", src="https://www.gg.ca/en/honours/recipients/146-4652"),
 ]
+
+# What each critique is aimed at, in plain words, so a reader new to the debate knows what is being questioned.
+# Keyed by the question's `target`. DRAFT: written from general knowledge; check against sources.
+CRITIQUE_WHAT = {
+ 'Stage theories of development':
+    'Stage theories say that the way people make sense of the world grows through a fixed sequence of stages, each able to '
+    'hold more complexity than the one before. Jean Piaget described stages for children; Robert Kegan, Clare Graves (whose '
+    'work became Spiral Dynamics) and Ken Wilber described them for adults. In leadership and "vertical development" '
+    'programmes, people are sometimes assessed, placed at a stage, and coached to move "up".',
+ 'Solutions thinking':
+    'The habit of treating a complex problem like a fault in a machine: find the cause, design one intervention, roll it '
+    'out, and check whether a target number moved. It sits behind most programme funding, logframes and results-based '
+    'management.',
+ 'Conscious purpose':
+    "Bateson's name for goal-directed thinking: picking a narrow aim and acting straight toward it, as engineering and "
+    'planning do. In a 1967 talk, published as "Conscious Purpose versus Nature" in Steps to an Ecology of Mind, he argued '
+    'that this way of thinking, applied to ecosystems and societies, cuts through the loops that keep them in balance.',
+ 'Endless growth':
+    'The assumption that economies can and should keep increasing their output year after year. Most governments judge '
+    'success by growth in GDP. The Limits to Growth (1972) used a computer model, World3, to explore what happens if '
+    'population and industrial output keep growing exponentially on a finite planet.',
+ 'Best practice in complex settings':
+    'Best practice means finding the method that worked best somewhere and copying it everywhere: standard procedures, '
+    'benchmarking, frameworks rolled out across an organization. It comes from engineering and quality management, where '
+    'cause and effect are stable and repeatable.',
+ 'Stage models of leadership':
+    'Leadership versions of adult development stage theories, such as the "action logics" of William Torbert and David '
+    "Rooke or the colour-coded organizations in Frederic Laloux's Reinventing Organizations. They sort leaders or "
+    'organizations into developmental levels, often using assessments sold for coaching, hiring and promotion.',
+ 'Banking education':
+    "Freire's name for the familiar classroom model in which the teacher holds the knowledge and deposits it into "
+    'students, who store, memorize and repeat it, like money in a bank. Students are judged on how well they keep what '
+    'they were given.',
+ 'The tragedy of the commons':
+    'An argument made by the ecologist Garrett Hardin in a 1968 essay in Science. He imagined a pasture open to all '
+    'herders: each herder gains by adding one more animal, while the cost of overgrazing is shared by everyone, so '
+    'rational individuals end up ruining the pasture. He concluded that shared resources must be privatized or '
+    'controlled by government.',
+ 'Codes without interpreters':
+    'Code biology, developed by Marcello Barbieri, holds that life is built on organic codes such as the genetic code: '
+    'fixed rules that match one set of molecules to another, like a dictionary. In his view these codes work without '
+    'anyone interpreting them, and meaning in the full sense only arrives later, with animals that have minds.',
+ 'Information talk in molecular biology':
+    'Since the 1950s molecular biologists have described DNA as carrying information, genes as instructions, and cells '
+    'as reading, copying and translating messages. Most biologists treat this language as a convenient metaphor for '
+    'chemical processes rather than a claim that cells understand anything.',
+}
+for _p in PROFILES.values():
+    for _q in _p.get('questions', []):
+        _q['what'] = CRITIQUE_WHAT.get(_q['target'], '')

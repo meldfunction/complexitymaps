@@ -20,7 +20,7 @@ One source of truth, three outputs: a live web app, a linked PDF, and a map imag
 | `#/` | Home: the problem, search, five doors, browse by goal / type / scale, lenses, mission, featured topic |
 | `#/wiki`, `#/wiki/<pathway-id>` | Wiki index (filters `?goal=`, `?kind=`, `?scale=`, `?q=`) and article |
 | `#/path` | Find my work: start, area, trade, first pathway, where that work happens (state in the query string) |
-| `#/map?view=universe\|metro\|tree\|treemap\|mine\|time&p=<id>` | Map hub; the selected pathway is shared across tabs |
+| `#/map?view=universe\|metro\|tree\|treemap\|mine\|time&p=<id>` | Map hub; the selected pathway is shared across tabs. On the universe, `links=near\|shared` shows connections (designed neighbours, or shared cases and groups) |
 | `#/people/<slug>` | Person profile, with "where I land" kept in `localStorage` |
 | `#/contribute`, `#/about`, `#/about/acknowledgment` | Suggest a change (prefilled GitHub issue), about, acknowledgment layout |
 | `#/orgs`, `#/cases`, `#/library` | Organizations, cases, and the live library |

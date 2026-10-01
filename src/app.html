@@ -340,6 +340,15 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .stage .hit{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer;padding:0}
 .stage .gal{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer}
 .stage .gal:hover{background:radial-gradient(rgba(255,255,255,.04),transparent 70%)}
+.qwhat{font-size:14.5px;line-height:1.55;max-width:68ch;margin:6px 0 14px;padding:10px 14px;border-left:3px solid var(--line);background:var(--paper2);border-radius:0 8px 8px 0}
+.linktoggle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 10px}
+.linktoggle .label{color:var(--night-muted);margin-right:2px}
+.linktoggle .pill{background:transparent;color:var(--night-ink);border-color:var(--night-line);font-size:12.5px;padding:5px 11px}
+.linktoggle .pill[aria-pressed="true"]{background:var(--night-ink);color:var(--night)}
+.connlist{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px;max-height:320px;overflow:auto}
+.connlist li{font-size:13.5px}.connlist small{display:block;font-size:12px;opacity:.75;margin-left:16px}
+.stage svg .conn{pointer-events:stroke;transition:stroke-opacity .15s}
+.stage.hl svg .conn{stroke-opacity:.06}.stage.hl svg .conn.hot{stroke-opacity:.95;stroke:var(--night-ink)}
 .mapfoot{font:12px/1.6 var(--mono);color:var(--night-muted);margin-top:10px;display:flex;flex-wrap:wrap;gap:4px 18px}
 .panel h3{font-size:24px;line-height:1.15;margin:4px 0 8px;color:var(--night-ink)}
 .panel p{font-size:13.5px;color:var(--night-muted)}
@@ -1073,6 +1082,22 @@ function sidePanel(p, view){
       view !== "tree" ? el("a",{class:"btn ghost",href:mapHref(p.id, "tree"),text:"Lineage"}) : null,
       el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); setTrail(inT ? t.filter(x => x !== p.id) : [...t, p.id]); route(true); },text:inT ? "✓ On my trail" : "+ My trail"})));
 }
+const LINK_MODES = [["off","Off","Stars only"],["near","Neighbours","Pathways drawn as close neighbours in the design"],
+  ["shared","Shared cases and groups","Pathways that share at least one case or organization"]];
+const _conn = {};
+function connections(mode){
+  if (_conn[mode]) return _conn[mode];
+  const bySid = Object.fromEntries(P.map(q => [q.short, q])), out = [];
+  if (mode === "near") A.edges.forEach(([x, y]) => { if (bySid[x] && bySid[y]) out.push({a:bySid[x], b:bySid[y], n:1, why:"Close neighbours"}); });
+  else P.forEach((a, i) => P.slice(i + 1).forEach(b => {
+    const cs = a.cases.filter(c => b.cases.includes(c)), os = a.orgs.filter(o => b.orgs.includes(o));
+    if (!cs.length && !os.length) return;
+    const why = [cs.length ? `${cs.length} shared case${cs.length > 1 ? "s" : ""} (${cs.map(c => byId(C, c).title).join(", ")})` : "",
+                 os.length ? `${os.length} shared group${os.length > 1 ? "s" : ""} (${os.map(o => byId(O, o).name).join(", ")})` : ""].filter(Boolean).join("; ");
+    out.push({a, b, n:cs.length + os.length, why});
+  }));
+  return (_conn[mode] = out);
+}
 function mapUniverse(p, params){
   const zoom = params.get("zoom"), sn = seen();
   const lines = s("svg",{viewBox:"0 0 1000 620","aria-hidden":"true"});
@@ -1092,14 +1117,29 @@ function mapUniverse(p, params){
     P.filter(q => q.cluster === c.name).forEach(q => { const a = starPos(q, true), b = P.filter(r => r.cluster === c.name);
       b.forEach(r => { if (A.edges.some(([x, y]) => (x === q.short && y === r.short))) { const bp = starPos(r, true); lines.append(s("line",{class:"edge",x1:a.x,y1:a.y,x2:bp.x,y2:bp.y,stroke:fn(f),"stroke-opacity":".35"})); } }); });
   }
-  P.filter(q => !zoom || DATA.clusters.find(x => x.token === zoom).name === q.cluster).forEach(q => {
+  // connections toggle: designed neighbours, or pathways that share a case or group
+  const links = LINK_MODES.some(m => m[0] === params.get("links")) ? params.get("links") : "off";
+  const visible = P.filter(q => !zoom || DATA.clusters.find(x => x.token === zoom).name === q.cluster);
+  const conns = links === "off" ? [] : connections(links).filter(c => visible.includes(c.a) && visible.includes(c.b) && !(zoom && links === "near"));
+  conns.forEach(c => { const a0 = starPos(c.a, !!zoom), b0 = starPos(c.b, !!zoom), mine = p && (c.a === p || c.b === p);
+    lines.append(s("line",{class:"edge conn" + (mine ? " on" : ""),"data-a":c.a.id,"data-b":c.b.id,x1:a0.x,y1:a0.y,x2:b0.x,y2:b0.y,stroke:mine ? "var(--night-ink)" : fn(c.a.family),
+      "stroke-width":mine ? 1.8 : Math.min(.8 + c.n * .35, 2.2),"stroke-opacity":p ? (mine ? .9 : .1) : .32,"stroke-dasharray":c.a.family === c.b.family ? null : "4 4"},
+      s("title",{text:`${c.a.short_name} and ${c.b.short_name}: ${c.why}`}))); });
+  visible.forEach(q => {
     const {x, y} = starPos(q, !!zoom); const r = (zoom ? 7 : 3.2) + Math.min(weight(q), 6) * (zoom ? 1.4 : .7);
     const lit = sn.has(q.id) || trail().includes(q.id) || q.id === p?.id;
     lines.append(s("circle",{class:"star","data-id":q.id,cx:x,cy:y,r,fill:fn(q.family),"fill-opacity":lit ? 1 : .55}));
     if (q.id === p?.id) lines.append(s("circle",{class:"ring",cx:x,cy:y,r:r + 5,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.6"}));
-    stage.append(el("a",{class:"hit",href:href({p:q.id}),"aria-label":q.name,title:q.name,style:`${pct(x, y)};width:${Math.max(r * 2 + 10, 22) / 10}%;aspect-ratio:1`}));
+    stage.append(el("a",{class:"hit",href:href({p:q.id}),"aria-label":q.name,title:q.name,
+      onmouseenter:conns.length ? () => { stage.classList.add("hl"); stage.querySelectorAll(".conn").forEach(l => l.classList.toggle("hot", l.dataset.a === q.id || l.dataset.b === q.id)); } : null,
+      onmouseleave:conns.length ? () => stage.classList.remove("hl") : null,style:`${pct(x, y)};width:${Math.max(r * 2 + 10, 22) / 10}%;aspect-ratio:1`}));
     if (zoom || q.id === p?.id) { const up = y < 300;
       stage.append(el("span",{class:"slab",style:`${pct(x, y)};transform:translate(-50%,${up ? "calc(-100% - " + (r + 6) + "px)" : (r + 6) + "px"});text-align:center;white-space:normal;width:140px`,text:zoom ? q.name : q.name})); }
+  });
+  // connection lines draw in when the toggle changes (skipped when motion is off)
+  onMount((a, ctx) => {
+    const pv = hashParams(ctx.prev); if (hashPath(ctx.prev) !== "map" || (pv.get("links") || "off") === links || links === "off") return;
+    const ls = stage.querySelectorAll(".conn"); if (ls.length) a.animate(a.svg.createDrawable(ls), {draw:["0 0", "0 1"], duration:700, delay:a.stagger(6), ease:"out(2)"});
   });
   // (3) zooming feels like zooming: stars fly between the overview and the area layout instead of cutting over
   onMount((a, ctx) => {
@@ -1119,9 +1159,16 @@ function mapUniverse(p, params){
     }
     a.utils.set(late, {opacity:0}); a.animate(late, {opacity:[0, 1], duration:350, delay:650});
   });
-  return {main:[zoom ? el("p",{style:"margin:0 0 8px"}, el("a",{href:href({zoom:null}),text:"← All areas"})) : null, frame,
+  const toggle = el("div",{class:"linktoggle",role:"group","aria-label":"Show connections"}, el("span",{class:"label",text:"Connections"}),
+    LINK_MODES.map(([k, n, t]) => el("a",{class:"pill",href:href({links:k === "off" ? null : k}),"aria-pressed":String(k === links),title:t,text:n})),
+    links !== "off" ? el("span",{class:"mono",style:"font-size:11px;color:var(--night-muted)",text:`${conns.length} line${conns.length === 1 ? "" : "s"} · dashed = across families` + (zoom && links === "near" ? " · neighbours inside an area are always shown" : "")}) : null);
+  const mineConns = p && links !== "off" ? connections(links).filter(c => c.a === p || c.b === p) : [];
+  const connBox = mineConns.length ? el("div",{class:"panel",style:"margin-top:12px"}, el("span",{class:"label",text:`Connected to (${mineConns.length})`}),
+    el("ul",{class:"connlist"}, mineConns.map(c => { const o = c.a === p ? c.b : c.a;
+      return el("li",{}, dot(o.family), " ", el("a",{href:href({p:o.id, zoom:null}),text:o.short_name}), el("small",{text:c.why})); }))) : null;
+  return {main:[zoom ? el("p",{style:"margin:0 0 8px"}, el("a",{href:href({zoom:null}),text:"← All areas"})) : null, toggle, frame,
     el("div",{class:"mapfoot"}, el("span",{text:p ? "You are here: " + p.name : "Click an area to zoom in"}), el("span",{text:"Bright stars = explored or on your trail · bigger stars = more cases and groups"}),
-      Object.entries(FAM).map(([k, f]) => el("span",{}, el("i",{class:"dot",style:`background:${fn(k)};margin-right:6px`}), f.name)))], side:sidePanel(p, "universe")};
+      Object.entries(FAM).map(([k, f]) => el("span",{}, el("i",{class:"dot",style:`background:${fn(k)};margin-right:6px`}), f.name)))], side:[sidePanel(p, "universe"), connBox]};
 }
 function metroLayout(lines){
   const pos = {}, rows = lines.map((l, ri) => ({l, ri, stations:[]})); const taken = new Set();
@@ -1389,7 +1436,8 @@ function viewPeople(slug){
     const key = x.slug + ":" + qi; const box = el("div",{class:"q"});
     const bal = balance(TILT[store.get(STANCE_KEY, {})[key]] || 0);
     const draw = () => { const cur = store.get(STANCE_KEY, {})[key];
-      fill(box, el("div",{class:"hd label",text:"On: " + q.target}),
+      fill(box, el("div",{class:"hd label",text:"What's being questioned: " + q.target}),
+        q.what ? el("div",{class:"qwhat"}, el("b",{text:"What this is. "}), q.what, el("span",{class:"draft",text:" Draft"})) : null,
         el("div",{class:"pair"},
           el("div",{}, el("div",{class:"who",text:"Their view"}), el("p",{class:"claim",text:q.claim}),
             q.quote ? el("blockquote",{}, `“${q.quote}”`, q.qsrc ? ext(q.qsrc[0], q.qsrc[1]) : null) : null,

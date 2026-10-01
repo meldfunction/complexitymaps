@@ -380,13 +380,15 @@
        "https://en.wikipedia.org/wiki/Biosemiotics",
        "Overview of the field and its schools"
       ]
-     ]
+     ],
+     "what": "Code biology, developed by Marcello Barbieri, holds that life is built on organic codes such as the genetic code: fixed rules that match one set of molecules to another, like a dictionary. In his view these codes work without anyone interpreting them, and meaning in the full sense only arrives later, with animals that have minds."
     },
     {
      "target": "Information talk in molecular biology",
      "claim": "Biology already speaks of genes as information, messages and codes. Taking that language seriously means admitting that something reads them.",
      "who": "Mainstream molecular biology",
-     "other": "Information is a useful shorthand. The chemistry explains what happens, and calling it meaning adds nothing testable."
+     "other": "Information is a useful shorthand. The chemistry explains what happens, and calling it meaning adds nothing testable.",
+     "what": "Since the 1950s molecular biologists have described DNA as carrying information, genes as instructions, and cells as reading, copying and translating messages. Most biologists treat this language as a convenient metaphor for chemical processes rather than a claim that cells understand anything."
     }
    ],
    "sources": [
@@ -720,7 +722,8 @@
      "target": "Conscious purpose",
      "claim": "Acting on narrow goals cuts through the loops that keep a whole system healthy.",
      "who": "Planners, engineers",
-     "other": "Purposeful action is how societies have solved hard problems, from sanitation to vaccines."
+     "other": "Purposeful action is how societies have solved hard problems, from sanitation to vaccines.",
+     "what": "Bateson's name for goal-directed thinking: picking a narrow aim and acting straight toward it, as engineering and planning do. In a 1967 talk, published as \"Conscious Purpose versus Nature\" in Steps to an Ecology of Mind, he argued that this way of thinking, applied to ecosystems and societies, cuts through the loops that keep them in balance."
     }
    ],
    "sources": [
@@ -816,13 +819,15 @@
      "target": "Best practice in complex settings",
      "claim": "Copying what worked elsewhere fails when cause and effect only show up in hindsight.",
      "who": "Process and quality advocates",
-     "other": "Standard methods spread proven gains and cut costly variation."
+     "other": "Standard methods spread proven gains and cut costly variation.",
+     "what": "Best practice means finding the method that worked best somewhere and copying it everywhere: standard procedures, benchmarking, frameworks rolled out across an organization. It comes from engineering and quality management, where cause and effect are stable and repeatable."
     },
     {
      "target": "Stage models of leadership",
      "claim": "Developmental stage models are often sold as ladders without enough evidence.",
      "who": "Vertical development practitioners",
-     "other": "Stage-based coaching gives people a language for growth that many find useful."
+     "other": "Stage-based coaching gives people a language for growth that many find useful.",
+     "what": "Leadership versions of adult development stage theories, such as the \"action logics\" of William Torbert and David Rooke or the colour-coded organizations in Frederic Laloux's Reinventing Organizations. They sort leaders or organizations into developmental levels, often using assessments sold for coaching, hiring and promotion."
     }
    ],
    "sources": [
@@ -933,7 +938,8 @@
      "target": "Banking education",
      "claim": "Treating learners as empty containers keeps them from questioning their conditions.",
      "who": "Advocates of direct instruction",
-     "other": "Clear teaching of basics gives poorer students the tools wealthier ones already have."
+     "other": "Clear teaching of basics gives poorer students the tools wealthier ones already have.",
+     "what": "Freire's name for the familiar classroom model in which the teacher holds the knowledge and deposits it into students, who store, memorize and repeat it, like money in a bank. Students are judged on how well they keep what they were given."
     }
    ],
    "sources": [
@@ -1290,7 +1296,8 @@
      "target": "The tragedy of the commons",
      "claim": "Users of a shared resource don't inevitably ruin it; many communities have governed commons for centuries.",
      "who": "Followers of Garrett Hardin (1968)",
-     "other": "Without a state or private owner, large open-access resources do get overused."
+     "other": "Without a state or private owner, large open-access resources do get overused.",
+     "what": "An argument made by the ecologist Garrett Hardin in a 1968 essay in Science. He imagined a pasture open to all herders: each herder gains by adding one more animal, while the cost of overgrazing is shared by everyone, so rational individuals end up ruining the pasture. He concluded that shared resources must be privatized or controlled by government."
     }
    ],
    "sources": [
@@ -1363,7 +1370,8 @@
      "target": "Endless growth",
      "claim": "Growth in material use can't continue forever on a finite planet.",
      "who": "Economists such as Julian Simon",
-     "other": "Human ingenuity and prices find substitutes; the 1972 scenarios underrated innovation."
+     "other": "Human ingenuity and prices find substitutes; the 1972 scenarios underrated innovation.",
+     "what": "The assumption that economies can and should keep increasing their output year after year. Most governments judge success by growth in GDP. The Limits to Growth (1972) used a computer model, World3, to explore what happens if population and industrial output keep growing exponentially on a finite planet."
     }
    ],
    "sources": [
@@ -1884,13 +1892,15 @@
        "https://en.wikipedia.org/wiki/Developmental_stage_theories",
        "Background on Piaget, Kegan and others"
       ]
-     ]
+     ],
+     "what": "Stage theories say that the way people make sense of the world grows through a fixed sequence of stages, each able to hold more complexity than the one before. Jean Piaget described stages for children; Robert Kegan, Clare Graves (whose work became Spiral Dynamics) and Ken Wilber described them for adults. In leadership and \"vertical development\" programmes, people are sometimes assessed, placed at a stage, and coached to move \"up\"."
     },
     {
      "target": "Solutions thinking",
      "claim": "Treating complex problems as things to fix with one intervention ignores how everything around them shifts in response.",
      "who": "Programme designers, evaluators",
-     "other": "Without clear goals and measures, public money can't be accounted for and nothing gets tested."
+     "other": "Without clear goals and measures, public money can't be accounted for and nothing gets tested.",
+     "what": "The habit of treating a complex problem like a fault in a machine: find the cause, design one intervention, roll it out, and check whether a target number moved. It sits behind most programme funding, logframes and results-based management."
     }
    ],
    "sources": [

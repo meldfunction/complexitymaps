@@ -21,9 +21,20 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     check(gets.length === 0, `[${mode}] no request to the worker on page load`);
     check((await p.textContent('#status-text')).includes('loads when you ask'), `[${mode}] idle status on load`);
     check(await p.textContent('h1.art-title') === 'Power analysis', `[${mode}] wiki article renders`);
-    for (const h of ['#/','#/wiki','#/path','#/map','#/map?view=metro','#/map?view=tree&p=bohm-dialogue','#/map?view=treemap','#/map?view=mine','#/map?view=time',
+    for (const h of ['#/','#/wiki','#/path','#/map','#/map?view=metro','#/map?view=tree&p=bohm-dialogue','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/map?view=universe&links=shared','#/map?view=universe&zoom=found&links=shared',
         '#/people/nora-bateson','#/contribute','#/about','#/about/acknowledgment','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
     check(gets.length === 0, `[${mode}] browsing every route makes no request`);
+    if (mode === 'live') {
+      await go(p, '#/map?view=universe'); check(await p.locator('.stage .conn').count() === 0, '[live] universe shows no connection lines by default');
+      await p.click('.linktoggle a:has-text("Neighbours")'); await p.waitForTimeout(300);
+      const near = await p.locator('.stage .conn').count(); check(near > 20, `[live] neighbours toggle draws lines (${near})`);
+      check(p.url().includes('links=near'), '[live] connections toggle is deep-linkable');
+      await go(p, '#/map?view=universe&links=shared&p=sensemaking-and-acting-in-uncertainty');
+      check(await p.locator('.stage .conn.on').count() >= 1, '[live] selected pathway highlights its own connections');
+      check(await p.locator('.connlist li').count() >= 1, '[live] side panel lists what the pathway connects to and why');
+      await go(p, '#/people/nora-bateson');
+      check((await p.textContent('.q .qwhat')).includes('Stage theories say'), '[live] critique explains what is being questioned');
+    }
     await go(p, '#/wiki/power-analysis');
     await p.click('button.loadbtn'); await p.waitForTimeout(700);
     check(gets.length === 1, `[${mode}] tapping Load makes exactly one request (${gets.length})`);
@@ -59,7 +70,7 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     check(await p.evaluate(() => document.activeElement.id) === 'pq', `[${mode}] filter keeps focus while typing`);
     await p.setViewportSize({width:360,height:800}); await p.waitForTimeout(150);
     for (const h of ['#/','#/wiki/crisis-disaster-and-high-reliability','#/path?start=now','#/path?start=want&area=care&trade=teach&p=experiential-learning-and-reflective-practice',
-        '#/map','#/map?view=metro','#/map?view=tree&p=power-analysis','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/people/nora-bateson','#/contribute','#/about','#/about/acknowledgment','#/orgs/hls','#/cases']) {
+        '#/map','#/map?view=universe&links=shared&p=power-analysis','#/map?view=metro','#/map?view=tree&p=power-analysis','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/people/nora-bateson','#/contribute','#/about','#/about/acknowledgment','#/orgs/hls','#/cases']) {
       await go(p, h);
       const ov = await p.evaluate(() => document.documentElement.scrollWidth - innerWidth);
       check(ov <= 0, `[${mode}] no sideways scroll at 360px on ${h} (${ov})`);
