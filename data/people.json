@@ -1,5 +1,539 @@
 [
  {
+  "name": "Joanna Macy",
+  "years": "1929–2025",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Joanna_Macy",
+  "slug": "joanna-macy",
+  "appears": [
+   "relational-transcontextual-and-post-humanist-knowing",
+   "living-systems-and-regeneration",
+   "work-that-reconnects",
+   "somatic-and-embodied-practice"
+  ],
+  "born": 1929,
+  "died": 2025,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gerard Endenburg",
+  "years": "1933–2025",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Gerard_Endenburg",
+  "slug": "gerard-endenburg",
+  "appears": [
+   "governance-and-self-organizing-structures"
+  ],
+  "born": 1933,
+  "died": 2025,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Marshall Rosenberg",
+  "years": "1934–2015",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Marshall_Rosenberg",
+  "slug": "marshall-rosenberg",
+  "appears": [
+   "conflict-transformation"
+  ],
+  "born": 1934,
+  "died": 2015,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "William Bridges",
+  "years": "1933–2013",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/William_Bridges_(author)",
+  "slug": "william-bridges",
+  "appears": [
+   "ritual-liminality-and-transition"
+  ],
+  "born": 1933,
+  "died": 2013,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Carl Folke",
+  "years": "b. 1955",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Carl_Folke",
+  "slug": "carl-folke",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "born": 1955,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "David Cooperrider",
+  "years": "b. 1954",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/David_Cooperrider",
+  "slug": "david-cooperrider",
+  "appears": [
+   "appreciative-inquiry"
+  ],
+  "born": 1954,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Dean Spade",
+  "years": "b. 1977",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Dean_Spade",
+  "slug": "dean-spade",
+  "appears": [
+   "crisis-disaster-and-high-reliability"
+  ],
+  "born": 1977,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ezio Manzini",
+  "years": "b. 1945",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ezio_Manzini",
+  "slug": "ezio-manzini",
+  "appears": [
+   "participatory-design-and-design-justice"
+  ],
+  "born": 1945,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Geoff Mulgan",
+  "years": "b. 1961",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Geoff_Mulgan",
+  "slug": "geoff-mulgan",
+  "appears": [
+   "public-policy-and-government-innovation",
+   "strategic-design-and-policy-labs"
+  ],
+  "born": 1961,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Howard Zehr",
+  "years": "b. 1944",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Howard_Zehr",
+  "slug": "howard-zehr",
+  "appears": [
+   "conflict-transformation"
+  ],
+  "born": 1944,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jennifer Pahlka",
+  "years": "b. 1969",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jennifer_Pahlka",
+  "slug": "jennifer-pahlka",
+  "appears": [
+   "government-plumbing"
+  ],
+  "born": 1969,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Gaventa",
+  "years": "b. 1949",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/John_Gaventa",
+  "slug": "john-gaventa",
+  "appears": [
+   "power-analysis"
+  ],
+  "born": 1949,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jonathan Rowson",
+  "years": "b. 1977",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jonathan_Rowson",
+  "slug": "jonathan-rowson",
+  "appears": [
+   "the-metacrisis-and-meaning"
+  ],
+  "born": 1977,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Marshall Ganz",
+  "years": "b. 1943",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Marshall_Ganz",
+  "slug": "marshall-ganz",
+  "appears": [
+   "narrative-change"
+  ],
+  "born": 1943,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Tushman",
+  "years": "b. 1947",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Michael_Tushman",
+  "slug": "michael-tushman",
+  "appears": [
+   "corporate-innovation-and-renewal"
+  ],
+  "born": 1947,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nigel Cross",
+  "years": "b. 1942",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Nigel_Cross",
+  "slug": "nigel-cross",
+  "appears": [
+   "design-thinking"
+  ],
+  "born": 1942,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Rebecca Solnit",
+  "years": "b. 1961",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Rebecca_Solnit",
+  "slug": "rebecca-solnit",
+  "appears": [
+   "crisis-disaster-and-high-reliability"
+  ],
+  "born": 1961,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Richard Strozzi-Heckler",
+  "years": "b. 1944",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Richard_Strozzi-Heckler",
+  "slug": "richard-strozzi-heckler",
+  "appears": [
+   "somatic-and-embodied-practice"
+  ],
+  "born": 1944,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jakob von Uexküll",
+  "years": "1864–1944",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll",
+  "slug": "jakob-von-uexk-ll",
+  "appears": [
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1864,
+  "died": 1944,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Thomas Sebeok",
+  "years": "1920–2001",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Thomas_Sebeok",
+  "slug": "thomas-sebeok",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making",
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1920,
+  "died": 2001,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jesper Hoffmeyer",
+  "years": "1942–2019",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jesper_Hoffmeyer",
+  "slug": "jesper-hoffmeyer",
+  "appears": [
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1942,
+  "died": 2019,
+  "founded": null,
+  "profile": {
+   "known": "Danish biochemist at the University of Copenhagen and a founder of biosemiotics. Argued that life is built on sign relations, and that the capacity to interpret signs grows through evolution.",
+   "timeline": [
+    [
+     1942,
+     "Born in Denmark"
+    ],
+    [
+     1991,
+     "With Claus Emmeche, proposes code duality: life passes on both a digital code (DNA) and an analog one (the living organism)"
+    ],
+    [
+     1993,
+     "Publishes En snegl på vejen in Danish"
+    ],
+    [
+     1996,
+     "Its English edition, Signs of Meaning in the Universe, becomes a turning point for the field"
+    ],
+    [
+     2005,
+     "Becomes the first President of the International Society for Biosemiotic Studies, serving until 2015"
+    ],
+    [
+     2008,
+     "Publishes Biosemiotics: An Examination into the Signs of Life and the Life of Signs"
+    ],
+    [
+     2019,
+     "Dies on 25 September, aged 77"
+    ]
+   ],
+   "ideas": [
+    [
+     "Semiotic freedom",
+     "How many ways a living thing can respond to the same sign. It tends to grow through evolution, from bacteria following a chemical trail to animals reading each other."
+    ],
+    [
+     "Code duality",
+     "Life runs on two codes at once: the digital code of DNA, and the analog code of the living body that reads it and is shaped by its world."
+    ],
+    [
+     "Semiosphere",
+     "He stretched Yuri Lotman's word for a culture's world of signs to cover all life: every organism lives inside a web of signs made by others."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Codes without interpreters",
+     "claim": "Even the simplest living things interpret signs. Meaning is part of biology from the start, not something added later by minds.",
+     "who": "Marcello Barbieri (code biology)",
+     "other": "The genetic code and other organic codes are fixed rules of correspondence. They need no interpreter, and interpretation appears only in more complex animals.",
+     "more": [
+      [
+       "Code biology, Wikipedia",
+       "https://en.wikipedia.org/wiki/Code_biology",
+       "Barbieri's alternative, which split from Peircean biosemiotics"
+      ],
+      [
+       "Biosemiotics, Wikipedia",
+       "https://en.wikipedia.org/wiki/Biosemiotics",
+       "Overview of the field and its schools"
+      ]
+     ]
+    },
+    {
+     "target": "Information talk in molecular biology",
+     "claim": "Biology already speaks of genes as information, messages and codes. Taking that language seriously means admitting that something reads them.",
+     "who": "Mainstream molecular biology",
+     "other": "Information is a useful shorthand. The chemistry explains what happens, and calling it meaning adds nothing testable."
+    }
+   ],
+   "sources": [
+    [
+     "Signs of Meaning in the Universe (1996)",
+     "His best-known book, Indiana University Press"
+    ],
+    [
+     "Biosemiotics: An Examination into the Signs of Life and the Life of Signs (2008)",
+     "The fuller statement"
+    ],
+    [
+     "International Society for Biosemiotic Studies",
+     "The society he led",
+     "https://biosemiotics.org/"
+    ],
+    [
+     "Emmeche, Favareau and Kull: Jesper Hoffmeyer 1942–2019",
+     "Obituary in Biosemiotics 12 (2019)",
+     "https://philpapers.org/rec/EMMJH"
+    ]
+   ],
+   "ask": [
+    "Does a bacterium following sugar \"interpret\" anything, or is that just a figure of speech?",
+    "If meaning goes all the way down, what changes about how you treat other living things?",
+    "Where would you draw the line between a signal and a sign?"
+   ],
+   "checked": [
+    [
+     "Life dates and ISBS presidency (2005–2015)",
+     "https://philpapers.org/rec/EMMJH"
+    ],
+    [
+     "ISBS founding in 2005",
+     "https://en.wikipedia.org/wiki/International_Society_for_Biosemiotic_Studies"
+    ]
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Kalevi Kull",
+  "years": "b. 1952",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Kalevi_Kull",
+  "slug": "kalevi-kull",
+  "appears": [
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1952,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Terrence Deacon",
+  "years": "b. 1950",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Terrence_Deacon",
+  "slug": "terrence-deacon",
+  "appears": [
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1950,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Charles Sanders Peirce",
+  "years": "1839–1914",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Charles_Sanders_Peirce",
+  "slug": "charles-sanders-peirce",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making",
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1839,
+  "died": 1914,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ferdinand de Saussure",
+  "years": "1857–1913",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+  "slug": "ferdinand-de-saussure",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "born": 1857,
+  "died": 1913,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Yuri Lotman",
+  "years": "1922–1993",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Yuri_Lotman",
+  "slug": "yuri-lotman",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "born": 1922,
+  "died": 1993,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Umberto Eco",
+  "years": "1932–2016",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Umberto_Eco",
+  "slug": "umberto-eco",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "born": 1932,
+  "died": 2016,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Roland Barthes",
+  "years": "1915–1980",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Roland_Barthes",
+  "slug": "roland-barthes",
+  "appears": [
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "born": 1915,
+  "died": 1980,
+  "founded": null,
+  "profile": null
+ },
+ {
   "name": "Norbert Wiener",
   "years": "1894–1964",
   "kind": "person",
@@ -125,6 +659,8 @@
    "relational-transcontextual-and-post-humanist-knowing",
    "nora-bateson-and-warm-data",
    "the-metacrisis-and-meaning",
+   "semiotics-signs-codes-and-meaning-making",
+   "biosemiotics-and-the-umwelt",
    "emergence-in-movements-and-social-change",
    "bohm-dialogue",
    "transformative-learning",
@@ -1254,6 +1790,8 @@
    "relational-transcontextual-and-post-humanist-knowing",
    "nora-bateson-and-warm-data",
    "the-metacrisis-and-meaning",
+   "semiotics-signs-codes-and-meaning-making",
+   "biosemiotics-and-the-umwelt",
    "emergence-in-movements-and-social-change",
    "bohm-dialogue",
    "transformative-learning",

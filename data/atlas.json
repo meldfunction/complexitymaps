@@ -161,6 +161,26 @@
   [
    "plumb",
    "svc"
+  ],
+  [
+   "biosem",
+   "livsys"
+  ],
+  [
+   "biosem",
+   "semio"
+  ],
+  [
+   "semio",
+   "reln"
+  ],
+  [
+   "semio",
+   "narr"
+  ],
+  [
+   "biosem",
+   "cyb"
   ]
  ],
  "metro": [
@@ -345,7 +365,9 @@
     "living-systems-and-regeneration",
     "complexity-economics-and-new-economic-models",
     "relational-transcontextual-and-post-humanist-knowing",
-    "complexity-and-education"
+    "complexity-and-education",
+    "biosemiotics-and-the-umwelt",
+    "semiotics-signs-codes-and-meaning-making"
    ]
   },
   {
@@ -430,7 +452,8 @@
     "living-systems-and-regeneration",
     "nora-bateson-and-warm-data",
     "transition-design",
-    "positive-deviance"
+    "positive-deviance",
+    "biosemiotics-and-the-umwelt"
    ]
   }
  ],

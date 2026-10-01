@@ -53,7 +53,9 @@ SHORT = {'cyb': 'cybernetics-the-shared-foundation',
  'popedu': 'critical-and-popular-education',
  'cop': 'communities-of-practice-and-action-learning',
  'adult': 'adult-development-and-immunity-to-change',
- 'cxedu': 'complexity-and-education'}
+ 'cxedu': 'complexity-and-education',
+ 'biosem': 'biosemiotics-and-the-umwelt',
+ 'semio': 'semiotics-signs-codes-and-meaning-making'}
 
 # four hue families: oklch(0.52 0.09 H)
 FAMILIES = {'sci': {'name': 'Science and structure', 'hue': 245},
@@ -122,7 +124,9 @@ SHORT_NAMES = {'cyb': 'Cybernetics',
  'popedu': 'Popular education',
  'cop': 'Communities of practice',
  'adult': 'Adult development',
- 'cxedu': 'Complexity and education'}
+ 'cxedu': 'Complexity and education',
+ 'biosem': 'Biosemiotics and Umwelt',
+ 'semio': 'Semiotics'}
 
 # hand-drawn neighbour links for the Universe and Metro maps
 EDGES = [('cyb', 'cx'),
@@ -160,7 +164,12 @@ EDGES = [('cyb', 'cx'),
  ('collab', 'meas'),
  ('ai', 'host'),
  ('strat', 'corp'),
- ('plumb', 'svc')]
+ ('plumb', 'svc'),
+ ('biosem', 'livsys'),
+ ('biosem', 'semio'),
+ ('semio', 'reln'),
+ ('semio', 'narr'),
+ ('biosem', 'cyb')]
 
 # known trails, drawn as metro lines (fictional composite starting points)
 METRO_LINES = [{'id': 'gov',
@@ -254,7 +263,9 @@ TAGS = {'cyb': 'edu|org,pol',
  'popedu': 'com,edu|grp,plc',
  'cop': 'gov,ngo,edu|grp,org',
  'adult': 'edu,biz|per',
- 'cxedu': 'edu|org,pla'}
+ 'cxedu': 'edu|org,pla',
+ 'biosem': 'edu,com|plc,pla',
+ 'semio': 'edu,gov|grp,pol'}
 
 WORK_KINDS = [('sub', 'Subsistence', 'Producing food, shelter and warmth'),
  ('cra', 'Craft', 'Making things with skill and care'),
@@ -268,22 +279,22 @@ WORK_KINDS = [('sub', 'Subsistence', 'Producing food, shelter and warmth'),
  ('att', 'Attention', 'Where attention itself becomes labour')]
 
 # DRAFT  work kind -> short ids
-WORK_TAGS = {'sub': ['livsys', 'indig'],
+WORK_TAGS = {'sub': ['livsys', 'indig', 'biosem'],
  'cra': ['dthink', 'svc', 'pd', 'trans', 'improve', 'labs'],
  'car': ['soma', 'crisis', 'posdev', 'wtr', 'adult', 'host'],
  'com': ['selforg', 'moves', 'host', 'collab', 'cop', 'indig', 'ar'],
  'sac': ['ritual', 'meta', 'wtr', 'indig', 'reln'],
  'int': ['soma', 'transl', 'adult', 'theoryu', 'reln', 'meta', 'exp', 'tgroup'],
  'pol': ['power', 'narr', 'conflict', 'moves', 'popedu', 'pubpol', 'grel'],
- 'cre': ['narr', 'sysdes', 'trans', 'warm', 'ai'],
+ 'cre': ['narr', 'sysdes', 'trans', 'warm', 'ai', 'semio'],
  'adm': ['plumb', 'meas', 'fund', 'strat', 'sense', 'deval', 'teams', 'corp', 'econ'],
- 'att': ['narr', 'cyb', 'warm', 'sense', 'bohm', 'cx']}
+ 'att': ['narr', 'cyb', 'warm', 'sense', 'bohm', 'cx', 'semio', 'biosem']}
 
 # DRAFT  home page goals: id, label, examples, short ids
 GOALS = [('connect',
   'Understand how things connect',
   'Cybernetics, complexity science, living systems',
-  ['cyb', 'cx', 'livsys', 'econ', 'reln', 'cxedu']),
+  ['cyb', 'cx', 'livsys', 'econ', 'reln', 'cxedu', 'biosem', 'semio']),
  ('uncertain',
   'Decide when things are uncertain',
   'Sensemaking, strategy, crisis response',
@@ -307,7 +318,7 @@ GOALS = [('connect',
  ('land',
   'Learn from land and tradition',
   'Indigenous and land-based knowledge, regeneration',
-  ['indig', 'livsys', 'warm', 'trans', 'posdev'])]
+  ['indig', 'livsys', 'warm', 'trans', 'posdev', 'biosem'])]
 
 TYPE_LABELS = {'Lineage': ('A lineage', "Thinkers who built on each other's ideas"),
  'Method': ('A method', 'A structured way of doing something'),

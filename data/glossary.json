@@ -46,5 +46,913 @@
  {
   "term": "user research",
   "defn": "Learning directly from the people who use a service: watching, asking, testing."
+ },
+ {
+  "term": "second-order cybernetics",
+  "defn": "Cybernetics that includes the observer: how you look is part of what you find."
+ },
+ {
+  "term": "viable system model",
+  "defn": "Stafford Beer's model of the five functions any organization needs to survive and adapt."
+ },
+ {
+  "term": "homeostasis",
+  "defn": "A system keeping something steady, like body temperature, by correcting drift."
+ },
+ {
+  "term": "self-organization",
+  "defn": "Order that arises from local interactions without anyone in charge."
+ },
+ {
+  "term": "agent-based model",
+  "defn": "A computer simulation of many individual agents following rules, to see what patterns emerge."
+ },
+ {
+  "term": "network science",
+  "defn": "The study of how things are connected and how connections shape what spreads."
+ },
+ {
+  "term": "tipping point",
+  "defn": "A threshold where a small change flips a system into a different state."
+ },
+ {
+  "term": "ecology of mind",
+  "defn": "Bateson's idea that mind is a pattern across organism and environment, not something inside a head."
+ },
+ {
+  "term": "transcontextual",
+  "defn": "A problem lives in many contexts at once, and each shapes the others."
+ },
+ {
+  "term": "hospicing modernity",
+  "defn": "Caring for a dying way of life well, so something new can emerge, rather than propping it up."
+ },
+ {
+  "term": "post-humanism",
+  "defn": "Questioning the idea that humans stand apart from and above the rest of life."
+ },
+ {
+  "term": "agential realism",
+  "defn": "Karen Barad's view that things come into being through their relationships."
+ },
+ {
+  "term": "warm data",
+  "defn": "Information about how parts of a system relate, gathered across many contexts at once."
+ },
+ {
+  "term": "symmathesy",
+  "defn": "Living things learn and change together, in context. No part learns alone."
+ },
+ {
+  "term": "aphanipoiesis",
+  "defn": "Bateson's word for the unseen ways things come together toward vitality."
+ },
+ {
+  "term": "warm data lab",
+  "defn": "A gathering where people talk about an issue through many contexts in turn, with no set outcome."
+ },
+ {
+  "term": "reciprocity",
+  "defn": "Taking only what is given, and giving back in return, as a principle of relationship."
+ },
+ {
+  "term": "honorable harvest",
+  "defn": "Kimmerer's guidelines for taking from the land with respect, so it can keep giving."
+ },
+ {
+  "term": "two-eyed seeing",
+  "defn": "Seeing with the strengths of Indigenous and Western knowledge together, from Mi'kmaw Elder Albert Marshall."
+ },
+ {
+  "term": "free, prior and informed consent",
+  "defn": "The right of Indigenous peoples to agree or refuse before projects affect their lands."
+ },
+ {
+  "term": "land-based knowledge",
+  "defn": "Knowledge that comes from long relationship with a particular place."
+ },
+ {
+  "term": "presencing",
+  "defn": "Sensing and acting from the highest future possibility, from presence plus sensing."
+ },
+ {
+  "term": "theory u",
+  "defn": "A change process that moves through seeing, sensing and presencing before prototyping."
+ },
+ {
+  "term": "downloading",
+  "defn": "Listening that only confirms what you already think."
+ },
+ {
+  "term": "learning journey",
+  "defn": "Visiting places and people in a system to see it freshly."
+ },
+ {
+  "term": "social presencing theater",
+  "defn": "Arawana Hayashi's movement practice for sensing a system with the body."
+ },
+ {
+  "term": "metacrisis",
+  "defn": "The idea that many crises share one root in how modern culture sees and makes meaning."
+ },
+ {
+  "term": "polycrisis",
+  "defn": "Several crises interacting so the whole is worse than the sum."
+ },
+ {
+  "term": "meaning crisis",
+  "defn": "John Vervaeke's term for the loss of shared ways to make sense of life."
+ },
+ {
+  "term": "hemisphere hypothesis",
+  "defn": "McGilchrist's argument that culture has come to favour a narrow, grasping kind of attention."
+ },
+ {
+  "term": "semiotics",
+  "defn": "The study of signs: anything that stands for something else to someone."
+ },
+ {
+  "term": "icon, index, symbol",
+  "defn": "Peirce's three kinds of sign: by resemblance, by connection, and by convention."
+ },
+ {
+  "term": "signifier and signified",
+  "defn": "Saussure's split between the form of a sign and the concept it carries."
+ },
+ {
+  "term": "semiosphere",
+  "defn": "Lotman's term for the shared space of signs a culture lives in."
+ },
+ {
+  "term": "semiosis",
+  "defn": "The process by which something comes to stand for something else to someone."
+ },
+ {
+  "term": "autopoiesis",
+  "defn": "Self-making: living systems produce and maintain themselves."
+ },
+ {
+  "term": "resilience",
+  "defn": "A system's capacity to absorb shocks and reorganize while keeping its core functions."
+ },
+ {
+  "term": "regenerative design",
+  "defn": "Design that leaves places and communities healthier than before."
+ },
+ {
+  "term": "bioregion",
+  "defn": "A region defined by natural features like a watershed, rather than by political lines."
+ },
+ {
+  "term": "adaptive cycle",
+  "defn": "C.S. Holling's model of growth, conservation, release and reorganization in living systems."
+ },
+ {
+  "term": "umwelt",
+  "defn": "The world as a particular animal experiences it: only what its senses and needs make meaningful."
+ },
+ {
+  "term": "biosemiotics",
+  "defn": "The study of signs and meaning in living systems, from cells to ecosystems."
+ },
+ {
+  "term": "semiotic freedom",
+  "defn": "How many ways a living thing can respond to the same sign; it tends to grow through evolution."
+ },
+ {
+  "term": "ecosemiotics",
+  "defn": "The study of how signs connect cultures and ecosystems, developed in Tartu."
+ },
+ {
+  "term": "probe-sense-respond",
+  "defn": "In complex situations, act a little, see what happens, then adjust."
+ },
+ {
+  "term": "weak signals",
+  "defn": "Early, faint signs of change that are easy to dismiss."
+ },
+ {
+  "term": "sociocracy",
+  "defn": "A way of governing with consent decisions in linked circles, so every voice has a route."
+ },
+ {
+  "term": "consent",
+  "defn": "A decision passes unless someone has a reasoned objection that it would cause harm, not when everyone agrees."
+ },
+ {
+  "term": "commons",
+  "defn": "A shared resource managed by the community that uses it."
+ },
+ {
+  "term": "polycentric governance",
+  "defn": "Many centres of decision at different scales, overlapping and checking each other."
+ },
+ {
+  "term": "emergent strategy",
+  "defn": "adrienne maree brown's approach: change grows from small, adaptive, relational actions."
+ },
+ {
+  "term": "two loops",
+  "defn": "Berkana's model of an old system declining while a new one grows through networks."
+ },
+ {
+  "term": "fractal",
+  "defn": "The idea that how we work at small scale repeats at large scale."
+ },
+ {
+  "term": "network",
+  "defn": "Connections between people who share an interest, the first stage of emergence."
+ },
+ {
+  "term": "community of practice",
+  "defn": "A group that shares a practice and learns from each other over time."
+ },
+ {
+  "term": "open space",
+  "defn": "A meeting where participants set the agenda and go where they can contribute most."
+ },
+ {
+  "term": "world café",
+  "defn": "Small table conversations that rotate, so ideas cross-pollinate across a large group."
+ },
+ {
+  "term": "liberating structures",
+  "defn": "33 simple patterns for meetings that include everyone."
+ },
+ {
+  "term": "harvest",
+  "defn": "Capturing what a gathering produced so it can be used."
+ },
+ {
+  "term": "powerful question",
+  "defn": "A question that invites real thinking and matters to the people in the room."
+ },
+ {
+  "term": "dialogue",
+  "defn": "A shared inquiry where meaning flows through a group, from the Greek for 'through the word'."
+ },
+ {
+  "term": "suspension",
+  "defn": "Holding an assumption up to look at, without defending it or dropping it."
+ },
+ {
+  "term": "proprioception of thought",
+  "defn": "Bohm's idea of noticing your own thinking as it happens, the way you sense your body."
+ },
+ {
+  "term": "thinking together",
+  "defn": "Isaacs' phrase for groups that think as a whole rather than trade fixed positions."
+ },
+ {
+  "term": "container",
+  "defn": "The shared space of trust that lets a group hold difficult conversation."
+ },
+ {
+  "term": "here and now",
+  "defn": "Paying attention to what is happening in the group right now, not to outside topics."
+ },
+ {
+  "term": "group dynamics",
+  "defn": "Kurt Lewin's term for the forces that shape how groups behave."
+ },
+ {
+  "term": "t-group",
+  "defn": "A small training group that learns from its own interaction."
+ },
+ {
+  "term": "laboratory method",
+  "defn": "Learning by experimenting with behaviour in a safe, temporary setting."
+ },
+ {
+  "term": "basic assumption",
+  "defn": "Bion's term for an unspoken belief that takes over a group, like dependence on a leader."
+ },
+ {
+  "term": "social defence",
+  "defn": "A structure or routine that protects people from anxiety, often at the cost of the task."
+ },
+ {
+  "term": "role",
+  "defn": "The part a person takes up in a system, separate from who they are."
+ },
+ {
+  "term": "authority",
+  "defn": "The right to act, given by the system and taken up by the person."
+ },
+ {
+  "term": "primary task",
+  "defn": "The task an organization must perform to survive."
+ },
+ {
+  "term": "appreciative inquiry",
+  "defn": "Change that starts by studying what already works well."
+ },
+ {
+  "term": "4-d cycle",
+  "defn": "Discover, dream, design and destiny: the steps of an Appreciative Inquiry."
+ },
+ {
+  "term": "ai summit",
+  "defn": "A large meeting that brings a whole system together to design its future."
+ },
+ {
+  "term": "strength-based",
+  "defn": "Starting from people's strengths rather than their deficits."
+ },
+ {
+  "term": "generative question",
+  "defn": "A question that opens new possibilities rather than confirming what is known."
+ },
+ {
+  "term": "the spiral",
+  "defn": "The four stages of the Work That Reconnects: gratitude, honouring pain, seeing with new eyes, going forth."
+ },
+ {
+  "term": "active hope",
+  "defn": "Hope as something you do, not something you have."
+ },
+ {
+  "term": "deep time",
+  "defn": "Imagining across many generations to widen your sense of the present."
+ },
+ {
+  "term": "the great turning",
+  "defn": "Macy's name for the shift from an industrial growth society to a life-sustaining one."
+ },
+ {
+  "term": "deep ecology",
+  "defn": "The view that all living things have value in themselves, not only for human use."
+ },
+ {
+  "term": "somatics",
+  "defn": "Practices that work with the body as lived from the inside."
+ },
+ {
+  "term": "centring",
+  "defn": "Bringing attention back to the body to act from choice rather than reaction."
+ },
+ {
+  "term": "regulation",
+  "defn": "The nervous system settling after stress so a person can think and connect."
+ },
+ {
+  "term": "embodiment",
+  "defn": "How experience and history live in the body and shape action."
+ },
+ {
+  "term": "cultural somatics",
+  "defn": "Menakem's approach to how racialized trauma is carried in bodies across generations."
+ },
+ {
+  "term": "three faces of power",
+  "defn": "Lukes' visible, hidden and invisible power: decisions, agenda-setting and shaping beliefs."
+ },
+ {
+  "term": "power cube",
+  "defn": "Gaventa's tool for analysing the spaces, levels and forms of power."
+ },
+ {
+  "term": "claimed space",
+  "defn": "A space that people create for themselves, outside official channels."
+ },
+ {
+  "term": "invisible power",
+  "defn": "Power that works through norms and beliefs, so people do not see it as power."
+ },
+ {
+  "term": "positionality",
+  "defn": "Where you stand in relation to power, and how that shapes what you see."
+ },
+ {
+  "term": "framing",
+  "defn": "How an issue is presented, which shapes how people reason about it."
+ },
+ {
+  "term": "deep story",
+  "defn": "A widely held, often unspoken story people use to make sense of the world."
+ },
+ {
+  "term": "public narrative",
+  "defn": "Ganz's method: story of self, story of us, story of now."
+ },
+ {
+  "term": "narrative power",
+  "defn": "The ability to shape which stories are told and believed."
+ },
+ {
+  "term": "cultural model",
+  "defn": "A shared mental shortcut people use to understand an issue."
+ },
+ {
+  "term": "moral imagination",
+  "defn": "Lederach's capacity to see a web of relationships that includes adversaries."
+ },
+ {
+  "term": "restorative justice",
+  "defn": "Responding to harm by repairing it, with those affected involved."
+ },
+ {
+  "term": "deep democracy",
+  "defn": "The Mindells' practice of bringing all voices, including marginal ones, into awareness."
+ },
+ {
+  "term": "nonviolent communication",
+  "defn": "Rosenberg's method of naming observations, feelings, needs and requests."
+ },
+ {
+  "term": "conflict transformation",
+  "defn": "Working with conflict to change relationships and structures, not just to settle it."
+ },
+ {
+  "term": "high reliability organization",
+  "defn": "An organization that operates safely in high-risk conditions by staying alert to small failures."
+ },
+ {
+  "term": "mutual aid",
+  "defn": "People meeting each other's needs directly, as equals, outside formal charity."
+ },
+ {
+  "term": "social capital",
+  "defn": "The networks and trust that let people act together."
+ },
+ {
+  "term": "preoccupation with failure",
+  "defn": "Treating small errors as signs of bigger risks."
+ },
+ {
+  "term": "deference to expertise",
+  "defn": "Letting whoever knows most about the situation make the call."
+ },
+ {
+  "term": "liminality",
+  "defn": "The in-between state of a transition, when old roles are gone and new ones have not formed."
+ },
+ {
+  "term": "rite of passage",
+  "defn": "A ritual marking a transition, with separation, threshold and return."
+ },
+ {
+  "term": "communitas",
+  "defn": "The strong bond among people going through a threshold together."
+ },
+ {
+  "term": "neutral zone",
+  "defn": "Bridges' term for the confusing middle of a transition."
+ },
+ {
+  "term": "communal grief",
+  "defn": "Grieving together as a community, as Weller describes."
+ },
+ {
+  "term": "wicked problem",
+  "defn": "A problem with no clear definition, no right answer, and no point where it is solved for good."
+ },
+ {
+  "term": "leverage point",
+  "defn": "A place in a system where a small shift produces big change, from Donella Meadows."
+ },
+ {
+  "term": "human learning systems",
+  "defn": "An approach to public management built on learning, relationships and system stewardship instead of targets."
+ },
+ {
+  "term": "mission-oriented policy",
+  "defn": "Policy organized around a bold, concrete goal that many sectors work toward."
+ },
+ {
+  "term": "stewardship",
+  "defn": "Looking after the health of a whole system rather than controlling its parts."
+ },
+ {
+  "term": "gigamapping",
+  "defn": "Making very large, detailed visual maps of a system so a group can see it whole."
+ },
+ {
+  "term": "three horizons",
+  "defn": "A framework that looks at the fading present, the emerging future, and the transition between them."
+ },
+ {
+  "term": "futures literacy",
+  "defn": "The skill of using imagined futures to understand and act in the present."
+ },
+ {
+  "term": "scenario",
+  "defn": "A coherent story of a possible future, used to test plans, not to predict."
+ },
+ {
+  "term": "foresight",
+  "defn": "Systematic thinking about possible futures to inform decisions now."
+ },
+ {
+  "term": "increasing returns",
+  "defn": "When being ahead makes it easier to get further ahead, so small early leads lock in."
+ },
+ {
+  "term": "doughnut economics",
+  "defn": "Kate Raworth's model: meet everyone's needs without overshooting the planet's limits."
+ },
+ {
+  "term": "bounded rationality",
+  "defn": "Herbert Simon's idea that people decide with limited time, information and attention."
+ },
+ {
+  "term": "equilibrium",
+  "defn": "A state of balance. Complexity economics argues real economies rarely settle into one."
+ },
+ {
+  "term": "wellbeing economy",
+  "defn": "An economy designed to deliver human and ecological wellbeing rather than growth for its own sake."
+ },
+ {
+  "term": "scenario planning",
+  "defn": "Rehearsing several plausible futures to make better decisions now."
+ },
+ {
+  "term": "wardley mapping",
+  "defn": "A map of a value chain showing how each component evolves from novel to commodity."
+ },
+ {
+  "term": "antifragility",
+  "defn": "Nassim Taleb's word for things that get stronger from shocks and stress."
+ },
+ {
+  "term": "optionality",
+  "defn": "Keeping choices open so you can act when the future becomes clearer."
+ },
+ {
+  "term": "transformative scenario planning",
+  "defn": "Adam Kahane's method where opponents build scenarios together to change the situation, not just adapt to it."
+ },
+ {
+  "term": "beyond budgeting",
+  "defn": "Running an organization without fixed annual budgets, using rolling forecasts and devolved decisions."
+ },
+ {
+  "term": "portfolio approach",
+  "defn": "Funding several linked experiments together and managing them as a whole."
+ },
+ {
+  "term": "trust-based philanthropy",
+  "defn": "Grant-making built on flexible money, light reporting and shared power with grantees."
+ },
+ {
+  "term": "rolling forecast",
+  "defn": "A forecast updated regularly instead of fixed once a year."
+ },
+ {
+  "term": "unrestricted funding",
+  "defn": "Money a grantee can spend on whatever the work needs."
+ },
+ {
+  "term": "goodhart's law",
+  "defn": "When a measure becomes a target, it stops being a good measure."
+ },
+ {
+  "term": "campbell's law",
+  "defn": "The more a number is used for decisions, the more it gets corrupted and corrupts the work."
+ },
+ {
+  "term": "public value",
+  "defn": "Mark Moore's idea that public managers should create value the public cares about, with legitimacy and capacity to deliver it."
+ },
+ {
+  "term": "accountability for learning",
+  "defn": "Holding people to account for learning and improving, not for numbers they do not control."
+ },
+ {
+  "term": "gaming",
+  "defn": "Hitting a target in ways that defeat its purpose."
+ },
+ {
+  "term": "street-level bureaucracy",
+  "defn": "Michael Lipsky's insight that frontline workers effectively make policy through daily choices."
+ },
+ {
+  "term": "experimentalist governance",
+  "defn": "Set broad goals centrally, let local units try ways to meet them, and review together."
+ },
+ {
+  "term": "relational commissioning",
+  "defn": "Buying services through ongoing relationships and shared goals rather than fixed specifications."
+ },
+ {
+  "term": "alliance contract",
+  "defn": "One contract where several providers share responsibility for an outcome."
+ },
+ {
+  "term": "regulatory sandbox",
+  "defn": "A safe space where new approaches can be tested under relaxed rules with close watching."
+ },
+ {
+  "term": "psychological safety",
+  "defn": "A shared belief that the team is safe for speaking up, asking questions and admitting mistakes."
+ },
+ {
+  "term": "blameless review",
+  "defn": "Looking at what went wrong to learn, without seeking someone to punish."
+ },
+ {
+  "term": "team topologies",
+  "defn": "A small set of team types and ways of interacting, to organize around the flow of work."
+ },
+ {
+  "term": "outcomes over outputs",
+  "defn": "Judging work by the change it makes for people, not by how much was produced."
+ },
+ {
+  "term": "teaming",
+  "defn": "Edmondson's word for forming and working in teams on the fly."
+ },
+ {
+  "term": "disruptive innovation",
+  "defn": "When a simpler, cheaper offer starts at the bottom of a market and moves up until it displaces leaders."
+ },
+ {
+  "term": "ambidexterity",
+  "defn": "Running the current business well while exploring new ones."
+ },
+ {
+  "term": "open innovation",
+  "defn": "Using ideas and partners from outside the organization."
+ },
+ {
+  "term": "rendanheyi",
+  "defn": "Haier's model of thousands of small, self-managing units close to customers."
+ },
+ {
+  "term": "exploit and explore",
+  "defn": "The tension between using what works and searching for what might work."
+ },
+ {
+  "term": "collective impact",
+  "defn": "Many organizations working on one problem with a common agenda and a backbone team."
+ },
+ {
+  "term": "backbone organization",
+  "defn": "A small team that supports a partnership by connecting, convening and keeping data."
+ },
+ {
+  "term": "common agenda",
+  "defn": "A shared understanding of the problem and the change being sought."
+ },
+ {
+  "term": "network weaving",
+  "defn": "Deliberately building connections between people so a network can act."
+ },
+ {
+  "term": "community power",
+  "defn": "Residents holding real decision-making power, not only a voice."
+ },
+ {
+  "term": "human-centred design",
+  "defn": "Design that starts from the needs and behaviour of the people who will use it."
+ },
+ {
+  "term": "prototype",
+  "defn": "A rough version of an idea, made to learn quickly."
+ },
+ {
+  "term": "how might we",
+  "defn": "A question format that turns a problem into an invitation to ideas."
+ },
+ {
+  "term": "empathy",
+  "defn": "In design thinking, understanding users by watching and listening closely."
+ },
+ {
+  "term": "iteration",
+  "defn": "Repeating the build-test-learn cycle to improve."
+ },
+ {
+  "term": "co-design",
+  "defn": "Designing together with the people who will use or be affected by the result."
+ },
+ {
+  "term": "design justice",
+  "defn": "Design led by marginalized communities, aiming to dismantle structural inequality."
+ },
+ {
+  "term": "pluriverse",
+  "defn": "A world where many worlds fit, in Escobar's phrase from the Zapatistas."
+ },
+ {
+  "term": "participatory design",
+  "defn": "Design in which users take part in decisions, rooted in Scandinavian workplace democracy."
+ },
+ {
+  "term": "co-production",
+  "defn": "Public services designed and delivered with the people who use them."
+ },
+ {
+  "term": "transition design",
+  "defn": "Design for long-term societal transitions toward sustainable futures."
+ },
+ {
+  "term": "backcasting",
+  "defn": "Imagining a desired future and working backward to see what steps lead there."
+ },
+ {
+  "term": "multi-level perspective",
+  "defn": "A model of transitions as interactions between niches, regimes and landscapes."
+ },
+ {
+  "term": "long horizon",
+  "defn": "Thinking in decades, not quarters."
+ },
+ {
+  "term": "policy lab",
+  "defn": "A team that brings design and experimentation into policymaking."
+ },
+ {
+  "term": "strategic design",
+  "defn": "Using design to change institutions and the conditions around services."
+ },
+ {
+  "term": "dark matter",
+  "defn": "Dan Hill's term for the hidden rules, culture and money that shape what institutions can do."
+ },
+ {
+  "term": "pdsa",
+  "defn": "Plan-Do-Study-Act: a small cycle of testing a change and learning from it."
+ },
+ {
+  "term": "system of profound knowledge",
+  "defn": "Deming's four parts: systems, variation, knowledge and psychology."
+ },
+ {
+  "term": "variation",
+  "defn": "The natural ups and downs in any measure; telling noise from signal."
+ },
+ {
+  "term": "lean",
+  "defn": "A way of working that removes waste and improves flow."
+ },
+ {
+  "term": "run chart",
+  "defn": "A graph of a measure over time, to see real change."
+ },
+ {
+  "term": "developmental evaluation",
+  "defn": "Evaluation that supports a programme to adapt while it runs."
+ },
+ {
+  "term": "learning question",
+  "defn": "A question a team agrees to explore together over time."
+ },
+ {
+  "term": "utilization-focused evaluation",
+  "defn": "Patton's principle that evaluation should be useful to its intended users."
+ },
+ {
+  "term": "summative evaluation",
+  "defn": "Evaluation that judges results at the end, which developmental evaluation is not."
+ },
+ {
+  "term": "action research",
+  "defn": "Research and change as one cycle, done with the people affected."
+ },
+ {
+  "term": "participatory action research",
+  "defn": "Action research led by communities, linking knowledge to power."
+ },
+ {
+  "term": "co-research",
+  "defn": "Research where participants are researchers too."
+ },
+ {
+  "term": "cycle of inquiry",
+  "defn": "Plan, act, observe, reflect, and repeat."
+ },
+ {
+  "term": "praxis",
+  "defn": "Action and reflection together, in Freire's sense."
+ },
+ {
+  "term": "positive deviance",
+  "defn": "People who succeed against the odds, with the same resources as others."
+ },
+ {
+  "term": "bright spots",
+  "defn": "Places where something is already working."
+ },
+ {
+  "term": "acting your way into thinking",
+  "defn": "PD's principle that people change by practising, not by being told."
+ },
+ {
+  "term": "community ownership",
+  "defn": "The community leads, discovers and spreads the solution."
+ },
+ {
+  "term": "uncommon practice",
+  "defn": "A behaviour that explains why a few do better."
+ },
+ {
+  "term": "experiential learning cycle",
+  "defn": "Kolb's cycle: experience, reflection, conceptualization, experimentation."
+ },
+ {
+  "term": "reflection-in-action",
+  "defn": "Schön's idea of thinking on your feet as you work."
+ },
+ {
+  "term": "reflective practice",
+  "defn": "Regularly looking back at your work to learn from it."
+ },
+ {
+  "term": "double-loop learning",
+  "defn": "Argyris and Schön's idea of questioning the assumptions behind your actions, not just the actions."
+ },
+ {
+  "term": "learning by doing",
+  "defn": "Dewey's principle that we learn through experience."
+ },
+ {
+  "term": "disorienting dilemma",
+  "defn": "A situation that your current assumptions cannot explain, which can trigger transformation."
+ },
+ {
+  "term": "perspective transformation",
+  "defn": "Mezirow's term for a change in the frame through which you see the world."
+ },
+ {
+  "term": "threshold concept",
+  "defn": "An idea that is troublesome to learn but transforms understanding once grasped."
+ },
+ {
+  "term": "critical reflection",
+  "defn": "Examining the assumptions behind your beliefs."
+ },
+ {
+  "term": "troublesome knowledge",
+  "defn": "Knowledge that feels strange or counter-intuitive at first."
+ },
+ {
+  "term": "conscientization",
+  "defn": "Freire's term for developing critical awareness of the forces shaping your life."
+ },
+ {
+  "term": "banking model",
+  "defn": "Freire's critique of education that deposits facts into passive learners."
+ },
+ {
+  "term": "engaged pedagogy",
+  "defn": "bell hooks' teaching that honours students as whole people."
+ },
+ {
+  "term": "popular education",
+  "defn": "Education rooted in people's experience, aimed at social change."
+ },
+ {
+  "term": "action learning",
+  "defn": "Revans' method: small groups work on real problems through questions."
+ },
+ {
+  "term": "legitimate peripheral participation",
+  "defn": "Lave and Wenger's idea that newcomers learn by taking part at the edge."
+ },
+ {
+  "term": "social learning",
+  "defn": "Learning that happens through relationships and shared practice."
+ },
+ {
+  "term": "systems convening",
+  "defn": "Wenger-Trayner's term for bringing people together across boundaries to learn."
+ },
+ {
+  "term": "immunity to change",
+  "defn": "Kegan and Lahey's term for hidden commitments that keep us from changing."
+ },
+ {
+  "term": "subject-object shift",
+  "defn": "Kegan's idea that growth means being able to look at what you used to look through."
+ },
+ {
+  "term": "big assumption",
+  "defn": "A belief taken as true that holds an immunity to change in place."
+ },
+ {
+  "term": "vertical development",
+  "defn": "Growth in how you make sense of the world, not just in skills."
+ },
+ {
+  "term": "self-authoring mind",
+  "defn": "Kegan's stage where people form their own values rather than following others'."
+ },
+ {
+  "term": "complexity thinking",
+  "defn": "Seeing a situation as many interacting parts producing patterns no one part explains."
+ },
+ {
+  "term": "inner development goals",
+  "defn": "A framework of inner capacities, like perspective-taking and self-awareness, for working on global challenges."
+ },
+ {
+  "term": "teaching uncertainty",
+  "defn": "Morin's call to prepare learners for the unexpected."
+ },
+ {
+  "term": "learning system",
+  "defn": "An organization or community designed to learn continually."
  }
 ]

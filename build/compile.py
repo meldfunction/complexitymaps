@@ -12,6 +12,7 @@ from content_cases import CASES
 from content_misc import ORIENTATIONS, LEVELS, BRAIDS, JOURNEYS, ABOUT
 import content_atlas as A
 from content_people import PEOPLE, PROFILES
+from content_depth import D as DEPTH
 
 errors = []
 slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -87,8 +88,19 @@ for p in pathways:
     p["goals"] = [g[0] for g in A.GOALS if sid in g[3]]
     if not p["goals"]: errors.append(f"untagged goals: {p['name']}")
     cl = next((t for r, t in A.CLUSTER_LENS if re.search(r, p["cluster"])), "")
-    p["lens"], p["lens_status"] = (A.PATH_LENS[p["id"]], "draft") if p["id"] in A.PATH_LENS else (cl, "cluster")
-    p["explainer"] = A.EXPLAINERS.get(p["id"], [])
+    dp = DEPTH.get(sid, {})
+    if not dp: errors.append(f"no depth content for {sid}")
+    lens = A.PATH_LENS.get(p["id"]) or dp.get("lens")
+    p["lens"], p["lens_status"] = (lens, "draft") if lens else (cl, "cluster")
+    p["explainer"] = A.EXPLAINERS.get(p["id"]) or dp.get("explainer", [])
+    p["practice"] = dp.get("practice", [])
+    p["sector_notes"] = dp.get("sectors", {})
+    p["key_ideas"] = [dict(term=k, defn=v) for k, v in dp.get("ideas", [])]
+    for k, v in dp.get("ideas", []):
+        A.GLOSSARY.setdefault(k, v)
+    for f in ("explainer", "practice", "key_ideas"):
+        if not p[f]: warnings.append(f"no {f}: {sid}")
+    if set(p["sector_notes"]) != {"biz", "ngo", "health", "edu", "com"}: errors.append(f"sector notes incomplete: {sid}")
     p["plain_overview"] = A.PLAIN.get(p["id"], {}).get("ov", "")
     p["plain_policy"] = A.PLAIN.get(p["id"], {}).get("pol", "")
     stops = []

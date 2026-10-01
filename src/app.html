@@ -185,6 +185,12 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .gov .label{color:var(--ink);font-weight:600}
 .sectors{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
 .sectors .badge{border-style:dashed}
+.secnotes{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:6px 0 0;width:100%;font-size:14px}
+.secnotes dt{font-weight:600}
+.secnotes dd{margin:0;color:var(--muted)}
+@media (max-width:520px){.secnotes{grid-template-columns:1fr}.secnotes dd{margin-bottom:6px}}
+.practice{margin:6px 0 0;padding-left:22px;max-width:62ch}
+.practice li{margin:4px 0}
 .casebox{background:var(--paper2);border-radius:12px;padding:14px 16px;margin-top:10px;display:block;color:var(--ink);text-decoration:none}
 .casebox:hover{color:var(--ink);outline:1px solid var(--line)}
 .casebox h4{font-size:18px;margin:4px 0}
@@ -736,8 +742,9 @@ function viewArticle(id){
   const fam = p.family, col = fc(fam);
   const peopleNames = p.stops.flatMap(s0 => [s0.name.toLowerCase(), ...s0.people.map(n => n.toLowerCase())]);
   const glossary = Object.fromEntries(GL.map(g => [g.term, g.defn]));
+  (p.key_ideas || []).forEach(k => { glossary[k.term] = k.defn; });
   const seenT = new Set();
-  const terms = p.terms.filter(t => glossary[t] || !peopleNames.some(n => n.includes(t))).filter(t => { const k = t.replace(/-/g, ""); if (seenT.has(k)) return false; seenT.add(k); return true; })
+  const terms = (p.key_ideas || []).length ? p.key_ideas.map(k => k.term) : p.terms.filter(t => glossary[t] || !peopleNames.some(n => n.includes(t))).filter(t => { const k = t.replace(/-/g, ""); if (seenT.has(k)) return false; seenT.add(k); return true; })
     .sort((a, b) => (glossary[b] ? 1 : 0) - (glossary[a] ? 1 : 0)).slice(0, 8);
   const termsBox = el("div");
   const drawTerms = () => fill(termsBox, 
@@ -792,14 +799,18 @@ function viewArticle(id){
         p.mix ? el("p",{style:"margin-top:12px;max-width:62ch"}, el("b",{text:"Also shaped by: "}), rich(p.mix)) : null,
         el("h2",{id:"s-uses",text:"Who uses it"}),
         p.policy ? el("div",{class:"gov"}, el("div",{class:"label",text:"In government and policy"}), el("p",{}, rich(p.plain_policy || p.policy))) : null,
-        el("div",{class:"sectors"}, el("span",{class:"label",text:"Other sectors"}), otherSectors.map(([k, n]) => el("span",{class:"badge dash",title:"Still to write (new field: sectors)",text:n}))),
+        el("div",{class:"sectors"}, el("span",{class:"label",text:"Other sectors"}),
+          Object.keys(p.sector_notes || {}).length
+            ? el("dl",{class:"secnotes"}, otherSectors.filter(([k]) => p.sector_notes[k]).map(([k, n]) => [el("dt",{text:n}), el("dd",{text:p.sector_notes[k]})]), el("p",{class:"draft",text:"Draft · check against sources"}))
+            : otherSectors.map(([k, n]) => el("span",{class:"badge dash",title:"Still to write (new field: sectors)",text:n}))),
         orgs.length ? el("div",{class:"grid",style:"grid-template-columns:repeat(auto-fill,minmax(220px,1fr))"}, orgs.map(o => el("a",{class:"tile",href:"#/orgs/"+o.id}, el("span",{class:"t",text:o.name}), el("p",{class:"clamp",text:o.summary})))) : null,
         cases.length ? cases.map(c => el("a",{class:"casebox",href:"#/cases/"+c.id}, el("span",{class:"label",text:`Case · ${c.place} · ${c.years}`}), el("h4",{text:c.title}), el("p",{text:c.lesson}),
           c.note ? el("p",{style:"margin-top:6px;color:var(--muted)"}, el("b",{text:"Limits: "}), c.note) : null))
           : el("div",{class:"placeholder",text:"No documented case yet. Know one? Suggest it below."}),
         el("h2",{id:"s-how",text:"How to use it"}),
         el("div",{class:"terms"}, p.links.map(l => ext(l.t, l.u, "pill")), p.reading.map(m => ext(m.title, m.u, "pill"))),
-        el("div",{class:"placeholder",text:"Step-by-step practice goes here · new field: practice"}),
+        (p.practice || []).length ? [el("div",{class:"label",style:"margin-top:14px",text:"First steps to try"}), el("ol",{class:"practice"}, p.practice.map(x => el("li",{text:x}))), el("p",{class:"draft",text:"Draft · check against sources"})]
+          : el("div",{class:"placeholder",text:"Step-by-step practice goes here · new field: practice"}),
         el("div",{style:"display:flex;gap:8px;flex-wrap:wrap;margin-top:16px"},
           el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); setTrail(inTrail ? t.filter(x => x !== p.id) : [...t, p.id]); route(true); },text:inTrail ? "✓ On my trail" : "+ Add to my trail"}),
           el("a",{class:"btn ghost",href:mapHref(p.id, "tree"),text:"See its lineage on the map"})),

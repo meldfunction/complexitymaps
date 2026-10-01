@@ -407,7 +407,7 @@
    {
     "kind": "Article",
     "title": "Kurt Lewin: groups, experiential learning and action research (infed)",
-    "u": "https://infed.org/dir/welcome/kurt-lewin-groups-experiential-learning-and-action-research/"
+    "u": "https://web.archive.org/web/2025/https://infed.org/dir/welcome/kurt-lewin-groups-experiential-learning-and-action-research/"
    }
   ]
  },
@@ -923,9 +923,9 @@
     "u": "https://pressbooks.pub/jass-power-guide/chapter/theme-5-engaging-and-resisting/"
    },
    {
-    "kind": "Article",
-    "title": "Making change happen: power (VeneKlasen and Miller)",
-    "u": "https://comm-org.wisc.edu/papers2007/miller.htm"
+    "kind": "Guide",
+    "title": "A New Weave of Power, People and Politics (VeneKlasen and Miller, JASS)",
+    "u": "https://justassociates.org/all-resources/a-new-weave-of-power-people-politics-the-action-guide-for-advocacy-and-citizen-participation/"
    }
   ]
  },
@@ -1242,7 +1242,7 @@
  {
   "id": "infed",
   "name": "infed (YMCA George Williams College)",
-  "url": "https://infed.org",
+  "url": "https://web.archive.org/web/2025/https://infed.org/",
   "summary": "Free encyclopedia of informal education with clear, well-sourced essays on the major educators.",
   "pathways": [
    "experiential-learning-and-reflective-practice",
@@ -1252,17 +1252,17 @@
    {
     "kind": "Article",
     "title": "David A. Kolb on experiential learning",
-    "u": "https://infed.org/dir/welcome/david-a-kolb-on-experiential-learning/"
+    "u": "https://web.archive.org/web/2025/https://infed.org/dir/welcome/david-a-kolb-on-experiential-learning/"
    },
    {
     "kind": "Article",
     "title": "Paulo Freire: dialogue, praxis and education",
-    "u": "https://infed.org/dir/welcome/paulo-freire-dialogue-praxis-and-education/"
+    "u": "https://web.archive.org/web/2025/https://infed.org/dir/welcome/paulo-freire-dialogue-praxis-and-education/"
    },
    {
     "kind": "Article",
     "title": "bell hooks on education",
-    "u": "https://infed.org/dir/welcome/bell-hooks-on-education/"
+    "u": "https://web.archive.org/web/2025/https://infed.org/dir/welcome/bell-hooks-on-education/"
    }
   ]
  },
@@ -1358,6 +1358,75 @@
     "kind": "Guide",
     "title": "The map, route, and library",
     "u": "https://welearnwegrow.github.io/capacities/"
+   }
+  ]
+ },
+ {
+  "id": "isbs",
+  "name": "International Society for Biosemiotic Studies",
+  "url": "https://biosemiotics.org/",
+  "summary": "Founded in 2005 by Copenhagen and Tartu researchers to study sign processes in living systems. Runs the annual Gatherings in Biosemiotics (held since 2001) and is linked to the Springer journal Biosemiotics.",
+  "pathways": [
+   "biosemiotics-and-the-umwelt"
+  ],
+  "media": [
+   {
+    "kind": "Journal",
+    "title": "Biosemiotics (Springer)",
+    "u": "https://link.springer.com/journal/12304"
+   },
+   {
+    "kind": "Article",
+    "title": "Biosemiotics (overview)",
+    "u": "https://en.wikipedia.org/wiki/Biosemiotics"
+   }
+  ]
+ },
+ {
+  "id": "tartu-semiotics",
+  "name": "University of Tartu Department of Semiotics",
+  "url": "https://filsem.ut.ee/en",
+  "summary": "Home of the Tartu–Moscow school of Yuri Lotman and of Tartu biosemiotics and ecosemiotics. Its researchers apply Umwelt analysis to city green spaces and to species reintroduction.",
+  "pathways": [
+   "biosemiotics-and-the-umwelt",
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Ecosemiotics research group",
+    "u": "https://www.ecosem.ut.ee/en/?p=36"
+   },
+   {
+    "kind": "Journal",
+    "title": "Sign Systems Studies (open access)",
+    "u": "https://ojs.utlib.ee/index.php/sss"
+   },
+   {
+    "kind": "Article",
+    "title": "Reintroduction of the European mink: local community experience (project page)",
+    "u": "https://www.serake.ut.ee/en/?p=818"
+   }
+  ]
+ },
+ {
+  "id": "iass",
+  "name": "International Association for Semiotic Studies",
+  "url": "https://iass-ais.org/",
+  "summary": "The worldwide association for semiotics, founded in 1969. Holds world congresses and links national societies such as the Semiotic Society of America.",
+  "pathways": [
+   "semiotics-signs-codes-and-meaning-making"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Peirce's theory of signs (Stanford Encyclopedia of Philosophy)",
+    "u": "https://plato.stanford.edu/entries/peirce-semiotics/"
+   },
+   {
+    "kind": "Article",
+    "title": "Semiotic Society of America",
+    "u": "https://www.semioticsocietyofamerica.org/"
    }
   ]
  }
