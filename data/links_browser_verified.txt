@@ -1,0 +1,31 @@
+# Links that refuse scripted checks (403/429/202) but were opened and confirmed in a browser.
+# build/check_links.py reports these as "verified" instead of "blocked". Re-check by hand if one changes.
+# Confirmed by the site owner on 2026-10-01.
+https://convergencemag.com/articles/myles-horton-highlander/
+https://deming.org
+https://deming.org/explore/sopk/
+https://filsem.ut.ee/en
+https://journals.sagepub.com/doi/10.1177/1866802X261464354
+https://keithmccandless.medium.com/liberating-structures-change-methods-for-everybody-every-day-648e9c0d04a7
+https://legislation.govt.nz/act/public/2017/7/en/latest/
+https://medium.com/@undp.innovation/locally-grown-missions-undps-experience-on-portfolio-approach-to-system-transformation-our-bfc4de2ba199
+https://medium.com/age-of-awareness/designing-regenerative-cultures-introduction-68a12a387983
+https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/
+https://norabateson.medium.com/preparing-for-a-confusing-future-complexity-warm-data-and-education-8eaae6b09eef
+https://pressbooks.pub/jass-power-guide/
+https://pressbooks.pub/jass-power-guide/chapter/theme-5-engaging-and-resisting/
+https://provocations.darkmatterlabs.org/radicle-civics-building-proofs-of-possibilities-for-a-civic-economy-and-society-ee28baeeec70
+https://read.dukeupress.edu/books/book/2805/Cowards-Don-t-Make-HistoryOrlando-Fals-Borda-and
+https://whanganui.govt.nz/About-Whanganui/Our-District/Te-Awa-Tupua-Whanganui-River-Settlement
+https://www.betterevaluation.org
+https://www.chronicle.com/article/the-tyranny-of-metrics/
+https://www.forbes.com/sites/stevedenning/2019/06/24/how-equinor-and-handelsbanken-abolished-budgeting/
+https://www.imf.org/en/publications/fandd/issues/2024/09/policy-with-a-purpose-mazzucato
+https://www.sciencedirect.com/science/article/abs/pii/S0305750X06002269
+https://www.sciencedirect.com/science/article/pii/S2405872620300411
+https://www.semanticscholar.org/paper/Education-for-Perspective-Transformation.-Women's-Mezirow-Marsick/a8cbf0444d3c73f343eb221d81ca150bf403b2bf
+https://www.tandfonline.com/doi/full/10.1080/17547075.2015.1051829
+https://www.tandfonline.com/doi/full/10.1080/2331186X.2024.2309733
+https://www.thersa.org/videos/rsa-animate-the-divided-brain/
+https://www.ucl.ac.uk/bartlett/public-purpose
+https://www.undp.org/acceleratorlabs
