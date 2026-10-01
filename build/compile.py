@@ -11,7 +11,7 @@ from content_orgs import ORGS
 from content_cases import CASES
 from content_misc import ORIENTATIONS, LEVELS, BRAIDS, JOURNEYS, ABOUT
 import content_atlas as A
-from content_people import PEOPLE, PROFILES
+from content_people import PEOPLE, PROFILES, KNOWN
 try:
     from content_people import NOT_PEOPLE
 except ImportError:
@@ -129,7 +129,8 @@ for x in PEOPLE:
                or (len(last) > 4 and x["kind"] == "person" and re.search(r"\b" + re.escape(last) + r"\b", strip_tags(q["road"]) + " " + strip_tags(q["mix"])))]
     prof = PROFILES.get(n)
     m = re.match(r"(\d{4})\D+(\d{4})", x["years"]); b = re.match(r"b\. (\d{4})", x["years"]); f = re.match(r"founded (\d{4})", x["years"])
-    people_out.append(dict(x, slug=slug_p(n), appears=appears, born=int((m or b).group(1)) if (m or b) else None,
+    if not PROFILES.get(n) and not KNOWN.get(n): warnings.append(f"person with no profile or short entry: {n}")
+    people_out.append(dict(x, slug=slug_p(n), appears=appears, known=KNOWN.get(n, ''), born=int((m or b).group(1)) if (m or b) else None,
                            died=int(m.group(2)) if m else None, founded=int(f.group(1)) if f else None, profile=prof))
 for n in PROFILES:
     if n.lower() not in people_by: errors.append(f"profile with no people entry: {n}")

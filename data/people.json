@@ -12,6 +12,7 @@
    "work-that-reconnects",
    "somatic-and-embodied-practice"
   ],
+  "known": "Scholar of Buddhism and systems thinking who created the Work That Reconnects, a group practice for facing ecological crisis.",
   "born": 1929,
   "died": 2025,
   "founded": null,
@@ -27,6 +28,7 @@
   "appears": [
    "governance-and-self-organizing-structures"
   ],
+  "known": "Dutch engineer and business owner who turned sociocracy into a working method for companies, with consent and linked circles.",
   "born": 1933,
   "died": 2025,
   "founded": null,
@@ -42,6 +44,7 @@
   "appears": [
    "conflict-transformation"
   ],
+  "known": "Psychologist who created Nonviolent Communication: observations, feelings, needs and requests.",
   "born": 1934,
   "died": 2015,
   "founded": null,
@@ -57,6 +60,7 @@
   "appears": [
    "ritual-liminality-and-transition"
   ],
+  "known": "Writer on transitions who separated change (the event) from transition (the inner passage through endings and a neutral zone).",
   "born": 1933,
   "died": 2013,
   "founded": null,
@@ -72,6 +76,7 @@
   "appears": [
    "living-systems-and-regeneration"
   ],
+  "known": "Environmental scientist and a leading voice on resilience: how social and ecological systems absorb shocks and reorganize.",
   "born": 1955,
   "died": null,
   "founded": null,
@@ -87,6 +92,7 @@
   "appears": [
    "appreciative-inquiry"
   ],
+  "known": "Co-creator of Appreciative Inquiry, which starts change from what already works.",
   "born": 1954,
   "died": null,
   "founded": null,
@@ -102,6 +108,7 @@
   "appears": [
    "crisis-disaster-and-high-reliability"
   ],
+  "known": "Lawyer and organizer whose writing on mutual aid shaped how communities support each other in crises.",
   "born": 1977,
   "died": null,
   "founded": null,
@@ -117,6 +124,7 @@
   "appears": [
    "participatory-design-and-design-justice"
   ],
+  "known": "Design researcher who studies how communities design their own solutions, and how designers can support them.",
   "born": 1945,
   "died": null,
   "founded": null,
@@ -133,6 +141,7 @@
    "public-policy-and-government-innovation",
    "strategic-design-and-policy-labs"
   ],
+  "known": "Former head of Nesta and policy adviser who writes on public innovation and collective intelligence.",
   "born": 1961,
   "died": null,
   "founded": null,
@@ -148,6 +157,7 @@
   "appears": [
    "conflict-transformation"
   ],
+  "known": "Criminologist often called the grandfather of restorative justice: repairing harm instead of only punishing it.",
   "born": 1944,
   "died": null,
   "founded": null,
@@ -163,6 +173,7 @@
   "appears": [
    "government-plumbing"
   ],
+  "known": "Founder of Code for America and author of Recoding America, on why policy fails in delivery.",
   "born": 1969,
   "died": null,
   "founded": null,
@@ -178,6 +189,7 @@
   "appears": [
    "power-analysis"
   ],
+  "known": "Scholar of power who developed the Powercube: the spaces, levels and forms through which power works.",
   "born": 1949,
   "died": null,
   "founded": null,
@@ -193,6 +205,7 @@
   "appears": [
    "the-metacrisis-and-meaning"
   ],
+  "known": "Philosopher, chess grandmaster and co-founder of Perspectiva, who writes on the metacrisis.",
   "born": 1977,
   "died": null,
   "founded": null,
@@ -208,6 +221,7 @@
   "appears": [
    "narrative-change"
   ],
+  "known": "Organizer and teacher of public narrative: the story of self, us and now that moves people to act together.",
   "born": 1943,
   "died": null,
   "founded": null,
@@ -223,6 +237,7 @@
   "appears": [
    "corporate-innovation-and-renewal"
   ],
+  "known": "Organizational theorist who, with Charles O'Reilly, described the ambidextrous organization.",
   "born": 1947,
   "died": null,
   "founded": null,
@@ -238,6 +253,7 @@
   "appears": [
    "design-thinking"
   ],
+  "known": "Design researcher who showed how designers think, by framing and reframing problems as they work.",
   "born": 1942,
   "died": null,
   "founded": null,
@@ -253,6 +269,7 @@
   "appears": [
    "crisis-disaster-and-high-reliability"
   ],
+  "known": "Writer whose A Paradise Built in Hell shows that people in disasters mostly help each other.",
   "born": 1961,
   "died": null,
   "founded": null,
@@ -268,6 +285,7 @@
   "appears": [
    "somatic-and-embodied-practice"
   ],
+  "known": "Teacher of somatic leadership, bringing the body and martial arts practice into how leaders act.",
   "born": 1944,
   "died": null,
   "founded": null,
@@ -283,6 +301,7 @@
   "appears": [
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "",
   "born": 1864,
   "died": 1944,
   "founded": null,
@@ -326,14 +345,43 @@
      "claim": "Animals are subjects with their own worlds, not machines reacting to stimuli.",
      "who": "Behaviourists and mechanistic physiologists of his time",
      "other": "Talk of an animal's inner world cannot be tested; science should describe only behaviour.",
-     "what": "The view, going back to Descartes and strong in early twentieth-century physiology and behaviourism, that animals are complex mechanisms: a stimulus goes in, a response comes out, and there is no need to talk about what the animal experiences or what anything means to it."
+     "what": "The view, going back to Descartes and strong in early twentieth-century physiology and behaviourism, that animals are complex mechanisms: a stimulus goes in, a response comes out, and there is no need to talk about what the animal experiences or what anything means to it.",
+     "more": [
+      [
+       "Umwelt, Wikipedia",
+       "https://en.wikipedia.org/wiki/Umwelt",
+       "The concept and the tick example"
+      ],
+      [
+       "Behaviorism, Wikipedia",
+       "https://en.wikipedia.org/wiki/Behaviorism",
+       "The stimulus-and-response view he argued against"
+      ]
+     ]
     },
     {
      "target": "His own politics",
      "claim": "Historians note that his holism was tied to anti-democratic views and, briefly, to sympathy with the early Nazi state, which he later distanced himself from.",
-     "who": "Historians of science such as Anne Harrington (Reenchanted Science, 1996)",
+     "who": "His defenders, citing his own letters",
      "other": "Admirers argue the biology stands apart from the politics and has been taken up by people of every persuasion.",
-     "what": "This is a critique of Uexküll himself rather than of an idea. His holistic biology pictured the state as an organism whose parts should each keep to their function, a picture he used to argue against parliamentary democracy. In the early 1930s he briefly expressed sympathy for the new Nazi state."
+     "what": "This is a critique of Uexküll himself rather than of an idea. His holistic biology pictured the state as an organism whose parts should each keep to their function, a picture he used to argue against parliamentary democracy. In the early 1930s he briefly expressed sympathy for the new Nazi state.",
+     "oquote": "the worst kind of barbarism",
+     "osrc": [
+      "Uexküll, letter of May 1933 on the persecution of Jews (as quoted on Wikipedia)",
+      "https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll"
+     ],
+     "more": [
+      [
+       "Anne Harrington, Reenchanted Science (Princeton University Press)",
+       "https://press.princeton.edu/books/paperback/9780691050508/reenchanted-science",
+       "Holistic biology in Germany and its politics, including Uexküll"
+      ],
+      [
+       "Jakob Johann von Uexküll, Wikipedia",
+       "https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll",
+       "His Staatsbiologie and how his views shifted in 1933"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -372,6 +420,7 @@
    "semiotics-signs-codes-and-meaning-making",
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "Linguist and semiotician who founded zoosemiotics, the study of signs among animals, and helped launch biosemiotics.",
   "born": 1920,
   "died": 2001,
   "founded": null,
@@ -387,6 +436,7 @@
   "appears": [
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "",
   "born": 1942,
   "died": 2019,
   "founded": null,
@@ -461,7 +511,14 @@
      "claim": "Biology already speaks of genes as information, messages and codes. Taking that language seriously means admitting that something reads them.",
      "who": "Mainstream molecular biology",
      "other": "Information is a useful shorthand. The chemistry explains what happens, and calling it meaning adds nothing testable.",
-     "what": "Since the 1950s molecular biologists have described DNA as carrying information, genes as instructions, and cells as reading, copying and translating messages. Most biologists treat this language as a convenient metaphor for chemical processes rather than a claim that cells understand anything."
+     "what": "Since the 1950s molecular biologists have described DNA as carrying information, genes as instructions, and cells as reading, copying and translating messages. Most biologists treat this language as a convenient metaphor for chemical processes rather than a claim that cells understand anything.",
+     "more": [
+      [
+       "Biological Information (Stanford Encyclopedia of Philosophy)",
+       "https://plato.stanford.edu/entries/information-biological/",
+       "Whether talk of genetic information is literal or a metaphor"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -512,6 +569,7 @@
   "appears": [
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "Biologist and semiotician at the University of Tartu, a central figure in biosemiotics and ecosemiotics.",
   "born": 1952,
   "died": null,
   "founded": null,
@@ -527,6 +585,7 @@
   "appears": [
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "Biological anthropologist who asks how meaning and purpose arise from physical processes (Incomplete Nature).",
   "born": 1950,
   "died": null,
   "founded": null,
@@ -543,6 +602,7 @@
    "semiotics-signs-codes-and-meaning-making",
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "",
   "born": 1839,
   "died": 1914,
   "founded": null,
@@ -594,7 +654,19 @@
      "claim": "A sign is not just a word and a meaning: interpretation is a third part, and it keeps going.",
      "who": "Followers of Saussure's signifier and signified",
      "other": "A two-part model is simpler and was more useful for studying language as a system.",
-     "what": "Ferdinand de Saussure's model of the sign has two sides: the signifier (a sound or written form) and the signified (the concept it calls up), joined by convention within a language. It became the basis of structuralism in linguistics, anthropology and cultural studies."
+     "what": "Ferdinand de Saussure's model of the sign has two sides: the signifier (a sound or written form) and the signified (the concept it calls up), joined by convention within a language. It became the basis of structuralism in linguistics, anthropology and cultural studies.",
+     "more": [
+      [
+       "Peirce's theory of signs (Stanford Encyclopedia of Philosophy)",
+       "https://plato.stanford.edu/entries/peirce-semiotics/",
+       "The three-part sign: sign, object, interpretant"
+      ],
+      [
+       "Ferdinand de Saussure, Wikipedia",
+       "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+       "The signifier and the signified"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -631,6 +703,7 @@
   "appears": [
    "semiotics-signs-codes-and-meaning-making"
   ],
+  "known": "Linguist whose model of the sign (signifier and signified) founded structuralism.",
   "born": 1857,
   "died": 1913,
   "founded": null,
@@ -646,6 +719,7 @@
   "appears": [
    "semiotics-signs-codes-and-meaning-making"
   ],
+  "known": "Semiotician who founded the Tartu-Moscow school and coined the semiosphere, the space of signs a culture lives in.",
   "born": 1922,
   "died": 1993,
   "founded": null,
@@ -661,6 +735,7 @@
   "appears": [
    "semiotics-signs-codes-and-meaning-making"
   ],
+  "known": "Semiotician and novelist whose A Theory of Semiotics set out how codes and signs work.",
   "born": 1932,
   "died": 2016,
   "founded": null,
@@ -676,6 +751,7 @@
   "appears": [
    "semiotics-signs-codes-and-meaning-making"
   ],
+  "known": "Writer and semiotician whose Mythologies shows how culture passes off the made as natural.",
   "born": 1915,
   "died": 1980,
   "founded": null,
@@ -691,6 +767,7 @@
   "appears": [
    "cybernetics-the-shared-foundation"
   ],
+  "known": "Mathematician who named cybernetics: the study of control and communication through feedback.",
   "born": 1894,
   "died": 1964,
   "founded": null,
@@ -708,6 +785,7 @@
    "sensemaking-and-acting-in-uncertainty",
    "governance-and-self-organizing-structures"
   ],
+  "known": "Psychiatrist and cybernetician behind the law of requisite variety.",
   "born": 1903,
   "died": 1972,
   "founded": null,
@@ -723,6 +801,7 @@
   "appears": [
    "cybernetics-the-shared-foundation"
   ],
+  "known": "Cybernetician who founded second-order cybernetics: the observer is part of the system observed.",
   "born": 1911,
   "died": 2002,
   "founded": null,
@@ -738,6 +817,7 @@
   "appears": [
    "cybernetics-the-shared-foundation"
   ],
+  "known": "Cybernetician whose conversation theory treated learning as a conversation between people and systems.",
   "born": 1928,
   "died": 1996,
   "founded": null,
@@ -754,6 +834,7 @@
    "cybernetics-the-shared-foundation",
    "governance-and-self-organizing-structures"
   ],
+  "known": "Management cybernetician who created the Viable System Model and led Chile's Project Cybersyn.",
   "born": 1926,
   "died": 2002,
   "founded": null,
@@ -769,6 +850,7 @@
   "appears": [
    "the-formal-science-of-complex-systems"
   ],
+  "known": "Chemist who won the Nobel Prize for work on systems far from equilibrium that organize themselves.",
   "born": 1917,
   "died": 2003,
   "founded": null,
@@ -784,6 +866,7 @@
   "appears": [
    "the-formal-science-of-complex-systems"
   ],
+  "known": "Research institute in New Mexico that made complexity science a field, from economics to biology.",
   "born": null,
   "died": null,
   "founded": 1984,
@@ -793,11 +876,13 @@
   "name": "NECSI",
   "years": "founded 1996",
   "kind": "institution",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/New_England_Complex_Systems_Institute",
   "slug": "necsi",
   "appears": [
    "the-formal-science-of-complex-systems"
   ],
+  "known": "Research institute in Cambridge, Massachusetts, studying complex systems and applying them to policy.",
   "born": null,
   "died": null,
   "founded": 1996,
@@ -822,6 +907,7 @@
    "transformative-learning",
    "complexity-and-education"
   ],
+  "known": "",
   "born": 1904,
   "died": 1980,
   "founded": null,
@@ -877,7 +963,14 @@
      "claim": "Acting on narrow goals cuts through the loops that keep a whole system healthy.",
      "who": "Planners, engineers",
      "other": "Purposeful action is how societies have solved hard problems, from sanitation to vaccines.",
-     "what": "Bateson's name for goal-directed thinking: picking a narrow aim and acting straight toward it, as engineering and planning do. In a 1967 talk, published as \"Conscious Purpose versus Nature\" in Steps to an Ecology of Mind, he argued that this way of thinking, applied to ecosystems and societies, cuts through the loops that keep them in balance."
+     "what": "Bateson's name for goal-directed thinking: picking a narrow aim and acting straight toward it, as engineering and planning do. In a 1967 talk, published as \"Conscious Purpose versus Nature\" in Steps to an Ecology of Mind, he argued that this way of thinking, applied to ecosystems and societies, cuts through the loops that keep them in balance.",
+     "more": [
+      [
+       "Steps to an Ecology of Mind, Wikipedia",
+       "https://en.wikipedia.org/wiki/Steps_to_an_Ecology_of_Mind",
+       "The 1972 collection that includes \"Conscious Purpose versus Nature\""
+      ]
+     ]
     }
    ],
    "sources": [
@@ -907,6 +1000,7 @@
   "appears": [
    "cybernetics-the-shared-foundation"
   ],
+  "known": "Anthropologist who took part in the Macy conferences that shaped cybernetics.",
   "born": 1901,
   "died": 1978,
   "founded": null,
@@ -922,6 +1016,7 @@
   "appears": [
    "the-formal-science-of-complex-systems"
   ],
+  "known": "Theoretical biologist at the Santa Fe Institute who studies self-organization and the origins of order.",
   "born": 1939,
   "died": null,
   "founded": null,
@@ -937,6 +1032,7 @@
   "appears": [
    "sensemaking-and-acting-in-uncertainty"
   ],
+  "known": "",
   "born": 1954,
   "died": null,
   "founded": null,
@@ -974,16 +1070,43 @@
     {
      "target": "Best practice in complex settings",
      "claim": "Copying what worked elsewhere fails when cause and effect only show up in hindsight.",
-     "who": "Process and quality advocates",
+     "who": "Atul Gawande, surgeon and writer",
      "other": "Standard methods spread proven gains and cut costly variation.",
-     "what": "Best practice means finding the method that worked best somewhere and copying it everywhere: standard procedures, benchmarking, frameworks rolled out across an organization. It comes from engineering and quality management, where cause and effect are stable and repeatable."
+     "what": "Best practice means finding the method that worked best somewhere and copying it everywhere: standard procedures, benchmarking, frameworks rolled out across an organization. It comes from engineering and quality management, where cause and effect are stable and repeatable.",
+     "quote": "best practice is, by definition, past practice",
+     "qsrc": [
+      "Snowden and Boone, A Leader's Framework for Decision Making, HBR, Nov 2007 (as quoted on Wikipedia)",
+      "https://en.wikipedia.org/wiki/Cynefin_framework"
+     ],
+     "oquote": "Checklists established a higher standard of baseline performance.",
+     "osrc": [
+      "Atul Gawande, The Checklist, The New Yorker, December 2007",
+      "https://www.newyorker.com/magazine/2007/12/10/the-checklist"
+     ]
     },
     {
      "target": "Stage models of leadership",
      "claim": "Developmental stage models are often sold as ladders without enough evidence.",
-     "who": "Vertical development practitioners",
+     "who": "Bill Torbert (developmental action inquiry), among vertical development practitioners",
      "other": "Stage-based coaching gives people a language for growth that many find useful.",
-     "what": "Leadership versions of adult development stage theories, such as the \"action logics\" of William Torbert and David Rooke or the colour-coded organizations in Frederic Laloux's Reinventing Organizations. They sort leaders or organizations into developmental levels, often using assessments sold for coaching, hiring and promotion."
+     "what": "Leadership versions of adult development stage theories, such as the \"action logics\" of William Torbert and David Rooke or the colour-coded organizations in Frederic Laloux's Reinventing Organizations. They sort leaders or organizations into developmental levels, often using assessments sold for coaching, hiring and promotion.",
+     "more": [
+      [
+       "Coaches Rising, episode 161: Bill Torbert, A Response to Dave Snowden's Critique of Developmental Theory",
+       "https://metacast.app/podcast/coaches-rising/EOVAozT3/161---bill-torbert-a-response-to-dave-snowden-s-critique-of-developmental-theory/usWjqyuF",
+       "Torbert answers the charges of elitism, linearity and stereotyping"
+      ],
+      [
+       "Alexei Kapterev, What's wrong with theories of vertical development",
+       "https://kapterev.substack.com/p/whats-wrong-with-theories-of-vertical",
+       "A critic's summary of the research behind stage models"
+      ],
+      [
+       "Cynefin framework, Wikipedia",
+       "https://en.wikipedia.org/wiki/Cynefin_framework",
+       "Background on Snowden's framework"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1014,6 +1137,7 @@
    "sensemaking-and-acting-in-uncertainty",
    "crisis-disaster-and-high-reliability"
   ],
+  "known": "Organizational theorist of sensemaking and, with Kathleen Sutcliffe, of high reliability organizing.",
   "born": 1936,
   "died": 2026,
   "founded": null,
@@ -1032,6 +1156,7 @@
    "action-research",
    "experiential-learning-and-reflective-practice"
   ],
+  "known": "Psychologist who began action research and the T-group, and studied groups as fields of forces.",
   "born": 1890,
   "died": 1947,
   "founded": null,
@@ -1050,6 +1175,7 @@
    "transformative-learning",
    "critical-and-popular-education"
   ],
+  "known": "",
   "born": 1921,
   "died": 1997,
   "founded": null,
@@ -1095,9 +1221,26 @@
     {
      "target": "Banking education",
      "claim": "Treating learners as empty containers keeps them from questioning their conditions.",
-     "who": "Advocates of direct instruction",
+     "who": "E. D. Hirsch Jr. and other advocates of knowledge-rich, direct teaching",
      "other": "Clear teaching of basics gives poorer students the tools wealthier ones already have.",
-     "what": "Freire's name for the familiar classroom model in which the teacher holds the knowledge and deposits it into students, who store, memorize and repeat it, like money in a bank. Students are judged on how well they keep what they were given."
+     "what": "Freire's name for the familiar classroom model in which the teacher holds the knowledge and deposits it into students, who store, memorize and repeat it, like money in a bank. Students are judged on how well they keep what they were given.",
+     "quote": "the teacher issues communiqués and makes deposits which the students patiently receive, memorize, and repeat",
+     "qsrc": [
+      "Paulo Freire, Pedagogy of the Oppressed, ch. 2, p. 58 (as quoted on Wikipedia)",
+      "https://en.wikipedia.org/wiki/Banking_model_of_education"
+     ],
+     "more": [
+      [
+       "E. D. Hirsch Jr., Wikipedia",
+       "https://en.wikipedia.org/wiki/E._D._Hirsch_Jr.",
+       "Cultural literacy and the case for teaching shared knowledge directly"
+      ],
+      [
+       "Banking model of education, Wikipedia",
+       "https://en.wikipedia.org/wiki/Banking_model_of_education",
+       "Freire's argument and responses to it"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1127,6 +1270,7 @@
   "appears": [
    "critical-and-popular-education"
   ],
+  "known": "Co-founder of the Highlander Folk School, which trained labour and civil rights organizers through popular education.",
   "born": 1905,
   "died": 1990,
   "founded": null,
@@ -1142,6 +1286,7 @@
   "appears": [
    "critical-and-popular-education"
   ],
+  "known": "Writer and teacher whose Teaching to Transgress brought engaged, liberating pedagogy into classrooms.",
   "born": 1952,
   "died": 2021,
   "founded": null,
@@ -1157,6 +1302,7 @@
   "appears": [
    "experiential-learning-and-reflective-practice"
   ],
+  "known": "Philosopher of education who argued that we learn from experience only when we reflect on it.",
   "born": 1859,
   "died": 1952,
   "founded": null,
@@ -1172,6 +1318,7 @@
   "appears": [
    "experiential-learning-and-reflective-practice"
   ],
+  "known": "Educational theorist known for the experiential learning cycle.",
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1189,6 +1336,7 @@
    "design-thinking",
    "experiential-learning-and-reflective-practice"
   ],
+  "known": "Thinker on reflective practice: how professionals think in action in messy situations.",
   "born": 1930,
   "died": 1997,
   "founded": null,
@@ -1206,6 +1354,7 @@
    "t-groups-and-sensitivity-training",
    "action-research"
   ],
+  "known": "Organizational theorist of single- and double-loop learning, and of defensive routines that block it.",
   "born": 1923,
   "died": 2013,
   "founded": null,
@@ -1221,6 +1370,7 @@
   "appears": [
    "transformative-learning"
   ],
+  "known": "Founder of transformative learning theory: adults change their frame after a disorienting dilemma.",
   "born": 1923,
   "died": 2014,
   "founded": null,
@@ -1237,6 +1387,7 @@
    "transformative-learning",
    "adult-development-and-immunity-to-change"
   ],
+  "known": "Developmental psychologist of adult meaning-making and, with Lisa Lahey, immunity to change.",
   "born": 1946,
   "died": null,
   "founded": null,
@@ -1252,6 +1403,7 @@
   "appears": [
    "adult-development-and-immunity-to-change"
   ],
+  "known": "Psychologist who described how children's thinking develops through stages.",
   "born": 1896,
   "died": 1980,
   "founded": null,
@@ -1267,6 +1419,7 @@
   "appears": [
    "communities-of-practice-and-action-learning"
   ],
+  "known": "Anthropologist who, with Etienne Wenger, described learning as taking part in communities of practice.",
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1282,6 +1435,7 @@
   "appears": [
    "communities-of-practice-and-action-learning"
   ],
+  "known": "Educational theorist who developed the idea of communities of practice and social learning.",
   "born": 1952,
   "died": null,
   "founded": null,
@@ -1297,6 +1451,7 @@
   "appears": [
    "communities-of-practice-and-action-learning"
   ],
+  "known": "Founder of action learning: small groups working on real problems through questions rather than advice.",
   "born": 1907,
   "died": 2003,
   "founded": null,
@@ -1312,6 +1467,7 @@
   "appears": [
    "group-relations"
   ],
+  "known": "Psychoanalyst whose studies of groups founded the Group Relations tradition.",
   "born": 1897,
   "died": 1979,
   "founded": null,
@@ -1329,6 +1485,7 @@
    "hosting-and-participatory-practice",
    "bohm-dialogue"
   ],
+  "known": "Physicist who proposed dialogue as a way for groups to notice the assumptions in their shared thinking.",
   "born": 1917,
   "died": 1992,
   "founded": null,
@@ -1346,6 +1503,7 @@
    "presencing-theory-u-and-social-presencing-theater",
    "bohm-dialogue"
   ],
+  "known": "Co-founder of the Presencing Institute and author of Theory U.",
   "born": 1961,
   "died": null,
   "founded": null,
@@ -1362,6 +1520,7 @@
    "presencing-theory-u-and-social-presencing-theater",
    "bohm-dialogue"
   ],
+  "known": "Author of The Fifth Discipline, which popularized systems thinking and learning organizations.",
   "born": 1947,
   "died": null,
   "founded": null,
@@ -1379,6 +1538,7 @@
    "systemic-design-and-futures",
    "design-thinking"
   ],
+  "known": "Design theorist who, with Melvin Webber, named wicked problems.",
   "born": 1930,
   "died": 1990,
   "founded": null,
@@ -1396,6 +1556,7 @@
    "strategy-under-uncertainty",
    "design-thinking"
   ],
+  "known": "Nobel economist and pioneer of decision science, bounded rationality and the sciences of design.",
   "born": 1916,
   "died": 2001,
   "founded": null,
@@ -1411,6 +1572,7 @@
   "appears": [
    "complexity-economics-and-new-economic-models"
   ],
+  "known": "Economist at the Santa Fe Institute who founded complexity economics and studied increasing returns.",
   "born": 1945,
   "died": null,
   "founded": null,
@@ -1430,6 +1592,7 @@
    "complexity-economics-and-new-economic-models",
    "collaboration-across-boundaries"
   ],
+  "known": "",
   "born": 1933,
   "died": 2012,
   "founded": null,
@@ -1471,9 +1634,26 @@
     {
      "target": "The tragedy of the commons",
      "claim": "Users of a shared resource don't inevitably ruin it; many communities have governed commons for centuries.",
-     "who": "Followers of Garrett Hardin (1968)",
+     "who": "Garrett Hardin, \"The Tragedy of the Commons\", Science, 1968",
      "other": "Without a state or private owner, large open-access resources do get overused.",
-     "what": "An argument made by the ecologist Garrett Hardin in a 1968 essay in Science. He imagined a pasture open to all herders: each herder gains by adding one more animal, while the cost of overgrazing is shared by everyone, so rational individuals end up ruining the pasture. He concluded that shared resources must be privatized or controlled by government."
+     "what": "An argument made by the ecologist Garrett Hardin in a 1968 essay in Science. He imagined a pasture open to all herders: each herder gains by adding one more animal, while the cost of overgrazing is shared by everyone, so rational individuals end up ruining the pasture. He concluded that shared resources must be privatized or controlled by government.",
+     "quote": "the earlier theories of rational, but helpless, individuals who are trapped in social dilemmas are not supported by a large number of studies",
+     "qsrc": [
+      "Elinor Ostrom, Nobel Prize lecture, 8 December 2009 (PDF)",
+      "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf"
+     ],
+     "oquote": "Freedom in a commons brings ruin to all.",
+     "osrc": [
+      "Garrett Hardin, The Tragedy of the Commons (1968)",
+      "https://www.garretthardinsociety.org/articles/art_tragedy_of_the_commons.html"
+     ],
+     "more": [
+      [
+       "Tragedy of the commons, Wikipedia",
+       "https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+       "Background, and how Ostrom and others answered Hardin"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1505,6 +1685,7 @@
    "public-policy-and-government-innovation",
    "transition-design"
   ],
+  "known": "",
   "born": 1941,
   "died": 2001,
   "founded": null,
@@ -1546,9 +1727,26 @@
     {
      "target": "Endless growth",
      "claim": "Growth in material use can't continue forever on a finite planet.",
-     "who": "Economists such as Julian Simon",
+     "who": "Julian Simon, economist",
      "other": "Human ingenuity and prices find substitutes; the 1972 scenarios underrated innovation.",
-     "what": "The assumption that economies can and should keep increasing their output year after year. Most governments judge success by growth in GDP. The Limits to Growth (1972) used a computer model, World3, to explore what happens if population and industrial output keep growing exponentially on a finite planet."
+     "what": "The assumption that economies can and should keep increasing their output year after year. Most governments judge success by growth in GDP. The Limits to Growth (1972) used a computer model, World3, to explore what happens if population and industrial output keep growing exponentially on a finite planet.",
+     "quote": "Growth has costs as well as benefits, and we typically don't count the costs",
+     "qsrc": [
+      "Donella Meadows, Leverage Points: Places to Intervene in a System (1999)",
+      "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+     ],
+     "oquote": "The ultimate resource is people",
+     "osrc": [
+      "Julian Simon, The State of Humanity (1995), quoted in Reason, May 1998",
+      "https://reason.com/1998/05/01/in-memoriam-julian-simon/"
+     ],
+     "more": [
+      [
+       "The Limits to Growth, Wikipedia",
+       "https://en.wikipedia.org/wiki/The_Limits_to_Growth",
+       "The 1972 study, its critics, and later comparisons with real data"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1583,6 +1781,7 @@
    "living-systems-and-regeneration",
    "transition-design"
   ],
+  "known": "Physicist and writer on living systems and ecological literacy (The Web of Life).",
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1599,6 +1798,7 @@
    "emergence-in-movements-and-social-change",
    "critical-and-popular-education"
   ],
+  "known": "Detroit activist and philosopher whose ideas on change shaped emergent strategy.",
   "born": 1915,
   "died": 2015,
   "founded": null,
@@ -1614,6 +1814,7 @@
   "appears": [
    "emergence-in-movements-and-social-change"
   ],
+  "known": "Science fiction writer whose Parable novels inspired emergent strategy and movement work.",
   "born": 1947,
   "died": 2006,
   "founded": null,
@@ -1629,6 +1830,7 @@
   "appears": [
    "ritual-liminality-and-transition"
   ],
+  "known": "Ethnographer who described rites of passage: separation, a threshold, and return.",
   "born": 1873,
   "died": 1957,
   "founded": null,
@@ -1644,6 +1846,7 @@
   "appears": [
    "ritual-liminality-and-transition"
   ],
+  "known": "Anthropologist of liminality and communitas, the bond of people crossing a threshold together.",
   "born": 1920,
   "died": 1983,
   "founded": null,
@@ -1659,6 +1862,7 @@
   "appears": [
    "crisis-disaster-and-high-reliability"
   ],
+  "known": "Founder of disaster sociology, whose research showed people rarely panic in disasters.",
   "born": 1924,
   "died": 2017,
   "founded": null,
@@ -1676,6 +1880,7 @@
    "teams-and-learning-cultures",
    "improvement-and-adaptive-management"
   ],
+  "known": "Statistician and teacher of quality improvement: most problems come from the system, not the worker.",
   "born": 1900,
   "died": 1993,
   "founded": null,
@@ -1691,6 +1896,7 @@
   "appears": [
    "developmental-evaluation"
   ],
+  "known": "Evaluator who created developmental evaluation for complex, changing programmes.",
   "born": 1945,
   "died": null,
   "founded": null,
@@ -1707,6 +1913,7 @@
    "action-research",
    "critical-and-popular-education"
   ],
+  "known": "Colombian sociologist who founded participatory action research.",
   "born": 1925,
   "died": 2008,
   "founded": null,
@@ -1722,6 +1929,7 @@
   "appears": [
    "indigenous-and-land-based-knowledge"
   ],
+  "known": "Standing Rock Sioux writer and scholar whose work defended Indigenous knowledge and sovereignty.",
   "born": 1933,
   "died": 2005,
   "founded": null,
@@ -1737,6 +1945,7 @@
   "appears": [
    "indigenous-and-land-based-knowledge"
   ],
+  "known": "Potawatomi botanist and author of Braiding Sweetgrass, joining Indigenous and scientific knowledge.",
   "born": 1953,
   "died": null,
   "founded": null,
@@ -1753,6 +1962,7 @@
    "the-metacrisis-and-meaning",
    "complexity-and-education"
   ],
+  "known": "French philosopher of complex thought who wrote on education for an unpredictable future.",
   "born": 1921,
   "died": 2026,
   "founded": null,
@@ -1768,6 +1978,7 @@
   "appears": [
    "the-metacrisis-and-meaning"
   ],
+  "known": "Psychiatrist whose The Master and His Emissary links the divided brain to the state of Western culture.",
   "born": 1953,
   "died": null,
   "founded": null,
@@ -1783,6 +1994,7 @@
   "appears": [
    "narrative-change"
   ],
+  "known": "Cognitive linguist who showed how frames and metaphors shape political thinking.",
   "born": 1941,
   "died": null,
   "founded": null,
@@ -1798,6 +2010,7 @@
   "appears": [
    "conflict-transformation"
   ],
+  "known": "Peacebuilder and scholar of conflict transformation and the moral imagination.",
   "born": 1955,
   "died": null,
   "founded": null,
@@ -1813,6 +2026,7 @@
   "appears": [
    "conflict-transformation"
   ],
+  "known": "Founder of process work and Deep Democracy, with Amy Mindell.",
   "born": 1940,
   "died": 2024,
   "founded": null,
@@ -1828,6 +2042,7 @@
   "appears": [
    "corporate-innovation-and-renewal"
   ],
+  "known": "Business scholar who described disruptive innovation.",
   "born": 1952,
   "died": 2020,
   "founded": null,
@@ -1843,6 +2058,7 @@
   "appears": [
    "corporate-innovation-and-renewal"
   ],
+  "known": "Business scholar who coined open innovation.",
   "born": 1956,
   "died": null,
   "founded": null,
@@ -1857,6 +2073,7 @@
   "appears": [
    "teams-and-learning-cultures"
   ],
+  "known": "Organizational scholar of psychological safety and teaming.",
   "born": 1959,
   "died": null,
   "founded": null,
@@ -1872,6 +2089,7 @@
   "appears": [
    "measurement-and-accountability"
   ],
+  "known": "Social scientist known for Campbell's law: the more a measure is used to decide, the more it gets distorted.",
   "born": 1916,
   "died": 1996,
   "founded": null,
@@ -1887,6 +2105,7 @@
   "appears": [
    "strategy-under-uncertainty"
   ],
+  "known": "Planner at Shell who developed scenario planning in the 1970s.",
   "born": 1922,
   "died": 1997,
   "founded": null,
@@ -1902,6 +2121,7 @@
   "appears": [
    "strategy-under-uncertainty"
   ],
+  "known": "Writer on uncertainty, black swans and antifragility.",
   "born": 1960,
   "died": null,
   "founded": null,
@@ -1917,6 +2137,7 @@
   "appears": [
    "government-plumbing"
   ],
+  "known": "Legal and political scholar of experimentalist governance.",
   "born": 1947,
   "died": null,
   "founded": null,
@@ -1932,6 +2153,7 @@
   "appears": [
    "government-plumbing"
   ],
+  "known": "Political scientist who showed that street-level bureaucrats make policy through their daily discretion.",
   "born": 1940,
   "died": null,
   "founded": null,
@@ -1947,6 +2169,7 @@
   "appears": [
    "somatic-and-embodied-practice"
   ],
+  "known": "Psychoanalyst whose work on the body and character influenced later somatic practice.",
   "born": 1897,
   "died": 1957,
   "founded": null,
@@ -1962,6 +2185,7 @@
   "appears": [
    "power-analysis"
   ],
+  "known": "Political theorist of the three faces of power.",
   "born": 1941,
   "died": null,
   "founded": null,
@@ -1977,6 +2201,7 @@
   "appears": [
    "the-formal-science-of-complex-systems"
   ],
+  "known": "Physicist who founded synergetics, the study of self-organization.",
   "born": 1927,
   "died": 2024,
   "founded": null,
@@ -2000,6 +2225,7 @@
    "transformative-learning",
    "complexity-and-education"
   ],
+  "known": "",
   "born": 1969,
   "died": null,
   "founded": null,
@@ -2095,7 +2321,24 @@
      "claim": "Treating complex problems as things to fix with one intervention ignores how everything around them shifts in response.",
      "who": "Programme designers, evaluators",
      "other": "Without clear goals and measures, public money can't be accounted for and nothing gets tested.",
-     "what": "The habit of treating a complex problem like a fault in a machine: find the cause, design one intervention, roll it out, and check whether a target number moved. It sits behind most programme funding, logframes and results-based management."
+     "what": "The habit of treating a complex problem like a fault in a machine: find the cause, design one intervention, roll it out, and check whether a target number moved. It sits behind most programme funding, logframes and results-based management.",
+     "quote": "the resulting solutions that do not address the complexity seem only to generate more consequences",
+     "qsrc": [
+      "Nora Bateson, Warm Data (2017)",
+      "https://norabateson.wordpress.com/2017/05/28/warm-data/"
+     ],
+     "more": [
+      [
+       "International Bateson Institute: Warm Data",
+       "https://www.batesoninstitute.org/warm-data",
+       "What she proposes instead of predetermined solutions"
+      ],
+      [
+       "Results-based management, Wikipedia",
+       "https://en.wikipedia.org/wiki/Results-based_management",
+       "The goals-and-measures approach the other side defends"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -2147,6 +2390,7 @@
    "public-policy-and-government-innovation",
    "government-plumbing"
   ],
+  "known": "Social entrepreneur and author of Radical Help, on relational welfare.",
   "born": 1965,
   "died": null,
   "founded": null,
@@ -2164,6 +2408,7 @@
    "living-systems-and-regeneration",
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "Biologist who, with Francisco Varela, described living systems as self-making (autopoiesis).",
   "born": 1928,
   "died": 2021,
   "founded": null,
@@ -2182,6 +2427,7 @@
    "living-systems-and-regeneration",
    "biosemiotics-and-the-umwelt"
   ],
+  "known": "Biologist and philosopher of autopoiesis and embodied cognition.",
   "born": 1946,
   "died": 2001,
   "founded": null,
@@ -2195,6 +2441,7 @@
   "src": "https://en.wikipedia.org/wiki/Stuart_Hall_%28cultural_theorist%29",
   "slug": "stuart-hall",
   "appears": [],
+  "known": "Cultural theorist who studied how media encode and audiences decode meaning.",
   "born": 1932,
   "died": 2014,
   "founded": null,
@@ -2208,6 +2455,7 @@
   "src": "https://en.wikipedia.org/wiki/Karl_von_Frisch",
   "slug": "karl-von-frisch",
   "appears": [],
+  "known": "Ethologist who decoded the honeybee waggle dance, a classic case of animal signs.",
   "born": 1886,
   "died": 1982,
   "founded": null,
@@ -2223,6 +2471,7 @@
   "appears": [
    "governance-and-self-organizing-structures"
   ],
+  "known": "Dutch educator and pacifist who first ran a school by sociocratic consent.",
   "born": 1884,
   "died": 1966,
   "founded": null,
@@ -2238,6 +2487,7 @@
   "appears": [
    "crisis-disaster-and-high-reliability"
   ],
+  "known": "Political scientist who showed that social ties drive recovery after disasters.",
   "born": 1974,
   "died": null,
   "founded": null,
@@ -2253,6 +2503,7 @@
   "appears": [
    "complexity-economics-and-new-economic-models"
   ],
+  "known": "Economist who created Doughnut Economics: meeting everyone's needs within planetary limits.",
   "born": 1970,
   "died": null,
   "founded": null,
@@ -2268,6 +2519,7 @@
   "appears": [
    "participatory-design-and-design-justice"
   ],
+  "known": "Anthropologist of development and author of Designs for the Pluriverse.",
   "born": 1951,
   "died": null,
   "founded": null,
@@ -2283,6 +2535,7 @@
   "appears": [
    "improvement-and-adaptive-management"
   ],
+  "known": "Founder of the Institute for Healthcare Improvement, who brought improvement science into health care.",
   "born": 1946,
   "died": null,
   "founded": null,
@@ -2298,6 +2551,7 @@
   "appears": [
    "strategic-design-and-policy-labs"
   ],
+  "known": "Strategic design initiative of the Finnish innovation fund Sitra (2009 to 2013).",
   "born": null,
   "died": null,
   "founded": 2009,
@@ -2313,6 +2567,7 @@
   "appears": [
    "hosting-and-participatory-practice"
   ],
+  "known": "Creator of Open Space Technology, the self-organizing meeting format.",
   "born": 1935,
   "died": 2024,
   "founded": null,
@@ -2322,12 +2577,13 @@
   "name": "Jeremy Hope",
   "years": "d. 2011",
   "kind": "person",
-  "status": "draft",
-  "src": "https://www.thecfocoach.jp/blog/beyond_budgeting",
+  "status": "checked",
+  "src": "https://www.cfo.com/news/a-guide-for-the-performance-perplexed/667354/",
   "slug": "jeremy-hope",
   "appears": [
    "funding-and-budgeting-for-adaptation"
   ],
+  "known": "Co-founder of the Beyond Budgeting Round Table and co-author of Beyond Budgeting.",
   "born": null,
   "died": null,
   "founded": null,
@@ -2337,12 +2593,13 @@
   "name": "Patricia Cranton",
   "years": "d. 2016",
   "kind": "person",
-  "status": "draft",
-  "src": "https://www.gg.ca/en/honours/recipients/146-4652",
+  "status": "checked",
+  "src": "https://journals.sagepub.com/doi/reader/10.1177/1541344616666910",
   "slug": "patricia-cranton",
   "appears": [
    "transformative-learning"
   ],
+  "known": "Scholar who made transformative learning theory accessible and practical.",
   "born": null,
   "died": null,
   "founded": null,

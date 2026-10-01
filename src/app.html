@@ -348,6 +348,7 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .stage .hit{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer;padding:0}
 .stage .gal{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer}
 .stage .gal:hover{background:radial-gradient(rgba(255,255,255,.04),transparent 70%)}
+.stubnote{margin-top:24px;border:1px dashed var(--line);border-radius:14px;padding:16px 18px;max-width:62ch}.stubnote p{margin:6px 0}
 .qwhat{font-size:14.5px;line-height:1.55;margin:6px 16px 14px;padding:10px 14px;border-left:3px solid var(--line);background:var(--paper2);border-radius:0 8px 8px 0}
 .linktoggle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 10px}
 .linktoggle .label{color:var(--night-muted);margin-right:2px}
@@ -1763,7 +1764,7 @@ function viewPeople(slug){
       el("article",{},
         el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:x.years}),
         el("h1",{class:"pname",text:x.name}),
-        prof ? el("p",{class:"known",text:prof.known}) : null,
+        (prof || x.known) ? el("p",{class:"known",text:prof ? prof.known : x.known}) : null,
         x.status === "checked" ? el("p",{class:"why",style:"margin-top:8px"}, "Dates checked against ", ext("this source", x.src), " on 1 October 2026.")
           : el("p",{class:"draft",style:"margin-top:8px",text:"Draft. Dates and profile written from general knowledge; check every line against their own work before launch."}),
         prof && prof.checked ? el("p",{class:"why",style:"margin-top:4px"}, "Checked: ", prof.checked.map(([t, u], i) => [i ? ", " : "", ext(t, u)])) : null,
@@ -1775,7 +1776,10 @@ function viewPeople(slug){
           el("section",{class:"sec two"},
             el("div",{class:"reads"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Read for yourself"}), el("ul",{}, prof.sources.map(([t, n, u]) => el("li",{}, u ? ext(t, u) : el("b",{text:t}), el("small",{text:n}))))),
             el("div",{class:"asks"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Questions to sit with"}), prof.ask.map(a => el("p",{text:a}))))]
-          : el("div",{class:"placeholder",style:"margin-top:24px",text:"Full profile still to write: timeline, key ideas, critiques with sources, and reading."})),
+          : el("div",{class:"stubnote"}, el("span",{class:"label",text:"Short entry"}),
+              el("p",{}, "This is a short entry. A full profile, with a timeline, key ideas and critiques with sources, is still to write. ",
+                x.src ? ["Read more: ", ext(/wikipedia/.test(x.src) ? "Wikipedia" : "source", x.src), ". "] : null,
+                el("a",{href:"#/contribute?on=" + encodeURIComponent(x.name),text:"Suggest what to add"}), "."), el("span",{class:"draft",text:"Draft"}))),
       el("aside",{class:"appears"}, el("span",{class:"label",text:`Appears in ${x.appears.length} pathway${x.appears.length===1?"":"s"}`}),
         x.appears.map(id => { const q = byId(P, id); return el("div",{}, el("a",{href:wikiHref(id),text:q.name}), el("small",{}, el("a",{href:wikiHref(id),text:"Article →"}), el("a",{href:mapHref(id, "tree"),text:"On the map →"}))); }),
         el("p",{style:"margin-top:14px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(x.name),text:"Suggest a correction"}))))),

@@ -838,3 +838,177 @@ CRITIQUE_WHAT = {
 for _p in PROFILES.values():
     for _q in _p.get('questions', []):
         _q['what'] = CRITIQUE_WHAT.get(_q['target'], '')
+
+# Citations for critiques, checked word for word against the linked page on 2026-10-01. Quotes stay under 25 words.
+# Where no short, verifiable quote exists online, 'more' lists where to follow the debate instead of inventing one.
+W = 'https://en.wikipedia.org/wiki/'
+CITES = {
+ 'The tragedy of the commons': dict(
+    quote='the earlier theories of rational, but helpless, individuals who are trapped in social dilemmas are not supported by a large number of studies',
+    qsrc=['Elinor Ostrom, Nobel Prize lecture, 8 December 2009 (PDF)', 'https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf'],
+    who='Garrett Hardin, "The Tragedy of the Commons", Science, 1968',
+    oquote='Freedom in a commons brings ruin to all.',
+    osrc=['Garrett Hardin, The Tragedy of the Commons (1968)', 'https://www.garretthardinsociety.org/articles/art_tragedy_of_the_commons.html'],
+    more=[['Tragedy of the commons, Wikipedia', W + 'Tragedy_of_the_commons', 'Background, and how Ostrom and others answered Hardin']]),
+ 'Endless growth': dict(
+    quote="Growth has costs as well as benefits, and we typically don't count the costs",
+    qsrc=['Donella Meadows, Leverage Points: Places to Intervene in a System (1999)', 'https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/'],
+    who='Julian Simon, economist',
+    oquote='The ultimate resource is people',
+    osrc=['Julian Simon, The State of Humanity (1995), quoted in Reason, May 1998', 'https://reason.com/1998/05/01/in-memoriam-julian-simon/'],
+    more=[['The Limits to Growth, Wikipedia', W + 'The_Limits_to_Growth', 'The 1972 study, its critics, and later comparisons with real data']]),
+ 'Best practice in complex settings': dict(
+    quote='best practice is, by definition, past practice',
+    qsrc=["Snowden and Boone, A Leader's Framework for Decision Making, HBR, Nov 2007 (as quoted on Wikipedia)", W + 'Cynefin_framework'],
+    who='Atul Gawande, surgeon and writer',
+    oquote='Checklists established a higher standard of baseline performance.',
+    osrc=['Atul Gawande, The Checklist, The New Yorker, December 2007', 'https://www.newyorker.com/magazine/2007/12/10/the-checklist']),
+ 'Stage models of leadership': dict(
+    who='Bill Torbert (developmental action inquiry), among vertical development practitioners',
+    more=[['Coaches Rising, episode 161: Bill Torbert, A Response to Dave Snowden\'s Critique of Developmental Theory', 'https://metacast.app/podcast/coaches-rising/EOVAozT3/161---bill-torbert-a-response-to-dave-snowden-s-critique-of-developmental-theory/usWjqyuF', 'Torbert answers the charges of elitism, linearity and stereotyping'],
+          ["Alexei Kapterev, What's wrong with theories of vertical development", 'https://kapterev.substack.com/p/whats-wrong-with-theories-of-vertical', 'A critic\'s summary of the research behind stage models'],
+          ['Cynefin framework, Wikipedia', W + 'Cynefin_framework', 'Background on Snowden\'s framework']]),
+ 'Banking education': dict(
+    quote='the teacher issues communiqués and makes deposits which the students patiently receive, memorize, and repeat',
+    qsrc=['Paulo Freire, Pedagogy of the Oppressed, ch. 2, p. 58 (as quoted on Wikipedia)', W + 'Banking_model_of_education'],
+    who='E. D. Hirsch Jr. and other advocates of knowledge-rich, direct teaching',
+    more=[['E. D. Hirsch Jr., Wikipedia', W + 'E._D._Hirsch_Jr.', 'Cultural literacy and the case for teaching shared knowledge directly'],
+          ['Banking model of education, Wikipedia', W + 'Banking_model_of_education', "Freire's argument and responses to it"]]),
+ 'Solutions thinking': dict(
+    quote="the resulting solutions that do not address the complexity seem only to generate more consequences",
+    qsrc=['Nora Bateson, Warm Data (2017)', 'https://norabateson.wordpress.com/2017/05/28/warm-data/'],
+    more=[['International Bateson Institute: Warm Data', 'https://www.batesoninstitute.org/warm-data', 'What she proposes instead of predetermined solutions'],
+          ['Results-based management, Wikipedia', W + 'Results-based_management', 'The goals-and-measures approach the other side defends']]),
+ 'Conscious purpose': dict(
+    more=[['Steps to an Ecology of Mind, Wikipedia', W + 'Steps_to_an_Ecology_of_Mind', 'The 1972 collection that includes "Conscious Purpose versus Nature"']]),
+ 'His own politics': dict(
+    who='His defenders, citing his own letters',
+    oquote='the worst kind of barbarism',
+    osrc=['Uexküll, letter of May 1933 on the persecution of Jews (as quoted on Wikipedia)', W + 'Jakob_Johann_von_Uexk%C3%BCll'],
+    more=[['Anne Harrington, Reenchanted Science (Princeton University Press)', 'https://press.princeton.edu/books/paperback/9780691050508/reenchanted-science', 'Holistic biology in Germany and its politics, including Uexküll'],
+          ['Jakob Johann von Uexküll, Wikipedia', W + 'Jakob_Johann_von_Uexk%C3%BCll', 'His Staatsbiologie and how his views shifted in 1933']]),
+ 'Animals as machines': dict(
+    more=[['Umwelt, Wikipedia', W + 'Umwelt', 'The concept and the tick example'],
+          ['Behaviorism, Wikipedia', W + 'Behaviorism', 'The stimulus-and-response view he argued against']]),
+ 'Two-part theories of the sign': dict(
+    more=[["Peirce's theory of signs (Stanford Encyclopedia of Philosophy)", 'https://plato.stanford.edu/entries/peirce-semiotics/', 'The three-part sign: sign, object, interpretant'],
+          ['Ferdinand de Saussure, Wikipedia', W + 'Ferdinand_de_Saussure', 'The signifier and the signified']]),
+ 'Information talk in molecular biology': dict(
+    more=[['Biological Information (Stanford Encyclopedia of Philosophy)', 'https://plato.stanford.edu/entries/information-biological/', 'Whether talk of genetic information is literal or a metaphor']]),
+}
+for _p in PROFILES.values():
+    for _q in _p.get('questions', []):
+        c = CITES.get(_q['target'])
+        if not c: continue
+        for k, v in c.items():
+            if k == 'more': _q['more'] = (_q.get('more') or []) + [m for m in v if m[1] not in {x[1] for x in (_q.get('more') or [])}]
+            elif not _q.get(k) or k == 'who': _q[k] = v
+
+# Dates confirmed 2026-10-01 (the last few that were draft).
+for _p in PEOPLE:
+    _src = {'NECSI': 'https://en.wikipedia.org/wiki/New_England_Complex_Systems_Institute',
+            'Jeremy Hope': 'https://www.cfo.com/news/a-guide-for-the-performance-perplexed/667354/',
+            'Patricia Cranton': 'https://journals.sagepub.com/doi/reader/10.1177/1541344616666910'}.get(_p['name'])
+    if _src and _p['status'] != 'checked': _p.update(status='checked', src=_src)
+
+# Short entries for everyone on a road without a full profile: one plain line on why they are on this map.
+# DRAFT, written 2026-10-01 from general knowledge; identity and dates are checked against the linked `src`.
+KNOWN = {
+ 'Joanna Macy': 'Scholar of Buddhism and systems thinking who created the Work That Reconnects, a group practice for facing ecological crisis.',
+ 'Gerard Endenburg': 'Dutch engineer and business owner who turned sociocracy into a working method for companies, with consent and linked circles.',
+ 'Marshall Rosenberg': 'Psychologist who created Nonviolent Communication: observations, feelings, needs and requests.',
+ 'William Bridges': 'Writer on transitions who separated change (the event) from transition (the inner passage through endings and a neutral zone).',
+ 'Carl Folke': 'Environmental scientist and a leading voice on resilience: how social and ecological systems absorb shocks and reorganize.',
+ 'David Cooperrider': 'Co-creator of Appreciative Inquiry, which starts change from what already works.',
+ 'Dean Spade': 'Lawyer and organizer whose writing on mutual aid shaped how communities support each other in crises.',
+ 'Ezio Manzini': 'Design researcher who studies how communities design their own solutions, and how designers can support them.',
+ 'Geoff Mulgan': 'Former head of Nesta and policy adviser who writes on public innovation and collective intelligence.',
+ 'Howard Zehr': 'Criminologist often called the grandfather of restorative justice: repairing harm instead of only punishing it.',
+ 'Jennifer Pahlka': 'Founder of Code for America and author of Recoding America, on why policy fails in delivery.',
+ 'John Gaventa': 'Scholar of power who developed the Powercube: the spaces, levels and forms through which power works.',
+ 'Jonathan Rowson': 'Philosopher, chess grandmaster and co-founder of Perspectiva, who writes on the metacrisis.',
+ 'Marshall Ganz': 'Organizer and teacher of public narrative: the story of self, us and now that moves people to act together.',
+ 'Michael Tushman': 'Organizational theorist who, with Charles O\'Reilly, described the ambidextrous organization.',
+ 'Nigel Cross': 'Design researcher who showed how designers think, by framing and reframing problems as they work.',
+ 'Rebecca Solnit': 'Writer whose A Paradise Built in Hell shows that people in disasters mostly help each other.',
+ 'Richard Strozzi-Heckler': 'Teacher of somatic leadership, bringing the body and martial arts practice into how leaders act.',
+ 'Thomas Sebeok': 'Linguist and semiotician who founded zoosemiotics, the study of signs among animals, and helped launch biosemiotics.',
+ 'Kalevi Kull': 'Biologist and semiotician at the University of Tartu, a central figure in biosemiotics and ecosemiotics.',
+ 'Terrence Deacon': 'Biological anthropologist who asks how meaning and purpose arise from physical processes (Incomplete Nature).',
+ 'Ferdinand de Saussure': 'Linguist whose model of the sign (signifier and signified) founded structuralism.',
+ 'Yuri Lotman': 'Semiotician who founded the Tartu-Moscow school and coined the semiosphere, the space of signs a culture lives in.',
+ 'Umberto Eco': 'Semiotician and novelist whose A Theory of Semiotics set out how codes and signs work.',
+ 'Roland Barthes': 'Writer and semiotician whose Mythologies shows how culture passes off the made as natural.',
+ 'Norbert Wiener': 'Mathematician who named cybernetics: the study of control and communication through feedback.',
+ 'W. Ross Ashby': 'Psychiatrist and cybernetician behind the law of requisite variety.',
+ 'Heinz von Foerster': 'Cybernetician who founded second-order cybernetics: the observer is part of the system observed.',
+ 'Gordon Pask': 'Cybernetician whose conversation theory treated learning as a conversation between people and systems.',
+ 'Stafford Beer': 'Management cybernetician who created the Viable System Model and led Chile\'s Project Cybersyn.',
+ 'Ilya Prigogine': 'Chemist who won the Nobel Prize for work on systems far from equilibrium that organize themselves.',
+ 'Santa Fe Institute': 'Research institute in New Mexico that made complexity science a field, from economics to biology.',
+ 'NECSI': 'Research institute in Cambridge, Massachusetts, studying complex systems and applying them to policy.',
+ 'Margaret Mead': 'Anthropologist who took part in the Macy conferences that shaped cybernetics.',
+ 'Stuart Kauffman': 'Theoretical biologist at the Santa Fe Institute who studies self-organization and the origins of order.',
+ 'Karl Weick': 'Organizational theorist of sensemaking and, with Kathleen Sutcliffe, of high reliability organizing.',
+ 'Kurt Lewin': 'Psychologist who began action research and the T-group, and studied groups as fields of forces.',
+ 'Myles Horton': 'Co-founder of the Highlander Folk School, which trained labour and civil rights organizers through popular education.',
+ 'bell hooks': 'Writer and teacher whose Teaching to Transgress brought engaged, liberating pedagogy into classrooms.',
+ 'John Dewey': 'Philosopher of education who argued that we learn from experience only when we reflect on it.',
+ 'David Kolb': 'Educational theorist known for the experiential learning cycle.',
+ 'Donald Schön': 'Thinker on reflective practice: how professionals think in action in messy situations.',
+ 'Chris Argyris': 'Organizational theorist of single- and double-loop learning, and of defensive routines that block it.',
+ 'Jack Mezirow': 'Founder of transformative learning theory: adults change their frame after a disorienting dilemma.',
+ 'Robert Kegan': 'Developmental psychologist of adult meaning-making and, with Lisa Lahey, immunity to change.',
+ 'Jean Piaget': 'Psychologist who described how children\'s thinking develops through stages.',
+ 'Jean Lave': 'Anthropologist who, with Etienne Wenger, described learning as taking part in communities of practice.',
+ 'Etienne Wenger': 'Educational theorist who developed the idea of communities of practice and social learning.',
+ 'Reg Revans': 'Founder of action learning: small groups working on real problems through questions rather than advice.',
+ 'Wilfred Bion': 'Psychoanalyst whose studies of groups founded the Group Relations tradition.',
+ 'David Bohm': 'Physicist who proposed dialogue as a way for groups to notice the assumptions in their shared thinking.',
+ 'Otto Scharmer': 'Co-founder of the Presencing Institute and author of Theory U.',
+ 'Peter Senge': 'Author of The Fifth Discipline, which popularized systems thinking and learning organizations.',
+ 'Horst Rittel': 'Design theorist who, with Melvin Webber, named wicked problems.',
+ 'Herbert Simon': 'Nobel economist and pioneer of decision science, bounded rationality and the sciences of design.',
+ 'W. Brian Arthur': 'Economist at the Santa Fe Institute who founded complexity economics and studied increasing returns.',
+ 'Fritjof Capra': 'Physicist and writer on living systems and ecological literacy (The Web of Life).',
+ 'Grace Lee Boggs': 'Detroit activist and philosopher whose ideas on change shaped emergent strategy.',
+ 'Octavia Butler': 'Science fiction writer whose Parable novels inspired emergent strategy and movement work.',
+ 'Arnold van Gennep': 'Ethnographer who described rites of passage: separation, a threshold, and return.',
+ 'Victor Turner': 'Anthropologist of liminality and communitas, the bond of people crossing a threshold together.',
+ 'Enrico Quarantelli': 'Founder of disaster sociology, whose research showed people rarely panic in disasters.',
+ 'W. Edwards Deming': 'Statistician and teacher of quality improvement: most problems come from the system, not the worker.',
+ 'Michael Quinn Patton': 'Evaluator who created developmental evaluation for complex, changing programmes.',
+ 'Orlando Fals-Borda': 'Colombian sociologist who founded participatory action research.',
+ 'Vine Deloria Jr.': 'Standing Rock Sioux writer and scholar whose work defended Indigenous knowledge and sovereignty.',
+ 'Robin Wall Kimmerer': 'Potawatomi botanist and author of Braiding Sweetgrass, joining Indigenous and scientific knowledge.',
+ 'Edgar Morin': 'French philosopher of complex thought who wrote on education for an unpredictable future.',
+ 'Iain McGilchrist': 'Psychiatrist whose The Master and His Emissary links the divided brain to the state of Western culture.',
+ 'George Lakoff': 'Cognitive linguist who showed how frames and metaphors shape political thinking.',
+ 'John Paul Lederach': 'Peacebuilder and scholar of conflict transformation and the moral imagination.',
+ 'Arnold Mindell': 'Founder of process work and Deep Democracy, with Amy Mindell.',
+ 'Clayton Christensen': 'Business scholar who described disruptive innovation.',
+ 'Henry Chesbrough': 'Business scholar who coined open innovation.',
+ 'Amy Edmondson': 'Organizational scholar of psychological safety and teaming.',
+ 'Donald Campbell': 'Social scientist known for Campbell\'s law: the more a measure is used to decide, the more it gets distorted.',
+ 'Pierre Wack': 'Planner at Shell who developed scenario planning in the 1970s.',
+ 'Nassim Nicholas Taleb': 'Writer on uncertainty, black swans and antifragility.',
+ 'Charles Sabel': 'Legal and political scholar of experimentalist governance.',
+ 'Michael Lipsky': 'Political scientist who showed that street-level bureaucrats make policy through their daily discretion.',
+ 'Wilhelm Reich': 'Psychoanalyst whose work on the body and character influenced later somatic practice.',
+ 'Steven Lukes': 'Political theorist of the three faces of power.',
+ 'Hermann Haken': 'Physicist who founded synergetics, the study of self-organization.',
+ 'Hilary Cottam': 'Social entrepreneur and author of Radical Help, on relational welfare.',
+ 'Humberto Maturana': 'Biologist who, with Francisco Varela, described living systems as self-making (autopoiesis).',
+ 'Francisco Varela': 'Biologist and philosopher of autopoiesis and embodied cognition.',
+ 'Stuart Hall': 'Cultural theorist who studied how media encode and audiences decode meaning.',
+ 'Karl von Frisch': 'Ethologist who decoded the honeybee waggle dance, a classic case of animal signs.',
+ 'Kees Boeke': 'Dutch educator and pacifist who first ran a school by sociocratic consent.',
+ 'Daniel Aldrich': 'Political scientist who showed that social ties drive recovery after disasters.',
+ 'Kate Raworth': 'Economist who created Doughnut Economics: meeting everyone\'s needs within planetary limits.',
+ 'Arturo Escobar': 'Anthropologist of development and author of Designs for the Pluriverse.',
+ 'Don Berwick': 'Founder of the Institute for Healthcare Improvement, who brought improvement science into health care.',
+ 'Helsinki Design Lab': 'Strategic design initiative of the Finnish innovation fund Sitra (2009 to 2013).',
+ 'Harrison Owen': 'Creator of Open Space Technology, the self-organizing meeting format.',
+ 'Jeremy Hope': 'Co-founder of the Beyond Budgeting Round Table and co-author of Beyond Budgeting.',
+ 'Patricia Cranton': 'Scholar who made transformative learning theory accessible and practical.',
+}

@@ -34,6 +34,10 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       check(await p.locator('.connlist li').count() >= 1, '[live] side panel lists what the pathway connects to and why');
       await go(p, '#/about/acknowledgment');
       check(p.url().endsWith('#/about') && await p.locator('a[href="#/about/acknowledgment"]').count() === 0, '[live] acknowledgment page is withdrawn: old link lands on About, no links point to it');
+      await go(p, '#/people/kurt-lewin');
+      check((await p.textContent('.known')).includes('action research') && await p.locator('.stubnote').count() === 1, '[live] a person without a full profile shows a short entry with a source');
+      await go(p, '#/people/elinor-ostrom');
+      check(await p.locator('.q blockquote').count() >= 2 && !(await p.textContent('main')).includes('Needs citations'), '[live] critiques carry quotes and sources');
       await go(p, '#/');
       check(await p.locator('#how .visit').count() === 3, '[live] home shows how to use the site: three kinds of visit');
       check(await p.locator('#how .visit a.btn').evaluateAll(a => a.map(x => x.getAttribute('href')).join()) === '#/wiki,#/path,#/map', '[live] each visit ends in a clear call to action');
