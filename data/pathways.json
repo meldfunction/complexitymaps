@@ -97,7 +97,7 @@
    }
   ],
   "plain_overview": "How systems steer themselves through feedback, and why the observer is part of the picture.",
-  "plain_policy": "",
+  "plain_policy": "Designing services that can respond to the real variety of people's lives, instead of forcing everyone through one process.",
   "stops": [
    {
     "name": "Norbert Wiener",
@@ -250,8 +250,8 @@
     "defn": "A threshold where a small change flips a system into a different state."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The science of how many simple parts, each following local rules, produce patterns nobody designed: flocks, traffic, markets, epidemics.",
+  "plain_policy": "Used to model epidemics, traffic, and markets, and to warn planners that a system can tip suddenly when it crosses a threshold.",
   "stops": [
    {
     "name": "Ilya Prigogine",
@@ -405,8 +405,8 @@
     "defn": "Karen Barad's view that things come into being through their relationships."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "A family of thinkers who start from relationships rather than separate things, and question the idea that humans stand apart from the world.",
+  "plain_policy": "Shows up as a challenge rather than a tool: it asks policy to notice what its categories leave out and who is not in the room, including the land.",
   "stops": [
    {
     "name": "Gregory Bateson",
@@ -536,8 +536,8 @@
     "defn": "A gathering where people talk about an issue through many contexts in turn, with no set outcome."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Nora Bateson's work on how living systems learn together across contexts, and Warm Data Labs: conversations that look at an issue through many parts of life at once.",
+  "plain_policy": "Warm Data Labs hosted with public staff and residents shift how people see an issue. Any policy follows from that changed ground in its own time, not from harvested findings.",
   "stops": [
    {
     "name": "Gregory Bateson",
@@ -676,8 +676,8 @@
     "defn": "Knowledge that comes from long relationship with a particular place."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Ways of knowing held by Indigenous peoples and land-based communities, where knowledge comes from long relationship with a place and carries obligations.",
+  "plain_policy": "Co-governance of land and water with Indigenous nations, free, prior and informed consent, and recognizing traditional knowledge as evidence on its own terms.",
   "stops": [
    {
     "name": "Vine Deloria Jr.",
@@ -809,8 +809,8 @@
     "defn": "Arawana Hayashi's movement practice for sensing a system with the body."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Otto Scharmer's Theory U: slow down, sense the whole situation with others, let go of old assumptions, then prototype what wants to emerge.",
+  "plain_policy": "Co-sensing with residents and frontline staff before designing anything. u.lab is widely used by public teams. Social Presencing Theater is hosted as embodied sensing, not a way of gathering input.",
   "stops": [
    {
     "name": "Kurt Lewin",
@@ -950,8 +950,8 @@
     "defn": "Working out together what's going on in an unclear situation, before deciding what to do."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The idea that today's crises in climate, politics, technology and meaning are linked, with a shared root in how we think and what we value.",
+  "plain_policy": "Rarely a policy tool. It shows up as a frame for long-term risk, for questioning growth as the main goal, and for linking inner change to institutional change.",
   "stops": [
    {
     "name": "Bateson and Edgar Morin",
@@ -1097,8 +1097,8 @@
     "defn": "The process by which something comes to stand for something else to someone."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The study of signs: how words, images, symbols and objects come to mean something, and how cultures make some meanings seem natural.",
+  "plain_policy": "Public messaging, warning signs and symbols meant to last. The best-known case is marking nuclear waste sites so that people 10,000 years from now stay away.",
   "stops": [
    {
     "name": "Charles Sanders Peirce",
@@ -1244,8 +1244,8 @@
     "defn": "C.S. Holling's model of growth, conservation, release and reorganization in living systems."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Seeing organizations, cities, and economies as living systems that renew themselves, and designing so they regenerate rather than deplete.",
+  "plain_policy": "Regional planning around watersheds and bioregions, resilience planning for climate shocks, and circular economy strategies.",
   "stops": [
    {
     "name": "Maturana and Varela",
@@ -1390,8 +1390,8 @@
     "defn": "The process by which something comes to stand for something else to someone."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The study of how living things make and read signs, from cells to forests, and why meaning is part of life itself.",
+  "plain_policy": "Conservation and land use that asks what a place means to the species living there, and design that works with animal signals such as light, sound and scent.",
   "stops": [
    {
     "name": "Jakob von Uexküll",
@@ -1685,8 +1685,8 @@
     "defn": "Stafford Beer's model of the five functions any organization needs to survive and adapt."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Ways of sharing authority: sociocracy, holacracy, commons governance and other structures where decisions are made close to the work, by consent.",
+  "plain_policy": "Commons and co-operative governance of shared resources, participatory budgeting, and self-managing frontline teams in public services.",
   "stops": [
    {
     "name": "Ashby",
@@ -1826,8 +1826,8 @@
     "defn": "A group that shares a practice and learns from each other over time."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "How large social change grows from small, local relationships and practices, and how movements organize without central control.",
+  "plain_policy": "Supporting resident-led networks and mutual aid, and recognizing that policy change often follows shifts that movements make first.",
   "stops": [
    {
     "name": "Grace Lee Boggs and Octavia Butler",
@@ -1956,8 +1956,8 @@
     "defn": "A question that invites real thinking and matters to the people in the room."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Ways of hosting conversations that matter, so that many voices shape the outcome: Art of Hosting, Open Space, World Café, Liberating Structures.",
+  "plain_policy": "Participatory meetings, citizens' panels, and public sector staff trained to host conversations rather than present plans.",
   "stops": [
    {
     "name": "Harrison Owen",
@@ -2092,8 +2092,8 @@
     "defn": "The shared space of trust that lets a group hold difficult conversation."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "A way for groups to think together by noticing their assumptions as they speak, with no decision on the table.",
+  "plain_policy": "Open conversations between agencies and communities, with no decision on the table, so hidden assumptions surface before they become policy.",
   "stops": [
    {
     "name": "David Bohm",
@@ -2211,8 +2211,8 @@
     "defn": "Learning by experimenting with behaviour in a safe, temporary setting."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Small unstructured groups where people learn about themselves and group dynamics by studying what happens between them in the moment.",
+  "plain_policy": "Mostly used to train public leaders and facilitators to notice group dynamics, rather than as a policy tool.",
   "stops": [
    {
     "name": "Kurt Lewin",
@@ -2337,8 +2337,8 @@
     "defn": "The task an organization must perform to survive."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "A way of studying authority, leadership and the hidden emotional life of groups by experiencing them directly, developed at the Tavistock Institute.",
+  "plain_policy": "Used to train public leaders to work with authority and anxiety in large organizations, and to understand why reforms meet hidden resistance.",
   "stops": [
    {
     "name": "Wilfred Bion",
@@ -2449,8 +2449,8 @@
     "defn": "A question that opens new possibilities rather than confirming what is known."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Change that starts from what already works: asking people about their best experiences, imagining more of them, and designing from there.",
+  "plain_policy": "Used in local government and public services for strength-based community planning and staff engagement.",
   "stops": [
    {
     "name": "David Cooperrider and Suresh Srivastva",
@@ -2566,8 +2566,8 @@
     "defn": "The view that all living things have value in themselves, not only for human use."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Joanna Macy's group practice for facing ecological and social crisis: gratitude, honouring pain, seeing with new eyes, and going forth.",
+  "plain_policy": "Rarely used directly in policy. It supports activists and staff facing burnout and grief, and work on climate anxiety.",
   "stops": [
    {
     "name": "Joanna Macy",
@@ -2694,8 +2694,8 @@
     "defn": "Menakem's approach to how racialized trauma is carried in bodies across generations."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Change that lives in the body: how bodies hold history and stress, and how settling enough lets people act together.",
+  "plain_policy": "Trauma-informed services and workplaces, support for staff in high-stress jobs, and public meetings where people feel settled enough to listen.",
   "stops": [
    {
     "name": "Wilhelm Reich and body-oriented psychology",
@@ -2829,8 +2829,8 @@
     "defn": "Where you stand in relation to power, and how that shapes what you see."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Tools for seeing power: who decides, whose issues never reach the table, and which beliefs make an arrangement feel natural.",
+  "plain_policy": "Mapping who shapes a policy, which spaces are closed, invited or claimed, and where hidden norms keep people out.",
   "stops": [
    {
     "name": "Steven Lukes",
@@ -2962,8 +2962,8 @@
     "defn": "A shared mental shortcut people use to understand an issue."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Changing the deep stories a society uses to make sense of an issue, so different choices become thinkable.",
+  "plain_policy": "Telling the story of a public problem so its real causes are visible, and giving staff and residents a shared story of why change is needed now.",
   "stops": [
    {
     "name": "George Lakoff",
@@ -3103,8 +3103,8 @@
     "defn": "Working with conflict to change relationships and structures, not just to settle it."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Treating conflict as information about a system and a chance to change relationships, not just a problem to settle.",
+  "plain_policy": "Restorative approaches in courts, schools and housing, community mediation, and public meetings run so minority voices are heard.",
   "stops": [
    {
     "name": "John Paul Lederach",
@@ -3242,8 +3242,8 @@
     "defn": "Letting whoever knows most about the situation make the call."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "What people and organizations do when normal order breaks, and how high-risk organizations stay alert to small failures.",
+  "plain_policy": "Emergency planning that works with volunteers, builds neighbourhood ties before disasters, and learns afterwards without blame.",
   "stops": [
    {
     "name": "Enrico Quarantelli",
@@ -3389,8 +3389,8 @@
     "defn": "Grieving together as a community, as Weller describes."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Why ritual matters in change: transitions pass through a threshold where old roles end before new ones begin, and communities have long held people through that in-between.",
+  "plain_policy": "Marking endings when programmes close or teams merge, and helping people through reorganizations instead of just redrawing the chart.",
   "stops": [
    {
     "name": "Arnold van Gennep",
@@ -3561,8 +3561,8 @@
     "defn": "Looking after the health of a whole system rather than controlling its parts."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "How governments are learning to work on problems that do not stay solved, through public innovation, missions and learning-based management.",
+  "plain_policy": "The home field for government work. Read it with the money and accountability pathways, where budgets, contracts and targets decide what survives.",
   "stops": [
    {
     "name": "Rittel and Webber",
@@ -3706,8 +3706,8 @@
     "defn": "Systematic thinking about possible futures to inform decisions now."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Design for whole systems and long time horizons: mapping big messes, imagining several futures, and finding where to intervene.",
+  "plain_policy": "Futures and foresight units in government, systemic design labs, and Three Horizons conversations before long-term policy commitments.",
   "stops": [
    {
     "name": "Horst Rittel",
@@ -3844,8 +3844,8 @@
     "defn": "An economy designed to deliver human and ecological wellbeing rather than growth for its own sake."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Economics that treats the economy as a complex, changing system inside society and nature, rather than a machine that settles at equilibrium.",
+  "plain_policy": "Doughnut-based city strategies, wellbeing budgets, and modelling that expects instability rather than equilibrium.",
   "stops": [
    {
     "name": "Herbert Simon",
@@ -3983,8 +3983,8 @@
     "defn": "Adam Kahane's method where opponents build scenarios together to change the situation, not just adapt to it."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Strategy for a future you cannot predict: rehearse several futures, map how things are changing, and keep options open.",
+  "plain_policy": "Scenario work before long-lived infrastructure or budget commitments, and Wardley maps before procurement.",
   "stops": [
    {
     "name": "Pierre Wack",
@@ -4122,8 +4122,8 @@
     "defn": "Money a grantee can spend on whatever the work needs."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Money that can follow learning: rolling budgets, portfolios of experiments, and funders who trust the people they fund.",
+  "plain_policy": "Multi-year flexible funding, portfolio budgets for missions, and grant terms that let providers change course when they learn something.",
   "stops": [
    {
     "name": "Jeremy Hope and Robin Fraser",
@@ -4254,8 +4254,8 @@
     "defn": "Hitting a target in ways that defeat its purpose."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Why targets distort what they measure, and how to be accountable when outcomes are emergent.",
+  "plain_policy": "Swapping targets for learning reviews: report what changed and why, and judge services on the health of relationships, not activity counts.",
   "stops": [
    {
     "name": "Donald Campbell and Charles Goodhart",
@@ -4390,8 +4390,8 @@
     "defn": "A safe space where new approaches can be tested under relaxed rules with close watching."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The rules, contracts and routines where bureaucracies actually resist change: procurement, regulation, budgets and frontline discretion.",
+  "plain_policy": "Contracts based on partnership instead of payment by results, policy written with the people who deliver it, and trust in frontline judgement.",
   "stops": [
    {
     "name": "Michael Lipsky",
@@ -4522,8 +4522,8 @@
     "defn": "Edmondson's word for forming and working in teams on the fly."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "The team habits that let people raise bad news, learn fast, and organize around the flow of work instead of hierarchy.",
+  "plain_policy": "Blameless reviews in public agencies, product teams that own a service end to end, and outcomes over outputs in digital delivery.",
   "stops": [
    {
     "name": "Amy Edmondson",
@@ -4649,8 +4649,8 @@
     "defn": "The tension between using what works and searching for what might work."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "How established organizations explore new value while running the current business, and when they need to break into smaller self-managing units.",
+  "plain_policy": "Agencies, like companies, need protected space to try new services without starving the ones people rely on today.",
   "stops": [
    {
     "name": "Clayton Christensen",
@@ -4781,8 +4781,8 @@
     "defn": "Residents holding real decision-making power, not only a voice."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "How many organizations work together on one shared problem when no single one owns it.",
+  "plain_policy": "Agencies working together in one place, with shared learning instead of shared targets, and residents with real seats at the table.",
   "stops": [
    {
     "name": "John Kania and Mark Kramer",
@@ -4899,8 +4899,8 @@
     "defn": "Repeating the build-test-learn cycle to improve."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "A human-centred way of solving problems: understand people's needs, generate ideas, and test rough prototypes quickly.",
+  "plain_policy": "Used in government to understand residents' needs before designing, and to test ideas cheaply before committing money.",
   "stops": [
    {
     "name": "Herbert Simon",
@@ -5038,8 +5038,8 @@
     "defn": "Learning directly from the people who use a service: watching, asking, testing."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Designing a service end to end: what people experience at each step and the behind-the-scenes work that makes it happen.",
+  "plain_policy": "Government digital services built around user needs, service standards, and blueprints that join the front line to the back office.",
   "stops": [
    {
     "name": "Lynn Shostack",
@@ -5166,8 +5166,8 @@
     "defn": "Public services designed and delivered with the people who use them."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Design with, not for: the people affected by a design take part in making it, and design is used to shift power toward communities.",
+  "plain_policy": "Co-design with residents as decision-makers, not only informants, and design justice principles in public services.",
   "stops": [
    {
     "name": "Scandinavian participatory design",
@@ -5297,8 +5297,8 @@
     "defn": "Thinking in decades, not quarters."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Design for long-term societal transitions toward sustainable futures, working across decades and many scales at once.",
+  "plain_policy": "Long-horizon planning for energy, food and mobility transitions, with many stakeholders and interventions at many scales.",
   "stops": [
    {
     "name": "Terry Irwin, Gideon Kossoff, and Cameron Tonkinwise",
@@ -5408,8 +5408,8 @@
     "defn": "Looking after the health of a whole system rather than controlling its parts."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Teams inside or alongside government that use design and experimentation to make policy, from the UK Policy Lab to Helsinki Design Lab.",
+  "plain_policy": "Teams inside government that test ideas with residents and change how money, rules and buying work, not just individual services.",
   "stops": [
    {
     "name": "Helsinki Design Lab",
@@ -5530,8 +5530,8 @@
     "defn": "A graph of a measure over time, to see real change."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Getting better through small, repeated cycles: plan, do, study, act, with the people who do the work.",
+  "plain_policy": "Quality improvement in public services, agile delivery, and adaptive management in development programmes.",
   "stops": [
    {
     "name": "W. Edwards Deming",
@@ -5661,8 +5661,8 @@
     "defn": "Evaluation that judges results at the end, which developmental evaluation is not."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Evaluation that supports innovation in complex settings: an evaluator works alongside the team, feeding back what is emerging so the work can adapt.",
+  "plain_policy": "Evaluating innovative programmes and policy experiments where outcomes are emergent and the model is still changing.",
   "stops": [
    {
     "name": "Michael Quinn Patton",
@@ -5771,8 +5771,8 @@
     "defn": "Action and reflection together, in Freire's sense."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Research done with people, not on them: participants study their own situation and act on what they learn, in cycles.",
+  "plain_policy": "Participatory research with residents to shape policy, and practitioner research inside public services.",
   "stops": [
    {
     "name": "Kurt Lewin",
@@ -5888,8 +5888,8 @@
     "defn": "A behaviour that explains why a few do better."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Finding people who already succeed against the odds with the same resources as everyone else, and helping others learn their practices.",
+  "plain_policy": "Finding what already works for frontline staff and communities, and spreading it before bringing in outside solutions.",
   "stops": [
    {
     "name": "Jerry and Monique Sternin",
@@ -5998,8 +5998,8 @@
     "defn": "Dewey's principle that we learn through experience."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Learning as a cycle of doing, noticing, making sense and trying again: the base layer for learning complexity.",
+  "plain_policy": "Learning as part of the job: reflective supervision, a review after each cycle of work, and training on real cases.",
   "stops": [
    {
     "name": "John Dewey",
@@ -6129,8 +6129,8 @@
     "defn": "Knowledge that feels strange or counter-intuitive at first."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Learning that changes the frame, not only the content: often starting with a disorienting dilemma and leading to a new way of seeing.",
+  "plain_policy": "Staff training that lets people rethink basic assumptions, not just learn new procedures, especially when a service is changing.",
   "stops": [
    {
     "name": "Jack Mezirow",
@@ -6263,8 +6263,8 @@
     "defn": "Education rooted in people's experience, aimed at social change."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Education as a practice of freedom: learners read their own world, name what shapes it, and act together.",
+  "plain_policy": "Community education that helps residents build their own view of an issue before they are consulted, so they shape policy as co-authors.",
   "stops": [
    {
     "name": "Paulo Freire",
@@ -6391,8 +6391,8 @@
     "defn": "Wenger-Trayner's term for bringing people together across boundaries to learn."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Learning held by groups of practitioners over time: communities of practice share a field, and action learning sets work on real problems through questions.",
+  "plain_policy": "Networks where practitioners from different agencies or cities learn from each other, and small groups of managers working through hard problems together.",
   "stops": [
    {
     "name": "Reg Revans",
@@ -6516,8 +6516,8 @@
     "defn": "Kegan's stage where people form their own values rather than following others'."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "How adults grow in their capacity to hold complexity, and why people stay stuck even when they want to change.",
+  "plain_policy": "Leadership programmes that work with the hidden reasons reforms stall, without ranking staff by developmental stage.",
   "stops": [
    {
     "name": "Jean Piaget",
@@ -6650,8 +6650,8 @@
     "defn": "An organization or community designed to learn continually."
    }
   ],
-  "plain_overview": "",
-  "plain_policy": "",
+  "plain_overview": "Seeing classrooms and schools as complex systems, and asking how to educate people for a world nobody can predict.",
+  "plain_policy": "Schools and training programmes that teach uncertainty, relationships and systems thinking alongside subject knowledge.",
   "stops": [
    {
     "name": "Edgar Morin",

@@ -17,6 +17,7 @@ try:
 except ImportError:
     NOT_PEOPLE = []
 from content_depth import D as DEPTH
+import content_plain as PL
 
 errors = []
 slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -105,8 +106,10 @@ for p in pathways:
     for f in ("explainer", "practice", "key_ideas"):
         if not p[f]: warnings.append(f"no {f}: {sid}")
     if set(p["sector_notes"]) != {"biz", "ngo", "health", "edu", "com"}: errors.append(f"sector notes incomplete: {sid}")
-    p["plain_overview"] = A.PLAIN.get(p["id"], {}).get("ov", "")
-    p["plain_policy"] = A.PLAIN.get(p["id"], {}).get("pol", "")
+    p["plain_overview"] = A.PLAIN.get(p["id"], {}).get("ov") or PL.OV.get(sid, "")
+    p["plain_policy"] = A.PLAIN.get(p["id"], {}).get("pol") or PL.POL.get(sid, "")
+    if not p["plain_overview"]: warnings.append(f"no plain overview: {sid}")
+    if not p["plain_policy"]: warnings.append(f"no plain policy note: {sid}")
     stops = []
     for raw in [x.strip() for x in strip_tags(p["road"]).split("\u2192") if x.strip()]:
         m = re.match(r"^(.*?)\s*\((.*)\)\s*$", raw)

@@ -22,7 +22,7 @@ One source of truth, three outputs: a live web app, a linked PDF, and a map imag
 | `#/path` | Find my work: start, area, trade, first pathway, where that work happens (state in the query string) |
 | `#/map?view=universe\|metro\|tree\|treemap\|mine\|time&p=<id>` | Map hub; the selected pathway is shared across tabs. On the universe, `links=near\|shared` shows connections (designed neighbours, or shared cases and groups) |
 | `#/people/<slug>` | Person profile, with "where I land" kept in `localStorage` |
-| `#/contribute`, `#/about`, `#/about/acknowledgment` | Suggest a change (prefilled GitHub issue), about, acknowledgment layout |
+| `#/contribute`, `#/about` | Suggest a change (prefilled GitHub issue), about. The acknowledgment page is withdrawn for now; `#/about/acknowledgment` lands on About |
 | `#/orgs`, `#/cases`, `#/library` | Organizations, cases, and the live library |
 
 Old links (`#p-…`, `#o-…`, `#c-…`, `#library`) redirect. The trail (`pathways-my-trail`), explored pathways and
