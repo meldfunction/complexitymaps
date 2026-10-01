@@ -107,6 +107,13 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       await p.evaluate(() => localStorage.setItem('pathways-my-trail', JSON.stringify(['power-analysis','service-design'])));
       await go(p, '#/map?view=mine'); await p.click('.reorder li:nth-child(1) button[aria-label*="later"]'); await p.waitForTimeout(150);
       check(await p.evaluate(() => JSON.parse(localStorage.getItem('pathways-my-trail'))[0]) === 'service-design', 'motion: reorder buttons move a stop');
+      await go(p, '#/wiki'); await p.click('.helpfab'); await p.waitForTimeout(300);
+      check(await p.evaluate(() => document.querySelector('dialog.helpdlg')?.open === true), 'wiki: Need help opens the guide');
+      await p.click('.helpways .way >> nth=0'); await p.waitForTimeout(200);
+      for (let i = 0; i < 9; i++) { await p.click('.tnav .btn:not(.ghost)'); await p.waitForTimeout(120); }
+      check((await p.textContent('.tcard .label')).startsWith('Stop 10 of 10'), 'wiki: history tour reaches the last stop');
+      await p.keyboard.press('Escape'); await p.waitForTimeout(150);
+      check(await p.evaluate(() => !document.querySelector('dialog.helpdlg') && !document.querySelector('.helpfab.pulse')), 'wiki: guide closes and the button stops pulsing');
       await go(p, '#/'); await p.click('.motiontoggle'); await p.waitForTimeout(150);
       check((await p.textContent('.motiontoggle')).includes('off'), 'motion: footer toggle turns motion off');
       await go(p, '#/map?view=metro'); await p.waitForTimeout(300);

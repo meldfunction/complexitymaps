@@ -536,6 +536,36 @@ html.no-motion .balance .beam,html.no-motion .time .bar,html.has-anime .balance 
 .about-list{margin:0;padding-left:20px;max-width:52ch}
 .about-list li{margin:5px 0;line-height:1.5}
 .about-thanks{border-left:3px solid var(--rel);padding:4px 0 4px 14px;max-width:62ch;font:italic 17px/1.5 var(--serif);margin:0 0 4px}
+.helpfab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:20;display:flex;align-items:center;gap:8px;padding:10px 16px 10px 12px;border-radius:999px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.12);font:inherit}
+.helpfab b{font-size:15px}
+.helpfab small{font:11px var(--mono);color:var(--muted)}
+.helpfab .dotp{width:10px;height:10px;border-radius:50%;background:var(--chg);position:relative}
+@media (prefers-reduced-motion:no-preference){ html:not(.no-motion) .helpfab.pulse .dotp::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--chg);animation:helppulse 1.8s ease-out infinite} }
+@keyframes helppulse{from{transform:scale(.5);opacity:1}to{transform:scale(1.6);opacity:0}}
+.helpdlg{width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 32px);border:1px solid var(--line);border-radius:18px;padding:22px 24px 24px;background:var(--paper);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.helpdlg::backdrop{background:rgba(20,24,22,.45)}
+.helpdlg h2{font-size:clamp(24px,3vw,30px);margin:6px 36px 6px 0}
+.helpdlg .lead{font:17px/1.5 var(--serif);margin:0 0 14px}
+.helpx{position:absolute;right:14px;top:12px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:20px;cursor:pointer;color:var(--ink)}
+.helpways{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.helpways .way{display:block;text-align:left;border:1px solid var(--line);border-radius:14px;background:var(--card);padding:14px 16px;cursor:pointer;color:var(--ink);text-decoration:none;font:inherit}
+main:has(~ .helpfab),footer.foot:has(~ .helpfab){padding-bottom:72px}
+.helpways .way:hover{border-color:var(--ink)}
+.helpways .way b{display:block;font:500 19px/1.25 var(--serif);margin-bottom:4px}
+.helpways .way span{font-size:13.5px;color:var(--muted)}
+.linkbtn{background:none;border:0;padding:0;color:var(--link);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.tline{position:relative;height:46px;margin:10px 8px 6px;border-bottom:2px solid var(--line)}
+.tdot{position:absolute;bottom:-7px;width:12px;height:12px;margin-left:-6px;border-radius:50%;border:2px solid var(--ink);background:var(--card);padding:0;cursor:pointer}
+.tdot.on{background:var(--ink)}
+.tmark{position:absolute;bottom:-13px;width:24px;height:24px;margin-left:-12px;border-radius:50%;border:2.5px solid var(--chg);pointer-events:none}
+.tyr{position:absolute;top:0;transform:translateX(-50%);font:11px var(--mono);color:var(--muted)}
+.tcard{margin-top:22px}
+.tcard h3{font-size:24px;margin:6px 0 8px}
+.tcard .story{font:17px/1.55 var(--serif);margin:0 0 10px;max-width:62ch}
+.tcard .notice{background:var(--paper2);border-radius:10px;padding:10px 14px;margin:0 0 12px;font-size:14.5px}
+.tnav{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+.helpdlg .concepts{margin-top:8px}
 </style>
 </head>
 <body>
@@ -1002,7 +1032,94 @@ function viewWikiIndex(params){
     el("div",{class:"idx-filters"}, chip("All", "#/wiki", !goal && !kind && !scale),
       A.goals.map(g => chip(g.label, "#/wiki?goal="+g.id, goal === g.id))),
     el("div",{class:"key",style:"display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 0 18px"}, Object.entries(FAM).map(([k, f]) => el("div",{}, dot(k), f.name))),
-    list);
+    list, helpButton());
+}
+
+// ---------------------------------------------------------------- need help? (wiki): a gentler way in
+// A floating button opens a guide with three ways in: a short history tour, the ideas-in-motion carousel, or a start
+// from what you care about. The button pulses softly until it has been opened once (never blinks; no pulse with motion off).
+const HELP_KEY = "pathways-help-opened";
+const TOUR = [
+  {years:"1940s", y:1946, title:"Machines, bodies and societies steer the same way", path:"cybernetics-the-shared-foundation",
+   story:"After the Second World War, scientists from very different fields met at the Macy conferences in New York. They noticed that a thermostat, a nervous system and a whole society all steer themselves using feedback. Norbert Wiener named the new field cybernetics in 1948.",
+   notice:"Notice a loop today: something you did, what changed because of it, and how that changed what you did next."},
+  {years:"1946 to 1947", y:1947, title:"Groups that learn from themselves", path:"t-groups-and-sensitivity-training",
+   story:"Kurt Lewin's team ran a workshop where participants sat in on the staff's discussion of their own behaviour. The group's here-and-now interaction became the lesson. It led to T-groups, action research and much of how teams are run today.",
+   notice:"In your next meeting, watch who speaks, who is interrupted and what nobody says."},
+  {years:"1968 to 1970", y:1968, title:"Reading the word and the world", path:"critical-and-popular-education",
+   story:"Paulo Freire taught adults in Brazil to read by starting from the words of their own lives. In Pedagogy of the Oppressed he argued that learning should help people name the forces shaping their lives and act together.",
+   notice:"Ask of any problem: who explains it, and who is only ever explained to?"},
+  {years:"1972 to 1973", y:1972, title:"Systems you are part of", path:"public-policy-and-government-innovation",
+   story:"Gregory Bateson's Steps to an Ecology of Mind, Donella Meadows and colleagues' The Limits to Growth, and Rittel and Webber's paper on wicked problems all appeared within two years. Together they said: some problems have no clean definition and no final fix, and the observer is part of the system.",
+   notice:"Pick one problem you care about. Can you say where it ends? If not, it may be a wicked one."},
+  {years:"1970s", y:1974, title:"Life makes itself", path:"living-systems-and-regeneration",
+   story:"Humberto Maturana and Francisco Varela described living things as self-making, which they called autopoiesis. Ilya Prigogine won a Nobel Prize in 1977 for showing how order can arise far from balance. Life began to look less like a machine and more like a pattern that keeps renewing itself.",
+   notice:"Look at a garden, a team or a neighbourhood. What keeps renewing it?"},
+  {years:"1984", y:1984, title:"A science of complexity", path:"the-formal-science-of-complex-systems",
+   story:"The Santa Fe Institute was founded to study complex systems across physics, biology and economics. Its researchers showed with computer models how simple local rules can add up to traffic jams, markets and ecosystems that nobody designed.",
+   notice:"Watch a queue, a crowd or a group chat. What pattern forms that no one planned?"},
+  {years:"1990", y:1990, title:"People can govern what they share", path:"governance-and-self-organizing-structures",
+   story:"Elinor Ostrom's Governing the Commons showed that communities around the world manage forests, fisheries and water for centuries without a central owner, using rules they make together. She later became the first woman to win the Nobel Prize in economics.",
+   notice:"What do you share with others, a kitchen, a street, a budget? Who makes its rules?"},
+  {years:"1999 onward", y:1999, title:"Is this situation complex, or just complicated?", path:"sensemaking-and-acting-in-uncertainty",
+   story:"Dave Snowden developed the Cynefin framework, which separates problems where experts can find the answer from those where cause and effect only show up in hindsight. For the second kind, you run small, safe experiments and learn as you go.",
+   notice:"Before your next decision, ask: could an expert work this out, or do we need to try something small first?"},
+  {years:"2000s to 2010s", y:2008, title:"Designing inside government", path:"strategic-design-and-policy-labs",
+   story:"Policy labs such as Denmark's MindLab and the Helsinki Design Lab, and teams like the UK's Government Digital Service, brought designers, residents and civil servants together to test public services before rolling them out.",
+   notice:"Think of a form or service that frustrated you. Who would have to be in the room to fix it?"},
+  {years:"2010s to now", y:2017, title:"Relationship as a way of knowing", path:"nora-bateson-and-warm-data",
+   story:"Robin Wall Kimmerer's Braiding Sweetgrass, Nora Bateson's Warm Data, adrienne maree brown's Emergent Strategy and many Indigenous thinkers brought relationship, land and care to the centre. Change comes from how we relate, not only from what we plan.",
+   notice:"Pick one issue in your life and look at it through family, money, health and place in turn. What links them?"},
+];
+let tourAt = 0, helpMode = "menu";
+function helpDialog(){
+  const dlg = el("dialog",{class:"helpdlg","aria-labelledby":"help-title",onclick:e => { if (e.target === dlg) dlg.close(); },onclose:() => dlg.remove()});
+  const body = el("div",{class:"helpbody"});
+  const back = () => el("button",{type:"button",class:"linkbtn",onclick:()=>{ helpMode = "menu"; draw(); },text:"← Other ways in"});
+  const draw = () => {
+    if (helpMode === "menu") fill(body,
+      el("h2",{id:"help-title",text:"Did your eyes glaze over at all those links?"}),
+      el("p",{class:"lead",text:"No problem. Follow me. Pick one gentle way in; you can always come back to the full list."}),
+      el("div",{class:"helpways"},
+        el("button",{type:"button",class:"way",onclick:()=>{ helpMode = "tour"; draw(); }}, el("b",{text:"Take the history tour"}), el("span",{text:`${TOUR.length} short stops, from the 1940s to now. About five minutes.`})),
+        el("button",{type:"button",class:"way",onclick:()=>{ helpMode = "ideas"; draw(); }}, el("b",{text:"See ideas in motion"}), el("span",{text:"Eight small animations that show an idea instead of explaining it."})),
+        el("button",{type:"button",class:"way",onclick:()=>{ helpMode = "care"; draw(); }}, el("b",{text:"Start from what you care about"}), el("span",{text:"Choose a goal and see only the pathways for it."})),
+        el("a",{class:"way",href:"#/path",onclick:()=>dlg.close()}, el("b",{text:"Start from your work"}), el("span",{text:"Answer a few questions about what you do. Get a trail to follow."}))));
+    else if (helpMode === "care") fill(body, back(), el("h2",{id:"help-title",text:"What are you trying to do?"}),
+      el("div",{class:"helpways"}, A.goals.map(g => el("a",{class:"way",href:"#/wiki?goal=" + g.id,onclick:()=>dlg.close()}, el("b",{text:g.label}), el("span",{text:g.sub})))));
+    else if (helpMode === "ideas") fill(body, back(), el("h2",{id:"help-title",class:"sr",text:"Ideas in motion"}), ideasCard());
+    else drawTour();
+  };
+  const drawTour = () => {
+    const st = TOUR[tourAt], p = byId(P, st.path), y0 = 1940, y1 = 2025, X = y => (y - y0) / (y1 - y0) * 100;
+    const marker = el("i",{class:"tmark",style:`left:${X(TOUR[Math.max(tourAt - 1, 0)].y)}%`});
+    const card = el("div",{class:"tcard"},
+      el("span",{class:"label",text:`Stop ${tourAt + 1} of ${TOUR.length} · ${st.years}`}),
+      el("h3",{text:st.title}), el("p",{class:"story",text:st.story}),
+      el("p",{class:"notice"}, el("b",{text:"Try noticing: "}), st.notice),
+      p ? el("a",{href:wikiHref(p.id),onclick:()=>dlg.close(),text:"Read about it: " + p.name + " →"}) : null);
+    const go = i => { tourAt = Math.min(Math.max(i, 0), TOUR.length - 1); drawTour(); };
+    fill(body, back(), el("h2",{id:"help-title",text:"A short history of complexity"}),
+      el("div",{class:"tline","aria-hidden":"true"}, TOUR.map((t, i) => el("button",{type:"button",tabindex:"-1",class:"tdot" + (i <= tourAt ? " on" : ""),style:`left:${X(t.y)}%`,title:t.years,onclick:()=>go(i)})), marker,
+        [1940, 1960, 1980, 2000, 2020].map(y => el("span",{class:"tyr",style:`left:${X(y)}%`,text:String(y)}))),
+      card,
+      el("div",{class:"tnav"}, el("button",{type:"button",class:"btn ghost",disabled:tourAt ? null : "",onclick:()=>go(tourAt - 1),text:"← Back"}),
+        tourAt < TOUR.length - 1 ? el("button",{type:"button",class:"btn",onclick:()=>go(tourAt + 1),text:"Next stop →"})
+          : el("a",{class:"btn",href:"#/path",onclick:()=>dlg.close(),text:"Now find your own path →"})));
+    const a = AN();
+    if (a) { a.animate(marker, {left:[marker.style.left, X(st.y) + "%"], duration:700, ease:"inOut(3)"}); a.animate(card, {opacity:[0, 1], translateY:[12, 0], duration:450, ease:"out(3)"}); }
+    else marker.style.left = X(st.y) + "%";
+  };
+  dlg.append(el("button",{type:"button",class:"helpx","aria-label":"Close",onclick:()=>dlg.close(),text:"×"}), body);
+  draw(); return dlg;
+}
+function helpButton(){
+  const fresh = !store.get(HELP_KEY, false);
+  return el("button",{type:"button",class:"helpfab" + (fresh ? " pulse" : ""),"aria-haspopup":"dialog",onclick:e => {
+      store.set(HELP_KEY, true); e.currentTarget.classList.remove("pulse"); helpMode = "menu";
+      const d = helpDialog(); document.body.append(d); d.showModal(); const a = AN();
+      if (a) a.animate(d, {opacity:[0, 1], translateY:[24, 0], duration:350, ease:"out(3)"}); }},
+    el("span",{class:"dotp","aria-hidden":"true"}), el("b",{text:"Need help?"}), el("small",{text:"Follow me"}));
 }
 
 // ---------------------------------------------------------------- wiki article (10a)
@@ -1126,7 +1243,7 @@ function viewArticle(id){
         el("h2",{id:"s-live",text:"From the live library"}), liveBlock(p.terms, p.caps, 6),
         el("p",{style:"margin-top:28px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(p.name),text:"Suggest a change to this article"}))),
       el("aside",{class:"side"}, localMap(p)))),
-    footer()];
+    footer(), helpButton()];
 }
 
 // ---------------------------------------------------------------- find my work (11b)
