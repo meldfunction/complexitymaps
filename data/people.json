@@ -1,0 +1,1395 @@
+[
+ {
+  "name": "Norbert Wiener",
+  "years": "1894–1964",
+  "kind": "person",
+  "status": "draft",
+  "slug": "norbert-wiener",
+  "appears": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "born": 1894,
+  "died": 1964,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "W. Ross Ashby",
+  "years": "1903–1972",
+  "kind": "person",
+  "status": "draft",
+  "slug": "w-ross-ashby",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "sensemaking-and-acting-in-uncertainty",
+   "governance-and-self-organizing-structures"
+  ],
+  "born": 1903,
+  "died": 1972,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Heinz von Foerster",
+  "years": "1911–2002",
+  "kind": "person",
+  "status": "draft",
+  "slug": "heinz-von-foerster",
+  "appears": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "born": 1911,
+  "died": 2002,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gordon Pask",
+  "years": "1928–1996",
+  "kind": "person",
+  "status": "draft",
+  "slug": "gordon-pask",
+  "appears": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "born": 1928,
+  "died": 1996,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Stafford Beer",
+  "years": "1926–2002",
+  "kind": "person",
+  "status": "draft",
+  "slug": "stafford-beer",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "governance-and-self-organizing-structures"
+  ],
+  "born": 1926,
+  "died": 2002,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ilya Prigogine",
+  "years": "1917–2003",
+  "kind": "person",
+  "status": "draft",
+  "slug": "ilya-prigogine",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "born": 1917,
+  "died": 2003,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Santa Fe Institute",
+  "years": "founded 1984",
+  "kind": "institution",
+  "status": "draft",
+  "slug": "santa-fe-institute",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "born": null,
+  "died": null,
+  "founded": 1984,
+  "profile": null
+ },
+ {
+  "name": "NECSI",
+  "years": "founded 1996",
+  "kind": "institution",
+  "status": "draft",
+  "slug": "necsi",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "born": null,
+  "died": null,
+  "founded": 1996,
+  "profile": null
+ },
+ {
+  "name": "Gregory Bateson",
+  "years": "1904–1980",
+  "kind": "person",
+  "status": "draft",
+  "slug": "gregory-bateson",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "relational-transcontextual-and-post-humanist-knowing",
+   "nora-bateson-and-warm-data",
+   "the-metacrisis-and-meaning",
+   "emergence-in-movements-and-social-change",
+   "bohm-dialogue",
+   "transformative-learning",
+   "complexity-and-education"
+  ],
+  "born": 1904,
+  "died": 1980,
+  "founded": null,
+  "profile": {
+   "known": "Anthropologist and cybernetician. Linked mind, communication and ecology.",
+   "timeline": [
+    [
+     1904,
+     "Born in England"
+    ],
+    [
+     1936,
+     "Publishes Naven, from fieldwork in New Guinea"
+    ],
+    [
+     1946,
+     "Takes part in the Macy conferences on cybernetics"
+    ],
+    [
+     1956,
+     "Co-authors the double bind theory of schizophrenia"
+    ],
+    [
+     1972,
+     "Publishes Steps to an Ecology of Mind"
+    ],
+    [
+     1979,
+     "Publishes Mind and Nature"
+    ],
+    [
+     1980,
+     "Dies in San Francisco"
+    ]
+   ],
+   "ideas": [
+    [
+     "Double bind",
+     "A message that contradicts itself at two levels, with no way to step outside it."
+    ],
+    [
+     "Ecology of mind",
+     "Mind is a pattern across organism and environment, not something inside a head."
+    ],
+    [
+     "The difference that makes a difference",
+     "His definition of information."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Conscious purpose",
+     "claim": "Acting on narrow goals cuts through the loops that keep a whole system healthy.",
+     "who": "Planners, engineers",
+     "other": "Purposeful action is how societies have solved hard problems, from sanitation to vaccines."
+    }
+   ],
+   "sources": [
+    [
+     "Steps to an Ecology of Mind (1972)",
+     "Collected essays"
+    ],
+    [
+     "Mind and Nature (1979)",
+     "His most accessible book"
+    ]
+   ],
+   "ask": [
+    "Where has a clear goal made a situation worse?",
+    "Where would you be lost without one?"
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Margaret Mead",
+  "years": "1901–1978",
+  "kind": "person",
+  "status": "draft",
+  "slug": "margaret-mead",
+  "appears": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "born": 1901,
+  "died": 1978,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Stuart Kauffman",
+  "years": "b. 1939",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Stuart_Kauffman",
+  "slug": "stuart-kauffman",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "born": 1939,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Dave Snowden",
+  "years": "b. 1954",
+  "kind": "person",
+  "status": "draft",
+  "slug": "dave-snowden",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "born": 1954,
+  "died": null,
+  "founded": null,
+  "profile": {
+   "known": "Management consultant and researcher. Created the Cynefin framework.",
+   "timeline": [
+    [
+     1954,
+     "Born in Wales"
+    ],
+    [
+     1999,
+     "Develops Cynefin while at IBM"
+    ],
+    [
+     2005,
+     "Founds Cognitive Edge, later The Cynefin Company"
+    ],
+    [
+     2007,
+     "Publishes A Leader's Framework for Decision Making in Harvard Business Review, with Mary Boone"
+    ]
+   ],
+   "ideas": [
+    [
+     "Cynefin",
+     "Different kinds of situation (clear, complicated, complex, chaotic) need different ways of acting."
+    ],
+    [
+     "Safe-to-fail probes",
+     "In complex situations, run small experiments and amplify what works."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Best practice in complex settings",
+     "claim": "Copying what worked elsewhere fails when cause and effect only show up in hindsight.",
+     "who": "Process and quality advocates",
+     "other": "Standard methods spread proven gains and cut costly variation."
+    },
+    {
+     "target": "Stage models of leadership",
+     "claim": "Developmental stage models are often sold as ladders without enough evidence.",
+     "who": "Vertical development practitioners",
+     "other": "Stage-based coaching gives people a language for growth that many find useful."
+    }
+   ],
+   "sources": [
+    [
+     "A Leader's Framework for Decision Making (2007)",
+     "Harvard Business Review article"
+    ],
+    [
+     "Cynefin: Weaving Sense-Making into the Fabric of Our World (2020)",
+     "Edited collection"
+    ]
+   ],
+   "ask": [
+    "Can you name one situation from your work in each Cynefin domain?",
+    "When is a best practice exactly the right call?"
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Karl Weick",
+  "years": "1936–2026",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://thecynefin.co/karl-weick-1936-2026/",
+  "slug": "karl-weick",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty",
+   "crisis-disaster-and-high-reliability"
+  ],
+  "born": 1936,
+  "died": 2026,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Kurt Lewin",
+  "years": "1890–1947",
+  "kind": "person",
+  "status": "draft",
+  "slug": "kurt-lewin",
+  "appears": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "t-groups-and-sensitivity-training",
+   "action-research",
+   "experiential-learning-and-reflective-practice"
+  ],
+  "born": 1890,
+  "died": 1947,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Paulo Freire",
+  "years": "1921–1997",
+  "kind": "person",
+  "status": "draft",
+  "slug": "paulo-freire",
+  "appears": [
+   "power-analysis",
+   "action-research",
+   "transformative-learning",
+   "critical-and-popular-education"
+  ],
+  "born": 1921,
+  "died": 1997,
+  "founded": null,
+  "profile": {
+   "known": "Brazilian educator. Linked literacy to people naming and changing their own conditions.",
+   "timeline": [
+    [
+     1921,
+     "Born in Recife, Brazil"
+    ],
+    [
+     1963,
+     "Literacy campaign in Angicos"
+    ],
+    [
+     1964,
+     "Jailed and exiled after the military coup"
+    ],
+    [
+     1968,
+     "Writes Pedagogy of the Oppressed"
+    ],
+    [
+     1980,
+     "Returns to Brazil"
+    ],
+    [
+     1997,
+     "Dies in São Paulo"
+    ]
+   ],
+   "ideas": [
+    [
+     "Banking model",
+     "Education that deposits facts into passive learners. He argued against it."
+    ],
+    [
+     "Conscientização",
+     "Learning to see the social causes of your situation, and acting on them."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Banking education",
+     "claim": "Treating learners as empty containers keeps them from questioning their conditions.",
+     "who": "Advocates of direct instruction",
+     "other": "Clear teaching of basics gives poorer students the tools wealthier ones already have."
+    }
+   ],
+   "sources": [
+    [
+     "Pedagogy of the Oppressed (1968)",
+     "His main work"
+    ],
+    [
+     "bell hooks, Teaching to Transgress (1994)",
+     "Builds on Freire and questions the sexist language in his early work"
+    ]
+   ],
+   "ask": [
+    "When did you last learn something by naming your own situation?",
+    "What does direct teaching do well?"
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Myles Horton",
+  "years": "1905–1990",
+  "kind": "person",
+  "status": "draft",
+  "slug": "myles-horton",
+  "appears": [
+   "critical-and-popular-education"
+  ],
+  "born": 1905,
+  "died": 1990,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "bell hooks",
+  "years": "1952–2021",
+  "kind": "person",
+  "status": "draft",
+  "slug": "bell-hooks",
+  "appears": [
+   "critical-and-popular-education"
+  ],
+  "born": 1952,
+  "died": 2021,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Dewey",
+  "years": "1859–1952",
+  "kind": "person",
+  "status": "draft",
+  "slug": "john-dewey",
+  "appears": [
+   "experiential-learning-and-reflective-practice"
+  ],
+  "born": 1859,
+  "died": 1952,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "David Kolb",
+  "years": "b. 1939",
+  "kind": "person",
+  "status": "draft",
+  "slug": "david-kolb",
+  "appears": [
+   "experiential-learning-and-reflective-practice"
+  ],
+  "born": 1939,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Donald Schön",
+  "years": "1930–1997",
+  "kind": "person",
+  "status": "draft",
+  "slug": "donald-sch-n",
+  "appears": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "design-thinking",
+   "experiential-learning-and-reflective-practice"
+  ],
+  "born": 1930,
+  "died": 1997,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris Argyris",
+  "years": "1923–2013",
+  "kind": "person",
+  "status": "draft",
+  "slug": "chris-argyris",
+  "appears": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "t-groups-and-sensitivity-training",
+   "action-research"
+  ],
+  "born": 1923,
+  "died": 2013,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jack Mezirow",
+  "years": "1923–2014",
+  "kind": "person",
+  "status": "draft",
+  "slug": "jack-mezirow",
+  "appears": [
+   "transformative-learning"
+  ],
+  "born": 1923,
+  "died": 2014,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Robert Kegan",
+  "years": "b. 1946",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Robert_Kegan",
+  "slug": "robert-kegan",
+  "appears": [
+   "transformative-learning",
+   "adult-development-and-immunity-to-change"
+  ],
+  "born": 1946,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jean Piaget",
+  "years": "1896–1980",
+  "kind": "person",
+  "status": "draft",
+  "slug": "jean-piaget",
+  "appears": [
+   "adult-development-and-immunity-to-change"
+  ],
+  "born": 1896,
+  "died": 1980,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jean Lave",
+  "years": "b. 1939",
+  "kind": "person",
+  "status": "draft",
+  "slug": "jean-lave",
+  "appears": [
+   "communities-of-practice-and-action-learning"
+  ],
+  "born": 1939,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Etienne Wenger",
+  "years": "b. 1952",
+  "kind": "person",
+  "status": "draft",
+  "slug": "etienne-wenger",
+  "appears": [
+   "communities-of-practice-and-action-learning"
+  ],
+  "born": 1952,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Reg Revans",
+  "years": "1907–2003",
+  "kind": "person",
+  "status": "draft",
+  "slug": "reg-revans",
+  "appears": [
+   "communities-of-practice-and-action-learning"
+  ],
+  "born": 1907,
+  "died": 2003,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Wilfred Bion",
+  "years": "1897–1979",
+  "kind": "person",
+  "status": "draft",
+  "slug": "wilfred-bion",
+  "appears": [
+   "group-relations"
+  ],
+  "born": 1897,
+  "died": 1979,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "David Bohm",
+  "years": "1917–1992",
+  "kind": "person",
+  "status": "draft",
+  "slug": "david-bohm",
+  "appears": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "hosting-and-participatory-practice",
+   "bohm-dialogue"
+  ],
+  "born": 1917,
+  "died": 1992,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Otto Scharmer",
+  "years": "b. 1961",
+  "kind": "person",
+  "status": "draft",
+  "slug": "otto-scharmer",
+  "appears": [
+   "nora-bateson-and-warm-data",
+   "presencing-theory-u-and-social-presencing-theater",
+   "bohm-dialogue"
+  ],
+  "born": 1961,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Peter Senge",
+  "years": "b. 1947",
+  "kind": "person",
+  "status": "draft",
+  "slug": "peter-senge",
+  "appears": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "bohm-dialogue"
+  ],
+  "born": 1947,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Horst Rittel",
+  "years": "1930–1990",
+  "kind": "person",
+  "status": "draft",
+  "slug": "horst-rittel",
+  "appears": [
+   "public-policy-and-government-innovation",
+   "systemic-design-and-futures",
+   "design-thinking"
+  ],
+  "born": 1930,
+  "died": 1990,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Herbert Simon",
+  "years": "1916–2001",
+  "kind": "person",
+  "status": "draft",
+  "slug": "herbert-simon",
+  "appears": [
+   "complexity-economics-and-new-economic-models",
+   "strategy-under-uncertainty",
+   "design-thinking"
+  ],
+  "born": 1916,
+  "died": 2001,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "W. Brian Arthur",
+  "years": "b. 1945",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/W._Brian_Arthur",
+  "slug": "w-brian-arthur",
+  "appears": [
+   "complexity-economics-and-new-economic-models"
+  ],
+  "born": 1945,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Elinor Ostrom",
+  "years": "1933–2012",
+  "kind": "person",
+  "status": "draft",
+  "slug": "elinor-ostrom",
+  "appears": [
+   "indigenous-and-land-based-knowledge",
+   "governance-and-self-organizing-structures",
+   "crisis-disaster-and-high-reliability",
+   "complexity-economics-and-new-economic-models",
+   "collaboration-across-boundaries"
+  ],
+  "born": 1933,
+  "died": 2012,
+  "founded": null,
+  "profile": {
+   "known": "Political economist. Showed how communities govern shared resources without state or market control.",
+   "timeline": [
+    [
+     1933,
+     "Born in Los Angeles"
+    ],
+    [
+     1973,
+     "Co-founds the Workshop in Political Theory and Policy Analysis, Indiana University"
+    ],
+    [
+     1990,
+     "Publishes Governing the Commons"
+    ],
+    [
+     2009,
+     "First woman awarded the Nobel Prize in economics"
+    ],
+    [
+     2012,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Design principles",
+     "Eight features shared by long-lasting commons, such as clear boundaries and local rule-making."
+    ],
+    [
+     "Polycentric governance",
+     "Many overlapping centres of decision, rather than one."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "The tragedy of the commons",
+     "claim": "Users of a shared resource don't inevitably ruin it; many communities have governed commons for centuries.",
+     "who": "Followers of Garrett Hardin (1968)",
+     "other": "Without a state or private owner, large open-access resources do get overused."
+    }
+   ],
+   "sources": [
+    [
+     "Governing the Commons (1990)",
+     "Her main work"
+    ],
+    [
+     "Garrett Hardin, The Tragedy of the Commons (1968)",
+     "The argument she tested"
+    ]
+   ],
+   "ask": [
+    "Do her principles hold at the scale of the climate?",
+    "Which commons do you share, and who makes its rules?"
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Donella Meadows",
+  "years": "1941–2001",
+  "kind": "person",
+  "status": "draft",
+  "slug": "donella-meadows",
+  "appears": [
+   "living-systems-and-regeneration",
+   "public-policy-and-government-innovation",
+   "transition-design"
+  ],
+  "born": 1941,
+  "died": 2001,
+  "founded": null,
+  "profile": {
+   "known": "Environmental scientist and systems thinker. Lead author of The Limits to Growth.",
+   "timeline": [
+    [
+     1941,
+     "Born in Illinois"
+    ],
+    [
+     1972,
+     "Lead author of The Limits to Growth"
+    ],
+    [
+     1999,
+     "Publishes Leverage Points: Places to Intervene in a System"
+    ],
+    [
+     2001,
+     "Dies"
+    ],
+    [
+     2008,
+     "Thinking in Systems published after her death"
+    ]
+   ],
+   "ideas": [
+    [
+     "Leverage points",
+     "Places in a system where a small shift produces big change. Goals and paradigms rank highest."
+    ],
+    [
+     "Stocks and flows",
+     "Most behaviour comes from what accumulates and how fast it fills and drains."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Endless growth",
+     "claim": "Growth in material use can't continue forever on a finite planet.",
+     "who": "Economists such as Julian Simon",
+     "other": "Human ingenuity and prices find substitutes; the 1972 scenarios underrated innovation."
+    }
+   ],
+   "sources": [
+    [
+     "Thinking in Systems (2008)",
+     "A primer"
+    ],
+    [
+     "Leverage Points (1999)",
+     "Short essay"
+    ],
+    [
+     "The Limits to Growth (1972)",
+     "The original study"
+    ]
+   ],
+   "ask": [
+    "Which of her leverage points have you seen used?",
+    "How would you test the growth argument yourself?"
+   ],
+   "status": "draft"
+  }
+ },
+ {
+  "name": "Fritjof Capra",
+  "years": "b. 1939",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Fritjof_Capra",
+  "slug": "fritjof-capra",
+  "appears": [
+   "living-systems-and-regeneration",
+   "transition-design"
+  ],
+  "born": 1939,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Grace Lee Boggs",
+  "years": "1915–2015",
+  "kind": "person",
+  "status": "draft",
+  "slug": "grace-lee-boggs",
+  "appears": [
+   "emergence-in-movements-and-social-change",
+   "critical-and-popular-education"
+  ],
+  "born": 1915,
+  "died": 2015,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Octavia Butler",
+  "years": "1947–2006",
+  "kind": "person",
+  "status": "draft",
+  "slug": "octavia-butler",
+  "appears": [
+   "emergence-in-movements-and-social-change"
+  ],
+  "born": 1947,
+  "died": 2006,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Arnold van Gennep",
+  "years": "1873–1957",
+  "kind": "person",
+  "status": "draft",
+  "slug": "arnold-van-gennep",
+  "appears": [
+   "ritual-liminality-and-transition"
+  ],
+  "born": 1873,
+  "died": 1957,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Victor Turner",
+  "years": "1920–1983",
+  "kind": "person",
+  "status": "draft",
+  "slug": "victor-turner",
+  "appears": [
+   "ritual-liminality-and-transition"
+  ],
+  "born": 1920,
+  "died": 1983,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Enrico Quarantelli",
+  "years": "1924–2017",
+  "kind": "person",
+  "status": "draft",
+  "slug": "enrico-quarantelli",
+  "appears": [
+   "crisis-disaster-and-high-reliability"
+  ],
+  "born": 1924,
+  "died": 2017,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "W. Edwards Deming",
+  "years": "1900–1993",
+  "kind": "person",
+  "status": "draft",
+  "slug": "w-edwards-deming",
+  "appears": [
+   "measurement-and-accountability",
+   "teams-and-learning-cultures",
+   "improvement-and-adaptive-management"
+  ],
+  "born": 1900,
+  "died": 1993,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Quinn Patton",
+  "years": "b. 1945",
+  "kind": "person",
+  "status": "draft",
+  "slug": "michael-quinn-patton",
+  "appears": [
+   "developmental-evaluation"
+  ],
+  "born": 1945,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Orlando Fals-Borda",
+  "years": "1925–2008",
+  "kind": "person",
+  "status": "draft",
+  "slug": "orlando-fals-borda",
+  "appears": [
+   "action-research",
+   "critical-and-popular-education"
+  ],
+  "born": 1925,
+  "died": 2008,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Vine Deloria Jr.",
+  "years": "1933–2005",
+  "kind": "person",
+  "status": "draft",
+  "slug": "vine-deloria-jr",
+  "appears": [
+   "indigenous-and-land-based-knowledge"
+  ],
+  "born": 1933,
+  "died": 2005,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Robin Wall Kimmerer",
+  "years": "b. 1953",
+  "kind": "person",
+  "status": "draft",
+  "slug": "robin-wall-kimmerer",
+  "appears": [
+   "indigenous-and-land-based-knowledge"
+  ],
+  "born": 1953,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Edgar Morin",
+  "years": "1921–2026",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://thecynefin.co/edgar-morin-1921-2026-a-completed-life/",
+  "slug": "edgar-morin",
+  "appears": [
+   "the-metacrisis-and-meaning",
+   "complexity-and-education"
+  ],
+  "born": 1921,
+  "died": 2026,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Iain McGilchrist",
+  "years": "b. 1953",
+  "kind": "person",
+  "status": "draft",
+  "slug": "iain-mcgilchrist",
+  "appears": [
+   "the-metacrisis-and-meaning"
+  ],
+  "born": 1953,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "George Lakoff",
+  "years": "b. 1941",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/George_Lakoff",
+  "slug": "george-lakoff",
+  "appears": [
+   "narrative-change"
+  ],
+  "born": 1941,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Paul Lederach",
+  "years": "b. 1955",
+  "kind": "person",
+  "status": "draft",
+  "slug": "john-paul-lederach",
+  "appears": [
+   "conflict-transformation"
+  ],
+  "born": 1955,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Arnold Mindell",
+  "years": "1940–2024",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Arnold_Mindell",
+  "slug": "arnold-mindell",
+  "appears": [
+   "conflict-transformation"
+  ],
+  "born": 1940,
+  "died": 2024,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Clayton Christensen",
+  "years": "1952–2020",
+  "kind": "person",
+  "status": "draft",
+  "slug": "clayton-christensen",
+  "appears": [
+   "corporate-innovation-and-renewal"
+  ],
+  "born": 1952,
+  "died": 2020,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Henry Chesbrough",
+  "years": "b. 1956",
+  "kind": "person",
+  "status": "draft",
+  "slug": "henry-chesbrough",
+  "appears": [
+   "corporate-innovation-and-renewal"
+  ],
+  "born": 1956,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Amy Edmondson",
+  "years": "b. 1959",
+  "kind": "person",
+  "status": "draft",
+  "slug": "amy-edmondson",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "born": 1959,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Donald Campbell",
+  "years": "1916–1996",
+  "kind": "person",
+  "status": "draft",
+  "slug": "donald-campbell",
+  "appears": [
+   "measurement-and-accountability"
+  ],
+  "born": 1916,
+  "died": 1996,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Pierre Wack",
+  "years": "1922–1997",
+  "kind": "person",
+  "status": "draft",
+  "slug": "pierre-wack",
+  "appears": [
+   "strategy-under-uncertainty"
+  ],
+  "born": 1922,
+  "died": 1997,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nassim Nicholas Taleb",
+  "years": "b. 1960",
+  "kind": "person",
+  "status": "draft",
+  "slug": "nassim-nicholas-taleb",
+  "appears": [
+   "strategy-under-uncertainty"
+  ],
+  "born": 1960,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Charles Sabel",
+  "years": "b. 1947",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Charles_Sabel",
+  "slug": "charles-sabel",
+  "appears": [
+   "government-plumbing"
+  ],
+  "born": 1947,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Lipsky",
+  "years": "b. 1940",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Michael_Lipsky",
+  "slug": "michael-lipsky",
+  "appears": [
+   "government-plumbing"
+  ],
+  "born": 1940,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Wilhelm Reich",
+  "years": "1897–1957",
+  "kind": "person",
+  "status": "draft",
+  "slug": "wilhelm-reich",
+  "appears": [
+   "somatic-and-embodied-practice"
+  ],
+  "born": 1897,
+  "died": 1957,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Steven Lukes",
+  "years": "b. 1941",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Steven_Lukes",
+  "slug": "steven-lukes",
+  "appears": [
+   "power-analysis"
+  ],
+  "born": 1941,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Hermann Haken",
+  "years": "1927–2024",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Hermann_Haken",
+  "slug": "hermann-haken",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "born": 1927,
+  "died": 2024,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nora Bateson",
+  "years": "b. 1969",
+  "kind": "person",
+  "status": "draft",
+  "slug": "nora-bateson",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "relational-transcontextual-and-post-humanist-knowing",
+   "nora-bateson-and-warm-data",
+   "the-metacrisis-and-meaning",
+   "emergence-in-movements-and-social-change",
+   "bohm-dialogue",
+   "transformative-learning",
+   "complexity-and-education"
+  ],
+  "born": 1969,
+  "died": null,
+  "founded": null,
+  "profile": {
+   "known": "Filmmaker, writer and researcher. Founded the International Bateson Institute. Works on how living systems learn together.",
+   "timeline": [
+    [
+     1969,
+     "Born, daughter of Gregory Bateson and Lois Cammack"
+    ],
+    [
+     2010,
+     "Releases the film An Ecology of Mind about her father's ideas"
+    ],
+    [
+     2014,
+     "Founds the International Bateson Institute in Sweden (year per Wikidata; the institute's own site does not state it)"
+    ],
+    [
+     2016,
+     "Publishes Small Arcs of Larger Circles"
+    ],
+    [
+     2023,
+     "Publishes Combining"
+    ],
+    [
+     2026,
+     "Publishes Belly with Triarchy Press (September in North America, October elsewhere)"
+    ]
+   ],
+   "ideas": [
+    [
+     "Symmathesy",
+     "Living things learn and change together, in context. No part learns alone."
+    ],
+    [
+     "Warm Data",
+     "Information about how parts of a system relate, gathered across many contexts at once."
+    ],
+    [
+     "Transcontextual",
+     "A problem lives in many contexts at once: family, economy, health, culture."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Stage theories of development",
+     "claim": "Ranking people into higher and lower stages ignores context, and setting developmental goals for others is dangerous.",
+     "quote": "Stage theory... Is BS. Always was. And it is colonial as hell.",
+     "qsrc": [
+      "@NoraBateson on X, 10 Aug 2021",
+      "https://x.com/NoraBateson/status/1425142926254956550"
+     ],
+     "quote2": "dictating developmental goals for other people's lives, thoughts, and feelings is dangerous.",
+     "q2src": [
+      "Nora Bateson, \"Just for the record\", Medium",
+      "https://norabateson.medium.com/just-for-the-record-i-said-that-stage-theory-as-it-is-applied-to-developmental-models-is-derived-3128e6ba6cf6"
+     ],
+     "who": "Emil Ejner Friis (co-author as Hanzi Freinacht)",
+     "other": "Stages are backed by research, and they help people judge less: a crude view comes from lacking support to grow, not from a flaw in the person.",
+     "oquote": "due to a lack of the privilege that supports growth, not to an inherent flaw of the person.",
+     "osrc": [
+      "Metamoderna, \"Are Stage Theories BS?\"",
+      "https://metamoderna.substack.com/p/1-are-stage-theories-bs"
+     ],
+     "more": [
+      [
+       "Jeff Salzman, The Daily Evolver: \"The Great Stage-Theory Debate\" (28 Oct 2021)",
+       "https://www.dailyevolver.com/2021/10/the-great-stage-theory-debate/",
+       "An integral-side podcast walking through both positions"
+      ],
+      [
+       "Henry Hamilton Andrews, \"Decolonizing Gravesian Theory\"",
+       "https://hellametamodernism.com/decolonizing-gravesian-theory/",
+       "A middle path: keep Graves' insights, drop the ranked stages"
+      ],
+      [
+       "Benjamin P. Taylor, \"There's been a kerfuffle about 'stage theory'\"",
+       "https://antlerboy.medium.com/theres-been-a-kerfuffle-about-stage-theory-what-do-you-think-433151f4ef47",
+       "Lays out the questions on both sides, with links"
+      ],
+      [
+       "Developmental stage theories, Wikipedia",
+       "https://en.wikipedia.org/wiki/Developmental_stage_theories",
+       "Background on Piaget, Kegan and others"
+      ]
+     ]
+    },
+    {
+     "target": "Solutions thinking",
+     "claim": "Treating complex problems as things to fix with one intervention ignores how everything around them shifts in response.",
+     "who": "Programme designers, evaluators",
+     "other": "Without clear goals and measures, public money can't be accounted for and nothing gets tested."
+    }
+   ],
+   "sources": [
+    [
+     "Belly (2026)",
+     "Her newest book, Triarchy Press",
+     "https://www.triarchypress.net/belly.html"
+    ],
+    [
+     "Small Arcs of Larger Circles (2016)",
+     "Her essays, in her own words"
+    ],
+    [
+     "An Ecology of Mind (2010)",
+     "Film on Gregory Bateson"
+    ],
+    [
+     "Robert Kegan, In Over Our Heads (1994)",
+     "The main stage view she pushes against"
+    ]
+   ],
+   "ask": [
+    "Have you seen a stage model help someone? Have you seen one used to rank people?",
+    "Can a model be useful and still be wrong about how people grow?",
+    "What would you need to see to change your mind?"
+   ],
+   "checked": [
+    [
+     "International Bateson Institute founding year",
+     "https://www.wikidata.org/wiki/Q100605945"
+    ],
+    [
+     "Belly release dates",
+     "https://www.triarchypress.net/belly.html"
+    ]
+   ],
+   "status": "draft"
+  }
+ }
+]

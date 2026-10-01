@@ -1,6 +1,6 @@
 """Organization profiles: who carries the work, where to go deeper, and public media about the concepts.
 
-Every media link below was found through a live web search on 2026-09-26. Site URLs marked
+Every media link below was found through a live web search on 2026-09-26 and link-checked on 2026-10-01. Site URLs marked
 verified=False came from our earlier map and have not been re-checked; the build prints them.
 """
 
@@ -45,7 +45,7 @@ ORGS = [
          summary="Dave Snowden's company for Cynefin, SenseMaker, and anthro-complexity, with trainings, retreats, and an open practitioner wiki.",
          pathways=["Sensemaking"],
          media=[M("Article", "Snowden and Boone: A Leader's Framework for Decision Making (HBR)", "https://hbr.org/2007/11/a-leaders-framework-for-decision-making"),
-                M("Article", "Seeing the Invisible (Singapore RAHS)", "https://thecynefin.co/seeing-the-invisible/")]),
+                M("Article", "Horizon scanning (from the Singapore RAHS work)", "https://thecynefin.co/horizon-scanning/")]),
     dict(id="hsd", name="Human Systems Dynamics Institute", url="https://www.hsdinstitute.org",
          summary="Founded by Glenda Eoyang. Teaches Adaptive Action and the CDE model through a global practitioner network.",
          pathways=["Sensemaking"],
@@ -106,7 +106,7 @@ ORGS = [
     dict(id="tavistock", name="Tavistock Institute of Human Relations", url="https://www.tavinstitute.org",
          summary="London institute for applied social science; runs the Leicester Conference on authority, leadership, and organization.",
          pathways=["Group Relations"],
-         media=[M("Article", "What is a Group Relations conference?", "https://www.tavinstitute.org/news/what-is-a-group-relations-conference/"),
+         media=[M("Article", "What is a Group Relations conference?", "https://tavinstitute.org/news/what-is-a-group-relations-conference-2"),
                 M("Article", "The Leicester Conference", "https://www.tavinstitute.org/projects/group-relations-conferences-leicester-conference/")]),
     dict(id="wtr", name="Work That Reconnects Network", url="https://workthatreconnects.org",
          summary="Carries Joanna Macy's practice after her death in 2025, with facilitators and gatherings worldwide.",
@@ -205,10 +205,10 @@ ORGS = [
          pathways=["Design thinking"],
          media=[M("Guide", "Design Thinking Bootleg", "https://dschool.stanford.edu/tools/design-thinking-bootleg"),
                 M("Critique", "Natasha Iskander: Design thinking is fundamentally conservative (HBR)", "https://hbr.org/2018/09/design-thinking-is-fundamentally-conservative-and-preserves-the-status-quo")]),
-    dict(id="arna", name="Action Research Network of the Americas", url="https://www.arnaconnect.org/",
+    dict(id="arna", name="Action Research Network of the Americas", url="https://arnawebsite.org/",
          summary="Network linking action researchers and participatory action researchers across North and South America.",
          pathways=["Action research"],
-         media=[M("Article", "About ARNA", "http://www.arnaconnect.org/aboutarna/"),
+         media=[M("Article", "About ARNA", "https://arnawebsite.org/about/"),
                 M("Chapter", "ARNA: constructing a new network of North-South convergence", "https://link.springer.com/chapter/10.1057/978-1-137-40523-4_30")]),
     dict(id="itla", name="International Transformative Learning Association", url="https://www.intertla.org/",
          summary="Carries Jack Mezirow's legacy through the International Transformative Learning Conference and its proceedings.",

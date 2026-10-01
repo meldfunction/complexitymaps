@@ -38,7 +38,77 @@
    "cybersyn"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "cyb",
+  "short_name": "Cybernetics",
+  "family": "sci",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "att"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as variety. Ashby's law says anything that steers a system must be able to match the variety of what it faces. Later cyberneticians added that the observer is part of the system.",
+  "lens_status": "draft",
+  "explainer": [
+   "Cybernetics studies how systems steer themselves using feedback: a thermostat, a body keeping its temperature, a team adjusting after a result. Its founders in the 1940s and 50s saw the same patterns in machines, brains and societies.",
+   "A later branch, second-order cybernetics, added that the observer is part of the system being observed, so how you look shapes what you find. Much of the rest of this map grows from these ideas."
+  ],
+  "plain_overview": "How systems steer themselves through feedback, and why the observer is part of the picture.",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Norbert Wiener",
+    "note": "",
+    "years": "1894–1964",
+    "people": [
+     "Norbert Wiener"
+    ]
+   },
+   {
+    "name": "W. Ross Ashby",
+    "note": "requisite variety",
+    "years": "1903–1972",
+    "people": [
+     "W. Ross Ashby"
+    ]
+   },
+   {
+    "name": "Heinz von Foerster",
+    "note": "second-order cybernetics",
+    "years": "1911–2002",
+    "people": [
+     "Heinz von Foerster"
+    ]
+   },
+   {
+    "name": "Maturana and Varela",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Gordon Pask",
+    "note": "conversation theory",
+    "years": "1928–1996",
+    "people": [
+     "Gordon Pask"
+    ]
+   },
+   {
+    "name": "Paul Pangaro",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "The formal science of complex systems",
@@ -83,9 +153,64 @@
   "orgs": [
    "sfi"
   ],
-  "cases": [],
+  "cases": [
+   "artificial-anasazi"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "cx",
+  "short_name": "Formal complexity science",
+  "family": "sci",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "pla",
+   "pol"
+  ],
+  "work_kinds": [
+   "att"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as many agents following simple local rules, producing emergent, non-linear behaviour that can be modelled but rarely predicted precisely.",
+  "lens_status": "draft",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Ilya Prigogine",
+    "note": "dissipative structures",
+    "years": "1917–2003",
+    "people": [
+     "Ilya Prigogine"
+    ]
+   },
+   {
+    "name": "Santa Fe Institute",
+    "note": "",
+    "years": "founded 1984",
+    "people": [
+     "Santa Fe Institute"
+    ]
+   },
+   {
+    "name": "network science",
+    "note": "Barabási, Strogatz, Watts",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "NECSI",
+    "note": "Yaneer Bar-Yam",
+    "years": "founded 1996",
+    "people": [
+     "NECSI"
+    ]
+   }
+  ]
  },
  {
   "name": "Relational, transcontextual, and post-humanist knowing",
@@ -145,7 +270,60 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "reln",
+  "short_name": "Relational knowing",
+  "family": "rel",
+  "sectors": [
+   "edu",
+   "com"
+  ],
+  "scales": [
+   "per",
+   "plc"
+  ],
+  "work_kinds": [
+   "sac",
+   "int"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as relationship: nothing exists on its own, and understanding comes from the connections between things, including us.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Gregory Bateson",
+    "note": "Steps to an Ecology of Mind",
+    "years": "1904–1980",
+    "people": [
+     "Gregory Bateson"
+    ]
+   },
+   {
+    "name": "Nora Bateson",
+    "note": "Warm Data, Combining",
+    "years": "b. 1969",
+    "people": [
+     "Nora Bateson"
+    ]
+   },
+   {
+    "name": "Bayo Akomolafe",
+    "note": "These Wilds Beyond Our Fences",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Vanessa Machado de Oliveira",
+    "note": "Hospicing Modernity",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Nora Bateson and Warm Data",
@@ -182,7 +360,65 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "warm",
+  "short_name": "Nora Bateson and Warm Data",
+  "family": "rel",
+  "sectors": [
+   "com",
+   "ngo",
+   "edu"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "cre",
+   "att"
+  ],
+  "goals": [
+   "land"
+  ],
+  "lens": "Complexity as relationship: nothing exists on its own, and understanding comes from the connections between things, including us.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Gregory Bateson",
+    "note": "",
+    "years": "1904–1980",
+    "people": [
+     "Gregory Bateson"
+    ]
+   },
+   {
+    "name": "An Ecology of Mind",
+    "note": "film, 2010",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Small Arcs of Larger Circles",
+    "note": "2016",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Warm Data Labs and host trainings",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Combining (2023). Key ideas: transcontextual inquiry, symmathesy (mutual learning within living systems), aphanipoiesis (unseen coalescence toward vitality).",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Indigenous and land-based knowledge",
@@ -225,7 +461,61 @@
    "menominee"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "indig",
+  "short_name": "Indigenous and land-based knowledge",
+  "family": "rel",
+  "sectors": [
+   "com",
+   "edu"
+  ],
+  "scales": [
+   "plc",
+   "pla"
+  ],
+  "work_kinds": [
+   "sub",
+   "com",
+   "sac"
+  ],
+  "goals": [
+   "land"
+  ],
+  "lens": "Complexity as relationship: nothing exists on its own, and understanding comes from the connections between things, including us.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Vine Deloria Jr.",
+    "note": "",
+    "years": "1933–2005",
+    "people": [
+     "Vine Deloria Jr."
+    ]
+   },
+   {
+    "name": "Gregory Cajete",
+    "note": "Native Science",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Robin Wall Kimmerer",
+    "note": "Braiding Sweetgrass, the Honorable Harvest",
+    "years": "b. 1953",
+    "people": [
+     "Robin Wall Kimmerer"
+    ]
+   },
+   {
+    "name": "Tyson Yunkaporta",
+    "note": "Sand Talk",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Presencing, Theory U, and Social Presencing Theater",
@@ -263,9 +553,72 @@
    "presencing",
    "reos"
   ],
-  "cases": [],
+  "cases": [
+   "food-lab"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "theoryu",
+  "short_name": "Presencing and Theory U",
+  "family": "rel",
+  "sectors": [
+   "biz",
+   "gov",
+   "ngo"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity as relationship: nothing exists on its own, and understanding comes from the connections between things, including us.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Kurt Lewin",
+    "note": "action research",
+    "years": "1890–1947",
+    "people": [
+     "Kurt Lewin"
+    ]
+   },
+   {
+    "name": "Argyris and Schön",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Peter Senge",
+    "note": "",
+    "years": "b. 1947",
+    "people": [
+     "Peter Senge"
+    ]
+   },
+   {
+    "name": "Otto Scharmer",
+    "note": "Theory U, shaped in part by his interviews with Francisco Varela",
+    "years": "b. 1961",
+    "people": [
+     "Otto Scharmer"
+    ]
+   },
+   {
+    "name": "Arawana Hayashi",
+    "note": "Social Presencing Theater, sensing a system through embodied movement",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "The metacrisis and meaning",
@@ -306,7 +659,59 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "meta",
+  "short_name": "Metacrisis and meaning",
+  "family": "rel",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "per",
+   "pla"
+  ],
+  "work_kinds": [
+   "sac",
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity as relationship: nothing exists on its own, and understanding comes from the connections between things, including us.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Bateson and Edgar Morin",
+    "note": "†2026",
+    "years": "1921–2026",
+    "people": [
+     "Edgar Morin"
+    ]
+   },
+   {
+    "name": "Iain McGilchrist",
+    "note": "The Matter with Things",
+    "years": "b. 1953",
+    "people": [
+     "Iain McGilchrist"
+    ]
+   },
+   {
+    "name": "Jonathan Rowson",
+    "note": "Perspectiva",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Zak Stein and John Vervaeke",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Living systems and regeneration",
@@ -351,7 +756,58 @@
    "menominee"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "livsys",
+  "short_name": "Living systems and regeneration",
+  "family": "rel",
+  "sectors": [
+   "com",
+   "edu"
+  ],
+  "scales": [
+   "plc",
+   "pla"
+  ],
+  "work_kinds": [
+   "sub"
+  ],
+  "goals": [
+   "connect",
+   "land"
+  ],
+  "lens": "Complexity as life itself: self-making networks that keep renewing themselves and their surroundings.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Maturana and Varela",
+    "note": "autopoiesis",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Fritjof Capra",
+    "note": "",
+    "years": "b. 1939",
+    "people": [
+     "Fritjof Capra"
+    ]
+   },
+   {
+    "name": "Daniel Christian Wahl (Designing Regenerative Cultures), alongside C.S. Holling",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Carl Folke",
+    "note": "resilience",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Sensemaking and acting in uncertainty",
@@ -394,7 +850,72 @@
    "rahs"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "sense",
+  "short_name": "Sensemaking in uncertainty",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "biz",
+   "ngo"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "adm",
+   "att"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as a domain. In Cynefin, a complex situation is one where cause and effect can only be seen in hindsight, so you run small probes, sense what happens and respond, rather than analyse and plan.",
+  "lens_status": "draft",
+  "explainer": [
+   "Sensemaking is how people work out what's going on when a situation is unclear, before deciding what to do. This pathway gathers practical tools for it. The best known is Cynefin, which sorts situations by how well cause and effect can be known: clear, complicated, complex or chaotic.",
+   "In clear and complicated situations you can analyse and plan. In complex ones, cause and effect only make sense looking back, so you act in small, reversible steps, watch what happens and adjust. Many organizations get into trouble by treating complex problems as if they had a knowable answer."
+  ],
+  "plain_overview": "Tools for working out what's going on when nobody can know the answer in advance, and acting in small steps.",
+  "plain_policy": "Used in government to plan for risk, run small tests instead of big pilots, and treat people's own stories as up-to-date evidence.",
+  "stops": [
+   {
+    "name": "W. Ross Ashby",
+    "note": "",
+    "years": "1903–1972",
+    "people": [
+     "W. Ross Ashby"
+    ]
+   },
+   {
+    "name": "Karl Weick",
+    "note": "†2026",
+    "years": "1936–2026",
+    "people": [
+     "Karl Weick"
+    ]
+   },
+   {
+    "name": "Alicia Juarrero",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Dave Snowden",
+    "note": "Cynefin",
+    "years": "b. 1954",
+    "people": [
+     "Dave Snowden"
+    ]
+   },
+   {
+    "name": "Glenda Eoyang",
+    "note": "Human Systems Dynamics",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Governance and self-organizing structures",
@@ -443,7 +964,60 @@
    "buurtzorg"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "selforg",
+  "short_name": "Self-organizing governance",
+  "family": "sci",
+  "sectors": [
+   "biz",
+   "ngo",
+   "com"
+  ],
+  "scales": [
+   "org",
+   "grp"
+  ],
+  "work_kinds": [
+   "com"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as a kind of situation: one where cause and effect only make sense looking back, so you probe, sense and respond.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Ashby",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Stafford Beer",
+    "note": "Viable System Model",
+    "years": "1926–2002",
+    "people": [
+     "Stafford Beer"
+    ]
+   },
+   {
+    "name": "Kees Boeke and Gerard Endenburg",
+    "note": "†2025, sociocracy",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Elinor Ostrom",
+    "note": "polycentric governance",
+    "years": "1933–2012",
+    "people": [
+     "Elinor Ostrom"
+    ]
+   }
+  ]
  },
  {
   "name": "Emergence in movements and social change",
@@ -487,10 +1061,56 @@
   ],
   "cases": [
    "sva",
-   "highlander-case"
+   "highlander-case",
+   "wajir"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "moves",
+  "short_name": "Emergence in movements",
+  "family": "chg",
+  "sectors": [
+   "com"
+  ],
+  "scales": [
+   "plc",
+   "pol"
+  ],
+  "work_kinds": [
+   "com",
+   "pol"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity as emergence: patterns at scale grow from small, repeated relationships and practices, so how you work locally is the strategy.",
+  "lens_status": "draft",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Grace Lee Boggs and Octavia Butler",
+    "note": "",
+    "years": "1915–2015; 1947–2006",
+    "people": [
+     "Grace Lee Boggs",
+     "Octavia Butler"
+    ]
+   },
+   {
+    "name": "adrienne maree brown",
+    "note": "Emergent Strategy",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Margaret Wheatley and the Berkana Two Loops model",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Hosting and participatory practice",
@@ -535,7 +1155,63 @@
    "porto-alegre"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "host",
+  "short_name": "Hosting",
+  "family": "chg",
+  "sectors": [
+   "ngo",
+   "com",
+   "gov"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "car",
+   "com"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as emergence: small, local actions and relationships add up to large change nobody planned centrally.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Harrison Owen",
+    "note": "Open Space",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Juanita Brown and David Isaacs",
+    "note": "World Café",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Art of Hosting",
+    "note": "Toke Møller, Chris Corrigan",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Liberating Structures",
+    "note": "Lipmanowicz and McCandless",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Warm Data Labs",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Bohm Dialogue",
@@ -576,6 +1252,51 @@
     "title": "David Bohm: On Dialogue (Routledge)",
     "u": "https://www.routledge.com/On-Dialogue/Bohm-Nichol/p/book/9780415149112"
    }
+  ],
+  "short": "bohm",
+  "short_name": "Bohm Dialogue",
+  "family": "rel",
+  "sectors": [
+   "ngo",
+   "edu"
+  ],
+  "scales": [
+   "grp"
+  ],
+  "work_kinds": [
+   "att"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "David Bohm",
+    "note": "On Dialogue",
+    "years": "1917–1992",
+    "people": [
+     "David Bohm"
+    ]
+   },
+   {
+    "name": "William Isaacs",
+    "note": "Dialogue and the Art of Thinking Together",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Peter Senge's learning organization work",
+    "note": "",
+    "years": "b. 1947",
+    "people": [
+     "Peter Senge"
+    ]
+   }
   ]
  },
  {
@@ -607,9 +1328,63 @@
   "orgs": [
    "ntl"
   ],
-  "cases": [],
+  "cases": [
+   "new-britain"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "tgroup",
+  "short_name": "T-groups",
+  "family": "rel",
+  "sectors": [
+   "biz",
+   "edu"
+  ],
+  "scales": [
+   "grp",
+   "per"
+  ],
+  "work_kinds": [
+   "int"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Kurt Lewin",
+    "note": "",
+    "years": "1890–1947",
+    "people": [
+     "Kurt Lewin"
+    ]
+   },
+   {
+    "name": "NTL Institute at Bethel, Maine",
+    "note": "1947",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Chris Argyris and Edgar Schein",
+    "note": "†2023",
+    "years": "1923–2013",
+    "people": [
+     "Chris Argyris"
+    ]
+   },
+   {
+    "name": "Stanford's Interpersonal Dynamics course",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Group Relations",
@@ -640,9 +1415,56 @@
   "orgs": [
    "tavistock"
   ],
-  "cases": [],
+  "cases": [
+   "leicester"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "grel",
+  "short_name": "Group Relations",
+  "family": "rel",
+  "sectors": [
+   "biz",
+   "gov",
+   "ngo"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "pol"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Wilfred Bion",
+    "note": "Experiences in Groups",
+    "years": "1897–1979",
+    "people": [
+     "Wilfred Bion"
+    ]
+   },
+   {
+    "name": "A.K. Rice and the Tavistock Institute's Leicester Conference",
+    "note": "since 1957",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "the A.K. Rice Institute in the US",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Appreciative Inquiry",
@@ -667,9 +1489,54 @@
   "orgs": [
    "ai-fowler"
   ],
-  "cases": [],
+  "cases": [
+   "imagine-chicago"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "ai",
+  "short_name": "Appreciative Inquiry",
+  "family": "rel",
+  "sectors": [
+   "biz",
+   "ngo",
+   "gov"
+  ],
+  "scales": [
+   "org",
+   "plc"
+  ],
+  "work_kinds": [
+   "cre"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "David Cooperrider and Suresh Srivastva",
+    "note": "Case Western, 1980s",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "the 4-D cycle",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Appreciative Inquiry Summits for whole-system change",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Work That Reconnects",
@@ -702,7 +1569,49 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "wtr",
+  "short_name": "Work That Reconnects",
+  "family": "rel",
+  "sectors": [
+   "com"
+  ],
+  "scales": [
+   "per",
+   "grp"
+  ],
+  "work_kinds": [
+   "car",
+   "sac"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Joanna Macy",
+    "note": "†2025",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Molly Young Brown and facilitators worldwide",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "the Work That Reconnects Network",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Somatic and embodied practice",
@@ -746,7 +1655,57 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "soma",
+  "short_name": "Somatic practice",
+  "family": "rel",
+  "sectors": [
+   "ngo",
+   "com"
+  ],
+  "scales": [
+   "per"
+  ],
+  "work_kinds": [
+   "car",
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity lived in the room and the body: groups and people carry patterns below awareness that shape what happens.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Wilhelm Reich and body-oriented psychology",
+    "note": "",
+    "years": "1897–1957",
+    "people": [
+     "Wilhelm Reich"
+    ]
+   },
+   {
+    "name": "Richard Strozzi-Heckler",
+    "note": "somatic leadership",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Staci K. Haines",
+    "note": "generative somatics, The Politics of Trauma",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Resmaa Menakem",
+    "note": "My Grandmother's Hands, cultural somatics",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Power analysis",
@@ -790,7 +1749,52 @@
    "porto-alegre"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "power",
+  "short_name": "Power analysis",
+  "family": "chg",
+  "sectors": [
+   "com",
+   "ngo",
+   "fund"
+  ],
+  "scales": [
+   "plc",
+   "pol"
+  ],
+  "work_kinds": [
+   "pol"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity as layered power: visible decisions, hidden agenda-setting, and invisible norms, operating at different levels and in different spaces.",
+  "lens_status": "draft",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Steven Lukes",
+    "note": "Power: A Radical View, three faces of power",
+    "years": "b. 1941",
+    "people": [
+     "Steven Lukes"
+    ]
+   },
+   {
+    "name": "John Gaventa",
+    "note": "Power Cube: spaces, places, and forms of power",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Lisa VeneKlasen and Valerie Miller",
+    "note": "A New Weave of Power, JASS",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Narrative change",
@@ -834,9 +1838,62 @@
    "narrative-initiative",
    "lcn"
   ],
-  "cases": [],
+  "cases": [
+   "reframing-aging"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "narr",
+  "short_name": "Narrative change",
+  "family": "chg",
+  "sectors": [
+   "com",
+   "ngo"
+  ],
+  "scales": [
+   "pol"
+  ],
+  "work_kinds": [
+   "pol",
+   "cre",
+   "att"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity as power and story: what's visible, hidden and taken for granted shapes what people believe is possible.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "George Lakoff",
+    "note": "framing",
+    "years": "b. 1941",
+    "people": [
+     "George Lakoff"
+    ]
+   },
+   {
+    "name": "FrameWorks Institute",
+    "note": "strategic frame analysis",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Narrative Initiative",
+    "note": "Toward New Gravity",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Marshall Ganz",
+    "note": "public narrative: story of self, us, and now",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Conflict transformation",
@@ -880,9 +1937,63 @@
    "pwi",
    "zehr"
   ],
-  "cases": [],
+  "cases": [
+   "wajir",
+   "trc"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "conflict",
+  "short_name": "Conflict transformation",
+  "family": "chg",
+  "sectors": [
+   "com",
+   "ngo",
+   "gov"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "pol"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as power and story: what's visible, hidden and taken for granted shapes what people believe is possible.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "John Paul Lederach",
+    "note": "The Moral Imagination",
+    "years": "b. 1955",
+    "people": [
+     "John Paul Lederach"
+    ]
+   },
+   {
+    "name": "Arnold and Amy Mindell",
+    "note": "Deep Democracy, Worldwork",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Howard Zehr",
+    "note": "restorative justice",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Marshall Rosenberg",
+    "note": "Nonviolent Communication",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Crisis, disaster, and high reliability",
@@ -929,7 +2040,65 @@
    "sva"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "crisis",
+  "short_name": "Crisis and high reliability",
+  "family": "chg",
+  "sectors": [
+   "gov",
+   "com"
+  ],
+  "scales": [
+   "plc",
+   "org"
+  ],
+  "work_kinds": [
+   "car"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as the unexpected: high-reliability organizations stay alert to small failures and defer to whoever has the most relevant expertise in the moment.",
+  "lens_status": "draft",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Enrico Quarantelli",
+    "note": "disaster sociology",
+    "years": "1924–2017",
+    "people": [
+     "Enrico Quarantelli"
+    ]
+   },
+   {
+    "name": "Karl Weick and Kathleen Sutcliffe",
+    "note": "Managing the Unexpected, high reliability organizing",
+    "years": "1936–2026",
+    "people": [
+     "Karl Weick"
+    ]
+   },
+   {
+    "name": "Rebecca Solnit",
+    "note": "A Paradise Built in Hell",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Daniel Aldrich",
+    "note": "social capital in recovery",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Dean Spade",
+    "note": "mutual aid",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Ritual, liminality, and transition",
@@ -971,9 +2140,62 @@
    "wtr",
    "bridges"
   ],
-  "cases": [],
+  "cases": [
+   "trc"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "ritual",
+  "short_name": "Ritual and liminality",
+  "family": "chg",
+  "sectors": [
+   "com"
+  ],
+  "scales": [
+   "per",
+   "grp"
+  ],
+  "work_kinds": [
+   "sac"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity as disruption: sudden change exposes how fragile or adaptive a system is, and thresholds matter.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Arnold van Gennep",
+    "note": "rites of passage",
+    "years": "1873–1957",
+    "people": [
+     "Arnold van Gennep"
+    ]
+   },
+   {
+    "name": "Victor Turner",
+    "note": "liminality, communitas",
+    "years": "1920–1983",
+    "people": [
+     "Victor Turner"
+    ]
+   },
+   {
+    "name": "William Bridges",
+    "note": "endings, neutral zone, new beginnings",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Francis Weller",
+    "note": "grief as communal work",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Public policy and government innovation",
@@ -1050,10 +2272,65 @@
    "amsterdam-doughnut",
    "plymouth",
    "hls-cases",
-   "legible"
+   "legible",
+   "kerala"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "pubpol",
+  "short_name": "Public policy innovation",
+  "family": "sci",
+  "sectors": [
+   "gov"
+  ],
+  "scales": [
+   "pol"
+  ],
+  "work_kinds": [
+   "pol"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as wicked problems: issues with no final definition, no single owner, and no solution that stays solved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Rittel and Webber",
+    "note": "wicked problems",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Donella Meadows",
+    "note": "leverage points",
+    "years": "1941–2001",
+    "people": [
+     "Donella Meadows"
+    ]
+   },
+   {
+    "name": "Geoff Mulgan",
+    "note": "collective intelligence, public imagination",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Toby Lowe",
+    "note": "Human Learning Systems",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Hilary Cottam",
+    "note": "Radical Help, the relational state",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Systemic design and futures",
@@ -1096,9 +2373,67 @@
    "iff",
    "unesco-fl"
   ],
-  "cases": [],
+  "cases": [
+   "mont-fleur"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "sysdes",
+  "short_name": "Systemic design and futures",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "edu"
+  ],
+  "scales": [
+   "pol",
+   "pla"
+  ],
+  "work_kinds": [
+   "cre"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as wicked problems: issues with no final definition, no single owner, and no solution that stays solved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Horst Rittel",
+    "note": "",
+    "years": "1930–1990",
+    "people": [
+     "Horst Rittel"
+    ]
+   },
+   {
+    "name": "Birger Sevaldson",
+    "note": "gigamapping",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Hugh Dubberly and Paul Pangaro",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Riel Miller",
+    "note": "futures literacy",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Bill Sharpe",
+    "note": "Three Horizons",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Complexity economics and new economic models",
@@ -1142,7 +2477,59 @@
    "amsterdam-doughnut"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "econ",
+  "short_name": "Complexity economics",
+  "family": "sci",
+  "sectors": [
+   "edu",
+   "gov"
+  ],
+  "scales": [
+   "pol",
+   "pla"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as an economy that is always forming: agents adapt to patterns they create together, so markets rarely settle into equilibrium.",
+  "lens_status": "draft",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Herbert Simon",
+    "note": "bounded rationality",
+    "years": "1916–2001",
+    "people": [
+     "Herbert Simon"
+    ]
+   },
+   {
+    "name": "W. Brian Arthur",
+    "note": "increasing returns",
+    "years": "b. 1945",
+    "people": [
+     "W. Brian Arthur"
+    ]
+   },
+   {
+    "name": "Eric Beinhocker",
+    "note": "The Origin of Wealth",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Kate Raworth",
+    "note": "Doughnut Economics",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Strategy under uncertainty",
@@ -1185,10 +2572,62 @@
    "wardley"
   ],
   "cases": [
-   "rahs"
+   "rahs",
+   "mont-fleur"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "strat",
+  "short_name": "Strategy under uncertainty",
+  "family": "sci",
+  "sectors": [
+   "biz",
+   "gov"
+  ],
+  "scales": [
+   "org"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Pierre Wack",
+    "note": "Shell scenarios",
+    "years": "1922–1997",
+    "people": [
+     "Pierre Wack"
+    ]
+   },
+   {
+    "name": "Adam Kahane",
+    "note": "transformative scenario planning",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Simon Wardley",
+    "note": "Wardley Mapping",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Nassim Nicholas Taleb",
+    "note": "antifragility",
+    "years": "b. 1960",
+    "people": [
+     "Nassim Nicholas Taleb"
+    ]
+   }
+  ]
  },
  {
   "name": "Funding and budgeting for adaptation",
@@ -1236,7 +2675,56 @@
    "handelsbanken"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "fund",
+  "short_name": "Funding for adaptation",
+  "family": "sci",
+  "sectors": [
+   "fund",
+   "gov",
+   "ngo"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Jeremy Hope and Robin Fraser",
+    "note": "Beyond Budgeting",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Bjarte Bogsnes",
+    "note": "Equinor",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "UNDP portfolio approach",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Trust-Based Philanthropy Project",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Measurement and accountability",
@@ -1275,10 +2763,62 @@
    "deming"
   ],
   "cases": [
-   "hls-cases"
+   "hls-cases",
+   "strive"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "meas",
+  "short_name": "Measurement and accountability",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "fund",
+   "ngo"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Donald Campbell and Charles Goodhart",
+    "note": "the laws named after them",
+    "years": "1916–1996",
+    "people": [
+     "Donald Campbell"
+    ]
+   },
+   {
+    "name": "Mark Moore",
+    "note": "public value, the strategic triangle",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Jerry Muller",
+    "note": "The Tyranny of Metrics",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Toby Lowe",
+    "note": "accountability for learning",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Government plumbing",
@@ -1323,10 +2863,62 @@
    "recoding"
   ],
   "cases": [
-   "plymouth"
+   "plymouth",
+   "gds"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "plumb",
+  "short_name": "Government plumbing",
+  "family": "sci",
+  "sectors": [
+   "gov"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Michael Lipsky",
+    "note": "Street-Level Bureaucracy",
+    "years": "b. 1940",
+    "people": [
+     "Michael Lipsky"
+    ]
+   },
+   {
+    "name": "Charles Sabel and Jonathan Zeitlin",
+    "note": "experimentalist governance",
+    "years": "b. 1947",
+    "people": [
+     "Charles Sabel"
+    ]
+   },
+   {
+    "name": "relational commissioning",
+    "note": "Plymouth Alliance",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Jennifer Pahlka",
+    "note": "Recoding America",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Teams and learning cultures",
@@ -1366,7 +2958,51 @@
    "buurtzorg"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "teams",
+  "short_name": "Teams and learning cultures",
+  "family": "sci",
+  "sectors": [
+   "biz",
+   "gov"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Amy Edmondson",
+    "note": "psychological safety, teaming",
+    "years": "b. 1959",
+    "people": [
+     "Amy Edmondson"
+    ]
+   },
+   {
+    "name": "Jeff Gothelf and Josh Seiden",
+    "note": "Sense and Respond",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Matthew Skelton and Manuel Pais",
+    "note": "Team Topologies",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Corporate innovation and renewal",
@@ -1413,7 +3049,57 @@
    "haier"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "corp",
+  "short_name": "Corporate innovation",
+  "family": "sci",
+  "sectors": [
+   "biz"
+  ],
+  "scales": [
+   "org"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Clayton Christensen",
+    "note": "disruptive innovation",
+    "years": "1952–2020",
+    "people": [
+     "Clayton Christensen"
+    ]
+   },
+   {
+    "name": "Charles O'Reilly and Michael Tushman",
+    "note": "ambidextrous organization",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Henry Chesbrough",
+    "note": "open innovation",
+    "years": "b. 1956",
+    "people": [
+     "Henry Chesbrough"
+    ]
+   },
+   {
+    "name": "Haier",
+    "note": "RenDanHeYi microenterprises",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Collaboration across boundaries",
@@ -1446,9 +3132,56 @@
    "tamarack",
    "cif"
   ],
-  "cases": [],
+  "cases": [
+   "food-lab",
+   "strive"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "collab",
+  "short_name": "Collaboration across boundaries",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "ngo",
+   "fund",
+   "com"
+  ],
+  "scales": [
+   "plc",
+   "pol"
+  ],
+  "work_kinds": [
+   "com"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the gap between plan and reality: strategy, money and measures have to adapt as things unfold.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "John Kania and Mark Kramer",
+    "note": "collective impact, 2011",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Mark Cabaj and Liz Weaver",
+    "note": "Collective Impact 3.0",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Collective Impact Forum's equity turn",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Design thinking",
@@ -1484,9 +3217,69 @@
   "orgs": [
    "dschool"
   ],
-  "cases": [],
+  "cases": [
+   "embrace"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "dthink",
+  "short_name": "Design thinking",
+  "family": "prc",
+  "sectors": [
+   "biz"
+  ],
+  "scales": [
+   "org"
+  ],
+  "work_kinds": [
+   "cra"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Herbert Simon",
+    "note": "The Sciences of the Artificial",
+    "years": "1916–2001",
+    "people": [
+     "Herbert Simon"
+    ]
+   },
+   {
+    "name": "Horst Rittel",
+    "note": "",
+    "years": "1930–1990",
+    "people": [
+     "Horst Rittel"
+    ]
+   },
+   {
+    "name": "Nigel Cross",
+    "note": "Designerly Ways of Knowing",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Donald Schön",
+    "note": "reflection-in-action",
+    "years": "1930–1997",
+    "people": [
+     "Donald Schön"
+    ]
+   },
+   {
+    "name": "IDEO and the Stanford d.school",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Service design",
@@ -1521,9 +3314,59 @@
   "orgs": [
    "goodservices"
   ],
-  "cases": [],
+  "cases": [
+   "gds"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "svc",
+  "short_name": "Service design",
+  "family": "prc",
+  "sectors": [
+   "gov",
+   "biz"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "cra"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Lynn Shostack",
+    "note": "service blueprinting",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Birgit Mager",
+    "note": "Köln",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Marc Stickdorn",
+    "note": "This Is Service Design Doing",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Lou Downe",
+    "note": "Good Services",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Participatory design and design justice",
@@ -1565,7 +3408,61 @@
    "porto-alegre"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "pd",
+  "short_name": "Participatory design",
+  "family": "prc",
+  "sectors": [
+   "com",
+   "ngo"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "cra"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Scandinavian participatory design",
+    "note": "Pelle Ehn, Kristen Nygaard",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Elizabeth Sanders",
+    "note": "co-design",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Ezio Manzini",
+    "note": "Design, When Everybody Designs",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Sasha Costanza-Chock",
+    "note": "Design Justice",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Arturo Escobar",
+    "note": "Designs for the Pluriverse",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Transition design",
@@ -1599,7 +3496,38 @@
    "ojai"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "trans",
+  "short_name": "Transition design",
+  "family": "prc",
+  "sectors": [
+   "edu",
+   "gov"
+  ],
+  "scales": [
+   "pla",
+   "pol"
+  ],
+  "work_kinds": [
+   "cra",
+   "cre"
+  ],
+  "goals": [
+   "land"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Terry Irwin, Gideon Kossoff, and Cameron Tonkinwise",
+    "note": "Carnegie Mellon",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Strategic design and policy labs",
@@ -1644,7 +3572,47 @@
    "legible"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "labs",
+  "short_name": "Policy labs",
+  "family": "prc",
+  "sectors": [
+   "gov"
+  ],
+  "scales": [
+   "pol"
+  ],
+  "work_kinds": [
+   "cra"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Helsinki Design Lab",
+    "note": "Sitra, Bryan Boyer, Dan Hill) and MindLab (Christian Bason",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Policy Lab UK and La 27e Région",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Dark Matter Labs",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Improvement and adaptive management",
@@ -1685,7 +3653,56 @@
    "100k-lives"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "improve",
+  "short_name": "Improvement and adaptive management",
+  "family": "prc",
+  "sectors": [
+   "gov",
+   "biz"
+  ],
+  "scales": [
+   "org"
+  ],
+  "work_kinds": [
+   "cra"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "W. Edwards Deming",
+    "note": "System of Profound Knowledge",
+    "years": "1900–1993",
+    "people": [
+     "W. Edwards Deming"
+    ]
+   },
+   {
+    "name": "Toyota and Lean",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Don Berwick and IHI",
+    "note": "PDSA cycles",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Agile",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Developmental evaluation",
@@ -1725,7 +3742,46 @@
    "hls-cases"
   ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "deval",
+  "short_name": "Developmental evaluation",
+  "family": "prc",
+  "sectors": [
+   "fund",
+   "ngo",
+   "gov"
+  ],
+  "scales": [
+   "org",
+   "plc"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Michael Quinn Patton",
+    "note": "",
+    "years": "b. 1945",
+    "people": [
+     "Michael Quinn Patton"
+    ]
+   },
+   {
+    "name": "Mark Cabaj and the Tamarack Institute",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Action research",
@@ -1755,9 +3811,58 @@
   "orgs": [
    "arna"
   ],
-  "cases": [],
+  "cases": [
+   "fals-borda"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "ar",
+  "short_name": "Action research",
+  "family": "prc",
+  "sectors": [
+   "edu",
+   "com"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "com"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Kurt Lewin",
+    "note": "",
+    "years": "1890–1947",
+    "people": [
+     "Kurt Lewin"
+    ]
+   },
+   {
+    "name": "Paulo Freire and Orlando Fals-Borda",
+    "note": "participatory action research",
+    "years": "1921–1997; 1925–2008",
+    "people": [
+     "Paulo Freire",
+     "Orlando Fals-Borda"
+    ]
+   },
+   {
+    "name": "Peter Reason and Hilary Bradbury",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Positive deviance",
@@ -1790,7 +3895,36 @@
    "pd-vietnam"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "posdev",
+  "short_name": "Positive deviance",
+  "family": "prc",
+  "sectors": [
+   "com",
+   "ngo"
+  ],
+  "scales": [
+   "plc"
+  ],
+  "work_kinds": [
+   "car"
+  ],
+  "goals": [
+   "land"
+  ],
+  "lens": "Complexity as the mess designs have to work in: understand by making, testing and learning with the people involved.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Jerry and Monique Sternin",
+    "note": "",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Experiential learning and reflective practice",
@@ -1828,9 +3962,66 @@
    "ntl",
    "infed"
   ],
-  "cases": [],
+  "cases": [
+   "outward-bound"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "exp",
+  "short_name": "Experiential learning",
+  "family": "prc",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "per",
+   "grp"
+  ],
+  "work_kinds": [
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "John Dewey",
+    "note": "",
+    "years": "1859–1952",
+    "people": [
+     "John Dewey"
+    ]
+   },
+   {
+    "name": "Kurt Lewin",
+    "note": "",
+    "years": "1890–1947",
+    "people": [
+     "Kurt Lewin"
+    ]
+   },
+   {
+    "name": "David Kolb",
+    "note": "the experiential learning cycle",
+    "years": "b. 1939",
+    "people": [
+     "David Kolb"
+    ]
+   },
+   {
+    "name": "Donald Schön",
+    "note": "reflection-in-action",
+    "years": "1930–1997",
+    "people": [
+     "Donald Schön"
+    ]
+   }
+  ]
  },
  {
   "name": "Transformative learning",
@@ -1865,9 +4056,53 @@
   "orgs": [
    "itla"
   ],
-  "cases": [],
+  "cases": [
+   "reentry"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "transl",
+  "short_name": "Transformative learning",
+  "family": "prc",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "per"
+  ],
+  "work_kinds": [
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Jack Mezirow",
+    "note": "perspective transformation",
+    "years": "1923–2014",
+    "people": [
+     "Jack Mezirow"
+    ]
+   },
+   {
+    "name": "Edward Taylor and Patricia Cranton",
+    "note": "",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Jan Meyer and Ray Land",
+    "note": "threshold concepts and troublesome knowledge",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Critical and popular education",
@@ -1912,10 +4147,60 @@
    "highlander"
   ],
   "cases": [
-   "highlander-case"
+   "highlander-case",
+   "kerala",
+   "fals-borda"
   ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "popedu",
+  "short_name": "Popular education",
+  "family": "prc",
+  "sectors": [
+   "com",
+   "edu"
+  ],
+  "scales": [
+   "grp",
+   "plc"
+  ],
+  "work_kinds": [
+   "pol"
+  ],
+  "goals": [
+   "power"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Paulo Freire",
+    "note": "Pedagogy of the Oppressed, conscientization",
+    "years": "1921–1997",
+    "people": [
+     "Paulo Freire"
+    ]
+   },
+   {
+    "name": "Myles Horton and the Highlander Folk School",
+    "note": "",
+    "years": "1905–1990",
+    "people": [
+     "Myles Horton"
+    ]
+   },
+   {
+    "name": "bell hooks",
+    "note": "Teaching to Transgress, engaged pedagogy",
+    "years": "1952–2021",
+    "people": [
+     "bell hooks"
+    ]
+   }
+  ]
  },
  {
   "name": "Communities of practice and action learning",
@@ -1952,9 +4237,59 @@
   "orgs": [
    "wenger"
   ],
-  "cases": [],
+  "cases": [
+   "eureka"
+  ],
   "gov": true,
-  "reading": []
+  "reading": [],
+  "short": "cop",
+  "short_name": "Communities of practice",
+  "family": "prc",
+  "sectors": [
+   "gov",
+   "ngo",
+   "edu"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "com"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Reg Revans",
+    "note": "action learning, learning equals programmed knowledge plus questioning",
+    "years": "1907–2003",
+    "people": [
+     "Reg Revans"
+    ]
+   },
+   {
+    "name": "Jean Lave and Etienne Wenger",
+    "note": "communities of practice",
+    "years": "b. 1939; b. 1952",
+    "people": [
+     "Jean Lave",
+     "Etienne Wenger"
+    ]
+   },
+   {
+    "name": "Etienne and Beverly Wenger-Trayner",
+    "note": "social learning, systems convening",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Adult development and immunity to change",
@@ -1990,9 +4325,63 @@
   "orgs": [
    "cultivating"
   ],
-  "cases": [],
+  "cases": [
+   "ddo"
+  ],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "adult",
+  "short_name": "Adult development",
+  "family": "prc",
+  "sectors": [
+   "edu",
+   "biz"
+  ],
+  "scales": [
+   "per"
+  ],
+  "work_kinds": [
+   "car",
+   "int"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Jean Piaget",
+    "note": "",
+    "years": "1896–1980",
+    "people": [
+     "Jean Piaget"
+    ]
+   },
+   {
+    "name": "Robert Kegan",
+    "note": "In Over Our Heads",
+    "years": "b. 1946",
+    "people": [
+     "Robert Kegan"
+    ]
+   },
+   {
+    "name": "Kegan and Lisa Lahey",
+    "note": "immunity to change",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Jennifer Garvey Berger",
+    "note": "Simple Habits for Complex Times",
+    "years": "",
+    "people": []
+   }
+  ]
  },
  {
   "name": "Complexity and education",
@@ -2037,6 +4426,55 @@
   ],
   "cases": [],
   "gov": false,
-  "reading": []
+  "reading": [],
+  "short": "cxedu",
+  "short_name": "Complexity and education",
+  "family": "prc",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "org",
+   "pla"
+  ],
+  "work_kinds": [],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity of mind: how people grow in their capacity to hold many views, uncertainty and contradiction.",
+  "lens_status": "cluster",
+  "explainer": [],
+  "plain_overview": "",
+  "plain_policy": "",
+  "stops": [
+   {
+    "name": "Edgar Morin",
+    "note": "Seven Complex Lessons in Education for the Future",
+    "years": "1921–2026",
+    "people": [
+     "Edgar Morin"
+    ]
+   },
+   {
+    "name": "Brent Davis and Dennis Sumara",
+    "note": "Complexity and Education",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Nora Bateson on education",
+    "note": "",
+    "years": "b. 1969",
+    "people": [
+     "Nora Bateson"
+    ]
+   },
+   {
+    "name": "Inner Development Goals",
+    "note": "a widely used capacity framework",
+    "years": "",
+    "people": []
+   }
+  ]
  }
 ]

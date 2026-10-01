@@ -1,0 +1,918 @@
+{
+ "families": {
+  "sci": {
+   "name": "Science and structure",
+   "hue": 245
+  },
+  "rel": {
+   "name": "Relational and living",
+   "hue": 150
+  },
+  "chg": {
+   "name": "Change and power",
+   "hue": 40
+  },
+  "prc": {
+   "name": "Practice and learning",
+   "hue": 85
+  }
+ },
+ "edges": [
+  [
+   "cyb",
+   "cx"
+  ],
+  [
+   "cyb",
+   "selforg"
+  ],
+  [
+   "cyb",
+   "sense"
+  ],
+  [
+   "cx",
+   "econ"
+  ],
+  [
+   "sense",
+   "strat"
+  ],
+  [
+   "sense",
+   "crisis"
+  ],
+  [
+   "sense",
+   "reln"
+  ],
+  [
+   "sense",
+   "grel"
+  ],
+  [
+   "warm",
+   "theoryu"
+  ],
+  [
+   "indig",
+   "selforg"
+  ],
+  [
+   "indig",
+   "livsys"
+  ],
+  [
+   "svc",
+   "deval"
+  ],
+  [
+   "deval",
+   "trans"
+  ],
+  [
+   "trans",
+   "sysdes"
+  ],
+  [
+   "power",
+   "host"
+  ],
+  [
+   "soma",
+   "crisis"
+  ],
+  [
+   "crisis",
+   "ritual"
+  ],
+  [
+   "posdev",
+   "crisis"
+  ],
+  [
+   "pubpol",
+   "plumb"
+  ],
+  [
+   "pubpol",
+   "labs"
+  ],
+  [
+   "labs",
+   "svc"
+  ],
+  [
+   "meas",
+   "deval"
+  ],
+  [
+   "cop",
+   "teams"
+  ],
+  [
+   "ar",
+   "popedu"
+  ],
+  [
+   "exp",
+   "ar"
+  ],
+  [
+   "bohm",
+   "warm"
+  ],
+  [
+   "bohm",
+   "host"
+  ],
+  [
+   "narr",
+   "moves"
+  ],
+  [
+   "conflict",
+   "power"
+  ],
+  [
+   "plumb",
+   "sense"
+  ],
+  [
+   "popedu",
+   "power"
+  ],
+  [
+   "theoryu",
+   "host"
+  ],
+  [
+   "collab",
+   "meas"
+  ],
+  [
+   "ai",
+   "host"
+  ],
+  [
+   "strat",
+   "corp"
+  ],
+  [
+   "plumb",
+   "svc"
+  ]
+ ],
+ "metro": [
+  {
+   "id": "gov",
+   "label": "I work inside government",
+   "sub": "Policy, services, public innovation",
+   "trail": [
+    "sense",
+    "plumb",
+    "svc",
+    "deval",
+    "meas"
+   ],
+   "why": "Tell apart problems with known answers from those without, learn where budgets and rules push back, then find ways to stay accountable while you learn."
+  },
+  {
+   "id": "host",
+   "label": "I hold groups and conversations",
+   "sub": "Facilitation, dialogue, hosting",
+   "trail": [
+    "host",
+    "bohm",
+    "warm",
+    "power",
+    "theoryu"
+   ],
+   "why": "Deepen the craft of holding a room, then pair it with power analysis so hosting doesn't launder existing hierarchies."
+  },
+  {
+   "id": "org",
+   "label": "I lead a team or organization",
+   "sub": "Strategy, culture, structure",
+   "trail": [
+    "strat",
+    "teams",
+    "selforg",
+    "ai",
+    "meas"
+   ],
+   "why": "From strategy that expects surprise to structures that share authority, with measurement that doesn't punish learning."
+  },
+  {
+   "id": "move",
+   "label": "I organize in community or movements",
+   "sub": "Mutual aid, campaigns, place",
+   "trail": [
+    "moves",
+    "power",
+    "narr",
+    "popedu",
+    "indig"
+   ],
+   "why": "Emergent strategy first, then tools to read power and change the stories people act from."
+  },
+  {
+   "id": "sci",
+   "label": "I want the science underneath",
+   "sub": "Feedback, emergence, networks",
+   "trail": [
+    "cyb",
+    "cx",
+    "sense",
+    "econ",
+    "livsys"
+   ],
+   "why": "How the ideas grew: from feedback loops to complexity economics and living systems."
+  }
+ ],
+ "sectors": [
+  [
+   "gov",
+   "Government"
+  ],
+  [
+   "biz",
+   "Business"
+  ],
+  [
+   "ngo",
+   "Nonprofit"
+  ],
+  [
+   "com",
+   "Community"
+  ],
+  [
+   "edu",
+   "Education and research"
+  ],
+  [
+   "fund",
+   "Funding"
+  ]
+ ],
+ "scales": [
+  [
+   "per",
+   "Person"
+  ],
+  [
+   "grp",
+   "Group"
+  ],
+  [
+   "org",
+   "Organization"
+  ],
+  [
+   "plc",
+   "Community and place"
+  ],
+  [
+   "pol",
+   "Society and policy"
+  ],
+  [
+   "pla",
+   "Planetary"
+  ]
+ ],
+ "work_kinds": [
+  [
+   "sub",
+   "Subsistence",
+   "Producing food, shelter and warmth"
+  ],
+  [
+   "cra",
+   "Craft",
+   "Making things with skill and care"
+  ],
+  [
+   "car",
+   "Care",
+   "Tending, raising, supporting others"
+  ],
+  [
+   "com",
+   "Communal",
+   "Labour freely given to and received from community"
+  ],
+  [
+   "sac",
+   "Sacred",
+   "Ceremony, ritual, relationship with meaning"
+  ],
+  [
+   "int",
+   "Interior",
+   "Work on and within the self"
+  ],
+  [
+   "pol",
+   "Political",
+   "Maintaining, contesting, transforming collective structures"
+  ],
+  [
+   "cre",
+   "Creative",
+   "Making culture, meaning, beauty"
+  ],
+  [
+   "adm",
+   "Administrative",
+   "Coordinating collective activity"
+  ],
+  [
+   "att",
+   "Attention",
+   "Where attention itself becomes labour"
+  ]
+ ],
+ "goals": [
+  {
+   "id": "connect",
+   "label": "Understand how things connect",
+   "sub": "Cybernetics, complexity science, living systems",
+   "pathways": [
+    "cybernetics-the-shared-foundation",
+    "the-formal-science-of-complex-systems",
+    "living-systems-and-regeneration",
+    "complexity-economics-and-new-economic-models",
+    "relational-transcontextual-and-post-humanist-knowing",
+    "complexity-and-education"
+   ]
+  },
+  {
+   "id": "uncertain",
+   "label": "Decide when things are uncertain",
+   "sub": "Sensemaking, strategy, crisis response",
+   "pathways": [
+    "sensemaking-and-acting-in-uncertainty",
+    "strategy-under-uncertainty",
+    "crisis-disaster-and-high-reliability",
+    "systemic-design-and-futures",
+    "improvement-and-adaptive-management",
+    "corporate-innovation-and-renewal"
+   ]
+  },
+  {
+   "id": "others",
+   "label": "Work well with others",
+   "sub": "Dialogue, hosting, Group Relations, conflict",
+   "pathways": [
+    "bohm-dialogue",
+    "hosting-and-participatory-practice",
+    "group-relations",
+    "t-groups-and-sensitivity-training",
+    "conflict-transformation",
+    "appreciative-inquiry",
+    "teams-and-learning-cultures",
+    "communities-of-practice-and-action-learning",
+    "governance-and-self-organizing-structures"
+   ]
+  },
+  {
+   "id": "policy",
+   "label": "Change systems and policy",
+   "sub": "Public policy, design, funding, measurement",
+   "pathways": [
+    "public-policy-and-government-innovation",
+    "government-plumbing",
+    "strategic-design-and-policy-labs",
+    "service-design",
+    "design-thinking",
+    "funding-and-budgeting-for-adaptation",
+    "measurement-and-accountability",
+    "developmental-evaluation",
+    "collaboration-across-boundaries"
+   ]
+  },
+  {
+   "id": "power",
+   "label": "Build power in communities",
+   "sub": "Movements, power analysis, narrative, popular education",
+   "pathways": [
+    "emergence-in-movements-and-social-change",
+    "power-analysis",
+    "narrative-change",
+    "critical-and-popular-education",
+    "action-research",
+    "participatory-design-and-design-justice"
+   ]
+  },
+  {
+   "id": "grow",
+   "label": "Grow as a person",
+   "sub": "Somatic practice, ritual, adult development",
+   "pathways": [
+    "somatic-and-embodied-practice",
+    "ritual-liminality-and-transition",
+    "adult-development-and-immunity-to-change",
+    "transformative-learning",
+    "experiential-learning-and-reflective-practice",
+    "work-that-reconnects",
+    "the-metacrisis-and-meaning",
+    "presencing-theory-u-and-social-presencing-theater"
+   ]
+  },
+  {
+   "id": "land",
+   "label": "Learn from land and tradition",
+   "sub": "Indigenous and land-based knowledge, regeneration",
+   "pathways": [
+    "indigenous-and-land-based-knowledge",
+    "living-systems-and-regeneration",
+    "nora-bateson-and-warm-data",
+    "transition-design",
+    "positive-deviance"
+   ]
+  }
+ ],
+ "type_labels": {
+  "Lineage": [
+   "A lineage",
+   "Thinkers who built on each other's ideas"
+  ],
+  "Method": [
+   "A method",
+   "A structured way of doing something"
+  ],
+  "Practice": [
+   "A practice",
+   "Something you do regularly, often with others"
+  ],
+  "Field": [
+   "A field",
+   "An area of work with its own community"
+  ],
+  "Structure": [
+   "A structure",
+   "A way of organizing people or money"
+  ],
+  "Tradition": [
+   "A tradition",
+   "Knowledge a people has held over generations"
+  ],
+  "Hybrid": [
+   "A hybrid",
+   "A mix of the above"
+  ]
+ },
+ "scale_labels": {
+  "per": [
+   "Yourself",
+   "Body, mind and personal practice"
+  ],
+  "grp": [
+   "A group",
+   "Teams, circles, meetings"
+  ],
+  "org": [
+   "An organization",
+   "Workplaces, charities, agencies"
+  ],
+  "plc": [
+   "A place or community",
+   "Neighbourhoods, towns, regions"
+  ],
+  "pol": [
+   "A society",
+   "Policy, law, public systems"
+  ],
+  "pla": [
+   "The planet",
+   "Climate, ecology, civilization"
+  ]
+ },
+ "trades": [
+  [
+   "teach",
+   "Teaching and training",
+   [
+    "car",
+    "int",
+    "com"
+   ],
+   [
+    "grp",
+    "per"
+   ],
+   "Try a new activity with one class before changing the whole course."
+  ],
+  [
+   "care",
+   "Nursing, health and care",
+   [
+    "car"
+   ],
+   [
+    "per",
+    "grp"
+   ],
+   "Try a new handover routine on one shift first."
+  ],
+  [
+   "build",
+   "Building and trades",
+   [
+    "cra",
+    "adm"
+   ],
+   [
+    "org",
+    "plc"
+   ],
+   "Test a new method on one small job before the big one."
+  ],
+  [
+   "food",
+   "Farming, food and land",
+   [
+    "sub",
+    "com"
+   ],
+   [
+    "plc",
+    "pla"
+   ],
+   "Trial a new planting in one bed, not the whole field."
+  ],
+  [
+   "make",
+   "Design and making",
+   [
+    "cra",
+    "cre"
+   ],
+   [
+    "grp",
+    "org"
+   ],
+   "Make a rough version and watch someone use it."
+  ],
+  [
+   "office",
+   "Office, admin and operations",
+   [
+    "adm"
+   ],
+   [
+    "org"
+   ],
+   "Change one form for one month and see what happens."
+  ],
+  [
+   "lead",
+   "Managing people",
+   [
+    "adm",
+    "int"
+   ],
+   [
+    "grp",
+    "org"
+   ],
+   "Let one team try a new way of meeting for a month."
+  ],
+  [
+   "policy",
+   "Policy and public service",
+   [
+    "adm",
+    "pol"
+   ],
+   [
+    "pol",
+    "org"
+   ],
+   "Try a rule change in one area first, with a clear way to stop."
+  ],
+  [
+   "organize",
+   "Organizing and advocacy",
+   [
+    "pol",
+    "com"
+   ],
+   [
+    "plc",
+    "pol"
+   ],
+   "Try a new message on one street before the whole campaign."
+  ],
+  [
+   "arts",
+   "Arts, media and storytelling",
+   [
+    "cre",
+    "att"
+   ],
+   [
+    "grp",
+    "pol"
+   ],
+   "Share a rough cut with a small audience first."
+  ],
+  [
+   "research",
+   "Research and analysis",
+   [
+    "att",
+    "adm"
+   ],
+   [
+    "org",
+    "pla"
+   ],
+   "Run a small study before committing to the big one."
+  ],
+  [
+   "tech",
+   "Tech and data",
+   [
+    "cra",
+    "att"
+   ],
+   [
+    "org"
+   ],
+   "Release to a few users and watch before rolling out."
+  ],
+  [
+   "home",
+   "Caring at home",
+   [
+    "car",
+    "com"
+   ],
+   [
+    "per",
+    "plc"
+   ],
+   "Try a new routine for a week and see how everyone feels."
+  ],
+  [
+   "faith",
+   "Faith, ceremony and community life",
+   [
+    "sac",
+    "com"
+   ],
+   [
+    "grp",
+    "plc"
+   ],
+   "Try a new kind of gathering once before making it regular."
+  ],
+  [
+   "between",
+   "Studying, retired or between things",
+   [
+    "int"
+   ],
+   [
+    "per"
+   ],
+   "Try one new thing for a week and notice what changes."
+  ]
+ ],
+ "industries": [
+  [
+   "govt",
+   "Government",
+   [
+    "gov"
+   ]
+  ],
+  [
+   "health",
+   "Health",
+   [
+    "gov",
+    "ngo"
+   ]
+  ],
+  [
+   "edu",
+   "Schools and universities",
+   [
+    "edu"
+   ]
+  ],
+  [
+   "biz",
+   "Business",
+   [
+    "biz"
+   ]
+  ],
+  [
+   "ngo",
+   "Charity and nonprofit",
+   [
+    "ngo"
+   ]
+  ],
+  [
+   "hood",
+   "Neighbourhood and community",
+   [
+    "com"
+   ]
+  ],
+  [
+   "land",
+   "Land and environment",
+   [
+    "com",
+    "edu"
+   ]
+  ],
+  [
+   "culture",
+   "Arts and culture",
+   [
+    "com",
+    "ngo"
+   ]
+  ],
+  [
+   "fund",
+   "Funding and philanthropy",
+   [
+    "fund"
+   ]
+  ],
+  [
+   "none",
+   "No single place",
+   []
+  ]
+ ],
+ "roles": {
+  "teach": [
+   "Teacher",
+   "Trainer or coach",
+   "Youth worker",
+   "Adult education volunteer"
+  ],
+  "care": [
+   "Nurse",
+   "Care coordinator",
+   "Peer support worker",
+   "Hospice volunteer"
+  ],
+  "build": [
+   "Site manager",
+   "Tradesperson",
+   "Repair café volunteer",
+   "Housing co-op member"
+  ],
+  "food": [
+   "Grower",
+   "Food hub coordinator",
+   "Community garden organizer",
+   "Land steward"
+  ],
+  "make": [
+   "Designer",
+   "Service designer",
+   "Makerspace volunteer",
+   "Product manager"
+  ],
+  "office": [
+   "Operations lead",
+   "Programme manager",
+   "Board secretary (volunteer)",
+   "Policy officer"
+  ],
+  "lead": [
+   "Team lead",
+   "Director",
+   "Committee chair",
+   "Facilitator"
+  ],
+  "policy": [
+   "Policy advisor",
+   "Public servant",
+   "Local councillor",
+   "Citizens' assembly member"
+  ],
+  "organize": [
+   "Community organizer",
+   "Campaigner",
+   "Tenants' union rep",
+   "Mutual aid coordinator"
+  ],
+  "arts": [
+   "Artist",
+   "Journalist",
+   "Community storyteller",
+   "Podcast producer"
+  ],
+  "research": [
+   "Researcher",
+   "Evaluator",
+   "Data analyst",
+   "Citizen scientist"
+  ],
+  "tech": [
+   "Developer",
+   "Data scientist",
+   "Civic tech volunteer",
+   "Digital service lead"
+  ],
+  "home": [
+   "Family carer",
+   "Neighbourhood rep",
+   "School governor",
+   "Parent group organizer"
+  ],
+  "faith": [
+   "Faith leader",
+   "Chaplain",
+   "Ceremony holder",
+   "Community elder"
+  ],
+  "between": [
+   "Volunteer",
+   "Student",
+   "Mentor",
+   "Apprentice"
+  ]
+ },
+ "branches": [
+  [
+   "care",
+   "Caring and teaching",
+   [
+    "care",
+    "teach",
+    "home"
+   ]
+  ],
+  [
+   "make",
+   "Making and building",
+   [
+    "build",
+    "make",
+    "tech"
+   ]
+  ],
+  [
+   "land",
+   "Land and food",
+   [
+    "food"
+   ]
+  ],
+  [
+   "public",
+   "Organizing and public life",
+   [
+    "organize",
+    "policy"
+   ]
+  ],
+  [
+   "run",
+   "Running things",
+   [
+    "office",
+    "lead",
+    "research"
+   ]
+  ],
+  [
+   "meaning",
+   "Culture and meaning",
+   [
+    "arts",
+    "faith"
+   ]
+  ],
+  [
+   "open",
+   "Figuring it out",
+   [
+    "between"
+   ]
+  ]
+ ],
+ "area_lens": {
+  "care": "Every person, family and class is different, and what works depends on the relationship.",
+  "make": "Whatever you make meets real use, and people do things with it you never planned for.",
+  "land": "Soil, weather, plants and people shape each other over seasons and generations.",
+  "public": "Many interests pull at once. No one controls the outcome, and power shapes what's possible.",
+  "run": "Plans meet reality: budgets, rules and people interact in ways no org chart shows.",
+  "meaning": "Stories, rituals and art shape how people see the world, and so how they act in it.",
+  "open": "Not knowing what's next is uncertain, but it's also room to explore."
+ }
+}

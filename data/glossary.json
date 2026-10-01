@@ -1,0 +1,50 @@
+[
+ {
+  "term": "cynefin",
+  "defn": "A framework from Dave Snowden that sorts situations into clear, complicated, complex and chaotic. Each needs a different way of acting."
+ },
+ {
+  "term": "sensemaking",
+  "defn": "Working out together what's going on in an unclear situation, before deciding what to do."
+ },
+ {
+  "term": "feedback",
+  "defn": "When the result of an action loops back and shapes the next action."
+ },
+ {
+  "term": "requisite variety",
+  "defn": "Ashby's law: to steer something, your responses need to be at least as varied as the situations you face."
+ },
+ {
+  "term": "cybernetic",
+  "defn": "About steering through feedback, in machines, living things or organizations."
+ },
+ {
+  "term": "safe-to-fail",
+  "defn": "A small experiment designed so that if it fails, the damage is small and you still learn."
+ },
+ {
+  "term": "emergence",
+  "defn": "When a whole shows patterns that none of its parts have on their own."
+ },
+ {
+  "term": "service design",
+  "defn": "Designing a service end to end: what people experience and the behind-the-scenes work that makes it happen."
+ },
+ {
+  "term": "service blueprint",
+  "defn": "A diagram of a service showing what users see, and the backstage work behind each step."
+ },
+ {
+  "term": "journey map",
+  "defn": "A picture of the steps someone goes through to get something done, and how each step feels."
+ },
+ {
+  "term": "good services",
+  "defn": "Lou Downe's plain-language standards for what makes a service work well for the people using it."
+ },
+ {
+  "term": "user research",
+  "defn": "Learning directly from the people who use a service: watching, asking, testing."
+ }
+]

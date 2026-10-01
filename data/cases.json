@@ -32,8 +32,8 @@
   ],
   "sources": [
    {
-    "t": "The Cynefin Co: Seeing the Invisible",
-    "u": "https://thecynefin.co/seeing-the-invisible/"
+    "t": "The Cynefin Co: Horizon scanning",
+    "u": "https://thecynefin.co/horizon-scanning/"
    },
    {
     "t": "Integrating foresight into policy: RAHS in Singapore",
@@ -344,6 +344,406 @@
    {
     "t": "Corporate Rebels: RenDanHeYi",
     "u": "https://www.corporate-rebels.com/blog/rendanheyi-forum"
+   }
+  ]
+ },
+ {
+  "id": "wajir",
+  "title": "Wajir Peace and Development Committee",
+  "place": "Wajir, Kenya",
+  "years": "1992 onward",
+  "summary": "After clan violence killed hundreds, women traders led by Dekha Ibrahim Abdi began mediating between clans. The agreement grew into a standing committee of elders, religious leaders, security services, officials, and NGOs.",
+  "lesson": "Peace held when people from every side kept meeting to carry it out, not when a single agreement was signed. Traditional Somali ways of settling disputes did much of the work.",
+  "note": "The model spread to other districts in northern Kenya; violence in the region has flared again since.",
+  "pathways": [
+   "conflict-transformation",
+   "emergence-in-movements-and-social-change"
+  ],
+  "sources": [
+   {
+    "t": "Right Livelihood: Dekha Ibrahim Abdi (2007 laureate)",
+    "u": "https://rightlivelihood.org/the-change-makers/find-a-laureate/dekha-abdi/"
+   },
+   {
+    "t": "Dekha Ibrahim Abdi (Wikipedia)",
+    "u": "https://en.wikipedia.org/wiki/Dekha_Ibrahim_Abdi"
+   }
+  ]
+ },
+ {
+  "id": "trc",
+  "title": "Truth and Reconciliation Commission",
+  "place": "South Africa",
+  "years": "1996 to 2003",
+  "summary": "Public hearings across the country let victims of apartheid-era violence tell their stories and let perpetrators apply for amnesty in exchange for full disclosure.",
+  "lesson": "A shared public ritual can mark a passage between two orders of society and help people move through it together.",
+  "note": "Many survivors felt reparations and prosecutions never followed through; the TRC remains debated as a model.",
+  "pathways": [
+   "ritual-liminality-and-transition",
+   "conflict-transformation"
+  ],
+  "sources": [
+   {
+    "t": "Truth and Reconciliation Commission (Department of Justice, South Africa)",
+    "u": "https://www.justice.gov.za/trc/"
+   },
+   {
+    "t": "Truth and Reconciliation Commission (Wikipedia)",
+    "u": "https://en.wikipedia.org/wiki/Truth_and_Reconciliation_Commission_(South_Africa)"
+   }
+  ]
+ },
+ {
+  "id": "mont-fleur",
+  "title": "Mont Fleur scenarios",
+  "place": "South Africa",
+  "years": "1991 to 1992",
+  "summary": "As negotiations to end apartheid began, 22 leaders from the ANC, the government, business, unions, and academia built four stories of where the country could go, named Ostrich, Lame Duck, Icarus, and Flight of the Flamingos.",
+  "lesson": "Scenarios built by people who disagree can give a whole country a shared language for choices ahead, without forcing agreement on what to do.",
+  "note": "Participants and facilitator Adam Kahane describe its influence; it is hard to separate from everything else happening in the transition.",
+  "pathways": [
+   "systemic-design-and-futures",
+   "strategy-under-uncertainty"
+  ],
+  "sources": [
+   {
+    "t": "Reos Partners: Lessons from the Mont Fleur scenarios (PDF)",
+    "u": "https://globaltfokus.dk/images/Kapacitetsudvikling/Arrangementer_kap_forum/Lessons_from_Mont_Fleur.pdf"
+   },
+   {
+    "t": "The Mont Fleur scenarios (Open Foresight Hub)",
+    "u": "https://openforesighthub.org/doku.php?id=library:the_mont_fleur_scenarios_2007"
+   }
+  ]
+ },
+ {
+  "id": "food-lab",
+  "title": "Sustainable Food Lab",
+  "place": "US, Europe, and Latin America",
+  "years": "2004 onward",
+  "summary": "About 30 leaders from food companies, NGOs, and governments went on a two-year learning journey designed around Theory U, with field visits, a wilderness retreat, and prototype projects.",
+  "lesson": "People who compete or oppose each other can sense a system together first and then act on what they saw, but prototypes need a home after the lab ends.",
+  "note": "Became a lasting network; some prototypes stalled and the founders write openly about trial and error.",
+  "pathways": [
+   "presencing-theory-u-and-social-presencing-theater",
+   "collaboration-across-boundaries"
+  ],
+  "sources": [
+   {
+    "t": "Reos Partners: The Sustainable Food Lab, eight years and counting",
+    "u": "https://reospartners.com/the-sustainable-food-lab-eight-years-and-counting/"
+   },
+   {
+    "t": "Hal Hamilton: Trial and Error, a personal story (PDF)",
+    "u": "https://sustainablefoodlab.org/wp-content/uploads/2015/12/Trial-and-Error-3-22.pdf"
+   }
+  ]
+ },
+ {
+  "id": "kerala",
+  "title": "People's Plan Campaign",
+  "place": "Kerala, India",
+  "years": "1996 to 2001",
+  "summary": "The state devolved 35 to 40 percent of its development budget to local governments. Village assemblies in every ward set priorities, and volunteers trained in large numbers helped draw up local plans.",
+  "lesson": "Moving money and authority closer to people works when it comes with mass learning, so residents can actually use the power they are given.",
+  "note": "Quality varied by place; later governments kept the structures but some of the campaign energy faded.",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "critical-and-popular-education"
+  ],
+  "sources": [
+   {
+    "t": "Isaac and Franke: Local Democracy and Development (book summary)",
+    "u": "https://msuweb.montclair.edu/~franker/isaacbook.htm"
+   },
+   {
+    "t": "Building local democracy: evaluating decentralization in Kerala (World Development)",
+    "u": "https://www.sciencedirect.com/science/article/abs/pii/S0305750X06002269"
+   }
+  ]
+ },
+ {
+  "id": "imagine-chicago",
+  "title": "Imagine Chicago",
+  "place": "Chicago, United States",
+  "years": "1992 onward",
+  "summary": "Young people, paired with adult mentors, interviewed business, civic, and cultural leaders about what gives the city life and what they hoped for, using Appreciative Inquiry questions.",
+  "lesson": "Asking what already works, and letting young people ask, can open conversations that problem-focused planning shuts down.",
+  "note": "Results are mostly told as stories by the organizers; the model spread to other cities.",
+  "pathways": [
+   "appreciative-inquiry"
+  ],
+  "sources": [
+   {
+    "t": "Imagine Chicago: the early story",
+    "u": "https://www.imaginechicago.org/founders-story"
+   },
+   {
+    "t": "Imagine Chicago (Appreciative Inquiry Commons)",
+    "u": "https://aicommons.champlain.edu/educational-material/imagine-chicago-2/"
+   }
+  ]
+ },
+ {
+  "id": "gds",
+  "title": "Government Digital Service and GOV.UK",
+  "place": "United Kingdom",
+  "years": "2011 onward",
+  "summary": "A new team in the Cabinet Office replaced hundreds of government websites with one, GOV.UK, built around user needs, user research, and small multidisciplinary teams working in the open.",
+  "lesson": "Service design changes government when it comes with the authority to say no to old contracts and the skills to build in-house.",
+  "note": "Its influence peaked in the early 2010s; later reviews describe a loss of central authority and uneven adoption.",
+  "pathways": [
+   "service-design",
+   "government-plumbing"
+  ],
+  "sources": [
+   {
+    "t": "UK Government Digital Service: moving beyond a website (Harvard Kennedy School case)",
+    "u": "https://case.hks.harvard.edu/uk-government-digital-service-moving-beyond-a-website/"
+   },
+   {
+    "t": "The UK government's digital transformation: how did it come about? (Economics Observatory)",
+    "u": "https://www.economicsobservatory.com/the-uk-governments-digital-transformation-how-did-it-come-about"
+   }
+  ]
+ },
+ {
+  "id": "fals-borda",
+  "title": "Participatory action research on Colombia's Caribbean coast",
+  "place": "Córdoba, Colombia",
+  "years": "1972 to 1975",
+  "summary": "Orlando Fals Borda and La Rosca worked with the national peasant users' association to research land struggles with peasants, not about them, and returned the findings in forms people could use.",
+  "lesson": "Research can be a tool for the people it studies when they set the questions and own the results.",
+  "note": "Historians, notably Joanne Rappaport, show how messy and contested the early practice was.",
+  "pathways": [
+   "action-research",
+   "critical-and-popular-education"
+  ],
+  "sources": [
+   {
+    "t": "The participatory research of Orlando Fals Borda (Participatory Methods, IDS)",
+    "u": "https://www.participatorymethods.org/resource/the-participatory-research-of-orlando-fals-borda/"
+   },
+   {
+    "t": "Joanne Rappaport: Cowards Don't Make History (Duke University Press)",
+    "u": "https://read.dukeupress.edu/books/book/2805/Cowards-Don-t-Make-HistoryOrlando-Fals-Borda-and"
+   }
+  ]
+ },
+ {
+  "id": "ddo",
+  "title": "Deliberately developmental organizations",
+  "place": "United States",
+  "years": "Studied 2011 to 2016",
+  "summary": "Robert Kegan and Lisa Lahey studied companies such as Decurion that build personal growth into daily work, for example by making weaknesses and mistakes openly discussable.",
+  "lesson": "Adult development can be part of how work is organized, not just a training course.",
+  "note": "The evidence comes from a small number of firms studied by the theory's authors.",
+  "pathways": [
+   "adult-development-and-immunity-to-change"
+  ],
+  "sources": [
+   {
+    "t": "Kegan, Lahey et al.: Making Business Personal (HBR, April 2014)",
+    "u": "https://hbr.org/2014/04/making-business-personal"
+   },
+   {
+    "t": "On deliberately developmental organizations (Harvard Graduate School of Education)",
+    "u": "https://www.gse.harvard.edu/ideas/news/14/04/deliberately-developmental-organizations"
+   }
+  ]
+ },
+ {
+  "id": "embrace",
+  "title": "Embrace infant warmer",
+  "place": "Stanford, United States, and India",
+  "years": "2007 onward",
+  "summary": "Students in Stanford's Design for Extreme Affordability class were asked for a cheaper incubator. Field visits showed many babies died far from hospitals, so they designed a warmer that works without steady power.",
+  "lesson": "Watching how people actually live can change the question you are answering, not just the answer.",
+  "note": "Embrace later had to change its business model to reach scale; design alone did not solve distribution.",
+  "pathways": [
+   "design-thinking"
+  ],
+  "sources": [
+   {
+    "t": "Embrace Innovations (Wikipedia)",
+    "u": "https://en.wikipedia.org/wiki/Embrace_Innovations"
+   }
+  ]
+ },
+ {
+  "id": "strive",
+  "title": "Strive Partnership",
+  "place": "Cincinnati and Northern Kentucky, United States",
+  "years": "2006 onward",
+  "summary": "School districts, universities, funders, businesses, and nonprofits agreed on shared goals and measures for children from cradle to career, with a backbone team to coordinate them.",
+  "lesson": "Organizations that each own one piece of a problem can coordinate when they share data and a common agenda.",
+  "note": "The case that launched the Collective Impact model; later critiques say it underplayed community voice and power.",
+  "pathways": [
+   "collaboration-across-boundaries",
+   "measurement-and-accountability"
+  ],
+  "sources": [
+   {
+    "t": "Kania and Kramer: Collective Impact (SSIR, 2011)",
+    "u": "https://ssir.org/articles/entry/collective_impact"
+   },
+   {
+    "t": "StriveTogether: reinventing the local education ecosystem (Harvard Business School case, PDF)",
+    "u": "https://www.strivetogether.org/wp-content/uploads/2017/03/StriveTogether-Reinventing-the-Local-Education-Ecosystem-314-031.pdf"
+   }
+  ]
+ },
+ {
+  "id": "reframing-aging",
+  "title": "Reframing Aging",
+  "place": "United States",
+  "years": "2015 onward",
+  "summary": "FrameWorks researched how Americans think about getting older, then worked with aging organizations to change the words and metaphors they used, such as 'older people' and 'building momentum'.",
+  "lesson": "Narrative change is slow, research-led, and collective: many organizations telling a new story the same way.",
+  "note": "FrameWorks links the shift to later policy, such as Colorado's 2023 Job Application Fairness Act; attribution is its own.",
+  "pathways": [
+   "narrative-change"
+  ],
+  "sources": [
+   {
+    "t": "FrameWorks: Impact spotlight, aging and ageism",
+    "u": "https://www.frameworksinstitute.org/impact-stories/impact-spotlight-aging-and-ageism/"
+   },
+   {
+    "t": "Finding the Frame: research report (FrameWorks, 2017, PDF)",
+    "u": "https://www.frameworksinstitute.org/app/uploads/2020/05/aging_research_report_final_2017.pdf"
+   }
+  ]
+ },
+ {
+  "id": "artificial-anasazi",
+  "title": "Artificial Anasazi",
+  "place": "Long House Valley, Arizona, United States",
+  "years": "Model published 2002",
+  "summary": "Researchers at the Santa Fe Institute and Brookings built an agent-based model of Ancestral Puebloan households from 800 to 1350 and compared it with archaeological records.",
+  "lesson": "Simple rules for many varied agents can reproduce real population patterns, and show which explanations for a collapse hold up.",
+  "note": "The model matched growth well but not the final abandonment, suggesting social reasons beyond the environment.",
+  "pathways": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "sources": [
+   {
+    "t": "Axtell et al.: Population growth and collapse in a multiagent model (PubMed)",
+    "u": "https://pubmed.ncbi.nlm.nih.gov/12011406/"
+   },
+   {
+    "t": "Artificial Anasazi model code (CoMSES)",
+    "u": "https://www.comses.net/codebases/2222/releases/1.1.0/"
+   }
+  ]
+ },
+ {
+  "id": "outward-bound",
+  "title": "Outward Bound",
+  "place": "Aberdyfi, Wales",
+  "years": "1941 onward",
+  "summary": "Shipping owner Lawrence Holt and educator Kurt Hahn started month-long courses of sailing, expeditions, and rescue training for young seamen during the Second World War.",
+  "lesson": "Learning by doing hard things together, then reflecting on them, builds capacities a classroom can't.",
+  "note": "",
+  "pathways": [
+   "experiential-learning-and-reflective-practice"
+  ],
+  "sources": [
+   {
+    "t": "Outward Bound (Wikipedia)",
+    "u": "https://en.wikipedia.org/wiki/Outward_Bound"
+   },
+   {
+    "t": "Outward Bound USA: history",
+    "u": "https://www.outwardbound.org/about-us/outward-bound-history/"
+   }
+  ]
+ },
+ {
+  "id": "reentry",
+  "title": "Women's re-entry programs study",
+  "place": "New York, New Jersey, California, and Washington, United States",
+  "years": "1975 to 1978",
+  "summary": "Jack Mezirow and Victoria Marsick studied 83 women returning to college in 12 programs and found many went through a 'perspective transformation' in how they saw themselves and their roles.",
+  "lesson": "Adults change most deeply when a disorienting experience meets reflection and support from others going through the same thing.",
+  "note": "The founding study of transformative learning; later scholars questioned how universal its ten phases are.",
+  "pathways": [
+   "transformative-learning"
+  ],
+  "sources": [
+   {
+    "t": "Mezirow and Marsick: Education for Perspective Transformation (Semantic Scholar)",
+    "u": "https://www.semanticscholar.org/paper/Education-for-Perspective-Transformation.-Women's-Mezirow-Marsick/a8cbf0444d3c73f343eb221d81ca150bf403b2bf"
+   },
+   {
+    "t": "Jack Mezirow (Wikipedia)",
+    "u": "https://en.wikipedia.org/wiki/Jack_Mezirow"
+   }
+  ]
+ },
+ {
+  "id": "eureka",
+  "title": "Xerox Eureka",
+  "place": "France and worldwide",
+  "years": "1990s",
+  "summary": "Anthropologist Julian Orr found copier technicians learned mostly by swapping stories. Xerox PARC then built Eureka, a peer-reviewed database of technicians' own repair tips, credited to their authors.",
+  "lesson": "Communities of practice already exist; support works best when it amplifies how people learn from each other.",
+  "note": "Widely cited in knowledge management; most accounts come from Xerox and PARC.",
+  "pathways": [
+   "communities-of-practice-and-action-learning"
+  ],
+  "sources": [
+   {
+    "t": "Eureka! Xerox discovers way to grow community knowledge (KMWorld)",
+    "u": "https://www.kmworld.com/Articles/Editorial/Features/Best-Practices-Eureka!-Xerox-discovers-way-to-grow-community-knowledge.-.-And-customer-satisfaction-9140.aspx"
+   },
+   {
+    "t": "Field work in the tribal office (MIT Technology Review, 1998)",
+    "u": "https://www.technologyreview.com/1998/05/01/41585/field-work-in-the-tribal-office/"
+   }
+  ]
+ },
+ {
+  "id": "new-britain",
+  "title": "The New Britain workshop",
+  "place": "New Britain, Connecticut, United States",
+  "years": "1946",
+  "summary": "Kurt Lewin's team ran a workshop for community leaders on fair employment. When participants sat in on staff discussions of their own behavior, the group's here-and-now interaction became the learning.",
+  "lesson": "A group studying itself as it happens can learn faster than one studying a topic.",
+  "note": "Led to the National Training Laboratories at Bethel, Maine, in 1947.",
+  "pathways": [
+   "t-groups-and-sensitivity-training"
+  ],
+  "sources": [
+   {
+    "t": "Ed Batista: A brief history of T-groups",
+    "u": "https://edbatista.com/2018/06/a-brief-history-of-t-groups.html"
+   },
+   {
+    "t": "Kurt Lewin: groups, experiential learning and action research (infed)",
+    "u": "https://infed.org/dir/welcome/kurt-lewin-groups-experiential-learning-and-action-research/"
+   }
+  ]
+ },
+ {
+  "id": "leicester",
+  "title": "The Leicester Conference",
+  "place": "Leicester, England",
+  "years": "1957 onward",
+  "summary": "The Tavistock Institute's two-week residential conference turns the event itself into a temporary organization, so members can study authority, leadership, and group life as they happen.",
+  "lesson": "Hidden group dynamics such as anxiety and projection become workable once they can be seen in the room.",
+  "note": "Intense by design; some participants find it destabilizing.",
+  "pathways": [
+   "group-relations"
+  ],
+  "sources": [
+   {
+    "t": "Tavistock Institute: What is a group relations conference?",
+    "u": "https://tavinstitute.org/news/what-is-a-group-relations-conference-2"
+   },
+   {
+    "t": "Tavistock Institute: The Leicester Conference",
+    "u": "https://www.tavinstitute.org/projects/group-relations-conferences-leicester-conference/"
    }
   ]
  }

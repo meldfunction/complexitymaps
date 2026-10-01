@@ -166,8 +166,8 @@
    },
    {
     "kind": "Article",
-    "title": "Seeing the Invisible (Singapore RAHS)",
-    "u": "https://thecynefin.co/seeing-the-invisible/"
+    "title": "Horizon scanning (from the Singapore RAHS work)",
+    "u": "https://thecynefin.co/horizon-scanning/"
    }
   ]
  },
@@ -423,7 +423,7 @@
    {
     "kind": "Article",
     "title": "What is a Group Relations conference?",
-    "u": "https://www.tavinstitute.org/news/what-is-a-group-relations-conference/"
+    "u": "https://tavinstitute.org/news/what-is-a-group-relations-conference-2"
    },
    {
     "kind": "Article",
@@ -848,7 +848,7 @@
  {
   "id": "arna",
   "name": "Action Research Network of the Americas",
-  "url": "https://www.arnaconnect.org/",
+  "url": "https://arnawebsite.org/",
   "summary": "Network linking action researchers and participatory action researchers across North and South America.",
   "pathways": [
    "action-research"
@@ -857,7 +857,7 @@
    {
     "kind": "Article",
     "title": "About ARNA",
-    "u": "http://www.arnaconnect.org/aboutarna/"
+    "u": "https://arnawebsite.org/about/"
    },
    {
     "kind": "Chapter",
