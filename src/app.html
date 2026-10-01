@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="anime.umd.min.js" defer id="anime-lib"></script>
 <style>
 /* Field Atlas: paper, ink, four hue families at oklch(0.52 0.09 H). */
 :root{
@@ -428,6 +429,54 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
   .libbar{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:no-preference){ .door,.goal,.tile,.start,.branch{transition:border-color .15s,transform .15s} }
+/* motion: everything here is optional; with motion off the page renders in its final state */
+.loop{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:14px 16px;margin-top:14px}
+.loop svg{width:100%;height:auto;display:block;max-height:230px}
+.loop .lnode circle{fill:var(--card);stroke:var(--ink);stroke-width:1.5}
+.loop .lnode text{font:600 11.5px var(--sans);fill:var(--ink);text-anchor:middle}
+.loop .lnode.moved circle{fill:var(--paper2);stroke-width:2.5}
+.loop .arc{fill:none;stroke:var(--muted);stroke-width:1.4}
+.loop .pulse{fill:var(--chg)}
+.loop p{font:italic 14.5px/1.45 var(--serif);margin:6px 0 8px}
+.road{--draw:1}
+.road::before{transform:scaleY(var(--draw));transform-origin:top}
+.treeline{--draw:1}
+.treeline::before{transform:scaleX(var(--draw));transform-origin:left}
+.branches{--draw:1}
+.branchwrap .branches{border-left:0;position:relative}
+.branchwrap .branches::after{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1.5px solid var(--ink);transform:scaleY(var(--draw));transform-origin:top}
+.stage svg .mst,.stage svg .mx,.stage svg .star{transform-box:fill-box;transform-origin:center}
+.tm button{position:relative;overflow:hidden;background:rgba(255,255,255,.04)}
+.tm button .fl{position:absolute;inset:0;transform-origin:bottom;pointer-events:none}
+.tm button .tx{position:relative}
+.replay{position:absolute;z-index:3;transform:translate(-50%,0);width:min(240px,46%);background:var(--night2);border:1px solid var(--night-line);border-radius:10px;padding:8px 10px;font:12.5px/1.4 var(--serif);color:var(--night-ink);pointer-events:none}
+.replay b{display:block;font-size:13.5px}
+.reorder{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:6px;position:relative}
+.reorder li{display:flex;align-items:center;gap:8px;border:1px solid var(--night-line);border-radius:10px;padding:6px 8px;background:var(--night2);font-size:13.5px;touch-action:none}
+.reorder li span{flex:1;min-width:0}
+.reorder li .grip{flex:none}
+.reorder .grip{cursor:grab;color:var(--night-muted);font:16px var(--mono);user-select:none;padding:0 2px}
+.reorder button{background:transparent;border:1px solid var(--night-line);border-radius:6px;color:var(--night-ink);width:26px;height:26px;cursor:pointer}
+.scrub{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 10px;font-size:13px;color:var(--night-muted)}
+.scrub input[type=range]{flex:1;min-width:160px;accent-color:oklch(0.82 0.08 85)}
+.scrub output{font:600 14px var(--mono);color:var(--night-ink);min-width:4ch}
+.scrubline{position:absolute;top:0;bottom:0;left:0;width:22px;margin-left:-11px;z-index:3;cursor:ew-resize;touch-action:none}
+.scrubline::before{content:"";position:absolute;left:10px;top:0;bottom:0;border-left:2px solid oklch(0.82 0.08 85)}
+.scrubline[hidden]{display:none}
+.time.scrubbing .bar{opacity:.22}
+.time.scrubbing .bar.alive{opacity:1;box-shadow:0 0 0 2px var(--night-ink)}
+.together{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;font-size:12.5px}
+.together a{border:1px solid var(--night-line);border-radius:999px;padding:3px 9px;text-decoration:none;color:var(--night-ink)}
+.balance{display:inline-flex;align-items:center;gap:8px;margin-left:auto}
+.balance svg{width:110px;height:44px;overflow:visible}
+.balance .beam{transform-box:view-box;transform-origin:55px 16px}
+.balance line,.balance path{stroke:currentColor;fill:none;stroke-width:1.5}
+.balance small{font:10.5px var(--mono)}
+.motiontoggle{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+@media (max-width:600px){ .stage.metro{min-width:720px} }
+@media (prefers-reduced-motion:no-preference){ .time .bar{transition:opacity .2s} .balance .beam{transition:transform .5s cubic-bezier(.3,1.6,.5,1)} }
+html.no-motion .balance .beam,html.no-motion .time .bar,html.has-anime .balance .beam{transition:none}
+@media print{ .road>li,.stop,.branch{opacity:1!important;transform:none!important} }
 </style>
 </head>
 <body>
@@ -593,11 +642,48 @@ function footer(){
       el("span",{text:"The Present of Work"}),
       el("span",{text:"Every lineage, tradition and community named here"}),
       el("a",{href:"#/about/acknowledgment",text:"Full acknowledgments"})),
-    el("div",{class:"row"}, statusEl(), el("a",{href:"#/library",text:"Open the live library"}), el("a",{href:"#/orgs",text:"Organizations"}), el("a",{href:"#/cases",text:"Cases"}), el("a",{href:"#/people",text:"People"}), el("a",{href:"#/contribute",text:"Suggest a change"})),
+    el("div",{class:"row"}, statusEl(), el("a",{href:"#/library",text:"Open the live library"}), el("a",{href:"#/orgs",text:"Organizations"}), el("a",{href:"#/cases",text:"Cases"}), el("a",{href:"#/people",text:"People"}), el("a",{href:"#/contribute",text:"Suggest a change"}), motionToggle()),
     el("p",{}, "Live resources come from the Systems Change Learning Guide's public feed, shown unmodified and credited (CC BY-NC-ND 4.0). They load only when you ask, and a copy stays in your browser for 72 hours. Your trail, explored pathways and notes stay in this browser; nothing personal is sent anywhere."),
     el("p",{}, "Items marked ", el("span",{class:"draft",text:"Draft"}), " were written from general knowledge and have not been checked against sources yet.")));
 }
 const page = (active, ...body) => [topbar(active), el("main",{class:"wrap",id:"main"}, body), footer()];
+
+// ---------------------------------------------------------------- motion (Anime.js, optional)
+// Motion only where it explains something. Every view renders in its final state first; animations are added on top
+// after render and are skipped when the OS asks for reduced motion, when the visitor turns motion off, or when
+// anime.umd.min.js has not loaded. Views register work with onMount(fn); fn(a, ctx) gets the Anime.js module and
+// {fresh, prev, hash}: fresh is false when a view re-renders in place (route(true)).
+const MOTION_KEY = "pathways-motion";
+const RM = matchMedia("(prefers-reduced-motion: reduce)");
+const motionOn = () => !RM.matches && store.get(MOTION_KEY, "on") !== "off";
+const AN = () => motionOn() && window.anime && window.anime.animate ? window.anime : null;
+let mounts = [], lastMounts = [], lastCtx = {}, motionScope = null, prevHash = "";
+const bootT = Date.now();
+const onMount = f => { mounts.push(f); };
+function runMounts(list, ctx){
+  if (motionScope) { try { motionScope.revert(); } catch {} motionScope = null; }
+  observers.forEach(o => o.disconnect()); observers = [];
+  document.documentElement.classList.toggle("no-motion", !motionOn());
+  document.documentElement.classList.toggle("has-anime", !!AN());
+  const a = AN(); if (!a || !list.length) return;
+  motionScope = a.createScope({mediaQueries:{reduce:"(prefers-reduced-motion: reduce)"}}).add(self => {
+    if (self.matches.reduce) return;
+    list.forEach(f => { try { f(a, ctx); } catch (e) { console.warn("motion skipped:", e); } });
+  });
+}
+document.getElementById("anime-lib")?.addEventListener("load", () => { document.documentElement.classList.toggle("has-anime", !!AN()); if (Date.now() - bootT < 3000) runMounts(lastMounts, lastCtx); });
+const motionToggle = () => el("button",{type:"button",class:"motiontoggle","aria-pressed":String(motionOn()),title:RM.matches ? "Your device asks for reduced motion" : "",
+  onclick:()=>{ store.set(MOTION_KEY, store.get(MOTION_KEY, "on") === "off" ? "on" : "off"); route(true); },text:"Motion: " + (RM.matches ? "reduced by your device" : motionOn() ? "on" : "off")});
+const hashParams = h => new URLSearchParams((h || "").split("?")[1] || "");
+const hashPath = h => (h || "").replace(/^#\/?/, "").split("?")[0];
+// play when scrolled into view; prepare() sets the hidden start state only if the node is still off screen
+let observers = [];
+function whenVisible(node, prepare, play){
+  const r = node.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) return play();
+  prepare();
+  const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); play(); } }, {rootMargin:"0px 0px -8% 0px"});
+  io.observe(node); observers.push(io);
+}
 
 // ---------------------------------------------------------------- search
 function searchIndex(q){
@@ -624,6 +710,39 @@ function searchBox(placeholder, big){
 
 // ---------------------------------------------------------------- home (11a)
 let browseBy = "goal";
+// (1) a small feedback loop: push one part and the others move, then the change comes back around
+function loopCard(){
+  const N = [["Housing",150,30],["Health",262,105],["Work",150,180],["Care",38,105]];
+  const ell = "M150,30 A112,75 0 1,1 149.99,30";
+  const arcs = N.map((n, i) => { const m = N[(i + 1) % 4]; const a0 = Math.atan2((n[2] - 105) / 75, (n[1] - 150) / 112), a1 = Math.atan2((m[2] - 105) / 75, (m[1] - 150) / 112);
+    const g = 0.42, p0 = [150 + 112 * Math.cos(a0 + g), 105 + 75 * Math.sin(a0 + g)], p1 = [150 + 112 * Math.cos(a1 - g), 105 + 75 * Math.sin(a1 - g)];
+    return s("path",{class:"arc",d:`M${p0[0].toFixed(1)},${p0[1].toFixed(1)} A112,75 0 0,1 ${p1[0].toFixed(1)},${p1[1].toFixed(1)}`,"marker-end":"url(#lp-arrow)"}); });
+  const nodes = N.map(([n, x, y]) => s("g",{transform:`translate(${x},${y})`}, s("g",{class:"lnode"}, s("circle",{r:"29"}), s("text",{y:"4",text:n}))));
+  const path = s("path",{d:ell,fill:"none",stroke:"none"});
+  const dot = s("circle",{class:"pulse",r:"6",cx:"0",cy:"0",opacity:"0"});
+  const svg = s("svg",{viewBox:"0 0 300 210",role:"img","aria-label":"A loop of four parts, Housing, Health, Work and Care, each affecting the next"},
+    s("defs",{}, s("marker",{id:"lp-arrow",viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto-start-reverse"}, s("path",{d:"M0,0 L10,5 L0,10 z",fill:"var(--muted)"}))),
+    arcs, path, nodes, dot);
+  const cap = el("p",{text:"Fixing one part moves another. Push housing and watch."});
+  let busy = false;
+  const push = () => {
+    if (busy) return; busy = true; const inner = nodes.map(g => g.firstChild); const a = AN();
+    const done = () => { busy = false; cap.textContent = "Housing changed, so health, work and care shifted, and the change came back around to housing. That is a feedback loop."; };
+    if (!a) { inner.forEach((g, i) => setTimeout(() => { g.classList.add("moved"); if (i === 3) done(); }, i * 350)); return; }
+    inner.forEach(g => g.classList.remove("moved"));
+    const mp = a.svg.createMotionPath(path);
+    const tl = a.createTimeline({onComplete:done});
+    tl.add(dot, {opacity:[0, 1], duration:150}, 0)
+      .add(dot, {translateX:mp.translateX, translateY:mp.translateY, duration:2600, ease:"linear"}, 0)
+      .add(dot, {opacity:[1, 0], duration:250}, 2600);
+    inner.forEach((g, i) => { const [, x, y] = N[i]; const dx = (x - 150) / 112 * 9, dy = (y - 105) / 75 * 9;
+      tl.add(g, {translateX:[0, dx, 0], translateY:[0, dy, 0], scale:[1, 1.18, 1], duration:700, ease:a.spring ? a.spring({bounce:.45, duration:700}) : "outElastic"}, i * 650)
+        .call(() => g.classList.add("moved"), i * 650 + 200); });
+    tl.add(inner[0], {scale:[1, 1.08, 1], duration:500}, 2600);
+  };
+  return el("div",{class:"loop"}, el("span",{class:"label",text:"How a system pushes back"}), svg, cap,
+    el("button",{type:"button",class:"btn ghost",onclick:push,text:"Push housing"}));
+}
 function viewHome(){
   const pop = [["Cynefin","sensemaking-and-acting-in-uncertainty"],["Power analysis","power-analysis"],["Warm Data","nora-bateson-and-warm-data"],["Service design","service-design"]];
   const doors = [
@@ -655,9 +774,9 @@ function viewHome(){
           el("p",{class:"lede",text:"Care, housing, climate, health. They have no single owner and no single cause, and fixing one part moves another. The ideas that help are spread across dozens of fields, each with its own jargon, and most people never find them."}),
           searchBox("Search a topic, person or idea", true),
           el("div",{class:"popular"}, "Popular:", pop.map(([n, id]) => el("a",{class:"pill",href:wikiHref(id),text:n})))),
-        el("div",{class:"photo",role:"img","aria-label":"Photo slot: people working something out together, in a real place"},
+        el("div",{}, el("div",{class:"photo",role:"img","aria-label":"Photo slot: people working something out together, in a real place"},
           s("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":"1.5"}, s("rect",{x:"3",y:"4",width:"18",height:"16",rx:"2"}), s("circle",{cx:"9",cy:"10",r:"2"}), s("path",{d:"M21 17l-5-5-9 8"})),
-          el("span",{text:"Photo: people working something out together, in a real place"}))),
+          el("span",{text:"Photo: people working something out together, in a real place"})), loopCard())),
       el("section",{class:"sec"}, el("h2",{text:"Where do you want to start?"}),
         el("nav",{class:"doors","aria-label":"Where to start"}, doors.map(([cls, lab, t, sub, href]) => el("a",{class:"door "+cls,href}, el("span",{class:"label",text:lab}), el("b",{text:t}), el("span",{text:sub}))))),
       el("section",{class:"sec"}, browse),
@@ -769,6 +888,12 @@ function viewArticle(id){
           others.slice(0, 6).map((oid, j) => [j ? ", " : "", el("a",{href:wikiHref(oid),text:short(byId(P, oid))})])) : null) : null);
   })));
   drawRoad();
+  // (2) the road draws itself, oldest to newest, as it scrolls into view
+  onMount((a, ctx) => { if (!ctx.fresh) return; const ol = road.querySelector(".road"); if (!ol) return; const lis = [...ol.children];
+    whenVisible(ol, () => { a.utils.set(ol, {"--draw":0}); a.utils.set(lis, {opacity:0, translateX:-10}); },
+      () => { a.utils.set(ol, {"--draw":0}); a.utils.set(lis, {opacity:0, translateX:-10});
+        a.animate(ol, {"--draw":[0, 1], duration:380 * lis.length + 200, ease:"inOut(2)"});
+        a.animate(lis, {opacity:[0, 1], translateX:[-10, 0], duration:420, delay:a.stagger(380, {start:120}), ease:"out(3)"}); }); });
   const orgs = p.orgs.map(o => byId(O, o));
   const cases = p.cases.map(c => byId(C, c));
   const sim = similarTo(p, 4), diff = differentFrom(p, 3);
@@ -833,8 +958,22 @@ function scorePathways(tr){
     .filter(x => x.p.work_kinds.some(k => kinds.includes(k)))
     .sort((a, b) => b.sc - a.sc || weight(b.p) - weight(a.p)).map(x => x.p);
 }
+// (8) remember where a choice was clicked so it can fold into the breadcrumb on the next step
+let flipFrom = null;
+document.addEventListener("click", e => { const b = e.target.closest(".branch[href], .start[href]"); const r = b?.getBoundingClientRect(); flipFrom = r ? {left:r.left + scrollX, top:r.top + scrollY} : null; }, true);
 function viewPath(params){
   const st = params.get("start"), area = params.get("area"), tradeId = params.get("trade"), pid = params.get("p");
+  // (8) each choice grows new branches out of the last one, and the choice you made folds into the breadcrumb
+  onMount((a, ctx) => { if (!ctx.fresh || hashPath(ctx.prev) !== "path") { flipFrom = null; return; }
+    const from = flipFrom; flipFrom = null;
+    const crumb = document.querySelector(".crumbs a:last-child");
+    if (from && crumb) { const to = crumb.getBoundingClientRect();
+      a.animate(crumb, {translateX:[from.left - to.left - scrollX, 0], translateY:[from.top - to.top - scrollY, 0], scale:[1.12, 1], duration:650, ease:"inOut(3)"}); }
+    const br = document.querySelector(".branchwrap .branches"), items = document.querySelectorAll(".branchwrap .branch, .starts .start, .where .card");
+    a.utils.set(items, {opacity:0});
+    if (br) a.animate(br, {"--draw":[0, 1], duration:500, ease:"out(2)"});
+    a.animate(document.querySelectorAll(".branchwrap .root"), {scale:[.85, 1], opacity:[0, 1], duration:400, ease:"out(3)"});
+    a.animate(items, {opacity:[0, 1], translateX:[-16, 0], duration:450, delay:a.stagger(80, {start:200}), ease:"out(3)"}); });
   const PROMPTS = {interest:["Which area interests you?","Which is closest?","Pick where to start learning.","Here's where this shows up in work."],
     now:["Which area is your work in now?","Which is closest to what you do?","Pick where to start learning.","Here's where your work connects."],
     want:["What kind of work do you want to do?","Which is closest?","Pick where to start learning.","Here's where that work happens."]};
@@ -939,19 +1078,37 @@ function mapUniverse(p, params){
         el("span",{class:"lab",style:`${pct(x, y + 62)};color:${fn(f)}`,text:c.name})); });
   } else {
     const c = DATA.clusters.find(x => x.token === zoom); const f = P.find(q => q.cluster === c.name).family;
-    lines.append(s("circle",{cx:500,cy:300,r:300,fill:fn(f),"fill-opacity":".05"}));
+    lines.append(s("circle",{class:"halo",cx:500,cy:300,r:300,fill:fn(f),"fill-opacity":".05"}));
     stage.append(el("span",{class:"lab",style:`${pct(500, 30)};color:${fn(f)};font-size:12px`,text:c.name}));
     P.filter(q => q.cluster === c.name).forEach(q => { const a = starPos(q, true), b = P.filter(r => r.cluster === c.name);
-      b.forEach(r => { if (A.edges.some(([x, y]) => (x === q.short && y === r.short))) { const bp = starPos(r, true); lines.append(s("line",{x1:a.x,y1:a.y,x2:bp.x,y2:bp.y,stroke:fn(f),"stroke-opacity":".35"})); } }); });
+      b.forEach(r => { if (A.edges.some(([x, y]) => (x === q.short && y === r.short))) { const bp = starPos(r, true); lines.append(s("line",{class:"edge",x1:a.x,y1:a.y,x2:bp.x,y2:bp.y,stroke:fn(f),"stroke-opacity":".35"})); } }); });
   }
   P.filter(q => !zoom || DATA.clusters.find(x => x.token === zoom).name === q.cluster).forEach(q => {
     const {x, y} = starPos(q, !!zoom); const r = (zoom ? 7 : 3.2) + Math.min(weight(q), 6) * (zoom ? 1.4 : .7);
     const lit = sn.has(q.id) || trail().includes(q.id) || q.id === p?.id;
-    lines.append(s("circle",{cx:x,cy:y,r,fill:fn(q.family),"fill-opacity":lit ? 1 : .55}));
-    if (q.id === p?.id) lines.append(s("circle",{cx:x,cy:y,r:r + 5,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.6"}));
+    lines.append(s("circle",{class:"star","data-id":q.id,cx:x,cy:y,r,fill:fn(q.family),"fill-opacity":lit ? 1 : .55}));
+    if (q.id === p?.id) lines.append(s("circle",{class:"ring",cx:x,cy:y,r:r + 5,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.6"}));
     stage.append(el("a",{class:"hit",href:href({p:q.id}),"aria-label":q.name,title:q.name,style:`${pct(x, y)};width:${Math.max(r * 2 + 10, 22) / 10}%;aspect-ratio:1`}));
     if (zoom || q.id === p?.id) { const up = y < 300;
       stage.append(el("span",{class:"slab",style:`${pct(x, y)};transform:translate(-50%,${up ? "calc(-100% - " + (r + 6) + "px)" : (r + 6) + "px"});text-align:center;white-space:normal;width:140px`,text:zoom ? q.name : q.name})); }
+  });
+  // (3) zooming feels like zooming: stars fly between the overview and the area layout instead of cutting over
+  onMount((a, ctx) => {
+    const pv = hashParams(ctx.prev); if (!ctx.fresh || hashPath(ctx.prev) !== "map" || (pv.get("view") || "universe") !== "universe") return;
+    const pz = pv.get("zoom") || null; if (pz === (zoom || null)) return;
+    const stars = [...stage.querySelectorAll(".star")], late = stage.querySelectorAll(".slab,.lab,.ring,.edge");
+    const fly = (st, from) => { const to = {x:+st.getAttribute("cx"), y:+st.getAttribute("cy")}; a.utils.set(st, {cx:from.x, cy:from.y});
+      a.animate(st, {cx:[from.x, to.x], cy:[from.y, to.y], duration:800, ease:"inOut(3)", delay:a.utils.random(0, 140)}); };
+    if (zoom) {
+      const cp = clusterPos.find(x => x.c.token === zoom), halo = stage.querySelector(".halo");
+      stars.forEach(st => fly(st, starPos(byId(P, st.dataset.id), false)));
+      if (halo && cp) a.animate(halo, {cx:[cp.x, 500], cy:[cp.y, 300], r:[78, 300], duration:800, ease:"inOut(3)"});
+    } else {
+      const zc = DATA.clusters.find(x => x.token === pz);
+      stars.forEach(st => { const q = byId(P, st.dataset.id);
+        if (zc && q.cluster === zc.name) fly(st, starPos(q, true)); else a.utils.set(st, {opacity:0}), a.animate(st, {opacity:[0, 1], duration:500, delay:300 + a.utils.random(0, 300)}); });
+    }
+    a.utils.set(late, {opacity:0}); a.animate(late, {opacity:[0, 1], duration:350, delay:650});
   });
   return {main:[zoom ? el("p",{style:"margin:0 0 8px"}, el("a",{href:href({zoom:null}),text:"← All areas"})) : null, frame,
     el("div",{class:"mapfoot"}, el("span",{text:p ? "You are here: " + p.name : "Click an area to zoom in"}), el("span",{text:"Bright stars = explored or on your trail · bigger stars = more cases and groups"}),
@@ -974,19 +1131,19 @@ function metroSvg(withMine, p, params){
   const lines = A.metro, {rows} = metroLayout(lines); const sid2p = Object.fromEntries(P.map(q => [q.short, q]));
   const maxX = Math.max(...rows.flatMap(r => r.stations.map(s0 => s0.x)));
   const X = x => 150 + x * (790 / Math.max(maxX, 1)), top = withMine ? 190 : 80, gap = withMine ? 80 : 104, Y = ri => top + ri * gap;
-  const svg = s("svg",{viewBox:"0 0 1000 620","aria-hidden":"true"}); const stage = el("div",{class:"stage"}, svg);
+  const svg = s("svg",{viewBox:"0 0 1000 620","aria-hidden":"true"}); const stage = el("div",{class:"stage metro"}, svg);
   const mine = trail(); const mineS = new Set(mine.map(id => byId(P, id)?.short));
   const href = (id) => { const u = new URLSearchParams(params); u.set("p", id); return "#/map?" + u; };
   // interchanges: same short id on several rows at the same x
   const at = {}; rows.forEach(r => r.stations.forEach(st => (at[st.sid] = at[st.sid] || []).push({x:st.x, ri:r.ri})));
   Object.values(at).forEach(list => { if (list.length < 2) return; const xs = new Set(list.map(a => a.x)); xs.forEach(x => { const rr = list.filter(a => a.x === x).map(a => a.ri); if (rr.length > 1)
-    svg.append(s("rect",{x:X(x) - 7,y:Y(Math.min(...rr)) - 7,width:14,height:Y(Math.max(...rr)) - Y(Math.min(...rr)) + 14,rx:7,fill:"var(--night-ink)","fill-opacity":".9"})); }); });
+    svg.append(s("rect",{class:"mx",x:X(x) - 7,y:Y(Math.min(...rr)) - 7,width:14,height:Y(Math.max(...rr)) - Y(Math.min(...rr)) + 14,rx:7,fill:"var(--night-ink)","fill-opacity":".9"})); }); });
   rows.forEach(r => { const col = LINE_COLORS[r.ri % 5]; const dim = withMine && !r.stations.some(st => mineS.has(st.sid));
-    svg.append(s("line",{x1:X(r.stations[0].x),y1:Y(r.ri),x2:X(r.stations.slice(-1)[0].x),y2:Y(r.ri),stroke:col,"stroke-width":"6","stroke-opacity":dim ? .3 : 1,"stroke-linecap":"round"}));
+    svg.append(s("line",{class:"mline","data-row":r.ri,x1:X(r.stations[0].x),y1:Y(r.ri),x2:X(r.stations.slice(-1)[0].x),y2:Y(r.ri),stroke:col,"stroke-width":"6","stroke-opacity":dim ? .3 : 1,"stroke-linecap":"round"}));
     stage.append(el("span",{class:"slab",style:`left:1%;top:${Y(r.ri) / 6.2}%;transform:translateY(-50%);color:${col};font-weight:600;opacity:${dim ? .5 : 1}`,text:LINE_NAMES[r.l.id] || r.l.label}));
     r.stations.forEach((st, i) => { const q = sid2p[st.sid]; if (!q) return; const x = X(st.x), y = Y(r.ri); const own = mineS.has(st.sid);
-      if (st.transfer) svg.append(s("path",{d:`M${X(st.transfer.x)},${Y(st.transfer.row)} L${x},${y}`,stroke:"var(--night-ink)","stroke-opacity":".5","stroke-dasharray":"3 4",fill:"none"}));
-      svg.append(s("circle",{cx:x,cy:y,r:(at[st.sid].length > 1 ? 8 : 6),fill:own ? "var(--night-ink)" : "var(--night2)",stroke:col,"stroke-width":"3"}));
+      if (st.transfer) svg.append(s("path",{class:"mtr",d:`M${X(st.transfer.x)},${Y(st.transfer.row)} L${x},${y}`,stroke:"var(--night-ink)","stroke-opacity":".5","stroke-dasharray":"3 4",fill:"none"}));
+      svg.append(s("circle",{class:"mst","data-row":r.ri,"data-f":((x - 150) / 790).toFixed(3),cx:x,cy:y,r:(at[st.sid].length > 1 ? 8 : 6),fill:own ? "var(--night-ink)" : "var(--night2)",stroke:col,"stroke-width":"3"}));
       if (q.id === p?.id) svg.append(s("circle",{cx:x,cy:y,r:13,fill:"none",stroke:"var(--night-ink)","stroke-width":"1.5"}));
       stage.append(el("a",{class:"hit",href:href(q.id),title:q.name,"aria-label":q.name,style:`${pct(x, y)};width:3%;aspect-ratio:1`}));
       stage.append(el("span",{class:"slab",style:`${pct(x, y)};transform:translate(-50%,calc(-100% - 12px));text-align:center;white-space:normal;width:120px;font-size:11.5px;opacity:${dim ? .5 : 1}`,text:q.short_name})); }); });
@@ -1006,6 +1163,24 @@ function metroSvg(withMine, p, params){
   return el("div",{class:"scrollx"}, stage);
 }
 function mapMetro(p, params){
+  // (4) on arrival each starter trail draws in turn, stops appear as the line reaches them, interchanges pulse once,
+  // and a dot rides each line to show it is a trail you walk
+  onMount((a, ctx) => { const pv = hashParams(ctx.prev); if (!ctx.fresh || (hashPath(ctx.prev) === "map" && pv.get("view") === "metro")) return;
+    const svg = document.querySelector(".hubmain .stage svg"); if (!svg) return;
+    const lines = [...svg.querySelectorAll(".mline")], GAP = 380, DUR = 900, end = GAP * (lines.length - 1) + DUR;
+    a.animate(a.svg.createDrawable(lines), {draw:["0 0", "0 1"], duration:DUR, delay:a.stagger(GAP), ease:"linear"});
+    const slabs = document.querySelectorAll(".hubmain .stage .slab");
+    a.utils.set(svg.querySelectorAll(".mst"), {scale:0}); a.utils.set([...slabs, ...svg.querySelectorAll(".mx,.mtr")], {opacity:0});
+    a.animate(svg.querySelectorAll(".mst"), {scale:[0, 1], duration:350, ease:"out(3)", delay:t0 => +t0.dataset.row * GAP + +t0.dataset.f * DUR});
+    a.animate(slabs, {opacity:[0, 1], duration:400, delay:end - 300});
+    a.animate(svg.querySelectorAll(".mx"), {opacity:[0, 1], scale:[1, 1.35, 1], duration:700, delay:end, ease:"inOut(2)"});
+    a.animate(svg.querySelectorAll(".mtr"), {opacity:[0, 1], duration:500, delay:end});
+    lines.forEach((ln, i) => { const rider = s("circle",{cx:ln.getAttribute("x1"),cy:ln.getAttribute("y1"),r:"4.5",fill:"var(--night-ink)",opacity:"0"}); svg.append(rider);
+      a.createTimeline({delay:end + 300 + i * 160, onComplete:() => rider.remove()})
+        .add(rider, {opacity:[0, 1], duration:150})
+        .add(rider, {cx:[+ln.getAttribute("x1"), +ln.getAttribute("x2")], duration:1700, ease:"inOut(1.5)"}, 0)
+        .add(rider, {opacity:0, duration:250}, 1550); });
+  });
   return {main:[metroSvg(false, p, params), el("div",{class:"mapfoot"}, el("span",{text:"Each line is a starter trail from a fictional composite starting point"}), el("span",{text:"White bars are interchanges, where trails share a stop"}), el("span",{text:"Dashed = transfer to an earlier stop"}))],
     side:[sidePanel(p, "metro"), el("div",{}, el("span",{class:"label",text:"The lines"}), el("div",{class:"list"}, A.metro.map((l, i) => el("div",{style:"padding:8px 0;border-bottom:1px solid var(--night-line);font-size:13px"},
       el("b",{style:`color:${LINE_COLORS[i % 5]}`,text:LINE_NAMES[l.id] + ". "}), el("span",{style:"color:var(--night-muted)",text:l.why})))))]};
@@ -1018,6 +1193,12 @@ function mapTree(p, params){
     return {st, ppl, app, i}; });
   const noYears = stops.filter(x => !x.st.years).length;
   const href = (id) => { const u = new URLSearchParams(params); u.set("p", id); return "#/map?" + u; };
+  // (2) the lineage line draws left to right and each person appears as it reaches them
+  onMount((a, ctx) => { const prev = hashParams(ctx.prev); if (!ctx.fresh || (hashPath(ctx.prev) === "map" && prev.get("view") === "tree" && prev.get("p") === p.id)) return;
+    const line = document.querySelector(".treeline"), stops = [...document.querySelectorAll(".treeline .stop")]; if (!line) return;
+    a.utils.set(line, {"--draw":0}); a.utils.set(stops, {opacity:0});
+    a.animate(line, {"--draw":[0, 1], duration:320 * stops.length + 200, ease:"inOut(2)"});
+    a.animate(stops, {opacity:[0, 1], translateY:[10, 0], duration:450, delay:a.stagger(320, {start:100}), ease:"out(3)"}); });
   const recentre = [...others.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => byId(P, id)).concat(similarTo(p, 4).map(x => x.q)).filter((v, i, a) => a.indexOf(v) === i).slice(0, 4);
   return {main:[
     el("span",{class:"label",text:`Lineage of · ${p.cluster} · ${p.kind}`}), el("h2",{style:"font-size:30px;margin:6px 0 0",text:p.name}),
@@ -1046,6 +1227,10 @@ function coverage(p, m){
 }
 function mapTreemap(p, params){
   const m = params.get("m") || "all";
+  // (7) when you arrive or switch measure, tiles fill up to their coverage, so the change between measures reads as change
+  onMount((a, ctx) => { const pv = hashParams(ctx.prev); if (!ctx.fresh || (hashPath(ctx.prev) === "map" && pv.get("view") === "treemap" && (pv.get("m") || "all") === m)) return;
+    const fills = document.querySelectorAll(".tm .fl"); a.utils.set(fills, {scaleY:0});
+    a.animate(fills, {scaleY:[0, 1], duration:600, ease:"out(3)", delay:a.stagger(12)}); });
   const href = (o) => { const u = new URLSearchParams(params); Object.entries(o).forEach(([k, v]) => u.set(k, v)); return "#/map?" + u; };
   const cov = Object.fromEntries(P.map(q => [q.id, coverage(q, m)]));
   const counts = [0, 0, 0]; Object.values(cov).forEach(c => counts[c.lvl]++);
@@ -1055,8 +1240,8 @@ function mapTreemap(p, params){
   return {main:[el("div",{class:"tm"}, byCl.map(({c, ps}) => el("div",{class:"cl",style:`grid-column:span ${ps.length > 5 ? 2 : 1}`},
     el("h4",{style:`color:${fn(ps[0].family)}`,title:c.name,text:c.name}),
     el("div",{class:"tiles"}, ps.map(q => { const lv = cov[q.id].lvl;
-      return el("button",{type:"button",class:lv === 0 ? "gap" : "","aria-pressed":String(q.id === p?.id),onclick:()=>goTo(href({p:q.id})),
-        style:lv === 2 ? `background:oklch(0.62 0.09 ${FAM[q.family].hue});color:var(--night)` : lv === 1 ? `background:oklch(0.36 0.06 ${FAM[q.family].hue})` : "",text:q.name}); })))))],
+      return el("button",{type:"button",class:lv === 0 ? "gap" : "","aria-pressed":String(q.id === p?.id),onclick:()=>goTo(href({p:q.id})),style:lv === 2 ? "color:var(--night)" : ""},
+        lv ? el("span",{class:"fl",style:`background:${lv === 2 ? `oklch(0.62 0.09 ${FAM[q.family].hue})` : `oklch(0.36 0.06 ${FAM[q.family].hue})`}`}) : null, el("span",{class:"tx",text:q.name})); })))))],
     side:[el("div",{}, el("span",{class:"label",text:"Measure"}), el("div",{class:"pills",style:"margin-top:8px"}, METRICS.map(([k, n]) => el("a",{class:"pill",href:href({m:k}),"aria-pressed":String(m===k),text:n})))),
       el("div",{class:"stats"}, el("div",{}, el("b",{text:String(counts[2])}), el("span",{text:"Well covered"})), el("div",{}, el("b",{text:String(counts[1])}), el("span",{text:"Thin"})), el("div",{}, el("b",{text:String(counts[0])}), el("span",{text:"Gap"}))),
       el("div",{}, el("span",{class:"label",text:"Most gaps · " + METRICS.find(x => x[0] === m)[1]}), el("div",{class:"list"}, byCl.filter(x => x.gaps).sort((a, b) => b.gaps / b.ps.length - a.gaps / a.ps.length).slice(0, 4).map(x =>
@@ -1066,8 +1251,34 @@ function mapTreemap(p, params){
         : el("p",{style:"font-size:14px;color:var(--night-muted)",text:"Click a tile to see its checklist."}),
       el("div",{class:"mapfoot",style:"display:grid;margin-top:auto"}, el("span",{text:"Bright tile = well covered · dark = thin · striped = gap"}), el("span",{text:"Hue = area family · ✓ has it · – missing"}))]};
 }
+// (5) replay: a marker walks your trail, pausing at each stop with its one-line summary
+function replayTrail(){
+  const mine = trail(), stage = document.querySelector(".hubmain .stage"), svg = stage?.querySelector("svg"); if (!stage || !svg || !mine.length) return;
+  stage.querySelectorAll(".replay").forEach(n => n.remove()); svg.querySelectorAll(".marker").forEach(n => n.remove());
+  const xs = mine.map((id, i) => 150 + i * (790 / Math.max(mine.length - 1, 1))), my = 70, HOLD = 1700;
+  const cap = el("div",{class:"replay",role:"status","aria-live":"polite"}); stage.append(cap);
+  const show = i => { const q = byId(P, mine[i]); fill(cap, el("b",{text:`${i + 1} of ${mine.length} · ${q.name}`}), q.plain_overview || strip(q.overview));
+    cap.style.left = Math.min(Math.max(xs[i] / 10, 18), 82) + "%"; cap.style.top = ((my + 22) / 6.2) + "%"; };
+  const a = AN();
+  if (!a) { mine.forEach((_, i) => setTimeout(() => show(i), i * (HOLD + 600))); setTimeout(() => cap.remove(), mine.length * (HOLD + 600) + 1200); return; }
+  const marker = s("circle",{class:"marker",cx:xs[0],cy:my,r:"13",fill:"none",stroke:"oklch(0.82 0.08 85)","stroke-width":"3"}); svg.append(marker);
+  show(0); a.utils.set(cap, {opacity:0});
+  const tl = a.createTimeline({onComplete:() => setTimeout(() => { marker.remove(); cap.remove(); }, HOLD + 800)});
+  tl.add(marker, {r:[0, 13], duration:300}).add(cap, {opacity:[0, 1], duration:250}, 0);
+  for (let i = 1; i < mine.length; i++)
+    tl.add(cap, {opacity:0, duration:200}, `+=${HOLD}`).add(marker, {cx:xs[i], duration:800, ease:"inOut(2)"}).call(() => show(i)).add(cap, {opacity:[0, 1], duration:250});
+}
+function moveStop(i, d){ const t = trail(), j = i + d; if (j < 0 || j >= t.length) return; [t[i], t[j]] = [t[j], t[i]]; setTrail(t); route(true); }
 function mapMine(p, params){
   const mine = trail(); const last = mine.length ? byId(P, mine[mine.length - 1]) : null;
+  // (10) drag a stop by its grip to reorder; the others spring out of the way. Buttons do the same without a mouse.
+  onMount(a => { const ol = document.querySelector(".reorder"); if (!ol || !a.createDraggable) return; const items = [...ol.children]; if (items.length < 2) return;
+    const H = items[1].offsetTop - items[0].offsetTop;
+    items.forEach((li, i) => { let target = i;
+      a.createDraggable(li, {x:false, trigger:li.querySelector(".grip"), container:ol, releaseStiffness:260, releaseDamping:18,
+        onDrag:d => { target = Math.max(0, Math.min(items.length - 1, Math.round(i + d.y / H)));
+          items.forEach((o, j) => { if (o !== li) a.animate(o, {translateY:(j > i && j <= target) ? -H : (j < i && j >= target) ? H : 0, duration:260, ease:a.spring({bounce:.3, duration:260})}); }); },
+        onRelease:() => { if (target === i) return; const t = trail(); const [m] = t.splice(i, 1); t.splice(target, 0, m); setTrail(t); setTimeout(() => route(true), 200); }}); }); });
   const sugg = last ? similarTo(last, 6).map(x => x.q).filter(q => !mine.includes(q.id)).slice(0, 3) : [];
   const exportTrail = () => { const data = {exported:new Date().toISOString(), trail:mine.map(id => ({id, name:byId(P, id).name}))};
     const a = el("a",{href:URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], {type:"application/json"})),download:"my-pathways-trail.json"}); document.body.append(a); a.click(); a.remove(); };
@@ -1077,7 +1288,12 @@ function mapMine(p, params){
     sugg.length ? el("div",{style:"margin-top:16px"}, el("span",{class:"label",text:"Add a stop"}), el("div",{class:"addstops",style:"margin-top:8px"},
       sugg.map(q => el("button",{type:"button",onclick:()=>{ setTrail([...trail(), q.id]); route(true); }}, el("b",{text:"+ " + q.name}), el("small",{text:"next to your last stop"}))))) : null],
     side:[sidePanel(p, "mine"),
-      el("button",{type:"button",class:"btn",disabled:mine.length ? null : "",onclick:exportTrail,text:"Export my trail"}),
+      mine.length > 1 ? el("button",{type:"button",class:"btn",onclick:replayTrail,text:"▶ Replay my trail"}) : null,
+      mine.length > 1 ? el("div",{}, el("span",{class:"label",text:"Reorder your stops · drag the grip or use the arrows"}),
+        el("ol",{class:"reorder"}, mine.map((id, i) => el("li",{}, el("span",{class:"grip","aria-hidden":"true",title:"Drag to reorder",text:"⠿"}), el("span",{text:short(byId(P, id))}),
+          el("button",{type:"button","aria-label":"Move "+short(byId(P, id))+" earlier",disabled:i ? null : "",onclick:()=>moveStop(i, -1),text:"↑"}),
+          el("button",{type:"button","aria-label":"Move "+short(byId(P, id))+" later",disabled:i < mine.length - 1 ? null : "",onclick:()=>moveStop(i, 1),text:"↓"}))))) : null,
+      el("button",{type:"button",class:"btn ghost",disabled:mine.length ? null : "",onclick:exportTrail,text:"Export my trail"}),
       el("div",{}, el("span",{class:"label",text:"Start again from a suggestion"}), el("div",{class:"list"}, A.metro.map(l => el("a",{href:"#",onclick:e=>{ e.preventDefault(); setTrail(l.trail.map(sid => P.find(q => q.short === sid).id)); route(true); },text:l.label})))),
       mine.length ? el("button",{type:"button",class:"btn ghost",onclick:()=>{ setTrail([]); route(true); },text:"Clear my trail"}) : null,
       el("p",{class:"mono",style:"font-size:11.5px;color:var(--night-muted)",text:"Kept in this browser only. Nothing is sent anywhere."})]};
@@ -1097,14 +1313,30 @@ function mapTime(p, params){
     const list = ppl.filter(y => y.f === k).sort((a, b) => (a.x.born || a.x.founded) - (b.x.born || b.x.founded)); if (!list.length) return;
     inner.append(el("div",{class:"grp",style:`color:${fn(k)}`}, n, el("span",{class:"mono",style:"font-size:11px;color:var(--night-muted);margin-left:8px",text:String(list.length)})));
     list.forEach(({x}) => { const start = x.born || x.founded, end = x.died || 2026; const inst = x.kind === "institution";
-      inner.append(el("div",{class:"row"}, gridL.map(g => g.cloneNode()), el("a",{class:"bar" + (inst ? " inst" : "") + (!x.died && !inst ? " living" : ""),href:personHref(x.slug),
+      inner.append(el("div",{class:"row"}, gridL.map(g => g.cloneNode()), el("a",{class:"bar" + (inst ? " inst" : "") + (!x.died && !inst ? " living" : ""),href:personHref(x.slug),"data-s":start,"data-e":end,"data-n":x.name,
         style:`left:${X(start)}%;width:${Math.max(X(end) - X(start), 4)}%;background:${fn(k)};border-color:${fn(k)}`},
         x.name, el("small",{text:x.years + (x.status === "checked" ? " ✓" : "")})))); });
   });
   body.append(inner);
+  // (6) who was alive when: drag the year line (or use the slider) and everyone alive that year lights up together
+  const out = el("output",{text:"pick a year"}), together = el("div",{class:"together","aria-live":"polite"});
+  const yearAt = clientX => { const r = inner.getBoundingClientRect(); return 1850 + (clientX - r.left) / r.width * 180; };
+  const marker = el("div",{class:"scrubline",hidden:"",title:"Drag along the timeline",onpointerdown:e => { e.preventDefault(); marker.setPointerCapture(e.pointerId); setYear(yearAt(e.clientX)); },
+    onpointermove:e => { if (marker.hasPointerCapture(e.pointerId)) setYear(yearAt(e.clientX)); }}); inner.append(marker);
+  let glide = null;
+  const place = y => { const px = X(y) / 100 * inner.clientWidth; if (glide) glide.translateX(px); else marker.style.transform = `translateX(${px}px)`; };
+  const setYear = y => { y = Math.round(Math.min(Math.max(y, 1850), 2026)); range.value = y; out.textContent = String(y); body.classList.add("scrubbing"); marker.hidden = false;
+    place(y);
+    const alive = [...inner.querySelectorAll(".bar")].filter(b => { const on = +b.dataset.s <= y && y <= +b.dataset.e; b.classList.toggle("alive", on); return on; });
+    fill(together, el("span",{style:"color:var(--night-muted)",text:`${alive.length} alive or active in ${y}:`}), alive.slice(0, 30).map(b => el("a",{href:b.getAttribute("href"),text:b.dataset.n})), alive.length > 30 ? el("span",{text:"and more"}) : null); };
+  const range = el("input",{type:"range",min:"1850",max:"2026",step:"1",value:"1950","aria-label":"Year",oninput:e => setYear(+e.target.value)});
+  const clear = el("button",{type:"button",class:"pill",onclick:()=>{ body.classList.remove("scrubbing"); marker.hidden = true; out.textContent = "pick a year"; fill(together); inner.querySelectorAll(".bar.alive").forEach(b => b.classList.remove("alive")); },text:"Clear"});
+  // the line glides to each new year instead of jumping
+  onMount(a => { if (a.createAnimatable) glide = a.createAnimatable(marker, {translateX:{unit:"px", duration:260, ease:"out(3)"}}); });
   return {full:true, main:[el("div",{style:"display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:12px"},
       el("div",{}, el("span",{class:"label",text:"Timeline · people and institutions on the roads"}), el("h2",{style:"font-size:28px;margin-top:4px",text:"Who came when, and who overlapped"})),
       el("div",{class:"pills"}, [["all","All"], ...G].map(([k, n]) => el("a",{class:"pill",href:href({g:k}),"aria-pressed":String(grp===k),text:n})))),
+    el("div",{class:"scrub"}, el("span",{text:"Who was alive in"}), range, out, clear), together,
     body,
     el("div",{class:"mapfoot"}, el("span",{text:`${ppl.length} shown · scroll for more`}), el("span",{text:"Solid = lifespan"}), el("span",{text:"Square end = living"}), el("span",{text:"Outline = institution"}),
       el("span",{text:"✓ = dates checked"}), el("span",{style:"color:oklch(0.82 0.08 85)",text:"Other dates are drafts"}))]};
@@ -1115,12 +1347,16 @@ function viewMap(params){
   const p = byId(P, params.get("p")) || (view === "tree" ? byId(P, "sensemaking-and-acting-in-uncertainty") : null);
   const r = {universe:mapUniverse, metro:mapMetro, tree:mapTree, treemap:mapTreemap, mine:mapMine, time:mapTime}[view](p, params);
   const tabHref = v => `#/map?view=${v}` + (p ? `&p=${p.id}` : "");
+  const panHost = el("div",{class:"hubmain",onpointerdown:e => { const f = e.target.closest(".scrollx"); if (!f || e.pointerType !== "mouse" || f.scrollWidth <= f.clientWidth || e.target.closest("a,button,input")) return;
+    const x0 = e.clientX, s0 = f.scrollLeft; f.style.cursor = "grabbing";
+    const mv = ev => { f.scrollLeft = s0 - (ev.clientX - x0); }, up = () => { f.style.cursor = ""; removeEventListener("pointermove", mv); removeEventListener("pointerup", up); };
+    addEventListener("pointermove", mv); addEventListener("pointerup", up); }}, r.main);
   return [el("div",{class:"hub"}, el("div",{class:"wrap"},
     el("header",{class:"top"}, el("a",{class:"brand",href:"#/",text:"Pathways into Complexity"}),
       el("nav",{class:"tabs","aria-label":"Map views"}, VIEWS.map(([k, n]) => el("a",{href:tabHref(k),"aria-current":k===view?"page":null,text:n}))),
       el("div",{class:"hubnote",text:NOTES[view]})),
-    el("div",{class:"hubgrid" + (r.full ? " full" : "")}, el("div",{class:"hubmain"}, r.main), r.full ? null : el("aside",{class:"hubside"}, r.side)),
-    el("div",{style:"display:flex;gap:16px;flex-wrap:wrap;padding:18px 0 28px;font-size:13px"}, el("a",{href:"#/",text:"← Home"}), el("a",{href:"#/wiki",text:"Wiki"}), el("a",{href:"#/path",text:"Find my work"}), el("a",{href:"#/people",text:"People"})))) ];
+    el("div",{class:"hubgrid" + (r.full ? " full" : "")}, panHost, r.full ? null : el("aside",{class:"hubside"}, r.side)),
+    el("div",{style:"display:flex;gap:16px;flex-wrap:wrap;padding:18px 0 28px;font-size:13px"}, el("a",{href:"#/",text:"← Home"}), el("a",{href:"#/wiki",text:"Wiki"}), el("a",{href:"#/path",text:"Find my work"}), el("a",{href:"#/people",text:"People"}), motionToggle()))) ];
 }
 
 // ---------------------------------------------------------------- people (16a)
@@ -1131,8 +1367,18 @@ function viewPeople(slug){
   if (!x) return viewPeople(null);
   const prof = x.profile;
   const stance = store.get(STANCE_KEY, {});
+  // (9) a small balance tips toward "their view" or "the other side" as you choose: a stance, not a winner
+  const TILT = {"Convinced":-12, "Not convinced":12, "Not sure":0};
+  const balance = deg => { const beam = s("g",{class:"beam",style:`transform:rotate(${deg}deg)`}, s("line",{x1:"12",y1:"16",x2:"98",y2:"16"}),
+      [12, 98].map(x => s("path",{d:`M${x},16 L${x - 8},30 M${x},16 L${x + 8},30 M${x - 10},30 a10,6 0 0 0 20,0 z`})));
+    let anim = null;
+    return {beam, node:el("span",{class:"balance","aria-hidden":"true"}, el("small",{text:"their view"}), s("svg",{viewBox:"0 0 110 44"}, s("path",{d:"M55,16 L48,42 H62 Z"}), beam), el("small",{text:"other side"})),
+      to:d => { const a = AN(); if (!a || !a.createAnimatable) { beam.style.transform = `rotate(${d}deg)`; return; }
+        anim = anim || a.createAnimatable(beam, {rotate:{unit:"deg", duration:900, ease:a.spring({bounce:.55, duration:900})}}); anim.rotate(d); }};
+  };
   const qBox = (q, qi) => {
     const key = x.slug + ":" + qi; const box = el("div",{class:"q"});
+    const bal = balance(TILT[store.get(STANCE_KEY, {})[key]] || 0);
     const draw = () => { const cur = store.get(STANCE_KEY, {})[key];
       fill(box, el("div",{class:"hd label",text:"On: " + q.target}),
         el("div",{class:"pair"},
@@ -1144,8 +1390,8 @@ function viewPeople(slug){
         q.more ? el("div",{class:"more"}, el("span",{class:"label",text:"Follow the debate"}), q.more.map(([t, u, n]) => el("div",{}, ext(t, u), el("small",{text:n})))) :
           !q.quote ? el("div",{class:"more"}, el("span",{class:"draft",text:"Needs citations. "}), el("span",{style:"font-size:13px;color:var(--muted)",text:"A direct quote and link for each side still to add."})) : null,
         el("div",{class:"land"}, "Where I land:", ["Convinced","Not sure","Not convinced"].map(v => el("button",{type:"button",class:"pill","aria-pressed":String(cur===v),
-          onclick:()=>{ const s0 = store.get(STANCE_KEY, {}); s0[key] = s0[key] === v ? undefined : v; store.set(STANCE_KEY, s0); draw(); },text:v})),
-          el("span",{class:"mono",style:"font-size:11px",text:"saved in this browser only"})));
+          onclick:()=>{ const s0 = store.get(STANCE_KEY, {}); s0[key] = s0[key] === v ? undefined : v; store.set(STANCE_KEY, s0); draw(); bal.to(TILT[s0[key]] || 0); },text:v})),
+          el("span",{class:"mono",style:"font-size:11px",text:"saved in this browser only"}), bal.node));
     };
     draw(); return box;
   };
@@ -1315,6 +1561,7 @@ function route(keep){
   const focusId = keep && document.activeElement ? document.activeElement.id : null;
   const y = window.scrollY;
   document.body.classList.remove("dark");
+  mounts = [];
   let nodes;
   switch (parts[0]) {
     case undefined: nodes = viewHome(); break;
@@ -1334,6 +1581,8 @@ function route(keep){
   if (keep) { window.scrollTo(0, y); if (focusId && document.getElementById(focusId)) { const f = document.getElementById(focusId); f.focus(); if (f.setSelectionRange && f.value) f.setSelectionRange(f.value.length, f.value.length); } }
   else if (key !== lastRoute || parts[0] !== "map") window.scrollTo(0, 0);
   lastRoute = key;
+  lastCtx = {fresh: !keep && location.hash !== prevHash, prev: prevHash, hash: location.hash}; prevHash = location.hash;
+  lastMounts = mounts; runMounts(mounts, lastCtx);
   const t = {wiki:parts[1] ? byId(P, parts[1])?.name : "Wiki", path:"Find my work", map:"Map", people:parts[1] ? bySlug(parts[1])?.name : "People", contribute:"Suggest a change", about:"About", orgs:"Organizations", cases:"Cases", library:"Live library"}[parts[0]];
   document.title = t ? `${t} · Pathways into Complexity` : "Pathways into Complexity";
 }

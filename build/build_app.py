@@ -17,6 +17,10 @@ for marker, value in (("__DATA__", payload),):
 out = ROOT / "dist" / "index.html"
 out.parent.mkdir(exist_ok=True)
 out.write_text(tpl)
+# Anime.js (MIT) ships beside the page and is loaded with defer; every view works without it.
+import shutil
+for f in ("anime.umd.min.js", "anime-LICENSE.md"):
+    shutil.copy(ROOT / "src" / "vendor" / f, out.parent / f)
 if "\u2014" in tpl:
     raise SystemExit("em dash found in built app")
 print(f"ok: {out} ({out.stat().st_size // 1024} KB)")

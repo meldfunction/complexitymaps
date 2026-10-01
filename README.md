@@ -2,10 +2,11 @@
 
 One source of truth, three outputs: a live web app, a linked PDF, and a map image.
 
-- **48 pathways** in 12 clusters and 4 hue families, each with a kind of path, road, mix-ins, policy lens, and engage links
-- **66 organization profiles** with public articles, talks, podcasts, and courses
-- **34 cases** with lessons, limits, and sources (41 of 48 pathways have at least one)
-- **64 people and institutions** with life dates (12 checked, the rest draft) and **6 draft profiles**
+- **50 pathways** in 12 clusters and 4 hue families, each with a kind of path, road, mix-ins, policy lens, and engage links
+- **69 organization profiles** with public articles, talks, podcasts, and courses
+- **41 cases** with lessons, limits, and sources (48 of 50 pathways have at least one)
+- **92 people and institutions** with life dates (40 checked, the rest draft) and **7 draft profiles**
+- **Every article** has a plain explainer, a lens, first steps to try, notes for five sectors, and key ideas (all Draft)
 - **7 orientations**, **levels of focus** (not rank), **2 worked journeys**, and **suggested braids**
 - **Live library**: on request, the app reads the public resource feed of the
   [Systems Change Learning Guide](https://welearnwegrow.github.io/capacities/)
@@ -26,6 +27,18 @@ One source of truth, three outputs: a live web app, a linked PDF, and a map imag
 
 Old links (`#p-…`, `#o-…`, `#c-…`, `#library`) redirect. The trail (`pathways-my-trail`), explored pathways and
 stances stay in the browser. Anything not yet checked against sources is marked **Draft** in the UI.
+
+## Motion
+
+Ten small animations explain how ideas connect, what came before what, and where you are: a feedback loop on the
+home page, roads and lineages that draw themselves, the universe zoom, metro lines drawing in, trail replay and
+drag-to-reorder, a "who was alive when" year scrubber, treemap fills, Find my work growing like a tree, and a
+"where I land" balance on profiles. They use [Anime.js](https://animejs.com) v4 (MIT), shipped beside the page as
+`dist/anime.umd.min.js` (from `src/vendor/`) and loaded with `defer`.
+
+Every view renders in its final state first, and the motion is layered on top (`onMount` in `src/app.html`).
+Nothing animates when the device asks for reduced motion, when the visitor turns motion off in the footer,
+or when the script fails to load.
 
 ## Build
 
@@ -57,6 +70,7 @@ All content lives in `build/content_*.py`:
 | `content_misc.py` | orientations, levels, braids, journeys, and page text |
 | `content_atlas.py` | redesign drafts: families, goals, tags, trades, roles, lenses, explainers, glossary |
 | `content_people.py` | life dates (with a checked/draft status and source) and draft profiles |
+| `content_depth.py` | per-pathway explainer, lens, practice steps, sector notes, and key ideas |
 
 `python3 build/compile.py -v` lists warnings: road stops with no years and pathways whose lens still falls back to its area.
 

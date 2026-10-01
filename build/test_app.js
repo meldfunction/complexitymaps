@@ -36,7 +36,7 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     }
     for (const [hash, sel, min, label] of [
         ['#/', '.door', 5, 'home doors'], ['#/', '.goal', 7, 'home goals'],
-        ['#/wiki', '.idx .cl a', 48, 'wiki index lists 48 pathways'], ['#/wiki?goal=power', '.idx .cl a', 3, 'goal filter'],
+        ['#/wiki', '.idx .cl a', 50, 'wiki index lists 50 pathways'], ['#/wiki?goal=power', '.idx .cl a', 3, 'goal filter'],
         ['#/wiki/sensemaking-and-acting-in-uncertainty', '.road li', 5, 'article road'], ['#/wiki/sensemaking-and-acting-in-uncertainty', '.localmap .node', 6, 'article local map'],
         ['#/path?start=want', '.branch', 7, 'path areas'], ['#/path?start=want&area=care&trade=teach', '.branch', 3, 'path pathways'],
         ['#/path?start=want&area=care&trade=teach&p=experiential-learning-and-reflective-practice', '.where .card', 3, 'where this work happens'],
@@ -79,6 +79,29 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     check(g2.length === 1, `[${mode}] opening the Live library page triggers one request`);
     if (mode==='live') check(await q.locator('.grid .r').count() === 3, `[${mode}] library shows results after the triggered load`);
     await q.close();
+    if (mode==='live') {
+      // motion: Anime.js loads beside the page; animations run, and every view also works with motion off
+      await p.setViewportSize({width:1280,height:900}); await go(p, '#/'); await p.waitForTimeout(300);
+      check(await p.evaluate(() => !!(window.anime && window.anime.animate)), 'motion: Anime.js loaded from dist');
+      await p.click('.loop button'); await p.waitForTimeout(3600);
+      check(await p.evaluate(() => document.querySelectorAll('.loop .lnode.moved').length) === 4, 'motion: feedback loop runs to the end');
+      await go(p, '#/map?view=time'); await p.locator('.scrub input').fill('1950'); await p.waitForTimeout(150);
+      check(/alive or active in 1950/.test(await p.textContent('.together')), 'motion: year scrubber lists who was alive');
+      await p.evaluate(() => localStorage.setItem('pathways-my-trail', JSON.stringify(['power-analysis','service-design'])));
+      await go(p, '#/map?view=mine'); await p.click('.reorder li:nth-child(1) button[aria-label*="later"]'); await p.waitForTimeout(150);
+      check(await p.evaluate(() => JSON.parse(localStorage.getItem('pathways-my-trail'))[0]) === 'service-design', 'motion: reorder buttons move a stop');
+      await go(p, '#/'); await p.click('.motiontoggle'); await p.waitForTimeout(150);
+      check((await p.textContent('.motiontoggle')).includes('off'), 'motion: footer toggle turns motion off');
+      await go(p, '#/map?view=metro'); await p.waitForTimeout(300);
+      check(await p.evaluate(() => document.querySelector('.mline').getAttribute('stroke-dasharray')) === null, 'motion off: metro lines are drawn in full at once');
+      await p.evaluate(() => localStorage.removeItem('pathways-motion'));
+      const rc = await b.newContext({reducedMotion:'reduce'}); const r = await rc.newPage(); const rerr = []; r.on('pageerror', e => rerr.push(e.message));
+      await r.route('https://fonts.googleapis.com/**', x=>x.abort());
+      await r.goto(FILE + '#/wiki/power-analysis'); await r.waitForTimeout(500);
+      await r.evaluate(() => document.querySelector('.road').scrollIntoView()); await r.waitForTimeout(100);
+      check(await r.evaluate(() => getComputedStyle(document.querySelector('.road li')).opacity) === '1' && (await r.textContent('.motiontoggle')).includes('reduced'), 'reduced motion: road shows at once, toggle says why');
+      check(rerr.length === 0, 'reduced motion: no page errors'); await rc.close();
+    }
     check(errs.length === 0, `[${mode}] no page errors ${errs.join(' | ')}`);
     await p.close();
   }
