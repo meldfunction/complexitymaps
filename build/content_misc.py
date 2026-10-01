@@ -92,5 +92,16 @@ JOURNEYS = [
 ABOUT = dict(
     title="Pathways into Complexity",
     lede="Lineages, practices, and methods for working in complex systems, with cases, organizations, and live resources from the Systems Change Learning Guide.",
+    # About page intro (owner's words, 2026-10-01; the mission line and the "use this site to" list were filled in
+    # from existing site copy and are marked for the owner to confirm)
+    intro="We're launching a learning tool about complexity, its history, the thinkers behind it, and new ways for you to start to see complexity in your daily life.",
+    mission=["Make the ideas and practices for complex work easy to find, understand and use, for anyone, whatever work they do.",
+             "Show where those ideas came from, and the people and traditions who shaped them.",
+             "Help you notice complexity in your own work and life, and take a first small step."],
+    thanks="We give thanks and acknowledgment to Nora Bateson and others who have lit the path and inspire us to keep walking.",
+    use=["Look up an idea, a method or a thinker in plain English.",
+         "Find a path into the work you do now, or the work you want to do.",
+         "See how ideas connect on the maps, and build your own trail.",
+         "Tell us what's wrong or missing, so the guide gets better."],
     worker="https://capacities.jayajohnyramchandani.workers.dev/",
 )
