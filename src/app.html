@@ -678,11 +678,20 @@ const hashParams = h => new URLSearchParams((h || "").split("?")[1] || "");
 const hashPath = h => (h || "").replace(/^#\/?/, "").split("?")[0];
 // play when scrolled into view; prepare() sets the hidden start state only if the node is still off screen
 let observers = [];
+// Nothing is hidden until the visitor has scrolled once, so full-page screenshots, link previews and
+// readers that never scroll always see every item.
+let hasScrolled = false;
+addEventListener("scroll", () => { hasScrolled = true; }, {passive:true, once:true});
 function whenVisible(node, prepare, play){
-  const r = node.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) return play();
-  prepare();
-  const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); play(); } }, {rootMargin:"0px 0px -8% 0px"});
-  io.observe(node); observers.push(io);
+  const onScreen = () => { const r = node.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; };
+  if (onScreen()) return play();
+  const arm = () => {
+    if (!node.isConnected || onScreen()) return;
+    prepare();
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); play(); } }, {rootMargin:"0px 0px -8% 0px"});
+    io.observe(node); observers.push(io);
+  };
+  if (hasScrolled) arm(); else addEventListener("scroll", arm, {passive:true, once:true});
 }
 
 // ---------------------------------------------------------------- search

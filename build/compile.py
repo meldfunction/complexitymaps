@@ -12,6 +12,10 @@ from content_cases import CASES
 from content_misc import ORIENTATIONS, LEVELS, BRAIDS, JOURNEYS, ABOUT
 import content_atlas as A
 from content_people import PEOPLE, PROFILES
+try:
+    from content_people import NOT_PEOPLE
+except ImportError:
+    NOT_PEOPLE = []
 from content_depth import D as DEPTH
 
 errors = []
@@ -109,7 +113,7 @@ for p in pathways:
         name, note = (m.group(1), m.group(2)) if m else (raw, "")
         who = find_people(name)
         stops.append(dict(name=name, note=note, years="; ".join(w["years"] for w in who), people=[w["name"] for w in who]))
-        if not who and re.match(r"^[A-Z][a-z]+ [A-Z]", name) and len(name) < 40:
+        if not who and not any(name.startswith(x) for x in NOT_PEOPLE) and re.match(r"^[A-Z][a-z]+ [A-Z]", name) and len(name) < 40:
             warnings.append(f"road stop with no years: {name} ({p['short']})")
     p["stops"] = stops
     if p["lens_status"] != "draft": warnings.append(f"lens falls back to cluster: {p['short']}")

@@ -887,7 +887,9 @@
    "gtdf",
    "perspectiva"
   ],
-  "cases": [],
+  "cases": [
+   "wales-future-generations"
+  ],
   "gov": false,
   "reading": [],
   "short": "meta",
@@ -1703,9 +1705,10 @@
    {
     "name": "Kees Boeke and Gerard Endenburg",
     "note": "†2025, sociocracy",
-    "years": "1933–2025",
+    "years": "1933–2025; 1884–1966",
     "people": [
-     "Gerard Endenburg"
+     "Gerard Endenburg",
+     "Kees Boeke"
     ]
    },
    {
@@ -1959,8 +1962,10 @@
    {
     "name": "Harrison Owen",
     "note": "Open Space",
-    "years": "",
-    "people": []
+    "years": "1935–2024",
+    "people": [
+     "Harrison Owen"
+    ]
    },
    {
     "name": "Juanita Brown and David Isaacs",
@@ -3267,8 +3272,10 @@
    {
     "name": "Daniel Aldrich",
     "note": "social capital in recovery",
-    "years": "",
-    "people": []
+    "years": "b. 1974",
+    "people": [
+     "Daniel Aldrich"
+    ]
    },
    {
     "name": "Dean Spade",
@@ -3493,7 +3500,8 @@
    "plymouth",
    "hls-cases",
    "legible",
-   "kerala"
+   "kerala",
+   "wales-future-generations"
   ],
   "gov": true,
   "reading": [],
@@ -3862,8 +3870,10 @@
    {
     "name": "Kate Raworth",
     "note": "Doughnut Economics",
-    "years": "",
-    "people": []
+    "years": "b. 1970",
+    "people": [
+     "Kate Raworth"
+    ]
    }
   ]
  },
@@ -4116,8 +4126,10 @@
    {
     "name": "Jeremy Hope and Robin Fraser",
     "note": "Beyond Budgeting",
-    "years": "",
-    "people": []
+    "years": "d. 2011",
+    "people": [
+     "Jeremy Hope"
+    ]
    },
    {
     "name": "Bjarte Bogsnes",
@@ -5184,8 +5196,10 @@
    {
     "name": "Arturo Escobar",
     "note": "Designs for the Pluriverse",
-    "years": "",
-    "people": []
+    "years": "b. 1951",
+    "people": [
+     "Arturo Escobar"
+    ]
    }
   ]
  },
@@ -5398,8 +5412,10 @@
    {
     "name": "Helsinki Design Lab",
     "note": "Sitra, Bryan Boyer, Dan Hill) and MindLab (Christian Bason",
-    "years": "",
-    "people": []
+    "years": "founded 2009",
+    "people": [
+     "Helsinki Design Lab"
+    ]
    },
    {
     "name": "Policy Lab UK and La 27e Région",
@@ -5532,8 +5548,10 @@
    {
     "name": "Don Berwick and IHI",
     "note": "PDSA cycles",
-    "years": "",
-    "people": []
+    "years": "b. 1946",
+    "people": [
+     "Don Berwick"
+    ]
    },
    {
     "name": "Agile",
@@ -5916,7 +5934,8 @@
    "infed"
   ],
   "cases": [
-   "outward-bound"
+   "outward-bound",
+   "finland-phenomena"
   ],
   "gov": false,
   "reading": [],
@@ -6122,8 +6141,10 @@
    {
     "name": "Edward Taylor and Patricia Cranton",
     "note": "",
-    "years": "",
-    "people": []
+    "years": "d. 2016",
+    "people": [
+     "Patricia Cranton"
+    ]
    },
    {
     "name": "Jan Meyer and Ray Land",
@@ -6567,7 +6588,9 @@
    "idg",
    "sclg"
   ],
-  "cases": [],
+  "cases": [
+   "finland-phenomena"
+  ],
   "gov": false,
   "reading": [],
   "short": "cxedu",

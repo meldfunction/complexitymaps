@@ -1929,5 +1929,166 @@
    ],
    "status": "draft"
   }
+ },
+ {
+  "name": "Stuart Hall",
+  "years": "1932–2014",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Stuart_Hall_%28cultural_theorist%29",
+  "slug": "stuart-hall",
+  "appears": [],
+  "born": 1932,
+  "died": 2014,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Karl von Frisch",
+  "years": "1886–1982",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Karl_von_Frisch",
+  "slug": "karl-von-frisch",
+  "appears": [],
+  "born": 1886,
+  "died": 1982,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Kees Boeke",
+  "years": "1884–1966",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Kees_Boeke",
+  "slug": "kees-boeke",
+  "appears": [
+   "governance-and-self-organizing-structures"
+  ],
+  "born": 1884,
+  "died": 1966,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Daniel Aldrich",
+  "years": "b. 1974",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Daniel_P._Aldrich",
+  "slug": "daniel-aldrich",
+  "appears": [
+   "crisis-disaster-and-high-reliability"
+  ],
+  "born": 1974,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Kate Raworth",
+  "years": "b. 1970",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Kate_Raworth",
+  "slug": "kate-raworth",
+  "appears": [
+   "complexity-economics-and-new-economic-models"
+  ],
+  "born": 1970,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Arturo Escobar",
+  "years": "b. 1951",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Arturo_Escobar_%28anthropologist%29",
+  "slug": "arturo-escobar",
+  "appears": [
+   "participatory-design-and-design-justice"
+  ],
+  "born": 1951,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Don Berwick",
+  "years": "b. 1946",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Donald_Berwick",
+  "slug": "don-berwick",
+  "appears": [
+   "improvement-and-adaptive-management"
+  ],
+  "born": 1946,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Helsinki Design Lab",
+  "years": "founded 2009",
+  "kind": "institution",
+  "status": "checked",
+  "src": "https://www.helsinkidesignlab.org",
+  "slug": "helsinki-design-lab",
+  "appears": [
+   "strategic-design-and-policy-labs"
+  ],
+  "born": null,
+  "died": null,
+  "founded": 2009,
+  "profile": null
+ },
+ {
+  "name": "Harrison Owen",
+  "years": "1935–2024",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://openspaceworld.org/wp2/remembering-harrison-owen/",
+  "slug": "harrison-owen",
+  "appears": [
+   "hosting-and-participatory-practice"
+  ],
+  "born": 1935,
+  "died": 2024,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jeremy Hope",
+  "years": "d. 2011",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.thecfocoach.jp/blog/beyond_budgeting",
+  "slug": "jeremy-hope",
+  "appears": [
+   "funding-and-budgeting-for-adaptation"
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Patricia Cranton",
+  "years": "d. 2016",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.gg.ca/en/honours/recipients/146-4652",
+  "slug": "patricia-cranton",
+  "appears": [
+   "transformative-learning"
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
  }
 ]

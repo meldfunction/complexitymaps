@@ -286,4 +286,20 @@ CASES = [
          pathways=["Indigenous", "Relational"],
          sources=[S("Te Awa Tupua (Whanganui River Claims Settlement) Act 2017", "https://legislation.govt.nz/act/public/2017/7/en/latest/"),
                   S("Whanganui District Council: Te Awa Tupua", "https://whanganui.govt.nz/About-Whanganui/Our-District/Te-Awa-Tupua-Whanganui-River-Settlement")]),
+    # ---- added 2026-10-01 for the last two gaps; sources link-checked that day
+    dict(id="finland-phenomena", title="Phenomenon-based learning in Finland's core curriculum", place="Finland", years="2016 onward",
+         summary="Finland's national curriculum, in force from 2016, requires every school to run at least one multidisciplinary learning module each year, where pupils help plan and study a real theme across subject boundaries, alongside transversal competences.",
+         lesson="An education system can build in time to study whole, real-world problems without abandoning subjects.",
+         note="Early media reports that Finland had scrapped subjects were wrong; how deeply schools use the modules varies.",
+         pathways=["Complexity and education", "Experiential learning"],
+         sources=[S("Finnish National Agency for Education: New national core curriculum for basic education (PDF)", "https://www.oph.fi/sites/default/files/documents/new-national-core-curriculum-for-basic-education.pdf"),
+                  S("Phenomenon-based learning in Finland: a critical overview (Cogent Education, 2024)", "https://www.tandfonline.com/doi/full/10.1080/2331186X.2024.2309733")]),
+    dict(id="wales-future-generations", title="Well-being of Future Generations Act", place="Wales", years="2015 onward",
+         summary="Wales made long-term thinking a legal duty: public bodies must pursue seven linked well-being goals using five ways of working (long term, prevention, integration, collaboration, involvement), overseen by a Future Generations Commissioner.",
+         lesson="Treating environmental, social and cultural crises as one pattern can be written into law, so that decisions are judged against the long term and against each other.",
+         note="How far it changes real decisions is debated, and its duties are hard to enforce in court.",
+         pathways=["The metacrisis", "Public policy"],
+         sources=[S("Well-being of Future Generations (Wales) Act 2015 (legislation.gov.uk)", "https://www.legislation.gov.uk/anaw/2015/2/contents"),
+                  S("Well-being of Future Generations (Wales) Act 2015 (Wikipedia)", "https://en.wikipedia.org/wiki/Well-being_of_Future_Generations_(Wales)_Act_2015")]),
 ]
+

@@ -381,3 +381,27 @@ PROFILES = {'Jesper Hoffmeyer': {'known': 'Danish biochemist at the University o
                    'ask': ['Do her principles hold at the scale of the climate?',
                            'Which commons do you share, and who makes its rules?'],
                    'status': 'draft'}}
+
+# ---- added 2026-10-01 (second pass): dates confirmed on Wikipedia, plus HDL's own site
+PEOPLE += [
+    dict(name='Stuart Hall', years='1932–2014', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Stuart_Hall_%28cultural_theorist%29'),
+    dict(name='Karl von Frisch', years='1886–1982', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Karl_von_Frisch'),
+    dict(name='Kees Boeke', years='1884–1966', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Kees_Boeke'),
+    dict(name='Daniel Aldrich', years='b. 1974', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Daniel_P._Aldrich'),
+    dict(name='Kate Raworth', years='b. 1970', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Kate_Raworth'),
+    dict(name='Arturo Escobar', years='b. 1951', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Arturo_Escobar_%28anthropologist%29'),
+    dict(name='Don Berwick', years='b. 1946', kind="person", status="checked", src='https://en.wikipedia.org/wiki/Donald_Berwick'),
+    dict(name="Helsinki Design Lab", years="founded 2009", kind="institution", status="checked", src="https://www.helsinkidesignlab.org"),
+]
+
+# Road stops that are works, programs or organizations rather than people: they need no life dates.
+NOT_PEOPLE = ["An Ecology of Mind", "Small Arcs of Larger Circles", "Warm Data Labs", "Liberating Structures", "Narrative Initiative",
+              "Collective Impact Forum", "Policy Lab UK", "Dark Matter Labs", "Inner Development Goals"]
+
+# ---- deaths found 2026-10-01 for road stops that had no dates. Owen's dates are confirmed by two memorials;
+# Hope and Cranton are confirmed deceased by the linked pages, but the year comes from obituary search results (draft).
+PEOPLE += [
+    dict(name="Harrison Owen", years="1935–2024", kind="person", status="checked", src="https://openspaceworld.org/wp2/remembering-harrison-owen/"),
+    dict(name="Jeremy Hope", years="d. 2011", kind="person", status="draft", src="https://www.thecfocoach.jp/blog/beyond_budgeting"),
+    dict(name="Patricia Cranton", years="d. 2016", kind="person", status="draft", src="https://www.gg.ca/en/honours/recipients/146-4652"),
+]

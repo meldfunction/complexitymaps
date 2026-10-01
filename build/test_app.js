@@ -95,6 +95,14 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       await go(p, '#/map?view=metro'); await p.waitForTimeout(300);
       check(await p.evaluate(() => document.querySelector('.mline').getAttribute('stroke-dasharray')) === null, 'motion off: metro lines are drawn in full at once');
       await p.evaluate(() => localStorage.removeItem('pathways-motion'));
+      // motion on, never scrolled (full-page screenshots, link previews): the road must still be visible
+      const sc = await b.newContext({viewport:{width:1280,height:700}}); const sp = await sc.newPage();
+      await sp.route('https://fonts.googleapis.com/**', x=>x.abort());
+      await sp.goto(FILE + '#/wiki/biosemiotics-and-the-umwelt'); await sp.waitForTimeout(1200);
+      check(await sp.evaluate(() => [...document.querySelectorAll('.road li')].every(l => getComputedStyle(l).opacity === '1')), 'motion: road names show without scrolling');
+      await sp.evaluate(() => window.scrollTo(0, document.querySelector('.road').getBoundingClientRect().top + scrollY - 200)); await sp.waitForTimeout(1500);
+      check(await sp.evaluate(() => [...document.querySelectorAll('.road li')].every(l => getComputedStyle(l).opacity === '1')), 'motion: road names show after scrolling to them');
+      await sc.close();
       const rc = await b.newContext({reducedMotion:'reduce'}); const r = await rc.newPage(); const rerr = []; r.on('pageerror', e => rerr.push(e.message));
       await r.route('https://fonts.googleapis.com/**', x=>x.abort());
       await r.goto(FILE + '#/wiki/power-analysis'); await r.waitForTimeout(500);
