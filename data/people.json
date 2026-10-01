@@ -286,7 +286,80 @@
   "born": 1864,
   "died": 1944,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Baltic German biologist who gave us the Umwelt: each creature lives in its own world, made of the signs it can sense and act on.",
+   "timeline": [
+    [
+     1864,
+     "Born in Keblaste, in what is now Estonia"
+    ],
+    [
+     1909,
+     "Publishes Umwelt und Innenwelt der Tiere (The Environment and Inner World of Animals)"
+    ],
+    [
+     1926,
+     "Founds the Institute for Umwelt Research at the University of Hamburg"
+    ],
+    [
+     1934,
+     "Publishes A Foray into the Worlds of Animals and Humans, with its famous tick"
+    ],
+    [
+     1944,
+     "Dies on Capri"
+    ]
+   ],
+   "ideas": [
+    [
+     "Umwelt",
+     "The world as one organism experiences it: only the things it can sense and act on. A tick lives in a world of three signs: butyric acid, warmth and hair."
+    ],
+    [
+     "Functional circle",
+     "Perceiving and acting form a loop between an organism and the things around it, close to what cybernetics later called feedback."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Animals as machines",
+     "claim": "Animals are subjects with their own worlds, not machines reacting to stimuli.",
+     "who": "Behaviourists and mechanistic physiologists of his time",
+     "other": "Talk of an animal's inner world cannot be tested; science should describe only behaviour.",
+     "what": "The view, going back to Descartes and strong in early twentieth-century physiology and behaviourism, that animals are complex mechanisms: a stimulus goes in, a response comes out, and there is no need to talk about what the animal experiences or what anything means to it."
+    },
+    {
+     "target": "His own politics",
+     "claim": "Historians note that his holism was tied to anti-democratic views and, briefly, to sympathy with the early Nazi state, which he later distanced himself from.",
+     "who": "Historians of science such as Anne Harrington (Reenchanted Science, 1996)",
+     "other": "Admirers argue the biology stands apart from the politics and has been taken up by people of every persuasion.",
+     "what": "This is a critique of Uexküll himself rather than of an idea. His holistic biology pictured the state as an organism whose parts should each keep to their function, a picture he used to argue against parliamentary democracy. In the early 1930s he briefly expressed sympathy for the new Nazi state."
+    }
+   ],
+   "sources": [
+    [
+     "A Foray into the Worlds of Animals and Humans (1934; English 2010)",
+     "Short and illustrated",
+     "https://www.upress.umn.edu/9780816659005/a-foray-into-the-worlds-of-animals-and-humans/"
+    ],
+    [
+     "Umwelt (overview)",
+     "Background on the concept",
+     "https://en.wikipedia.org/wiki/Umwelt"
+    ]
+   ],
+   "ask": [
+    "What does your workplace look like in the Umwelt of someone who uses it?",
+    "Which signs do you not notice that others depend on?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Thomas Sebeok",
@@ -473,7 +546,80 @@
   "born": 1839,
   "died": 1914,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "American philosopher and scientist. Founded pragmatism and the modern theory of signs.",
+   "timeline": [
+    [
+     1839,
+     "Born in Cambridge, Massachusetts"
+    ],
+    [
+     1859,
+     "Begins three decades of work for the US Coast Survey"
+    ],
+    [
+     1867,
+     "Publishes On a New List of Categories, the root of his sign theory"
+    ],
+    [
+     1878,
+     "Publishes How to Make Our Ideas Clear, a founding text of pragmatism"
+    ],
+    [
+     1914,
+     "Dies in Milford, Pennsylvania, poor and largely unpublished"
+    ]
+   ],
+   "ideas": [
+    [
+     "Icon, index, symbol",
+     "Signs work by resemblance (a map), by real connection (smoke means fire) or by convention (a word)."
+    ],
+    [
+     "Semiosis",
+     "Meaning is a three-way process between a sign, what it stands for and the interpretation it produces, which is itself a new sign."
+    ],
+    [
+     "Abduction",
+     "Reasoning to the best guess: forming a hypothesis that would explain a surprise."
+    ],
+    [
+     "Fallibilism",
+     "Any belief might be wrong, so inquiry never closes."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Two-part theories of the sign",
+     "claim": "A sign is not just a word and a meaning: interpretation is a third part, and it keeps going.",
+     "who": "Followers of Saussure's signifier and signified",
+     "other": "A two-part model is simpler and was more useful for studying language as a system.",
+     "what": "Ferdinand de Saussure's model of the sign has two sides: the signifier (a sound or written form) and the signified (the concept it calls up), joined by convention within a language. It became the basis of structuralism in linguistics, anthropology and cultural studies."
+    }
+   ],
+   "sources": [
+    [
+     "Peirce's theory of signs (Stanford Encyclopedia of Philosophy)",
+     "Clear overview",
+     "https://plato.stanford.edu/entries/peirce-semiotics/"
+    ],
+    [
+     "How to Make Our Ideas Clear (1878)",
+     "Short essay"
+    ]
+   ],
+   "ask": [
+    "Which signs in your work are icons, which indexes, which symbols?",
+    "Where are you using abduction without calling it that?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Charles_Sanders_Peirce"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Ferdinand de Saussure",
@@ -539,7 +685,8 @@
   "name": "Norbert Wiener",
   "years": "1894–1964",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Norbert_Wiener",
   "slug": "norbert-wiener",
   "appears": [
    "cybernetics-the-shared-foundation"
@@ -553,7 +700,8 @@
   "name": "W. Ross Ashby",
   "years": "1903–1972",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/W._Ross_Ashby",
   "slug": "w-ross-ashby",
   "appears": [
    "cybernetics-the-shared-foundation",
@@ -569,7 +717,8 @@
   "name": "Heinz von Foerster",
   "years": "1911–2002",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Heinz_von_Foerster",
   "slug": "heinz-von-foerster",
   "appears": [
    "cybernetics-the-shared-foundation"
@@ -583,7 +732,8 @@
   "name": "Gordon Pask",
   "years": "1928–1996",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Gordon_Pask",
   "slug": "gordon-pask",
   "appears": [
    "cybernetics-the-shared-foundation"
@@ -597,7 +747,8 @@
   "name": "Stafford Beer",
   "years": "1926–2002",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Stafford_Beer",
   "slug": "stafford-beer",
   "appears": [
    "cybernetics-the-shared-foundation",
@@ -612,7 +763,8 @@
   "name": "Ilya Prigogine",
   "years": "1917–2003",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ilya_Prigogine",
   "slug": "ilya-prigogine",
   "appears": [
    "the-formal-science-of-complex-systems"
@@ -626,7 +778,8 @@
   "name": "Santa Fe Institute",
   "years": "founded 1984",
   "kind": "institution",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Santa_Fe_Institute",
   "slug": "santa-fe-institute",
   "appears": [
    "the-formal-science-of-complex-systems"
@@ -654,7 +807,8 @@
   "name": "Gregory Bateson",
   "years": "1904–1980",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Gregory_Bateson",
   "slug": "gregory-bateson",
   "appears": [
    "cybernetics-the-shared-foundation",
@@ -747,7 +901,8 @@
   "name": "Margaret Mead",
   "years": "1901–1978",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Margaret_Mead",
   "slug": "margaret-mead",
   "appears": [
    "cybernetics-the-shared-foundation"
@@ -776,7 +931,8 @@
   "name": "Dave Snowden",
   "years": "b. 1954",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Dave_Snowden",
   "slug": "dave-snowden",
   "appears": [
    "sensemaking-and-acting-in-uncertainty"
@@ -867,7 +1023,8 @@
   "name": "Kurt Lewin",
   "years": "1890–1947",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Kurt_Lewin",
   "slug": "kurt-lewin",
   "appears": [
    "presencing-theory-u-and-social-presencing-theater",
@@ -884,7 +1041,8 @@
   "name": "Paulo Freire",
   "years": "1921–1997",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Paulo_Freire",
   "slug": "paulo-freire",
   "appears": [
    "power-analysis",
@@ -963,7 +1121,8 @@
   "name": "Myles Horton",
   "years": "1905–1990",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Myles_Horton",
   "slug": "myles-horton",
   "appears": [
    "critical-and-popular-education"
@@ -977,7 +1136,8 @@
   "name": "bell hooks",
   "years": "1952–2021",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Bell_hooks",
   "slug": "bell-hooks",
   "appears": [
    "critical-and-popular-education"
@@ -991,7 +1151,8 @@
   "name": "John Dewey",
   "years": "1859–1952",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/John_Dewey",
   "slug": "john-dewey",
   "appears": [
    "experiential-learning-and-reflective-practice"
@@ -1005,7 +1166,8 @@
   "name": "David Kolb",
   "years": "b. 1939",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/David_Kolb",
   "slug": "david-kolb",
   "appears": [
    "experiential-learning-and-reflective-practice"
@@ -1019,7 +1181,8 @@
   "name": "Donald Schön",
   "years": "1930–1997",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Donald_Sch%C3%B6n",
   "slug": "donald-sch-n",
   "appears": [
    "presencing-theory-u-and-social-presencing-theater",
@@ -1035,7 +1198,8 @@
   "name": "Chris Argyris",
   "years": "1923–2013",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Chris_Argyris",
   "slug": "chris-argyris",
   "appears": [
    "presencing-theory-u-and-social-presencing-theater",
@@ -1051,7 +1215,8 @@
   "name": "Jack Mezirow",
   "years": "1923–2014",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jack_Mezirow",
   "slug": "jack-mezirow",
   "appears": [
    "transformative-learning"
@@ -1081,7 +1246,8 @@
   "name": "Jean Piaget",
   "years": "1896–1980",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jean_Piaget",
   "slug": "jean-piaget",
   "appears": [
    "adult-development-and-immunity-to-change"
@@ -1095,7 +1261,8 @@
   "name": "Jean Lave",
   "years": "b. 1939",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Jean_Lave",
   "slug": "jean-lave",
   "appears": [
    "communities-of-practice-and-action-learning"
@@ -1109,7 +1276,8 @@
   "name": "Etienne Wenger",
   "years": "b. 1952",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/%C3%89tienne_Wenger",
   "slug": "etienne-wenger",
   "appears": [
    "communities-of-practice-and-action-learning"
@@ -1123,7 +1291,8 @@
   "name": "Reg Revans",
   "years": "1907–2003",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Reg_Revans",
   "slug": "reg-revans",
   "appears": [
    "communities-of-practice-and-action-learning"
@@ -1137,7 +1306,8 @@
   "name": "Wilfred Bion",
   "years": "1897–1979",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Wilfred_Bion",
   "slug": "wilfred-bion",
   "appears": [
    "group-relations"
@@ -1151,7 +1321,8 @@
   "name": "David Bohm",
   "years": "1917–1992",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/David_Bohm",
   "slug": "david-bohm",
   "appears": [
    "presencing-theory-u-and-social-presencing-theater",
@@ -1167,7 +1338,8 @@
   "name": "Otto Scharmer",
   "years": "b. 1961",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Otto_Scharmer",
   "slug": "otto-scharmer",
   "appears": [
    "nora-bateson-and-warm-data",
@@ -1183,7 +1355,8 @@
   "name": "Peter Senge",
   "years": "b. 1947",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Peter_Senge",
   "slug": "peter-senge",
   "appears": [
    "presencing-theory-u-and-social-presencing-theater",
@@ -1198,7 +1371,8 @@
   "name": "Horst Rittel",
   "years": "1930–1990",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Horst_Rittel",
   "slug": "horst-rittel",
   "appears": [
    "public-policy-and-government-innovation",
@@ -1214,7 +1388,8 @@
   "name": "Herbert Simon",
   "years": "1916–2001",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Herbert_A._Simon",
   "slug": "herbert-simon",
   "appears": [
    "complexity-economics-and-new-economic-models",
@@ -1245,7 +1420,8 @@
   "name": "Elinor Ostrom",
   "years": "1933–2012",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Elinor_Ostrom",
   "slug": "elinor-ostrom",
   "appears": [
    "indigenous-and-land-based-knowledge",
@@ -1321,7 +1497,8 @@
   "name": "Donella Meadows",
   "years": "1941–2001",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Donella_Meadows",
   "slug": "donella-meadows",
   "appears": [
    "living-systems-and-regeneration",
@@ -1415,7 +1592,8 @@
   "name": "Grace Lee Boggs",
   "years": "1915–2015",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Grace_Lee_Boggs",
   "slug": "grace-lee-boggs",
   "appears": [
    "emergence-in-movements-and-social-change",
@@ -1430,7 +1608,8 @@
   "name": "Octavia Butler",
   "years": "1947–2006",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Octavia_E._Butler",
   "slug": "octavia-butler",
   "appears": [
    "emergence-in-movements-and-social-change"
@@ -1444,7 +1623,8 @@
   "name": "Arnold van Gennep",
   "years": "1873–1957",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Arnold_van_Gennep",
   "slug": "arnold-van-gennep",
   "appears": [
    "ritual-liminality-and-transition"
@@ -1458,7 +1638,8 @@
   "name": "Victor Turner",
   "years": "1920–1983",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Victor_Turner",
   "slug": "victor-turner",
   "appears": [
    "ritual-liminality-and-transition"
@@ -1472,7 +1653,8 @@
   "name": "Enrico Quarantelli",
   "years": "1924–2017",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Enrico_Quarantelli",
   "slug": "enrico-quarantelli",
   "appears": [
    "crisis-disaster-and-high-reliability"
@@ -1486,7 +1668,8 @@
   "name": "W. Edwards Deming",
   "years": "1900–1993",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/W._Edwards_Deming",
   "slug": "w-edwards-deming",
   "appears": [
    "measurement-and-accountability",
@@ -1502,7 +1685,8 @@
   "name": "Michael Quinn Patton",
   "years": "b. 1945",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Michael_Quinn_Patton",
   "slug": "michael-quinn-patton",
   "appears": [
    "developmental-evaluation"
@@ -1516,7 +1700,8 @@
   "name": "Orlando Fals-Borda",
   "years": "1925–2008",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Orlando_Fals_Borda",
   "slug": "orlando-fals-borda",
   "appears": [
    "action-research",
@@ -1531,7 +1716,8 @@
   "name": "Vine Deloria Jr.",
   "years": "1933–2005",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Vine_Deloria_Jr.",
   "slug": "vine-deloria-jr",
   "appears": [
    "indigenous-and-land-based-knowledge"
@@ -1545,7 +1731,8 @@
   "name": "Robin Wall Kimmerer",
   "years": "b. 1953",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Robin_Wall_Kimmerer",
   "slug": "robin-wall-kimmerer",
   "appears": [
    "indigenous-and-land-based-knowledge"
@@ -1575,7 +1762,8 @@
   "name": "Iain McGilchrist",
   "years": "b. 1953",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Iain_McGilchrist",
   "slug": "iain-mcgilchrist",
   "appears": [
    "the-metacrisis-and-meaning"
@@ -1604,7 +1792,8 @@
   "name": "John Paul Lederach",
   "years": "b. 1955",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/John_Paul_Lederach",
   "slug": "john-paul-lederach",
   "appears": [
    "conflict-transformation"
@@ -1633,7 +1822,8 @@
   "name": "Clayton Christensen",
   "years": "1952–2020",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Clayton_Christensen",
   "slug": "clayton-christensen",
   "appears": [
    "corporate-innovation-and-renewal"
@@ -1647,7 +1837,8 @@
   "name": "Henry Chesbrough",
   "years": "b. 1956",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Henry_Chesbrough",
   "slug": "henry-chesbrough",
   "appears": [
    "corporate-innovation-and-renewal"
@@ -1675,7 +1866,8 @@
   "name": "Donald Campbell",
   "years": "1916–1996",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Donald_T._Campbell",
   "slug": "donald-campbell",
   "appears": [
    "measurement-and-accountability"
@@ -1689,7 +1881,8 @@
   "name": "Pierre Wack",
   "years": "1922–1997",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Pierre_Wack",
   "slug": "pierre-wack",
   "appears": [
    "strategy-under-uncertainty"
@@ -1703,7 +1896,8 @@
   "name": "Nassim Nicholas Taleb",
   "years": "b. 1960",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb",
   "slug": "nassim-nicholas-taleb",
   "appears": [
    "strategy-under-uncertainty"
@@ -1747,7 +1941,8 @@
   "name": "Wilhelm Reich",
   "years": "1897–1957",
   "kind": "person",
-  "status": "draft",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Wilhelm_Reich",
   "slug": "wilhelm-reich",
   "appears": [
    "somatic-and-embodied-practice"
@@ -1939,6 +2134,58 @@
    ],
    "status": "draft"
   }
+ },
+ {
+  "name": "Hilary Cottam",
+  "years": "b. 1965",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Hilary_Cottam",
+  "slug": "hilary-cottam",
+  "appears": [
+   "narrative-change",
+   "public-policy-and-government-innovation",
+   "government-plumbing"
+  ],
+  "born": 1965,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Humberto Maturana",
+  "years": "1928–2021",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Humberto_Maturana",
+  "slug": "humberto-maturana",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "living-systems-and-regeneration",
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1928,
+  "died": 2021,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Francisco Varela",
+  "years": "1946–2001",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Francisco_Varela",
+  "slug": "francisco-varela",
+  "appears": [
+   "cybernetics-the-shared-foundation",
+   "presencing-theory-u-and-social-presencing-theater",
+   "living-systems-and-regeneration",
+   "biosemiotics-and-the-umwelt"
+  ],
+  "born": 1946,
+  "died": 2001,
+  "founded": null,
+  "profile": null
  },
  {
   "name": "Stuart Hall",
