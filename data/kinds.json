@@ -1,0 +1,30 @@
+[
+ {
+  "name": "Lineage",
+  "desc": "A body of ideas that changes how you understand systems. It informs action without prescribing it."
+ },
+ {
+  "name": "Practice",
+  "desc": "A way of being together that shifts perception and relationship. It works indirectly and breaks when aimed at an output."
+ },
+ {
+  "name": "Method",
+  "desc": "A structured process with steps and artifacts, aimed at a designed outcome. It can be commissioned and reported on."
+ },
+ {
+  "name": "Structure",
+  "desc": "An arrangement of authority, decision-making, and feedback. It changes who decides and how information flows."
+ },
+ {
+  "name": "Field",
+  "desc": "A domain where lineages, practices, methods, and structures meet a context. It is where you work, not how."
+ },
+ {
+  "name": "Tradition",
+  "desc": "A whole way of knowing held by peoples and places. It enters through relationship, consent, and shared power."
+ },
+ {
+  "name": "Hybrid",
+  "desc": "A pathway that is several kinds at once. Watch for the method part being taken and the rest dropped."
+ }
+]

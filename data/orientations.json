@@ -1,0 +1,44 @@
+[
+ {
+  "name": "Consent before command",
+  "line": "Move when no one has a reasoned objection, rather than waiting for everyone to agree or for someone to order it.",
+  "source": "Sociocracy (Kees Boeke, Gerard Endenburg)",
+  "ask": "Who has not yet been asked whether they can live with this?"
+ },
+ {
+  "name": "Match the variety",
+  "line": "A response has to be as varied as the situation it meets. Do not simplify people to fit the system.",
+  "source": "W. Ross Ashby, requisite variety",
+  "ask": "Where are we forcing many different lives through one channel?"
+ },
+ {
+  "name": "Widen the choices",
+  "line": "Act so that the people affected have more options afterward, not fewer.",
+  "source": "Heinz von Foerster, the ethical imperative",
+  "ask": "Does this close doors for anyone who was not in the room?"
+ },
+ {
+  "name": "Take only what is given",
+  "line": "Relationship before extraction. Ask, take what is offered, share it, and give something back.",
+  "source": "Robin Wall Kimmerer, the Honorable Harvest",
+  "ask": "What are we taking from this community, and what are we returning?"
+ },
+ {
+  "name": "Many contexts, no master frame",
+  "line": "Every issue lives in family, work, body, place, and history at once. No single discipline or worldview holds all of it.",
+  "source": "Nora Bateson (transcontextuality), Arturo Escobar (the pluriverse)",
+  "ask": "Which context are we ignoring because it does not fit our frame?"
+ },
+ {
+  "name": "Learning over proving",
+  "line": "Treat results as information for the next move, and hold people accountable for learning, not for hitting numbers they do not control.",
+  "source": "Human Learning Systems, developmental evaluation, Deming",
+  "ask": "What did we learn that changes what we do next?"
+ },
+ {
+  "name": "Power in plain sight",
+  "line": "Name who decides, whose issues never reach the table, and which beliefs make the arrangement feel natural.",
+  "source": "Steven Lukes, John Gaventa, Paulo Freire",
+  "ask": "Which form of power is doing the work here without being named?"
+ }
+]

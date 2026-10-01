@@ -1,0 +1,74 @@
+[
+ {
+  "name": "Foundations and science",
+  "token": "found",
+  "light": "#3b5b7a",
+  "dark": "#86a7c7"
+ },
+ {
+  "name": "Relational, Indigenous, and meaning",
+  "token": "rel",
+  "light": "#8a4f7d",
+  "dark": "#c894bb"
+ },
+ {
+  "name": "Living systems",
+  "token": "live",
+  "light": "#4f7a3a",
+  "dark": "#96c07f"
+ },
+ {
+  "name": "Organizing and sensemaking",
+  "token": "org",
+  "light": "#2f6f62",
+  "dark": "#6fb7a6"
+ },
+ {
+  "name": "Movements and hosting",
+  "token": "mov",
+  "light": "#b0613a",
+  "dark": "#e19a72"
+ },
+ {
+  "name": "Living practices",
+  "token": "prac",
+  "light": "#7a4a2a",
+  "dark": "#d09a74"
+ },
+ {
+  "name": "Power, narrative, and conflict",
+  "token": "pow",
+  "light": "#6a3f8f",
+  "dark": "#b596d8"
+ },
+ {
+  "name": "Crisis and transition",
+  "token": "cri",
+  "light": "#9a3b3b",
+  "dark": "#e28b85"
+ },
+ {
+  "name": "Policy, systemic design, and economics",
+  "token": "pol",
+  "light": "#a8741a",
+  "dark": "#e0b25a"
+ },
+ {
+  "name": "Strategy, money, and accountability",
+  "token": "str",
+  "light": "#2e5d73",
+  "dark": "#7fb3cc"
+ },
+ {
+  "name": "Design and practice",
+  "token": "des",
+  "light": "#5a5f8f",
+  "dark": "#a5a9d8"
+ },
+ {
+  "name": "Learning and pedagogy",
+  "token": "ped",
+  "light": "#6b6a1f",
+  "dark": "#c9c66a"
+ }
+]

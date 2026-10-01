@@ -1,0 +1,105 @@
+[
+ {
+  "id": "quiet-heron",
+  "title": "From crisis response to city innovation",
+  "who": "quiet-heron started in government crisis response, working with small, ritual-rich communities, and later moved into a city innovation role inside a reluctant bureaucracy.",
+  "stages": [
+   {
+    "where": "Starting point: crisis response in small communities",
+    "levels": [
+     "Community and place",
+     "Group and dialogue",
+     "Body and person"
+    ],
+    "pathways": [
+     "crisis-disaster-and-high-reliability",
+     "ritual-liminality-and-transition",
+     "somatic-and-embodied-practice",
+     "indigenous-and-land-based-knowledge",
+     "positive-deviance"
+    ],
+    "note": "What they already know: communities self-organize in a crisis, ritual holds people through disruption, and regulated bodies make better decisions. These pathways name and deepen that knowledge."
+   },
+   {
+    "where": "Arriving in city government",
+    "levels": [
+     "Organization",
+     "Society and policy"
+    ],
+    "pathways": [
+     "sensemaking-and-acting-in-uncertainty",
+     "group-relations",
+     "power-analysis",
+     "government-plumbing"
+    ],
+    "note": "Sort ordered from complex problems so procedure can stay procedural. Read resistance as a system defense rather than a personal failing. Learn where procurement, budgets, and audit actually push back."
+   },
+   {
+    "where": "Doing the work",
+    "levels": [
+     "Organization",
+     "Society and policy",
+     "Group and dialogue"
+    ],
+    "pathways": [
+     "nora-bateson-and-warm-data",
+     "service-design",
+     "developmental-evaluation",
+     "measurement-and-accountability",
+     "communities-of-practice-and-action-learning"
+    ],
+    "note": "Host Warm Data Labs alongside the structured methods, not upstream of them, to loosen fixed perception. Use service design and developmental evaluation for accountable, learning-based change. Build a community of practice with the people inside who already work this way."
+   }
+  ],
+  "braid": "Crisis and ritual knowing carried into the institution: the experience of communities adapting fast is proof of what the bureaucracy could do if its constraints loosened."
+ },
+ {
+  "id": "amber-finch",
+  "title": "From corporate innovation to civic partnerships",
+  "who": "amber-finch ran an innovation team in a large company and now brokers partnerships between business, city government, and community groups.",
+  "stages": [
+   {
+    "where": "Starting point: corporate innovation",
+    "levels": [
+     "Organization"
+    ],
+    "pathways": [
+     "corporate-innovation-and-renewal",
+     "strategy-under-uncertainty",
+     "teams-and-learning-cultures",
+     "design-thinking"
+    ],
+    "note": "Comfortable with experiments, portfolios, and customer research. Less practiced at working where no one owns the problem."
+   },
+   {
+    "where": "Entering civic work",
+    "levels": [
+     "Community and place",
+     "Society and policy"
+    ],
+    "pathways": [
+     "collaboration-across-boundaries",
+     "power-analysis",
+     "participatory-design-and-design-justice",
+     "critical-and-popular-education"
+    ],
+    "note": "Learn why design thinking alone can flatten communities into users, and how power shapes who gets to define the problem."
+   },
+   {
+    "where": "Doing the work",
+    "levels": [
+     "Society and policy",
+     "Group and dialogue"
+    ],
+    "pathways": [
+     "hosting-and-participatory-practice",
+     "funding-and-budgeting-for-adaptation",
+     "measurement-and-accountability",
+     "narrative-change"
+    ],
+    "note": "Convene rather than run. Move money toward trust and portfolios, measure learning instead of outputs, and help partners tell a shared story of why change is needed now."
+   }
+  ],
+  "braid": "Business speed braided with civic patience: portfolio thinking is an asset in public work once it is paired with shared power."
+ }
+]

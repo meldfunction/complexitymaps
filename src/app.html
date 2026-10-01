@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pathways into Complexity</title>
+<meta name="description" content="Lineages, practices, and methods for working in complex systems, with cases, organizations, and a live learning library.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --paper:#f4f6f5; --surface:#ffffff; --ink:#1f2a2e; --muted:#566562; --line:#d6dfdc;
+  --teal:#2f6f62; --gold:#9a6a17; --gold-soft:#fbf1dc; --focus:#1b5e9e; --callout:#eef4f2;
+  --ok:#2f7d4f; --warn:#a8741a; --err:#b0413a;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  /*CLUSTER_LIGHT*/
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9dadaa; --line:#2f3a3d;
+    --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea; --callout:#1f2c2b;
+    --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
+    /*CLUSTER_DARK*/
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9dadaa; --line:#2f3a3d;
+  --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea; --callout:#1f2c2b;
+  --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
+  /*CLUSTER_DARK*/
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 48px}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.sr{position:absolute;left:-9999px}
+.wrap{max-width:1180px;margin:0 auto}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:28px 14px}
+h1{font-size:clamp(26px,4vw,36px);line-height:1.1;margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+h1 a{color:inherit;text-decoration:none}
+.lede{margin:6px 0 0;color:var(--muted);max-width:64ch}
+.status{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;font:500 12.5px/1.35 var(--mono);color:var(--muted);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 12px;max-width:100%}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
+.status[data-state="live"] .dot{background:var(--ok)}
+.status[data-state="cached"] .dot{background:var(--warn)}
+.status[data-state="error"] .dot{background:var(--err)}
+.status button{font:inherit;color:var(--teal);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:18px;scrollbar-width:thin}
+nav.tabs a{flex:none;font-weight:600;font-size:14px;color:var(--muted);text-decoration:none;padding:10px 12px;border-bottom:3px solid transparent}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--teal)}
+nav.tabs a:hover{color:var(--ink)}
+.bar{display:grid;grid-template-columns:1fr auto;gap:10px;padding-bottom:12px}
+.bar input,.bar select{font:16px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 14px;width:100%}
+.bar select{font-size:14px;min-height:46px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:14px}
+.chip{font:500 12.5px/1 var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 11px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip i{width:8px;height:8px;border-radius:2px;display:inline-block;flex:none}
+.layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}
+nav.index{position:sticky;top:env(safe-area-inset-top,0px);max-height:calc(100vh - 20px);overflow:auto;padding-right:4px}
+.cl{margin:0 0 14px}
+.cl h2{font:700 11.5px/1.25 var(--sans);letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.cl h2 i{width:10px;height:10px;border-radius:3px;display:inline-block;flex:none}
+.pw{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;font:14px/1.3 var(--sans);color:var(--ink);text-decoration:none;border-left:3px solid transparent;padding:6px 8px;border-radius:0 6px 6px 0}
+.pw:hover{background:var(--surface)}
+.pw[aria-current="true"]{background:var(--surface);font-weight:600}
+.pw .n{font:12px var(--mono);color:var(--muted);flex:none}
+.mobile-pick{display:none}
+main{min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.eyebrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 12px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.kind{font:500 11.5px/1 var(--mono);letter-spacing:0;text-transform:none;border:1px solid currentColor;border-radius:999px;padding:4px 8px}
+h3.title{font-size:clamp(22px,3vw,28px);line-height:1.15;margin:10px 0 8px;font-weight:800;text-wrap:balance}
+.ov{font-size:16.5px;margin:0 0 16px;max-width:70ch}
+dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;margin:0}
+dt{font:700 12px/1.6 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+dd{margin:0;max-width:72ch}
+.policy{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;margin:18px 0 0}
+.policy b{color:var(--gold);font-size:12px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+.callout{background:var(--callout);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 16px;margin:0 0 16px;max-width:80ch}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{font-size:14px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
+.links a:hover{border-color:var(--teal);color:var(--teal)}
+a.ext::after{content:" \2197";color:var(--muted)}
+section.block{margin-top:26px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;margin-bottom:10px}
+.head h4{margin:0;font-size:17px;font-weight:700}
+.head p{margin:0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.r{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.r .t{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.3}
+.r a.t:hover{color:var(--teal);text-decoration:underline}
+.r p{margin:0;font-size:13.5px;color:var(--muted)}
+.r p.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.r .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
+.tag{font:12px/1.2 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 6px}
+.tag.cap{color:var(--teal)}
+.star{color:var(--gold);font-size:12px;font-weight:600}
+.why{font-size:12px;color:var(--muted)}
+.meta{font:12.5px var(--mono);color:var(--muted)}
+.note{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.loadbtn{font:600 14px var(--sans);color:var(--paper);background:var(--teal);border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
+.empty{color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:16px}
+.media{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.media li{display:grid;grid-template-columns:92px 1fr;gap:10px;align-items:baseline}
+.media .k{font:12px var(--mono);color:var(--muted)}
+.pchips{display:flex;flex-wrap:wrap;gap:6px}
+.pchips a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;display:inline-flex;align-items:center;gap:6px}
+.pchips a i{width:8px;height:8px;border-radius:2px;display:inline-block}
+.stages{display:grid;gap:14px;counter-reset:st}
+.stage{position:relative;padding-left:44px}
+.stage::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:18px;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);font:700 14px/30px var(--sans);text-align:center}
+.levels{width:100%;border-collapse:collapse}
+.levels th,.levels td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.levels th{width:190px;font-size:14px}
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.orient{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.orient .r h5{margin:0;font-size:17px}
+.ask{font-style:italic;color:var(--ink)}
+footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;max-width:84ch}
+footer p{margin:0 0 8px}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr}
+  nav.index{display:none}
+  .mobile-pick{display:block;margin-bottom:14px}
+  .mobile-pick select{width:100%;font:15px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+  .bar{grid-template-columns:1fr}
+  dl{grid-template-columns:1fr;gap:2px 0}
+  dd{margin-bottom:10px}
+  .card{padding:18px}
+  .media li{grid-template-columns:1fr;gap:2px}
+  .levels th{width:auto;min-width:130px}
+  .stage{padding-left:0}
+  .stage::before{position:static;display:block;margin-bottom:8px}
+}
+@media (prefers-reduced-motion:no-preference){ .r{transition:border-color .15s} .r:hover{border-color:var(--teal)} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1><a href="#pathways">Pathways into Complexity</a></h1>
+      <p class="lede" id="lede"></p>
+    </div>
+    <div class="status" id="status" data-state="idle" role="status" aria-live="polite"><span class="dot"></span><span id="status-text">Live library not loaded</span></div>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Sections"></nav>
+  <div id="view"></div>
+  <footer>
+    <p><b>Live library.</b> Resources under “From the live library” load only when you tap Load or open the Live library tab. They come from the public resource feed of the <a class="ext" href="https://welearnwegrow.github.io/capacities/" target="_blank" rel="noopener">Systems Change Learning Guide</a> by Jaya Ramchandani and Raisa Mirza, shown unmodified with their own learning-area tags (CC BY-NC-ND 4.0). This page only reads that feed. It never sends searches, conversations, or personal details anywhere, and it keeps a copy in your browser for 72 hours so a returning visit asks nothing of their server.</p>
+    <p><b>Sources.</b> Organization media and case sources were found by web search in September 2026. Cases include their limits and reversals so they read as learning, not proof. Matches between pathways and live resources are a starting point, not an endorsement.</p>
+  </footer>
+</div>
+
+<script>
+const DATA = __DATA__;
+const WORKER = DATA.about.worker;
+const CACHE_KEY = "pic-live-library-v1";
+const CACHE_MS = 72 * 60 * 60 * 1000; // 72 hours
+
+const P = DATA.pathways, O = DATA.orgs, C = DATA.cases;
+const byId = (arr, id) => arr.find(x => x.id === id);
+const clusterOf = name => DATA.clusters.find(c => c.name === name);
+const color = cname => `var(--c-${clusterOf(cname).token})`;
+const KIND_NAMES = DATA.kinds.map(k => k.name);
+
+let LIB = [], libState = "loading";
+let activeKind = "", pathQuery = "";
+
+const $ = s => document.querySelector(s);
+function el(tag, attrs = {}, ...kids){
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null) continue;
+    if (k === "class") n.className = v; else if (k === "text") n.textContent = v; else if (k === "html") n.innerHTML = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v);
+  }
+  kids.flat(Infinity).forEach(k => k != null && k !== false && n.append(k));
+  return n;
+}
+// Our own curated text may contain <i> for titles; allow only that tag.
+function rich(s){ const span = el("span"); String(s).split(/(<i>.*?<\/i>)/g).forEach(part => { const m = part.match(/^<i>(.*)<\/i>$/); span.append(m ? el("i",{text:m[1]}) : part); }); return span; }
+const safeUrl = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : null; } catch { return null; } };
+const ext = (text, url, cls) => { const u = safeUrl(url); return u ? el("a",{href:u,target:"_blank",rel:"noopener noreferrer",class:("ext " + (cls||"")).trim(),text}) : el("span",{text}); };
+const pchip = id => { const p = byId(P, id); return p ? el("a",{href:"#p-"+p.id}, el("i",{style:`background:${color(p.cluster)}`}), p.name) : null; };
+
+// ---------------------------------------------------------------- live library
+function setStatus(state, text, action){
+  $("#status").dataset.state = state;
+  const t = $("#status-text"); t.textContent = text;
+  if (action) { t.append(" "); t.append(el("button",{type:"button",onclick:()=>loadLibrary(action === "Retry"),text:action})); }
+}
+function normalize(d){
+  const arr = Array.isArray(d?.resources) ? d.resources : [];
+  return arr.filter(r => r && r.name).map(r => ({
+    name:String(r.name), url:safeUrl(r.url), desc:String(r.desc||""),
+    types:Array.isArray(r.types)?r.types.map(String):[], caps:Array.isArray(r.caps)?r.caps.map(String):[],
+    featured:!!r.featured, hay:(r.name+" "+(r.desc||"")+" "+(r.types||[]).join(" ")+" "+(r.caps||[]).join(" ")).toLowerCase()
+  }));
+}
+function readCache(){ try { const c = JSON.parse(localStorage.getItem(CACHE_KEY)||"null"); return c && c.t && c.data ? c : null; } catch { return null; } }
+function writeCache(d){ try { localStorage.setItem(CACHE_KEY, JSON.stringify({t:Date.now(), data:d})); } catch {} }
+const hhmm = t => new Date(t).toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"});
+// Trigger-based: nothing is requested on page load. A fresh browser copy is used if present;
+// otherwise the feed is fetched only when a visitor taps Load or opens the Live library tab.
+function bootLibrary(){
+  const cached = readCache();
+  if (cached && Date.now() - cached.t < CACHE_MS) {
+    LIB = normalize(cached.data); libState = "live";
+    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`);
+  } else { libState = "idle"; setStatus("idle", "Live library loads when you ask.", "Load"); }
+}
+async function loadLibrary(force){
+  if (libState === "loading") return;
+  const cached = readCache();
+  if (!force && cached && Date.now() - cached.t < CACHE_MS) {
+    LIB = normalize(cached.data); libState = "live";
+    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`); return route();
+  }
+  libState = "loading"; setStatus("loading","Connecting to live library…"); route(true);
+  const ctl = new AbortController(); const timer = setTimeout(() => ctl.abort(), 12000);
+  try {
+    const res = await fetch(WORKER, {method:"GET", signal:ctl.signal, headers:{Accept:"application/json"}});
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const d = await res.json(); LIB = normalize(d); writeCache(d); libState = "live";
+    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(Date.now())}`);
+  } catch {
+    if (cached) { LIB = normalize(cached.data); libState = "cached"; setStatus("cached", `Offline copy from ${new Date(cached.t).toLocaleString()} · ${LIB.length} resources`, true); }
+    else { LIB = []; libState = "error"; setStatus("error", "Live library unreachable from here.", true); }
+  } finally { clearTimeout(timer); }
+  route();
+}
+function matchFor(terms, caps, type){
+  return LIB.filter(r => !type || r.types.includes(type)).map(r => {
+    const hits = terms.filter(t => r.hay.includes(t));
+    const capHits = caps.filter(c => r.caps.includes(c));
+    return {r, hits, capHits, score: hits.length*4 + capHits.length + (r.featured?0.5:0)};
+  }).filter(x => x.hits.length || x.capHits.length >= 2 || (x.capHits.length && caps.length === 1))
+    .sort((a,b) => b.score - a.score || a.r.name.localeCompare(b.r.name));
+}
+function libCard(x){
+  const r = x.r || x;
+  return el("article",{class:"r"},
+    r.featured ? el("span",{class:"star",text:"★ Editor's pick"}) : null,
+    r.url ? ext(r.name, r.url, "t") : el("span",{class:"t",text:r.name}),
+    el("p",{class:"clamp",text:r.desc}),
+    x.hits && x.hits.length ? el("div",{class:"why",text:"Matched on: "+x.hits.slice(0,3).join(", ")}) :
+      x.capHits && x.capHits.length ? el("div",{class:"why",text:"Shared learning area: "+x.capHits.join(", ")}) : null,
+    el("div",{class:"tags"}, r.types.map(t => el("span",{class:"tag",text:t})), r.caps.slice(0,3).map(c => el("span",{class:"tag cap",text:c}))));
+}
+function liveBlock(terms, caps, limit, blurb){
+  const sec = el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"From the live library"}), el("p",{text:blurb})));
+  if (libState === "idle") return sec.appendChild(el("div",{class:"empty"},
+    el("p",{style:"margin:0 0 10px",text:"Live resources from the Systems Change Learning Guide load only when you ask, to spare the Guide's server."}),
+    el("button",{type:"button",class:"loadbtn",onclick:()=>loadLibrary(false),text:"Load live resources"}))), sec;
+  if (libState === "loading") return sec.appendChild(el("div",{class:"empty",text:"Loading live resources…"})), sec;
+  if (libState === "error") return sec.appendChild(el("div",{class:"empty",text:"The live library could not be reached. This happens inside previews that block outside requests. Host this page, for example on GitHub Pages, or open the file in a browser, then use Retry at the top."})), sec;
+  const m = matchFor(terms, caps).slice(0, limit);
+  sec.append(m.length ? el("div",{class:"grid"}, m.map(libCard)) : el("div",{class:"empty",text:"No live resources match yet. That gap shows where the Guide's library and this map diverge."}));
+  return sec;
+}
+
+// ---------------------------------------------------------------- views
+const TABS = [["pathways","Pathways"],["orgs","Organizations"],["cases","Cases"],["journeys","Journeys"],["orientations","Orientations"],["levels","Levels of focus"],["library","Live library"]];
+function renderTabs(active){
+  $("#tabs").replaceChildren(...TABS.map(([id, label]) => el("a",{href:"#"+id,"aria-current":id===active?"page":null,text:label})));
+}
+
+function pathwayIndex(currentId){
+  const vis = P.filter(p => (!activeKind || p.kind === activeKind) &&
+    (!pathQuery || (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.policy+" "+p.terms.join(" ")).toLowerCase().includes(pathQuery)));
+  const nav = el("nav",{class:"index","aria-label":"Pathways"});
+  const pick = el("select",{id:"pick","aria-label":"Choose a pathway",onchange:e=>{location.hash="p-"+e.target.value;}});
+  DATA.clusters.forEach(c => {
+    const ps = vis.filter(p => p.cluster === c.name); if (!ps.length) return;
+    const col = `var(--c-${c.token})`;
+    nav.append(el("div",{class:"cl"}, el("h2",{style:`color:${col}`}, el("i",{style:`background:${col}`}), c.name),
+      ps.map(p => el("a",{href:"#p-"+p.id,class:"pw",style:`border-left-color:${p.id===currentId?col:"transparent"}`,"aria-current":String(p.id===currentId)},
+        el("span",{}, p.name, p.gov ? el("span",{class:"star",title:"Strong track record inside government",text:" ★"}) : null), LIB.length ? el("span",{class:"n",title:"Matched live resources",text:String(matchFor(p.terms,p.caps).length)}) : null))));
+    pick.append(el("optgroup",{label:c.name}, ps.map(p => el("option",{value:p.id,text:p.name,selected:p.id===currentId?"":null}))));
+  });
+  if (!vis.length) nav.append(el("div",{class:"empty",text:"No pathways match."}));
+  return {nav, pick};
+}
+function pathwayControls(){
+  const q = el("input",{type:"search",id:"pq",placeholder:"Filter pathways: power, grief, procurement, Freire…",value:pathQuery,autocomplete:"off"});
+  q.addEventListener("input", () => { pathQuery = q.value.trim().toLowerCase(); route(true); });
+  const chips = el("div",{class:"chips",role:"group","aria-label":"Filter by kind of path"},
+    ["", ...KIND_NAMES].map(k => { const n = P.filter(p => !k || p.kind === k).length;
+      return el("button",{type:"button",class:"chip","aria-pressed":String(activeKind===k),title:k?DATA.kinds.find(x=>x.name===k).desc:"",
+        onclick:()=>{ activeKind=k; route(true); }, text:(k||"All kinds")+" · "+n}); }));
+  return [el("div",{class:"bar",style:"grid-template-columns:1fr"}, el("label",{for:"pq",class:"sr",text:"Filter pathways"}), q), chips];
+}
+function viewPathway(id){
+  const p = byId(P, id) || P[0];
+  const {nav, pick} = pathwayIndex(p.id);
+  const col = color(p.cluster);
+  const kind = DATA.kinds.find(k => k.name === p.kind);
+  const card = el("article",{class:"card"},
+    el("div",{class:"eyebrow",style:`color:${col}`}, p.cluster, el("span",{class:"kind",title:kind.desc,text:p.kind}), p.gov ? el("span",{class:"kind",style:"color:var(--gold)",text:"★ used in government"}) : null),
+    el("h3",{class:"title",text:p.name}),
+    el("p",{class:"ov"}, rich(p.overview)),
+    el("dl",{},
+      el("dt",{text:"Road"}), el("dd",{}, rich(p.road)),
+      el("dt",{text:"Mix in"}), el("dd",{}, rich(p.mix)),
+      el("dt",{text:"Engage"}), el("dd",{}, p.links.length ? el("div",{class:"links"}, p.links.map(l => ext(l.t, l.u))) : "Practiced widely, with no single home.")),
+    p.policy ? el("div",{class:"policy"}, el("b",{text:"Policy lens"}), p.policy) : null);
+  const blocks = [card];
+  if (p.orgs.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Go deeper with"}), el("p",{text:"Organization profiles with articles, talks, and podcasts"})),
+    el("div",{class:"grid"}, p.orgs.map(oid => orgCard(byId(O, oid))))));
+  if (p.reading && p.reading.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Read and watch"})),
+    el("div",{class:"card"}, mediaList(p.reading))));
+  if (p.cases.length) blocks.push(el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Cases"}), el("p",{text:"Where this pathway met the world"})),
+    el("div",{class:"grid"}, p.cases.map(cid => caseCard(byId(C, cid))))));
+  blocks.push(liveBlock(p.terms, p.caps, 9, "Systems Change Learning Guide resources connected to this pathway"));
+  return [...pathwayControls(), el("div",{class:"mobile-pick"}, pick), el("div",{class:"layout"}, nav, el("main",{}, blocks))];
+}
+function mediaList(items){ return el("ul",{class:"media"}, items.map(m => el("li",{}, el("span",{class:"k",text:m.kind}), ext(m.title, m.u)))); }
+function orgCard(o){
+  return el("article",{class:"r"},
+    el("a",{class:"t",href:"#o-"+o.id,text:o.name}),
+    el("p",{class:"clamp",text:o.summary}),
+    el("div",{class:"meta",text:`${o.media.length} item${o.media.length===1?"":"s"} to read, watch, or hear`}));
+}
+function caseCard(c){
+  return el("article",{class:"r"},
+    el("a",{class:"t",href:"#c-"+c.id,text:c.title}),
+    el("div",{class:"meta",text:`${c.place} · ${c.years}`}),
+    el("p",{class:"clamp",text:c.summary}));
+}
+function viewOrgs(){
+  const q = el("input",{type:"search",id:"oq",placeholder:"Filter organizations",autocomplete:"off"});
+  const grid = el("div",{class:"grid"});
+  const draw = () => { const s = q.value.trim().toLowerCase();
+    const list = O.filter(o => !s || (o.name+" "+o.summary).toLowerCase().includes(s));
+    grid.replaceChildren(...(list.length ? list.map(orgCard) : [el("div",{class:"empty",text:"No organizations match."})])); };
+  q.addEventListener("input", draw); draw();
+  return [el("div",{class:"callout"}, `${O.length} organizations carrying this work. Each profile links to public articles, talks, podcasts, and courses about the concepts, plus the pathways it connects to.`),
+    el("div",{class:"bar",style:"grid-template-columns:1fr"}, el("label",{for:"oq",class:"sr",text:"Filter organizations"}), q), grid];
+}
+function viewOrg(id){
+  const o = byId(O, id); if (!o) return viewOrgs();
+  const cases = C.filter(c => c.pathways.some(pid => o.pathways.includes(pid)));
+  const ps = o.pathways.map(pid => byId(P, pid));
+  const terms = [o.name.toLowerCase().split(/[(:,]/)[0].trim(), ...ps.flatMap(p => p.terms.slice(0,4))];
+  const caps = [...new Set(ps.flatMap(p => p.caps))].slice(0,2);
+  return [el("p",{}, el("a",{href:"#orgs",text:"← All organizations"})),
+    el("article",{class:"card"},
+      el("div",{class:"eyebrow",style:"color:var(--teal)",text:"Organization profile"}),
+      el("h3",{class:"title",text:o.name}),
+      el("p",{class:"ov",text:o.summary}),
+      el("dl",{},
+        el("dt",{text:"Website"}), el("dd",{}, ext(o.url.replace(/^https?:\/\//,"").replace(/\/$/,""), o.url)),
+        el("dt",{text:"Pathways"}), el("dd",{}, el("div",{class:"pchips"}, o.pathways.map(pchip))))),
+    el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Read, watch, listen"}), el("p",{text:"Public pieces about the concepts"})),
+      el("div",{class:"card"}, mediaList(o.media))),
+    cases.length ? el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Related cases"})), el("div",{class:"grid"}, cases.map(caseCard))) : null,
+    liveBlock(terms, caps, 6, "Related Systems Change Learning Guide resources")];
+}
+function viewCases(){
+  return [el("div",{class:"callout"}, "Real situations where a pathway met the world. Each case names its limits or later reversals, because the learning is in both."),
+    el("div",{class:"grid"}, C.map(caseCard))];
+}
+function viewCase(id){
+  const c = byId(C, id); if (!c) return viewCases();
+  return [el("p",{}, el("a",{href:"#cases",text:"← All cases"})),
+    el("article",{class:"card"},
+      el("div",{class:"eyebrow",style:"color:var(--teal)",text:"Case"}),
+      el("h3",{class:"title",text:c.title}),
+      el("div",{class:"meta",text:`${c.place} · ${c.years}`}),
+      el("p",{class:"ov",style:"margin-top:12px",text:c.summary}),
+      el("dl",{},
+        el("dt",{text:"Lesson"}), el("dd",{text:c.lesson}),
+        c.note ? [el("dt",{text:"Limits"}), el("dd",{text:c.note})] : null,
+        el("dt",{text:"Pathways"}), el("dd",{}, el("div",{class:"pchips"}, c.pathways.map(pchip))),
+        el("dt",{text:"Sources"}), el("dd",{}, el("div",{class:"links"}, c.sources.map(s => ext(s.t, s.u))))))];
+}
+function viewJourneys(){
+  return [el("div",{class:"callout"}, "Worked examples of moving through the map as a career changes. Names are anonymous identifiers. Each stage shows the levels of focus in play and the pathways that help."),
+    ...DATA.journeys.map(j => el("section",{class:"block"},
+      el("div",{class:"head"}, el("h4",{text:j.title}), el("p",{class:"meta",text:j.id})),
+      el("p",{style:"max-width:72ch;margin:0 0 12px",text:j.who}),
+      el("div",{class:"stages"}, j.stages.map(s => el("div",{class:"stage"}, el("article",{class:"card"},
+        el("div",{class:"eyebrow",style:"color:var(--teal)",text:s.where}),
+        el("p",{style:"margin:10px 0",text:s.note}),
+        el("div",{class:"chips",style:"padding-bottom:10px"}, s.levels.map(l => el("a",{class:"chip",href:"#levels",text:l}))),
+        el("div",{class:"pchips"}, s.pathways.map(pchip)))))),
+      el("div",{class:"policy"}, el("b",{text:"The braid"}), j.braid)))];
+}
+function viewOrientations(){
+  return [el("div",{class:"callout"}, "Our orientations, each drawn from a lineage on this map. Use them at hard junctions as questions, not badges. They will conflict with deadlines and funders; naming that friction is part of the work."),
+    el("div",{class:"orient"}, DATA.orientations.map(o => el("article",{class:"r"},
+      el("h5",{text:o.name}), el("p",{style:"color:var(--ink)",text:o.line}), el("p",{class:"ask",text:"Ask: "+o.ask}), el("div",{class:"meta",text:"From "+o.source})))),
+    el("section",{class:"block"}, el("div",{class:"head"}, el("h4",{text:"Suggested braids"}), el("p",{text:"Pairings whose friction teaches"})),
+      el("div",{class:"grid"}, DATA.braids.map(b => el("article",{class:"r"}, el("span",{class:"t",text:b.pair}), el("p",{text:b.why})))))];
+}
+function viewLevels(){
+  return [el("div",{class:"callout"}, el("b",{text:"Levels of focus, not rank. "}), "These are the scales where each person or practice mostly works. None sits above another, and working at a larger scale is not a sign of maturity. A ritual holder working with one family is not behind a policy advisor."),
+    el("div",{class:"tablewrap"}, el("table",{class:"levels"}, el("tbody",{}, DATA.levels.map(l => el("tr",{}, el("th",{scope:"row",text:l.name}), el("td",{text:l.who}))))))];
+}
+function viewLibrary(){
+  const q = el("input",{type:"search",id:"lq",placeholder:"Search the live library: dialogue, power, policy, Ostrom…",autocomplete:"off"});
+  const types = [...new Set(LIB.flatMap(r => r.types))].sort();
+  const sel = el("select",{id:"lt","aria-label":"Filter by resource type"}, el("option",{value:"",text:"All resource types"}), types.map(t => el("option",{value:t,text:t})));
+  const out = el("div");
+  const draw = () => {
+    const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), type = sel.value;
+    if (libState === "error") return out.replaceChildren(el("div",{class:"empty",text:"Search needs the live library, which could not be reached from here."}));
+    if (libState === "idle" || libState === "loading") return out.replaceChildren(el("div",{class:"empty",text:"Loading live resources…"}));
+    const rs = LIB.filter(r => (!type || r.types.includes(type)) && words.every(w => r.hay.includes(w))).sort((a,b) => (b.featured-a.featured) || a.name.localeCompare(b.name));
+    const ps = words.length ? P.filter(p => words.every(w => (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.terms.join(" ")).toLowerCase().includes(w))) : [];
+    out.replaceChildren(
+      ps.length ? el("div",{class:"pchips",style:"margin-bottom:14px"}, el("span",{class:"why",style:"align-self:center",text:"On our map:"}), ps.slice(0,10).map(p => pchip(p.id))) : "",
+      el("div",{class:"head"}, el("h4",{text:`${rs.length} live resource${rs.length===1?"":"s"}`}), el("p",{text:"Titles, descriptions, types, and learning areas"})),
+      rs.length ? el("div",{class:"grid"}, rs.slice(0,90).map(r => libCard(r))) : el("div",{class:"empty",text:"Nothing matches. Try a broader word or clear the type filter."}));
+  };
+  let t; q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(draw, 150); }); sel.addEventListener("change", draw); draw();
+  return [el("div",{class:"bar"}, el("label",{for:"lq",class:"sr",text:"Search the live library"}), q, sel), out];
+}
+
+// ---------------------------------------------------------------- router
+let lastPathwayId = null;
+function route(keepFocus){
+  const h = location.hash.slice(1) || "pathways";
+  const focusId = keepFocus && document.activeElement ? document.activeElement.id : null;
+  let tab = "pathways", nodes;
+  if (h.startsWith("p-")) { lastPathwayId = h.slice(2); nodes = viewPathway(lastPathwayId); }
+  else if (h === "pathways") nodes = viewPathway(lastPathwayId || P[0].id);
+  else if (h.startsWith("o-")) { tab = "orgs"; nodes = viewOrg(h.slice(2)); }
+  else if (h === "orgs") { tab = "orgs"; nodes = viewOrgs(); }
+  else if (h.startsWith("c-")) { tab = "cases"; nodes = viewCase(h.slice(2)); }
+  else if (h === "cases") { tab = "cases"; nodes = viewCases(); }
+  else if (h === "journeys") { tab = "journeys"; nodes = viewJourneys(); }
+  else if (h === "orientations") { tab = "orientations"; nodes = viewOrientations(); }
+  else if (h === "levels") { tab = "levels"; nodes = viewLevels(); }
+  else if (h === "library") { tab = "library"; nodes = viewLibrary(); if (libState === "idle") setTimeout(() => loadLibrary(false), 0); }
+  else nodes = viewPathway(P[0].id);
+  renderTabs(tab);
+  $("#view").replaceChildren(...nodes.flat(Infinity).filter(Boolean));
+  if (focusId && document.getElementById(focusId)) { const f = document.getElementById(focusId); f.focus(); if (f.setSelectionRange && f.value) f.setSelectionRange(f.value.length, f.value.length); }
+}
+let lastHash = location.hash;
+window.addEventListener("hashchange", () => { const wasSame = lastHash.split("-")[0] === location.hash.split("-")[0]; lastHash = location.hash; route(); if (!wasSame || !location.hash.startsWith("#p-")) window.scrollTo(0,0); });
+$("#lede").textContent = DATA.about.lede;
+bootLibrary(); route();
+</script>
+</body>
+</html>

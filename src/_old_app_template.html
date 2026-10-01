@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pathways into Complexity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --paper:#f4f6f5; --surface:#ffffff; --ink:#1f2a2e; --muted:#5b6966; --line:#d6dfdc;
+  --teal:#2f6f62; --gold:#a8741a; --gold-soft:#fbf1dc; --focus:#1b5e9e;
+  --c-found:#3b5b7a; --c-rel:#8a4f7d; --c-live:#4f7a3a; --c-org:#2f6f62; --c-mov:#b0613a;
+  --c-prac:#7a4a2a; --c-pol:#a8741a; --c-des:#5a5f8f;
+  --ok:#2f7d4f; --warn:#a8741a; --err:#b0413a;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9bacA8; --line:#2f3a3d;
+    --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea;
+    --c-found:#86a7c7; --c-rel:#c894bb; --c-live:#96c07f; --c-org:#6fb7a6; --c-mov:#e19a72;
+    --c-prac:#d09a74; --c-pol:#e0b25a; --c-des:#a5a9d8;
+    --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --paper:#141a1c; --surface:#1c2427; --ink:#e6ecea; --muted:#9bacA8; --line:#2f3a3d;
+  --teal:#6fb7a6; --gold:#e0b25a; --gold-soft:#2c2618; --focus:#7fb4ea;
+  --c-found:#86a7c7; --c-rel:#c894bb; --c-live:#96c07f; --c-org:#6fb7a6; --c-mov:#e19a72;
+  --c-prac:#d09a74; --c-pol:#e0b25a; --c-des:#a5a9d8;
+  --ok:#6cc08c; --warn:#e0b25a; --err:#e5847c;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 48px}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:28px 18px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(26px,4vw,36px);line-height:1.1;margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.status{display:inline-flex;align-items:center;gap:8px;font:500 12.5px/1 var(--mono);color:var(--muted);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 12px;max-width:100%;flex-wrap:wrap;line-height:1.35}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.status[data-state="live"] .dot{background:var(--ok)}
+.status[data-state="cached"] .dot{background:var(--warn)}
+.status[data-state="error"] .dot{background:var(--err)}
+.status button{font:inherit;color:var(--teal);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.bar{display:grid;grid-template-columns:1fr auto;gap:10px;padding-block:16px}
+.search{position:relative}
+.search input{width:100%;font:16px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.search input::placeholder{color:var(--muted)}
+.bar select{font:14px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 10px;min-height:46px}
+.kinds{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:14px}
+.chip{font:500 12.5px/1 var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}
+nav.index{position:sticky;top:env(safe-area-inset-top,0px);max-height:calc(100vh - 20px);overflow:auto;padding-right:4px}
+.cl{margin:0 0 14px}
+.cl h2{font:700 11.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.cl h2 i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.pw{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;font:14px/1.3 var(--sans);color:var(--ink);background:none;border:0;border-left:3px solid transparent;padding:6px 8px;border-radius:0 6px 6px 0;cursor:pointer}
+.pw:hover{background:var(--surface)}
+.pw[aria-current="true"]{background:var(--surface);border-left-color:currentColor;font-weight:600}
+.pw .n{font:12px var(--mono);color:var(--muted);flex:none}
+.mobile-pick{display:none}
+main.detail{min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.eyebrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.kind{font:500 11.5px/1 var(--mono);letter-spacing:0;text-transform:none;border:1px solid currentColor;border-radius:999px;padding:4px 8px}
+.detail h3{font-size:clamp(22px,3vw,28px);line-height:1.15;margin:10px 0 8px;font-weight:800;text-wrap:balance}
+.ov{font-size:16.5px;color:var(--ink);margin:0 0 16px;max-width:68ch}
+dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;margin:0}
+dt{font:700 12px/1.6 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+dd{margin:0;max-width:70ch}
+.policy{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;margin:18px 0 0}
+.policy b{color:var(--gold);font-size:12px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{font-size:14px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
+.links a:hover{border-color:var(--teal);color:var(--teal)}
+.links a::after{content:" \2197";color:var(--muted)}
+section.live{margin-top:22px}
+.live-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;margin-bottom:10px}
+.live-head h4{margin:0;font-size:17px;font-weight:700}
+.live-head p{margin:0;color:var(--muted);font-size:13px}
+.res{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.r{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.r a.t{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.3}
+.r a.t:hover{color:var(--teal);text-decoration:underline}
+.r p{margin:0;font-size:13.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.r .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
+.tag{font:12px/1 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 6px}
+.tag.cap{color:var(--teal);border-color:color-mix(in srgb,var(--teal) 40%,var(--line))}
+.star{color:var(--gold);font-size:12px;font-weight:600}
+.why{font-size:12px;color:var(--muted)}
+.empty{color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:16px}
+.also{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.also button{font:13px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 10px;cursor:pointer}
+footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;max-width:80ch}
+footer p{margin:0 0 8px}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr}
+  nav.index{display:none}
+  .mobile-pick{display:block;margin-bottom:14px}
+  .mobile-pick select{width:100%;font:15px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+  .bar{grid-template-columns:1fr}
+  dl{grid-template-columns:1fr;gap:2px 0}
+  dd{margin-bottom:10px}
+  .card{padding:18px}
+}
+@media (prefers-reduced-motion:no-preference){ .r{transition:border-color .15s} .r:hover{border-color:var(--teal)} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Pathways into Complexity</h1>
+      <p class="lede">29 lineages, practices, and methods for working in complex systems, each paired with live learning resources from the Systems Change Learning Guide.</p>
+    </div>
+    <div class="status" id="status" data-state="loading" role="status" aria-live="polite"><span class="dot"></span><span id="status-text">Connecting to live library…</span></div>
+  </header>
+
+  <div class="bar">
+    <div class="search">
+      <label for="q" class="sr" style="position:absolute;left:-9999px">Search the live library</label>
+      <input id="q" type="search" placeholder="Search the live library: dialogue, power, policy, Ostrom…" autocomplete="off">
+    </div>
+    <select id="type" aria-label="Filter by resource type"><option value="">All resource types</option></select>
+  </div>
+  <div class="kinds" id="kinds" role="group" aria-label="Filter pathways by kind"></div>
+
+  <div class="mobile-pick"><select id="pick" aria-label="Choose a pathway"></select></div>
+
+  <div class="layout">
+    <nav class="index" id="index" aria-label="Pathways"></nav>
+    <main class="detail" id="detail"></main>
+  </div>
+
+  <footer>
+    <p><b>About the live library.</b> Resources are read on each visit from the public resource feed of the <a href="https://welearnwegrow.github.io/capacities/" target="_blank" rel="noopener">Systems Change Learning Guide</a> by Jaya Ramchandani and Raisa Mirza, shown unmodified with its own learning-area tags (CC BY-NC-ND 4.0). This page only reads that feed. It never sends queries, conversations, or personal details anywhere. A copy is kept in your browser for an hour to spare their server.</p>
+    <p><b>Matching.</b> Resources are suggested for a pathway by the people, practices, and terms named in it, plus a crosswalk to the Guide's learning areas. Matches are a starting point, not an endorsement.</p>
+  </footer>
+</div>
+
+<script>
+const WORKER = "https://capacities.jayajohnyramchandani.workers.dev/";
+const CACHE_KEY = "pic-live-library-v1";
+const CACHE_MS = 60 * 60 * 1000;
+const PATHWAYS = __PATHWAYS__;
+
+const CLUSTER_COLOR = {
+  "Foundations and science":"--c-found","Relational, Indigenous, and meaning":"--c-rel","Living systems":"--c-live",
+  "Organizing and sensemaking":"--c-org","Movements and hosting":"--c-mov","Living practices":"--c-prac",
+  "Policy, systemic design, and economics":"--c-pol","Design and practice":"--c-des"
+};
+// Kind of path, plus terms and a crosswalk to the Guide's learning areas, keyed by pathway name prefix.
+const META = [
+  ["Cybernetics","Lineage",["cybernetic","wiener","ashby","von foerster","pask","beer","feedback","requisite variety"],["Systems Thinking & Modeling"]],
+  ["The formal science","Lineage",["santa fe","complexity science","network science","agent-based","emergence","prigogine","self-organi"],["Systems Thinking & Modeling","Complex Problem Solving"]],
+  ["Relational","Lineage",["bateson","akomolafe","machado","hospicing","haraway","barad","stengers","relational","post-human","decolonial"],["Cultural & Epistemic Inquiry","Critical Consciousness"]],
+  ["Nora Bateson","Hybrid",["nora bateson","warm data","combining","symmathesy","transcontextual","bateson"],["Observing & Listening","Cultural & Epistemic Inquiry"]],
+  ["Indigenous","Tradition",["indigenous","kimmerer","sweetgrass","yunkaporta","sand talk","cajete","land-based","traditional knowledge"],["Ecological & Planetary Inquiry","Cultural & Epistemic Inquiry","Spiritual & Moral Inquiry"]],
+  ["Presencing","Hybrid",["theory u","scharmer","presencing","u-lab","u.lab","social presencing","hayashi","senge"],["Leading in Complexity","Observing & Listening"]],
+  ["The metacrisis","Lineage",["metacrisis","meta-crisis","mcgilchrist","perspectiva","rowson","polycrisis","meaning crisis","great simplification"],["Spiritual & Moral Inquiry","Critical Consciousness"]],
+  ["Living systems","Lineage",["regenerat","living system","capra","wahl","resilience","autopoie","maturana","varela","biomimic","bioregion"],["Regenerative Systems Design","Ecological & Planetary Inquiry"]],
+  ["Sensemaking","Method",["cynefin","snowden","sensemaking","sense-making","weick","eoyang","human systems dynamics","juarrero","uncertainty"],["Complex Problem Solving","Leading in Complexity"]],
+  ["Governance","Structure",["sociocracy","holacracy","self-management","self-organizing","ostrom","commons","polycentric","viable system","teal","consent"],["Leading in Complexity","Organizing & Facilitating"]],
+  ["Emergence in movements","Field",["emergent strategy","adrienne maree brown","movement","organizing","wheatley","berkana","two loops","grace lee boggs"],["Organizing & Facilitating","Advocacy & Political Participation"]],
+  ["Hosting","Practice",["art of hosting","open space","world café","world cafe","liberating structures","facilitat","convening","participatory"],["Organizing & Facilitating"]],
+  ["Bohm Dialogue","Practice",["bohm","dialogue","isaacs","thinking together"],["Observing & Listening","Organizing & Facilitating"]],
+  ["T-groups","Practice",["t-group","sensitivity training","ntl","interpersonal dynamics","lewin","group dynamics"],["Observing & Listening","Conflict Transformation"]],
+  ["Group Relations","Practice",["tavistock","bion","group relations","leicester conference","psychodynamic","authority and role"],["Leading in Complexity","Conflict Transformation"]],
+  ["Appreciative Inquiry","Method",["appreciative inquiry","cooperrider","strength-based","asset-based","what is already working"],["Organizing & Facilitating","Participatory Research & Design"]],
+  ["Work That Reconnects","Practice",["work that reconnects","joanna macy","active hope","deep ecology","grief"],["Somatic Eco-Regulation","Spiritual & Moral Inquiry"]],
+  ["Public policy","Field",["policy","government","public sector","public service","civic","human learning systems","mazzucato","mission","state","municipal","city"],["Advocacy & Political Participation","Socioeconomic & Political Inquiry","Planning & Resource Mobilization"]],
+  ["Systemic design","Method",["systemic design","gigamap","futures","foresight","three horizons","scenario","speculative","anticipat"],["Futures Thinking & Foresight","Regenerative Systems Design"]],
+  ["Complexity economics","Lineage",["doughnut","raworth","economics","economy","beinhocker","brian arthur","wellbeing economy","post-growth","finance"],["Socioeconomic & Political Inquiry","Networking & Engaging Capital"]],
+  ["Design thinking","Method",["design thinking","ideo","d.school","human-centered","human-centred","prototyp"],["Experimenting & Building","Participatory Research & Design"]],
+  ["Service design","Method",["service design","service blueprint","journey map","good services","user research"],["Participatory Research & Design","Experimenting & Building"]],
+  ["Participatory design","Method",["design justice","costanza-chock","co-design","codesign","participatory design","escobar","pluriverse","manzini"],["Participatory Research & Design","Positionality & Power Analysis"]],
+  ["Transition design","Method",["transition design","transitions","irwin","tonkinwise","long-horizon"],["Regenerative Systems Design","Futures Thinking & Foresight"]],
+  ["Strategic design","Field",["policy lab","dark matter","strategic design","helsinki design lab","mindlab","innovation lab","stewardship"],["Experimenting & Building","Leading in Complexity"]],
+  ["Improvement","Method",["deming","lean","agile","continuous improvement","pdsa","improvement","quality"],["Experimenting & Building","Data Analysis & Evaluation"]],
+  ["Developmental evaluation","Method",["developmental evaluation","evaluation","patton","tamarack","learning","measurement","impact"],["Data Analysis & Evaluation"]],
+  ["Action research","Method",["action research","participatory action","freire","fals-borda","pedagogy of the oppressed","co-research"],["Participatory Research & Design","Critical Consciousness"]],
+  ["Positive deviance","Method",["positive deviance","bright spots","what already works","sternin"],["Data Analysis & Evaluation","Participatory Research & Design"]]
+];
+PATHWAYS.forEach(p => {
+  const m = META.find(x => p.name.startsWith(x[0]));
+  p.kind = m ? m[1] : "Lineage"; p.terms = m ? m[2] : []; p.caps = m ? m[3] : [];
+  p.id = p.name.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+});
+const KINDS = ["Lineage","Practice","Method","Structure","Field","Tradition","Hybrid"];
+
+let LIB = [];          // live resources
+let libState = "loading";
+let activeKind = "";
+let current = PATHWAYS[0].id;
+
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v; else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v);
+  }
+  kids.flat(Infinity).forEach(k => k != null && n.append(k));
+  return n;
+};
+const safeUrl = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : null; } catch { return null; } };
+
+// ---------- live library ----------
+function setStatus(state, text, retry){
+  const s = $("#status"); s.dataset.state = state;
+  const t = $("#status-text"); t.textContent = text;
+  if (retry) { t.append(" "); t.append(el("button",{type:"button",onclick:()=>loadLibrary(true),text:"Retry"})); }
+}
+function normalize(data){
+  const arr = Array.isArray(data?.resources) ? data.resources : [];
+  return arr.filter(r => r && r.name).map(r => ({
+    name:String(r.name), url:safeUrl(r.url), desc:String(r.desc||""),
+    types:Array.isArray(r.types)?r.types.map(String):[], caps:Array.isArray(r.caps)?r.caps.map(String):[],
+    featured:!!r.featured, hay:(r.name+" "+(r.desc||"")+" "+(r.types||[]).join(" ")+" "+(r.caps||[]).join(" ")).toLowerCase()
+  }));
+}
+function readCache(){ try { const c = JSON.parse(localStorage.getItem(CACHE_KEY)||"null"); return c && c.t && c.data ? c : null; } catch { return null; } }
+function writeCache(data){ try { localStorage.setItem(CACHE_KEY, JSON.stringify({t:Date.now(), data})); } catch {} }
+const hhmm = t => new Date(t).toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"});
+
+async function loadLibrary(force){
+  const cached = readCache();
+  if (!force && cached && Date.now() - cached.t < CACHE_MS) {
+    LIB = normalize(cached.data); libState = "live";
+    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(cached.t)}`);
+    return afterLoad();
+  }
+  setStatus("loading","Connecting to live library…");
+  const ctl = new AbortController(); const timer = setTimeout(() => ctl.abort(), 12000);
+  try {
+    const res = await fetch(WORKER, {method:"GET", signal:ctl.signal, headers:{Accept:"application/json"}});
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    LIB = normalize(data); writeCache(data); libState = "live";
+    setStatus("live", `Live library · ${LIB.length} resources · fetched ${hhmm(Date.now())}`);
+  } catch (e) {
+    if (cached) {
+      LIB = normalize(cached.data); libState = "cached";
+      setStatus("cached", `Offline copy from ${new Date(cached.t).toLocaleString()} · ${LIB.length} resources`, true);
+    } else {
+      LIB = []; libState = "error";
+      setStatus("error", "Live library unreachable from here.", true);
+    }
+  } finally { clearTimeout(timer); }
+  afterLoad();
+}
+function afterLoad(){
+  const types = [...new Set(LIB.flatMap(r => r.types))].sort();
+  const sel = $("#type"); const keep = sel.value;
+  sel.replaceChildren(el("option",{value:"",text:"All resource types"}), ...types.map(t => el("option",{value:t,text:t})));
+  sel.value = types.includes(keep) ? keep : "";
+  render();
+}
+
+// ---------- matching ----------
+function matchesForPathway(p){
+  const type = $("#type").value;
+  return LIB.filter(r => !type || r.types.includes(type)).map(r => {
+    const hits = p.terms.filter(t => r.hay.includes(t));
+    const capHits = p.caps.filter(c => r.caps.includes(c));
+    const score = hits.length * 4 + capHits.length + (r.featured ? 0.5 : 0);
+    return {r, score, hits, capHits};
+  }).filter(x => x.hits.length || x.capHits.length >= 2 || (x.capHits.length && p.caps.length === 1))
+    .sort((a,b) => b.score - a.score || a.r.name.localeCompare(b.r.name)).slice(0, 9);
+}
+function searchLibrary(q){
+  const words = q.toLowerCase().split(/\s+/).filter(Boolean); const type = $("#type").value;
+  return LIB.filter(r => (!type || r.types.includes(type)) && words.every(w => r.hay.includes(w)))
+    .sort((a,b) => (b.featured - a.featured) || a.name.localeCompare(b.name));
+}
+function pathwaysForQuery(q){
+  const words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  return PATHWAYS.filter(p => {
+    const hay = (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.policy+" "+p.terms.join(" ")).toLowerCase();
+    return words.every(w => hay.includes(w));
+  });
+}
+
+// ---------- rendering ----------
+function renderKinds(){
+  const box = $("#kinds"); box.replaceChildren();
+  ["", ...KINDS].forEach(k => {
+    const n = PATHWAYS.filter(p => !k || p.kind === k).length; if (k && !n) return;
+    box.append(el("button",{type:"button",class:"chip","aria-pressed":String(activeKind===k),
+      onclick:()=>{activeKind=k; renderKinds(); renderIndex();}, text:(k||"All kinds")+" · "+n}));
+  });
+}
+function visiblePathways(){ return PATHWAYS.filter(p => !activeKind || p.kind === activeKind); }
+function renderIndex(){
+  const nav = $("#index"); nav.replaceChildren();
+  const pick = $("#pick"); pick.replaceChildren();
+  const vis = visiblePathways();
+  const clusters = [...new Set(vis.map(p => p.cluster))];
+  clusters.forEach(c => {
+    const color = `var(${CLUSTER_COLOR[c]})`;
+    const box = el("div",{class:"cl"}, el("h2",{style:`color:${color}`}, el("i",{style:`background:${color}`}), c));
+    const og = el("optgroup",{label:c});
+    vis.filter(p => p.cluster === c).forEach(p => {
+      const count = LIB.length ? matchesForPathway(p).length : null;
+      box.append(el("button",{type:"button",class:"pw",style:`color:${color}`,"aria-current":String(p.id===current),
+        onclick:()=>select(p.id)}, el("span",{style:"color:var(--ink)",text:p.name}), count!=null ? el("span",{class:"n",title:"Matched live resources",text:String(count)}) : null));
+      og.append(el("option",{value:p.id,text:p.name}));
+    });
+    nav.append(box); pick.append(og);
+  });
+  if (vis.some(p => p.id === current)) pick.value = current;
+}
+function resourceCard(x, p){
+  const r = x.r || x;
+  const title = r.url ? el("a",{class:"t",href:r.url,target:"_blank",rel:"noopener noreferrer",text:r.name}) : el("span",{class:"t",text:r.name});
+  const tags = el("div",{class:"tags"}, r.types.map(t => el("span",{class:"tag",text:t})), r.caps.slice(0,3).map(c => el("span",{class:"tag cap",text:c})));
+  const why = x.hits && x.hits.length ? el("div",{class:"why",text:"Matched on: "+x.hits.slice(0,3).join(", ")}) :
+              x.capHits && x.capHits.length ? el("div",{class:"why",text:"Shared learning area: "+x.capHits.join(", ")}) : null;
+  return el("article",{class:"r"}, r.featured ? el("span",{class:"star",text:"★ Editor's pick"}) : null, title, el("p",{text:r.desc}), why, tags);
+}
+function liveSection(p){
+  const sec = el("section",{class:"live","aria-labelledby":"live-h"});
+  const head = el("div",{class:"live-head"}, el("h4",{id:"live-h",text:"From the live library"}),
+    el("p",{text: libState==="error" ? "" : "Systems Change Learning Guide resources that connect to this pathway"}));
+  sec.append(head);
+  if (libState === "loading") { sec.append(el("div",{class:"empty",text:"Loading live resources…"})); return sec; }
+  if (libState === "error") {
+    sec.append(el("div",{class:"empty",text:"The live library could not be reached. This happens inside sandboxed previews that block outside requests. Host this page (for example on GitHub Pages) or open the file directly in a browser, then use Retry at the top."}));
+    return sec;
+  }
+  const m = matchesForPathway(p);
+  if (!m.length) { sec.append(el("div",{class:"empty",text:"No live resources match this pathway yet. That gap is itself useful: it shows where the Guide's library and our map diverge."})); return sec; }
+  sec.append(el("div",{class:"res"}, m.map(x => resourceCard(x,p))));
+  return sec;
+}
+function renderPathway(p){
+  const color = `var(${CLUSTER_COLOR[p.cluster]})`;
+  const rows = [["Road", p.road], ["Mix in", p.mix]];
+  const card = el("article",{class:"card"},
+    el("div",{class:"eyebrow",style:`color:${color}`}, p.cluster, el("span",{class:"kind",text:p.kind})),
+    el("h3",{text:p.name}),
+    el("p",{class:"ov",text:p.overview}),
+    el("dl",{}, rows.map(([k,v]) => [el("dt",{text:k}), el("dd",{text:v})]),
+      p.links.length ? [el("dt",{text:"Engage"}), el("dd",{}, el("div",{class:"links"}, p.links.map(l => { const u = safeUrl(l.u); return u ? el("a",{href:u,target:"_blank",rel:"noopener noreferrer",text:l.t}) : null; })))]
+                     : [el("dt",{text:"Engage"}), el("dd",{text:"Practiced widely, with no single home."})]),
+    p.policy ? el("div",{class:"policy"}, el("b",{text:"Policy lens"}), p.policy) : null
+  );
+  return [card, liveSection(p)];
+}
+function renderSearch(q){
+  const out = [];
+  const ps = pathwaysForQuery(q);
+  if (ps.length) out.push(el("div",{class:"also"}, el("span",{class:"why",style:"align-self:center",text:"On our map:"}),
+    ps.slice(0,8).map(p => el("button",{type:"button",onclick:()=>{ $("#q").value=""; select(p.id); },text:p.name}))));
+  const sec = el("section",{class:"live"});
+  if (libState === "error") { sec.append(el("div",{class:"empty",text:"Search needs the live library, which could not be reached from here."})); out.push(sec); return out; }
+  const rs = searchLibrary(q);
+  sec.append(el("div",{class:"live-head"}, el("h4",{text:`${rs.length} live resource${rs.length===1?"":"s"} for “${q}”`}), el("p",{text:"Searched titles, descriptions, types, and learning areas"})));
+  sec.append(rs.length ? el("div",{class:"res"}, rs.slice(0,60).map(r => resourceCard(r))) : el("div",{class:"empty",text:"Nothing in the live library matches. Try a broader word, or clear the type filter."}));
+  out.push(sec); return out;
+}
+function render(){
+  renderIndex();
+  const q = $("#q").value.trim();
+  const d = $("#detail");
+  if (q) d.replaceChildren(...renderSearch(q));
+  else d.replaceChildren(...renderPathway(PATHWAYS.find(p => p.id === current) || PATHWAYS[0]));
+}
+function select(id){
+  current = id;
+  if (location.hash !== "#"+id) history.replaceState(null,"","#"+id);
+  render(); $("#detail").scrollIntoView({block:"start", behavior:"auto"});
+}
+
+// ---------- boot ----------
+const h = location.hash.slice(1); if (PATHWAYS.some(p => p.id === h)) current = h;
+let t; $("#q").addEventListener("input", () => { clearTimeout(t); t = setTimeout(render, 150); });
+$("#type").addEventListener("change", render);
+$("#pick").addEventListener("change", e => select(e.target.value));
+renderKinds(); render(); loadLibrary(false);
+</script>
+</body>
+</html>

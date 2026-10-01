@@ -1,0 +1,1364 @@
+[
+ {
+  "id": "bateson-institute",
+  "name": "International Bateson Institute",
+  "url": "https://batesoninstitute.org",
+  "summary": "Founded by Nora Bateson to carry transcontextual research and Warm Data work. Hosts Warm Data Lab trainings and a global network of hosts.",
+  "pathways": [
+   "nora-bateson-and-warm-data",
+   "relational-transcontextual-and-post-humanist-knowing",
+   "complexity-and-education"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Warm Data: information that is alive",
+    "u": "https://www.batesoninstitute.org/warm-data"
+   },
+   {
+    "kind": "Essay",
+    "title": "Nora Bateson: Warm Data (2017)",
+    "u": "https://norabateson.wordpress.com/2017/05/28/warm-data/"
+   },
+   {
+    "kind": "Essay",
+    "title": "Nora Bateson: Preparing for a confusing future",
+    "u": "https://norabateson.medium.com/preparing-for-a-confusing-future-complexity-warm-data-and-education-8eaae6b09eef"
+   }
+  ]
+ },
+ {
+  "id": "emergence-network",
+  "name": "The Emergence Network",
+  "url": "https://www.emergencenetwork.org",
+  "summary": "Bayo Akomolafe's network and home for his courses and gatherings, including We Will Dance With Mountains.",
+  "pathways": [
+   "relational-transcontextual-and-post-humanist-knowing",
+   "ritual-liminality-and-transition"
+  ],
+  "media": [
+   {
+    "kind": "Essay",
+    "title": "Bayo Akomolafe: The times are urgent, let's slow down",
+    "u": "https://www.bayoakomolafe.net/post/the-times-are-urgent-lets-slow-down"
+   },
+   {
+    "kind": "Podcast",
+    "title": "For The Wild: Bayo Akomolafe on slowing down in urgent times",
+    "u": "https://forthewild.world/listen/bayo-akomolafe-on-slowing-down-in-urgent-times-155"
+   },
+   {
+    "kind": "Course",
+    "title": "We Will Dance With Mountains",
+    "u": "https://course.bayoakomolafe.net/"
+   }
+  ]
+ },
+ {
+  "id": "gtdf",
+  "name": "Gesturing Towards Decolonial Futures",
+  "url": "https://decolonialfutures.net",
+  "summary": "Arts and research collective co-founded by Vanessa Machado de Oliveira, working on how modernity's harms shape even our efforts to change it.",
+  "pathways": [
+   "relational-transcontextual-and-post-humanist-knowing",
+   "the-metacrisis-and-meaning",
+   "ritual-liminality-and-transition"
+  ],
+  "media": [
+   {
+    "kind": "Book page",
+    "title": "Hospicing Modernity",
+    "u": "https://decolonialfutures.net/hospicingmodernity/"
+   },
+   {
+    "kind": "Podcast",
+    "title": "Green Dreamer: Vanessa Machado de Oliveira on sensing into collapse",
+    "u": "https://www.greendreamer.com/podcast/vanessa-machado-de-oliveira-outgrowing-modernity"
+   }
+  ]
+ },
+ {
+  "id": "kimmerer",
+  "name": "Center for Native Peoples and the Environment",
+  "url": "https://www.esf.edu/nativepeoples/",
+  "summary": "Founded by Robin Wall Kimmerer at SUNY ESF to bring Indigenous and scientific knowledge together in service of shared goals.",
+  "pathways": [
+   "indigenous-and-land-based-knowledge"
+  ],
+  "media": [
+   {
+    "kind": "Essay",
+    "title": "Robin Wall Kimmerer: The Serviceberry (Emergence Magazine)",
+    "u": "https://emergencemagazine.org/essay/the-serviceberry/"
+   },
+   {
+    "kind": "Interview",
+    "title": "Robin Wall Kimmerer (Yale Environment 360)",
+    "u": "https://e360.yale.edu/features/robin-kimmerer-interview"
+   },
+   {
+    "kind": "Interview",
+    "title": "Tyson Yunkaporta: Deep Time Diligence (Emergence Magazine)",
+    "u": "https://emergencemagazine.org/interview/deep-time-diligence/"
+   }
+  ]
+ },
+ {
+  "id": "presencing",
+  "name": "Presencing Institute",
+  "url": "https://www.presencing.org",
+  "summary": "Otto Scharmer's action research platform for Theory U, u.lab, and Social Presencing Theater, used by public, civic, and corporate teams.",
+  "pathways": [
+   "presencing-theory-u-and-social-presencing-theater"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Theory U: leading from the emerging future",
+    "u": "https://www.presencing.org/theoryu"
+   },
+   {
+    "kind": "Video",
+    "title": "An embodiment practice from Social Presencing Theater, with Arawana Hayashi",
+    "u": "https://vimeo.com/422188269"
+   },
+   {
+    "kind": "Article",
+    "title": "Arawana Hayashi: Social Presencing Theater",
+    "u": "https://arawanahayashi.com/spt/"
+   }
+  ]
+ },
+ {
+  "id": "perspectiva",
+  "name": "Perspectiva",
+  "url": "https://systems-souls-society.com",
+  "summary": "London-based collective led by Jonathan Rowson working on the relationship between systems, souls, and society.",
+  "pathways": [
+   "the-metacrisis-and-meaning"
+  ],
+  "media": [
+   {
+    "kind": "Essay",
+    "title": "Jonathan Rowson: Tasting the Pickle, ten flavours of meta-crisis",
+    "u": "https://systems-souls-society.com/tasting-the-pickle-ten-flavours-of-meta-crisis-and-the-appetite-for-a-new-civilisation/"
+   },
+   {
+    "kind": "Video",
+    "title": "RSA Animate: Iain McGilchrist, The Divided Brain",
+    "u": "https://www.thersa.org/videos/rsa-animate-the-divided-brain/"
+   }
+  ]
+ },
+ {
+  "id": "cynefin",
+  "name": "The Cynefin Company",
+  "url": "https://thecynefin.co",
+  "summary": "Dave Snowden's company for Cynefin, SenseMaker, and anthro-complexity, with trainings, retreats, and an open practitioner wiki.",
+  "pathways": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Snowden and Boone: A Leader's Framework for Decision Making (HBR)",
+    "u": "https://hbr.org/2007/11/a-leaders-framework-for-decision-making"
+   },
+   {
+    "kind": "Article",
+    "title": "Seeing the Invisible (Singapore RAHS)",
+    "u": "https://thecynefin.co/seeing-the-invisible/"
+   }
+  ]
+ },
+ {
+  "id": "hsd",
+  "name": "Human Systems Dynamics Institute",
+  "url": "https://www.hsdinstitute.org",
+  "summary": "Founded by Glenda Eoyang. Teaches Adaptive Action and the CDE model through a global practitioner network.",
+  "pathways": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Introduction to Adaptive Action",
+    "u": "https://www.hsdglobalservices.org/resources/introduction-adaptive-action-library.html"
+   },
+   {
+    "kind": "Video",
+    "title": "Glenda Eoyang explains human systems dynamics and adaptive action",
+    "u": "https://www.youtube.com/watch?v=7AfJswH6hVw"
+   }
+  ]
+ },
+ {
+  "id": "sofa",
+  "name": "Sociocracy For All",
+  "url": "https://www.sociocracyforall.org",
+  "summary": "Nonprofit teaching sociocracy (consent, circles, double links) to cooperatives, communities, and organizations, with free resources.",
+  "pathways": [
+   "governance-and-self-organizing-structures"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "What is sociocracy?",
+    "u": "https://www.sociocracyforall.org/start-here/"
+   },
+   {
+    "kind": "Video",
+    "title": "What is sociocracy? (20 minute animation)",
+    "u": "https://www.sociocracyforall.org/introvideo/"
+   }
+  ]
+ },
+ {
+  "id": "ostrom",
+  "name": "Ostrom Workshop",
+  "url": "https://ostromworkshop.indiana.edu",
+  "summary": "Indiana University research center founded by Elinor and Vincent Ostrom, continuing work on polycentric governance and the commons.",
+  "pathways": [
+   "governance-and-self-organizing-structures",
+   "complexity-economics-and-new-economic-models"
+  ],
+  "media": [
+   {
+    "kind": "Lecture",
+    "title": "Elinor Ostrom: Beyond Markets and States (Nobel lecture)",
+    "u": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/"
+   }
+  ]
+ },
+ {
+  "id": "asc",
+  "name": "American Society for Cybernetics",
+  "url": "https://asc-cybernetics.org",
+  "summary": "Home of second-order cybernetics in the US, with conferences that run as participatory conversations.",
+  "pathways": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Heinz von Foerster's ethical imperative",
+    "u": "https://pespmc1.vub.ac.be/ASC/ETHICA_IMPER.html"
+   },
+   {
+    "kind": "Book page",
+    "title": "Eden Medina: Cybernetic Revolutionaries (Project Cybersyn)",
+    "u": "https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/"
+   }
+  ]
+ },
+ {
+  "id": "sfi",
+  "name": "Santa Fe Institute",
+  "url": "https://www.santafe.edu",
+  "summary": "Independent research institute for complex systems science. Its Complexity Explorer offers free courses.",
+  "pathways": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "media": [
+   {
+    "kind": "Course",
+    "title": "Introduction to Complexity (Complexity Explorer)",
+    "u": "https://www.complexityexplorer.org/courses/185-introduction-to-complexity"
+   }
+  ]
+ },
+ {
+  "id": "src",
+  "name": "Stockholm Resilience Centre",
+  "url": "https://www.stockholmresilience.org",
+  "summary": "Research center on social-ecological resilience, home of the planetary boundaries work.",
+  "pathways": [
+   "living-systems-and-regeneration"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "What is resilience?",
+    "u": "https://www.stockholmresilience.org/research/research-news/2015-02-19-what-is-resilience.html"
+   }
+  ]
+ },
+ {
+  "id": "capra",
+  "name": "Capra Course",
+  "url": "https://www.capracourse.net",
+  "summary": "Fritjof Capra's online course on the systems view of life, with a live community of alumni.",
+  "pathways": [
+   "living-systems-and-regeneration"
+  ],
+  "media": [
+   {
+    "kind": "Course",
+    "title": "The Systems View of Life",
+    "u": "https://www.capracourse.net/"
+   },
+   {
+    "kind": "Essay",
+    "title": "Daniel Christian Wahl: Designing Regenerative Cultures, introduction",
+    "u": "https://medium.com/age-of-awareness/designing-regenerative-cultures-introduction-68a12a387983"
+   }
+  ]
+ },
+ {
+  "id": "berkana",
+  "name": "Berkana Institute",
+  "url": "https://berkana.org",
+  "summary": "Margaret Wheatley's institute behind the Two Loops model of how emerging systems grow as old ones decline.",
+  "pathways": [
+   "emergence-in-movements-and-social-change"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Pioneering a new paradigm",
+    "u": "https://berkana.org/resources/pioneering-a-new-paradigm/"
+   },
+   {
+    "kind": "Article",
+    "title": "Chris Corrigan: The two loops model of change",
+    "u": "https://www.chriscorrigan.com/parkinglot/the-two-loops-model-of-change-part-2/"
+   }
+  ]
+ },
+ {
+  "id": "boggs",
+  "name": "James and Grace Lee Boggs Center",
+  "url": "https://www.boggscenter.org",
+  "summary": "Detroit center carrying the Boggses' visionary organizing: building community-based alternatives while resisting.",
+  "pathways": [
+   "emergence-in-movements-and-social-change",
+   "critical-and-popular-education"
+  ],
+  "media": [
+   {
+    "kind": "Essay",
+    "title": "The how and why of visionary organizing",
+    "u": "https://www.boggscenter.org/writings/the-how-and-why-of-visionary-organizing"
+   },
+   {
+    "kind": "Interview",
+    "title": "adrienne maree brown: Earning our place on the planet (Longreads)",
+    "u": "https://longreads.com/2018/04/24/earning-our-place-on-the-planet-an-interview-with-adrienne-maree-brown/"
+   }
+  ]
+ },
+ {
+  "id": "aoh",
+  "name": "Art of Hosting",
+  "url": "https://artofhosting.org",
+  "summary": "Global community of practice for participatory leadership, carrying Open Space, World Café, circle, and chaordic design.",
+  "pathways": [
+   "hosting-and-participatory-practice"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Chris Corrigan: What is the Art of Hosting?",
+    "u": "https://www.chriscorrigan.com/parkinglot/what-is-the-art-of-hosting/"
+   },
+   {
+    "kind": "Article",
+    "title": "Chris Corrigan: Dear Dave, a letter on hosting, complexity and practice",
+    "u": "https://www.chriscorrigan.com/parkinglot/dear-dave-a-letter-on-hosting-complexity-and-practice/"
+   }
+  ]
+ },
+ {
+  "id": "ls",
+  "name": "Liberating Structures",
+  "url": "https://www.liberatingstructures.com",
+  "summary": "Henri Lipmanowicz and Keith McCandless's open set of 33 microstructures that include everyone in shaping the next step.",
+  "pathways": [
+   "hosting-and-participatory-practice"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Keith McCandless: Liberating Structures, change methods for everybody every day",
+    "u": "https://keithmccandless.medium.com/liberating-structures-change-methods-for-everybody-every-day-648e9c0d04a7"
+   },
+   {
+    "kind": "Podcast",
+    "title": "Leadermorphosis: McCandless and Lipmanowicz on Liberating Structures",
+    "u": "https://leadermorphosis.co/episodes/30-keith-mccandless-and-henri-lipmanowicz-on-acting-your-way-into-a-new-kind-of-organising-with-liberating-structures/"
+   }
+  ]
+ },
+ {
+  "id": "ntl",
+  "name": "NTL Institute",
+  "url": "https://www.ntl.org",
+  "summary": "Founded in 1947 from Kurt Lewin's work; the origin of the T-group and much of organization development.",
+  "pathways": [
+   "t-groups-and-sensitivity-training",
+   "experiential-learning-and-reflective-practice"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "NTL: Kurt Lewin's legacy",
+    "u": "https://www.ntl.org/ntl-legacy/"
+   },
+   {
+    "kind": "Article",
+    "title": "Kurt Lewin: groups, experiential learning and action research (infed)",
+    "u": "https://infed.org/dir/welcome/kurt-lewin-groups-experiential-learning-and-action-research/"
+   }
+  ]
+ },
+ {
+  "id": "tavistock",
+  "name": "Tavistock Institute of Human Relations",
+  "url": "https://www.tavinstitute.org",
+  "summary": "London institute for applied social science; runs the Leicester Conference on authority, leadership, and organization.",
+  "pathways": [
+   "group-relations"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "What is a Group Relations conference?",
+    "u": "https://www.tavinstitute.org/news/what-is-a-group-relations-conference/"
+   },
+   {
+    "kind": "Article",
+    "title": "The Leicester Conference",
+    "u": "https://www.tavinstitute.org/projects/group-relations-conferences-leicester-conference/"
+   }
+  ]
+ },
+ {
+  "id": "wtr",
+  "name": "Work That Reconnects Network",
+  "url": "https://workthatreconnects.org",
+  "summary": "Carries Joanna Macy's practice after her death in 2025, with facilitators and gatherings worldwide.",
+  "pathways": [
+   "work-that-reconnects",
+   "ritual-liminality-and-transition"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "What is the Work That Reconnects?",
+    "u": "https://workthatreconnects.org/what-is-the-work-that-reconnects/"
+   },
+   {
+    "kind": "Article",
+    "title": "The Work That Reconnects (Tricycle)",
+    "u": "https://tricycle.org/magazine/work-reconnects/"
+   }
+  ]
+ },
+ {
+  "id": "ai-fowler",
+  "name": "Fowler Center, Case Western Reserve University",
+  "url": "https://case.edu/weatherhead/fowler/areas-expertise/appreciative-inquiry",
+  "summary": "Home of David Cooperrider's Appreciative Inquiry work and the AI Summit method for whole-system change.",
+  "pathways": [
+   "appreciative-inquiry"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Appreciative Inquiry at the Fowler Center",
+    "u": "https://case.edu/weatherhead/fowler/areas-expertise/appreciative-inquiry"
+   }
+  ]
+ },
+ {
+  "id": "hls",
+  "name": "Human Learning Systems",
+  "url": "https://www.humanlearning.systems",
+  "summary": "Network and body of practice led by Toby Lowe and colleagues, moving public services from targets toward learning, relationships, and system stewardship.",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "measurement-and-accountability",
+   "government-plumbing",
+   "developmental-evaluation"
+  ],
+  "media": [
+   {
+    "kind": "Report",
+    "title": "HLS reports and guides",
+    "u": "https://www.humanlearning.systems/reports/"
+   },
+   {
+    "kind": "Article",
+    "title": "Managing complexity with Human Learning Systems (i2Insights)",
+    "u": "https://i2insights.org/2023/01/10/human-learning-systems/"
+   },
+   {
+    "kind": "Case studies",
+    "title": "HLS case studies",
+    "u": "https://www.humanlearning.systems/case-studies/"
+   }
+  ]
+ },
+ {
+  "id": "cpi",
+  "name": "Centre for Public Impact",
+  "url": "https://www.centreforpublicimpact.org",
+  "summary": "Works with governments on relational, learning-based public services and co-produced some of the key HLS reports.",
+  "pathways": [
+   "public-policy-and-government-innovation"
+  ],
+  "media": [
+   {
+    "kind": "Report",
+    "title": "Human Learning Systems: a complexity-friendly approach to public services",
+    "u": "https://centreforpublicimpact.org/resource-hub/human-learning-systems-a-complexity-friendly-approach-to-public-services/"
+   },
+   {
+    "kind": "Case",
+    "title": "Buurtzorg: revolutionising home care in the Netherlands",
+    "u": "https://centreforpublicimpact.org/public-impact-fundamentals/buurtzorg-revolutionising-home-care-in-the-netherlands/"
+   }
+  ]
+ },
+ {
+  "id": "iipp",
+  "name": "UCL Institute for Innovation and Public Purpose",
+  "url": "https://www.ucl.ac.uk/bartlett/public-purpose",
+  "summary": "Mariana Mazzucato's institute for mission-oriented policy and rethinking the state's role in shaping markets.",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "complexity-economics-and-new-economic-models"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Mariana Mazzucato: Policy with a Purpose (IMF F&D, 2024)",
+    "u": "https://www.imf.org/en/publications/fandd/issues/2024/09/policy-with-a-purpose-mazzucato"
+   }
+  ]
+ },
+ {
+  "id": "nesta",
+  "name": "Nesta",
+  "url": "https://www.nesta.org.uk",
+  "summary": "UK innovation foundation with long-running work on public innovation, collective intelligence, and anticipatory regulation.",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "government-plumbing"
+  ],
+  "media": [
+   {
+    "kind": "Report",
+    "title": "Geoff Mulgan: Big Mind, how collective intelligence can change our world",
+    "u": "https://www.nesta.org.uk/report/big-mind-how-collective-intelligence-can-change-our-world/"
+   },
+   {
+    "kind": "Report",
+    "title": "Renewing Regulation: anticipatory regulation in an age of disruption",
+    "u": "https://www.nesta.org.uk/report/renewing-regulation-anticipatory-regulation-in-an-age-of-disruption/"
+   }
+  ]
+ },
+ {
+  "id": "undp",
+  "name": "UNDP Accelerator Labs",
+  "url": "https://www.undp.org/acceleratorlabs",
+  "summary": "A network of labs across UNDP country offices using sensemaking, experimentation, and portfolio approaches.",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "funding-and-budgeting-for-adaptation"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Locally grown missions: UNDP's portfolio approach to system transformation",
+    "u": "https://medium.com/@undp.innovation/locally-grown-missions-undps-experience-on-portfolio-approach-to-system-transformation-our-bfc4de2ba199"
+   }
+  ]
+ },
+ {
+  "id": "dml",
+  "name": "Dark Matter Labs",
+  "url": "https://darkmatterlabs.org",
+  "summary": "Strategic design lab working on the institutional dark matter under cities: finance, contracts, governance, and ownership.",
+  "pathways": [
+   "strategic-design-and-policy-labs",
+   "public-policy-and-government-innovation"
+  ],
+  "media": [
+   {
+    "kind": "Essay",
+    "title": "Radicle Civics: building proofs of possibility for a civic economy",
+    "u": "https://provocations.darkmatterlabs.org/radicle-civics-building-proofs-of-possibilities-for-a-civic-economy-and-society-ee28baeeec70"
+   }
+  ]
+ },
+ {
+  "id": "hdl",
+  "name": "Helsinki Design Lab (Sitra, archived)",
+  "url": "https://www.helsinkidesignlab.org",
+  "summary": "Sitra's strategic design lab (2009 to 2013). Its free books remain a reference for government design studios.",
+  "pathways": [
+   "strategic-design-and-policy-labs"
+  ],
+  "media": [
+   {
+    "kind": "Book",
+    "title": "Legible Practises: six stories about the craft of stewardship",
+    "u": "https://www.helsinkidesignlab.org/legiblepractises"
+   },
+   {
+    "kind": "Article",
+    "title": "Helsinki Design Lab ten years later (She Ji)",
+    "u": "https://www.sciencedirect.com/science/article/pii/S2405872620300411"
+   }
+  ]
+ },
+ {
+  "id": "deal",
+  "name": "Doughnut Economics Action Lab",
+  "url": "https://doughnuteconomics.org",
+  "summary": "Kate Raworth's lab turning Doughnut Economics into practice with cities, businesses, and educators.",
+  "pathways": [
+   "complexity-economics-and-new-economic-models"
+  ],
+  "media": [
+   {
+    "kind": "Video",
+    "title": "Kate Raworth: A healthy economy should be designed to thrive, not grow (TED)",
+    "u": "https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow"
+   },
+   {
+    "kind": "Case",
+    "title": "Amsterdam City Doughnut",
+    "u": "https://doughnuteconomics.org/stories/amsterdam-city-doughnut"
+   }
+  ]
+ },
+ {
+  "id": "iff",
+  "name": "International Futures Forum",
+  "url": "https://www.internationalfuturesforum.com",
+  "summary": "Scottish collective behind the Three Horizons framework and practices for acting in powerless-feeling situations.",
+  "pathways": [
+   "systemic-design-and-futures",
+   "strategy-under-uncertainty"
+  ],
+  "media": [
+   {
+    "kind": "Book page",
+    "title": "Bill Sharpe: Three Horizons, the patterning of hope",
+    "u": "https://www.internationalfuturesforum.com/p/three-horizons-the-patterning-of-hope"
+   }
+  ]
+ },
+ {
+  "id": "unesco-fl",
+  "name": "UNESCO Futures Literacy",
+  "url": "https://www.unesco.org/en/futures-literacy",
+  "summary": "UNESCO's program on the capability to use the future, including Futures Literacy Laboratories.",
+  "pathways": [
+   "systemic-design-and-futures"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Unlocking the power of futures: insights from Riel Miller (SOIF)",
+    "u": "https://soif.org.uk/blog/unlocking-the-power-of-futures-insights-from-riel-miller/"
+   }
+  ]
+ },
+ {
+  "id": "reos",
+  "name": "Reos Partners",
+  "url": "https://reospartners.com",
+  "summary": "Adam Kahane's firm for transformative scenario planning and stretch collaboration among people who disagree.",
+  "pathways": [
+   "strategy-under-uncertainty",
+   "presencing-theory-u-and-social-presencing-theater"
+  ],
+  "media": [
+   {
+    "kind": "Excerpt",
+    "title": "Adam Kahane: Transformative Scenario Planning (SSIR)",
+    "u": "https://ssir.org/books/excerpts/entry/transformative_scenario_planning_working_together_to_change_the_future"
+   }
+  ]
+ },
+ {
+  "id": "djn",
+  "name": "Design Justice Network",
+  "url": "https://designjustice.org",
+  "summary": "Network of designers and organizers centering people most affected by design decisions, around ten shared principles.",
+  "pathways": [
+   "participatory-design-and-design-justice"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Design Justice Network principles",
+    "u": "https://designjustice.org/read-the-principles"
+   }
+  ]
+ },
+ {
+  "id": "td",
+  "name": "Transition Design (Carnegie Mellon)",
+  "url": "https://transitiondesign.net",
+  "summary": "Terry Irwin, Gideon Kossoff, and colleagues' approach to designing for long-horizon societal transitions.",
+  "pathways": [
+   "transition-design"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Irwin: Transition Design, a proposal for a new area of design practice",
+    "u": "https://www.tandfonline.com/doi/full/10.1080/17547075.2015.1051829"
+   },
+   {
+    "kind": "Case",
+    "title": "Words into action: transition design in Ojai, California",
+    "u": "https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1853-35232019000300196"
+   }
+  ]
+ },
+ {
+  "id": "goodservices",
+  "name": "Good Services",
+  "url": "https://good.services",
+  "summary": "Lou Downe's practice and publications on what makes a public or private service good.",
+  "pathways": [
+   "service-design"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Lou Downe: 15 principles of good service design",
+    "u": "https://loudowne.com/2018/06/14/15-principles-of-good-service-design/"
+   },
+   {
+    "kind": "Article",
+    "title": "Introducing the Good Services Scale",
+    "u": "https://good.services/writing/introducing-the-good-services-scale"
+   }
+  ]
+ },
+ {
+  "id": "deming",
+  "name": "The W. Edwards Deming Institute",
+  "url": "https://deming.org",
+  "summary": "Keeps Deming's System of Profound Knowledge in circulation through courses, podcasts, and free material.",
+  "pathways": [
+   "improvement-and-adaptive-management",
+   "measurement-and-accountability"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "The Deming System of Profound Knowledge",
+    "u": "https://deming.org/explore/sopk/"
+   }
+  ]
+ },
+ {
+  "id": "ihi",
+  "name": "Institute for Healthcare Improvement",
+  "url": "https://www.ihi.org",
+  "summary": "Founded by Don Berwick. Spread the Model for Improvement and PDSA cycles across health systems worldwide.",
+  "pathways": [
+   "improvement-and-adaptive-management"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "The Model for Improvement",
+    "u": "https://www.ihi.org/library/model-for-improvement"
+   },
+   {
+    "kind": "Article",
+    "title": "100,000 Lives Campaign: ten years later",
+    "u": "https://www.ihi.org/library/blog/100000-lives-campaign-ten-years-later"
+   }
+  ]
+ },
+ {
+  "id": "tamarack",
+  "name": "Tamarack Institute",
+  "url": "https://www.tamarackcommunity.ca",
+  "summary": "Canadian institute for community change, with deep work on developmental evaluation and Collective Impact 3.0.",
+  "pathways": [
+   "developmental-evaluation",
+   "collaboration-across-boundaries"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Jamie Gamble: A Developmental Evaluation Primer (McConnell Foundation)",
+    "u": "https://www.mcconnellfoundation.ca/wp-content/uploads/2017/07/A-Developmental-Evaluation-Primer-EN.pdf"
+   },
+   {
+    "kind": "Article",
+    "title": "Michael Quinn Patton on developmental evaluation principles (AEA365)",
+    "u": "https://aea365.org/blog/developmental-eval-week-michael-quinn-patton-on-developmental-evaluation-principles/"
+   },
+   {
+    "kind": "Webinar",
+    "title": "Collective Impact 3.0",
+    "u": "https://www.tamarackcommunity.ca/library/collective-impact-3.0-webinar"
+   }
+  ]
+ },
+ {
+  "id": "pdc",
+  "name": "Positive Deviance Collaborative",
+  "url": "https://positivedeviance.org",
+  "summary": "Carries Jerry and Monique Sternin's approach of finding and spreading solutions communities already have.",
+  "pathways": [
+   "positive-deviance"
+  ],
+  "media": [
+   {
+    "kind": "Case",
+    "title": "The Vietnam story: 25 years later",
+    "u": "https://positivedeviance.org/case-studies-all/2018/4/16/the-vietnam-story-25-years-later"
+   }
+  ]
+ },
+ {
+  "id": "dschool",
+  "name": "Stanford d.school",
+  "url": "https://dschool.stanford.edu",
+  "summary": "Hasso Plattner Institute of Design at Stanford, which popularized the design thinking process now taught worldwide.",
+  "pathways": [
+   "design-thinking"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Design Thinking Bootleg",
+    "u": "https://dschool.stanford.edu/tools/design-thinking-bootleg"
+   },
+   {
+    "kind": "Critique",
+    "title": "Natasha Iskander: Design thinking is fundamentally conservative (HBR)",
+    "u": "https://hbr.org/2018/09/design-thinking-is-fundamentally-conservative-and-preserves-the-status-quo"
+   }
+  ]
+ },
+ {
+  "id": "arna",
+  "name": "Action Research Network of the Americas",
+  "url": "https://www.arnaconnect.org/",
+  "summary": "Network linking action researchers and participatory action researchers across North and South America.",
+  "pathways": [
+   "action-research"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "About ARNA",
+    "u": "http://www.arnaconnect.org/aboutarna/"
+   },
+   {
+    "kind": "Chapter",
+    "title": "ARNA: constructing a new network of North-South convergence",
+    "u": "https://link.springer.com/chapter/10.1057/978-1-137-40523-4_30"
+   }
+  ]
+ },
+ {
+  "id": "itla",
+  "name": "International Transformative Learning Association",
+  "url": "https://www.intertla.org/",
+  "summary": "Carries Jack Mezirow's legacy through the International Transformative Learning Conference and its proceedings.",
+  "pathways": [
+   "transformative-learning"
+  ],
+  "media": [
+   {
+    "kind": "Proceedings",
+    "title": "Past conferences and proceedings",
+    "u": "https://www.intertla.org/past-conferences-proceedings/"
+   },
+   {
+    "kind": "Review",
+    "title": "Taylor: The Theory and Practice of Transformative Learning (ERIC)",
+    "u": "https://eric.ed.gov/?id=ED423422"
+   }
+  ]
+ },
+ {
+  "id": "ids-power",
+  "name": "Institute of Development Studies: Powercube",
+  "url": "https://www.powercube.net",
+  "summary": "John Gaventa and colleagues' open resource for analyzing spaces, places, and forms of power.",
+  "pathways": [
+   "power-analysis"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "What is the Powercube?",
+    "u": "https://www.powercube.net/analyse-power/what-is-the-powercube/"
+   },
+   {
+    "kind": "Project",
+    "title": "Powercube: understanding power for social change (IDS)",
+    "u": "https://www.ids.ac.uk/projects/powercube-understanding-power-for-social-change/"
+   }
+  ]
+ },
+ {
+  "id": "jass",
+  "name": "JASS (Just Associates)",
+  "url": "https://pressbooks.pub/jass-power-guide/",
+  "summary": "Feminist movement support organization whose power frameworks, from A New Weave of Power onward, are widely taught.",
+  "pathways": [
+   "power-analysis"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Just Power: engaging and resisting",
+    "u": "https://pressbooks.pub/jass-power-guide/chapter/theme-5-engaging-and-resisting/"
+   },
+   {
+    "kind": "Article",
+    "title": "Making change happen: power (VeneKlasen and Miller)",
+    "u": "https://comm-org.wisc.edu/papers2007/miller.htm"
+   }
+  ]
+ },
+ {
+  "id": "frameworks",
+  "name": "FrameWorks Institute",
+  "url": "https://www.frameworksinstitute.org",
+  "summary": "Research organization that studies how the public thinks about social issues and how reframing changes what policies seem possible.",
+  "pathways": [
+   "narrative-change"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Five questions about framing",
+    "u": "https://www.frameworksinstitute.org/articles/five-questions-about-framing/"
+   }
+  ]
+ },
+ {
+  "id": "narrative-initiative",
+  "name": "Narrative Initiative",
+  "url": "https://narrativeinitiative.org",
+  "summary": "Supports narrative change practice across movements and funders.",
+  "pathways": [
+   "narrative-change"
+  ],
+  "media": [
+   {
+    "kind": "Report",
+    "title": "Toward New Gravity",
+    "u": "https://narrativeinitiative.org/resource/toward-new-gravity/"
+   },
+   {
+    "kind": "Article",
+    "title": "A living narrative definition to promote social change",
+    "u": "https://narrativeinitiative.org/blog/narrative-change-a-working-definition-and-some-related-terms/"
+   }
+  ]
+ },
+ {
+  "id": "lcn",
+  "name": "Leading Change Network",
+  "url": "https://leadingchangenetwork.org",
+  "summary": "Global network teaching Marshall Ganz's organizing and public narrative practice.",
+  "pathways": [
+   "narrative-change"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Public narrative: story of self, us, and now",
+    "u": "https://leadingchangenetwork.org/resource_center/public-narrative-and-story-of-self-us-now-graphics/"
+   }
+  ]
+ },
+ {
+  "id": "kroc",
+  "name": "Kroc Institute for International Peace Studies",
+  "url": "https://kroc.nd.edu",
+  "summary": "Notre Dame institute where John Paul Lederach's peacebuilding work is rooted.",
+  "pathways": [
+   "conflict-transformation"
+  ],
+  "media": [
+   {
+    "kind": "Podcast",
+    "title": "John Paul Lederach: The Art of Peace (On Being)",
+    "u": "https://onbeing.org/programs/john-paul-lederach-the-art-of-peace/"
+   },
+   {
+    "kind": "Book page",
+    "title": "The Moral Imagination",
+    "u": "https://kroc.nd.edu/research/books/the-moral-imagination-the-art-and-soul-of-building-peace-2004/"
+   }
+  ]
+ },
+ {
+  "id": "pwi",
+  "name": "Process Work Institute",
+  "url": "https://www.processwork.org",
+  "summary": "Teaches Arnold and Amy Mindell's Process Work, Deep Democracy, and Worldwork for large-group conflict.",
+  "pathways": [
+   "conflict-transformation"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Organizations and Worldwork",
+    "u": "https://www.processwork.org/tree/organizations-worldwork/"
+   },
+   {
+    "kind": "Article",
+    "title": "Amy and Arnold Mindell: Deep Democracy",
+    "u": "http://www.aamindell.net/worldwork"
+   }
+  ]
+ },
+ {
+  "id": "zehr",
+  "name": "Zehr Institute for Restorative Justice",
+  "url": "https://zehr-institute.org",
+  "summary": "Eastern Mennonite University institute carrying Howard Zehr's restorative justice work.",
+  "pathways": [
+   "conflict-transformation"
+  ],
+  "media": [
+   {
+    "kind": "Book page",
+    "title": "The Little Book of Restorative Justice",
+    "u": "https://zehr-institute.org/publications/the-little-book-of-restorative-justice/"
+   },
+   {
+    "kind": "Summary",
+    "title": "Summary of The Little Book of Restorative Justice (Beyond Intractability)",
+    "u": "https://www.beyondintractability.org/bksum/zehr-little"
+   }
+  ]
+ },
+ {
+  "id": "somatics",
+  "name": "Cultural Somatics Institute and generative somatics",
+  "url": "https://resmaa.com/about-resmaa-menakem/",
+  "summary": "Resmaa Menakem's cultural somatics, alongside the legacy archive of generative somatics (Staci K. Haines), which brought somatics into social justice organizing.",
+  "pathways": [
+   "somatic-and-embodied-practice"
+  ],
+  "media": [
+   {
+    "kind": "Podcast",
+    "title": "Resmaa Menakem: Notice the rage, notice the silence (On Being)",
+    "u": "https://onbeing.org/programs/resmaa-menakem-notice-the-rage-notice-the-silence/"
+   },
+   {
+    "kind": "Podcast",
+    "title": "Staci K. Haines: somatics for trauma healing and transformative justice (Green Dreamer)",
+    "u": "https://www.greendreamer.com/podcast/staci-k-haines-the-politics-of-trauma"
+   },
+   {
+    "kind": "Archive",
+    "title": "generative somatics legacy",
+    "u": "https://generativesomatics.org/explore-the-legacy/"
+   }
+  ]
+ },
+ {
+  "id": "nhc",
+  "name": "Natural Hazards Center",
+  "url": "https://hazards.colorado.edu",
+  "summary": "University of Colorado Boulder center linking disaster research and practice; runs the CONVERGE network for social science in disasters.",
+  "pathways": [
+   "crisis-disaster-and-high-reliability"
+  ],
+  "media": [
+   {
+    "kind": "Network",
+    "title": "CONVERGE",
+    "u": "https://converge.colorado.edu/"
+   },
+   {
+    "kind": "Interview",
+    "title": "Social capital and community resilience: a conversation with Daniel Aldrich",
+    "u": "https://www.resilience.org/stories/2026-06-16/social-capital-and-community-resilience-a-conversation-with-daniel-aldrich/"
+   },
+   {
+    "kind": "Review",
+    "title": "Rebecca Solnit: A Paradise Built in Hell (SSIR)",
+    "u": "https://ssir.org/books/reviews/entry/paradise_built_in_hell_extraordinary_communities_disaster_rebecca_solnit"
+   }
+  ]
+ },
+ {
+  "id": "bridges",
+  "name": "William Bridges Associates",
+  "url": "https://wmbridges.com",
+  "summary": "Carries William Bridges's transition model for the human side of organizational change.",
+  "pathways": [
+   "ritual-liminality-and-transition"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "What is transition?",
+    "u": "https://wmbridges.com/about/what-is-transition/"
+   },
+   {
+    "kind": "Article",
+    "title": "Francis Weller: The Geography of Sorrow (The Sun)",
+    "u": "https://www.thesunmagazine.org/articles/27277-the-geography-of-sorrow"
+   }
+  ]
+ },
+ {
+  "id": "wardley",
+  "name": "Wardley Mapping community",
+  "url": "https://archive.learnwardleymapping.com/book.html",
+  "summary": "Simon Wardley's openly licensed book and the community around mapping how value chains evolve.",
+  "pathways": [
+   "strategy-under-uncertainty"
+  ],
+  "media": [
+   {
+    "kind": "Book",
+    "title": "Wardley Maps (free online)",
+    "u": "https://archive.learnwardleymapping.com/book.html"
+   },
+   {
+    "kind": "Article",
+    "title": "Pierre Wack: Scenarios, Uncharted Waters Ahead (HBR)",
+    "u": "https://hbr.org/1985/09/scenarios-uncharted-waters-ahead"
+   }
+  ]
+ },
+ {
+  "id": "tbp",
+  "name": "Trust-Based Philanthropy Project",
+  "url": "https://www.trustbasedphilanthropy.org",
+  "summary": "Peer-to-peer initiative helping funders shift power toward grantees through multi-year, flexible, relational funding.",
+  "pathways": [
+   "funding-and-budgeting-for-adaptation"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Trust-based philanthropy practices",
+    "u": "https://www.trustbasedphilanthropy.org/practices"
+   },
+   {
+    "kind": "Article",
+    "title": "Building a trust-based philanthropy to shift power back to communities (SSIR)",
+    "u": "https://ssir.org/articles/entry/building_a_trust_based_philanthropy_to_shift_power_back_to_communities"
+   }
+  ]
+ },
+ {
+  "id": "recoding",
+  "name": "Recoding America",
+  "url": "https://www.recodingamerica.us/",
+  "summary": "Jennifer Pahlka's book and ongoing work on why government delivery fails and how policy and implementation can meet.",
+  "pathways": [
+   "government-plumbing"
+  ],
+  "media": [
+   {
+    "kind": "Podcast",
+    "title": "Jennifer Pahlka on reshaping government (WBUR On Point)",
+    "u": "https://www.wbur.org/onpoint/2023/06/14/recoding-america-author-jennifer-pahlka-on-how-we-can-reshape-our-government-to-work-for-us"
+   },
+   {
+    "kind": "Review",
+    "title": "System Error: review of Recoding America (SSIR)",
+    "u": "https://ssir.org/books/reviews/entry/system_error"
+   }
+  ]
+ },
+ {
+  "id": "teamtop",
+  "name": "Team Topologies",
+  "url": "https://teamtopologies.com",
+  "summary": "Matthew Skelton and Manuel Pais's approach to organizing teams for fast flow, widely used in digital government.",
+  "pathways": [
+   "teams-and-learning-cultures"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "Team Topologies key concepts",
+    "u": "https://teamtopologies.com/key-concepts"
+   },
+   {
+    "kind": "Article",
+    "title": "Martin Fowler: Team Topologies",
+    "u": "https://martinfowler.com/bliki/TeamTopologies.html"
+   }
+  ]
+ },
+ {
+  "id": "cif",
+  "name": "Collective Impact Forum",
+  "url": "https://collectiveimpactforum.org",
+  "summary": "Community of practice for cross-sector collaboration, now centered on equity and community power.",
+  "pathways": [
+   "collaboration-across-boundaries"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Collective Impact 3.0: an evolving framework for community change",
+    "u": "https://collectiveimpactforum.org/resource/collective-impact-3-0-an-evolving-framework-for-community-change/"
+   }
+  ]
+ },
+ {
+  "id": "corprebels",
+  "name": "Corporate Rebels",
+  "url": "https://www.corporate-rebels.com",
+  "summary": "Researchers who document progressive, self-managing workplaces, including Haier and Buurtzorg.",
+  "pathways": [
+   "corporate-innovation-and-renewal"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "RenDanHeYi: the organizational model defining the future",
+    "u": "https://www.corporate-rebels.com/blog/rendanheyi-forum"
+   },
+   {
+    "kind": "Article",
+    "title": "Haier: entrepreneurship at scale (Michele Zanini)",
+    "u": "https://www.michelezanini.com/haier-hbr/"
+   }
+  ]
+ },
+ {
+  "id": "infed",
+  "name": "infed (YMCA George Williams College)",
+  "url": "https://infed.org",
+  "summary": "Free encyclopedia of informal education with clear, well-sourced essays on the major educators.",
+  "pathways": [
+   "experiential-learning-and-reflective-practice",
+   "critical-and-popular-education"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "David A. Kolb on experiential learning",
+    "u": "https://infed.org/dir/welcome/david-a-kolb-on-experiential-learning/"
+   },
+   {
+    "kind": "Article",
+    "title": "Paulo Freire: dialogue, praxis and education",
+    "u": "https://infed.org/dir/welcome/paulo-freire-dialogue-praxis-and-education/"
+   },
+   {
+    "kind": "Article",
+    "title": "bell hooks on education",
+    "u": "https://infed.org/dir/welcome/bell-hooks-on-education/"
+   }
+  ]
+ },
+ {
+  "id": "highlander",
+  "name": "Highlander Research and Education Center",
+  "url": "https://beta.highlandercenter.org/about-us/",
+  "summary": "Founded in 1932 as the Highlander Folk School by Myles Horton; trained leaders of the labor and civil rights movements.",
+  "pathways": [
+   "critical-and-popular-education"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "How Myles Horton built a social movement institution (Convergence)",
+    "u": "https://convergencemag.com/articles/myles-horton-highlander/"
+   },
+   {
+    "kind": "Article",
+    "title": "Highlander Folk School (SNCC Digital Gateway)",
+    "u": "https://snccdigital.org/inside-sncc/alliances-relationships/highlander/"
+   }
+  ]
+ },
+ {
+  "id": "wenger",
+  "name": "Wenger-Trayner",
+  "url": "https://www.wenger-trayner.com",
+  "summary": "Etienne and Beverly Wenger-Trayner's practice on communities of practice, social learning, and systems convening.",
+  "pathways": [
+   "communities-of-practice-and-action-learning"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "Introduction to communities of practice",
+    "u": "https://www.wenger-trayner.com/introduction-to-communities-of-practice/"
+   }
+  ]
+ },
+ {
+  "id": "cultivating",
+  "name": "Cultivating Leadership",
+  "url": "https://www.cultivatingleadership.com",
+  "summary": "Jennifer Garvey Berger's firm working with adult development and complexity in leadership.",
+  "pathways": [
+   "adult-development-and-immunity-to-change"
+  ],
+  "media": [
+   {
+    "kind": "Book page",
+    "title": "Simple Habits for Complex Times",
+    "u": "https://www.cultivatingleadership.com/book/simple-habits-for-complex-times"
+   },
+   {
+    "kind": "Article",
+    "title": "Kegan and Lahey: The Real Reason People Won't Change (HBR)",
+    "u": "https://hbr.org/2001/11/the-real-reason-people-wont-change"
+   }
+  ]
+ },
+ {
+  "id": "idg",
+  "name": "Inner Development Goals",
+  "url": "https://innerdevelopmentgoals.org",
+  "summary": "Nonprofit framework of inner capacities for sustainable development. Widely used; read it alongside critiques of ranking inner growth.",
+  "pathways": [
+   "complexity-and-education"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "IDG guide",
+    "u": "https://innerdevelopmentgoals.org/guide/"
+   },
+   {
+    "kind": "Resources",
+    "title": "IDG resources",
+    "u": "https://innerdevelopmentgoals.org/about/resources/"
+   }
+  ]
+ },
+ {
+  "id": "sclg",
+  "name": "Systems Change Learning Guide",
+  "url": "https://welearnwegrow.github.io/capacities/",
+  "summary": "Jaya Ramchandani and Raisa Mirza's open capacity framework: 24 learning areas, a five-phase route, and the live library this app reads.",
+  "pathways": [
+   "complexity-and-education"
+  ],
+  "media": [
+   {
+    "kind": "Guide",
+    "title": "The map, route, and library",
+    "u": "https://welearnwegrow.github.io/capacities/"
+   }
+  ]
+ }
+]

@@ -1,0 +1,350 @@
+[
+ {
+  "id": "cybersyn",
+  "title": "Project Cybersyn",
+  "place": "Chile",
+  "years": "1971 to 1973",
+  "summary": "Stafford Beer's team built a real-time economic feedback network for Salvador Allende's government using the Viable System Model, telex machines, and an operations room.",
+  "lesson": "Cybernetic governance can move information and authority closer to where work happens. It also shows how quickly politics overtakes design.",
+  "note": "Ended by the 1973 coup. Historians still debate how much it worked as intended.",
+  "pathways": [
+   "cybernetics-the-shared-foundation",
+   "governance-and-self-organizing-structures"
+  ],
+  "sources": [
+   {
+    "t": "Eden Medina: Cybernetic Revolutionaries (MIT Press)",
+    "u": "https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/"
+   }
+  ]
+ },
+ {
+  "id": "rahs",
+  "title": "Risk Assessment and Horizon Scanning",
+  "place": "Singapore",
+  "years": "2004 onward",
+  "summary": "Singapore's government built a national horizon-scanning program informed by Cynefin and narrative sensemaking to detect weak signals early.",
+  "lesson": "Sensemaking methods can be institutionalized inside a state, but they need continual protection from reverting to prediction.",
+  "note": "Later commentary asks how much of the original ambition survived.",
+  "pathways": [
+   "sensemaking-and-acting-in-uncertainty",
+   "strategy-under-uncertainty"
+  ],
+  "sources": [
+   {
+    "t": "The Cynefin Co: Seeing the Invisible",
+    "u": "https://thecynefin.co/seeing-the-invisible/"
+   },
+   {
+    "t": "Integrating foresight into policy: RAHS in Singapore",
+    "u": "https://www.interface-eu.org/archive/publications/1273"
+   }
+  ]
+ },
+ {
+  "id": "buurtzorg",
+  "title": "Buurtzorg neighbourhood nursing",
+  "place": "Netherlands",
+  "years": "2006 onward",
+  "summary": "Home care delivered by small self-managing nurse teams with minimal overhead and no middle management, scaling to thousands of nurses.",
+  "lesson": "Distributed authority can scale when support functions serve teams instead of managing them.",
+  "note": "Results depend on Dutch funding rules and professional nursing culture; transplants elsewhere have been mixed.",
+  "pathways": [
+   "governance-and-self-organizing-structures",
+   "corporate-innovation-and-renewal",
+   "teams-and-learning-cultures"
+  ],
+  "sources": [
+   {
+    "t": "Commonwealth Fund case study",
+    "u": "https://www.commonwealthfund.org/publications/case-study/2015/may/home-care-self-governing-nursing-teams-netherlands-buurtzorg-model"
+   },
+   {
+    "t": "Centre for Public Impact profile",
+    "u": "https://centreforpublicimpact.org/public-impact-fundamentals/buurtzorg-revolutionising-home-care-in-the-netherlands/"
+   }
+  ]
+ },
+ {
+  "id": "amsterdam-doughnut",
+  "title": "Amsterdam City Doughnut",
+  "place": "Amsterdam, Netherlands",
+  "years": "2020 onward",
+  "summary": "The city adopted a Doughnut portrait to guide its circular economy strategy, asking how the city can thrive within planetary and social boundaries.",
+  "lesson": "A shared picture of the goal can realign many departments without a single master plan.",
+  "note": "Researchers question how far it has changed core economic decisions.",
+  "pathways": [
+   "complexity-economics-and-new-economic-models",
+   "public-policy-and-government-innovation"
+  ],
+  "sources": [
+   {
+    "t": "DEAL: Amsterdam City Doughnut",
+    "u": "https://doughnuteconomics.org/stories/amsterdam-city-doughnut"
+   },
+   {
+    "t": "TIME: Amsterdam is embracing a new economic theory",
+    "u": "https://time.com/5930093/amsterdam-doughnut-economics/"
+   }
+  ]
+ },
+ {
+  "id": "porto-alegre",
+  "title": "Participatory budgeting",
+  "place": "Porto Alegre, Brazil",
+  "years": "1989 onward",
+  "summary": "Residents deliberated and voted on a share of the city's capital budget through neighborhood and thematic assemblies, and the model spread worldwide.",
+  "lesson": "Real decision power, not consultation, draws people in. Participation shifted spending toward poorer neighborhoods.",
+  "note": "Weakened by later administrations; recent research documents its dismantling in its birthplace.",
+  "pathways": [
+   "hosting-and-participatory-practice",
+   "participatory-design-and-design-justice",
+   "power-analysis"
+  ],
+  "sources": [
+   {
+    "t": "WRI: Porto Alegre and the challenge of sustaining transformative change",
+    "u": "https://www.wri.org/research/porto-alegre-participatory-budgeting-and-challenge-sustaining-transformative-change"
+   },
+   {
+    "t": "Participedia: Porto Alegre 1989 to present",
+    "u": "https://participedia.net/case/5524"
+   },
+   {
+    "t": "From innovation to erosion (2026)",
+    "u": "https://journals.sagepub.com/doi/10.1177/1866802X261464354"
+   }
+  ]
+ },
+ {
+  "id": "pd-vietnam",
+  "title": "Child nutrition through positive deviance",
+  "place": "Vietnam",
+  "years": "1990 onward",
+  "summary": "Jerry and Monique Sternin worked with villages to find poor families whose children were well nourished, then helped others adopt their feeding practices.",
+  "lesson": "Solutions already present in a community spread faster than imported ones, because they come from peers.",
+  "note": "",
+  "pathways": [
+   "positive-deviance"
+  ],
+  "sources": [
+   {
+    "t": "The Vietnam story: 25 years later",
+    "u": "https://positivedeviance.org/case-studies-all/2018/4/16/the-vietnam-story-25-years-later"
+   }
+  ]
+ },
+ {
+  "id": "100k-lives",
+  "title": "100,000 Lives Campaign",
+  "place": "United States",
+  "years": "2004 to 2006",
+  "summary": "IHI enrolled thousands of hospitals in six evidence-based changes, using improvement cycles and peer networks to spread them.",
+  "lesson": "A campaign structure plus local PDSA testing can spread practice fast across independent organizations.",
+  "note": "Its headline lives-saved figure was challenged by researchers, and IHI published a reply.",
+  "pathways": [
+   "improvement-and-adaptive-management"
+  ],
+  "sources": [
+   {
+    "t": "IHI: 100,000 Lives Campaign ten years later",
+    "u": "https://www.ihi.org/library/blog/100000-lives-campaign-ten-years-later"
+   },
+   {
+    "t": "The 100,000 Lives Campaign: a scientific and policy review (PubMed)",
+    "u": "https://pubmed.ncbi.nlm.nih.gov/17120921/"
+   }
+  ]
+ },
+ {
+  "id": "menominee",
+  "title": "Menominee Forest",
+  "place": "Wisconsin, United States",
+  "years": "1854 onward",
+  "summary": "The Menominee Nation has managed its forest on a sustained-yield basis for generations, harvesting while the standing timber has grown.",
+  "lesson": "Long-horizon stewardship rooted in relationship with land can outperform short-cycle management on both ecology and livelihood.",
+  "note": "",
+  "pathways": [
+   "indigenous-and-land-based-knowledge",
+   "living-systems-and-regeneration"
+  ],
+  "sources": [
+   {
+    "t": "Yale Environment 360: Menominee forest management",
+    "u": "https://e360.yale.edu/features/menominee-forest-management-logging"
+   },
+   {
+    "t": "Menominee Tribal Enterprises: sustainable forest management",
+    "u": "https://www.mtewood.com/SustainableForestry/ForestManagement"
+   }
+  ]
+ },
+ {
+  "id": "sva",
+  "title": "Student Volunteer Army",
+  "place": "Christchurch, Aotearoa New Zealand",
+  "years": "2010 onward",
+  "summary": "After the Canterbury earthquakes, students self-organized thousands of volunteers to clear liquefaction silt, then became a lasting emergency response organization.",
+  "lesson": "Spontaneous volunteers become an asset when officials make room for them and when light structure forms quickly.",
+  "note": "",
+  "pathways": [
+   "crisis-disaster-and-high-reliability",
+   "emergence-in-movements-and-social-change"
+  ],
+  "sources": [
+   {
+    "t": "A shovel or a shopping cart: ten years of the SVA (PMC)",
+    "u": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8453034/"
+   }
+  ]
+ },
+ {
+  "id": "plymouth",
+  "title": "Plymouth Alliance for Complex Needs",
+  "place": "Plymouth, England",
+  "years": "2019 onward",
+  "summary": "The council and health commissioners replaced competing service contracts with a single alliance of providers sharing budget and responsibility for people with complex needs.",
+  "lesson": "Contract form shapes behavior. Alliance commissioning lets providers learn together instead of competing over targets.",
+  "note": "",
+  "pathways": [
+   "government-plumbing",
+   "public-policy-and-government-innovation",
+   "funding-and-budgeting-for-adaptation"
+  ],
+  "sources": [
+   {
+    "t": "HLS case study: Plymouth Alliance",
+    "u": "https://www.humanlearning.systems/uploads/Plymouth%20Alliance.pdf"
+   },
+   {
+    "t": "Co-operative Councils Innovation Network case study",
+    "u": "https://www.councils.coop/case-study/plymouth-alliance-for-complex-needs/"
+   }
+  ]
+ },
+ {
+  "id": "hls-cases",
+  "title": "Human Learning Systems in practice",
+  "place": "UK and beyond",
+  "years": "2019 onward",
+  "summary": "Dozens of public service organizations documenting their shift from targets and payment by results toward learning, relationships, and system stewardship.",
+  "lesson": "The shift is less about a new tool than about changing funding, accountability, and management at the same time.",
+  "note": "",
+  "pathways": [
+   "public-policy-and-government-innovation",
+   "measurement-and-accountability",
+   "developmental-evaluation"
+  ],
+  "sources": [
+   {
+    "t": "HLS case studies",
+    "u": "https://www.humanlearning.systems/case-studies/"
+   },
+   {
+    "t": "JRF: relational public service can tackle hardship",
+    "u": "https://www.jrf.org.uk/neighbourhoods-and-communities/relational-public-service-can-tackle-hardship-in-neighbourhoods"
+   }
+  ]
+ },
+ {
+  "id": "legible",
+  "title": "Legible Practises",
+  "place": "Helsinki, Finland",
+  "years": "2013",
+  "summary": "A free book of six stories, collected by Helsinki Design Lab, about public institutions that changed how they work and the stewardship craft behind it.",
+  "lesson": "Stewardship is a craft that can be described and taught when practitioners make their decisions visible.",
+  "note": "",
+  "pathways": [
+   "strategic-design-and-policy-labs",
+   "public-policy-and-government-innovation"
+  ],
+  "sources": [
+   {
+    "t": "Legible Practises (free book)",
+    "u": "https://www.helsinkidesignlab.org/legiblepractises"
+   }
+  ]
+ },
+ {
+  "id": "ojai",
+  "title": "Water shortage in Ojai",
+  "place": "Ojai, California",
+  "years": "2016 onward",
+  "summary": "Carnegie Mellon's transition design team worked with residents and stakeholders to map a wicked water problem and seed interventions across timescales.",
+  "lesson": "Mapping a problem with the people inside it, across long horizons, reveals where small interventions can connect.",
+  "note": "",
+  "pathways": [
+   "transition-design"
+  ],
+  "sources": [
+   {
+    "t": "Words into action: transition design in Ojai (SciELO)",
+    "u": "https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1853-35232019000300196"
+   }
+  ]
+ },
+ {
+  "id": "handelsbanken",
+  "title": "Handelsbanken and Equinor without annual budgets",
+  "place": "Sweden and Norway",
+  "years": "1970s onward",
+  "summary": "Two large firms dropped fixed annual budgets for rolling forecasts, relative targets, and local authority.",
+  "lesson": "Budget processes are a governance structure; changing them changes what people are allowed to learn.",
+  "note": "",
+  "pathways": [
+   "funding-and-budgeting-for-adaptation",
+   "corporate-innovation-and-renewal"
+  ],
+  "sources": [
+   {
+    "t": "Forbes: how Equinor and Handelsbanken abolished budgeting",
+    "u": "https://www.forbes.com/sites/stevedenning/2019/06/24/how-equinor-and-handelsbanken-abolished-budgeting/"
+   },
+   {
+    "t": "Handelsbanken case story (Agile Business Consortium)",
+    "u": "https://www.agilebusiness.org/resource/beyond-budgeting-business-agility-in-practice-the-handelsbanken-case-story.html"
+   }
+  ]
+ },
+ {
+  "id": "highlander-case",
+  "title": "Highlander Folk School and the civil rights movement",
+  "place": "Tennessee, United States",
+  "years": "1932 onward",
+  "summary": "Workshops where ordinary people analyzed their own situations trained labor organizers and civil rights leaders, including Rosa Parks and Septima Clark's citizenship schools.",
+  "lesson": "Popular education builds the analysis and relationships that movements later act on.",
+  "note": "",
+  "pathways": [
+   "critical-and-popular-education",
+   "emergence-in-movements-and-social-change"
+  ],
+  "sources": [
+   {
+    "t": "How Myles Horton built a social movement institution",
+    "u": "https://convergencemag.com/articles/myles-horton-highlander/"
+   },
+   {
+    "t": "Highlander Folk School (King Institute, Stanford)",
+    "u": "https://kinginstitute.stanford.edu/highlander-folk-school"
+   }
+  ]
+ },
+ {
+  "id": "haier",
+  "title": "Haier's RenDanHeYi",
+  "place": "China",
+  "years": "2005 onward",
+  "summary": "The appliance maker broke itself into thousands of microenterprises that contract with each other and serve users directly.",
+  "lesson": "Large organizations can shrink the distance between decisions and users by dissolving middle layers.",
+  "note": "",
+  "pathways": [
+   "corporate-innovation-and-renewal"
+  ],
+  "sources": [
+   {
+    "t": "Corporate Rebels: RenDanHeYi",
+    "u": "https://www.corporate-rebels.com/blog/rendanheyi-forum"
+   }
+  ]
+ }
+]
