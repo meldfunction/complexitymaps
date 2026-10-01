@@ -18,7 +18,7 @@ ORGS = [
          pathways=["Relational", "Ritual"],
          media=[M("Essay", "Bayo Akomolafe: The times are urgent, let's slow down", "https://www.bayoakomolafe.net/post/the-times-are-urgent-lets-slow-down"),
                 M("Podcast", "For The Wild: Bayo Akomolafe on slowing down in urgent times", "https://forthewild.world/listen/bayo-akomolafe-on-slowing-down-in-urgent-times-155"),
-                M("Course", "We Will Dance With Mountains", "https://course.bayoakomolafe.net/")]),
+                M("Course", "We Will Dance With Mountains (Bayo Akomolafe's offerings)", "https://www.bayoakomolafe.net/offerings")]),
     dict(id="gtdf", name="Gesturing Towards Decolonial Futures", url="https://decolonialfutures.net",
          summary="Arts and research collective co-founded by Vanessa Machado de Oliveira, working on how modernity's harms shape even our efforts to change it.",
          pathways=["Relational", "The metacrisis", "Ritual"],

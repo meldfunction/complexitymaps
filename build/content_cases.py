@@ -59,7 +59,7 @@ CASES = [
          note="",
          pathways=["Indigenous", "Living systems"],
          sources=[S("Yale Environment 360: Menominee forest management", "https://e360.yale.edu/features/menominee-forest-management-logging"),
-                  S("Menominee Tribal Enterprises: sustainable forest management", "https://www.mtewood.com/SustainableForestry/ForestManagement")]),
+                  S("College of Menominee Nation: an Indigenous model of sustainable development (Sustainability Science, open access)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6106376/")]),
     dict(id="sva", title="Student Volunteer Army", place="Christchurch, Aotearoa New Zealand", years="2010 onward",
          summary="After the Canterbury earthquakes, students self-organized thousands of volunteers to clear liquefaction silt, then became a lasting emergency response organization.",
          lesson="Spontaneous volunteers become an asset when officials make room for them and when light structure forms quickly.",

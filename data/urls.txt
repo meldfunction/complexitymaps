@@ -27,7 +27,6 @@ https://collectiveimpactforum.org/resource/collective-impact-3-0-an-evolving-fra
 https://compositionforum.com/issue/26/troublesome-knowledge-threshold.php
 https://converge.colorado.edu/
 https://convergencemag.com/articles/myles-horton-highlander/
-https://course.bayoakomolafe.net/
 https://cybsoc.org
 https://darkmatterlabs.org
 https://decolonialfutures.net
@@ -113,6 +112,7 @@ https://ostromworkshop.indiana.edu
 https://participedia.net/case/5524
 https://pespmc1.vub.ac.be/ASC/ETHICA_IMPER.html
 https://plato.stanford.edu/entries/peirce-semiotics/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6106376/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC8453034/
 https://positivedeviance.org
 https://positivedeviance.org/case-studies-all/2018/4/16/the-vietnam-story-25-years-later
@@ -167,6 +167,7 @@ https://www.agilebusiness.org/resource/beyond-budgeting-business-agility-in-prac
 https://www.atlas101.ca/pm/concepts/moores-strategic-triangle/
 https://www.batesoninstitute.org/warm-data
 https://www.bayoakomolafe.net
+https://www.bayoakomolafe.net/offerings
 https://www.bayoakomolafe.net/post/the-times-are-urgent-lets-slow-down
 https://www.betterevaluation.org
 https://www.beyondintractability.org/bksum/zehr-little
@@ -234,7 +235,6 @@ https://www.liberatingstructures.com
 https://www.margaretwheatley.com
 https://www.mcconnellfoundation.ca/wp-content/uploads/2017/07/A-Developmental-Evaluation-Primer-EN.pdf
 https://www.michelezanini.com/haier-hbr/
-https://www.mtewood.com/SustainableForestry/ForestManagement
 https://www.nesta.org.uk
 https://www.nesta.org.uk/report/big-mind-how-collective-intelligence-can-change-our-world/
 https://www.nesta.org.uk/report/renewing-regulation-anticipatory-regulation-in-an-age-of-disruption/
