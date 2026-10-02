@@ -417,7 +417,8 @@
   "url": "https://www.tavinstitute.org",
   "summary": "London institute for applied social science; runs the Leicester Conference on authority, leadership, and organization.",
   "pathways": [
-   "group-relations"
+   "group-relations",
+   "sociotechnical-systems"
   ],
   "media": [
    {
@@ -766,7 +767,8 @@
   "url": "https://www.ihi.org",
   "summary": "Founded by Don Berwick. Spread the Model for Improvement and PDSA cycles across health systems worldwide.",
   "pathways": [
-   "improvement-and-adaptive-management"
+   "improvement-and-adaptive-management",
+   "complexity-in-health-and-care"
   ],
   "media": [
    {
@@ -1187,7 +1189,8 @@
   "url": "https://teamtopologies.com",
   "summary": "Matthew Skelton and Manuel Pais's approach to organizing teams for fast flow, widely used in digital government.",
   "pathways": [
-   "teams-and-learning-cultures"
+   "teams-and-learning-cultures",
+   "sociotechnical-systems"
   ],
   "media": [
    {
@@ -1441,7 +1444,12 @@
    "software-flow-and-architecture",
    "resilience-engineering-and-safety-science",
    "complex-responsive-processes",
-   "systems-thinking-traditions-hard-soft-and-critical"
+   "systems-thinking-traditions-hard-soft-and-critical",
+   "complexity-in-health-and-care",
+   "sociotechnical-systems",
+   "complexity-through-art-music-and-film",
+   "process-philosophy-and-the-philosophy-of-complexity",
+   "attention-perception-and-neurodiversity"
   ],
   "media": [
    {

@@ -49,6 +49,11 @@
    "org",
    "pol"
   ],
+  "where": [
+   "defence",
+   "edu",
+   "tech"
+  ],
   "work_kinds": [
    "att"
   ],
@@ -222,6 +227,10 @@
   "scales": [
    "pla",
    "pol"
+  ],
+  "where": [
+   "edu",
+   "tech"
   ],
   "work_kinds": [
    "att"
@@ -418,6 +427,11 @@
    "org",
    "pol"
   ],
+  "where": [
+   "biz",
+   "edu",
+   "gov"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -573,6 +587,9 @@
   "scales": [
    "per",
    "pla"
+  ],
+  "where": [
+   "edu"
   ],
   "work_kinds": [
    "int",
@@ -751,6 +768,188 @@
   ]
  },
  {
+  "name": "Process philosophy and the philosophy of complexity",
+  "cluster": "Foundations and science",
+  "kind": "Lineage",
+  "overview": "What if the world is made of processes rather than things? Process philosophy treats becoming, time and relationship as basic, which is exactly what complexity science found in systems far from equilibrium. It gives practitioners a way of thinking that fits a world always in motion.",
+  "road": "Henri Bergson (time as lived duration) → Alfred North Whitehead (<i>Process and Reality</i>) → Ilya Prigogine (order through fluctuation, dissipative structures) → Nicholas Rescher (process metaphysics) → Jean Boulton (process complexity, <i>The Dao of Complexity</i>)",
+  "mix": "Daoist thought, Alicia Juarrero, Stanley Salthe (hierarchy theory and infodynamics), Yağmur Denizhan, Gregory Vigneaux on Maturana's time, Paul Cilliers",
+  "policy": "Treating programmes and policies as unfolding processes with histories, not fixed objects; paying attention to timing, path dependence and what is already in motion.",
+  "links": [
+   {
+    "t": "Process philosophy (Stanford Encyclopedia of Philosophy)",
+    "u": "https://plato.stanford.edu/entries/process-philosophy/"
+   },
+   {
+    "t": "Alfred North Whitehead (overview)",
+    "u": "https://en.wikipedia.org/wiki/Alfred_North_Whitehead"
+   },
+   {
+    "t": "Henri Bergson (overview)",
+    "u": "https://en.wikipedia.org/wiki/Henri_Bergson"
+   }
+  ],
+  "terms": [
+   "process",
+   "whitehead",
+   "bergson",
+   "becoming",
+   "duration",
+   "dao",
+   "tao",
+   "prigogine",
+   "boulton"
+  ],
+  "caps": [
+   "Cultural & Epistemic Inquiry",
+   "Systems Thinking & Modeling"
+  ],
+  "id": "process-philosophy-and-the-philosophy-of-complexity",
+  "orgs": [
+   "complexity-lounge"
+  ],
+  "cases": [
+   "oxfam-turkana"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "process",
+  "short_name": "Process philosophy",
+  "family": "sci",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "per",
+   "pla"
+  ],
+  "where": [
+   "edu"
+  ],
+  "work_kinds": [
+   "int",
+   "att"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as becoming: systems are not things that change but processes that hold patterns for a while, so history and timing matter as much as structure.",
+  "lens_status": "draft",
+  "explainer": [
+   "Most Western thought treats the world as made of things that then change. Process philosophy turns this around: change, becoming and relationship come first, and things are temporary patterns in ongoing processes. Henri Bergson wrote about time as lived duration; Alfred North Whitehead built a whole philosophy of process in Process and Reality (1929).",
+   "Complexity science arrived at similar ideas from physics: Ilya Prigogine showed how order arises in systems far from equilibrium. Jean Boulton, in the Complexity Lounge, connects this process view to practice and to Daoist thought in The Dao of Complexity. For practitioners it means paying attention to history, timing and what is already in motion."
+  ],
+  "practice": [
+   "Before planning, write the history of the situation: what has been building, and what is already in motion?",
+   "Ask what is emerging, not only what is broken.",
+   "Look for moments when a system is unsettled and more open to change, and time your moves for them.",
+   "Read a short piece by Bergson or Whitehead with others and talk about how it changes how you see your work."
+  ],
+  "sector_notes": {
+   "biz": "Strategy as process: watching how markets and organizations are becoming, not just their current state.",
+   "ngo": "International development work that follows how programmes unfold over time rather than fixed logframes.",
+   "health": "Seeing illness and recovery as unfolding processes rather than fixed states.",
+   "edu": "Process-based approaches to learning and curriculum.",
+   "com": "Community work that respects a place's history and timing."
+  },
+  "key_ideas": [
+   {
+    "term": "process philosophy",
+    "defn": "The view that becoming and change, not fixed things, are the basic stuff of the world."
+   },
+   {
+    "term": "duration",
+    "defn": "Bergson's word for time as it is lived, flowing and indivisible, rather than measured."
+   },
+   {
+    "term": "path dependence",
+    "defn": "When what is possible now depends on the history of how things got here."
+   }
+  ],
+  "plain_overview": "A philosophy of becoming: the world as processes rather than things, and why timing and history matter.",
+  "plain_policy": "Treating policies as unfolding processes with histories, paying attention to timing.",
+  "stops": [
+   {
+    "name": "Henri Bergson",
+    "note": "time as lived duration",
+    "years": "1859–1941",
+    "people": [
+     "Henri Bergson"
+    ]
+   },
+   {
+    "name": "Alfred North Whitehead",
+    "note": "Process and Reality",
+    "years": "1861–1947",
+    "people": [
+     "Alfred North Whitehead"
+    ]
+   },
+   {
+    "name": "Ilya Prigogine",
+    "note": "order through fluctuation, dissipative structures",
+    "years": "1917–2003",
+    "people": [
+     "Ilya Prigogine"
+    ]
+   },
+   {
+    "name": "Nicholas Rescher",
+    "note": "process metaphysics",
+    "years": "1928–2024",
+    "people": [
+     "Nicholas Rescher"
+    ]
+   },
+   {
+    "name": "Jean Boulton",
+    "note": "process complexity, The Dao of Complexity",
+    "years": "",
+    "people": [
+     "Jean Boulton"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 44,
+    "title": "Tensegrity, Gain, and Infodynamics",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=-jQcbHtrXGc",
+    "length": "2:05:35"
+   },
+   {
+    "n": 48,
+    "title": "Process Complexity: Foundations and Implications",
+    "guests": [
+     "Jean Boulton"
+    ],
+    "url": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+    "length": "1:45:05"
+   },
+   {
+    "n": 56,
+    "title": "Humberto Maturana’s Time: Living in the Present",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=0AHYfbmT5_Q",
+    "length": "2:13:38"
+   },
+   {
+    "n": 61,
+    "title": "A Generalized Modeling Approach to Learning and Creativity",
+    "guests": [
+     "Yağmur Denizhan"
+    ],
+    "url": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+    "length": "1:41:23"
+   }
+  ]
+ },
+ {
   "name": "Relational, transcontextual, and post-humanist knowing",
   "cluster": "Relational, Indigenous, and meaning",
   "overview": "Knowing through relationships rather than parts. Attends to how contexts shape each other and questions the human-centered, modern frame itself.",
@@ -821,6 +1020,10 @@
   "scales": [
    "per",
    "plc"
+  ],
+  "where": [
+   "com",
+   "edu"
   ],
   "work_kinds": [
    "sac",
@@ -953,6 +1156,12 @@
   "scales": [
    "grp",
    "plc"
+  ],
+  "where": [
+   "art",
+   "com",
+   "edu",
+   "ngo"
   ],
   "work_kinds": [
    "cre",
@@ -1094,6 +1303,10 @@
    "plc",
    "pla"
   ],
+  "where": [
+   "com",
+   "edu"
+  ],
   "work_kinds": [
    "sub",
    "com",
@@ -1229,6 +1442,12 @@
   "scales": [
    "grp",
    "org"
+  ],
+  "where": [
+   "art",
+   "biz",
+   "gov",
+   "ngo"
   ],
   "work_kinds": [
    "int"
@@ -1370,6 +1589,9 @@
   "scales": [
    "per",
    "pla"
+  ],
+  "where": [
+   "edu"
   ],
   "work_kinds": [
    "sac",
@@ -1519,6 +1741,11 @@
    "grp",
    "pol"
   ],
+  "where": [
+   "art",
+   "edu",
+   "gov"
+  ],
   "work_kinds": [
    "cre",
    "att"
@@ -1612,6 +1839,182 @@
   "watch": []
  },
  {
+  "name": "Complexity through art, music, and film",
+  "cluster": "Relational, Indigenous, and meaning",
+  "kind": "Practice",
+  "overview": "Artists have long worked with what complexity science describes: chance, emergence, feedback, listening, and audiences who complete the work. Art, music, theatre and film offer ways to feel and rehearse complexity, not only to read about it.",
+  "road": "John Cage (chance and indeterminacy) → Augusto Boal (Theatre of the Oppressed) → Pauline Oliveros (deep listening) → Brian Eno (generative music) → Sue Borchardt (animated films on complexity) → Kyle Godbey (Uneasy Listening: films, music and noise)",
+  "mix": "Social Presencing Theater, narrative change, semiotics, ritual and liminality, Bayo Akomolafe",
+  "policy": "Legislative theatre and other arts-based ways for residents to shape policy, and using film and story to help people see systems they live inside.",
+  "links": [
+   {
+    "t": "Generative music (overview)",
+    "u": "https://en.wikipedia.org/wiki/Generative_music"
+   },
+   {
+    "t": "Theatre of the Oppressed (overview)",
+    "u": "https://en.wikipedia.org/wiki/Theatre_of_the_Oppressed"
+   },
+   {
+    "t": "Kyle Godbey: 5 movies with lessons about complex systems",
+    "u": "https://uneasylistening.substack.com/p/5-movies-with-lessons-about-complex"
+   },
+   {
+    "t": "Sue Borchardt: Emergence in Organizations (animation)",
+    "u": "https://vimeo.com/243851179"
+   }
+  ],
+  "terms": [
+   "art",
+   "music",
+   "film",
+   "theatre",
+   "theater",
+   "improvis",
+   "generative",
+   "listening",
+   "creative",
+   "animation"
+  ],
+  "caps": [
+   "Agency & Expression",
+   "Narrative & Media Analysis"
+  ],
+  "id": "complexity-through-art-music-and-film",
+  "orgs": [
+   "complexity-lounge"
+  ],
+  "cases": [
+   "legislative-theatre"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "arts",
+  "short_name": "Art, music and film",
+  "family": "rel",
+  "sectors": [
+   "com",
+   "edu"
+  ],
+  "scales": [
+   "per",
+   "grp"
+  ],
+  "where": [
+   "art",
+   "com",
+   "edu"
+  ],
+  "work_kinds": [
+   "cre",
+   "att"
+  ],
+  "goals": [
+   "power",
+   "grow"
+  ],
+  "lens": "Complexity as something felt and rehearsed: art creates safe spaces to experience emergence, ambiguity and other perspectives, so people can practise living with them.",
+  "lens_status": "draft",
+  "explainer": [
+   "Many artists work with complexity directly. John Cage used chance to let music emerge beyond his control. Augusto Boal's Theatre of the Oppressed turns audiences into 'spect-actors' who rehearse changing their situation, and as a city councillor in Rio he used Legislative Theatre to turn residents' scenes into laws. Pauline Oliveros taught deep listening; Brian Eno makes generative music that sets up rules and lets the piece unfold.",
+   "In the Complexity Lounge world, Sue Borchardt explains complexity through short animations, and Kyle Godbey writes about films, music and noise as ways into complex systems. Art helps because it lets people feel uncertainty, emergence and multiple perspectives, rather than only describing them."
+  ],
+  "practice": [
+   "Watch a film with a group and ask what system the characters are caught in and how it shifts.",
+   "Try a short improvisation exercise before a strategy meeting: respond to what is offered instead of planning.",
+   "Use forum theatre: act out a stuck situation and let others step in to try a different move.",
+   "Listen for five minutes to everything you can hear, then talk about what you noticed."
+  ],
+  "sector_notes": {
+   "biz": "Improvisation and arts-based methods in leadership and innovation programmes.",
+   "ngo": "Theatre of the Oppressed and participatory arts in community development worldwide.",
+   "health": "Arts in health: music, drama and art therapy for people living with complexity in their bodies.",
+   "edu": "Teaching systems and emergence through music, film and play.",
+   "com": "Community theatre and festivals as spaces where residents rehearse change."
+  },
+  "key_ideas": [
+   {
+    "term": "generative music",
+    "defn": "Music made by setting up rules or systems and letting the piece emerge, rather than writing every note."
+   },
+   {
+    "term": "spect-actor",
+    "defn": "Augusto Boal's word for audience members who step into the scene and act."
+   },
+   {
+    "term": "deep listening",
+    "defn": "Pauline Oliveros's practice of listening to everything, including what you usually filter out."
+   },
+   {
+    "term": "legislative theatre",
+    "defn": "Boal's method for turning residents' theatre scenes into proposals for law."
+   }
+  ],
+  "plain_overview": "Feeling and rehearsing complexity through art, music, theatre and film.",
+  "plain_policy": "Arts-based ways for residents to shape policy, such as legislative theatre.",
+  "stops": [
+   {
+    "name": "John Cage",
+    "note": "chance and indeterminacy",
+    "years": "1912–1992",
+    "people": [
+     "John Cage"
+    ]
+   },
+   {
+    "name": "Augusto Boal",
+    "note": "Theatre of the Oppressed",
+    "years": "1931–2009",
+    "people": [
+     "Augusto Boal"
+    ]
+   },
+   {
+    "name": "Pauline Oliveros",
+    "note": "deep listening",
+    "years": "1932–2016",
+    "people": [
+     "Pauline Oliveros"
+    ]
+   },
+   {
+    "name": "Brian Eno",
+    "note": "generative music",
+    "years": "b. 1948",
+    "people": [
+     "Brian Eno"
+    ]
+   },
+   {
+    "name": "Sue Borchardt",
+    "note": "animated films on complexity",
+    "years": "",
+    "people": [
+     "Sue Borchardt"
+    ]
+   },
+   {
+    "name": "Kyle Godbey",
+    "note": "Uneasy Listening: films, music and noise",
+    "years": "",
+    "people": [
+     "Kyle Godbey"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 14,
+    "title": "Stumbling on Complexity",
+    "guests": [
+     "Sue Borchardt"
+    ],
+    "url": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
+    "length": "1:53:16"
+   }
+  ]
+ },
+ {
   "name": "Living systems and regeneration",
   "cluster": "Living systems",
   "overview": "Life as self-producing and interdependent, applied to ecological resilience and regenerative design of cultures and economies.",
@@ -1666,6 +2069,10 @@
   "scales": [
    "plc",
    "pla"
+  ],
+  "where": [
+   "com",
+   "edu"
   ],
   "work_kinds": [
    "sub"
@@ -1841,6 +2248,10 @@
    "plc",
    "pla"
   ],
+  "where": [
+   "com",
+   "edu"
+  ],
   "work_kinds": [
    "sub",
    "att"
@@ -1951,7 +2362,7 @@
   "cluster": "Organizing and sensemaking",
   "overview": "Practical frameworks for telling ordered problems from complex ones and acting through small, safe-to-fail probes.",
   "road": "W. Ross Ashby → Karl Weick (†2026) → Alicia Juarrero → Dave Snowden (Cynefin) → Glenda Eoyang (Human Systems Dynamics)",
-  "mix": "Stacey and Shaw's complex responsive processes; Sonja Blignaut, Tony Quinlan, Zhen Goh, Michael Cheveldave, Mary Boone, Viv Read and Julie Cunningham, John Boyd (the OODA loop), Trent Hone, Riva Greenberg",
+  "mix": "Stacey and Shaw's complex responsive processes; Sonja Blignaut, Tony Quinlan, Zhen Goh, Michael Cheveldave, Mary Boone, Viv Read and Julie Cunningham, John Boyd (the OODA loop), Trent Hone, Riva Greenberg, estuarine mapping (mapping constraints by the energy and time it takes to change them), narrative research methods: SenseMaker, narrative assemblages and weak signals",
   "policy": "Cynefin in policy and national risk work, safe-to-fail probes instead of big pilots, and distributed citizen narratives as live evidence.",
   "links": [
    {
@@ -2001,6 +2412,15 @@
   "scales": [
    "org",
    "pol"
+  ],
+  "where": [
+   "biz",
+   "defence",
+   "gov",
+   "health",
+   "ngo",
+   "safety",
+   "tech"
   ],
   "work_kinds": [
    "adm",
@@ -2350,6 +2770,11 @@
    "org",
    "grp"
   ],
+  "where": [
+   "biz",
+   "com",
+   "ngo"
+  ],
   "work_kinds": [
    "com"
   ],
@@ -2511,6 +2936,12 @@
    "grp",
    "org"
   ],
+  "where": [
+   "biz",
+   "gov",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "int"
   ],
@@ -2628,6 +3059,180 @@
   ]
  },
  {
+  "name": "Sociotechnical systems",
+  "cluster": "Organizing and sensemaking",
+  "kind": "Lineage",
+  "overview": "Work is never only technology or only people. Sociotechnical design shapes the technical and the social together, so teams can manage their own whole tasks, and it explains why systems end up mirroring the organizations that build them.",
+  "road": "Eric Trist and Ken Bamforth (the Durham coal mines, 1951) → Fred Emery and Einar Thorsrud (industrial democracy in Norway) → Albert Cherns (principles of sociotechnical design) → Melvin Conway (Conway's law, 1968) → Matthew Skelton and Manuel Pais (<i>Team Topologies</i>)",
+  "mix": "Group Relations and the Tavistock Institute, The Flow System, the Complexity Lounge panel on constraints and materiality",
+  "policy": "Designing digital public services and the teams that run them together, and giving frontline teams whole tasks and the authority to do them.",
+  "links": [
+   {
+    "t": "Sociotechnical system (overview)",
+    "u": "https://en.wikipedia.org/wiki/Sociotechnical_system"
+   },
+   {
+    "t": "Melvin Conway: How Do Committees Invent? (1968)",
+    "u": "https://www.melconway.com/Home/Committees_Paper.html"
+   },
+   {
+    "t": "Team Topologies key concepts",
+    "u": "https://teamtopologies.com/key-concepts"
+   }
+  ],
+  "terms": [
+   "sociotechnical",
+   "socio-technical",
+   "trist",
+   "emery",
+   "conway",
+   "team design",
+   "autonomous work group",
+   "tavistock"
+  ],
+  "caps": [
+   "Organizing & Facilitating",
+   "Systems Thinking & Modeling"
+  ],
+  "id": "sociotechnical-systems",
+  "orgs": [
+   "tavistock",
+   "teamtop",
+   "complexity-lounge"
+  ],
+  "cases": [
+   "volvo-kalmar"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "sts",
+  "short_name": "Sociotechnical systems",
+  "family": "sci",
+  "sectors": [
+   "biz",
+   "gov"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "where": [
+   "biz",
+   "gov",
+   "safety",
+   "tech"
+  ],
+  "work_kinds": [
+   "cra",
+   "adm"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as the joint system of people and technology: you cannot optimize one without the other, and the structure of an organization shows up in what it builds.",
+  "lens_status": "draft",
+  "explainer": [
+   "Sociotechnical systems thinking began at the Tavistock Institute after the Second World War. Eric Trist and Ken Bamforth studied British coal mines and found that new machinery broke up small, self-organizing work groups, and productivity and morale fell. They concluded that technology and social organization have to be designed together.",
+   "Fred Emery and Einar Thorsrud carried this into industrial democracy in Norway, and Volvo's Kalmar and Uddevalla plants tried team-based car assembly. Melvin Conway's 1968 observation, now called Conway's law, says organizations design systems that copy their own communication structures. Team Topologies applies the same insight to software teams today."
+  ],
+  "practice": [
+   "Draw your team structure next to your system's architecture. Where do they mirror each other, and where does that cause pain?",
+   "Give a team a whole task it can complete, not a fragment, and the authority to organize how it does it.",
+   "When introducing new technology, design the work around it with the people who will do it.",
+   "Use Team Topologies to reduce the number of other teams each team depends on."
+  ],
+  "sector_notes": {
+   "biz": "Software companies use Conway's law and Team Topologies to shape teams and architecture together.",
+   "ngo": "Small organizations adopting new systems design the work and the tool at the same time.",
+   "health": "Health IT projects fail or succeed on whether clinical work and software are designed together.",
+   "edu": "Taught in organization studies, information systems and software engineering.",
+   "com": "Community organizations choosing tools that fit how volunteers actually work."
+  },
+  "key_ideas": [
+   {
+    "term": "sociotechnical system",
+    "defn": "A system in which people, their work and their technology have to be designed together."
+   },
+   {
+    "term": "conway's law",
+    "defn": "Organizations design systems that copy their own communication structures."
+   },
+   {
+    "term": "autonomous work group",
+    "defn": "A team that manages a whole task and organizes its own work."
+   }
+  ],
+  "plain_overview": "Designing people, work and technology together, and why systems copy the organizations that build them.",
+  "plain_policy": "Designing digital services and the teams that run them together, with whole tasks for frontline teams.",
+  "stops": [
+   {
+    "name": "Eric Trist and Ken Bamforth",
+    "note": "the Durham coal mines, 1951",
+    "years": "1909–1993",
+    "people": [
+     "Eric Trist",
+     "Ken Bamforth"
+    ]
+   },
+   {
+    "name": "Fred Emery and Einar Thorsrud",
+    "note": "industrial democracy in Norway",
+    "years": "1923–1985",
+    "people": [
+     "Fred Emery",
+     "Einar Thorsrud"
+    ]
+   },
+   {
+    "name": "Albert Cherns",
+    "note": "principles of sociotechnical design",
+    "years": "",
+    "people": [
+     "Albert Cherns"
+    ]
+   },
+   {
+    "name": "Melvin Conway",
+    "note": "Conway's law, 1968",
+    "years": "",
+    "people": [
+     "Melvin Conway"
+    ]
+   },
+   {
+    "name": "Matthew Skelton and Manuel Pais",
+    "note": "Team Topologies",
+    "years": "",
+    "people": []
+   }
+  ],
+  "watch": [
+   {
+    "n": 6,
+    "title": "The Flow System",
+    "guests": [
+     "Nigel Thurlow",
+     "John Turner"
+    ],
+    "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+    "length": "1:49:38"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ]
+ },
+ {
   "name": "Emergence in movements and social change",
   "cluster": "Movements and hosting",
   "overview": "How small, relational, adaptive actions scale into systemic change without central control.",
@@ -2683,6 +3288,9 @@
   "scales": [
    "plc",
    "pol"
+  ],
+  "where": [
+   "com"
   ],
   "work_kinds": [
    "com",
@@ -2814,6 +3422,11 @@
   "scales": [
    "grp",
    "plc"
+  ],
+  "where": [
+   "com",
+   "gov",
+   "ngo"
   ],
   "work_kinds": [
    "car",
@@ -2983,6 +3596,10 @@
   "scales": [
    "grp"
   ],
+  "where": [
+   "edu",
+   "ngo"
+  ],
   "work_kinds": [
    "att"
   ],
@@ -3102,6 +3719,10 @@
   "scales": [
    "grp",
    "per"
+  ],
+  "where": [
+   "biz",
+   "edu"
   ],
   "work_kinds": [
    "int"
@@ -3230,6 +3851,11 @@
    "grp",
    "org"
   ],
+  "where": [
+   "biz",
+   "gov",
+   "ngo"
+  ],
   "work_kinds": [
    "pol"
   ],
@@ -3342,6 +3968,11 @@
   "scales": [
    "org",
    "plc"
+  ],
+  "where": [
+   "biz",
+   "gov",
+   "ngo"
   ],
   "work_kinds": [
    "cre"
@@ -3459,6 +4090,9 @@
   "scales": [
    "per",
    "grp"
+  ],
+  "where": [
+   "com"
   ],
   "work_kinds": [
    "car",
@@ -3589,6 +4223,11 @@
   "scales": [
    "per"
   ],
+  "where": [
+   "com",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "car",
    "int"
@@ -3672,6 +4311,185 @@
   "watch": []
  },
  {
+  "name": "Attention, perception, and neurodiversity",
+  "cluster": "Living practices",
+  "kind": "Lineage",
+  "overview": "What we notice shapes what we can do in a complex situation, and different minds notice differently. This pathway joins research on attention and perception with the neurodiversity paradigm, which treats differences such as autism and ADHD as natural variation, not deficits to fix.",
+  "road": "James J. Gibson (affordances: what an environment offers) → Daniel Simons and Christopher Chabris (inattentional blindness, the invisible gorilla) → Gerd Gigerenzer (fast and frugal heuristics) → Judy Singer (the neurodiversity paradigm) → Sonny Jane Wise (the neurodivergent umbrella)",
+  "mix": "Iain McGilchrist on attention, Jim Benson on neurodiversity in problem-solving, somatic practice, sensemaking",
+  "policy": "Designing services, workplaces and hiring for different kinds of minds, and assuming that any group will miss what it is not set up to see.",
+  "links": [
+   {
+    "t": "Neurodiversity (overview)",
+    "u": "https://en.wikipedia.org/wiki/Neurodiversity"
+   },
+   {
+    "t": "Inattentional blindness (overview)",
+    "u": "https://en.wikipedia.org/wiki/Inattentional_blindness"
+   },
+   {
+    "t": "Affordance (overview)",
+    "u": "https://en.wikipedia.org/wiki/Affordance"
+   },
+   {
+    "t": "Sonny Jane Wise: Embracing the neurodivergent umbrella (video)",
+    "u": "https://www.youtube.com/watch?v=dkNAIut6EmA"
+   }
+  ],
+  "terms": [
+   "attention",
+   "perception",
+   "neurodivers",
+   "autism",
+   "adhd",
+   "affordance",
+   "heuristic",
+   "noticing",
+   "inattentional"
+  ],
+  "caps": [
+   "Observing & Listening",
+   "Agency & Expression"
+  ],
+  "id": "attention-perception-and-neurodiversity",
+  "orgs": [
+   "complexity-lounge"
+  ],
+  "cases": [
+   "sap-autism-at-work"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "neuro",
+  "short_name": "Attention and neurodiversity",
+  "family": "rel",
+  "sectors": [
+   "biz",
+   "edu",
+   "com"
+  ],
+  "scales": [
+   "per",
+   "grp"
+  ],
+  "where": [
+   "biz",
+   "com",
+   "edu",
+   "health"
+  ],
+  "work_kinds": [
+   "car",
+   "int",
+   "att"
+  ],
+  "goals": [
+   "grow"
+  ],
+  "lens": "Complexity as partial seeing: no one perceives the whole of a complex situation, and different kinds of minds notice different parts, so diversity of perception is a resource.",
+  "lens_status": "draft",
+  "explainer": [
+   "What we notice depends on what we are looking for. In the invisible gorilla experiment, Daniel Simons and Christopher Chabris showed that many people counting basketball passes miss a person in a gorilla suit walking through the scene. James J. Gibson's idea of affordances describes how we perceive what an environment invites us to do, and Gerd Gigerenzer shows how simple heuristics often work well under uncertainty.",
+   "The neurodiversity paradigm, named by Judy Singer in the late 1990s, treats differences such as autism, ADHD and dyslexia as natural human variation rather than deficits. In the Complexity Lounge, Jim Benson argues that diverse minds make better problem-solving teams, and several guests describe how complexity gave them language for how they see the world. Different minds notice different things, which matters most when situations are complex."
+  ],
+  "practice": [
+   "Before deciding, ask who in the room might be noticing something the rest of you are not set up to see.",
+   "Design meetings for different ways of thinking: share material in advance, allow written input, avoid rewarding only fast talkers.",
+   "Review hiring and appraisal for assumptions that disadvantage neurodivergent people.",
+   "Practise noticing: list everything you can see in a familiar place, then look again."
+  ],
+  "sector_notes": {
+   "biz": "Neurodiversity hiring programmes and inclusive team practices in technology and finance.",
+   "ngo": "Disability-led organizations shaping services with, not for, neurodivergent people.",
+   "health": "Moving from deficit models to support that fits how people actually think and sense.",
+   "edu": "Classrooms designed for different kinds of minds rather than one norm.",
+   "com": "Peer-led neurodivergent communities and advocacy."
+  },
+  "key_ideas": [
+   {
+    "term": "neurodiversity",
+    "defn": "The natural variation in human minds, including autism, ADHD and dyslexia, seen as difference rather than deficit."
+   },
+   {
+    "term": "affordance",
+    "defn": "What an environment offers or invites a person or animal to do, as they perceive it."
+   },
+   {
+    "term": "inattentional blindness",
+    "defn": "Failing to see something in plain view because attention is focused elsewhere."
+   },
+   {
+    "term": "heuristic",
+    "defn": "A simple rule of thumb that often works well when information is limited and the future uncertain."
+   }
+  ],
+  "plain_overview": "What we notice shapes what we can do, and different minds notice different things.",
+  "plain_policy": "Services, workplaces and hiring designed for different kinds of minds.",
+  "stops": [
+   {
+    "name": "James J. Gibson",
+    "note": "affordances: what an environment offers",
+    "years": "1904–1979",
+    "people": [
+     "James J. Gibson"
+    ]
+   },
+   {
+    "name": "Daniel Simons and Christopher Chabris",
+    "note": "inattentional blindness, the invisible gorilla",
+    "years": "b. 1969; b. 1966",
+    "people": [
+     "Daniel Simons",
+     "Christopher Chabris"
+    ]
+   },
+   {
+    "name": "Gerd Gigerenzer",
+    "note": "fast and frugal heuristics",
+    "years": "b. 1947",
+    "people": [
+     "Gerd Gigerenzer"
+    ]
+   },
+   {
+    "name": "Judy Singer",
+    "note": "the neurodiversity paradigm",
+    "years": "",
+    "people": [
+     "Judy Singer"
+    ]
+   },
+   {
+    "name": "Sonny Jane Wise",
+    "note": "the neurodivergent umbrella",
+    "years": "",
+    "people": [
+     "Sonny Jane Wise"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 16,
+    "title": "Mayhem Loves Company",
+    "guests": [
+     "Jim Benson"
+    ],
+    "url": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+    "length": "1:56:59"
+   },
+   {
+    "n": 42,
+    "title": "A Talk on Hidden Events",
+    "guests": [
+     "Ron Westrum"
+    ],
+    "url": "https://www.youtube.com/watch?v=t2tah6EyixI",
+    "length": "1:52:43"
+   }
+  ]
+ },
+ {
   "name": "Power analysis",
   "cluster": "Power, narrative, and conflict",
   "kind": "Method",
@@ -3710,7 +4528,8 @@
    "jass"
   ],
   "cases": [
-   "porto-alegre"
+   "porto-alegre",
+   "legislative-theatre"
   ],
   "gov": false,
   "reading": [],
@@ -3725,6 +4544,10 @@
   "scales": [
    "plc",
    "pol"
+  ],
+  "where": [
+   "com",
+   "ngo"
   ],
   "work_kinds": [
    "pol"
@@ -3857,6 +4680,11 @@
   ],
   "scales": [
    "pol"
+  ],
+  "where": [
+   "art",
+   "com",
+   "ngo"
   ],
   "work_kinds": [
    "pol",
@@ -4023,6 +4851,11 @@
    "grp",
    "plc"
   ],
+  "where": [
+   "com",
+   "gov",
+   "ngo"
+  ],
   "work_kinds": [
    "pol"
   ],
@@ -4172,6 +5005,12 @@
   "scales": [
    "pol",
    "org"
+  ],
+  "where": [
+   "biz",
+   "com",
+   "gov",
+   "tech"
   ],
   "work_kinds": [
    "pol",
@@ -4344,6 +5183,12 @@
    "plc",
    "org"
   ],
+  "where": [
+   "com",
+   "defence",
+   "gov",
+   "safety"
+  ],
   "work_kinds": [
    "car"
   ],
@@ -4502,6 +5347,10 @@
    "per",
    "grp"
   ],
+  "where": [
+   "art",
+   "com"
+  ],
   "work_kinds": [
    "sac"
   ],
@@ -4643,6 +5492,14 @@
   "scales": [
    "org",
    "pol"
+  ],
+  "where": [
+   "biz",
+   "defence",
+   "gov",
+   "health",
+   "safety",
+   "tech"
   ],
   "work_kinds": [
    "car"
@@ -4868,6 +5725,9 @@
   "scales": [
    "pol"
   ],
+  "where": [
+   "gov"
+  ],
   "work_kinds": [
    "pol"
   ],
@@ -5014,6 +5874,10 @@
    "pol",
    "pla"
   ],
+  "where": [
+   "edu",
+   "gov"
+  ],
   "work_kinds": [
    "cre"
   ],
@@ -5153,6 +6017,10 @@
    "pol",
    "pla"
   ],
+  "where": [
+   "edu",
+   "gov"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -5237,12 +6105,164 @@
   "watch": []
  },
  {
+  "name": "Complexity in health and care",
+  "cluster": "Policy, systemic design, and economics",
+  "kind": "Field",
+  "overview": "Health and care are complex systems: patients live with conditions that interact, care crosses many organizations, and what works depends on the person. This field brings complexity thinking into clinics, hospitals and the lives of people managing their own health.",
+  "road": "Paul Plsek and Trisha Greenhalgh (complexity science in health care, BMJ 2001) → the Esther network in Jönköping, Sweden (care designed around one person's journey) → Riva Greenberg (living with type 1 diabetes as a complex system)",
+  "mix": "Don Berwick and improvement science, Buurtzorg's self-managing nurse teams, resilience engineering and Safety-II, positive deviance",
+  "policy": "Designing care around the person rather than the organization, pooling budgets across health and social care, and measuring outcomes that matter to patients.",
+  "links": [
+   {
+    "t": "Plsek and Greenhalgh: The challenge of complexity in health care (BMJ, 2001)",
+    "u": "https://pubmed.ncbi.nlm.nih.gov/11557716/"
+   },
+   {
+    "t": "Commonwealth Fund: Sweden's Esther model (2016, PDF)",
+    "u": "https://www.commonwealthfund.org/sites/default/files/2018-09/1901_Gray_Esther_case_study_v3.pdf"
+   },
+   {
+    "t": "Riva Greenberg: Diabetes Stories",
+    "u": "https://diabetesstories.com/"
+   }
+  ],
+  "terms": [
+   "health",
+   "care",
+   "clinical",
+   "patient",
+   "hospital",
+   "diabetes",
+   "nursing",
+   "primary care",
+   "chronic"
+  ],
+  "caps": [
+   "Complex Problem Solving",
+   "Participatory Research & Design"
+  ],
+  "id": "complexity-in-health-and-care",
+  "orgs": [
+   "ihi",
+   "complexity-lounge"
+  ],
+  "cases": [
+   "esther-jonkoping"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "health",
+  "short_name": "Health and care",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "ngo",
+   "com"
+  ],
+  "scales": [
+   "per",
+   "org"
+  ],
+  "where": [
+   "com",
+   "gov",
+   "health",
+   "ngo"
+  ],
+  "work_kinds": [
+   "car"
+  ],
+  "goals": [
+   "policy"
+  ],
+  "lens": "Complexity as interacting lives and organizations: a patient's health emerges from many conditions, relationships and services at once, so care has to be coordinated around the person and adapted as things change.",
+  "lens_status": "draft",
+  "explainer": [
+   "In 2001 Paul Plsek and Trisha Greenhalgh argued in the BMJ that health care should be understood as a complex adaptive system: patients, professionals and organizations adapt to each other, so care cannot be run like a machine. Since then, complexity thinking has shaped improvement work, integrated care and how people live with long-term conditions.",
+   "Sweden's Esther network shows what this looks like in practice: staff across a hospital, primary care and municipal care redesigned services around the journey of one imagined older patient, Esther. Riva Greenberg, in the Complexity Lounge, describes living with type 1 diabetes as managing a complex system every day."
+  ],
+  "practice": [
+   "Pick one patient journey and map every handover between organizations. Where does the person fall through the gaps?",
+   "Bring staff from different organizations together around one real or imagined person, as Esther did.",
+   "Ask patients what matters to them before deciding what to measure.",
+   "Run small tests of change across organizational boundaries and share what you learn."
+  ],
+  "sector_notes": {
+   "biz": "Health technology firms designing for real patient journeys rather than single episodes of care.",
+   "ngo": "Patient groups and charities supporting people to manage complex conditions.",
+   "health": "Integrated care, person-centred improvement and Safety-II are reshaping how health systems work.",
+   "edu": "Medical and nursing education teaching complexity alongside protocols.",
+   "com": "Community health workers and peer support linking care to everyday life."
+  },
+  "key_ideas": [
+   {
+    "term": "person-centred care",
+    "defn": "Care organized around what matters to the person, not around the organizations that provide it."
+   },
+   {
+    "term": "integrated care",
+    "defn": "Health and social care services working as one system around a person."
+   },
+   {
+    "term": "complex adaptive system",
+    "defn": "A system of many agents that adapt to each other, so behaviour emerges rather than being planned."
+   }
+  ],
+  "plain_overview": "Health and care as complex systems, and care designed around the person rather than the organizations.",
+  "plain_policy": "Care built around patients' journeys, budgets pooled across health and social care, and outcomes that matter to patients.",
+  "stops": [
+   {
+    "name": "Paul Plsek and Trisha Greenhalgh",
+    "note": "complexity science in health care, BMJ 2001",
+    "years": "b. 1959",
+    "people": [
+     "Trisha Greenhalgh",
+     "Paul Plsek"
+    ]
+   },
+   {
+    "name": "the Esther network in Jönköping, Sweden",
+    "note": "care designed around one person's journey",
+    "years": "",
+    "people": []
+   },
+   {
+    "name": "Riva Greenberg",
+    "note": "living with type 1 diabetes as a complex system",
+    "years": "",
+    "people": [
+     "Riva Greenberg"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 2,
+    "title": "Complexity Science Changed My Life with Type 1 Diabetes",
+    "guests": [
+     "Riva Greenberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+    "length": "1:38:05"
+   },
+   {
+    "n": 4,
+    "title": "Cynefin & Safety",
+    "guests": [
+     "Michael Cheveldave"
+    ],
+    "url": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+    "length": "1:49:38"
+   }
+  ]
+ },
+ {
   "name": "Strategy under uncertainty",
   "cluster": "Strategy, money, and accountability",
   "kind": "Method",
   "overview": "Strategy that assumes the future cannot be predicted: rehearse several futures, map how value chains evolve, and build options that benefit from surprise.",
   "road": "Pierre Wack (Shell scenarios) → Adam Kahane (transformative scenario planning) → Simon Wardley (Wardley Mapping) → Nassim Nicholas Taleb (antifragility)",
-  "mix": "Three Horizons, Cynefin, futures literacy",
+  "mix": "Three Horizons, Cynefin, futures literacy; Helmuth von Moltke the Elder and mission command (give intent, not detailed orders), John Boyd",
   "policy": "Scenario work before long-lived infrastructure or budget commitments, and mapping which public capabilities are commodity versus genuinely new before procuring them.",
   "links": [
    {
@@ -5292,6 +6312,12 @@
   ],
   "scales": [
    "org"
+  ],
+  "where": [
+   "biz",
+   "defence",
+   "gov",
+   "tech"
   ],
   "work_kinds": [
    "adm"
@@ -5473,6 +6499,10 @@
    "org",
    "pol"
   ],
+  "where": [
+   "gov",
+   "ngo"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -5606,6 +6636,10 @@
   "scales": [
    "org",
    "pol"
+  ],
+  "where": [
+   "gov",
+   "ngo"
   ],
   "work_kinds": [
    "adm"
@@ -5745,6 +6779,9 @@
    "org",
    "pol"
   ],
+  "where": [
+   "gov"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -5864,7 +6901,9 @@
   ],
   "cases": [
    "buurtzorg",
-   "dora-research"
+   "dora-research",
+   "volvo-kalmar",
+   "sap-autism-at-work"
   ],
   "gov": false,
   "reading": [],
@@ -5878,6 +6917,13 @@
   "scales": [
    "grp",
    "org"
+  ],
+  "where": [
+   "biz",
+   "defence",
+   "gov",
+   "safety",
+   "tech"
   ],
   "work_kinds": [
    "adm"
@@ -6090,6 +7136,10 @@
   "scales": [
    "org"
   ],
+  "where": [
+   "biz",
+   "tech"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -6251,6 +7301,11 @@
    "plc",
    "pol"
   ],
+  "where": [
+   "com",
+   "gov",
+   "ngo"
+  ],
   "work_kinds": [
    "com"
   ],
@@ -6369,6 +7424,11 @@
   ],
   "scales": [
    "org"
+  ],
+  "where": [
+   "art",
+   "biz",
+   "tech"
   ],
   "work_kinds": [
    "cra"
@@ -6495,7 +7555,8 @@
    "goodservices"
   ],
   "cases": [
-   "gds"
+   "gds",
+   "esther-jonkoping"
   ],
   "gov": true,
   "reading": [],
@@ -6509,6 +7570,12 @@
   "scales": [
    "org",
    "pol"
+  ],
+  "where": [
+   "biz",
+   "gov",
+   "health",
+   "tech"
   ],
   "work_kinds": [
    "cra"
@@ -6669,6 +7736,12 @@
    "grp",
    "plc"
   ],
+  "where": [
+   "art",
+   "com",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "cra"
   ],
@@ -6821,6 +7894,11 @@
    "pla",
    "pol"
   ],
+  "where": [
+   "art",
+   "edu",
+   "gov"
+  ],
   "work_kinds": [
    "cra",
    "cre"
@@ -6946,6 +8024,9 @@
   "scales": [
    "pol"
   ],
+  "where": [
+   "gov"
+  ],
   "work_kinds": [
    "cra"
   ],
@@ -7068,6 +8149,13 @@
   ],
   "scales": [
    "org"
+  ],
+  "where": [
+   "biz",
+   "gov",
+   "health",
+   "safety",
+   "tech"
   ],
   "work_kinds": [
    "cra"
@@ -7247,6 +8335,11 @@
    "org",
    "plc"
   ],
+  "where": [
+   "gov",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "adm"
   ],
@@ -7357,6 +8450,11 @@
   "scales": [
    "grp",
    "plc"
+  ],
+  "where": [
+   "com",
+   "edu",
+   "health"
   ],
   "work_kinds": [
    "com"
@@ -7476,6 +8574,11 @@
   "scales": [
    "plc"
   ],
+  "where": [
+   "com",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "car"
   ],
@@ -7541,7 +8644,7 @@
   "kind": "Hybrid",
   "overview": "Complexity as it shows up in building software: work flows or gets stuck, forecasts beat estimates, culture predicts delivery, and architectures should be designed to survive stresses nobody predicted.",
   "road": "Taiichi Ohno (the Toyota Production System) → W. Edwards Deming (systems of profound knowledge) → Donald Reinertsen (<i>The Principles of Product Development Flow</i>) → Nicole Forsgren, Jez Humble and Gene Kim (<i>Accelerate</i>, DORA research) → Barry O'Reilly (residuality theory)",
-  "mix": "Simon Wardley, Troy Magennis (forecasting with flow data), Jim Benson (Personal Kanban, Lean Coffee), Nigel Thurlow and John Turner (The Flow System), Chris Matts (real options), Michael Feathers (legacy code), Christopher Alexander (pattern languages)",
+  "mix": "Simon Wardley, Troy Magennis (forecasting with flow data), Jim Benson (Personal Kanban, Lean Coffee), Nigel Thurlow and John Turner (The Flow System), Chris Matts (real options), Michael Feathers (legacy code), Christopher Alexander (pattern languages); Melvin Conway (Conway's law), Eliyahu Goldratt (theory of constraints)",
   "policy": "Digital service teams that measure flow and recovery rather than output, fund products not projects, and design public platforms to keep working when conditions change.",
   "links": [
    {
@@ -7592,6 +8695,11 @@
   "scales": [
    "grp",
    "org"
+  ],
+  "where": [
+   "biz",
+   "gov",
+   "tech"
   ],
   "work_kinds": [
    "cra",
@@ -7842,6 +8950,9 @@
    "per",
    "grp"
   ],
+  "where": [
+   "edu"
+  ],
   "work_kinds": [
    "int"
   ],
@@ -7973,6 +9084,9 @@
   ],
   "scales": [
    "per"
+  ],
+  "where": [
+   "edu"
   ],
   "work_kinds": [
    "int"
@@ -8119,6 +9233,10 @@
    "grp",
    "plc"
   ],
+  "where": [
+   "com",
+   "edu"
+  ],
   "work_kinds": [
    "pol"
   ],
@@ -8248,6 +9366,12 @@
    "grp",
    "org"
   ],
+  "where": [
+   "edu",
+   "gov",
+   "health",
+   "ngo"
+  ],
   "work_kinds": [
    "com"
   ],
@@ -8372,6 +9496,10 @@
   ],
   "scales": [
    "per"
+  ],
+  "where": [
+   "biz",
+   "edu"
   ],
   "work_kinds": [
    "car",
@@ -8510,6 +9638,9 @@
   "scales": [
    "org",
    "pla"
+  ],
+  "where": [
+   "edu"
   ],
   "work_kinds": [],
   "goals": [

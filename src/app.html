@@ -358,6 +358,9 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .featured-ep{margin:18px 0 6px;max-width:760px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .badge.emerging{border-style:dashed;color:var(--warn);border-color:var(--warn);align-self:flex-start;margin:4px 0}
+.where{margin:10px 0 0;font-size:13.5px}.where .label{margin-right:4px}
+.sclg{font-size:14px;color:var(--muted);max-width:66ch;margin:0 0 12px}
+.compare{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px}.compare .col{flex:1 1 300px;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--card)}.compare .col.us{border-color:var(--ink)}.compare h3{font-size:21px;margin:6px 0 8px}.compare ul{margin:0;padding-left:18px;display:grid;gap:4px}
 .linktoggle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 10px}
 .linktoggle .label{color:var(--night-muted);margin-right:2px}
 .linktoggle .pill{background:transparent;color:var(--night-ink);border-color:var(--night-line);font-size:12.5px;padding:5px 11px}
@@ -982,10 +985,11 @@ function viewHome(){
     const L = {
       goal:["What are you trying to do?", A.goals.map(g => [g.label, g.sub, "#/wiki?goal="+g.id])],
       type:["What kind of thing are you looking for?", Object.entries(A.type_labels).map(([k, [n, sub]]) => [n, sub, "#/wiki?kind="+k])],
-      scale:["At what scale do you work?", Object.entries(A.scale_labels).map(([k, [n, sub]]) => [n, sub, "#/wiki?scale="+k])]}[browseBy];
+      scale:["At what scale do you work?", Object.entries(A.scale_labels).map(([k, [n, sub]]) => [n, sub, "#/wiki?scale="+k])],
+      where:["Where is it practised?", A.where.map(([k, n, sub]) => [n, sub, "#/wiki?where="+k])]}[browseBy];
     fill(browse, 
       el("div",{class:"browse-head"}, el("h2",{text:L[0]}),
-        el("div",{class:"seg",role:"group","aria-label":"Browse by"}, [["goal","By goal"],["type","By type"],["scale","By scale"]].map(([k, n]) =>
+        el("div",{class:"seg",role:"group","aria-label":"Browse by"}, [["goal","By goal"],["type","By type"],["scale","By scale"],["where","By where it's practised"]].map(([k, n]) =>
           el("button",{type:"button","aria-pressed":String(browseBy===k),onclick:()=>{ browseBy = k; drawBrowse(); },text:n})))),
       el("div",{class:"goals"}, L[1].map(([n, sub, href]) => el("a",{class:"goal",href}, el("b",{text:n}), el("span",{text:sub})))));
   };
@@ -1051,12 +1055,12 @@ function viewHome(){
 
 // ---------------------------------------------------------------- wiki index
 function viewWikiIndex(params){
-  const goal = params.get("goal"), kind = params.get("kind"), scale = params.get("scale");
+  const goal = params.get("goal"), kind = params.get("kind"), scale = params.get("scale"), where = params.get("where");
   let q = (params.get("q") || "").toLowerCase();
-  const head = goal ? A.goals.find(g => g.id === goal)?.label : kind ? A.type_labels[kind]?.[0] : scale ? A.scale_labels[scale]?.[0] : null;
+  const head = goal ? A.goals.find(g => g.id === goal)?.label : kind ? A.type_labels[kind]?.[0] : scale ? A.scale_labels[scale]?.[0] : where ? (A.where.find(w => w[0] === where) || [])[1] : null;
   const list = el("div");
   const draw = () => {
-    const vis = P.filter(p => (!goal || p.goals.includes(goal)) && (!kind || p.kind === kind) && (!scale || p.scales.includes(scale)) &&
+    const vis = P.filter(p => (!goal || p.goals.includes(goal)) && (!kind || p.kind === kind) && (!scale || p.scales.includes(scale)) && (!where || (p.where || []).includes(where)) &&
       (!q || (p.name+" "+p.overview+" "+p.road+" "+p.mix+" "+p.terms.join(" ")).toLowerCase().includes(q)));
     const sn = seen();
     fill(list, vis.length ? el("div",{class:"idx"}, DATA.clusters.map(c => { const ps = vis.filter(p => p.cluster === c.name); if (!ps.length) return null;
@@ -1072,7 +1076,7 @@ function viewWikiIndex(params){
     el("span",{class:"label",text:"Library"}), el("h1",{style:"font-size:44px;margin:6px 0 4px",text:head ? head : "The wiki"}),
     el("p",{class:"sub",style:"margin:6px 0 14px",text:head ? "Pathways tagged for this (draft tags, under review)." : `${P.length} pathways in ${DATA.clusters.length} areas. Each article says what it is, where it came from, who uses it and how to try it.`}),
     el("form",{class:"search",onsubmit:e=>e.preventDefault()}, inp),
-    el("div",{class:"idx-filters"}, chip("All", "#/wiki", !goal && !kind && !scale),
+    el("div",{class:"idx-filters"}, chip("All", "#/wiki", !goal && !kind && !scale && !where),
       A.goals.map(g => chip(g.label, "#/wiki?goal="+g.id, goal === g.id))),
     el("div",{class:"key",style:"display:flex;flex-wrap:wrap;gap:8px 18px;padding:0 0 18px"}, Object.entries(FAM).map(([k, f]) => el("div",{}, dot(k), f.name))),
     list, helpButton());
@@ -1250,6 +1254,7 @@ function viewArticle(id){
         el("span",{class:"label",style:`color:${col}`,text:p.cluster}),
         el("h1",{class:"art-title",text:p.name}),
         el("div",{style:"display:flex;gap:6px;flex-wrap:wrap"}, el("span",{class:"badge",title:KIND[p.kind],text:p.kind}), p.gov ? el("span",{class:"badge dash",text:"Used in government"}) : null),
+        (p.where || []).length ? el("p",{class:"where"}, el("span",{class:"label",text:"Practised in "}), p.where.map((w, i) => [i ? " · " : "", el("a",{href:"#/wiki?where="+w,text:(A.where.find(x => x[0] === w) || [w, w])[1]})])) : null,
         relational ? el("p",{class:"why",style:"margin-top:10px",text:"This area draws on Indigenous and relational knowledge, credited to the peoples who hold it."}) : null,
         el("p",{class:"art-ov"}, rich(p.plain_overview || p.overview)),
         el("h2",{id:"s-what",text:"What it is"}),
@@ -1287,7 +1292,11 @@ function viewArticle(id){
         el("h2",{id:"s-different",text:"Entirely different approaches"}), el("p",{class:"sub",text:"They care about the same things but start from a different philosophy."}),
         el("div",{class:"diff"}, diff.map(x => el("a",{class:"tile",href:wikiHref(x.q.id),style:`border-color:${fc(x.q.family)}`}, el("span",{class:"t",text:x.q.name}), el("p",{class:"clamp",text:x.q.plain_overview || strip(x.q.overview)}),
           el("span",{class:"why",style:`color:${fc(x.q.family)}`,text:(x.caps.length ? "Also about " + x.caps[0].toLowerCase() + ", " : "") + "from " + famLabel(x.q.family).toLowerCase()})))),
-        el("h2",{id:"s-live",text:"From the live library"}), liveBlock(p.terms, p.caps, 6),
+        el("h2",{id:"s-live",text:"From the live library"}),
+        p.caps.length ? el("p",{class:"sclg"}, "To build the skills for this, see the ", ext("Systems Change Learning Guide", "https://welearnwegrow.github.io/capacities/"),
+          " learning area", p.caps.length > 1 ? "s " : " ", p.caps.map((c, i) => [i ? (i === p.caps.length - 1 ? " and " : ", ") : "", el("b",{text:c})]),
+          ". This page covers where the ideas came from; the Guide covers what to learn.") : null,
+        liveBlock(p.terms, p.caps, 6),
         el("p",{style:"margin-top:28px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(p.name),text:"Suggest a change to this article"}))),
       el("aside",{class:"side"}, localMap(p)))),
     footer(), helpButton()];
@@ -1851,6 +1860,15 @@ function viewAbout(){
       el("div",{}, el("h2",{text:"Our mission is to"}), el("ul",{class:"about-list"}, DATA.about.mission.map(x => el("li",{text:x})))),
       el("div",{}, el("h2",{text:"Please use this site to"}), el("ul",{class:"about-list"}, DATA.about.use.map((x, i) => el("li",{}, el("a",{href:["#/wiki","#/path","#/map","#/contribute"][i] || "#/",text:x}))), el("p",{style:"margin-top:8px"}, el("a",{href:"#/",onclick:e => { e.preventDefault(); location.hash = "#/"; setTimeout(() => document.getElementById("how")?.scrollIntoView(), 80); },text:"Three ways to visit, step by step →"}))))) : null,
     DATA.about.thanks ? el("p",{class:"about-thanks"}, DATA.about.thanks, " ", el("a",{href:"#/people/nora-bateson",text:"Read about Nora Bateson"})) : null,
+    // how this site relates to the Systems Change Learning Guide, side by side
+    el("section",{class:"sec",id:"sclg"}, el("h2",{text:"How this site relates to the Systems Change Learning Guide"}),
+      el("p",{class:"sub"}, "We are companions, not copies. The ", ext("Systems Change Learning Guide", "https://welearnwegrow.github.io/capacities/"), " by Jaya Ramchandani and Raisa Mirza asks what you need to learn. This site asks where the ideas came from and how they hold up."),
+      el("div",{class:"compare"},
+        el("div",{class:"col"}, el("span",{class:"label",text:"The Systems Change Learning Guide"}), el("h3",{text:"What do I need to learn?"}),
+          el("ul",{}, ["24 learning areas: the capacities systems work asks of you", "A route for intervening in complex systems", "A curated library of learning resources", "Written for changemakers, educators and leaders"].map(t => el("li",{text:t})))),
+        el("div",{class:"col us"}, el("span",{class:"label",text:"Pathways into Complexity"}), el("h3",{text:"Where did these ideas come from, and how do they hold up?"}),
+          el("ul",{}, [`${P.length} lineages and practices, with the people who shaped them and when`, `${C.length} real cases, each with its limits`, "Who disagrees, with sources on both sides", `${(DATA.episodes || []).length} recorded talks with practitioners, and where each idea is practised, from software to health care`].map(t => el("li",{text:t}))))),
+      el("p",{style:"margin-top:12px;max-width:66ch"}, "Every article links to the Guide's learning areas it relates to, and the Guide's live library appears on each article when you ask for it. Use this site to understand an idea; use the Guide to plan what to learn next.")),
     el("div",{style:"display:flex;flex-wrap:wrap;gap:8px;margin-top:16px"}, el("a",{class:"pill",href:"#/orgs",text:`${O.length} organizations`}),
       el("a",{class:"pill",href:"#/cases",text:`${C.length} cases`}), el("a",{class:"pill",href:"#/people",text:"People"}), el("a",{class:"pill",href:"#/library",text:"Live library"}), el("a",{class:"pill",href:"#/contribute",text:"Suggest a change"})),
     el("section",{class:"sec",id:"orientations"}, el("h2",{text:"Our orientations"}), el("p",{class:"sub"}, "Drawn from lineages on this map. Use them at hard junctions as questions, not badges. That way of holding orientations comes from the ", ext("Systems Change Learning Guide", "https://welearnwegrow.github.io/capacities/orientations.html"), " by Jaya Ramchandani and Raisa Mirza."),

@@ -48,6 +48,26 @@
   "defn": "Learning directly from the people who use a service: watching, asking, testing."
  },
  {
+  "term": "estuarine mapping",
+  "defn": "Dave Snowden's method for mapping the constraints in a situation by how much energy and time it would take to change them, to find what is realistically possible now."
+ },
+ {
+  "term": "mission command",
+  "defn": "Leading by giving people the intent and the resources, and leaving them free to decide how to act as things change."
+ },
+ {
+  "term": "conway's law",
+  "defn": "Organizations design systems that copy their own communication structures."
+ },
+ {
+  "term": "theory of constraints",
+  "defn": "Eliyahu Goldratt's idea that every system's output is limited by one bottleneck, so improve that first."
+ },
+ {
+  "term": "weak signals",
+  "defn": "Early, faint signs of change that are easy to miss but can matter a lot later."
+ },
+ {
   "term": "second-order cybernetics",
   "defn": "Cybernetics that includes the observer: how you look is part of what you find."
  },
@@ -106,6 +126,18 @@
  {
   "term": "active inference",
   "defn": "Karl Friston's account of living things acting to keep their predictions about the world true."
+ },
+ {
+  "term": "process philosophy",
+  "defn": "The view that becoming and change, not fixed things, are the basic stuff of the world."
+ },
+ {
+  "term": "duration",
+  "defn": "Bergson's word for time as it is lived, flowing and indivisible, rather than measured."
+ },
+ {
+  "term": "path dependence",
+  "defn": "When what is possible now depends on the history of how things got here."
  },
  {
   "term": "ecology of mind",
@@ -220,6 +252,22 @@
   "defn": "The process by which something comes to stand for something else to someone."
  },
  {
+  "term": "generative music",
+  "defn": "Music made by setting up rules or systems and letting the piece emerge, rather than writing every note."
+ },
+ {
+  "term": "spect-actor",
+  "defn": "Augusto Boal's word for audience members who step into the scene and act."
+ },
+ {
+  "term": "deep listening",
+  "defn": "Pauline Oliveros's practice of listening to everything, including what you usually filter out."
+ },
+ {
+  "term": "legislative theatre",
+  "defn": "Boal's method for turning residents' theatre scenes into proposals for law."
+ },
+ {
   "term": "autopoiesis",
   "defn": "Self-making: living systems produce and maintain themselves."
  },
@@ -260,10 +308,6 @@
   "defn": "In complex situations, act a little, see what happens, then adjust."
  },
  {
-  "term": "weak signals",
-  "defn": "Early, faint signs of change that are easy to dismiss."
- },
- {
   "term": "sociocracy",
   "defn": "A way of governing with consent decisions in linked circles, so every voice has a route."
  },
@@ -294,6 +338,14 @@
  {
   "term": "informal coalitions",
   "defn": "The shifting, unofficial groupings through which much of an organization's real work and change happens."
+ },
+ {
+  "term": "sociotechnical system",
+  "defn": "A system in which people, their work and their technology have to be designed together."
+ },
+ {
+  "term": "autonomous work group",
+  "defn": "A team that manages a whole task and organizes its own work."
  },
  {
   "term": "emergent strategy",
@@ -450,6 +502,22 @@
  {
   "term": "cultural somatics",
   "defn": "Menakem's approach to how racialized trauma is carried in bodies across generations."
+ },
+ {
+  "term": "neurodiversity",
+  "defn": "The natural variation in human minds, including autism, ADHD and dyslexia, seen as difference rather than deficit."
+ },
+ {
+  "term": "affordance",
+  "defn": "What an environment offers or invites a person or animal to do, as they perceive it."
+ },
+ {
+  "term": "inattentional blindness",
+  "defn": "Failing to see something in plain view because attention is focused elsewhere."
+ },
+ {
+  "term": "heuristic",
+  "defn": "A simple rule of thumb that often works well when information is limited and the future uncertain."
  },
  {
   "term": "three faces of power",
@@ -642,6 +710,18 @@
  {
   "term": "wellbeing economy",
   "defn": "An economy designed to deliver human and ecological wellbeing rather than growth for its own sake."
+ },
+ {
+  "term": "person-centred care",
+  "defn": "Care organized around what matters to the person, not around the organizations that provide it."
+ },
+ {
+  "term": "integrated care",
+  "defn": "Health and social care services working as one system around a person."
+ },
+ {
+  "term": "complex adaptive system",
+  "defn": "A system of many agents that adapt to each other, so behaviour emerges rather than being planned."
  },
  {
   "term": "scenario planning",

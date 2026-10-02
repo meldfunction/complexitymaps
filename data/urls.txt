@@ -8,6 +8,7 @@ https://arawanahayashi.com/spt/
 https://archive.learnwardleymapping.com/book.html
 https://arnawebsite.org/
 https://arnawebsite.org/about/
+https://arte-util.org/projects/theatre-of-the-oppressed-legislative-theatre/
 https://artofhosting.org
 https://arxiv.org/abs/1912.07376
 https://asc-cybernetics.org
@@ -38,6 +39,7 @@ https://deming.org
 https://deming.org/explore/sopk/
 https://designjustice.org
 https://designjustice.org/read-the-principles
+https://diabetesstories.com/
 https://dora.dev/
 https://dora.dev/capabilities/generative-organizational-culture/
 https://dora.dev/research/
@@ -50,6 +52,9 @@ https://e360.yale.edu/features/robin-kimmerer-interview
 https://edbatista.com/2018/06/a-brief-history-of-t-groups.html
 https://emergencemagazine.org/essay/the-serviceberry/
 https://emergencemagazine.org/interview/deep-time-diligence/
+https://en.wikipedia.org/wiki/Affordance
+https://en.wikipedia.org/wiki/Alfred_North_Whitehead
+https://en.wikipedia.org/wiki/Augusto_Boal
 https://en.wikipedia.org/wiki/Biosemiotics
 https://en.wikipedia.org/wiki/Bohm_Dialogue
 https://en.wikipedia.org/wiki/Critical_systems_thinking
@@ -59,18 +64,26 @@ https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal
 https://en.wikipedia.org/wiki/Embrace_Innovations
 https://en.wikipedia.org/wiki/Enactivism
 https://en.wikipedia.org/wiki/Free_energy_principle
+https://en.wikipedia.org/wiki/Generative_music
+https://en.wikipedia.org/wiki/Henri_Bergson
+https://en.wikipedia.org/wiki/Inattentional_blindness
 https://en.wikipedia.org/wiki/Jack_Mezirow
+https://en.wikipedia.org/wiki/Neurodiversity
 https://en.wikipedia.org/wiki/Outward_Bound
 https://en.wikipedia.org/wiki/Ralph_D._Stacey
 https://en.wikipedia.org/wiki/Richard_Strozzi-Heckler
 https://en.wikipedia.org/wiki/Semiosphere
+https://en.wikipedia.org/wiki/Sociotechnical_system
 https://en.wikipedia.org/wiki/Soft_systems_methodology
+https://en.wikipedia.org/wiki/Theatre_of_the_Oppressed
 https://en.wikipedia.org/wiki/Truth_and_Reconciliation_Commission_(South_Africa)
 https://en.wikipedia.org/wiki/Umwelt
+https://en.wikipedia.org/wiki/Volvo_Kalmar_Assembly
 https://en.wikipedia.org/wiki/Well-being_of_Future_Generations_(Wales)_Act_2015
 https://eric.ed.gov/?id=ED423422
 https://filsem.ut.ee/en
 https://forthewild.world/listen/bayo-akomolafe-on-slowing-down-in-urgent-times-155
+https://frompoverty.oxfam.org.uk/?p=21131
 https://generativesomatics.org/explore-the-legacy/
 https://globaltfokus.dk/images/Kapacitetsudvikling/Arrangementer_kap_forum/Lessons_from_Mont_Fleur.pdf
 https://good.services
@@ -83,6 +96,7 @@ https://hbr.org/2004/04/the-ambidextrous-organization
 https://hbr.org/2007/11/a-leaders-framework-for-decision-making
 https://hbr.org/2014/04/making-business-personal
 https://hbr.org/2015/12/what-is-disruptive-innovation
+https://hbr.org/2017/05/neurodiversity-as-a-competitive-advantage
 https://hbr.org/2018/09/design-thinking-is-fundamentally-conservative-and-preserves-the-status-quo
 https://how.complexsystems.fail/
 https://i2insights.org/2023/01/10/human-learning-systems/
@@ -128,6 +142,7 @@ https://ostromworkshop.indiana.edu
 https://participedia.net/case/5524
 https://pespmc1.vub.ac.be/ASC/ETHICA_IMPER.html
 https://plato.stanford.edu/entries/peirce-semiotics/
+https://plato.stanford.edu/entries/process-philosophy/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3644498/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC6106376/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC8453034/
@@ -137,11 +152,14 @@ https://pressbooks.pub/jass-power-guide/
 https://pressbooks.pub/jass-power-guide/chapter/theme-5-engaging-and-resisting/
 https://provocations.darkmatterlabs.org/radicle-civics-building-proofs-of-possibilities-for-a-civic-economy-and-society-ee28baeeec70
 https://publications.jrc.ec.europa.eu/repository/handle/JRC123629
+https://pubmed.ncbi.nlm.nih.gov/11557716/
 https://pubmed.ncbi.nlm.nih.gov/12011406/
 https://pubmed.ncbi.nlm.nih.gov/17120921/
 https://read.dukeupress.edu/books/book/2805/Cowards-Don-t-Make-HistoryOrlando-Fals-Borda-and
 https://reospartners.com
 https://reospartners.com/the-sustainable-food-lab-eight-years-and-counting/
+https://research.cbs.dk/da/publications/sap-se-autism-at-work/
+https://research.chalmers.se/en/publication/247012
 https://researchprofiles.herts.ac.uk/en/persons/christopher-mowles/
 https://resmaa.com/about-resmaa-menakem/
 https://rightlivelihood.org/the-change-makers/find-a-laureate/dekha-abdi/
@@ -169,7 +187,9 @@ https://time.com/5930093/amsterdam-doughnut-economics/
 https://transitiondesign.net
 https://tricycle.org/article/remembering-joanna-macy/
 https://tricycle.org/magazine/work-reconnects/
+https://uneasylistening.substack.com/p/5-movies-with-lessons-about-complex
 https://unesdoc.unesco.org/ark:/48223/pf0000123074
+https://vimeo.com/243851179
 https://vimeo.com/422188269
 https://warmdatalab.net
 https://web.archive.org/web/2025/https://infed.org/
@@ -203,6 +223,7 @@ https://www.chriscorrigan.com/parkinglot/the-two-loops-model-of-change-part-2/
 https://www.chriscorrigan.com/parkinglot/what-is-the-art-of-hosting/
 https://www.chronicle.com/article/the-tyranny-of-metrics/
 https://www.commonwealthfund.org/publications/case-study/2015/may/home-care-self-governing-nursing-teams-netherlands-buurtzorg-model
+https://www.commonwealthfund.org/sites/default/files/2018-09/1901_Gray_Esther_case_study_v3.pdf
 https://www.complexityexplorer.org
 https://www.complexityexplorer.org/courses/185-introduction-to-complexity
 https://www.comses.net/codebases/2222/releases/1.1.0/
@@ -259,6 +280,7 @@ https://www.legislation.gov.uk/anaw/2015/2/contents
 https://www.liberatingstructures.com
 https://www.margaretwheatley.com
 https://www.mcconnellfoundation.ca/wp-content/uploads/2017/07/A-Developmental-Evaluation-Primer-EN.pdf
+https://www.melconway.com/Home/Committees_Paper.html
 https://www.michelezanini.com/haier-hbr/
 https://www.nesta.org.uk
 https://www.nesta.org.uk/report/big-mind-how-collective-intelligence-can-change-our-world/
@@ -359,6 +381,7 @@ https://www.youtube.com/watch?v=_VcGb-dmIq8
 https://www.youtube.com/watch?v=_aIC5yCsx8w
 https://www.youtube.com/watch?v=cr6aBaXvRY0
 https://www.youtube.com/watch?v=dZyl6pzg7Gw
+https://www.youtube.com/watch?v=dkNAIut6EmA
 https://www.youtube.com/watch?v=iqcIzLL-nhY
 https://www.youtube.com/watch?v=k6nv2J_N0PI
 https://www.youtube.com/watch?v=kG83GJTkjJ0

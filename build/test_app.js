@@ -22,7 +22,7 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     check((await p.textContent('#status-text')).includes('loads when you ask'), `[${mode}] idle status on load`);
     check(await p.textContent('h1.art-title') === 'Power analysis', `[${mode}] wiki article renders`);
     for (const h of ['#/','#/wiki','#/path','#/map','#/map?view=metro','#/map?view=tree&p=bohm-dialogue','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/map?view=universe&links=shared','#/map?view=universe&zoom=found&links=shared',
-        '#/people/nora-bateson','#/people/karl-friston','#/wiki/technology-ai-and-complexity','#/contribute','#/about','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
+        '#/people/nora-bateson','#/people/karl-friston','#/wiki/technology-ai-and-complexity','#/wiki?where=defence','#/wiki/attention-perception-and-neurodiversity','#/contribute','#/about','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
     check(gets.length === 0, `[${mode}] browsing every route makes no request`);
     if (mode === 'live') {
       await go(p, '#/map?view=universe'); check(await p.locator('.stage .conn').count() === 0, '[live] universe shows no connection lines by default');
@@ -38,6 +38,12 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       check((await p.textContent('.known')).includes('action research') && await p.locator('.stubnote').count() === 1, '[live] a person without a full profile shows a short entry with a source');
       await go(p, '#/people/elinor-ostrom');
       check(await p.locator('.q blockquote').count() >= 2 && !(await p.textContent('main')).includes('Needs citations'), '[live] critiques carry quotes and sources');
+      await go(p, '#/wiki?where=health');
+      check(await p.locator('.idx .cl a').count() >= 8 && (await p.textContent('h1')).includes('Health'), '[live] wiki filters by where it is practised');
+      await go(p, '#/about');
+      check(await p.locator('#sclg .compare .col').count() === 2, '[live] About sets out how this site relates to the Systems Change Learning Guide');
+      await go(p, '#/wiki/complexity-in-health-and-care');
+      check((await p.textContent('.sclg')).includes('Systems Change Learning Guide') && await p.locator('.where a').count() >= 2, '[live] articles name where they are practised and the Guide learning areas');
       await go(p, '#/cases/eu-crisis-field-guide');
       check((await p.textContent('main')).includes('Emerging case'), '[live] an emerging case is labelled as not yet as strong');
       await go(p, '#/wiki/mind-life-and-constraints');

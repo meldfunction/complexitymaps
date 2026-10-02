@@ -21,6 +21,7 @@ import content_plain as PL
 import content_lounge as LG   # Complexity Lounge episodes, six new pathways and their people (extends the modules above)
 DEPTH.update(LG.DEPTH); PL.OV.update(LG.PLAIN_OV); PL.POL.update(LG.PLAIN_POL)
 ORGS.extend(LG.ORGS); CASES.extend(LG.CASES); KNOWN.update(LG.KNOWN)
+for _o in ORGS: _o["pathways"] = list(_o["pathways"]) + LG.ORG_LINKS.get(_o["id"], [])
 PEOPLE.extend(x for x in LG.PEOPLE if x["name"] not in {y["name"] for y in PEOPLE})
 
 errors = []
@@ -97,6 +98,7 @@ for p in pathways:
     if not p["family"]: errors.append(f"no family for cluster {p['cluster']}")
     sec, sc = A.TAGS[sid].split("|")
     p["sectors"], p["scales"] = sec.split(","), sc.split(",")
+    p["where"] = sorted({LG.WHERE_FROM_SECTOR[x] for x in p["sectors"] if x in LG.WHERE_FROM_SECTOR} | {w for w, ss in LG.WHERE_EXTRA.items() if sid in ss})
     p["work_kinds"] = [k for k, v in A.WORK_TAGS.items() if sid in v]
     p["goals"] = [g[0] for g in A.GOALS if sid in g[3]]
     if not p["goals"]: errors.append(f"untagged goals: {p['name']}")
@@ -148,7 +150,7 @@ glossary = [dict(term=k, defn=v) for k, v in A.GLOSSARY.items()]
 atlas = dict(families=A.FAMILIES, edges=A.EDGES, metro=A.METRO_LINES, sectors=A.SECTORS, scales=A.SCALES,
              work_kinds=A.WORK_KINDS, goals=[dict(id=g[0], label=g[1], sub=g[2], pathways=[A.SHORT[s] for s in g[3]]) for g in A.GOALS],
              type_labels=A.TYPE_LABELS, scale_labels=A.SCALE_LABELS, trades=A.TRADES, industries=A.INDUSTRIES, roles=A.ROLES,
-             branches=A.BRANCHES, area_lens=A.AREA_LENS)
+             branches=A.BRANCHES, area_lens=A.AREA_LENS, where=LG.WHERE)
 
 data = dict(
     about=ABOUT,

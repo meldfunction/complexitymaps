@@ -884,7 +884,8 @@
   "src": "https://en.wikipedia.org/wiki/Ilya_Prigogine",
   "slug": "ilya-prigogine",
   "appears": [
-   "the-formal-science-of-complex-systems"
+   "the-formal-science-of-complex-systems",
+   "process-philosophy-and-the-philosophy-of-complexity"
   ],
   "known": "Chemist who won the Nobel Prize for work on systems far from equilibrium that organize themselves.",
   "episodes": [],
@@ -2103,7 +2104,8 @@
   "src": "https://en.wikipedia.org/wiki/Iain_McGilchrist",
   "slug": "iain-mcgilchrist",
   "appears": [
-   "the-metacrisis-and-meaning"
+   "the-metacrisis-and-meaning",
+   "attention-perception-and-neurodiversity"
   ],
   "known": "Psychiatrist whose The Master and His Emissary links the divided brain to the state of Western culture.",
   "episodes": [],
@@ -2550,6 +2552,7 @@
   "appears": [
    "cybernetics-the-shared-foundation",
    "mind-life-and-constraints",
+   "process-philosophy-and-the-philosophy-of-complexity",
    "living-systems-and-regeneration",
    "biosemiotics-and-the-umwelt"
   ],
@@ -2687,6 +2690,7 @@
   "src": "https://en.wikipedia.org/wiki/Donald_Berwick",
   "slug": "don-berwick",
   "appears": [
+   "complexity-in-health-and-care",
    "improvement-and-adaptive-management"
   ],
   "known": "Founder of the Institute for Healthcare Improvement, who brought improvement science into health care.",
@@ -3188,6 +3192,7 @@
   "slug": "alicia-juarrero",
   "appears": [
    "mind-life-and-constraints",
+   "process-philosophy-and-the-philosophy-of-complexity",
    "sensemaking-and-acting-in-uncertainty"
   ],
   "known": "Philosopher of complexity whose books Dynamics in Action and Context Changes Everything treat constraints as causes.",
@@ -3602,6 +3607,7 @@
   "src": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
   "slug": "jim-benson",
   "appears": [
+   "attention-perception-and-neurodiversity",
    "software-flow-and-architecture"
   ],
   "known": "Creator of Personal Kanban and Lean Coffee, applying lean to knowledge work.",
@@ -3899,7 +3905,8 @@
   "src": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
   "slug": "jean-boulton",
   "appears": [
-   "the-formal-science-of-complex-systems"
+   "the-formal-science-of-complex-systems",
+   "process-philosophy-and-the-philosophy-of-complexity"
   ],
   "known": "Physicist and author of Embracing Complexity, who builds on Prigogine to explain process complexity.",
   "episodes": [
@@ -3926,7 +3933,8 @@
   "src": "https://en.wikipedia.org/wiki/Paul_Cilliers",
   "slug": "paul-cilliers",
   "appears": [
-   "the-formal-science-of-complex-systems"
+   "the-formal-science-of-complex-systems",
+   "process-philosophy-and-the-philosophy-of-complexity"
   ],
   "known": "Philosopher whose Complexity and Postmodernism linked complexity science to ethics and limits of knowledge.",
   "episodes": [],
@@ -4105,7 +4113,8 @@
   "src": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
   "slug": "john-boyd",
   "appears": [
-   "sensemaking-and-acting-in-uncertainty"
+   "sensemaking-and-acting-in-uncertainty",
+   "strategy-under-uncertainty"
   ],
   "known": "Fighter pilot and strategist behind the OODA loop: observe, orient, decide, act.",
   "episodes": [],
@@ -4446,6 +4455,7 @@
   "src": "https://www.youtube.com/watch?v=zikRwfDfbUs",
   "slug": "kyle-godbey",
   "appears": [
+   "complexity-through-art-music-and-film",
    "service-design",
    "participatory-design-and-design-justice"
   ],
@@ -4713,17 +4723,18 @@
  },
  {
   "name": "Trisha Greenhalgh",
-  "years": "",
+  "years": "b. 1959",
   "kind": "person",
-  "status": "draft",
-  "src": "",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Trisha_Greenhalgh",
   "slug": "trisha-greenhalgh",
   "appears": [
+   "complexity-in-health-and-care",
    "improvement-and-adaptive-management"
   ],
   "known": "Primary care researcher who, with Paul Plsek, wrote on complexity science in health care.",
   "episodes": [],
-  "born": null,
+  "born": 1959,
   "died": null,
   "founded": null,
   "profile": null
@@ -4736,6 +4747,7 @@
   "src": "",
   "slug": "paul-plsek",
   "appears": [
+   "complexity-in-health-and-care",
    "improvement-and-adaptive-management"
   ],
   "known": "Improvement adviser who brought complexity science into health care with Trisha Greenhalgh.",
@@ -4753,7 +4765,8 @@
   "src": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
   "slug": "riva-greenberg",
   "appears": [
-   "sensemaking-and-acting-in-uncertainty"
+   "sensemaking-and-acting-in-uncertainty",
+   "complexity-in-health-and-care"
   ],
   "known": "Health researcher and coach who applies complexity science to living with type 1 diabetes.",
   "episodes": [
@@ -4780,7 +4793,8 @@
   "src": "https://www.youtube.com/watch?v=yZyI0LZvEks",
   "slug": "ya-mur-denizhan",
   "appears": [
-   "cybernetics-the-shared-foundation"
+   "cybernetics-the-shared-foundation",
+   "process-philosophy-and-the-philosophy-of-complexity"
   ],
   "known": "Engineer and cybernetician who models learning and creativity.",
   "episodes": [
@@ -4806,7 +4820,9 @@
   "status": "draft",
   "src": "https://www.youtube.com/watch?v=zgCI95nKb88",
   "slug": "gregory-vigneaux",
-  "appears": [],
+  "appears": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
   "known": "Former wildland firefighter who studies how people experience and manage complexity in incidents, and Maturana's work.",
   "episodes": [
    {
@@ -5050,7 +5066,9 @@
   "status": "draft",
   "src": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
   "slug": "sue-borchardt",
-  "appears": [],
+  "appears": [
+   "complexity-through-art-music-and-film"
+  ],
   "known": "Animator and creative who explains complexity in short films.",
   "episodes": [
    {
@@ -5278,6 +5296,381 @@
   ],
   "born": null,
   "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Eric Trist",
+  "years": "1909–1993",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Eric_Trist",
+  "slug": "eric-trist",
+  "appears": [
+   "sociotechnical-systems"
+  ],
+  "known": "Social scientist at the Tavistock Institute who, with Ken Bamforth, founded sociotechnical systems thinking from studies of British coal mines.",
+  "episodes": [],
+  "born": 1909,
+  "died": 1993,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ken Bamforth",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "ken-bamforth",
+  "appears": [
+   "sociotechnical-systems"
+  ],
+  "known": "Former miner and researcher who co-wrote the 1951 coal-mining study that founded sociotechnical systems thinking.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Fred Emery",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "fred-emery",
+  "appears": [
+   "sociotechnical-systems"
+  ],
+  "known": "Australian social scientist who developed sociotechnical design and industrial democracy with Eric Trist and Einar Thorsrud.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Einar Thorsrud",
+  "years": "1923–1985",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Einar_Thorsrud",
+  "slug": "einar-thorsrud",
+  "appears": [
+   "sociotechnical-systems"
+  ],
+  "known": "Norwegian psychologist who led Norway's industrial democracy experiments in sociotechnical work design.",
+  "episodes": [],
+  "born": 1923,
+  "died": 1985,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Albert Cherns",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "albert-cherns",
+  "appears": [
+   "sociotechnical-systems"
+  ],
+  "known": "Social scientist who set out widely used principles of sociotechnical design.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Melvin Conway",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Melvin_Conway",
+  "slug": "melvin-conway",
+  "appears": [
+   "sociotechnical-systems",
+   "software-flow-and-architecture"
+  ],
+  "known": "Computer scientist whose 1968 paper gave us Conway's law: systems copy the communication structures of the organizations that design them.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Cage",
+  "years": "1912–1992",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/John_Cage",
+  "slug": "john-cage",
+  "appears": [
+   "complexity-through-art-music-and-film"
+  ],
+  "known": "Composer who used chance and indeterminacy so that music could emerge beyond the composer's control.",
+  "episodes": [],
+  "born": 1912,
+  "died": 1992,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Augusto Boal",
+  "years": "1931–2009",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Augusto_Boal",
+  "slug": "augusto-boal",
+  "appears": [
+   "complexity-through-art-music-and-film"
+  ],
+  "known": "Brazilian theatre director who created Theatre of the Oppressed and, as a Rio city councillor, Legislative Theatre.",
+  "episodes": [],
+  "born": 1931,
+  "died": 2009,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Pauline Oliveros",
+  "years": "1932–2016",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Pauline_Oliveros",
+  "slug": "pauline-oliveros",
+  "appears": [
+   "complexity-through-art-music-and-film"
+  ],
+  "known": "Composer who created deep listening, a practice of attending to all sound.",
+  "episodes": [],
+  "born": 1932,
+  "died": 2016,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Brian Eno",
+  "years": "b. 1948",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Brian_Eno",
+  "slug": "brian-eno",
+  "appears": [
+   "complexity-through-art-music-and-film"
+  ],
+  "known": "Musician and producer known for ambient and generative music: setting up systems and letting the music unfold.",
+  "episodes": [],
+  "born": 1948,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Henri Bergson",
+  "years": "1859–1941",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Henri_Bergson",
+  "slug": "henri-bergson",
+  "appears": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
+  "known": "Philosopher of time as lived duration and of creative evolution.",
+  "episodes": [],
+  "born": 1859,
+  "died": 1941,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Alfred North Whitehead",
+  "years": "1861–1947",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Alfred_North_Whitehead",
+  "slug": "alfred-north-whitehead",
+  "appears": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
+  "known": "Mathematician and philosopher whose Process and Reality is the founding work of process philosophy.",
+  "episodes": [],
+  "born": 1861,
+  "died": 1947,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nicholas Rescher",
+  "years": "1928–2024",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Nicholas_Rescher",
+  "slug": "nicholas-rescher",
+  "appears": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
+  "known": "Philosopher who developed process metaphysics among many other contributions.",
+  "episodes": [],
+  "born": 1928,
+  "died": 2024,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Stanley Salthe",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "stanley-salthe",
+  "appears": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
+  "known": "Biologist who developed hierarchy theory and infodynamics, often cited by Alicia Juarrero.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "James J. Gibson",
+  "years": "1904–1979",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/James_J._Gibson",
+  "slug": "james-j-gibson",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Psychologist of perception who introduced affordances: what an environment offers to those who perceive it.",
+  "episodes": [],
+  "born": 1904,
+  "died": 1979,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Daniel Simons",
+  "years": "b. 1969",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Daniel_Simons",
+  "slug": "daniel-simons",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Psychologist who, with Christopher Chabris, ran the invisible gorilla experiment on inattentional blindness.",
+  "episodes": [],
+  "born": 1969,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Christopher Chabris",
+  "years": "b. 1966",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Christopher_Chabris",
+  "slug": "christopher-chabris",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Psychologist and co-author of The Invisible Gorilla, on the limits of attention.",
+  "episodes": [],
+  "born": 1966,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gerd Gigerenzer",
+  "years": "b. 1947",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Gerd_Gigerenzer",
+  "slug": "gerd-gigerenzer",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Psychologist who shows how simple heuristics can beat complex models under uncertainty.",
+  "episodes": [],
+  "born": 1947,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Judy Singer",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Judy_Singer",
+  "slug": "judy-singer",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Sociologist credited with naming neurodiversity in the late 1990s.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Sonny Jane Wise",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "sonny-jane-wise",
+  "appears": [
+   "attention-perception-and-neurodiversity"
+  ],
+  "known": "Neurodivergent advocate and author who explains the neurodiversity paradigm and the neurodivergent umbrella.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Eliyahu Goldratt",
+  "years": "1947–2011",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Eliyahu_M._Goldratt",
+  "slug": "eliyahu-goldratt",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Physicist and management thinker who created the theory of constraints (The Goal).",
+  "episodes": [],
+  "born": 1947,
+  "died": 2011,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Helmuth von Moltke the Elder",
+  "years": "1800–1891",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Helmuth_von_Moltke_the_Elder",
+  "slug": "helmuth-von-moltke-the-elder",
+  "appears": [
+   "strategy-under-uncertainty"
+  ],
+  "known": "Prussian field marshal whose idea of giving intent rather than detailed orders became mission command.",
+  "episodes": [],
+  "born": 1800,
+  "died": 1891,
   "founded": null,
   "profile": null
  }

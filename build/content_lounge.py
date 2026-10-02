@@ -839,3 +839,287 @@ MIX_ADD = {
  'cyb': "Yağmur Denizhan",
  'host': "Chris Corrigan",
 }
+
+
+# ================================================================ round two (2026-10-02): from the topic review of the transcripts
+# Five more pathways, "Where it's practised" tags, and smaller additions. Same rules: sourced links, dates only where
+# Wikipedia states them, everything written here DRAFT.
+NEW_PATHWAYS_2 = [
+    dict(name="Complexity in health and care", cluster="Policy, systemic design, and economics", kind="Field",
+         overview="Health and care are complex systems: patients live with conditions that interact, care crosses many organizations, and what works depends on the person. This field brings complexity thinking into clinics, hospitals and the lives of people managing their own health.",
+         road="Paul Plsek and Trisha Greenhalgh (complexity science in health care, BMJ 2001) → the Esther network in Jönköping, Sweden (care designed around one person's journey) → Riva Greenberg (living with type 1 diabetes as a complex system)",
+         mix="Don Berwick and improvement science, Buurtzorg's self-managing nurse teams, resilience engineering and Safety-II, positive deviance",
+         policy="Designing care around the person rather than the organization, pooling budgets across health and social care, and measuring outcomes that matter to patients.",
+         links=[L("Plsek and Greenhalgh: The challenge of complexity in health care (BMJ, 2001)", "https://pubmed.ncbi.nlm.nih.gov/11557716/"),
+                L("Commonwealth Fund: Sweden's Esther model (2016, PDF)", "https://www.commonwealthfund.org/sites/default/files/2018-09/1901_Gray_Esther_case_study_v3.pdf"),
+                L("Riva Greenberg: Diabetes Stories", "https://diabetesstories.com/")],
+         terms=["health","care","clinical","patient","hospital","diabetes","nursing","primary care","chronic"],
+         caps=["Complex Problem Solving","Participatory Research & Design"]),
+    dict(name="Sociotechnical systems", cluster="Organizing and sensemaking", kind="Lineage",
+         overview="Work is never only technology or only people. Sociotechnical design shapes the technical and the social together, so teams can manage their own whole tasks, and it explains why systems end up mirroring the organizations that build them.",
+         road="Eric Trist and Ken Bamforth (the Durham coal mines, 1951) → Fred Emery and Einar Thorsrud (industrial democracy in Norway) → Albert Cherns (principles of sociotechnical design) → Melvin Conway (Conway's law, 1968) → Matthew Skelton and Manuel Pais (<i>Team Topologies</i>)",
+         mix="Group Relations and the Tavistock Institute, The Flow System, the Complexity Lounge panel on constraints and materiality",
+         policy="Designing digital public services and the teams that run them together, and giving frontline teams whole tasks and the authority to do them.",
+         links=[L("Sociotechnical system (overview)", "https://en.wikipedia.org/wiki/Sociotechnical_system"),
+                L("Melvin Conway: How Do Committees Invent? (1968)", "https://www.melconway.com/Home/Committees_Paper.html"),
+                L("Team Topologies key concepts", "https://teamtopologies.com/key-concepts")],
+         terms=["sociotechnical","socio-technical","trist","emery","conway","team design","autonomous work group","tavistock"],
+         caps=["Organizing & Facilitating","Systems Thinking & Modeling"]),
+    dict(name="Complexity through art, music, and film", cluster="Relational, Indigenous, and meaning", kind="Practice",
+         overview="Artists have long worked with what complexity science describes: chance, emergence, feedback, listening, and audiences who complete the work. Art, music, theatre and film offer ways to feel and rehearse complexity, not only to read about it.",
+         road="John Cage (chance and indeterminacy) → Augusto Boal (Theatre of the Oppressed) → Pauline Oliveros (deep listening) → Brian Eno (generative music) → Sue Borchardt (animated films on complexity) → Kyle Godbey (Uneasy Listening: films, music and noise)",
+         mix="Social Presencing Theater, narrative change, semiotics, ritual and liminality, Bayo Akomolafe",
+         policy="Legislative theatre and other arts-based ways for residents to shape policy, and using film and story to help people see systems they live inside.",
+         links=[L("Generative music (overview)", "https://en.wikipedia.org/wiki/Generative_music"),
+                L("Theatre of the Oppressed (overview)", "https://en.wikipedia.org/wiki/Theatre_of_the_Oppressed"),
+                L("Kyle Godbey: 5 movies with lessons about complex systems", "https://uneasylistening.substack.com/p/5-movies-with-lessons-about-complex"),
+                L("Sue Borchardt: Emergence in Organizations (animation)", "https://vimeo.com/243851179")],
+         terms=["art","music","film","theatre","theater","improvis","generative","listening","creative","animation"],
+         caps=["Agency & Expression","Narrative & Media Analysis"]),
+    dict(name="Process philosophy and the philosophy of complexity", cluster="Foundations and science", kind="Lineage",
+         overview="What if the world is made of processes rather than things? Process philosophy treats becoming, time and relationship as basic, which is exactly what complexity science found in systems far from equilibrium. It gives practitioners a way of thinking that fits a world always in motion.",
+         road="Henri Bergson (time as lived duration) → Alfred North Whitehead (<i>Process and Reality</i>) → Ilya Prigogine (order through fluctuation, dissipative structures) → Nicholas Rescher (process metaphysics) → Jean Boulton (process complexity, <i>The Dao of Complexity</i>)",
+         mix="Daoist thought, Alicia Juarrero, Stanley Salthe (hierarchy theory and infodynamics), Yağmur Denizhan, Gregory Vigneaux on Maturana's time, Paul Cilliers",
+         policy="Treating programmes and policies as unfolding processes with histories, not fixed objects; paying attention to timing, path dependence and what is already in motion.",
+         links=[L("Process philosophy (Stanford Encyclopedia of Philosophy)", "https://plato.stanford.edu/entries/process-philosophy/"),
+                L("Alfred North Whitehead (overview)", "https://en.wikipedia.org/wiki/Alfred_North_Whitehead"),
+                L("Henri Bergson (overview)", "https://en.wikipedia.org/wiki/Henri_Bergson")],
+         terms=["process","whitehead","bergson","becoming","duration","dao","tao","prigogine","boulton"],
+         caps=["Cultural & Epistemic Inquiry","Systems Thinking & Modeling"]),
+    dict(name="Attention, perception, and neurodiversity", cluster="Living practices", kind="Lineage",
+         overview="What we notice shapes what we can do in a complex situation, and different minds notice differently. This pathway joins research on attention and perception with the neurodiversity paradigm, which treats differences such as autism and ADHD as natural variation, not deficits to fix.",
+         road="James J. Gibson (affordances: what an environment offers) → Daniel Simons and Christopher Chabris (inattentional blindness, the invisible gorilla) → Gerd Gigerenzer (fast and frugal heuristics) → Judy Singer (the neurodiversity paradigm) → Sonny Jane Wise (the neurodivergent umbrella)",
+         mix="Iain McGilchrist on attention, Jim Benson on neurodiversity in problem-solving, somatic practice, sensemaking",
+         policy="Designing services, workplaces and hiring for different kinds of minds, and assuming that any group will miss what it is not set up to see.",
+         links=[L("Neurodiversity (overview)", "https://en.wikipedia.org/wiki/Neurodiversity"),
+                L("Inattentional blindness (overview)", "https://en.wikipedia.org/wiki/Inattentional_blindness"),
+                L("Affordance (overview)", "https://en.wikipedia.org/wiki/Affordance"),
+                L("Sonny Jane Wise: Embracing the neurodivergent umbrella (video)", "https://www.youtube.com/watch?v=dkNAIut6EmA")],
+         terms=["attention","perception","neurodivers","autism","adhd","affordance","heuristic","noticing","inattentional"],
+         caps=["Observing & Listening","Agency & Expression"]),
+]
+CP.NEW.extend(NEW_PATHWAYS_2)
+A.SHORT.update({'health': 'complexity-in-health-and-care', 'sts': 'sociotechnical-systems', 'arts': 'complexity-through-art-music-and-film',
+                'process': 'process-philosophy-and-the-philosophy-of-complexity', 'neuro': 'attention-perception-and-neurodiversity'})
+A.SHORT_NAMES.update({'health': 'Health and care', 'sts': 'Sociotechnical systems', 'arts': 'Art, music and film',
+                      'process': 'Process philosophy', 'neuro': 'Attention and neurodiversity'})
+A.TAGS.update({'health': 'gov,ngo,com|per,org', 'sts': 'biz,gov|grp,org', 'arts': 'com,edu|per,grp', 'process': 'edu|per,pla', 'neuro': 'biz,edu,com|per,grp'})
+for k, add in {'car': ['health', 'neuro'], 'cra': ['sts'], 'cre': ['arts'], 'att': ['neuro', 'arts', 'process'], 'int': ['process', 'neuro'], 'adm': ['sts']}.items():
+    A.WORK_TAGS[k] = A.WORK_TAGS[k] + add
+for i, g in enumerate(A.GOALS):
+    extra = {'connect': ['process'], 'others': ['sts'], 'policy': ['health'], 'grow': ['arts', 'neuro'], 'power': ['arts']}.get(g[0], [])
+    A.GOALS[i] = (g[0], g[1], g[2], g[3] + extra)
+A.EDGES += [('health', 'improve'), ('health', 'resil'), ('health', 'svc'), ('sts', 'teams'), ('sts', 'grel'), ('sts', 'flow'),
+            ('arts', 'narr'), ('arts', 'semio'), ('arts', 'ritual'), ('process', 'mindlife'), ('process', 'cx'), ('neuro', 'soma'), ('neuro', 'sense')]
+
+DEPTH.update({
+ 'health': dict(
+    explainer=["In 2001 Paul Plsek and Trisha Greenhalgh argued in the BMJ that health care should be understood as a complex adaptive system: patients, professionals and organizations adapt to each other, so care cannot be run like a machine. Since then, complexity thinking has shaped improvement work, integrated care and how people live with long-term conditions.",
+               "Sweden's Esther network shows what this looks like in practice: staff across a hospital, primary care and municipal care redesigned services around the journey of one imagined older patient, Esther. Riva Greenberg, in the Complexity Lounge, describes living with type 1 diabetes as managing a complex system every day."],
+    lens="Complexity as interacting lives and organizations: a patient's health emerges from many conditions, relationships and services at once, so care has to be coordinated around the person and adapted as things change.",
+    practice=["Pick one patient journey and map every handover between organizations. Where does the person fall through the gaps?",
+              "Bring staff from different organizations together around one real or imagined person, as Esther did.",
+              "Ask patients what matters to them before deciding what to measure.",
+              "Run small tests of change across organizational boundaries and share what you learn."],
+    sectors=dict(biz="Health technology firms designing for real patient journeys rather than single episodes of care.",
+                 ngo="Patient groups and charities supporting people to manage complex conditions.",
+                 health="Integrated care, person-centred improvement and Safety-II are reshaping how health systems work.",
+                 edu="Medical and nursing education teaching complexity alongside protocols.",
+                 com="Community health workers and peer support linking care to everyday life."),
+    ideas=[["person-centred care", "Care organized around what matters to the person, not around the organizations that provide it."],
+           ["integrated care", "Health and social care services working as one system around a person."],
+           ["complex adaptive system", "A system of many agents that adapt to each other, so behaviour emerges rather than being planned."]]),
+ 'sts': dict(
+    explainer=["Sociotechnical systems thinking began at the Tavistock Institute after the Second World War. Eric Trist and Ken Bamforth studied British coal mines and found that new machinery broke up small, self-organizing work groups, and productivity and morale fell. They concluded that technology and social organization have to be designed together.",
+               "Fred Emery and Einar Thorsrud carried this into industrial democracy in Norway, and Volvo's Kalmar and Uddevalla plants tried team-based car assembly. Melvin Conway's 1968 observation, now called Conway's law, says organizations design systems that copy their own communication structures. Team Topologies applies the same insight to software teams today."],
+    lens="Complexity as the joint system of people and technology: you cannot optimize one without the other, and the structure of an organization shows up in what it builds.",
+    practice=["Draw your team structure next to your system's architecture. Where do they mirror each other, and where does that cause pain?",
+              "Give a team a whole task it can complete, not a fragment, and the authority to organize how it does it.",
+              "When introducing new technology, design the work around it with the people who will do it.",
+              "Use Team Topologies to reduce the number of other teams each team depends on."],
+    sectors=dict(biz="Software companies use Conway's law and Team Topologies to shape teams and architecture together.",
+                 ngo="Small organizations adopting new systems design the work and the tool at the same time.",
+                 health="Health IT projects fail or succeed on whether clinical work and software are designed together.",
+                 edu="Taught in organization studies, information systems and software engineering.",
+                 com="Community organizations choosing tools that fit how volunteers actually work."),
+    ideas=[["sociotechnical system", "A system in which people, their work and their technology have to be designed together."],
+           ["conway's law", "Organizations design systems that copy their own communication structures."],
+           ["autonomous work group", "A team that manages a whole task and organizes its own work."]]),
+ 'arts': dict(
+    explainer=["Many artists work with complexity directly. John Cage used chance to let music emerge beyond his control. Augusto Boal's Theatre of the Oppressed turns audiences into 'spect-actors' who rehearse changing their situation, and as a city councillor in Rio he used Legislative Theatre to turn residents' scenes into laws. Pauline Oliveros taught deep listening; Brian Eno makes generative music that sets up rules and lets the piece unfold.",
+               "In the Complexity Lounge world, Sue Borchardt explains complexity through short animations, and Kyle Godbey writes about films, music and noise as ways into complex systems. Art helps because it lets people feel uncertainty, emergence and multiple perspectives, rather than only describing them."],
+    lens="Complexity as something felt and rehearsed: art creates safe spaces to experience emergence, ambiguity and other perspectives, so people can practise living with them.",
+    practice=["Watch a film with a group and ask what system the characters are caught in and how it shifts.",
+              "Try a short improvisation exercise before a strategy meeting: respond to what is offered instead of planning.",
+              "Use forum theatre: act out a stuck situation and let others step in to try a different move.",
+              "Listen for five minutes to everything you can hear, then talk about what you noticed."],
+    sectors=dict(biz="Improvisation and arts-based methods in leadership and innovation programmes.",
+                 ngo="Theatre of the Oppressed and participatory arts in community development worldwide.",
+                 health="Arts in health: music, drama and art therapy for people living with complexity in their bodies.",
+                 edu="Teaching systems and emergence through music, film and play.",
+                 com="Community theatre and festivals as spaces where residents rehearse change."),
+    ideas=[["generative music", "Music made by setting up rules or systems and letting the piece emerge, rather than writing every note."],
+           ["spect-actor", "Augusto Boal's word for audience members who step into the scene and act."],
+           ["deep listening", "Pauline Oliveros's practice of listening to everything, including what you usually filter out."],
+           ["legislative theatre", "Boal's method for turning residents' theatre scenes into proposals for law."]]),
+ 'process': dict(
+    explainer=["Most Western thought treats the world as made of things that then change. Process philosophy turns this around: change, becoming and relationship come first, and things are temporary patterns in ongoing processes. Henri Bergson wrote about time as lived duration; Alfred North Whitehead built a whole philosophy of process in Process and Reality (1929).",
+               "Complexity science arrived at similar ideas from physics: Ilya Prigogine showed how order arises in systems far from equilibrium. Jean Boulton, in the Complexity Lounge, connects this process view to practice and to Daoist thought in The Dao of Complexity. For practitioners it means paying attention to history, timing and what is already in motion."],
+    lens="Complexity as becoming: systems are not things that change but processes that hold patterns for a while, so history and timing matter as much as structure.",
+    practice=["Before planning, write the history of the situation: what has been building, and what is already in motion?",
+              "Ask what is emerging, not only what is broken.",
+              "Look for moments when a system is unsettled and more open to change, and time your moves for them.",
+              "Read a short piece by Bergson or Whitehead with others and talk about how it changes how you see your work."],
+    sectors=dict(biz="Strategy as process: watching how markets and organizations are becoming, not just their current state.",
+                 ngo="International development work that follows how programmes unfold over time rather than fixed logframes.",
+                 health="Seeing illness and recovery as unfolding processes rather than fixed states.",
+                 edu="Process-based approaches to learning and curriculum.",
+                 com="Community work that respects a place's history and timing."),
+    ideas=[["process philosophy", "The view that becoming and change, not fixed things, are the basic stuff of the world."],
+           ["duration", "Bergson's word for time as it is lived, flowing and indivisible, rather than measured."],
+           ["path dependence", "When what is possible now depends on the history of how things got here."]]),
+ 'neuro': dict(
+    explainer=["What we notice depends on what we are looking for. In the invisible gorilla experiment, Daniel Simons and Christopher Chabris showed that many people counting basketball passes miss a person in a gorilla suit walking through the scene. James J. Gibson's idea of affordances describes how we perceive what an environment invites us to do, and Gerd Gigerenzer shows how simple heuristics often work well under uncertainty.",
+               "The neurodiversity paradigm, named by Judy Singer in the late 1990s, treats differences such as autism, ADHD and dyslexia as natural human variation rather than deficits. In the Complexity Lounge, Jim Benson argues that diverse minds make better problem-solving teams, and several guests describe how complexity gave them language for how they see the world. Different minds notice different things, which matters most when situations are complex."],
+    lens="Complexity as partial seeing: no one perceives the whole of a complex situation, and different kinds of minds notice different parts, so diversity of perception is a resource.",
+    practice=["Before deciding, ask who in the room might be noticing something the rest of you are not set up to see.",
+              "Design meetings for different ways of thinking: share material in advance, allow written input, avoid rewarding only fast talkers.",
+              "Review hiring and appraisal for assumptions that disadvantage neurodivergent people.",
+              "Practise noticing: list everything you can see in a familiar place, then look again."],
+    sectors=dict(biz="Neurodiversity hiring programmes and inclusive team practices in technology and finance.",
+                 ngo="Disability-led organizations shaping services with, not for, neurodivergent people.",
+                 health="Moving from deficit models to support that fits how people actually think and sense.",
+                 edu="Classrooms designed for different kinds of minds rather than one norm.",
+                 com="Peer-led neurodivergent communities and advocacy."),
+    ideas=[["neurodiversity", "The natural variation in human minds, including autism, ADHD and dyslexia, seen as difference rather than deficit."],
+           ["affordance", "What an environment offers or invites a person or animal to do, as they perceive it."],
+           ["inattentional blindness", "Failing to see something in plain view because attention is focused elsewhere."],
+           ["heuristic", "A simple rule of thumb that often works well when information is limited and the future uncertain."]]),
+})
+PLAIN_OV.update({'health': "Health and care as complex systems, and care designed around the person rather than the organizations.",
+                 'sts': "Designing people, work and technology together, and why systems copy the organizations that build them.",
+                 'arts': "Feeling and rehearsing complexity through art, music, theatre and film.",
+                 'process': "A philosophy of becoming: the world as processes rather than things, and why timing and history matter.",
+                 'neuro': "What we notice shapes what we can do, and different minds notice different things."})
+PLAIN_POL.update({'health': "Care built around patients' journeys, budgets pooled across health and social care, and outcomes that matter to patients.",
+                  'sts': "Designing digital services and the teams that run them together, with whole tasks for frontline teams.",
+                  'arts': "Arts-based ways for residents to shape policy, such as legislative theatre.",
+                  'process': "Treating policies as unfolding processes with histories, paying attention to timing.",
+                  'neuro': "Services, workplaces and hiring designed for different kinds of minds."})
+
+CASES += [
+    dict(id="esther-jonkoping", title="The Esther network", place="Jönköping County, Sweden", years="1997 onward",
+         summary="After a poor experience of one older patient, staff from Höglandet Hospital, primary care and six municipalities mapped the journey of an imagined 88-year-old, Esther, through their services and redesigned care around her. Trained 'Esther coaches' from the frontline lead improvements across organizations.",
+         lesson="Organizing around one person's journey, with frontline coaches rather than managers driving change, can join up care across organizations that each own only part of it. Program leaders report that admissions to the hospital's medical department fell from 9,300 in 1998 to 6,500 in 2013.",
+         note="The Commonwealth Fund notes it is difficult to attribute these changes to Esther without comparison data, and similar changes were reported elsewhere in Sweden.",
+         pathways=["Complexity in health", "Service design"],
+         sources=[S("Gray, Winblad and Sarnak: Sweden's Esther Model (Commonwealth Fund, 2016, PDF)", "https://www.commonwealthfund.org/sites/default/files/2018-09/1901_Gray_Esther_case_study_v3.pdf")]),
+    dict(id="volvo-kalmar", title="Team-based car assembly at Volvo", place="Kalmar and Uddevalla, Sweden", years="1974 to the 1990s",
+         summary="Volvo's Kalmar plant, opened in 1974, replaced the moving assembly line with about 25 teams who organized their own pace and worked on cars carried by battery-driven carriers. The later Uddevalla plant went further, with small groups building whole cars over long work cycles.",
+         lesson="The most famous industrial test of sociotechnical design: work can be organized around autonomous teams doing whole tasks rather than fragmented line jobs.",
+         note="Kalmar closed in 1994, and the debate continues over whether these plants could match lean production on cost or were closed for other reasons.",
+         pathways=["Sociotechnical", "Teams and learning"],
+         sources=[S("Volvo Kalmar Assembly (overview)", "https://en.wikipedia.org/wiki/Volvo_Kalmar_Assembly"),
+                  S("The Volvo Uddevalla Plant and Interpretations of Industrial Design Processes (Chalmers)", "https://research.chalmers.se/en/publication/247012")]),
+    dict(id="legislative-theatre", title="Legislative Theatre in Rio de Janeiro", place="Rio de Janeiro, Brazil", years="1993 to 1996",
+         summary="As a city councillor, theatre director Augusto Boal used Theatre of the Oppressed with community groups: residents acted out problems in their lives, audiences stepped in to try alternatives, and the proposals that emerged were drafted as legislation.",
+         lesson="Art can be a way for people to make law: Legislative Theatre turned residents' scenes into some 13 municipal laws during Boal's term, by one count.",
+         note="Accounts differ on how many laws passed (around 13 to 15); the method depended on Boal holding office.",
+         pathways=["Complexity through art", "Power analysis"],
+         sources=[S("Arte Útil: Theatre of the Oppressed, Legislative Theatre", "https://arte-util.org/projects/theatre-of-the-oppressed-legislative-theatre/"),
+                  S("Augusto Boal (overview)", "https://en.wikipedia.org/wiki/Augusto_Boal")]),
+    dict(id="sap-autism-at-work", title="Autism at Work at SAP", place="Global (SAP)", years="2010s",
+         summary="The software company SAP redesigned its hiring and support so that autistic people could join its workforce, setting a goal of 1% of employees by 2020 and treating it as business strategy rather than charity.",
+         lesson="Replacing standard interviews with other ways to assess skills, and supporting people once hired, opened access to talent that conventional processes screened out; the authors report gains in productivity, quality and innovation at companies with such programmes.",
+         note="Reported mainly by business school case writers; the programme is a corporate initiative, and experiences of participants vary.",
+         pathways=["Attention, perception", "Teams and learning"],
+         sources=[S("Pisano and Austin: SAP SE, Autism at Work (Harvard Business School case, 2016)", "https://research.cbs.dk/da/publications/sap-se-autism-at-work/"),
+                  S("Austin and Pisano: Neurodiversity as a Competitive Advantage (HBR, 2017)", "https://hbr.org/2017/05/neurodiversity-as-a-competitive-advantage")]),
+    dict(id="oxfam-turkana", title="A complexity lens on Oxfam's work in Turkana", place="Turkana, Kenya", years="2010s", strength="emerging",
+         summary="Jean Boulton studied Oxfam's programme in the Turkana region of northern Kenya through a complexity and process lens, for a chapter of Embracing Complexity: how history, context and path dependence shaped what the programme could do.",
+         lesson="A process view asks programme designers to investigate history and what is already in motion before planning: 'History Matters', as one reviewer summed up the book's advice.",
+         note="Not as strong as the other cases yet: the public sources describe the study but not its findings in detail, and we are watching for more documentation.",
+         pathways=["Process philosophy"],
+         sources=[S("Duncan Green, From Poverty to Power: review of Embracing Complexity (2015)", "https://frompoverty.oxfam.org.uk/?p=21131"),
+                  S("Complexity Lounge #48: Jean Boulton, Process Complexity", "https://www.youtube.com/watch?v=XkDSgJOnQkk")]),
+]
+
+PEOPLE += [_p("Paul Plsek"), _p("Eric Trist", "1909–1993", W + "Eric_Trist"), _p("Ken Bamforth"), _p("Fred Emery"),
+           _p("Einar Thorsrud", "1923–1985", W + "Einar_Thorsrud"), _p("Albert Cherns"), _p("Melvin Conway", src=W + "Melvin_Conway"),
+           _p("John Cage", "1912–1992", W + "John_Cage"), _p("Augusto Boal", "1931–2009", W + "Augusto_Boal"), _p("Pauline Oliveros", "1932–2016", W + "Pauline_Oliveros"),
+           _p("Brian Eno", "b. 1948", W + "Brian_Eno"), _p("Henri Bergson", "1859–1941", W + "Henri_Bergson"),
+           _p("Alfred North Whitehead", "1861–1947", W + "Alfred_North_Whitehead"), _p("Nicholas Rescher", "1928–2024", W + "Nicholas_Rescher"), _p("Stanley Salthe"),
+           _p("James J. Gibson", "1904–1979", W + "James_J._Gibson"), _p("Daniel Simons", "b. 1969", W + "Daniel_Simons"), _p("Christopher Chabris", "b. 1966", W + "Christopher_Chabris"),
+           _p("Gerd Gigerenzer", "b. 1947", W + "Gerd_Gigerenzer"), _p("Judy Singer", src=W + "Judy_Singer"), _p("Sonny Jane Wise"),
+           _p("Eliyahu Goldratt", "1947–2011", W + "Eliyahu_M._Goldratt"), _p("Helmuth von Moltke the Elder", "1800–1891", W + "Helmuth_von_Moltke_the_Elder")]
+for _x in PEOPLE:
+    if _x["name"] == "Trisha Greenhalgh": _x.update(years="b. 1959", status="checked", src=W + "Trisha_Greenhalgh")
+KNOWN.update({
+ 'Eric Trist': 'Social scientist at the Tavistock Institute who, with Ken Bamforth, founded sociotechnical systems thinking from studies of British coal mines.',
+ 'Ken Bamforth': 'Former miner and researcher who co-wrote the 1951 coal-mining study that founded sociotechnical systems thinking.',
+ 'Fred Emery': 'Australian social scientist who developed sociotechnical design and industrial democracy with Eric Trist and Einar Thorsrud.',
+ 'Einar Thorsrud': 'Norwegian psychologist who led Norway\'s industrial democracy experiments in sociotechnical work design.',
+ 'Albert Cherns': 'Social scientist who set out widely used principles of sociotechnical design.',
+ 'Melvin Conway': 'Computer scientist whose 1968 paper gave us Conway\'s law: systems copy the communication structures of the organizations that design them.',
+ 'John Cage': 'Composer who used chance and indeterminacy so that music could emerge beyond the composer\'s control.',
+ 'Augusto Boal': 'Brazilian theatre director who created Theatre of the Oppressed and, as a Rio city councillor, Legislative Theatre.',
+ 'Pauline Oliveros': 'Composer who created deep listening, a practice of attending to all sound.',
+ 'Brian Eno': 'Musician and producer known for ambient and generative music: setting up systems and letting the music unfold.',
+ 'Henri Bergson': 'Philosopher of time as lived duration and of creative evolution.',
+ 'Alfred North Whitehead': 'Mathematician and philosopher whose Process and Reality is the founding work of process philosophy.',
+ 'Nicholas Rescher': 'Philosopher who developed process metaphysics among many other contributions.',
+ 'Stanley Salthe': 'Biologist who developed hierarchy theory and infodynamics, often cited by Alicia Juarrero.',
+ 'James J. Gibson': 'Psychologist of perception who introduced affordances: what an environment offers to those who perceive it.',
+ 'Daniel Simons': 'Psychologist who, with Christopher Chabris, ran the invisible gorilla experiment on inattentional blindness.',
+ 'Christopher Chabris': 'Psychologist and co-author of The Invisible Gorilla, on the limits of attention.',
+ 'Gerd Gigerenzer': 'Psychologist who shows how simple heuristics can beat complex models under uncertainty.',
+ 'Judy Singer': 'Sociologist credited with naming neurodiversity in the late 1990s.',
+ 'Sonny Jane Wise': 'Neurodivergent advocate and author who explains the neurodiversity paradigm and the neurodivergent umbrella.',
+ 'Paul Plsek': 'Improvement adviser who brought complexity science into health care with Trisha Greenhalgh.',
+ 'Eliyahu Goldratt': 'Physicist and management thinker who created the theory of constraints (The Goal).',
+ 'Helmuth von Moltke the Elder': 'Prussian field marshal whose idea of giving intent rather than detailed orders became mission command.',
+})
+_extra_mix = {
+ 'sense': "estuarine mapping (mapping constraints by the energy and time it takes to change them), narrative research methods: SenseMaker, narrative assemblages and weak signals",
+ 'strat': "Helmuth von Moltke the Elder and mission command (give intent, not detailed orders), John Boyd",
+ 'flow': "Melvin Conway (Conway's law), Eliyahu Goldratt (theory of constraints)",
+}
+for _k, _v in _extra_mix.items():
+    MIX_ADD[_k] = (MIX_ADD[_k] + ", " + _v) if _k in MIX_ADD else _v
+A.GLOSSARY.update({
+ 'estuarine mapping': "Dave Snowden's method for mapping the constraints in a situation by how much energy and time it would take to change them, to find what is realistically possible now.",
+ 'mission command': 'Leading by giving people the intent and the resources, and leaving them free to decide how to act as things change.',
+ "conway's law": 'Organizations design systems that copy their own communication structures.',
+ 'theory of constraints': "Eliyahu Goldratt's idea that every system's output is limited by one bottleneck, so improve that first.",
+ 'weak signals': 'Early, faint signs of change that are easy to miss but can matter a lot later.',
+})
+
+# episodes that also belong to the new pathways
+for _e in EPISODES:
+    _e["pathways"] += {2: ['health'], 19: ['sts'], 6: ['sts'], 14: ['arts'], 48: ['process'], 44: ['process'], 61: ['process'], 56: ['process'],
+                       16: ['neuro'], 42: ['neuro'], 4: ['health']}.get(_e["n"], [])
+
+# organizations that also carry the round-two pathways (matched by id in compile)
+ORG_LINKS = {'ihi': ["Complexity in health"], 'tavistock': ["Sociotechnical"], 'teamtop': ["Sociotechnical"],
+             'complexity-lounge': ["Complexity in health", "Sociotechnical", "Complexity through art", "Process philosophy", "Attention, perception"]}
+
+# ---------------------------------------------------------------- "Where it's practised" (browse on Home and filter in the Wiki)
+# Built from each pathway's sector tags, plus the places the Lounge talks show complexity work happening.
+WHERE = [('tech', 'Software and technology', 'Product teams, platforms, AI'),
+         ('health', 'Health and care', 'Hospitals, clinics, living with illness'),
+         ('safety', 'Safety-critical industry', 'Aviation, energy, manufacturing'),
+         ('defence', 'Defence and emergency services', 'Military, fire, disaster response'),
+         ('gov', 'Government and public services', 'Policy, services, regulation'),
+         ('biz', 'Business and management', 'Strategy, teams, organizations'),
+         ('ngo', 'Nonprofits, funders and development', 'Charities, philanthropy, aid'),
+         ('com', 'Communities and movements', 'Neighbourhoods, organizing, mutual aid'),
+         ('edu', 'Schools and universities', 'Teaching, research, learning'),
+         ('art', 'Arts and culture', 'Theatre, music, film, design')]
+WHERE_FROM_SECTOR = {'gov': 'gov', 'biz': 'biz', 'ngo': 'ngo', 'fund': 'ngo', 'com': 'com', 'edu': 'edu'}
+WHERE_EXTRA = {
+ 'tech': ['flow', 'techai', 'sts', 'teams', 'improve', 'strat', 'corp', 'svc', 'dthink', 'sense', 'cx', 'cyb', 'resil'],
+ 'health': ['health', 'improve', 'resil', 'soma', 'svc', 'crp', 'sense', 'posdev', 'deval', 'ar', 'cop', 'neuro', 'pd'],
+ 'safety': ['resil', 'crisis', 'sts', 'improve', 'sense', 'teams'],
+ 'defence': ['crisis', 'strat', 'sense', 'resil', 'teams', 'cyb'],
+ 'art': ['arts', 'narr', 'semio', 'ritual', 'dthink', 'pd', 'warm', 'theoryu', 'trans'],
+}

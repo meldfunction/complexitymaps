@@ -1080,5 +1080,116 @@
     "u": "https://dora.dev/capabilities/generative-organizational-culture/"
    }
   ]
+ },
+ {
+  "id": "esther-jonkoping",
+  "title": "The Esther network",
+  "place": "Jönköping County, Sweden",
+  "years": "1997 onward",
+  "summary": "After a poor experience of one older patient, staff from Höglandet Hospital, primary care and six municipalities mapped the journey of an imagined 88-year-old, Esther, through their services and redesigned care around her. Trained 'Esther coaches' from the frontline lead improvements across organizations.",
+  "lesson": "Organizing around one person's journey, with frontline coaches rather than managers driving change, can join up care across organizations that each own only part of it. Program leaders report that admissions to the hospital's medical department fell from 9,300 in 1998 to 6,500 in 2013.",
+  "note": "The Commonwealth Fund notes it is difficult to attribute these changes to Esther without comparison data, and similar changes were reported elsewhere in Sweden.",
+  "pathways": [
+   "complexity-in-health-and-care",
+   "service-design"
+  ],
+  "sources": [
+   {
+    "t": "Gray, Winblad and Sarnak: Sweden's Esther Model (Commonwealth Fund, 2016, PDF)",
+    "u": "https://www.commonwealthfund.org/sites/default/files/2018-09/1901_Gray_Esther_case_study_v3.pdf"
+   }
+  ]
+ },
+ {
+  "id": "volvo-kalmar",
+  "title": "Team-based car assembly at Volvo",
+  "place": "Kalmar and Uddevalla, Sweden",
+  "years": "1974 to the 1990s",
+  "summary": "Volvo's Kalmar plant, opened in 1974, replaced the moving assembly line with about 25 teams who organized their own pace and worked on cars carried by battery-driven carriers. The later Uddevalla plant went further, with small groups building whole cars over long work cycles.",
+  "lesson": "The most famous industrial test of sociotechnical design: work can be organized around autonomous teams doing whole tasks rather than fragmented line jobs.",
+  "note": "Kalmar closed in 1994, and the debate continues over whether these plants could match lean production on cost or were closed for other reasons.",
+  "pathways": [
+   "sociotechnical-systems",
+   "teams-and-learning-cultures"
+  ],
+  "sources": [
+   {
+    "t": "Volvo Kalmar Assembly (overview)",
+    "u": "https://en.wikipedia.org/wiki/Volvo_Kalmar_Assembly"
+   },
+   {
+    "t": "The Volvo Uddevalla Plant and Interpretations of Industrial Design Processes (Chalmers)",
+    "u": "https://research.chalmers.se/en/publication/247012"
+   }
+  ]
+ },
+ {
+  "id": "legislative-theatre",
+  "title": "Legislative Theatre in Rio de Janeiro",
+  "place": "Rio de Janeiro, Brazil",
+  "years": "1993 to 1996",
+  "summary": "As a city councillor, theatre director Augusto Boal used Theatre of the Oppressed with community groups: residents acted out problems in their lives, audiences stepped in to try alternatives, and the proposals that emerged were drafted as legislation.",
+  "lesson": "Art can be a way for people to make law: Legislative Theatre turned residents' scenes into some 13 municipal laws during Boal's term, by one count.",
+  "note": "Accounts differ on how many laws passed (around 13 to 15); the method depended on Boal holding office.",
+  "pathways": [
+   "complexity-through-art-music-and-film",
+   "power-analysis"
+  ],
+  "sources": [
+   {
+    "t": "Arte Útil: Theatre of the Oppressed, Legislative Theatre",
+    "u": "https://arte-util.org/projects/theatre-of-the-oppressed-legislative-theatre/"
+   },
+   {
+    "t": "Augusto Boal (overview)",
+    "u": "https://en.wikipedia.org/wiki/Augusto_Boal"
+   }
+  ]
+ },
+ {
+  "id": "sap-autism-at-work",
+  "title": "Autism at Work at SAP",
+  "place": "Global (SAP)",
+  "years": "2010s",
+  "summary": "The software company SAP redesigned its hiring and support so that autistic people could join its workforce, setting a goal of 1% of employees by 2020 and treating it as business strategy rather than charity.",
+  "lesson": "Replacing standard interviews with other ways to assess skills, and supporting people once hired, opened access to talent that conventional processes screened out; the authors report gains in productivity, quality and innovation at companies with such programmes.",
+  "note": "Reported mainly by business school case writers; the programme is a corporate initiative, and experiences of participants vary.",
+  "pathways": [
+   "attention-perception-and-neurodiversity",
+   "teams-and-learning-cultures"
+  ],
+  "sources": [
+   {
+    "t": "Pisano and Austin: SAP SE, Autism at Work (Harvard Business School case, 2016)",
+    "u": "https://research.cbs.dk/da/publications/sap-se-autism-at-work/"
+   },
+   {
+    "t": "Austin and Pisano: Neurodiversity as a Competitive Advantage (HBR, 2017)",
+    "u": "https://hbr.org/2017/05/neurodiversity-as-a-competitive-advantage"
+   }
+  ]
+ },
+ {
+  "id": "oxfam-turkana",
+  "title": "A complexity lens on Oxfam's work in Turkana",
+  "place": "Turkana, Kenya",
+  "years": "2010s",
+  "strength": "emerging",
+  "summary": "Jean Boulton studied Oxfam's programme in the Turkana region of northern Kenya through a complexity and process lens, for a chapter of Embracing Complexity: how history, context and path dependence shaped what the programme could do.",
+  "lesson": "A process view asks programme designers to investigate history and what is already in motion before planning: 'History Matters', as one reviewer summed up the book's advice.",
+  "note": "Not as strong as the other cases yet: the public sources describe the study but not its findings in detail, and we are watching for more documentation.",
+  "pathways": [
+   "process-philosophy-and-the-philosophy-of-complexity"
+  ],
+  "sources": [
+   {
+    "t": "Duncan Green, From Poverty to Power: review of Embracing Complexity (2015)",
+    "u": "https://frompoverty.oxfam.org.uk/?p=21131"
+   },
+   {
+    "t": "Complexity Lounge #48: Jean Boulton, Process Complexity",
+    "u": "https://www.youtube.com/watch?v=XkDSgJOnQkk"
+   }
+  ]
  }
 ]

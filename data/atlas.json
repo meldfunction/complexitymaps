@@ -249,6 +249,58 @@
   [
    "flow",
    "strat"
+  ],
+  [
+   "health",
+   "improve"
+  ],
+  [
+   "health",
+   "resil"
+  ],
+  [
+   "health",
+   "svc"
+  ],
+  [
+   "sts",
+   "teams"
+  ],
+  [
+   "sts",
+   "grel"
+  ],
+  [
+   "sts",
+   "flow"
+  ],
+  [
+   "arts",
+   "narr"
+  ],
+  [
+   "arts",
+   "semio"
+  ],
+  [
+   "arts",
+   "ritual"
+  ],
+  [
+   "process",
+   "mindlife"
+  ],
+  [
+   "process",
+   "cx"
+  ],
+  [
+   "neuro",
+   "soma"
+  ],
+  [
+   "neuro",
+   "sense"
   ]
  ],
  "metro": [
@@ -437,7 +489,8 @@
     "biosemiotics-and-the-umwelt",
     "semiotics-signs-codes-and-meaning-making",
     "systems-thinking-traditions-hard-soft-and-critical",
-    "mind-life-and-constraints"
+    "mind-life-and-constraints",
+    "process-philosophy-and-the-philosophy-of-complexity"
    ]
   },
   {
@@ -469,7 +522,8 @@
     "teams-and-learning-cultures",
     "communities-of-practice-and-action-learning",
     "governance-and-self-organizing-structures",
-    "complex-responsive-processes"
+    "complex-responsive-processes",
+    "sociotechnical-systems"
    ]
   },
   {
@@ -487,7 +541,8 @@
     "developmental-evaluation",
     "collaboration-across-boundaries",
     "technology-ai-and-complexity",
-    "systems-thinking-traditions-hard-soft-and-critical"
+    "systems-thinking-traditions-hard-soft-and-critical",
+    "complexity-in-health-and-care"
    ]
   },
   {
@@ -501,7 +556,8 @@
     "critical-and-popular-education",
     "action-research",
     "participatory-design-and-design-justice",
-    "technology-ai-and-complexity"
+    "technology-ai-and-complexity",
+    "complexity-through-art-music-and-film"
    ]
   },
   {
@@ -516,7 +572,9 @@
     "experiential-learning-and-reflective-practice",
     "work-that-reconnects",
     "the-metacrisis-and-meaning",
-    "presencing-theory-u-and-social-presencing-theater"
+    "presencing-theory-u-and-social-presencing-theater",
+    "complexity-through-art-music-and-film",
+    "attention-perception-and-neurodiversity"
    ]
   },
   {
@@ -1013,5 +1071,57 @@
   "run": "Plans meet reality: budgets, rules and people interact in ways no org chart shows.",
   "meaning": "Stories, rituals and art shape how people see the world, and so how they act in it.",
   "open": "Not knowing what's next is uncertain, but it's also room to explore."
- }
+ },
+ "where": [
+  [
+   "tech",
+   "Software and technology",
+   "Product teams, platforms, AI"
+  ],
+  [
+   "health",
+   "Health and care",
+   "Hospitals, clinics, living with illness"
+  ],
+  [
+   "safety",
+   "Safety-critical industry",
+   "Aviation, energy, manufacturing"
+  ],
+  [
+   "defence",
+   "Defence and emergency services",
+   "Military, fire, disaster response"
+  ],
+  [
+   "gov",
+   "Government and public services",
+   "Policy, services, regulation"
+  ],
+  [
+   "biz",
+   "Business and management",
+   "Strategy, teams, organizations"
+  ],
+  [
+   "ngo",
+   "Nonprofits, funders and development",
+   "Charities, philanthropy, aid"
+  ],
+  [
+   "com",
+   "Communities and movements",
+   "Neighbourhoods, organizing, mutual aid"
+  ],
+  [
+   "edu",
+   "Schools and universities",
+   "Teaching, research, learning"
+  ],
+  [
+   "art",
+   "Arts and culture",
+   "Theatre, music, film, design"
+  ]
+ ]
 }
