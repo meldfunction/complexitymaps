@@ -17,7 +17,71 @@
   "born": 1929,
   "died": 2025,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Scholar of Buddhism and systems thinking who created the Work That Reconnects.",
+   "timeline": [
+    [
+     1929,
+     "Born in Los Angeles"
+    ],
+    [
+     1978,
+     "Completes her PhD at Syracuse University on Buddhism and general systems theory"
+    ],
+    [
+     1983,
+     "Publishes Despair and Personal Power in the Nuclear Age"
+    ],
+    [
+     1991,
+     "Publishes Mutual Causality in Buddhism and General Systems Theory"
+    ],
+    [
+     2012,
+     "Publishes Active Hope with Chris Johnstone"
+    ],
+    [
+     2025,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "The Great Turning",
+     "The shift from an industrial growth society to a life-sustaining one, seen as already under way."
+    ],
+    [
+     "Honouring our pain for the world",
+     "Grief for the world is a sign of connection to it, and facing it together frees energy to act."
+    ],
+    [
+     "Deep time",
+     "Imagining ourselves in relationship with ancestors and future generations."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Active Hope (2012)",
+     "With Chris Johnstone"
+    ],
+    [
+     "Mutual Causality in Buddhism and General Systems Theory (1991)",
+     "Her scholarly work"
+    ]
+   ],
+   "ask": [
+    "What do you grieve about the world, and what does that grief tell you about what you love?",
+    "What would someone seven generations from now thank you for?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Joanna_Macy"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Gerard Endenburg",
@@ -874,7 +938,76 @@
   "born": 1926,
   "died": 2002,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Founder of management cybernetics and the Viable System Model, who led Chile's Project Cybersyn.",
+   "timeline": [
+    [
+     1926,
+     "Born in London"
+    ],
+    [
+     1959,
+     "Publishes Cybernetics and Management"
+    ],
+    [
+     1971,
+     "Begins Project Cybersyn for Salvador Allende's government in Chile"
+    ],
+    [
+     1972,
+     "Publishes Brain of the Firm"
+    ],
+    [
+     1979,
+     "Publishes The Heart of Enterprise"
+    ],
+    [
+     1994,
+     "Publishes Beyond Dispute, on team syntegrity"
+    ],
+    [
+     2002,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Viable System Model",
+     "Five linked functions any organization needs to stay viable in a changing environment."
+    ],
+    [
+     "The purpose of a system is what it does",
+     "Judge a system by its results, not its stated intentions."
+    ],
+    [
+     "Variety engineering",
+     "Matching the variety of responses to the variety of situations, by amplifying and filtering."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Brain of the Firm (1972)",
+     "The Viable System Model"
+    ],
+    [
+     "Eden Medina: Cybernetic Revolutionaries",
+     "The history of Cybersyn",
+     "https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/"
+    ]
+   ],
+   "ask": [
+    "Judged by what it does, what is your organization's purpose?",
+    "Where is information arriving too slowly to steer by?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Stafford_Beer"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Ilya Prigogine",
@@ -1227,7 +1360,83 @@
   "born": 1936,
   "died": 2026,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Organizational theorist of sensemaking and, with Kathleen Sutcliffe, of high reliability organizing.",
+   "timeline": [
+    [
+     1936,
+     "Born in Indiana"
+    ],
+    [
+     1969,
+     "Publishes The Social Psychology of Organizing"
+    ],
+    [
+     1976,
+     "Publishes Educational Organizations as Loosely Coupled Systems"
+    ],
+    [
+     1993,
+     "Publishes his study of the Mann Gulch fire disaster, on the collapse of sensemaking"
+    ],
+    [
+     1995,
+     "Publishes Sensemaking in Organizations"
+    ],
+    [
+     2001,
+     "Publishes Managing the Unexpected with Kathleen Sutcliffe"
+    ],
+    [
+     2026,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Sensemaking",
+     "How people turn confusing situations into something they can act on, often looking back."
+    ],
+    [
+     "Enactment",
+     "People help create the environments they then respond to."
+    ],
+    [
+     "Loose coupling",
+     "Parts of an organization that are connected but keep their own identity, which makes them adaptable."
+    ],
+    [
+     "Mindful organizing",
+     "Staying alert to small failures, refusing to simplify, and deferring to expertise."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Sensemaking in Organizations (1995)",
+     "The core book"
+    ],
+    [
+     "The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster (1993)",
+     "A classic case study"
+    ],
+    [
+     "Managing the Unexpected (2001, with Kathleen Sutcliffe)",
+     "High reliability in practice"
+    ]
+   ],
+   "ask": [
+    "When did your team last make sense of something only after acting?",
+    "Which small failure are you explaining away?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://thecynefin.co/karl-weick-1936-2026/"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Kurt Lewin",
@@ -1247,7 +1456,91 @@
   "born": 1890,
   "died": 1947,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Social psychologist who founded action research and the study of group dynamics.",
+   "timeline": [
+    [
+     1890,
+     "Born in Mogilno, then in Prussia"
+    ],
+    [
+     1933,
+     "Leaves Germany for the United States"
+    ],
+    [
+     1939,
+     "With Ronald Lippitt and Ralph White, studies democratic and autocratic leadership climates"
+    ],
+    [
+     1945,
+     "Founds the Research Center for Group Dynamics at MIT"
+    ],
+    [
+     1946,
+     "Publishes Action Research and Minority Problems; a workshop he leads gives rise to the T-group"
+    ],
+    [
+     1947,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Field theory",
+     "Behaviour is a function of the person and their environment, a field of forces acting at once."
+    ],
+    [
+     "Action research",
+     "Research done with people, in cycles of planning, acting and reflecting."
+    ],
+    [
+     "Nothing as practical as a good theory",
+     "His own phrase for joining theory and practice."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Unfreeze, change, refreeze",
+     "what": "A three-step model of change widely taught in management courses and attributed to Lewin: loosen the current state, change it, then stabilize the new one.",
+     "claim": "Groups hold steady because forces balance in a field; change means shifting that balance, studied with the people involved.",
+     "who": "Stephen Cummings, Todd Bridgman and Kenneth Brown (2016)",
+     "other": "The tidy three-step model was largely built by later writers; Lewin never presented it as a simple recipe, and teaching it that way flattens his field theory.",
+     "more": [
+      [
+       "Kurt Lewin, Wikipedia",
+       "https://en.wikipedia.org/wiki/Kurt_Lewin",
+       "His life and work"
+      ],
+      [
+       "Lewin, groups, experiential learning and action research (infed)",
+       "https://infed.org/dir/welcome/kurt-lewin-groups-experiential-learning-and-action-research/",
+       "A readable overview"
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    [
+     "Action Research and Minority Problems (1946)",
+     "Short founding paper"
+    ],
+    [
+     "Resolving Social Conflicts (1948)",
+     "Collected papers"
+    ]
+   ],
+   "ask": [
+    "What forces are holding your situation steady?",
+    "Who would need to take part for research on it to change anything?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Kurt_Lewin"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Paulo Freire",
@@ -1433,7 +1726,71 @@
   "born": 1930,
   "died": 1997,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Philosopher of professional practice who showed how practitioners think in action.",
+   "timeline": [
+    [
+     1930,
+     "Born in Boston"
+    ],
+    [
+     1970,
+     "Gives the BBC Reith Lectures, published in 1971 as Beyond the Stable State"
+    ],
+    [
+     1974,
+     "Publishes Theory in Practice with Chris Argyris"
+    ],
+    [
+     1983,
+     "Publishes The Reflective Practitioner"
+    ],
+    [
+     1987,
+     "Publishes Educating the Reflective Practitioner"
+    ],
+    [
+     1997,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Reflection-in-action",
+     "Thinking about what you are doing while you do it, and adjusting."
+    ],
+    [
+     "The reflective practitioner",
+     "Professionals in messy situations learn by framing problems and testing moves, not by applying theory."
+    ],
+    [
+     "Learning systems",
+     "Organizations and societies need to become systems that keep learning as things change."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "The Reflective Practitioner (1983)",
+     "The core book"
+    ],
+    [
+     "Beyond the Stable State (1971)",
+     "From his Reith Lectures"
+    ]
+   ],
+   "ask": [
+    "When did you last change course in the middle of doing something?",
+    "How do you reframe a problem that will not budge?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Donald_Sch%C3%B6n"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Chris Argyris",
@@ -1452,7 +1809,71 @@
   "born": 1923,
   "died": 2013,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Organizational theorist of how people and organizations learn, and why smart people often fail to.",
+   "timeline": [
+    [
+     1923,
+     "Born in Newark, New Jersey"
+    ],
+    [
+     1974,
+     "Publishes Theory in Practice with Donald Schön"
+    ],
+    [
+     1978,
+     "Publishes Organizational Learning with Donald Schön"
+    ],
+    [
+     1991,
+     "Publishes 'Teaching Smart People How to Learn' in Harvard Business Review"
+    ],
+    [
+     2013,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Espoused theory and theory-in-use",
+     "What people say guides them often differs from what actually drives their behaviour."
+    ],
+    [
+     "Single- and double-loop learning",
+     "Fixing errors within the rules versus questioning the rules themselves."
+    ],
+    [
+     "Defensive routines",
+     "Habits that protect people from embarrassment but block learning."
+    ],
+    [
+     "Ladder of inference",
+     "How we climb from what we observe to conclusions, often without noticing."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Teaching Smart People How to Learn (HBR, 1991)",
+     "Short and influential"
+    ],
+    [
+     "Organizational Learning (1978)",
+     "With Donald Schön"
+    ]
+   ],
+   "ask": [
+    "Where does what you say guide you differ from what you do?",
+    "Which rule would double-loop learning ask you to question?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Chris_Argyris"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Jack Mezirow",
@@ -1591,7 +2012,71 @@
   "born": 1917,
   "died": 1992,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Physicist who proposed dialogue as a way for groups to see the assumptions in their shared thinking.",
+   "timeline": [
+    [
+     1917,
+     "Born in Wilkes-Barre, Pennsylvania"
+    ],
+    [
+     1951,
+     "Publishes Quantum Theory and, after refusing to testify against colleagues, leaves the United States for Brazil"
+    ],
+    [
+     1952,
+     "Proposes a hidden-variables interpretation of quantum mechanics"
+    ],
+    [
+     1980,
+     "Publishes Wholeness and the Implicate Order"
+    ],
+    [
+     1992,
+     "Dies in London"
+    ],
+    [
+     1996,
+     "On Dialogue, edited by Lee Nichol, is published"
+    ]
+   ],
+   "ideas": [
+    [
+     "Dialogue",
+     "A group thinking together, suspending assumptions instead of defending them."
+    ],
+    [
+     "Thought as a system",
+     "Thinking is collective and produces many of the problems it then tries to solve."
+    ],
+    [
+     "Implicate order",
+     "A deeper, enfolded order of wholeness from which the visible world unfolds."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "On Dialogue (1996)",
+     "Short and practical"
+    ],
+    [
+     "Wholeness and the Implicate Order (1980)",
+     "His philosophy of wholeness"
+    ]
+   ],
+   "ask": [
+    "Which assumption would your team rather defend than look at?",
+    "What happens if you meet with no decision to make?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/David_Bohm"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Otto Scharmer",
@@ -1668,7 +2153,90 @@
   "born": 1916,
   "died": 2001,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Polymath of decision-making, organizations, artificial intelligence and design, who showed that people satisfice rather than optimize.",
+   "timeline": [
+    [
+     1916,
+     "Born in Milwaukee, Wisconsin"
+    ],
+    [
+     1947,
+     "Publishes Administrative Behavior"
+    ],
+    [
+     1956,
+     "With Allen Newell, builds the Logic Theorist, an early AI program"
+    ],
+    [
+     1962,
+     "Publishes The Architecture of Complexity"
+    ],
+    [
+     1969,
+     "Publishes The Sciences of the Artificial"
+    ],
+    [
+     1978,
+     "Receives the Nobel Prize in economics"
+    ],
+    [
+     2001,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Bounded rationality",
+     "People decide with limited information, time and attention, so they look for good enough rather than best."
+    ],
+    [
+     "Satisficing",
+     "Choosing the first option that meets your standard instead of searching for the optimum."
+    ],
+    [
+     "Near-decomposability",
+     "Complex systems are built from parts that interact more inside than between, which makes them understandable and evolvable."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Perfect rationality in economics",
+     "what": "Standard economic models assume people and firms maximize their gains with full information and unlimited calculating power.",
+     "claim": "Real people and organizations cannot do this; theories should describe how they actually decide under limits.",
+     "who": "Milton Friedman and neoclassical economists",
+     "other": "Theories should be judged by how well they predict, not by whether their assumptions are realistic; people may act as if they maximize.",
+     "more": [
+      [
+       "Bounded rationality, Wikipedia",
+       "https://en.wikipedia.org/wiki/Bounded_rationality",
+       "The idea and its critics"
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    [
+     "The Sciences of the Artificial (1969)",
+     "Design, complexity and near-decomposability"
+    ],
+    [
+     "Administrative Behavior (1947)",
+     "Decision-making in organizations"
+    ]
+   ],
+   "ask": [
+    "Where are you searching for the best answer when good enough would do?",
+    "Which parts of your system could change without disturbing the rest?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Herbert_A._Simon"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "W. Brian Arthur",
@@ -2007,7 +2575,86 @@
   "born": 1900,
   "died": 1993,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Statistician and teacher of quality who argued that most problems come from the system, not the people working in it.",
+   "timeline": [
+    [
+     1900,
+     "Born in Sioux City, Iowa"
+    ],
+    [
+     1950,
+     "Lectures to Japanese engineers and managers on statistical quality control"
+    ],
+    [
+     1951,
+     "The Deming Prize for quality is established in Japan"
+    ],
+    [
+     1980,
+     "Featured in the NBC documentary 'If Japan Can... Why Can't We?'"
+    ],
+    [
+     1982,
+     "Publishes Out of the Crisis, with his 14 points for management"
+    ],
+    [
+     1993,
+     "Publishes The New Economics and dies the same year"
+    ]
+   ],
+   "ideas": [
+    [
+     "System of profound knowledge",
+     "Four lenses for managing: appreciation of a system, knowledge of variation, theory of knowledge, and psychology."
+    ],
+    [
+     "Common and special causes",
+     "Most variation comes from the system itself; blaming individuals for it makes things worse."
+    ],
+    [
+     "Plan, do, study, act",
+     "Improve in small cycles of testing and learning."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Merit rating and annual performance reviews",
+     "what": "Rating and ranking individual employees each year, often linked to pay, promotion or dismissal. It remains standard practice in many organizations.",
+     "claim": "Ranking individuals for results that mostly come from the system destroys teamwork and pride in work; he called it one of the deadly diseases of management.",
+     "who": "Advocates of individual performance management",
+     "other": "Clear individual goals and feedback motivate people, reward good work and make accountability possible.",
+     "more": [
+      [
+       "W. Edwards Deming, Wikipedia",
+       "https://en.wikipedia.org/wiki/W._Edwards_Deming",
+       "His life and the seven deadly diseases"
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    [
+     "Out of the Crisis (1982)",
+     "The 14 points"
+    ],
+    [
+     "The New Economics (1993)",
+     "The system of profound knowledge"
+    ]
+   ],
+   "ask": [
+    "Which problem are you blaming on people that the system is producing?",
+    "What would you stop measuring if you trusted the system view?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/W._Edwards_Deming"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Michael Quinn Patton",
@@ -2332,7 +2979,92 @@
   "born": 1941,
   "died": null,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Political and social theorist whose Power: A Radical View set out three dimensions of power, now used across activism and policy analysis.",
+   "timeline": [
+    [
+     1941,
+     "Born on 8 March"
+    ],
+    [
+     1962,
+     "Graduates from Balliol College, Oxford"
+    ],
+    [
+     1968,
+     "Completes his doctorate on Émile Durkheim, published in 1972 as Émile Durkheim: His Life and Work"
+    ],
+    [
+     1974,
+     "Publishes Power: A Radical View"
+    ],
+    [
+     2005,
+     "Publishes an expanded second edition of Power: A Radical View"
+    ],
+    [
+     2021,
+     "Retires as professor of politics and sociology at New York University"
+    ]
+   ],
+   "ideas": [
+    [
+     "Three dimensions of power",
+     "Power shows in who wins decisions, in which issues never reach the table, and in shaping what people want in the first place."
+    ],
+    [
+     "Real interests",
+     "People can be led to accept arrangements that work against interests they would recognize with more knowledge or freedom."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "The one-dimensional view of power",
+     "what": "Robert Dahl's study of New Haven, Who Governs? (1961), measured power by who prevails when groups openly disagree over decisions. This pluralist view became the standard way to study power in political science.",
+     "claim": "Watching only open decisions misses most power: what is kept off the agenda, and how people come to want what keeps them quiet.",
+     "who": "Robert Dahl and pluralist political scientists",
+     "other": "Power has to be studied in observable conflict. Claims about people's 'real interests' that they do not themselves hold are hard to test and risk telling people what they should want.",
+     "more": [
+      [
+       "Steven Lukes, Wikipedia",
+       "https://en.wikipedia.org/wiki/Steven_Lukes",
+       "His three faces of power"
+      ],
+      [
+       "Powercube (IDS)",
+       "https://www.powercube.net/analyse-power/what-is-the-powercube/",
+       "How Gaventa turned the idea into a practical tool"
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    [
+     "Power: A Radical View (1974; 2nd ed. 2005)",
+     "Short and readable"
+    ],
+    [
+     "Émile Durkheim: His Life and Work (1972)",
+     "His study of Durkheim"
+    ],
+    [
+     "The Powercube",
+     "A practical tool built on his work",
+     "https://www.powercube.net/analyse-power/what-is-the-powercube/"
+    ]
+   ],
+   "ask": [
+    "Which issue in your work never reaches the table, and who benefits from that?",
+    "Can you know what someone's real interests are better than they do?"
+   ],
+   "checked": [
+    [
+     "Life dates, education and career",
+     "https://en.wikipedia.org/wiki/Steven_Lukes"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Hermann Haken",
@@ -2561,7 +3293,86 @@
   "born": 1928,
   "died": 2021,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Chilean biologist who, with Francisco Varela, described living systems as self-producing, and wrote on language and love.",
+   "timeline": [
+    [
+     1928,
+     "Born in Santiago, Chile"
+    ],
+    [
+     1959,
+     "Co-authors 'What the Frog's Eye Tells the Frog's Brain'"
+    ],
+    [
+     1972,
+     "With Francisco Varela, publishes the book that introduces autopoiesis"
+    ],
+    [
+     1987,
+     "The Tree of Knowledge is published in English"
+    ],
+    [
+     2000,
+     "Co-founds the Instituto Matríztico with Ximena Dávila"
+    ],
+    [
+     2021,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Autopoiesis",
+     "A living system is a network that continually produces itself."
+    ],
+    [
+     "Structural coupling",
+     "Organisms and environments change together through repeated interaction."
+    ],
+    [
+     "Love as acceptance",
+     "Love as accepting the other as a legitimate other in living together, the basis of social life."
+    ]
+   ],
+   "questions": [
+    {
+     "target": "Autopoiesis applied to social systems",
+     "what": "The sociologist Niklas Luhmann built a theory of society in which social systems are autopoietic: they reproduce themselves through communication, not through people.",
+     "claim": "Autopoiesis describes living cells; societies are networks of living beings in language, not autopoietic systems themselves.",
+     "who": "Niklas Luhmann and systems sociologists",
+     "other": "Social systems reproduce their own communications in a closed network, so autopoiesis is exactly the right concept for them.",
+     "more": [
+      [
+       "Autopoiesis, Wikipedia",
+       "https://en.wikipedia.org/wiki/Autopoiesis",
+       "The concept and its uses beyond biology"
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    [
+     "The Tree of Knowledge (1987)",
+     "With Francisco Varela, the most readable introduction"
+    ],
+    [
+     "Autopoiesis and Cognition (1980)",
+     "With Francisco Varela"
+    ]
+   ],
+   "ask": [
+    "What in your organization changes together with its environment?",
+    "Who do you treat as a legitimate other, and who not?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Humberto_Maturana"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Francisco Varela",
@@ -2582,7 +3393,71 @@
   "born": 1946,
   "died": 2001,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Chilean biologist and philosopher who co-created autopoiesis and the enactive view of mind.",
+   "timeline": [
+    [
+     1946,
+     "Born in Chile"
+    ],
+    [
+     1972,
+     "With Humberto Maturana, publishes the book that introduces autopoiesis (in English as Autopoiesis and Cognition, 1980)"
+    ],
+    [
+     1987,
+     "The Tree of Knowledge, with Maturana, is published in English"
+    ],
+    [
+     1990,
+     "Co-founds the Mind and Life Institute, bringing scientists and Buddhist contemplatives together"
+    ],
+    [
+     1991,
+     "Publishes The Embodied Mind with Evan Thompson and Eleanor Rosch"
+    ],
+    [
+     2001,
+     "Dies in Paris"
+    ]
+   ],
+   "ideas": [
+    [
+     "Autopoiesis",
+     "Living systems continually produce the components that produce them."
+    ],
+    [
+     "Enaction",
+     "Minds arise as living bodies act in and make sense of their world."
+    ],
+    [
+     "Neurophenomenology",
+     "Studying the brain together with careful first-person accounts of experience."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "The Embodied Mind (1991)",
+     "With Evan Thompson and Eleanor Rosch"
+    ],
+    [
+     "The Tree of Knowledge (1987)",
+     "With Humberto Maturana"
+    ]
+   ],
+   "ask": [
+    "What does your organization keep producing that keeps it the way it is?",
+    "Where is understanding coming from doing rather than thinking?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Francisco_Varela"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Stuart Hall",
@@ -3069,7 +3944,71 @@
   "born": 1919,
   "died": 2009,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Systems thinker who called real problems messes and developed interactive planning and idealized design.",
+   "timeline": [
+    [
+     1919,
+     "Born in Philadelphia"
+    ],
+    [
+     1957,
+     "Co-authors Introduction to Operations Research with C. West Churchman and Leonard Arnoff"
+    ],
+    [
+     1974,
+     "Publishes Redesigning the Future"
+    ],
+    [
+     1979,
+     "Publishes 'The Future of Operational Research is Past', breaking with the field he helped build"
+    ],
+    [
+     1981,
+     "Publishes Creating the Corporate Future"
+    ],
+    [
+     2009,
+     "Dies"
+    ]
+   ],
+   "ideas": [
+    [
+     "Messes",
+     "Systems of interacting problems that cannot be solved one at a time."
+    ],
+    [
+     "Idealized design",
+     "Design the system you would want if you could start from scratch today, then work back."
+    ],
+    [
+     "A system is not the sum of its parts",
+     "Improving parts separately can make the whole worse."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Redesigning the Future (1974)",
+     "Interactive planning"
+    ],
+    [
+     "Creating the Corporate Future (1981)",
+     "Idealized design"
+    ]
+   ],
+   "ask": [
+    "What would you design if your system disappeared last night?",
+    "Which part are you improving at the expense of the whole?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Russell_L._Ackoff"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Peter Checkland",
@@ -3086,7 +4025,68 @@
   "born": 1930,
   "died": 2026,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Systems scientist who created soft systems methodology for messy situations where people see things differently.",
+   "timeline": [
+    [
+     1930,
+     "Born on 18 December"
+    ],
+    [
+     1969,
+     "Joins Lancaster University after years as a manager in industry at ICI"
+    ],
+    [
+     1981,
+     "Publishes Systems Thinking, Systems Practice"
+    ],
+    [
+     1990,
+     "Publishes Soft Systems Methodology in Action with Jim Scholes"
+    ],
+    [
+     2026,
+     "Dies on 17 May, aged 95"
+    ]
+   ],
+   "ideas": [
+    [
+     "Soft systems methodology",
+     "Model different worldviews of a messy situation and learn your way to action people can agree on."
+    ],
+    [
+     "Rich picture",
+     "A hand-drawn picture of a whole situation, its people, conflicts and concerns."
+    ],
+    [
+     "CATWOE",
+     "A checklist for defining a system from a viewpoint: customers, actors, transformation, worldview, owners, environment."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Systems Thinking, Systems Practice (1981)",
+     "The founding book"
+    ],
+    [
+     "Soft systems methodology, Wikipedia",
+     "An overview",
+     "https://en.wikipedia.org/wiki/Soft_systems_methodology"
+    ]
+   ],
+   "ask": [
+    "Draw a rich picture of your hardest problem. Who is missing from it?",
+    "What would this system be for, from three different worldviews?"
+   ],
+   "checked": [
+    [
+     "Life dates",
+     "https://en.wikipedia.org/wiki/Peter_Checkland"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Werner Ulrich",
@@ -3237,7 +4237,60 @@
   "born": null,
   "died": null,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Philosopher of complexity whose work on constraints as causes underpins much complexity practice, including Cynefin.",
+   "timeline": [
+    [
+     1999,
+     "Publishes Dynamics in Action: Intentional Behavior as a Complex System (MIT Press)"
+    ],
+    [
+     2023,
+     "Publishes Context Changes Everything: How Constraints Create Coherence (MIT Press)"
+    ]
+   ],
+   "ideas": [
+    [
+     "Constraints as causes",
+     "Complex systems are shaped less by pushes and pulls than by constraints that change what is likely to happen."
+    ],
+    [
+     "Enabling and governing constraints",
+     "Some constraints make new behaviour possible; others hold behaviour within limits."
+    ],
+    [
+     "Coherence",
+     "How interdependent constraints bind parts into wholes with their own identity."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Context Changes Everything (2023)",
+     "Her most recent book"
+    ],
+    [
+     "Dynamics in Action (1999)",
+     "Intentional action as a complex system"
+    ],
+    [
+     "Complexity Lounge #21: Cause and Constraints",
+     "A talk",
+     "https://www.youtube.com/watch?v=AIlSGHivdgE"
+    ]
+   ],
+   "ask": [
+    "Which constraint, if loosened, would change most in your work?",
+    "What holds your team together without anyone ordering it?"
+   ],
+   "checked": [
+    [
+     "Books and role, from her Complexity Lounge guest bio",
+     "https://www.youtube.com/watch?v=AIlSGHivdgE"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Andy Clark",
@@ -4264,7 +5317,57 @@
   "born": null,
   "died": null,
   "founded": null,
-  "profile": null
+  "profile": {
+   "known": "Founder of human systems dynamics and creator of Adaptive Action.",
+   "timeline": [
+    [
+     2001,
+     "Completes her doctorate in human systems dynamics at the Union Institute and founds the field"
+    ],
+    [
+     2013,
+     "Publishes Adaptive Action: Leveraging Uncertainty in Your Organization with Royce Holladay"
+    ]
+   ],
+   "ideas": [
+    [
+     "Adaptive Action",
+     "Three questions in a cycle: What? So what? Now what?"
+    ],
+    [
+     "Containers, differences, exchanges",
+     "Self-organizing patterns depend on what holds a system together, the differences that matter in it, and the connections across it."
+    ]
+   ],
+   "questions": [],
+   "sources": [
+    [
+     "Adaptive Action (2013)",
+     "With Royce Holladay"
+    ],
+    [
+     "Human Systems Dynamics Institute",
+     "Her institute and its resources",
+     "https://www.hsdinstitute.org/"
+    ],
+    [
+     "Complexity Lounge #64: Pattern Logic in Complex Adaptive Systems",
+     "A talk",
+     "https://www.youtube.com/watch?v=k6nv2J_N0PI"
+    ]
+   ],
+   "ask": [
+    "What? So what? Now what? Try it on today's biggest worry.",
+    "Which difference in your team makes the most difference?"
+   ],
+   "checked": [
+    [
+     "Founding of HSD and Adaptive Action",
+     "https://www.schoolofsystemchange.org/people/glenda-h-eoyang"
+    ]
+   ],
+   "status": "draft"
+  }
  },
  {
   "name": "Chris Corrigan",

@@ -276,7 +276,7 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .tl{list-style:none;margin:0;padding:0}
 .tl li{display:grid;grid-template-columns:68px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .tl b{font:600 13px var(--mono)}
-.ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.ideas{display:flex;flex-wrap:wrap;gap:10px}.ideas>.card{flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:6px;padding:14px 16px}
 .concepts .card{padding:14px 16px}
 .concepts b{font:600 15px var(--serif);display:block;margin-bottom:4px}
 .q{border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;margin-bottom:14px;background:var(--card)}
@@ -348,6 +348,7 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .stage .hit{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer;padding:0}
 .stage .gal{position:absolute;transform:translate(-50%,-50%);border-radius:50%;background:transparent;border:0;cursor:pointer}
 .stage .gal:hover{background:radial-gradient(rgba(255,255,255,.04),transparent 70%)}
+.stubnote.uc{border-color:var(--warn)}.ucbadge{display:inline-block;font:600 12px var(--mono);letter-spacing:.04em;color:var(--warn);text-transform:uppercase}
 .stubnote{margin-top:24px;border:1px dashed var(--line);border-radius:14px;padding:16px 18px;max-width:62ch}.stubnote p{margin:6px 0}
 .qwhat{font-size:14.5px;line-height:1.55;margin:6px 16px 14px;padding:10px 14px;border-left:3px solid var(--line);background:var(--paper2);border-radius:0 8px 8px 0}
 .eps{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
@@ -1804,14 +1805,15 @@ function viewPeople(slug){
           el("section",{class:"sec"}, el("div",{style:"display:flex;justify-content:space-between;align-items:baseline"}, el("h2",{style:"font-size:26px",text:"Timeline"}), el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:`${prof.timeline[0][0]}–${prof.timeline.slice(-1)[0][0]}`})),
             el("ul",{class:"tl",style:"margin-top:10px"}, prof.timeline.map(([y, t]) => el("li",{}, el("b",{text:String(y)}), el("span",{text:t}))))),
           el("section",{class:"sec"}, el("h2",{style:"font-size:26px",text:"Key ideas"}), el("div",{class:"ideas",style:"margin-top:12px"}, prof.ideas.map(([n, t]) => el("div",{class:"card"}, el("b",{text:n}), el("span",{style:"font-size:14px",text:t}))))),
-          el("section",{class:"sec"}, el("h2",{style:"font-size:26px;margin-bottom:12px",text:"What they question, and who disagrees"}), prof.questions.map(qBox)),
+          (prof.questions || []).length ? el("section",{class:"sec"}, el("h2",{style:"font-size:26px;margin-bottom:12px",text:"What they question, and who disagrees"}), prof.questions.map(qBox)) : null,
           el("section",{class:"sec two"},
             el("div",{class:"reads"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Read for yourself"}), el("ul",{}, prof.sources.map(([t, n, u]) => el("li",{}, u ? ext(t, u) : el("b",{text:t}), el("small",{text:n}))))),
             el("div",{class:"asks"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Questions to sit with"}), prof.ask.map(a => el("p",{text:a}))))]
-          : el("div",{class:"stubnote"}, el("span",{class:"label",text:"Short entry"}),
-              el("p",{}, "This is a short entry. A full profile, with a timeline, key ideas and critiques with sources, is still to write. ",
-                x.src ? ["Read more: ", ext(/wikipedia/.test(x.src) ? "Wikipedia" : /youtube/.test(x.src) ? "their Complexity Lounge talk" : "source", x.src), ". "] : null,
-                el("a",{href:"#/contribute?on=" + encodeURIComponent(x.name),text:"Suggest what to add"}), "."), el("span",{class:"draft",text:"Draft"}))),
+          : el("div",{class:"stubnote uc"}, el("span",{class:"ucbadge",text:"🚧 Under construction"}),
+              el("p",{style:"margin-top:8px"}, `This profile is still being written. For now it has ${[x.known ? "a one-line summary" : null, x.status === "checked" ? "checked dates" : null, x.appears.length ? `the ${x.appears.length === 1 ? "pathway" : "pathways"} they appear in` : null, (x.episodes || []).length ? "their Complexity Lounge talk" + (x.episodes.length > 1 ? "s" : "") : null].filter(Boolean).join(", ") || "only their name"}.`),
+              el("p",{}, "Still to add: a timeline, key ideas, sources to read, and any critiques with sources on both sides."),
+              el("p",{}, x.src ? ["Read more now: ", ext(/wikipedia/.test(x.src) ? "Wikipedia" : /youtube/.test(x.src) ? "their Complexity Lounge talk" : "source", x.src), ". "] : null,
+                el("a",{href:"#/contribute?on=" + encodeURIComponent(x.name),text:"Help write this profile"}), "."))),
       el("aside",{class:"appears"}, el("span",{class:"label",text:`Appears in ${x.appears.length} pathway${x.appears.length===1?"":"s"}`}),
         x.appears.map(id => { const q = byId(P, id); return el("div",{}, el("a",{href:wikiHref(id),text:q.name}), el("small",{}, el("a",{href:wikiHref(id),text:"Article →"}), el("a",{href:mapHref(id, "tree"),text:"On the map →"}))); }),
         el("p",{style:"margin-top:14px"}, el("a",{href:"#/contribute?on="+encodeURIComponent(x.name),text:"Suggest a correction"}))))),

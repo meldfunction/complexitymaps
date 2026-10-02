@@ -186,6 +186,17 @@ open(ROOT / "data" / "urls.txt", "w").write("\n".join(urls) + "\n")
 bad_gov = [g for g in GOV_TRACK if sum(p["name"].startswith(g) for p in pathways) != 1]
 if bad_gov: print("BUILD FAILED: GOV_TRACK prefixes", bad_gov); sys.exit(1)
 no_orgs = [p["name"] for p in pathways if not p["orgs"] and not p["reading"]]
+# ---- checklist of profiles still under construction (rewritten on every build so it never goes stale)
+_short = {p["id"]: p["short_name"] for p in pathways}
+_full = sorted(x["name"] for x in people_out if x.get("profile"))
+_uc = sorted((x for x in people_out if not x.get("profile")), key=lambda x: (-(len(x["appears"]) + 2 * len(x.get("episodes", []))), x["name"]))
+_lines = ["# Profiles under construction", "",
+          f"{len(_full)} people have full profiles; {len(_uc)} are marked **Under construction** on the site (summary, dates where checked, pathways and talks, but no timeline, key ideas or critiques yet).",
+          "", "Ordered by how central each person is: pathways they appear in, plus two for each Complexity Lounge talk. This file is rewritten by `build/compile.py`.", "",
+          "| Person | Years | Pathways | Talks |", "|---|---|---|---|"]
+_lines += [f"| {x['name']} | {x['years'] or 'not public'} | {', '.join(_short.get(a, a) for a in x['appears']) or '-'} | {len(x.get('episodes', [])) or ''} |" for x in _uc]
+_lines += ["", "## Full profiles", "", ", ".join(_full)]
+open(ROOT / "PROFILES_TODO.md", "w").write("\n".join(_lines) + "\n")
 print(f"ok: {len(pathways)} pathways in {len(CLUSTERS)} clusters, {len(ORGS)} orgs, {len(CASES)} cases, "
       f"{len(ORIENTATIONS)} orientations, {len(JOURNEYS)} journeys, {len(urls)} unique urls")
 print("pathways without an org profile:", no_orgs or "none")

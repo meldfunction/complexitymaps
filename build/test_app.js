@@ -35,9 +35,17 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       await go(p, '#/about/acknowledgment');
       check(p.url().endsWith('#/about') && await p.locator('a[href="#/about/acknowledgment"]').count() === 0, '[live] acknowledgment page is withdrawn: old link lands on About, no links point to it');
       await go(p, '#/people/kurt-lewin');
-      check((await p.textContent('.known')).includes('action research') && await p.locator('.stubnote').count() === 1, '[live] a person without a full profile shows a short entry with a source');
+      check((await p.textContent('.known')).includes('action research') && await p.locator('.tl li').count() >= 5, '[live] Kurt Lewin now has a full profile');
+      await go(p, '#/people/margaret-mead');
+      check((await p.textContent('.known')).includes('Macy') && await p.locator('.stubnote a.ext').count() === 1, '[live] an under-construction profile still has a summary and a source');
       await go(p, '#/people/elinor-ostrom');
       check(await p.locator('.q blockquote').count() >= 2 && !(await p.textContent('main')).includes('Needs citations'), '[live] critiques carry quotes and sources');
+      await go(p, '#/people/steven-lukes');
+      check(await p.locator('.tl li').count() >= 5 && await p.locator('.q').count() === 1, '[live] Steven Lukes has a full profile with timeline and a sourced critique');
+      await go(p, '#/people/margaret-mead');
+      check((await p.textContent('.stubnote')).includes('Under construction'), '[live] people without a full profile are marked under construction');
+      await go(p, '#/people/karl-weick');
+      check(await p.locator('.q').count() === 0 && !(await p.textContent('main')).includes('What they question'), '[live] profiles with no critiques hide that section');
       await go(p, '#/wiki?where=health');
       check(await p.locator('.idx .cl a').count() >= 8 && (await p.textContent('h1')).includes('Health'), '[live] wiki filters by where it is practised');
       await go(p, '#/about');
