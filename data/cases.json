@@ -1035,6 +1035,30 @@
   ]
  },
  {
+  "id": "eu-crisis-field-guide",
+  "title": "An EU field guide for managing crises with constraints",
+  "place": "European Union",
+  "years": "2021",
+  "strength": "emerging",
+  "summary": "Dave Snowden and Alessandro Rancati wrote a field guide for decision makers for the European Commission's Joint Research Centre. It turns constraint thinking, which Cynefin takes from Alicia Juarrero, into practical steps for crises: set and manage boundaries, build informal structures, keep options open, distribute engagement and keep assessing the changing landscape.",
+  "lesson": "The most concrete public translation of constraint-based thinking into guidance for governments that we have found so far: act on the constraints that shape what can happen, rather than issuing detailed plans.",
+  "note": "Not as strong as the other cases yet. It is guidance written for decision makers, not a documented outcome; how far it has changed decisions is not yet reported, and we are watching how it plays out.",
+  "pathways": [
+   "mind-life-and-constraints",
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "sources": [
+   {
+    "t": "Snowden and Rancati: Managing complexity (and chaos) in times of crisis (EU Publications Office, 2021)",
+    "u": "https://publications.jrc.ec.europa.eu/repository/handle/JRC123629"
+   },
+   {
+    "t": "Complexity Lounge #21: Alicia Juarrero, Cause and Constraints",
+    "u": "https://www.youtube.com/watch?v=AIlSGHivdgE"
+   }
+  ]
+ },
+ {
   "id": "dora-research",
   "title": "A decade of research on software delivery",
   "place": "Global",

@@ -38,6 +38,8 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       check((await p.textContent('.known')).includes('action research') && await p.locator('.stubnote').count() === 1, '[live] a person without a full profile shows a short entry with a source');
       await go(p, '#/people/elinor-ostrom');
       check(await p.locator('.q blockquote').count() >= 2 && !(await p.textContent('main')).includes('Needs citations'), '[live] critiques carry quotes and sources');
+      await go(p, '#/cases/eu-crisis-field-guide');
+      check((await p.textContent('main')).includes('Emerging case'), '[live] an emerging case is labelled as not yet as strong');
       await go(p, '#/wiki/mind-life-and-constraints');
       check(await p.locator('#s-watch').count() === 1 && await p.locator('.eps .ep').count() >= 5, '[live] articles list Complexity Lounge talks to watch');
       check((await p.locator('.eps .ep a.ept').first().getAttribute('href')).startsWith('https://www.youtube.com/watch?v='), '[live] talks link to YouTube');

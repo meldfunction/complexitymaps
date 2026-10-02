@@ -559,7 +559,9 @@
   "orgs": [
    "complexity-lounge"
   ],
-  "cases": [],
+  "cases": [
+   "eu-crisis-field-guide"
+  ],
   "gov": false,
   "reading": [],
   "short": "mindlife",
@@ -1983,7 +1985,8 @@
    "complexity-lounge"
   ],
   "cases": [
-   "rahs"
+   "rahs",
+   "eu-crisis-field-guide"
   ],
   "gov": true,
   "reading": [],

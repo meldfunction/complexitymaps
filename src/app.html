@@ -357,6 +357,7 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .ep.big{border-color:var(--ink);padding:16px 18px}.ep.big .ept{font-size:21px}
 .featured-ep{margin:18px 0 6px;max-width:760px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.badge.emerging{border-style:dashed;color:var(--warn);border-color:var(--warn);align-self:flex-start;margin:4px 0}
 .linktoggle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 10px}
 .linktoggle .label{color:var(--night-muted);margin-right:2px}
 .linktoggle .pill{background:transparent;color:var(--night-ink);border-color:var(--night-line);font-size:12.5px;padding:5px 11px}
@@ -1267,7 +1268,7 @@ function viewArticle(id){
             ? el("dl",{class:"secnotes"}, otherSectors.filter(([k]) => p.sector_notes[k]).map(([k, n]) => [el("dt",{text:n}), el("dd",{text:p.sector_notes[k]})]), el("p",{class:"draft",text:"Draft · check against sources"}))
             : otherSectors.map(([k, n]) => el("span",{class:"badge dash",title:"Still to write (new field: sectors)",text:n}))),
         orgs.length ? el("div",{class:"grid tight"}, orgs.map(o => el("a",{class:"tile",href:"#/orgs/"+o.id}, el("span",{class:"t",text:o.name}), el("p",{class:"clamp",text:o.summary})))) : null,
-        cases.length ? cases.map(c => el("a",{class:"casebox",href:"#/cases/"+c.id}, el("span",{class:"label",text:`Case · ${c.place} · ${c.years}`}), el("h4",{text:c.title}), el("p",{text:c.lesson}),
+        cases.length ? cases.map(c => el("a",{class:"casebox",href:"#/cases/"+c.id}, el("span",{class:"label",text:`Case · ${c.place} · ${c.years}`}), emergingBadge(c), el("h4",{text:c.title}), el("p",{text:c.lesson}),
           c.note ? el("p",{style:"margin-top:6px;color:var(--muted)"}, el("b",{text:"Limits: "}), c.note) : null))
           : el("div",{class:"placeholder",text:"No documented case yet. Know one? Suggest it below."}),
         el("h2",{id:"s-how",text:"How to use it"}),
@@ -1866,7 +1867,8 @@ function viewAbout(){
 }
 const mediaList = items => el("ul",{class:"media"}, items.map(m => el("li",{}, el("span",{class:"k",text:m.kind}), ext(m.title, m.u))));
 const orgCard = o => el("a",{class:"tile r",href:"#/orgs/"+o.id}, el("span",{class:"t",text:o.name}), el("p",{class:"clamp",text:o.summary}), el("span",{class:"meta",text:`${o.media.length} item${o.media.length===1?"":"s"} to read, watch, or hear`}));
-const caseCard = c => el("a",{class:"tile r",href:"#/cases/"+c.id}, el("span",{class:"t",text:c.title}), el("span",{class:"meta",text:`${c.place} · ${c.years}`}), el("p",{class:"clamp",text:c.summary}));
+const emergingBadge = c => c.strength === "emerging" ? el("span",{class:"badge emerging",title:"Not as strong as the other cases yet: we are watching how it plays out",text:"Emerging case · still playing out"}) : null;
+const caseCard = c => el("a",{class:"tile r",href:"#/cases/"+c.id}, emergingBadge(c), el("span",{class:"t",text:c.title}), el("span",{class:"meta",text:`${c.place} · ${c.years}`}), el("p",{class:"clamp",text:c.summary}));
 const pchips = ids => el("div",{style:"display:flex;flex-wrap:wrap;gap:6px"}, ids.map(id => { const q = byId(P, id); return el("a",{class:"pill",href:wikiHref(id)}, dot(q.family), q.name); }));
 function viewOrgs(id){
   if (id) { const o = byId(O, id); if (o) {
@@ -1890,7 +1892,7 @@ function viewOrgs(id){
 }
 function viewCases(id){
   if (id) { const c = byId(C, id); if (c) return page("about", el("p",{}, el("a",{href:"#/cases",text:"← All cases"})),
-    el("span",{class:"label",style:"display:block;margin-top:16px",text:`Case · ${c.place} · ${c.years}`}), el("h1",{style:"font-size:40px;margin:6px 0 12px",text:c.title}),
+    el("span",{class:"label",style:"display:block;margin-top:16px",text:`Case · ${c.place} · ${c.years}`}), el("h1",{style:"font-size:40px;margin:6px 0 12px",text:c.title}), emergingBadge(c),
     el("p",{style:"max-width:62ch;font-size:16.5px",text:c.summary}),
     el("div",{class:"gov",style:"margin-top:18px"}, el("div",{class:"label",text:"Lesson"}), el("p",{text:c.lesson})),
     c.note ? el("div",{class:"gov",style:"border-color:var(--muted)"}, el("div",{class:"label",text:"Limits"}), el("p",{text:c.note})) : null,
