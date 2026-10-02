@@ -350,6 +350,13 @@ footer.foot .row{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
 .stage .gal:hover{background:radial-gradient(rgba(255,255,255,.04),transparent 70%)}
 .stubnote{margin-top:24px;border:1px dashed var(--line);border-radius:14px;padding:16px 18px;max-width:62ch}.stubnote p{margin:6px 0}
 .qwhat{font-size:14.5px;line-height:1.55;margin:6px 16px 14px;padding:10px 14px;border-left:3px solid var(--line);background:var(--paper2);border-radius:0 8px 8px 0}
+.eps{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.ep{flex:1 1 260px;min-width:0;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.ep .ept{font:500 17px/1.3 var(--serif);color:var(--link)}
+.ep .epg{font-size:13px;color:var(--muted);margin:0}
+.ep.big{border-color:var(--ink);padding:16px 18px}.ep.big .ept{font-size:21px}
+.featured-ep{margin:18px 0 6px;max-width:760px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .linktoggle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 10px}
 .linktoggle .label{color:var(--night-muted);margin-right:2px}
 .linktoggle .pill{background:transparent;color:var(--night-ink);border-color:var(--night-line);font-size:12.5px;padding:5px 11px}
@@ -559,7 +566,6 @@ main:has(~ .helpfab),footer.foot:has(~ .helpfab){padding-bottom:72px}
 .helpways .way b{display:block;font:500 19px/1.25 var(--serif);margin-bottom:4px}
 .helpways .way span{font-size:13.5px;color:var(--muted)}
 .linkbtn{background:none;border:0;padding:0;color:var(--link);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .tline{position:relative;height:46px;margin:10px 8px 6px;border-bottom:2px solid var(--line)}
 .tdot{position:absolute;bottom:-7px;width:12px;height:12px;margin-left:-6px;border-radius:50%;border:2px solid var(--ink);background:var(--card);padding:0;cursor:pointer}
 .tdot.on{background:var(--ink)}
@@ -618,6 +624,15 @@ const KIND = Object.fromEntries(DATA.kinds.map(k => [k.name, k.desc]));
 const goTo = h => { location.hash = h; };
 const wikiHref = id => "#/wiki/" + id, mapHref = (id, view) => `#/map?view=${view || "universe"}&p=${id}`;
 const personHref = slug => "#/people/" + slug;
+// a Complexity Lounge talk: number, title, guests (linked to their profiles), length; opens YouTube in a new tab
+function episodeCard(e, big, self){
+  const others = e.guests.filter(g => g !== self);
+  const guests = others.map((g, i) => { const x = personByName(g); return [i ? (i === others.length - 1 ? " and " : ", ") : "", x ? el("a",{href:personHref(x.slug),text:g}) : g]; });
+  return el("div",{class:"ep" + (big ? " big" : "")},
+    el("span",{class:"label",text:`Complexity Lounge #${e.n}` + (e.length ? ` · ${e.length}` : "")}),
+    el("a",{class:"ept",href:safeUrl(e.url),target:"_blank",rel:"noopener noreferrer"}, "▶ ", e.title, el("span",{class:"sr",text:" (opens YouTube)"})),
+    others.length ? el("p",{class:"epg"}, self ? "Also with " : "With ", guests) : null);
+}
 const personByName = name => { const n = name.toLowerCase(); return PEOPLE.find(x => x.name.toLowerCase() === n); };
 
 // ---------------------------------------------------------------- explored pathways and my trail (this browser only)
@@ -1221,6 +1236,7 @@ function viewArticle(id){
   const sim = similarTo(p, 4), diff = differentFrom(p, 3);
   const otherSectors = [["biz","Business"],["ngo","Nonprofits"],["health","Health"],["edu","Education"],["com","Community groups"]];
   const toc = [["what","What it is"],["came","Where it came from"],["uses","Who uses it"],["how","How to use it"],["similar","Similar approaches"],["different","Entirely different"],["live","From the live library"]];
+  if ((p.watch || []).length) toc.splice(4, 0, ["watch","Watch"]);
   const inTrail = trail().includes(p.id);
   const relational = /Relational|Indigenous/.test(p.cluster);
   return [topbar("wiki"), el("main",{id:"main",class:"wrap"},
@@ -1261,6 +1277,9 @@ function viewArticle(id){
         el("div",{style:"display:flex;gap:8px;flex-wrap:wrap;margin-top:16px"},
           el("button",{type:"button",class:"btn ghost",onclick:()=>{ const t = trail(); setTrail(inTrail ? t.filter(x => x !== p.id) : [...t, p.id]); route(true); },text:inTrail ? "✓ On my trail" : "+ Add to my trail"}),
           el("a",{class:"btn ghost",href:mapHref(p.id, "tree"),text:"See its lineage on the map"})),
+        (p.watch || []).length ? [el("h2",{id:"s-watch",text:"Watch: from the Complexity Lounge"}),
+          el("p",{class:"sub"}, `${p.watch.length} recorded talk${p.watch.length === 1 ? "" : "s"} with practitioners and researchers. `, el("a",{href:"#/orgs/complexity-lounge",text:"About the Lounge"})),
+          el("div",{class:"eps"}, p.watch.map(e => episodeCard(e)))] : null,
         el("h2",{id:"s-similar",text:"Similar approaches"}),
         el("div",{class:"sim"}, sim.map(x => el("a",{class:"tile",href:wikiHref(x.q.id)}, el("span",{class:"t"}, dot(x.q.family), " ", x.q.name), el("p",{class:"clamp",text:x.q.plain_overview || strip(x.q.overview)}),
           el("span",{class:"why",text:x.q.cluster === p.cluster ? "Same area" + (x.caps.length ? " · " + x.caps[0] : "") : x.caps.length ? "Shares: " + x.caps[0] : "Shared organizations or cases"})))),
@@ -1765,6 +1784,9 @@ function viewPeople(slug){
         el("span",{class:"mono",style:"font-size:12px;color:var(--muted)",text:x.years}),
         el("h1",{class:"pname",text:x.name}),
         (prof || x.known) ? el("p",{class:"known",text:prof ? prof.known : x.known}) : null,
+        (x.episodes || []).length ? el("section",{class:"featured-ep"}, el("span",{class:"label",text:x.episodes.length > 1 ? `Watch ${x.name.split(" ")[0]} in conversation · ${x.episodes.length} talks` : `Watch ${x.name.split(" ")[0]} in conversation`}),
+          el("div",{class:"eps"}, x.episodes.map(e => episodeCard(e, true, x.name)))) : null,
+        x.status !== "checked" && !x.years && (x.episodes || []).length ? el("p",{class:"draft",style:"margin-top:8px",text:"Draft. Short entry based on their guest bio for the Complexity Lounge; no public birth year found."}) :
         x.status === "checked" ? el("p",{class:"why",style:"margin-top:8px"}, "Dates checked against ", ext("this source", x.src), " on 1 October 2026.")
           : el("p",{class:"draft",style:"margin-top:8px",text:"Draft. Dates and profile written from general knowledge; check every line against their own work before launch."}),
         prof && prof.checked ? el("p",{class:"why",style:"margin-top:4px"}, "Checked: ", prof.checked.map(([t, u], i) => [i ? ", " : "", ext(t, u)])) : null,
@@ -1778,7 +1800,7 @@ function viewPeople(slug){
             el("div",{class:"asks"}, el("h2",{style:"font-size:22px;margin-bottom:8px",text:"Questions to sit with"}), prof.ask.map(a => el("p",{text:a}))))]
           : el("div",{class:"stubnote"}, el("span",{class:"label",text:"Short entry"}),
               el("p",{}, "This is a short entry. A full profile, with a timeline, key ideas and critiques with sources, is still to write. ",
-                x.src ? ["Read more: ", ext(/wikipedia/.test(x.src) ? "Wikipedia" : "source", x.src), ". "] : null,
+                x.src ? ["Read more: ", ext(/wikipedia/.test(x.src) ? "Wikipedia" : /youtube/.test(x.src) ? "their Complexity Lounge talk" : "source", x.src), ". "] : null,
                 el("a",{href:"#/contribute?on=" + encodeURIComponent(x.name),text:"Suggest what to add"}), "."), el("span",{class:"draft",text:"Draft"}))),
       el("aside",{class:"appears"}, el("span",{class:"label",text:`Appears in ${x.appears.length} pathway${x.appears.length===1?"":"s"}`}),
         x.appears.map(id => { const q = byId(P, id); return el("div",{}, el("a",{href:wikiHref(id),text:q.name}), el("small",{}, el("a",{href:wikiHref(id),text:"Article →"}), el("a",{href:mapHref(id, "tree"),text:"On the map →"}))); }),

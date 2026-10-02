@@ -13,6 +13,7 @@
    "somatic-and-embodied-practice"
   ],
   "known": "Scholar of Buddhism and systems thinking who created the Work That Reconnects, a group practice for facing ecological crisis.",
+  "episodes": [],
   "born": 1929,
   "died": 2025,
   "founded": null,
@@ -29,6 +30,7 @@
    "governance-and-self-organizing-structures"
   ],
   "known": "Dutch engineer and business owner who turned sociocracy into a working method for companies, with consent and linked circles.",
+  "episodes": [],
   "born": 1933,
   "died": 2025,
   "founded": null,
@@ -45,6 +47,7 @@
    "conflict-transformation"
   ],
   "known": "Psychologist who created Nonviolent Communication: observations, feelings, needs and requests.",
+  "episodes": [],
   "born": 1934,
   "died": 2015,
   "founded": null,
@@ -61,6 +64,7 @@
    "ritual-liminality-and-transition"
   ],
   "known": "Writer on transitions who separated change (the event) from transition (the inner passage through endings and a neutral zone).",
+  "episodes": [],
   "born": 1933,
   "died": 2013,
   "founded": null,
@@ -77,6 +81,7 @@
    "living-systems-and-regeneration"
   ],
   "known": "Environmental scientist and a leading voice on resilience: how social and ecological systems absorb shocks and reorganize.",
+  "episodes": [],
   "born": 1955,
   "died": null,
   "founded": null,
@@ -93,6 +98,7 @@
    "appreciative-inquiry"
   ],
   "known": "Co-creator of Appreciative Inquiry, which starts change from what already works.",
+  "episodes": [],
   "born": 1954,
   "died": null,
   "founded": null,
@@ -109,6 +115,7 @@
    "crisis-disaster-and-high-reliability"
   ],
   "known": "Lawyer and organizer whose writing on mutual aid shaped how communities support each other in crises.",
+  "episodes": [],
   "born": 1977,
   "died": null,
   "founded": null,
@@ -125,6 +132,7 @@
    "participatory-design-and-design-justice"
   ],
   "known": "Design researcher who studies how communities design their own solutions, and how designers can support them.",
+  "episodes": [],
   "born": 1945,
   "died": null,
   "founded": null,
@@ -142,6 +150,7 @@
    "strategic-design-and-policy-labs"
   ],
   "known": "Former head of Nesta and policy adviser who writes on public innovation and collective intelligence.",
+  "episodes": [],
   "born": 1961,
   "died": null,
   "founded": null,
@@ -158,6 +167,7 @@
    "conflict-transformation"
   ],
   "known": "Criminologist often called the grandfather of restorative justice: repairing harm instead of only punishing it.",
+  "episodes": [],
   "born": 1944,
   "died": null,
   "founded": null,
@@ -174,6 +184,7 @@
    "government-plumbing"
   ],
   "known": "Founder of Code for America and author of Recoding America, on why policy fails in delivery.",
+  "episodes": [],
   "born": 1969,
   "died": null,
   "founded": null,
@@ -190,6 +201,7 @@
    "power-analysis"
   ],
   "known": "Scholar of power who developed the Powercube: the spaces, levels and forms through which power works.",
+  "episodes": [],
   "born": 1949,
   "died": null,
   "founded": null,
@@ -206,6 +218,7 @@
    "the-metacrisis-and-meaning"
   ],
   "known": "Philosopher, chess grandmaster and co-founder of Perspectiva, who writes on the metacrisis.",
+  "episodes": [],
   "born": 1977,
   "died": null,
   "founded": null,
@@ -222,6 +235,7 @@
    "narrative-change"
   ],
   "known": "Organizer and teacher of public narrative: the story of self, us and now that moves people to act together.",
+  "episodes": [],
   "born": 1943,
   "died": null,
   "founded": null,
@@ -238,6 +252,7 @@
    "corporate-innovation-and-renewal"
   ],
   "known": "Organizational theorist who, with Charles O'Reilly, described the ambidextrous organization.",
+  "episodes": [],
   "born": 1947,
   "died": null,
   "founded": null,
@@ -254,6 +269,7 @@
    "design-thinking"
   ],
   "known": "Design researcher who showed how designers think, by framing and reframing problems as they work.",
+  "episodes": [],
   "born": 1942,
   "died": null,
   "founded": null,
@@ -270,6 +286,7 @@
    "crisis-disaster-and-high-reliability"
   ],
   "known": "Writer whose A Paradise Built in Hell shows that people in disasters mostly help each other.",
+  "episodes": [],
   "born": 1961,
   "died": null,
   "founded": null,
@@ -286,6 +303,7 @@
    "somatic-and-embodied-practice"
   ],
   "known": "Teacher of somatic leadership, bringing the body and martial arts practice into how leaders act.",
+  "episodes": [],
   "born": 1944,
   "died": null,
   "founded": null,
@@ -302,6 +320,7 @@
    "biosemiotics-and-the-umwelt"
   ],
   "known": "",
+  "episodes": [],
   "born": 1864,
   "died": 1944,
   "founded": null,
@@ -421,6 +440,7 @@
    "biosemiotics-and-the-umwelt"
   ],
   "known": "Linguist and semiotician who founded zoosemiotics, the study of signs among animals, and helped launch biosemiotics.",
+  "episodes": [],
   "born": 1920,
   "died": 2001,
   "founded": null,
@@ -437,6 +457,7 @@
    "biosemiotics-and-the-umwelt"
   ],
   "known": "",
+  "episodes": [],
   "born": 1942,
   "died": 2019,
   "founded": null,
@@ -570,6 +591,7 @@
    "biosemiotics-and-the-umwelt"
   ],
   "known": "Biologist and semiotician at the University of Tartu, a central figure in biosemiotics and ecosemiotics.",
+  "episodes": [],
   "born": 1952,
   "died": null,
   "founded": null,
@@ -583,9 +605,11 @@
   "src": "https://en.wikipedia.org/wiki/Terrence_Deacon",
   "slug": "terrence-deacon",
   "appears": [
+   "mind-life-and-constraints",
    "biosemiotics-and-the-umwelt"
   ],
   "known": "Biological anthropologist who asks how meaning and purpose arise from physical processes (Incomplete Nature).",
+  "episodes": [],
   "born": 1950,
   "died": null,
   "founded": null,
@@ -603,6 +627,7 @@
    "biosemiotics-and-the-umwelt"
   ],
   "known": "",
+  "episodes": [],
   "born": 1839,
   "died": 1914,
   "founded": null,
@@ -704,6 +729,7 @@
    "semiotics-signs-codes-and-meaning-making"
   ],
   "known": "Linguist whose model of the sign (signifier and signified) founded structuralism.",
+  "episodes": [],
   "born": 1857,
   "died": 1913,
   "founded": null,
@@ -720,6 +746,7 @@
    "semiotics-signs-codes-and-meaning-making"
   ],
   "known": "Semiotician who founded the Tartu-Moscow school and coined the semiosphere, the space of signs a culture lives in.",
+  "episodes": [],
   "born": 1922,
   "died": 1993,
   "founded": null,
@@ -736,6 +763,7 @@
    "semiotics-signs-codes-and-meaning-making"
   ],
   "known": "Semiotician and novelist whose A Theory of Semiotics set out how codes and signs work.",
+  "episodes": [],
   "born": 1932,
   "died": 2016,
   "founded": null,
@@ -752,6 +780,7 @@
    "semiotics-signs-codes-and-meaning-making"
   ],
   "known": "Writer and semiotician whose Mythologies shows how culture passes off the made as natural.",
+  "episodes": [],
   "born": 1915,
   "died": 1980,
   "founded": null,
@@ -765,9 +794,11 @@
   "src": "https://en.wikipedia.org/wiki/Norbert_Wiener",
   "slug": "norbert-wiener",
   "appears": [
-   "cybernetics-the-shared-foundation"
+   "cybernetics-the-shared-foundation",
+   "technology-ai-and-complexity"
   ],
   "known": "Mathematician who named cybernetics: the study of control and communication through feedback.",
+  "episodes": [],
   "born": 1894,
   "died": 1964,
   "founded": null,
@@ -786,6 +817,7 @@
    "governance-and-self-organizing-structures"
   ],
   "known": "Psychiatrist and cybernetician behind the law of requisite variety.",
+  "episodes": [],
   "born": 1903,
   "died": 1972,
   "founded": null,
@@ -802,6 +834,7 @@
    "cybernetics-the-shared-foundation"
   ],
   "known": "Cybernetician who founded second-order cybernetics: the observer is part of the system observed.",
+  "episodes": [],
   "born": 1911,
   "died": 2002,
   "founded": null,
@@ -818,6 +851,7 @@
    "cybernetics-the-shared-foundation"
   ],
   "known": "Cybernetician whose conversation theory treated learning as a conversation between people and systems.",
+  "episodes": [],
   "born": 1928,
   "died": 1996,
   "founded": null,
@@ -832,9 +866,11 @@
   "slug": "stafford-beer",
   "appears": [
    "cybernetics-the-shared-foundation",
+   "systems-thinking-traditions-hard-soft-and-critical",
    "governance-and-self-organizing-structures"
   ],
   "known": "Management cybernetician who created the Viable System Model and led Chile's Project Cybersyn.",
+  "episodes": [],
   "born": 1926,
   "died": 2002,
   "founded": null,
@@ -851,6 +887,7 @@
    "the-formal-science-of-complex-systems"
   ],
   "known": "Chemist who won the Nobel Prize for work on systems far from equilibrium that organize themselves.",
+  "episodes": [],
   "born": 1917,
   "died": 2003,
   "founded": null,
@@ -867,6 +904,7 @@
    "the-formal-science-of-complex-systems"
   ],
   "known": "Research institute in New Mexico that made complexity science a field, from economics to biology.",
+  "episodes": [],
   "born": null,
   "died": null,
   "founded": 1984,
@@ -883,6 +921,7 @@
    "the-formal-science-of-complex-systems"
   ],
   "known": "Research institute in Cambridge, Massachusetts, studying complex systems and applying them to policy.",
+  "episodes": [],
   "born": null,
   "died": null,
   "founded": 1996,
@@ -908,6 +947,7 @@
    "complexity-and-education"
   ],
   "known": "",
+  "episodes": [],
   "born": 1904,
   "died": 1980,
   "founded": null,
@@ -1001,6 +1041,7 @@
    "cybernetics-the-shared-foundation"
   ],
   "known": "Anthropologist who took part in the Macy conferences that shaped cybernetics.",
+  "episodes": [],
   "born": 1901,
   "died": 1978,
   "founded": null,
@@ -1017,6 +1058,7 @@
    "the-formal-science-of-complex-systems"
   ],
   "known": "Theoretical biologist at the Santa Fe Institute who studies self-organization and the origins of order.",
+  "episodes": [],
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1030,9 +1072,49 @@
   "src": "https://en.wikipedia.org/wiki/Dave_Snowden",
   "slug": "dave-snowden",
   "appears": [
-   "sensemaking-and-acting-in-uncertainty"
+   "sensemaking-and-acting-in-uncertainty",
+   "technology-ai-and-complexity"
   ],
   "known": "",
+  "episodes": [
+   {
+    "n": 12,
+    "title": "The Latest from the Cynefin Centre",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=RziJzC6bYeE",
+    "length": "1:44:30"
+   },
+   {
+    "n": 30,
+    "title": "Complexity on One Slide",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=wAasuwQVfLM",
+    "length": "1:49:48"
+   },
+   {
+    "n": 43,
+    "title": "Sole Fide",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=WFJ5L6xonJI",
+    "length": "1:53:46"
+   },
+   {
+    "n": 57,
+    "title": "An AI Rant",
+    "guests": [
+     "Dave Snowden",
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=KC9-_Gt--Gk",
+    "length": "2:20:07"
+   }
+  ],
   "born": 1954,
   "died": null,
   "founded": null,
@@ -1135,9 +1217,12 @@
   "slug": "karl-weick",
   "appears": [
    "sensemaking-and-acting-in-uncertainty",
-   "crisis-disaster-and-high-reliability"
+   "complex-responsive-processes",
+   "crisis-disaster-and-high-reliability",
+   "resilience-engineering-and-safety-science"
   ],
   "known": "Organizational theorist of sensemaking and, with Kathleen Sutcliffe, of high reliability organizing.",
+  "episodes": [],
   "born": 1936,
   "died": 2026,
   "founded": null,
@@ -1157,6 +1242,7 @@
    "experiential-learning-and-reflective-practice"
   ],
   "known": "Psychologist who began action research and the T-group, and studied groups as fields of forces.",
+  "episodes": [],
   "born": 1890,
   "died": 1947,
   "founded": null,
@@ -1176,6 +1262,7 @@
    "critical-and-popular-education"
   ],
   "known": "",
+  "episodes": [],
   "born": 1921,
   "died": 1997,
   "founded": null,
@@ -1271,6 +1358,7 @@
    "critical-and-popular-education"
   ],
   "known": "Co-founder of the Highlander Folk School, which trained labour and civil rights organizers through popular education.",
+  "episodes": [],
   "born": 1905,
   "died": 1990,
   "founded": null,
@@ -1287,6 +1375,7 @@
    "critical-and-popular-education"
   ],
   "known": "Writer and teacher whose Teaching to Transgress brought engaged, liberating pedagogy into classrooms.",
+  "episodes": [],
   "born": 1952,
   "died": 2021,
   "founded": null,
@@ -1303,6 +1392,7 @@
    "experiential-learning-and-reflective-practice"
   ],
   "known": "Philosopher of education who argued that we learn from experience only when we reflect on it.",
+  "episodes": [],
   "born": 1859,
   "died": 1952,
   "founded": null,
@@ -1319,6 +1409,7 @@
    "experiential-learning-and-reflective-practice"
   ],
   "known": "Educational theorist known for the experiential learning cycle.",
+  "episodes": [],
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1337,6 +1428,7 @@
    "experiential-learning-and-reflective-practice"
   ],
   "known": "Thinker on reflective practice: how professionals think in action in messy situations.",
+  "episodes": [],
   "born": 1930,
   "died": 1997,
   "founded": null,
@@ -1355,6 +1447,7 @@
    "action-research"
   ],
   "known": "Organizational theorist of single- and double-loop learning, and of defensive routines that block it.",
+  "episodes": [],
   "born": 1923,
   "died": 2013,
   "founded": null,
@@ -1371,6 +1464,7 @@
    "transformative-learning"
   ],
   "known": "Founder of transformative learning theory: adults change their frame after a disorienting dilemma.",
+  "episodes": [],
   "born": 1923,
   "died": 2014,
   "founded": null,
@@ -1388,6 +1482,7 @@
    "adult-development-and-immunity-to-change"
   ],
   "known": "Developmental psychologist of adult meaning-making and, with Lisa Lahey, immunity to change.",
+  "episodes": [],
   "born": 1946,
   "died": null,
   "founded": null,
@@ -1404,6 +1499,7 @@
    "adult-development-and-immunity-to-change"
   ],
   "known": "Psychologist who described how children's thinking develops through stages.",
+  "episodes": [],
   "born": 1896,
   "died": 1980,
   "founded": null,
@@ -1420,6 +1516,7 @@
    "communities-of-practice-and-action-learning"
   ],
   "known": "Anthropologist who, with Etienne Wenger, described learning as taking part in communities of practice.",
+  "episodes": [],
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1436,6 +1533,7 @@
    "communities-of-practice-and-action-learning"
   ],
   "known": "Educational theorist who developed the idea of communities of practice and social learning.",
+  "episodes": [],
   "born": 1952,
   "died": null,
   "founded": null,
@@ -1452,6 +1550,7 @@
    "communities-of-practice-and-action-learning"
   ],
   "known": "Founder of action learning: small groups working on real problems through questions rather than advice.",
+  "episodes": [],
   "born": 1907,
   "died": 2003,
   "founded": null,
@@ -1468,6 +1567,7 @@
    "group-relations"
   ],
   "known": "Psychoanalyst whose studies of groups founded the Group Relations tradition.",
+  "episodes": [],
   "born": 1897,
   "died": 1979,
   "founded": null,
@@ -1486,6 +1586,7 @@
    "bohm-dialogue"
   ],
   "known": "Physicist who proposed dialogue as a way for groups to notice the assumptions in their shared thinking.",
+  "episodes": [],
   "born": 1917,
   "died": 1992,
   "founded": null,
@@ -1504,6 +1605,7 @@
    "bohm-dialogue"
   ],
   "known": "Co-founder of the Presencing Institute and author of Theory U.",
+  "episodes": [],
   "born": 1961,
   "died": null,
   "founded": null,
@@ -1521,6 +1623,7 @@
    "bohm-dialogue"
   ],
   "known": "Author of The Fifth Discipline, which popularized systems thinking and learning organizations.",
+  "episodes": [],
   "born": 1947,
   "died": null,
   "founded": null,
@@ -1539,6 +1642,7 @@
    "design-thinking"
   ],
   "known": "Design theorist who, with Melvin Webber, named wicked problems.",
+  "episodes": [],
   "born": 1930,
   "died": 1990,
   "founded": null,
@@ -1552,11 +1656,14 @@
   "src": "https://en.wikipedia.org/wiki/Herbert_A._Simon",
   "slug": "herbert-simon",
   "appears": [
+   "technology-ai-and-complexity",
    "complexity-economics-and-new-economic-models",
    "strategy-under-uncertainty",
-   "design-thinking"
+   "design-thinking",
+   "software-flow-and-architecture"
   ],
   "known": "Nobel economist and pioneer of decision science, bounded rationality and the sciences of design.",
+  "episodes": [],
   "born": 1916,
   "died": 2001,
   "founded": null,
@@ -1573,6 +1680,7 @@
    "complexity-economics-and-new-economic-models"
   ],
   "known": "Economist at the Santa Fe Institute who founded complexity economics and studied increasing returns.",
+  "episodes": [],
   "born": 1945,
   "died": null,
   "founded": null,
@@ -1593,6 +1701,7 @@
    "collaboration-across-boundaries"
   ],
   "known": "",
+  "episodes": [],
   "born": 1933,
   "died": 2012,
   "founded": null,
@@ -1681,11 +1790,13 @@
   "src": "https://en.wikipedia.org/wiki/Donella_Meadows",
   "slug": "donella-meadows",
   "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical",
    "living-systems-and-regeneration",
    "public-policy-and-government-innovation",
    "transition-design"
   ],
   "known": "",
+  "episodes": [],
   "born": 1941,
   "died": 2001,
   "founded": null,
@@ -1782,6 +1893,7 @@
    "transition-design"
   ],
   "known": "Physicist and writer on living systems and ecological literacy (The Web of Life).",
+  "episodes": [],
   "born": 1939,
   "died": null,
   "founded": null,
@@ -1799,6 +1911,7 @@
    "critical-and-popular-education"
   ],
   "known": "Detroit activist and philosopher whose ideas on change shaped emergent strategy.",
+  "episodes": [],
   "born": 1915,
   "died": 2015,
   "founded": null,
@@ -1815,6 +1928,7 @@
    "emergence-in-movements-and-social-change"
   ],
   "known": "Science fiction writer whose Parable novels inspired emergent strategy and movement work.",
+  "episodes": [],
   "born": 1947,
   "died": 2006,
   "founded": null,
@@ -1831,6 +1945,7 @@
    "ritual-liminality-and-transition"
   ],
   "known": "Ethnographer who described rites of passage: separation, a threshold, and return.",
+  "episodes": [],
   "born": 1873,
   "died": 1957,
   "founded": null,
@@ -1844,9 +1959,11 @@
   "src": "https://en.wikipedia.org/wiki/Victor_Turner",
   "slug": "victor-turner",
   "appears": [
-   "ritual-liminality-and-transition"
+   "ritual-liminality-and-transition",
+   "software-flow-and-architecture"
   ],
   "known": "Anthropologist of liminality and communitas, the bond of people crossing a threshold together.",
+  "episodes": [],
   "born": 1920,
   "died": 1983,
   "founded": null,
@@ -1863,6 +1980,7 @@
    "crisis-disaster-and-high-reliability"
   ],
   "known": "Founder of disaster sociology, whose research showed people rarely panic in disasters.",
+  "episodes": [],
   "born": 1924,
   "died": 2017,
   "founded": null,
@@ -1876,11 +1994,15 @@
   "src": "https://en.wikipedia.org/wiki/W._Edwards_Deming",
   "slug": "w-edwards-deming",
   "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical",
+   "technology-ai-and-complexity",
    "measurement-and-accountability",
    "teams-and-learning-cultures",
-   "improvement-and-adaptive-management"
+   "improvement-and-adaptive-management",
+   "software-flow-and-architecture"
   ],
   "known": "Statistician and teacher of quality improvement: most problems come from the system, not the worker.",
+  "episodes": [],
   "born": 1900,
   "died": 1993,
   "founded": null,
@@ -1897,6 +2019,7 @@
    "developmental-evaluation"
   ],
   "known": "Evaluator who created developmental evaluation for complex, changing programmes.",
+  "episodes": [],
   "born": 1945,
   "died": null,
   "founded": null,
@@ -1914,6 +2037,7 @@
    "critical-and-popular-education"
   ],
   "known": "Colombian sociologist who founded participatory action research.",
+  "episodes": [],
   "born": 1925,
   "died": 2008,
   "founded": null,
@@ -1930,6 +2054,7 @@
    "indigenous-and-land-based-knowledge"
   ],
   "known": "Standing Rock Sioux writer and scholar whose work defended Indigenous knowledge and sovereignty.",
+  "episodes": [],
   "born": 1933,
   "died": 2005,
   "founded": null,
@@ -1946,6 +2071,7 @@
    "indigenous-and-land-based-knowledge"
   ],
   "known": "Potawatomi botanist and author of Braiding Sweetgrass, joining Indigenous and scientific knowledge.",
+  "episodes": [],
   "born": 1953,
   "died": null,
   "founded": null,
@@ -1963,6 +2089,7 @@
    "complexity-and-education"
   ],
   "known": "French philosopher of complex thought who wrote on education for an unpredictable future.",
+  "episodes": [],
   "born": 1921,
   "died": 2026,
   "founded": null,
@@ -1979,6 +2106,7 @@
    "the-metacrisis-and-meaning"
   ],
   "known": "Psychiatrist whose The Master and His Emissary links the divided brain to the state of Western culture.",
+  "episodes": [],
   "born": 1953,
   "died": null,
   "founded": null,
@@ -1995,6 +2123,7 @@
    "narrative-change"
   ],
   "known": "Cognitive linguist who showed how frames and metaphors shape political thinking.",
+  "episodes": [],
   "born": 1941,
   "died": null,
   "founded": null,
@@ -2011,6 +2140,7 @@
    "conflict-transformation"
   ],
   "known": "Peacebuilder and scholar of conflict transformation and the moral imagination.",
+  "episodes": [],
   "born": 1955,
   "died": null,
   "founded": null,
@@ -2027,6 +2157,7 @@
    "conflict-transformation"
   ],
   "known": "Founder of process work and Deep Democracy, with Amy Mindell.",
+  "episodes": [],
   "born": 1940,
   "died": 2024,
   "founded": null,
@@ -2043,6 +2174,7 @@
    "corporate-innovation-and-renewal"
   ],
   "known": "Business scholar who described disruptive innovation.",
+  "episodes": [],
   "born": 1952,
   "died": 2020,
   "founded": null,
@@ -2059,6 +2191,7 @@
    "corporate-innovation-and-renewal"
   ],
   "known": "Business scholar who coined open innovation.",
+  "episodes": [],
   "born": 1956,
   "died": null,
   "founded": null,
@@ -2074,6 +2207,7 @@
    "teams-and-learning-cultures"
   ],
   "known": "Organizational scholar of psychological safety and teaming.",
+  "episodes": [],
   "born": 1959,
   "died": null,
   "founded": null,
@@ -2090,6 +2224,7 @@
    "measurement-and-accountability"
   ],
   "known": "Social scientist known for Campbell's law: the more a measure is used to decide, the more it gets distorted.",
+  "episodes": [],
   "born": 1916,
   "died": 1996,
   "founded": null,
@@ -2106,6 +2241,7 @@
    "strategy-under-uncertainty"
   ],
   "known": "Planner at Shell who developed scenario planning in the 1970s.",
+  "episodes": [],
   "born": 1922,
   "died": 1997,
   "founded": null,
@@ -2122,6 +2258,7 @@
    "strategy-under-uncertainty"
   ],
   "known": "Writer on uncertainty, black swans and antifragility.",
+  "episodes": [],
   "born": 1960,
   "died": null,
   "founded": null,
@@ -2138,6 +2275,7 @@
    "government-plumbing"
   ],
   "known": "Legal and political scholar of experimentalist governance.",
+  "episodes": [],
   "born": 1947,
   "died": null,
   "founded": null,
@@ -2154,6 +2292,7 @@
    "government-plumbing"
   ],
   "known": "Political scientist who showed that street-level bureaucrats make policy through their daily discretion.",
+  "episodes": [],
   "born": 1940,
   "died": null,
   "founded": null,
@@ -2170,6 +2309,7 @@
    "somatic-and-embodied-practice"
   ],
   "known": "Psychoanalyst whose work on the body and character influenced later somatic practice.",
+  "episodes": [],
   "born": 1897,
   "died": 1957,
   "founded": null,
@@ -2186,6 +2326,7 @@
    "power-analysis"
   ],
   "known": "Political theorist of the three faces of power.",
+  "episodes": [],
   "born": 1941,
   "died": null,
   "founded": null,
@@ -2202,6 +2343,7 @@
    "the-formal-science-of-complex-systems"
   ],
   "known": "Physicist who founded synergetics, the study of self-organization.",
+  "episodes": [],
   "born": 1927,
   "died": 2024,
   "founded": null,
@@ -2226,6 +2368,7 @@
    "complexity-and-education"
   ],
   "known": "",
+  "episodes": [],
   "born": 1969,
   "died": null,
   "founded": null,
@@ -2391,6 +2534,7 @@
    "government-plumbing"
   ],
   "known": "Social entrepreneur and author of Radical Help, on relational welfare.",
+  "episodes": [],
   "born": 1965,
   "died": null,
   "founded": null,
@@ -2405,10 +2549,12 @@
   "slug": "humberto-maturana",
   "appears": [
    "cybernetics-the-shared-foundation",
+   "mind-life-and-constraints",
    "living-systems-and-regeneration",
    "biosemiotics-and-the-umwelt"
   ],
   "known": "Biologist who, with Francisco Varela, described living systems as self-making (autopoiesis).",
+  "episodes": [],
   "born": 1928,
   "died": 2021,
   "founded": null,
@@ -2423,11 +2569,13 @@
   "slug": "francisco-varela",
   "appears": [
    "cybernetics-the-shared-foundation",
+   "mind-life-and-constraints",
    "presencing-theory-u-and-social-presencing-theater",
    "living-systems-and-regeneration",
    "biosemiotics-and-the-umwelt"
   ],
   "known": "Biologist and philosopher of autopoiesis and embodied cognition.",
+  "episodes": [],
   "born": 1946,
   "died": 2001,
   "founded": null,
@@ -2442,6 +2590,7 @@
   "slug": "stuart-hall",
   "appears": [],
   "known": "Cultural theorist who studied how media encode and audiences decode meaning.",
+  "episodes": [],
   "born": 1932,
   "died": 2014,
   "founded": null,
@@ -2456,6 +2605,7 @@
   "slug": "karl-von-frisch",
   "appears": [],
   "known": "Ethologist who decoded the honeybee waggle dance, a classic case of animal signs.",
+  "episodes": [],
   "born": 1886,
   "died": 1982,
   "founded": null,
@@ -2472,6 +2622,7 @@
    "governance-and-self-organizing-structures"
   ],
   "known": "Dutch educator and pacifist who first ran a school by sociocratic consent.",
+  "episodes": [],
   "born": 1884,
   "died": 1966,
   "founded": null,
@@ -2488,6 +2639,7 @@
    "crisis-disaster-and-high-reliability"
   ],
   "known": "Political scientist who showed that social ties drive recovery after disasters.",
+  "episodes": [],
   "born": 1974,
   "died": null,
   "founded": null,
@@ -2504,6 +2656,7 @@
    "complexity-economics-and-new-economic-models"
   ],
   "known": "Economist who created Doughnut Economics: meeting everyone's needs within planetary limits.",
+  "episodes": [],
   "born": 1970,
   "died": null,
   "founded": null,
@@ -2520,6 +2673,7 @@
    "participatory-design-and-design-justice"
   ],
   "known": "Anthropologist of development and author of Designs for the Pluriverse.",
+  "episodes": [],
   "born": 1951,
   "died": null,
   "founded": null,
@@ -2536,6 +2690,7 @@
    "improvement-and-adaptive-management"
   ],
   "known": "Founder of the Institute for Healthcare Improvement, who brought improvement science into health care.",
+  "episodes": [],
   "born": 1946,
   "died": null,
   "founded": null,
@@ -2552,6 +2707,7 @@
    "strategic-design-and-policy-labs"
   ],
   "known": "Strategic design initiative of the Finnish innovation fund Sitra (2009 to 2013).",
+  "episodes": [],
   "born": null,
   "died": null,
   "founded": 2009,
@@ -2568,6 +2724,7 @@
    "hosting-and-participatory-practice"
   ],
   "known": "Creator of Open Space Technology, the self-organizing meeting format.",
+  "episodes": [],
   "born": 1935,
   "died": 2024,
   "founded": null,
@@ -2584,6 +2741,7 @@
    "funding-and-budgeting-for-adaptation"
   ],
   "known": "Co-founder of the Beyond Budgeting Round Table and co-author of Beyond Budgeting.",
+  "episodes": [],
   "born": null,
   "died": null,
   "founded": null,
@@ -2600,6 +2758,2524 @@
    "transformative-learning"
   ],
   "known": "Scholar who made transformative learning theory accessible and practical.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ralph Stacey",
+  "years": "d. 2021",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ralph_D._Stacey",
+  "slug": "ralph-stacey",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty",
+   "complex-responsive-processes"
+  ],
+  "known": "Organizational theorist who, with Patricia Shaw and Douglas Griffin, developed complex responsive processes at the University of Hertfordshire.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Patricia Shaw",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "patricia-shaw",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Consultant and co-founder of complex responsive processes, known for her work on changing conversations in organizations.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Douglas Griffin",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "douglas-griffin",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Co-developer of complex responsive processes, who wrote on ethics and leadership as emerging in everyday relating.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Christopher Mowles",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=kG83GJTkjJ0",
+  "slug": "christopher-mowles",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Professor of Complexity and Management at Hertfordshire who directs its Doctor of Management, teaching reflexive, complexity-informed practice.",
+  "episodes": [
+   {
+    "n": 54,
+    "title": "Complexity and Change",
+    "guests": [
+     "Christopher Mowles"
+    ],
+    "url": "https://www.youtube.com/watch?v=kG83GJTkjJ0",
+    "length": "1:54:56"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris Rodgers",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=0FtPO-7MS6s",
+  "slug": "chris-rodgers",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Writer and adviser on the informal, \"wiggly\" side of organizations: the conversations and coalitions where change really happens.",
+  "episodes": [
+   {
+    "n": 63,
+    "title": "The Wiggly World of Organizations",
+    "guests": [
+     "Chris Rodgers"
+    ],
+    "url": "https://www.youtube.com/watch?v=0FtPO-7MS6s",
+    "length": "1:51:24"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Norbert Elias",
+  "years": "1897–1990",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Norbert_Elias",
+  "slug": "norbert-elias",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Sociologist of figurations: people bound together in webs of interdependence that no one controls.",
+  "episodes": [],
+  "born": 1897,
+  "died": 1990,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "George Herbert Mead",
+  "years": "1863–1931",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/George_Herbert_Mead",
+  "slug": "george-herbert-mead",
+  "appears": [
+   "complex-responsive-processes"
+  ],
+  "known": "Philosopher who argued that the self arises through social gesture and response.",
+  "episodes": [],
+  "born": 1863,
+  "died": 1931,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Diane Vaughan",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Diane_Vaughan",
+  "slug": "diane-vaughan",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Sociologist who named the normalization of deviance in her study of the Challenger launch decision.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Erik Hollnagel",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Erik_Hollnagel",
+  "slug": "erik-hollnagel",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Safety researcher who coined Safety-II: learning from how things usually go right.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "David Woods",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "david-woods",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Researcher in cognitive systems engineering and a founder of resilience engineering.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Richard Cook",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "richard-cook",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Physician and safety researcher, author of the short classic How Complex Systems Fail.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Sidney Dekker",
+  "years": "b. 1969",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Sidney_Dekker",
+  "slug": "sidney-dekker",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Safety scientist known for just culture and drift into failure.",
+  "episodes": [],
+  "born": 1969,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ron Westrum",
+  "years": "b. 1945",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ron_Westrum",
+  "slug": "ron-westrum",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Sociologist whose typology of organizational cultures (pathological, bureaucratic, generative) is widely used in safety and DevOps.",
+  "episodes": [
+   {
+    "n": 42,
+    "title": "A Talk on Hidden Events",
+    "guests": [
+     "Ron Westrum"
+    ],
+    "url": "https://www.youtube.com/watch?v=t2tah6EyixI",
+    "length": "1:52:43"
+   }
+  ],
+  "born": 1945,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gary Klein",
+  "years": "b. 1944",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Gary_A._Klein",
+  "slug": "gary-klein",
+  "appears": [
+   "resilience-engineering-and-safety-science"
+  ],
+  "known": "Psychologist who founded naturalistic decision making: how experts actually decide under pressure.",
+  "episodes": [],
+  "born": 1944,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "C. West Churchman",
+  "years": "1913–2004",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/C._West_Churchman",
+  "slug": "c-west-churchman",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "Philosopher and systems scientist who argued that the systems approach begins when you see the world through someone else's eyes.",
+  "episodes": [],
+  "born": 1913,
+  "died": 2004,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Russell Ackoff",
+  "years": "1919–2009",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Russell_L._Ackoff",
+  "slug": "russell-ackoff",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "Systems thinker who called real problems \"messes\" and developed interactive planning and idealized design.",
+  "episodes": [],
+  "born": 1919,
+  "died": 2009,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Peter Checkland",
+  "years": "1930–2026",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Peter_Checkland",
+  "slug": "peter-checkland",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "Systems scientist who created soft systems methodology for messy, many-viewpoint situations.",
+  "episodes": [],
+  "born": 1930,
+  "died": 2026,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Werner Ulrich",
+  "years": "b. 1948",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Werner_Ulrich",
+  "slug": "werner-ulrich",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "Systems scientist who developed critical systems heuristics: who ought to benefit, decide and be heard.",
+  "episodes": [],
+  "born": 1948,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael C. Jackson",
+  "years": "b. 1951",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Mike_Jackson_(systems_scientist)",
+  "slug": "michael-c-jackson",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "The major figure in critical systems thinking, which matches systems approaches to different kinds of complexity.",
+  "episodes": [
+   {
+    "n": 41,
+    "title": "Systems Thinking & The Management of Complexity",
+    "guests": [
+     "Michael C. Jackson"
+    ],
+    "url": "https://www.youtube.com/watch?v=rAiKvalPhkY",
+    "length": "1:51:00"
+   }
+  ],
+  "born": 1951,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Seddon",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/John_Seddon",
+  "slug": "john-seddon",
+  "appears": [
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "known": "Occupational psychologist whose Vanguard Method applies systems thinking to service organizations.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Robert Rosen",
+  "years": "1934–1998",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Robert_Rosen_(biologist)",
+  "slug": "robert-rosen",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Theoretical biologist who described living systems as closed to efficient causation (relational biology).",
+  "episodes": [],
+  "born": 1934,
+  "died": 1998,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Evan Thompson",
+  "years": "b. 1962",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Evan_Thompson",
+  "slug": "evan-thompson",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Philosopher of mind and co-author of The Embodied Mind, a founding text of enactivism.",
+  "episodes": [],
+  "born": 1962,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Alicia Juarrero",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=AIlSGHivdgE",
+  "slug": "alicia-juarrero",
+  "appears": [
+   "mind-life-and-constraints",
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Philosopher of complexity whose books Dynamics in Action and Context Changes Everything treat constraints as causes.",
+  "episodes": [
+   {
+    "n": 21,
+    "title": "Cause and Constraints",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=AIlSGHivdgE",
+    "length": "1:44:43"
+   },
+   {
+    "n": 31,
+    "title": "Constraintomes, Anyone?",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=mAEjtHP4FLM",
+    "length": "2:14:33"
+   },
+   {
+    "n": 44,
+    "title": "Tensegrity, Gain, and Infodynamics",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=-jQcbHtrXGc",
+    "length": "2:05:35"
+   },
+   {
+    "n": 59,
+    "title": "A Conversation About Context, Philosophy, & Complexity",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=cr6aBaXvRY0",
+    "length": "2:36:11"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Andy Clark",
+  "years": "b. 1957",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Andy_Clark",
+  "slug": "andy-clark",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Philosopher of the extended and predictive mind.",
+  "episodes": [],
+  "born": 1957,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Karl Friston",
+  "years": "b. 1959",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Karl_J._Friston",
+  "slug": "karl-friston",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Neuroscientist behind the free energy principle and active inference.",
+  "episodes": [
+   {
+    "n": 62,
+    "title": "The Nature of Everything",
+    "guests": [
+     "Karl Friston"
+    ],
+    "url": "https://www.youtube.com/watch?v=UsxzgvGujLk",
+    "length": "2:15:50"
+   }
+  ],
+  "born": 1959,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Matteo Mossio",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=xfxQ11gSly8",
+  "slug": "matteo-mossio",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Philosopher of biology who, with Alvaro Moreno, developed the theory of biological autonomy.",
+  "episodes": [
+   {
+    "n": 49,
+    "title": "Mechanism and Autonomy in the Life Sciences",
+    "guests": [
+     "Matteo Mossio"
+    ],
+    "url": "https://www.youtube.com/watch?v=xfxQ11gSly8",
+    "length": "1:41:40"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Alvaro Moreno",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "alvaro-moreno",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Philosopher of biology and co-author of Biological Autonomy.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ezequiel Di Paolo",
+  "years": "b. 1970",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Ezequiel_Di_Paolo",
+  "slug": "ezequiel-di-paolo",
+  "appears": [
+   "mind-life-and-constraints"
+  ],
+  "known": "Enactive cognitive scientist, co-author of Linguistic Bodies.",
+  "episodes": [],
+  "born": 1970,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Abeba Birhane",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Abeba_Birhane",
+  "slug": "abeba-birhane",
+  "appears": [
+   "technology-ai-and-complexity"
+  ],
+  "known": "Cognitive scientist who studies complexity and machine learning and argues for a relational ethics of AI.",
+  "episodes": [
+   {
+    "n": 15,
+    "title": "Complexity and Machine Learning",
+    "guests": [
+     "Abeba Birhane"
+    ],
+    "url": "https://www.youtube.com/watch?v=msuFdJe0rtI",
+    "length": "1:39:56"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Timnit Gebru",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Timnit_Gebru",
+  "slug": "timnit-gebru",
+  "appears": [
+   "technology-ai-and-complexity"
+  ],
+  "known": "Computer scientist, founder of DAIR and co-author of the stochastic parrots paper on large language models.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Emily M. Bender",
+  "years": "b. 1973",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Emily_M._Bender",
+  "slug": "emily-m-bender",
+  "appears": [
+   "technology-ai-and-complexity"
+  ],
+  "known": "Linguist and co-author of the stochastic parrots paper on the risks of large language models.",
+  "episodes": [],
+  "born": 1973,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Kate Crawford",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Kate_Crawford",
+  "slug": "kate-crawford",
+  "appears": [
+   "technology-ai-and-complexity"
+  ],
+  "known": "Researcher and author of Atlas of AI, on the labour, data and materials behind AI.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Willis",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=_VcGb-dmIq8",
+  "slug": "john-willis",
+  "appears": [
+   "technology-ai-and-complexity",
+   "improvement-and-adaptive-management"
+  ],
+  "known": "DevOps pioneer who applies Deming's system of profound knowledge to technology and AI.",
+  "episodes": [
+   {
+    "n": 55,
+    "title": "Deming’s System of Profound Knowledge as a Framework for AI",
+    "guests": [
+     "John Willis"
+    ],
+    "url": "https://www.youtube.com/watch?v=_VcGb-dmIq8",
+    "length": "2:21:57"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Taiichi Ohno",
+  "years": "1912–1990",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Taiichi_Ohno",
+  "slug": "taiichi-ohno",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Engineer who built the Toyota Production System, the root of lean thinking.",
+  "episodes": [],
+  "born": 1912,
+  "died": 1990,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Donald Reinertsen",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "donald-reinertsen",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Author of The Principles of Product Development Flow.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nicole Forsgren",
+  "years": "b. 1978",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Nicole_Forsgren",
+  "slug": "nicole-forsgren",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Researcher who led the DORA studies and co-wrote Accelerate.",
+  "episodes": [],
+  "born": 1978,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jez Humble",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "jez-humble",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Co-founder of DORA and co-author of Continuous Delivery and Accelerate.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gene Kim",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "gene-kim",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Co-founder of DORA and co-author of The Phoenix Project and Accelerate.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Barry O'Reilly",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=iqcIzLL-nhY",
+  "slug": "barry-o-reilly",
+  "appears": [
+   "corporate-innovation-and-renewal",
+   "software-flow-and-architecture"
+  ],
+  "known": "Software architect and researcher who created residuality theory, bringing complexity science into architecture.",
+  "episodes": [
+   {
+    "n": 22,
+    "title": "Residuality Theory: Philosophy and Practice",
+    "guests": [
+     "Barry O'Reilly"
+    ],
+    "url": "https://www.youtube.com/watch?v=iqcIzLL-nhY",
+    "length": "1:58:36"
+   },
+   {
+    "n": 45,
+    "title": "The Architect’s Paradox",
+    "guests": [
+     "Barry O'Reilly"
+    ],
+    "url": "https://www.youtube.com/watch?v=Qq8x7KIV4W8",
+    "length": "2:01:06"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Troy Magennis",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=LneIyW9K7LQ",
+  "slug": "troy-magennis",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Forecasting specialist who teaches the maths of flow and probabilistic forecasting for software work.",
+  "episodes": [
+   {
+    "n": 29,
+    "title": "Agile Physics, The Math of Flow",
+    "guests": [
+     "Troy Magennis"
+    ],
+    "url": "https://www.youtube.com/watch?v=LneIyW9K7LQ",
+    "length": "1:50:34"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jim Benson",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+  "slug": "jim-benson",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Creator of Personal Kanban and Lean Coffee, applying lean to knowledge work.",
+  "episodes": [
+   {
+    "n": 16,
+    "title": "Mayhem Loves Company",
+    "guests": [
+     "Jim Benson"
+    ],
+    "url": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+    "length": "1:56:59"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nigel Thurlow",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+  "slug": "nigel-thurlow",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Former Chief of Agile at Toyota and co-creator of The Flow System.",
+  "episodes": [
+   {
+    "n": 6,
+    "title": "The Flow System",
+    "guests": [
+     "Nigel Thurlow",
+     "John Turner"
+    ],
+    "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+    "length": "1:49:38"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Turner",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+  "slug": "john-turner",
+  "appears": [
+   "ritual-liminality-and-transition",
+   "software-flow-and-architecture"
+  ],
+  "known": "Engineer and professor, co-creator of The Flow System, working on team science and distributed leadership.",
+  "episodes": [
+   {
+    "n": 6,
+    "title": "The Flow System",
+    "guests": [
+     "Nigel Thurlow",
+     "John Turner"
+    ],
+    "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+    "length": "1:49:38"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris Matts",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=PJxC06o9S4Q",
+  "slug": "chris-matts",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Agile practitioner from investment banking known for real options and feature injection.",
+  "episodes": [
+   {
+    "n": 11,
+    "title": "The Complexity Jigsaw",
+    "guests": [
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=PJxC06o9S4Q",
+    "length": "1:45:28"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Feathers",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=S2WMvLZNnIc",
+  "slug": "michael-feathers",
+  "appears": [
+   "software-flow-and-architecture"
+  ],
+  "known": "Software architect and author of Working Effectively with Legacy Code.",
+  "episodes": [
+   {
+    "n": 18,
+    "title": "Forms: An Experiment in Behavioral and Structural Abstraction",
+    "guests": [
+     "Michael Feathers"
+    ],
+    "url": "https://www.youtube.com/watch?v=S2WMvLZNnIc",
+    "length": "1:37:48"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Christopher Alexander",
+  "years": "1936–2022",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Christopher_Alexander",
+  "slug": "christopher-alexander",
+  "appears": [
+   "participatory-design-and-design-justice",
+   "software-flow-and-architecture"
+  ],
+  "known": "Architect whose A Pattern Language shaped participatory design and software design patterns.",
+  "episodes": [],
+  "born": 1936,
+  "died": 2022,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Simon Wardley",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=0S64uQzI62M",
+  "slug": "simon-wardley",
+  "appears": [
+   "technology-ai-and-complexity",
+   "strategy-under-uncertainty",
+   "corporate-innovation-and-renewal",
+   "software-flow-and-architecture"
+  ],
+  "known": "Inventor of Wardley Mapping, which maps how value chains evolve.",
+  "episodes": [
+   {
+    "n": 35,
+    "title": "X Marks the Spot: Navigating Possible Futures",
+    "guests": [
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=0S64uQzI62M",
+    "length": "2:13:46"
+   },
+   {
+    "n": 57,
+    "title": "An AI Rant",
+    "guests": [
+     "Dave Snowden",
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=KC9-_Gt--Gk",
+    "length": "2:20:07"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Melanie Mitchell",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Melanie_Mitchell",
+  "slug": "melanie-mitchell",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Computer scientist at the Santa Fe Institute and author of Complexity: A Guided Tour.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Geoffrey West",
+  "years": "b. 1940",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Geoffrey_West",
+  "slug": "geoffrey-west",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Physicist at the Santa Fe Institute who studies scaling laws in organisms, cities and companies.",
+  "episodes": [],
+  "born": 1940,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Carlos Gershenson",
+  "years": "b. 1978",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Carlos_Gershenson",
+  "slug": "carlos-gershenson",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Complex systems researcher on self-organization and AI, editor of Complexity Digest.",
+  "episodes": [
+   {
+    "n": 50,
+    "title": "Balance: A Narrative for Complexity",
+    "guests": [
+     "Carlos Gershenson"
+    ],
+    "url": "https://www.youtube.com/watch?v=Bp5aDgw9cOc",
+    "length": "2:03:29"
+   }
+  ],
+  "born": 1978,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Pierpaolo Andriani",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=0q8p5rqagBg",
+  "slug": "pierpaolo-andriani",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Professor of complexity and innovation who studies exaptation: features that find new uses.",
+  "episodes": [
+   {
+    "n": 47,
+    "title": "Exaptation, Complexity & Technological Innovation",
+    "guests": [
+     "Pierpaolo Andriani"
+    ],
+    "url": "https://www.youtube.com/watch?v=0q8p5rqagBg",
+    "length": "2:01:55"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jean Boulton",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+  "slug": "jean-boulton",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Physicist and author of Embracing Complexity, who builds on Prigogine to explain process complexity.",
+  "episodes": [
+   {
+    "n": 48,
+    "title": "Process Complexity: Foundations and Implications",
+    "guests": [
+     "Jean Boulton"
+    ],
+    "url": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+    "length": "1:45:05"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Paul Cilliers",
+  "years": "1956–2011",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Paul_Cilliers",
+  "slug": "paul-cilliers",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Philosopher whose Complexity and Postmodernism linked complexity science to ethics and limits of knowledge.",
+  "episodes": [],
+  "born": 1956,
+  "died": 2011,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Garfield",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=kmob2YS0bJM",
+  "slug": "michael-garfield",
+  "appears": [
+   "the-formal-science-of-complex-systems"
+  ],
+  "known": "Writer, artist and former host of the Santa Fe Institute's Complexity podcast.",
+  "episodes": [
+   {
+    "n": 26,
+    "title": "Jurassic Worlding: A Paleontology of The Present",
+    "guests": [
+     "Michael Garfield"
+    ],
+    "url": "https://www.youtube.com/watch?v=kmob2YS0bJM",
+    "length": "1:07:24"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Sonja Blignaut",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=BytjhY3r7yI",
+  "slug": "sonja-blignaut",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Applied complexity practitioner and sensemaking partner from South Africa.",
+  "episodes": [
+   {
+    "n": 9,
+    "title": "Becoming Modern Day Way(s)finders",
+    "guests": [
+     "Sonja Blignaut"
+    ],
+    "url": "https://www.youtube.com/watch?v=BytjhY3r7yI",
+    "length": "1:44:46"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Tony Quinlan",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=rsngslaoYy4",
+  "slug": "tony-quinlan",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Narrative and complexity consultant who helps organizations listen at scale with SenseMaker.",
+  "episodes": [
+   {
+    "n": 33,
+    "title": "Complexity, Talking the Talk",
+    "guests": [
+     "Tony Quinlan"
+    ],
+    "url": "https://www.youtube.com/watch?v=rsngslaoYy4",
+    "length": "55:36"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Zhen Goh",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=wBNK0ilnRXE",
+  "slug": "zhen-goh",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Singapore-based complexity consultant with long experience of SenseMaker and social research for policy.",
+  "episodes": [
+   {
+    "n": 3,
+    "title": "Confused by Cynefin? Welcome to the Confused Domain",
+    "guests": [
+     "Zhen Goh"
+    ],
+    "url": "https://www.youtube.com/watch?v=wBNK0ilnRXE",
+    "length": "1:22:22"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Michael Cheveldave",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+  "slug": "michael-cheveldave",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Senior consultant and trainer with The Cynefin Company, focused on safety in messy real-world work.",
+  "episodes": [
+   {
+    "n": 4,
+    "title": "Cynefin & Safety",
+    "guests": [
+     "Michael Cheveldave"
+    ],
+    "url": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+    "length": "1:49:38"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Mary Boone",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=_3w5KACw-CA",
+  "slug": "mary-boone",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Co-author with Dave Snowden of A Leader's Framework for Decision Making (HBR, 2007).",
+  "episodes": [
+   {
+    "n": 34,
+    "title": "Explaining the Value of Complexity Approaches to Leaders",
+    "guests": [
+     "Mary Boone"
+    ],
+    "url": "https://www.youtube.com/watch?v=_3w5KACw-CA",
+    "length": "1:18:48"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "John Boyd",
+  "years": "1927–1997",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
+  "slug": "john-boyd",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Fighter pilot and strategist behind the OODA loop: observe, orient, decide, act.",
+  "episodes": [],
+  "born": 1927,
+  "died": 1997,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Trent Hone",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=7gM2rqK4MEI",
+  "slug": "trent-hone",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Naval historian and practitioner who studies how the US Navy learned at scale as a complex adaptive system.",
+  "episodes": [
+   {
+    "n": 10,
+    "title": "Accelerated Learning at Scale: The U.S. Navy, 1898-1945",
+    "guests": [
+     "Trent Hone"
+    ],
+    "url": "https://www.youtube.com/watch?v=7gM2rqK4MEI",
+    "length": "1:54:53"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Viv Read",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=VefzETBLJ04",
+  "slug": "viv-read",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Australian complexity practitioner who has led many narrative research projects on systems change.",
+  "episodes": [
+   {
+    "n": 24,
+    "title": "Complex Facilitation & Sense-making (part 1)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=VefzETBLJ04",
+    "length": "1:44:04"
+   },
+   {
+    "n": 25,
+    "title": "Complex Facilitation (part 2)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZFMOXPJTW9g",
+    "length": "1:25:54"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Julie Cunningham",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=VefzETBLJ04",
+  "slug": "julie-cunningham",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Australian organizational development practitioner working on complexity-informed facilitation.",
+  "episodes": [
+   {
+    "n": 24,
+    "title": "Complex Facilitation & Sense-making (part 1)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=VefzETBLJ04",
+    "length": "1:44:04"
+   },
+   {
+    "n": 25,
+    "title": "Complex Facilitation (part 2)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZFMOXPJTW9g",
+    "length": "1:25:54"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Glenda Eoyang",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=k6nv2J_N0PI",
+  "slug": "glenda-eoyang",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Founder of the Human Systems Dynamics Institute and creator of Adaptive Action.",
+  "episodes": [
+   {
+    "n": 64,
+    "title": "Pattern Logic in Complex Adaptive Systems",
+    "guests": [
+     "Glenda Eoyang"
+    ],
+    "url": "https://www.youtube.com/watch?v=k6nv2J_N0PI",
+    "length": "1:48:56"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris Corrigan",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=oLN_mjR0wxA",
+  "slug": "chris-corrigan",
+  "appears": [
+   "hosting-and-participatory-practice"
+  ],
+  "known": "Canadian facilitator who brings complexity theory into hosting, facilitation and evaluation.",
+  "episodes": [
+   {
+    "n": 5,
+    "title": "What are Constraints in a Complex System?",
+    "guests": [
+     "Chris Corrigan"
+    ],
+    "url": "https://www.youtube.com/watch?v=oLN_mjR0wxA",
+    "length": "1:38:01"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Nelson Repenning",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=ttC7wK6Huco",
+  "slug": "nelson-repenning",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "known": "MIT professor of system dynamics who developed Dynamic Work Design.",
+  "episodes": [
+   {
+    "n": 52,
+    "title": "An Introduction to Dynamic Work Design",
+    "guests": [
+     "Nelson Repenning"
+    ],
+    "url": "https://www.youtube.com/watch?v=ttC7wK6Huco",
+    "length": "2:10:45"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Mary Uhl-Bien",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "mary-uhl-bien",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "known": "Leadership scholar who developed complexity leadership theory.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gemma Jiang",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=uDNelJ2uGQE",
+  "slug": "gemma-jiang",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "known": "Team scientist who applies polarity thinking and complexity leadership to research teams.",
+  "episodes": [
+   {
+    "n": 51,
+    "title": "Polarity Thinking: Patterns that Illuminate Complexity",
+    "guests": [
+     "Gemma Jiang"
+    ],
+    "url": "https://www.youtube.com/watch?v=uDNelJ2uGQE",
+    "length": "1:58:44"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Barry Johnson",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "barry-johnson",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "known": "Originator of polarity management: working with tensions that cannot be solved, only balanced.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Tiani Jones",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=KwvDB1YP02M",
+  "slug": "tiani-jones",
+  "appears": [
+   "teams-and-learning-cultures"
+  ],
+  "known": "Engineer and coach working with patterns, anti-patterns and behaviour in complex organizations.",
+  "episodes": [
+   {
+    "n": 27,
+    "title": "Patterns, Anti-Patterns, and Behaviors",
+    "guests": [
+     "Tiani Jones"
+    ],
+    "url": "https://www.youtube.com/watch?v=KwvDB1YP02M",
+    "length": "1:49:58"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jen Briselli",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+  "slug": "jen-briselli",
+  "appears": [
+   "service-design",
+   "participatory-design-and-design-justice"
+  ],
+  "known": "Strategist and designer bringing complexity science into service and participatory design.",
+  "episodes": [
+   {
+    "n": 53,
+    "title": "Participatory Design & Complexity Science",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+    "length": "1:52:34"
+   },
+   {
+    "n": 58,
+    "title": "Participatory Design & Complexity Science 2",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=3mThT2Jzqhc",
+    "length": "2:08:54"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Kyle Godbey",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+  "slug": "kyle-godbey",
+  "appears": [
+   "service-design",
+   "participatory-design-and-design-justice"
+  ],
+  "known": "Service designer using complexity science, sensemaking and narrative research; writes the Uneasy Listening blog.",
+  "episodes": [
+   {
+    "n": 53,
+    "title": "Participatory Design & Complexity Science",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+    "length": "1:52:34"
+   },
+   {
+    "n": 58,
+    "title": "Participatory Design & Complexity Science 2",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=3mThT2Jzqhc",
+    "length": "2:08:54"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Dori Tunstall",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "dori-tunstall",
+  "appears": [
+   "participatory-design-and-design-justice"
+  ],
+  "known": "Design anthropologist and leading voice in decolonizing design.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Cameron Tonkinwise",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=ZJuwJN8kYvY",
+  "slug": "cameron-tonkinwise",
+  "appears": [
+   "transition-design"
+  ],
+  "known": "Professor of service and sustainable design, co-developer of transition design.",
+  "episodes": [
+   {
+    "n": 60,
+    "title": "Service Design & Social Complexity",
+    "guests": [
+     "Cameron Tonkinwise"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZJuwJN8kYvY",
+    "length": "1:52:51"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Anna Tsing",
+  "years": "b. 1952",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Anna_Tsing",
+  "slug": "anna-tsing",
+  "appears": [
+   "relational-transcontextual-and-post-humanist-knowing"
+  ],
+  "known": "Anthropologist and author of The Mushroom at the End of the World, on life in damaged landscapes.",
+  "episodes": [],
+  "born": 1952,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Rosi Braidotti",
+  "years": "b. 1954",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Rosi_Braidotti",
+  "slug": "rosi-braidotti",
+  "appears": [
+   "relational-transcontextual-and-post-humanist-knowing"
+  ],
+  "known": "Philosopher of the posthuman.",
+  "episodes": [],
+  "born": 1954,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Bruno Latour",
+  "years": "1947–2022",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Bruno_Latour",
+  "slug": "bruno-latour",
+  "appears": [
+   "relational-transcontextual-and-post-humanist-knowing"
+  ],
+  "known": "Sociologist and philosopher of actor-network theory and of the climate crisis.",
+  "episodes": [],
+  "born": 1947,
+  "died": 2022,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "María Puig de la Bellacasa",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "mar-a-puig-de-la-bellacasa",
+  "appears": [
+   "relational-transcontextual-and-post-humanist-knowing"
+  ],
+  "known": "Scholar of care and soil, author of Matters of Care.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Bill Mollison",
+  "years": "1928–2016",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/Bill_Mollison",
+  "slug": "bill-mollison",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "known": "Co-founder of permaculture, design for land and communities modelled on natural systems.",
+  "episodes": [],
+  "born": 1928,
+  "died": 2016,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "David Holmgren",
+  "years": "b. 1955",
+  "kind": "person",
+  "status": "checked",
+  "src": "https://en.wikipedia.org/wiki/David_Holmgren",
+  "slug": "david-holmgren",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "known": "Co-founder of permaculture and author of its design principles.",
+  "episodes": [],
+  "born": 1955,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Zita Cobb",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://en.wikipedia.org/wiki/Zita_Cobb",
+  "slug": "zita-cobb",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "known": "Social entrepreneur behind the Shorefast foundation and Fogo Island Inn, doing design in service of place.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Christina Bowen",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=IZx5IfPQDsg",
+  "slug": "christina-bowen",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "known": "Knowledge ecologist building living, cooperative organizations and cross-group coordination tools.",
+  "episodes": [
+   {
+    "n": 38,
+    "title": "The Living Organization: Bridging Complexity Theory",
+    "guests": [
+     "Christina Bowen"
+    ],
+    "url": "https://www.youtube.com/watch?v=IZx5IfPQDsg",
+    "length": "1:39:57"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Daniel Walsh",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=GdnSP1nQWH4",
+  "slug": "daniel-walsh",
+  "appears": [
+   "living-systems-and-regeneration"
+  ],
+  "known": "Lean and agile coach who teaches complexity through permaculture principles.",
+  "episodes": [
+   {
+    "n": 20,
+    "title": "Permaculture: Principles for Working with Complexity",
+    "guests": [
+     "Daniel Walsh"
+    ],
+    "url": "https://www.youtube.com/watch?v=GdnSP1nQWH4",
+    "length": "1:14:06"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Thea Snow",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "thea-snow",
+  "appears": [
+   "public-policy-and-government-innovation"
+  ],
+  "known": "Writer on relational, imaginative and justice-centred government.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Trisha Greenhalgh",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "trisha-greenhalgh",
+  "appears": [
+   "improvement-and-adaptive-management"
+  ],
+  "known": "Primary care researcher who, with Paul Plsek, wrote on complexity science in health care.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Paul Plsek",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "",
+  "slug": "paul-plsek",
+  "appears": [
+   "improvement-and-adaptive-management"
+  ],
+  "known": "Improvement adviser who brought complexity science into health care with Trisha Greenhalgh.",
+  "episodes": [],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Riva Greenberg",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+  "slug": "riva-greenberg",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty"
+  ],
+  "known": "Health researcher and coach who applies complexity science to living with type 1 diabetes.",
+  "episodes": [
+   {
+    "n": 2,
+    "title": "Complexity Science Changed My Life with Type 1 Diabetes",
+    "guests": [
+     "Riva Greenberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+    "length": "1:38:05"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Yağmur Denizhan",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+  "slug": "ya-mur-denizhan",
+  "appears": [
+   "cybernetics-the-shared-foundation"
+  ],
+  "known": "Engineer and cybernetician who models learning and creativity.",
+  "episodes": [
+   {
+    "n": 61,
+    "title": "A Generalized Modeling Approach to Learning and Creativity",
+    "guests": [
+     "Yağmur Denizhan"
+    ],
+    "url": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+    "length": "1:41:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Gregory Vigneaux",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=zgCI95nKb88",
+  "slug": "gregory-vigneaux",
+  "appears": [],
+  "known": "Former wildland firefighter who studies how people experience and manage complexity in incidents, and Maturana's work.",
+  "episodes": [
+   {
+    "n": 8,
+    "title": "Framing Complex Systems: Reality, Language, and Flow",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=zgCI95nKb88",
+    "length": "1:46:41"
+   },
+   {
+    "n": 56,
+    "title": "Humberto Maturana’s Time: Living in the Present",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=0AHYfbmT5_Q",
+    "length": "2:13:38"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Bruce Waltuck",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=_aIC5yCsx8w",
+  "slug": "bruce-waltuck",
+  "appears": [],
+  "known": "Complexity practitioner on telling apart problems with known answers from those without.",
+  "episodes": [
+   {
+    "n": 7,
+    "title": "The Problem with Problems",
+    "guests": [
+     "Bruce Waltuck"
+    ],
+    "url": "https://www.youtube.com/watch?v=_aIC5yCsx8w",
+    "length": "1:21:53"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Marc Burgauer",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=zvg4WipiXPA",
+  "slug": "marc-burgauer",
+  "appears": [],
+  "known": "Organizational consultant who uses practice theory to see organizing as discovery.",
+  "episodes": [
+   {
+    "n": 13,
+    "title": "Organization as Discovery",
+    "guests": [
+     "Marc Burgauer"
+    ],
+    "url": "https://www.youtube.com/watch?v=zvg4WipiXPA",
+    "length": "2:10:12"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Greg Brougham",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=xw5jCH-u1QM",
+  "slug": "greg-brougham",
+  "appears": [],
+  "known": "Engineering leader and author of a short introduction to Cynefin.",
+  "episodes": [
+   {
+    "n": 17,
+    "title": "Transformation, Is it a Thing?",
+    "guests": [
+     "Greg Brougham"
+    ],
+    "url": "https://www.youtube.com/watch?v=xw5jCH-u1QM",
+    "length": "1:40:43"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ian Snape",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=K-IIYCnlO-o",
+  "slug": "ian-snape",
+  "appears": [],
+  "known": "Former Antarctic research leader who coaches resilience in people and organizations.",
+  "episodes": [
+   {
+    "n": 23,
+    "title": "Perspectives on Resilient People and Systems",
+    "guests": [
+     "Ian Snape"
+    ],
+    "url": "https://www.youtube.com/watch?v=K-IIYCnlO-o",
+    "length": "1:37:14"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Karl Scotland",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=KyAxWXQIrZ4",
+  "slug": "karl-scotland",
+  "appears": [],
+  "known": "Lean and agile coach helping businesses become learning organizations.",
+  "episodes": [
+   {
+    "n": 36,
+    "title": "That’s Not My Agile",
+    "guests": [
+     "Karl Scotland"
+    ],
+    "url": "https://www.youtube.com/watch?v=KyAxWXQIrZ4",
+    "length": "1:42:48"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris McDermott",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=PwWpJoQvm3Y",
+  "slug": "chris-mcdermott",
+  "appears": [],
+  "known": "Lean agile coach and co-creator of Change Mapping.",
+  "episodes": [
+   {
+    "n": 28,
+    "title": "Re-contextualising 20+ Years of Learning",
+    "guests": [
+     "Chris McDermott"
+    ],
+    "url": "https://www.youtube.com/watch?v=PwWpJoQvm3Y",
+    "length": "1:56:56"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Jocko Selberg",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=dZyl6pzg7Gw",
+  "slug": "jocko-selberg",
+  "appears": [],
+  "known": "Lean-agile coach and founder of the NYC Complexity Lounge.",
+  "episodes": [
+   {
+    "n": 0,
+    "title": "Cynefin & Complexity: A Gentle Introduction (2015)",
+    "guests": [
+     "Jocko Selberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=dZyl6pzg7Gw",
+    "length": "1:05:47"
+   },
+   {
+    "n": 1,
+    "title": "A Brief Introduction to Cynefin",
+    "guests": [
+     "Jocko Selberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=YFzY45JJOVA",
+    "length": "1:41:11"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Sue Borchardt",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
+  "slug": "sue-borchardt",
+  "appears": [],
+  "known": "Animator and creative who explains complexity in short films.",
+  "episodes": [
+   {
+    "n": 14,
+    "title": "Stumbling on Complexity",
+    "guests": [
+     "Sue Borchardt"
+    ],
+    "url": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
+    "length": "1:53:16"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Chris Combe",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+  "slug": "chris-combe",
+  "appears": [],
+  "known": "Practitioner who joined the Lounge panel on constraints, materiality and higher-order systems.",
+  "episodes": [
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Thomas Vander Wal",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=oP0NMdKR77U",
+  "slug": "thomas-vander-wal",
+  "appears": [],
+  "known": "Product leader who builds lenses and tools for seeing clearly in complex situations.",
+  "episodes": [
+   {
+    "n": 32,
+    "title": "The Fog of Complexity",
+    "guests": [
+     "Thomas Vander Wal"
+    ],
+    "url": "https://www.youtube.com/watch?v=oP0NMdKR77U",
+    "length": "2:11:10"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "JD Carlston",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=rXx6XJAYuQ4",
+  "slug": "jd-carlston",
+  "appears": [],
+  "known": "Engineer working at the meeting of complex systems and distributed software architecture.",
+  "episodes": [
+   {
+    "n": 37,
+    "title": "Emergence and Abundance",
+    "guests": [
+     "JD Carlston"
+    ],
+    "url": "https://www.youtube.com/watch?v=rXx6XJAYuQ4",
+    "length": "1:42:30"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ebenezer Ikonne",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=Zx-u98JTmeo",
+  "slug": "ebenezer-ikonne",
+  "appears": [],
+  "known": "Product and engineering leader who writes on adopting complexity thinking in organizations.",
+  "episodes": [
+   {
+    "n": 39,
+    "title": "Adopting Complexity Thinking in Organizations",
+    "guests": [
+     "Ebenezer Ikonne"
+    ],
+    "url": "https://www.youtube.com/watch?v=Zx-u98JTmeo",
+    "length": "1:54:19"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Ellie Snowden",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+  "slug": "ellie-snowden",
+  "appears": [
+   "sensemaking-and-acting-in-uncertainty",
+   "technology-ai-and-complexity"
+  ],
+  "known": "Member of The Cynefin Company team working on narrative assemblages.",
+  "episodes": [
+   {
+    "n": 40,
+    "title": "Narrative Assemblages",
+    "guests": [
+     "Ellie Snowden",
+     "Anna Panagiotou",
+     "Beth Smith"
+    ],
+    "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+    "length": "1:37:30"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Anna Panagiotou",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+  "slug": "anna-panagiotou",
+  "appears": [],
+  "known": "Member of The Cynefin Company team working on the materiality of narrative.",
+  "episodes": [
+   {
+    "n": 40,
+    "title": "Narrative Assemblages",
+    "guests": [
+     "Ellie Snowden",
+     "Anna Panagiotou",
+     "Beth Smith"
+    ],
+    "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+    "length": "1:37:30"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Beth Smith",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+  "slug": "beth-smith",
+  "appears": [],
+  "known": "Member of The Cynefin Company team working on epistemic injustice in narrative work.",
+  "episodes": [
+   {
+    "n": 40,
+    "title": "Narrative Assemblages",
+    "guests": [
+     "Ellie Snowden",
+     "Anna Panagiotou",
+     "Beth Smith"
+    ],
+    "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+    "length": "1:37:30"
+   }
+  ],
+  "born": null,
+  "died": null,
+  "founded": null,
+  "profile": null
+ },
+ {
+  "name": "Dave Noll",
+  "years": "",
+  "kind": "person",
+  "status": "draft",
+  "src": "https://www.youtube.com/watch?v=yjQb2gVUQOM",
+  "slug": "dave-noll",
+  "appears": [],
+  "known": "Former Boeing organization development consultant who used Cynefin with senior leaders.",
+  "episodes": [
+   {
+    "n": 46,
+    "title": "My Life at Boeing",
+    "guests": [
+     "Dave Noll"
+    ],
+    "url": "https://www.youtube.com/watch?v=yjQb2gVUQOM",
+    "length": "1:53:00"
+   }
+  ],
   "born": null,
   "died": null,
   "founded": null,

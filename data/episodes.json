@@ -1,0 +1,828 @@
+[
+ {
+  "n": 0,
+  "title": "Cynefin & Complexity: A Gentle Introduction (2015)",
+  "guests": [
+   "Jocko Selberg"
+  ],
+  "url": "https://www.youtube.com/watch?v=dZyl6pzg7Gw",
+  "length": "1:05:47",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 1,
+  "title": "A Brief Introduction to Cynefin",
+  "guests": [
+   "Jocko Selberg"
+  ],
+  "url": "https://www.youtube.com/watch?v=YFzY45JJOVA",
+  "length": "1:41:11",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 2,
+  "title": "Complexity Science Changed My Life with Type 1 Diabetes",
+  "guests": [
+   "Riva Greenberg"
+  ],
+  "url": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+  "length": "1:38:05",
+  "pathways": [
+   "sense",
+   "improve"
+  ]
+ },
+ {
+  "n": 3,
+  "title": "Confused by Cynefin? Welcome to the Confused Domain",
+  "guests": [
+   "Zhen Goh"
+  ],
+  "url": "https://www.youtube.com/watch?v=wBNK0ilnRXE",
+  "length": "1:22:22",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 4,
+  "title": "Cynefin & Safety",
+  "guests": [
+   "Michael Cheveldave"
+  ],
+  "url": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+  "length": "1:49:38",
+  "pathways": [
+   "sense",
+   "resil"
+  ]
+ },
+ {
+  "n": 5,
+  "title": "What are Constraints in a Complex System?",
+  "guests": [
+   "Chris Corrigan"
+  ],
+  "url": "https://www.youtube.com/watch?v=oLN_mjR0wxA",
+  "length": "1:38:01",
+  "pathways": [
+   "host",
+   "sense"
+  ]
+ },
+ {
+  "n": 6,
+  "title": "The Flow System",
+  "guests": [
+   "Nigel Thurlow",
+   "John Turner"
+  ],
+  "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+  "length": "1:49:38",
+  "pathways": [
+   "flow",
+   "teams"
+  ]
+ },
+ {
+  "n": 7,
+  "title": "The Problem with Problems",
+  "guests": [
+   "Bruce Waltuck"
+  ],
+  "url": "https://www.youtube.com/watch?v=_aIC5yCsx8w",
+  "length": "1:21:53",
+  "pathways": [
+   "sense",
+   "improve"
+  ]
+ },
+ {
+  "n": 8,
+  "title": "Framing Complex Systems: Reality, Language, and Flow",
+  "guests": [
+   "Gregory Vigneaux"
+  ],
+  "url": "https://www.youtube.com/watch?v=zgCI95nKb88",
+  "length": "1:46:41",
+  "pathways": [
+   "crisis",
+   "resil"
+  ]
+ },
+ {
+  "n": 9,
+  "title": "Becoming Modern Day Way(s)finders",
+  "guests": [
+   "Sonja Blignaut"
+  ],
+  "url": "https://www.youtube.com/watch?v=BytjhY3r7yI",
+  "length": "1:44:46",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 10,
+  "title": "Accelerated Learning at Scale: The U.S. Navy, 1898-1945",
+  "guests": [
+   "Trent Hone"
+  ],
+  "url": "https://www.youtube.com/watch?v=7gM2rqK4MEI",
+  "length": "1:54:53",
+  "pathways": [
+   "teams",
+   "strat"
+  ]
+ },
+ {
+  "n": 11,
+  "title": "The Complexity Jigsaw",
+  "guests": [
+   "Chris Matts"
+  ],
+  "url": "https://www.youtube.com/watch?v=PJxC06o9S4Q",
+  "length": "1:45:28",
+  "pathways": [
+   "flow",
+   "strat"
+  ]
+ },
+ {
+  "n": 12,
+  "title": "The Latest from the Cynefin Centre",
+  "guests": [
+   "Dave Snowden"
+  ],
+  "url": "https://www.youtube.com/watch?v=RziJzC6bYeE",
+  "length": "1:44:30",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 13,
+  "title": "Organization as Discovery",
+  "guests": [
+   "Marc Burgauer"
+  ],
+  "url": "https://www.youtube.com/watch?v=zvg4WipiXPA",
+  "length": "2:10:12",
+  "pathways": [
+   "selforg",
+   "teams"
+  ]
+ },
+ {
+  "n": 14,
+  "title": "Stumbling on Complexity",
+  "guests": [
+   "Sue Borchardt"
+  ],
+  "url": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
+  "length": "1:53:16",
+  "pathways": [
+   "cx"
+  ]
+ },
+ {
+  "n": 15,
+  "title": "Complexity and Machine Learning",
+  "guests": [
+   "Abeba Birhane"
+  ],
+  "url": "https://www.youtube.com/watch?v=msuFdJe0rtI",
+  "length": "1:39:56",
+  "pathways": [
+   "techai"
+  ]
+ },
+ {
+  "n": 16,
+  "title": "Mayhem Loves Company",
+  "guests": [
+   "Jim Benson"
+  ],
+  "url": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+  "length": "1:56:59",
+  "pathways": [
+   "flow",
+   "teams"
+  ]
+ },
+ {
+  "n": 17,
+  "title": "Transformation, Is it a Thing?",
+  "guests": [
+   "Greg Brougham"
+  ],
+  "url": "https://www.youtube.com/watch?v=xw5jCH-u1QM",
+  "length": "1:40:43",
+  "pathways": [
+   "corp",
+   "sense"
+  ]
+ },
+ {
+  "n": 18,
+  "title": "Forms: An Experiment in Behavioral and Structural Abstraction",
+  "guests": [
+   "Michael Feathers"
+  ],
+  "url": "https://www.youtube.com/watch?v=S2WMvLZNnIc",
+  "length": "1:37:48",
+  "pathways": [
+   "flow"
+  ]
+ },
+ {
+  "n": 19,
+  "title": "Constraints, Materiality, and Higher Order Systems",
+  "guests": [
+   "Trent Hone",
+   "Greg Brougham",
+   "Marc Burgauer",
+   "Chris Combe",
+   "Chris Matts"
+  ],
+  "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+  "length": "1:43:23",
+  "pathways": [
+   "mindlife",
+   "flow"
+  ]
+ },
+ {
+  "n": 20,
+  "title": "Permaculture: Principles for Working with Complexity",
+  "guests": [
+   "Daniel Walsh"
+  ],
+  "url": "https://www.youtube.com/watch?v=GdnSP1nQWH4",
+  "length": "1:14:06",
+  "pathways": [
+   "livsys"
+  ]
+ },
+ {
+  "n": 21,
+  "title": "Cause and Constraints",
+  "guests": [
+   "Alicia Juarrero"
+  ],
+  "url": "https://www.youtube.com/watch?v=AIlSGHivdgE",
+  "length": "1:44:43",
+  "pathways": [
+   "mindlife",
+   "sense"
+  ]
+ },
+ {
+  "n": 22,
+  "title": "Residuality Theory: Philosophy and Practice",
+  "guests": [
+   "Barry O'Reilly"
+  ],
+  "url": "https://www.youtube.com/watch?v=iqcIzLL-nhY",
+  "length": "1:58:36",
+  "pathways": [
+   "flow"
+  ]
+ },
+ {
+  "n": 23,
+  "title": "Perspectives on Resilient People and Systems",
+  "guests": [
+   "Ian Snape"
+  ],
+  "url": "https://www.youtube.com/watch?v=K-IIYCnlO-o",
+  "length": "1:37:14",
+  "pathways": [
+   "resil"
+  ]
+ },
+ {
+  "n": 24,
+  "title": "Complex Facilitation & Sense-making (part 1)",
+  "guests": [
+   "Viv Read",
+   "Julie Cunningham"
+  ],
+  "url": "https://www.youtube.com/watch?v=VefzETBLJ04",
+  "length": "1:44:04",
+  "pathways": [
+   "host",
+   "sense"
+  ]
+ },
+ {
+  "n": 25,
+  "title": "Complex Facilitation (part 2)",
+  "guests": [
+   "Viv Read",
+   "Julie Cunningham"
+  ],
+  "url": "https://www.youtube.com/watch?v=ZFMOXPJTW9g",
+  "length": "1:25:54",
+  "pathways": [
+   "host",
+   "sense"
+  ]
+ },
+ {
+  "n": 26,
+  "title": "Jurassic Worlding: A Paleontology of The Present",
+  "guests": [
+   "Michael Garfield"
+  ],
+  "url": "https://www.youtube.com/watch?v=kmob2YS0bJM",
+  "length": "1:07:24",
+  "pathways": [
+   "cx"
+  ]
+ },
+ {
+  "n": 27,
+  "title": "Patterns, Anti-Patterns, and Behaviors",
+  "guests": [
+   "Tiani Jones"
+  ],
+  "url": "https://www.youtube.com/watch?v=KwvDB1YP02M",
+  "length": "1:49:58",
+  "pathways": [
+   "teams"
+  ]
+ },
+ {
+  "n": 28,
+  "title": "Re-contextualising 20+ Years of Learning",
+  "guests": [
+   "Chris McDermott"
+  ],
+  "url": "https://www.youtube.com/watch?v=PwWpJoQvm3Y",
+  "length": "1:56:56",
+  "pathways": [
+   "improve",
+   "flow"
+  ]
+ },
+ {
+  "n": 29,
+  "title": "Agile Physics, The Math of Flow",
+  "guests": [
+   "Troy Magennis"
+  ],
+  "url": "https://www.youtube.com/watch?v=LneIyW9K7LQ",
+  "length": "1:50:34",
+  "pathways": [
+   "flow"
+  ]
+ },
+ {
+  "n": 30,
+  "title": "Complexity on One Slide",
+  "guests": [
+   "Dave Snowden"
+  ],
+  "url": "https://www.youtube.com/watch?v=wAasuwQVfLM",
+  "length": "1:49:48",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 31,
+  "title": "Constraintomes, Anyone?",
+  "guests": [
+   "Alicia Juarrero"
+  ],
+  "url": "https://www.youtube.com/watch?v=mAEjtHP4FLM",
+  "length": "2:14:33",
+  "pathways": [
+   "mindlife"
+  ]
+ },
+ {
+  "n": 32,
+  "title": "The Fog of Complexity",
+  "guests": [
+   "Thomas Vander Wal"
+  ],
+  "url": "https://www.youtube.com/watch?v=oP0NMdKR77U",
+  "length": "2:11:10",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 33,
+  "title": "Complexity, Talking the Talk",
+  "guests": [
+   "Tony Quinlan"
+  ],
+  "url": "https://www.youtube.com/watch?v=rsngslaoYy4",
+  "length": "55:36",
+  "pathways": [
+   "sense",
+   "narr"
+  ]
+ },
+ {
+  "n": 34,
+  "title": "Explaining the Value of Complexity Approaches to Leaders",
+  "guests": [
+   "Mary Boone"
+  ],
+  "url": "https://www.youtube.com/watch?v=_3w5KACw-CA",
+  "length": "1:18:48",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 35,
+  "title": "X Marks the Spot: Navigating Possible Futures",
+  "guests": [
+   "Simon Wardley"
+  ],
+  "url": "https://www.youtube.com/watch?v=0S64uQzI62M",
+  "length": "2:13:46",
+  "pathways": [
+   "strat"
+  ]
+ },
+ {
+  "n": 36,
+  "title": "That’s Not My Agile",
+  "guests": [
+   "Karl Scotland"
+  ],
+  "url": "https://www.youtube.com/watch?v=KyAxWXQIrZ4",
+  "length": "1:42:48",
+  "pathways": [
+   "flow",
+   "teams"
+  ]
+ },
+ {
+  "n": 37,
+  "title": "Emergence and Abundance",
+  "guests": [
+   "JD Carlston"
+  ],
+  "url": "https://www.youtube.com/watch?v=rXx6XJAYuQ4",
+  "length": "1:42:30",
+  "pathways": [
+   "flow",
+   "cx"
+  ]
+ },
+ {
+  "n": 38,
+  "title": "The Living Organization: Bridging Complexity Theory",
+  "guests": [
+   "Christina Bowen"
+  ],
+  "url": "https://www.youtube.com/watch?v=IZx5IfPQDsg",
+  "length": "1:39:57",
+  "pathways": [
+   "selforg",
+   "livsys"
+  ]
+ },
+ {
+  "n": 39,
+  "title": "Adopting Complexity Thinking in Organizations",
+  "guests": [
+   "Ebenezer Ikonne"
+  ],
+  "url": "https://www.youtube.com/watch?v=Zx-u98JTmeo",
+  "length": "1:54:19",
+  "pathways": [
+   "teams"
+  ]
+ },
+ {
+  "n": 40,
+  "title": "Narrative Assemblages",
+  "guests": [
+   "Ellie Snowden",
+   "Anna Panagiotou",
+   "Beth Smith"
+  ],
+  "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+  "length": "1:37:30",
+  "pathways": [
+   "narr",
+   "sense"
+  ]
+ },
+ {
+  "n": 41,
+  "title": "Systems Thinking & The Management of Complexity",
+  "guests": [
+   "Michael C. Jackson"
+  ],
+  "url": "https://www.youtube.com/watch?v=rAiKvalPhkY",
+  "length": "1:51:00",
+  "pathways": [
+   "systhink"
+  ]
+ },
+ {
+  "n": 42,
+  "title": "A Talk on Hidden Events",
+  "guests": [
+   "Ron Westrum"
+  ],
+  "url": "https://www.youtube.com/watch?v=t2tah6EyixI",
+  "length": "1:52:43",
+  "pathways": [
+   "resil"
+  ]
+ },
+ {
+  "n": 43,
+  "title": "Sole Fide",
+  "guests": [
+   "Dave Snowden"
+  ],
+  "url": "https://www.youtube.com/watch?v=WFJ5L6xonJI",
+  "length": "1:53:46",
+  "pathways": [
+   "sense"
+  ]
+ },
+ {
+  "n": 44,
+  "title": "Tensegrity, Gain, and Infodynamics",
+  "guests": [
+   "Alicia Juarrero"
+  ],
+  "url": "https://www.youtube.com/watch?v=-jQcbHtrXGc",
+  "length": "2:05:35",
+  "pathways": [
+   "mindlife"
+  ]
+ },
+ {
+  "n": 45,
+  "title": "The Architect’s Paradox",
+  "guests": [
+   "Barry O'Reilly"
+  ],
+  "url": "https://www.youtube.com/watch?v=Qq8x7KIV4W8",
+  "length": "2:01:06",
+  "pathways": [
+   "flow"
+  ]
+ },
+ {
+  "n": 46,
+  "title": "My Life at Boeing",
+  "guests": [
+   "Dave Noll"
+  ],
+  "url": "https://www.youtube.com/watch?v=yjQb2gVUQOM",
+  "length": "1:53:00",
+  "pathways": [
+   "sense",
+   "corp"
+  ]
+ },
+ {
+  "n": 47,
+  "title": "Exaptation, Complexity & Technological Innovation",
+  "guests": [
+   "Pierpaolo Andriani"
+  ],
+  "url": "https://www.youtube.com/watch?v=0q8p5rqagBg",
+  "length": "2:01:55",
+  "pathways": [
+   "cx",
+   "corp"
+  ]
+ },
+ {
+  "n": 48,
+  "title": "Process Complexity: Foundations and Implications",
+  "guests": [
+   "Jean Boulton"
+  ],
+  "url": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+  "length": "1:45:05",
+  "pathways": [
+   "cx",
+   "mindlife"
+  ]
+ },
+ {
+  "n": 49,
+  "title": "Mechanism and Autonomy in the Life Sciences",
+  "guests": [
+   "Matteo Mossio"
+  ],
+  "url": "https://www.youtube.com/watch?v=xfxQ11gSly8",
+  "length": "1:41:40",
+  "pathways": [
+   "mindlife",
+   "biosem"
+  ]
+ },
+ {
+  "n": 50,
+  "title": "Balance: A Narrative for Complexity",
+  "guests": [
+   "Carlos Gershenson"
+  ],
+  "url": "https://www.youtube.com/watch?v=Bp5aDgw9cOc",
+  "length": "2:03:29",
+  "pathways": [
+   "cx"
+  ]
+ },
+ {
+  "n": 51,
+  "title": "Polarity Thinking: Patterns that Illuminate Complexity",
+  "guests": [
+   "Gemma Jiang"
+  ],
+  "url": "https://www.youtube.com/watch?v=uDNelJ2uGQE",
+  "length": "1:58:44",
+  "pathways": [
+   "teams",
+   "conflict"
+  ]
+ },
+ {
+  "n": 52,
+  "title": "An Introduction to Dynamic Work Design",
+  "guests": [
+   "Nelson Repenning"
+  ],
+  "url": "https://www.youtube.com/watch?v=ttC7wK6Huco",
+  "length": "2:10:45",
+  "pathways": [
+   "improve",
+   "teams"
+  ]
+ },
+ {
+  "n": 53,
+  "title": "Participatory Design & Complexity Science",
+  "guests": [
+   "Jen Briselli",
+   "Kyle Godbey"
+  ],
+  "url": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+  "length": "1:52:34",
+  "pathways": [
+   "pd",
+   "svc"
+  ]
+ },
+ {
+  "n": 54,
+  "title": "Complexity and Change",
+  "guests": [
+   "Christopher Mowles"
+  ],
+  "url": "https://www.youtube.com/watch?v=kG83GJTkjJ0",
+  "length": "1:54:56",
+  "pathways": [
+   "crp"
+  ]
+ },
+ {
+  "n": 55,
+  "title": "Deming’s System of Profound Knowledge as a Framework for AI",
+  "guests": [
+   "John Willis"
+  ],
+  "url": "https://www.youtube.com/watch?v=_VcGb-dmIq8",
+  "length": "2:21:57",
+  "pathways": [
+   "improve",
+   "techai"
+  ]
+ },
+ {
+  "n": 56,
+  "title": "Humberto Maturana’s Time: Living in the Present",
+  "guests": [
+   "Gregory Vigneaux"
+  ],
+  "url": "https://www.youtube.com/watch?v=0AHYfbmT5_Q",
+  "length": "2:13:38",
+  "pathways": [
+   "livsys",
+   "cyb"
+  ]
+ },
+ {
+  "n": 57,
+  "title": "An AI Rant",
+  "guests": [
+   "Dave Snowden",
+   "Simon Wardley"
+  ],
+  "url": "https://www.youtube.com/watch?v=KC9-_Gt--Gk",
+  "length": "2:20:07",
+  "pathways": [
+   "techai",
+   "strat"
+  ]
+ },
+ {
+  "n": 58,
+  "title": "Participatory Design & Complexity Science 2",
+  "guests": [
+   "Jen Briselli",
+   "Kyle Godbey"
+  ],
+  "url": "https://www.youtube.com/watch?v=3mThT2Jzqhc",
+  "length": "2:08:54",
+  "pathways": [
+   "pd",
+   "svc"
+  ]
+ },
+ {
+  "n": 59,
+  "title": "A Conversation About Context, Philosophy, & Complexity",
+  "guests": [
+   "Alicia Juarrero"
+  ],
+  "url": "https://www.youtube.com/watch?v=cr6aBaXvRY0",
+  "length": "2:36:11",
+  "pathways": [
+   "mindlife"
+  ]
+ },
+ {
+  "n": 60,
+  "title": "Service Design & Social Complexity",
+  "guests": [
+   "Cameron Tonkinwise"
+  ],
+  "url": "https://www.youtube.com/watch?v=ZJuwJN8kYvY",
+  "length": "1:52:51",
+  "pathways": [
+   "svc",
+   "trans"
+  ]
+ },
+ {
+  "n": 61,
+  "title": "A Generalized Modeling Approach to Learning and Creativity",
+  "guests": [
+   "Yağmur Denizhan"
+  ],
+  "url": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+  "length": "1:41:23",
+  "pathways": [
+   "cyb",
+   "transl"
+  ]
+ },
+ {
+  "n": 62,
+  "title": "The Nature of Everything",
+  "guests": [
+   "Karl Friston"
+  ],
+  "url": "https://www.youtube.com/watch?v=UsxzgvGujLk",
+  "length": "2:15:50",
+  "pathways": [
+   "mindlife"
+  ]
+ },
+ {
+  "n": 63,
+  "title": "The Wiggly World of Organizations",
+  "guests": [
+   "Chris Rodgers"
+  ],
+  "url": "https://www.youtube.com/watch?v=0FtPO-7MS6s",
+  "length": "1:51:24",
+  "pathways": [
+   "crp"
+  ]
+ },
+ {
+  "n": 64,
+  "title": "Pattern Logic in Complex Adaptive Systems",
+  "guests": [
+   "Glenda Eoyang"
+  ],
+  "url": "https://www.youtube.com/watch?v=k6nv2J_N0PI",
+  "length": "1:48:56",
+  "pathways": [
+   "sense"
+  ]
+ }
+]

@@ -76,6 +76,38 @@
   "defn": "A threshold where a small change flips a system into a different state."
  },
  {
+  "term": "soft systems methodology",
+  "defn": "Peter Checkland's approach: model different worldviews of a messy situation and learn your way to agreed action."
+ },
+ {
+  "term": "rich picture",
+  "defn": "A hand-drawn cartoon of a whole messy situation, used in soft systems work to see it together."
+ },
+ {
+  "term": "boundary critique",
+  "defn": "Questioning where a system's boundary is drawn, because that choice decides who and what counts."
+ },
+ {
+  "term": "mess",
+  "defn": "Russell Ackoff's word for a system of interacting problems that cannot be solved one at a time."
+ },
+ {
+  "term": "constraint",
+  "defn": "Anything that changes the likelihood of what happens next without forcing it, such as a rule, a riverbank or a habit."
+ },
+ {
+  "term": "autonomy",
+  "defn": "In biology, a system whose parts maintain the conditions for the whole to keep existing."
+ },
+ {
+  "term": "enaction",
+  "defn": "The view that minds arise as living bodies act in and make sense of their world."
+ },
+ {
+  "term": "active inference",
+  "defn": "Karl Friston's account of living things acting to keep their predictions about the world true."
+ },
+ {
   "term": "ecology of mind",
   "defn": "Bateson's idea that mind is a pattern across organism and environment, not something inside a head."
  },
@@ -246,6 +278,22 @@
  {
   "term": "polycentric governance",
   "defn": "Many centres of decision at different scales, overlapping and checking each other."
+ },
+ {
+  "term": "complex responsive processes",
+  "defn": "Seeing an organization as ongoing patterns of relating between people, not a system that can be designed from outside."
+ },
+ {
+  "term": "figuration",
+  "defn": "Norbert Elias's term for webs of interdependent people whose patterns no one controls."
+ },
+ {
+  "term": "reflexivity",
+  "defn": "Thinking about how your own position and assumptions shape what you notice and do."
+ },
+ {
+  "term": "informal coalitions",
+  "defn": "The shifting, unofficial groupings through which much of an organization's real work and change happens."
  },
  {
   "term": "emergent strategy",
@@ -464,6 +512,22 @@
   "defn": "Working with conflict to change relationships and structures, not just to settle it."
  },
  {
+  "term": "relational ethics",
+  "defn": "Starting AI ethics from relationships and the people most likely to be harmed, rather than abstract principles."
+ },
+ {
+  "term": "algorithmic bias",
+  "defn": "Systematic unfairness in an automated system, often inherited from past data."
+ },
+ {
+  "term": "proxy discrimination",
+  "defn": "When an input like postcode or nationality stands in for a protected characteristic."
+ },
+ {
+  "term": "human in the loop",
+  "defn": "Keeping a person accountable for decisions an automated system informs."
+ },
+ {
   "term": "high reliability organization",
   "defn": "An organization that operates safely in high-risk conditions by staying alert to small failures."
  },
@@ -502,6 +566,22 @@
  {
   "term": "communal grief",
   "defn": "Grieving together as a community, as Weller describes."
+ },
+ {
+  "term": "safety-ii",
+  "defn": "Learning from how things usually go right, not only investigating what went wrong."
+ },
+ {
+  "term": "just culture",
+  "defn": "Treating errors as information about the system rather than reasons to punish individuals, while still holding reckless behaviour to account."
+ },
+ {
+  "term": "normalization of deviance",
+  "defn": "Diane Vaughan's term for how small departures from safe practice become accepted as normal over time."
+ },
+ {
+  "term": "generative culture",
+  "defn": "Ron Westrum's name for organizations where information flows freely to whoever needs it and messengers are trained, not blamed."
  },
  {
   "term": "wicked problem",
@@ -846,6 +926,18 @@
  {
   "term": "uncommon practice",
   "defn": "A behaviour that explains why a few do better."
+ },
+ {
+  "term": "flow",
+  "defn": "How smoothly work moves from idea to done, and where it waits."
+ },
+ {
+  "term": "work in progress limit",
+  "defn": "A cap on how many items a team works on at once, to reduce waiting and switching."
+ },
+ {
+  "term": "residuality",
+  "defn": "Barry O'Reilly's idea: design architectures that keep working after unpredicted stresses, by testing them against many random scenarios."
  },
  {
   "term": "experiential learning cycle",

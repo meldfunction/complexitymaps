@@ -2,7 +2,7 @@
 
 One source of truth, three outputs: a live web app, a linked PDF, and a map image.
 
-- **50 pathways** in 12 clusters and 4 hue families, each with a kind of path, road, mix-ins, policy lens, and engage links
+- **56 pathways** in 12 clusters and 4 hue families, each with a kind of path, road, mix-ins, policy lens, and engage links
 - **69 organization profiles** with public articles, talks, podcasts, and courses
 - **41 cases** with lessons, limits, and sources (48 of 50 pathways have at least one)
 - **92 people and institutions** with life dates (40 checked, the rest draft) and **7 draft profiles**
@@ -10,6 +10,8 @@ One source of truth, three outputs: a live web app, a linked PDF, and a map imag
 - **7 orientations**, **levels of focus** (not rank), **2 worked journeys**, and **suggested braids**
 - **Live library**: on request, the app reads the public resource feed of the
   [Systems Change Learning Guide](https://welearnwegrow.github.io/capacities/)
+
+- **65 Complexity Lounge talks** (`build/content_lounge.py`) linked from the pathways they fit and featured on each guest's profile, plus six pathways they pointed to: complex responsive processes, resilience engineering, systems thinking traditions, mind/life/constraints, technology and AI, and software/flow
 
 ## The app (Field Atlas design)
 

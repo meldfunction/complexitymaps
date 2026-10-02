@@ -18,6 +18,10 @@ except ImportError:
     NOT_PEOPLE = []
 from content_depth import D as DEPTH
 import content_plain as PL
+import content_lounge as LG   # Complexity Lounge episodes, six new pathways and their people (extends the modules above)
+DEPTH.update(LG.DEPTH); PL.OV.update(LG.PLAIN_OV); PL.POL.update(LG.PLAIN_POL)
+ORGS.extend(LG.ORGS); CASES.extend(LG.CASES); KNOWN.update(LG.KNOWN)
+PEOPLE.extend(x for x in LG.PEOPLE if x["name"] not in {y["name"] for y in PEOPLE})
 
 errors = []
 slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -34,6 +38,10 @@ for p in base:
         continue
     p["kind"], p["terms"], p["caps"] = m[0]
 pathways = base + [dict(p) for p in NEW]
+_sid = {v: k for k, v in A.SHORT.items()}
+for p in pathways:
+    add = LG.MIX_ADD.get(_sid.get(slug(p["name"])))
+    if add: p["mix"] = (p["mix"].rstrip(". ") + "; " if p.get("mix") else "") + add
 cluster_names = [c[0] for c in CLUSTERS]
 order = {c: i for i, c in enumerate(cluster_names)}
 for p in pathways:
@@ -115,10 +123,11 @@ for p in pathways:
         m = re.match(r"^(.*?)\s*\((.*)\)\s*$", raw)
         name, note = (m.group(1), m.group(2)) if m else (raw, "")
         who = find_people(name)
-        stops.append(dict(name=name, note=note, years="; ".join(w["years"] for w in who), people=[w["name"] for w in who]))
+        stops.append(dict(name=name, note=note, years="; ".join(w["years"] for w in who if w["years"]), people=[w["name"] for w in who]))
         if not who and not any(name.startswith(x) for x in NOT_PEOPLE) and re.match(r"^[A-Z][a-z]+ [A-Z]", name) and len(name) < 40:
             warnings.append(f"road stop with no years: {name} ({p['short']})")
     p["stops"] = stops
+    p["watch"] = [dict(n=e["n"], title=e["title"], guests=e["guests"], url=e["url"], length=e["length"]) for e in LG.EPISODES if sid in e["pathways"]]
     if p["lens_status"] != "draft": warnings.append(f"lens falls back to cluster: {p['short']}")
 
 slug_p = lambda n: slug(n)
@@ -130,7 +139,8 @@ for x in PEOPLE:
     prof = PROFILES.get(n)
     m = re.match(r"(\d{4})\D+(\d{4})", x["years"]); b = re.match(r"b\. (\d{4})", x["years"]); f = re.match(r"founded (\d{4})", x["years"])
     if not PROFILES.get(n) and not KNOWN.get(n): warnings.append(f"person with no profile or short entry: {n}")
-    people_out.append(dict(x, slug=slug_p(n), appears=appears, known=KNOWN.get(n, ''), born=int((m or b).group(1)) if (m or b) else None,
+    episodes = [dict(n=e["n"], title=e["title"], guests=e["guests"], url=e["url"], length=e["length"]) for e in LG.EPISODES if n in e["guests"]]
+    people_out.append(dict(x, slug=slug_p(n), appears=appears, known=KNOWN.get(n, ''), episodes=episodes, born=int((m or b).group(1)) if (m or b) else None,
                            died=int(m.group(2)) if m else None, founded=int(f.group(1)) if f else None, profile=prof))
 for n in PROFILES:
     if n.lower() not in people_by: errors.append(f"profile with no people entry: {n}")
@@ -152,6 +162,7 @@ data = dict(
     orgs=ORGS,
     cases=CASES,
     people=people_out,
+    episodes=LG.EPISODES,
     glossary=glossary,
     atlas=atlas,
 )

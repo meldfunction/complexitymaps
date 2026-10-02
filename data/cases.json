@@ -946,5 +946,115 @@
     "u": "https://en.wikipedia.org/wiki/Well-being_of_Future_Generations_(Wales)_Act_2015"
    }
   ]
+ },
+ {
+  "id": "gp-chronic-care",
+  "title": "Chronic illness care in an Australian general practice",
+  "place": "Inner-city Australia",
+  "years": "1985 to 2007",
+  "summary": "Researchers traced how one mid-sized general practice improved its care for chronic illness over 23 years, using interviews with all staff, documents, observation and recorded practice meetings.",
+  "lesson": "Care improved continuously, but not through planned system change: improvements emerged from unrelated efforts such as hiring staff for other reasons, financial pressure and technology bought for other problems. The authors found complex responsive processes described this better than planned change.",
+  "note": "A single critical case, studied in depth; it shows a pattern, not a rule.",
+  "pathways": [
+   "complex-responsive-processes"
+  ],
+  "sources": [
+   {
+    "t": "Booth, Zwar and Harris, BMC Family Practice (2013)",
+    "u": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3644498/"
+   }
+  ]
+ },
+ {
+  "id": "columbia-caib",
+  "title": "The loss of the space shuttle Columbia",
+  "place": "United States",
+  "years": "2003",
+  "summary": "Columbia broke apart on re-entry in February 2003, killing seven astronauts. Foam striking the wing at launch was the physical cause, and foam strikes had happened on earlier flights without disaster.",
+  "lesson": "The Columbia Accident Investigation Board concluded that 'the NASA organizational culture had as much to do with the accident as the foam'. Known warning signs had become accepted as normal, a pattern resilience and safety science now teaches people to look for.",
+  "note": "Investigations name causes after the fact; the hard part is seeing drift while it is happening.",
+  "pathways": [
+   "resilience-engineering-and-safety-science",
+   "crisis-disaster-and-high-reliability"
+  ],
+  "sources": [
+   {
+    "t": "CAIB press release, 26 August 2003 (archived)",
+    "u": "https://govinfo.library.unt.edu/caib/news/press_releases/pr030826.html"
+   },
+   {
+    "t": "Congressional Research Service synopsis of the CAIB report",
+    "u": "https://www.everycrsreport.com/reports/RS21606.html"
+   }
+  ]
+ },
+ {
+  "id": "portsmouth-repairs",
+  "title": "Systems thinking in Portsmouth housing repairs",
+  "place": "Portsmouth, England",
+  "years": "Around 2010",
+  "summary": "Portsmouth City Council's housing service, which looked after about 17,000 homes, met its targets while tenants complained about repairs. Redesigning the work around what tenants actually needed, rather than activity targets, changed the service.",
+  "lesson": "Repair times fell from 24 days to 7, satisfaction rose from 60% to 99%, and the same staff completed far more jobs, according to an account citing a Wales Audit Office report. Targets had hidden the 'failure demand' created by the system itself.",
+  "note": "Results come from practitioner accounts and an audit report; the approach depends on leaders willing to drop targets.",
+  "pathways": [
+   "systems-thinking-traditions-hard-soft-and-critical",
+   "government-plumbing"
+  ],
+  "sources": [
+   {
+    "t": "APM: How Portsmouth Council used systems thinking (2019)",
+    "u": "https://www.apm.org.uk/blog/how-portsmouth-council-used-systems-thinking-to-deliver-a-better-service-and-reduce-costs/"
+   },
+   {
+    "t": "AMED: The Vanguard Method",
+    "u": "https://amed.org.uk/article/the-vanguard-method/"
+   }
+  ]
+ },
+ {
+  "id": "dutch-benefits",
+  "title": "The Dutch childcare benefits scandal",
+  "place": "Netherlands",
+  "years": "2005 to 2021",
+  "summary": "The Dutch tax authority wrongly accused about 26,000 parents of fraud over childcare benefits. An algorithmic risk-classification system used nationality as a risk factor, and families were pushed into debt. The government resigned in January 2021.",
+  "lesson": "An automated system built for efficiency amplified suspicion against people who were already marginalized, and few could appeal. The Dutch Data Protection Authority found the processing unlawful and discriminatory.",
+  "note": "Algorithms were one part of a wider failure of law, politics and administration.",
+  "pathways": [
+   "technology-ai-and-complexity",
+   "measurement-and-accountability"
+  ],
+  "sources": [
+   {
+    "t": "Amnesty International: Xenophobic machines (October 2021)",
+    "u": "https://www.amnesty.org/en/documents/eur35/4686/2021/en/"
+   },
+   {
+    "t": "Dutch childcare benefits scandal (overview)",
+    "u": "https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal"
+   }
+  ]
+ },
+ {
+  "id": "dora-research",
+  "title": "A decade of research on software delivery",
+  "place": "Global",
+  "years": "2013 onward",
+  "summary": "The DORA research program, founded by Nicole Forsgren, Jez Humble and Gene Kim and now part of Google Cloud, has surveyed tens of thousands of technology professionals in annual State of DevOps reports.",
+  "lesson": "Fast, stable software delivery and a high-trust, generative culture go together: DORA reports that 'a high-trust, generative culture predicts software delivery and organizational performance in technology'.",
+  "note": "Survey-based research; DORA itself warns against using its metrics to rank individual teams.",
+  "pathways": [
+   "software-flow-and-architecture",
+   "teams-and-learning-cultures"
+  ],
+  "sources": [
+   {
+    "t": "DORA research program",
+    "u": "https://dora.dev/research/"
+   },
+   {
+    "t": "DORA: generative organizational culture",
+    "u": "https://dora.dev/capabilities/generative-organizational-culture/"
+   }
+  ]
  }
 ]

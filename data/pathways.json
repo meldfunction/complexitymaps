@@ -4,7 +4,7 @@
   "cluster": "Foundations and science",
   "overview": "Steering through feedback: how systems regulate themselves, and how observers are part of what they observe.",
   "road": "Norbert Wiener → W. Ross Ashby (requisite variety) → Heinz von Foerster (second-order cybernetics) → Maturana and Varela → Gordon Pask (conversation theory) → Paul Pangaro",
-  "mix": "Gregory Bateson and Margaret Mead at the Macy Conferences, Stafford Beer",
+  "mix": "Gregory Bateson and Margaret Mead at the Macy Conferences, Stafford Beer; Yağmur Denizhan",
   "policy": "Requisite variety as a design test: services must match the variety of people's lives. Beer's Project Cybersyn is the classic, contested case of cybernetic government.",
   "links": [
    {
@@ -143,6 +143,26 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": [
+   {
+    "n": 56,
+    "title": "Humberto Maturana’s Time: Living in the Present",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=0AHYfbmT5_Q",
+    "length": "2:13:38"
+   },
+   {
+    "n": 61,
+    "title": "A Generalized Modeling Approach to Learning and Creativity",
+    "guests": [
+     "Yağmur Denizhan"
+    ],
+    "url": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+    "length": "1:41:23"
+   }
   ]
  },
  {
@@ -150,7 +170,7 @@
   "cluster": "Foundations and science",
   "overview": "Mathematical and computational study of emergence, networks, adaptation, and self-organization across physics, biology, and society.",
   "road": "Ilya Prigogine (dissipative structures) → Santa Fe Institute → network science (Barabási, Strogatz, Watts) → NECSI (Yaneer Bar-Yam)",
-  "mix": "Hermann Haken (†2024, synergetics), Stuart Kauffman",
+  "mix": "Hermann Haken (†2024, synergetics), Stuart Kauffman; Melanie Mitchell, Geoffrey West, Carlos Gershenson, Pierpaolo Andriani (exaptation), Jean Boulton (process complexity), Paul Cilliers, Michael Garfield",
   "policy": "Agent-based models and network analysis of service systems, epidemics, and markets to test policy before rollout.",
   "links": [
    {
@@ -283,6 +303,449 @@
      "NECSI"
     ]
    }
+  ],
+  "watch": [
+   {
+    "n": 14,
+    "title": "Stumbling on Complexity",
+    "guests": [
+     "Sue Borchardt"
+    ],
+    "url": "https://www.youtube.com/watch?v=F6CaQuZKAk0",
+    "length": "1:53:16"
+   },
+   {
+    "n": 26,
+    "title": "Jurassic Worlding: A Paleontology of The Present",
+    "guests": [
+     "Michael Garfield"
+    ],
+    "url": "https://www.youtube.com/watch?v=kmob2YS0bJM",
+    "length": "1:07:24"
+   },
+   {
+    "n": 37,
+    "title": "Emergence and Abundance",
+    "guests": [
+     "JD Carlston"
+    ],
+    "url": "https://www.youtube.com/watch?v=rXx6XJAYuQ4",
+    "length": "1:42:30"
+   },
+   {
+    "n": 47,
+    "title": "Exaptation, Complexity & Technological Innovation",
+    "guests": [
+     "Pierpaolo Andriani"
+    ],
+    "url": "https://www.youtube.com/watch?v=0q8p5rqagBg",
+    "length": "2:01:55"
+   },
+   {
+    "n": 48,
+    "title": "Process Complexity: Foundations and Implications",
+    "guests": [
+     "Jean Boulton"
+    ],
+    "url": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+    "length": "1:45:05"
+   },
+   {
+    "n": 50,
+    "title": "Balance: A Narrative for Complexity",
+    "guests": [
+     "Carlos Gershenson"
+    ],
+    "url": "https://www.youtube.com/watch?v=Bp5aDgw9cOc",
+    "length": "2:03:29"
+   }
+  ]
+ },
+ {
+  "name": "Systems thinking traditions: hard, soft, and critical",
+  "cluster": "Foundations and science",
+  "kind": "Lineage",
+  "overview": "The family of approaches most people mean by systems thinking. Hard systems engineer a known goal; soft systems help people with different views learn their way into action; critical systems ask whose interests a system serves and who is left out.",
+  "road": "C. West Churchman (the systems approach) → Russell Ackoff (messes and interactive planning) → Peter Checkland (soft systems methodology) → Werner Ulrich (critical systems heuristics) → Michael C. Jackson (critical systems thinking)",
+  "mix": "Stafford Beer, Donella Meadows, W. Edwards Deming, John Seddon (systems thinking in public services)",
+  "policy": "Rich pictures and stakeholder learning before policy design, asking who should benefit and who decides, and redesigning public services around demand rather than targets.",
+  "links": [
+   {
+    "t": "Soft systems methodology (overview)",
+    "u": "https://en.wikipedia.org/wiki/Soft_systems_methodology"
+   },
+   {
+    "t": "Critical systems thinking (overview)",
+    "u": "https://en.wikipedia.org/wiki/Critical_systems_thinking"
+   },
+   {
+    "t": "Michael C. Jackson: Critical Systems Thinking and the Management of Complexity (Wiley)",
+    "u": "https://www.wiley.com/en-us/Critical+Systems+Thinking+and+the+Management+of+Complexity-p-9781119118374"
+   }
+  ],
+  "terms": [
+   "systems thinking",
+   "soft systems",
+   "checkland",
+   "ackoff",
+   "churchman",
+   "critical systems",
+   "ulrich",
+   "rich picture"
+  ],
+  "caps": [
+   "Systems Thinking & Modeling",
+   "Positionality & Power Analysis"
+  ],
+  "id": "systems-thinking-traditions-hard-soft-and-critical",
+  "orgs": [
+   "complexity-lounge"
+  ],
+  "cases": [
+   "portsmouth-repairs"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "systhink",
+  "short_name": "Systems thinking traditions",
+  "family": "sci",
+  "sectors": [
+   "gov",
+   "biz",
+   "edu"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "adm"
+  ],
+  "goals": [
+   "connect",
+   "policy"
+  ],
+  "lens": "Complexity as many viewpoints and interests: how you define the system already decides what counts as a solution, so the choice of method and of boundary is itself a political choice.",
+  "lens_status": "draft",
+  "explainer": [
+   "Systems thinking is not one method but a family. Hard systems approaches, from operations research and systems engineering, work well when the goal is agreed and the problem can be modelled. Russell Ackoff called real-world situations 'messes': tangles of problems that cannot be solved one at a time.",
+   "Peter Checkland's soft systems methodology treats a situation as many different worldviews and helps people learn their way to action they can agree on. Critical systems thinking, from Werner Ulrich and Michael C. Jackson, adds the question of power: who benefits, who decides, and whose voices define the system. Jackson argues for using different approaches for different kinds of complexity."
+  ],
+  "practice": [
+   "Draw a rich picture of the situation: people, conflicts, flows, worries, as cartoons on one sheet.",
+   "Write a short statement of what the system is for from three different stakeholders' points of view.",
+   "Ask Ulrich's boundary questions: who ought to be the beneficiary, who ought to decide, who could be affected but is not involved?",
+   "Pick the approach to fit the situation: modelling where goals are clear, soft systems where views differ, critical systems where power is at stake."
+  ],
+  "sector_notes": {
+   "biz": "Systems engineering and operations research in large firms; soft systems for organizational change.",
+   "ngo": "Critical systems heuristics help NGOs ask who their programmes really serve.",
+   "health": "Soft systems methodology has long been used in health service planning; redesigning services around patient demand.",
+   "edu": "Taught in management and systems programmes, notably at Hull and Lancaster in the UK.",
+   "com": "Boundary critique gives residents a way to challenge who gets to define a local problem."
+  },
+  "key_ideas": [
+   {
+    "term": "soft systems methodology",
+    "defn": "Peter Checkland's approach: model different worldviews of a messy situation and learn your way to agreed action."
+   },
+   {
+    "term": "rich picture",
+    "defn": "A hand-drawn cartoon of a whole messy situation, used in soft systems work to see it together."
+   },
+   {
+    "term": "boundary critique",
+    "defn": "Questioning where a system's boundary is drawn, because that choice decides who and what counts."
+   },
+   {
+    "term": "mess",
+    "defn": "Russell Ackoff's word for a system of interacting problems that cannot be solved one at a time."
+   }
+  ],
+  "plain_overview": "The family of systems thinking approaches: hard, soft and critical, and how to pick the right one.",
+  "plain_policy": "Mapping a situation from many viewpoints, and asking who should benefit and who decides, before designing policy.",
+  "stops": [
+   {
+    "name": "C. West Churchman",
+    "note": "the systems approach",
+    "years": "1913–2004",
+    "people": [
+     "C. West Churchman"
+    ]
+   },
+   {
+    "name": "Russell Ackoff",
+    "note": "messes and interactive planning",
+    "years": "1919–2009",
+    "people": [
+     "Russell Ackoff"
+    ]
+   },
+   {
+    "name": "Peter Checkland",
+    "note": "soft systems methodology",
+    "years": "1930–2026",
+    "people": [
+     "Peter Checkland"
+    ]
+   },
+   {
+    "name": "Werner Ulrich",
+    "note": "critical systems heuristics",
+    "years": "b. 1948",
+    "people": [
+     "Werner Ulrich"
+    ]
+   },
+   {
+    "name": "Michael C. Jackson",
+    "note": "critical systems thinking",
+    "years": "b. 1951",
+    "people": [
+     "Michael C. Jackson"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 41,
+    "title": "Systems Thinking & The Management of Complexity",
+    "guests": [
+     "Michael C. Jackson"
+    ],
+    "url": "https://www.youtube.com/watch?v=rAiKvalPhkY",
+    "length": "1:51:00"
+   }
+  ]
+ },
+ {
+  "name": "Mind, life, and constraints",
+  "cluster": "Foundations and science",
+  "kind": "Lineage",
+  "overview": "How living things and minds hold themselves together and act with purpose. Constraints, not forces, shape what can happen next; organisms keep making the conditions of their own existence; brains act to keep their predictions about the world true.",
+  "road": "Robert Rosen (life as a system closed to efficient causation) → Francisco Varela and Evan Thompson (enaction, <i>The Embodied Mind</i>) → Alicia Juarrero (<i>Dynamics in Action</i>, <i>Context Changes Everything</i>: constraints as causes) → Andy Clark (the predictive mind) → Karl Friston (the free energy principle and active inference) → Matteo Mossio (<i>Biological Autonomy</i>, with Alvaro Moreno)",
+  "mix": "Humberto Maturana, Terrence Deacon, Ezequiel Di Paolo (<i>Linguistic Bodies</i>), biosemiotics, cybernetics",
+  "policy": "Mostly a source of concepts rather than a policy tool: designing by changing constraints rather than issuing instructions, and treating people as active, sense-making agents rather than targets of messages.",
+  "links": [
+   {
+    "t": "Free energy principle (overview)",
+    "u": "https://en.wikipedia.org/wiki/Free_energy_principle"
+   },
+   {
+    "t": "Enactivism (overview)",
+    "u": "https://en.wikipedia.org/wiki/Enactivism"
+   },
+   {
+    "t": "Moreno and Mossio: Biological Autonomy (Springer)",
+    "u": "https://link.springer.com/book/10.1007/978-94-017-9837-2"
+   }
+  ],
+  "terms": [
+   "constraint",
+   "juarrero",
+   "enactiv",
+   "active inference",
+   "free energy",
+   "friston",
+   "autonomy",
+   "embodied",
+   "predictive"
+  ],
+  "caps": [
+   "Systems Thinking & Modeling",
+   "Cultural & Epistemic Inquiry"
+  ],
+  "id": "mind-life-and-constraints",
+  "orgs": [
+   "complexity-lounge"
+  ],
+  "cases": [],
+  "gov": false,
+  "reading": [],
+  "short": "mindlife",
+  "short_name": "Mind, life and constraints",
+  "family": "sci",
+  "sectors": [
+   "edu"
+  ],
+  "scales": [
+   "per",
+   "pla"
+  ],
+  "work_kinds": [
+   "int",
+   "att"
+  ],
+  "goals": [
+   "connect"
+  ],
+  "lens": "Complexity as self-making and constraint: living systems create and maintain the constraints that keep them alive, and change comes from altering those constraints rather than pushing directly.",
+  "lens_status": "draft",
+  "explainer": [
+   "This pathway brings together thinkers who ask how living things and minds hold together and act with purpose. Robert Rosen and later Alvaro Moreno and Matteo Mossio describe organisms as autonomous: their parts keep producing the conditions that make the whole possible. Francisco Varela and Evan Thompson's enactive approach holds that minds are not inside heads but arise as living bodies make sense of their worlds.",
+   "Alicia Juarrero shows that constraints, not pushes and pulls, are how complex systems cause things: a riverbank shapes a river, a rule shapes a meeting. Karl Friston's free energy principle and Andy Clark's predictive processing describe brains and organisms as acting to keep their expectations about the world true. Together they give practitioners a richer language for context, purpose and change."
+  ],
+  "practice": [
+   "When you want behaviour to change, list the constraints that hold the current pattern in place, and pick one to loosen or tighten.",
+   "Notice where you are acting on a prediction about people rather than on what they actually do.",
+   "Read one chapter of Juarrero's Context Changes Everything with a group and map the constraints in your own work.",
+   "Treat people in a change effort as sense-making agents with their own predictions, not as receivers of messages."
+  ],
+  "sector_notes": {
+   "biz": "Constraint-based approaches inform Cynefin practice and organizational design.",
+   "ngo": "Helps programme teams think about enabling and governing constraints instead of fixed plans.",
+   "health": "Active inference and predictive processing are active research areas in psychiatry and neurology.",
+   "edu": "Enactive and embodied views of learning shape teaching that starts from learners' own sense-making.",
+   "com": "A language for how local rules and habits shape what a community can become."
+  },
+  "key_ideas": [
+   {
+    "term": "constraint",
+    "defn": "Anything that changes the likelihood of what happens next without forcing it, such as a rule, a riverbank or a habit."
+   },
+   {
+    "term": "autonomy",
+    "defn": "In biology, a system whose parts maintain the conditions for the whole to keep existing."
+   },
+   {
+    "term": "enaction",
+    "defn": "The view that minds arise as living bodies act in and make sense of their world."
+   },
+   {
+    "term": "active inference",
+    "defn": "Karl Friston's account of living things acting to keep their predictions about the world true."
+   }
+  ],
+  "plain_overview": "How living things and minds hold themselves together, act with purpose and are shaped by constraints.",
+  "plain_policy": "Mostly a source of ideas: change behaviour by changing constraints, and treat people as sense-makers.",
+  "stops": [
+   {
+    "name": "Robert Rosen",
+    "note": "life as a system closed to efficient causation",
+    "years": "1934–1998",
+    "people": [
+     "Robert Rosen"
+    ]
+   },
+   {
+    "name": "Francisco Varela and Evan Thompson",
+    "note": "enaction, The Embodied Mind",
+    "years": "1946–2001; b. 1962",
+    "people": [
+     "Francisco Varela",
+     "Evan Thompson"
+    ]
+   },
+   {
+    "name": "Alicia Juarrero",
+    "note": "Dynamics in Action, Context Changes Everything: constraints as causes",
+    "years": "",
+    "people": [
+     "Alicia Juarrero"
+    ]
+   },
+   {
+    "name": "Andy Clark",
+    "note": "the predictive mind",
+    "years": "b. 1957",
+    "people": [
+     "Andy Clark"
+    ]
+   },
+   {
+    "name": "Karl Friston",
+    "note": "the free energy principle and active inference",
+    "years": "b. 1959",
+    "people": [
+     "Karl Friston"
+    ]
+   },
+   {
+    "name": "Matteo Mossio",
+    "note": "Biological Autonomy, with Alvaro Moreno",
+    "years": "",
+    "people": [
+     "Matteo Mossio"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   },
+   {
+    "n": 21,
+    "title": "Cause and Constraints",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=AIlSGHivdgE",
+    "length": "1:44:43"
+   },
+   {
+    "n": 31,
+    "title": "Constraintomes, Anyone?",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=mAEjtHP4FLM",
+    "length": "2:14:33"
+   },
+   {
+    "n": 44,
+    "title": "Tensegrity, Gain, and Infodynamics",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=-jQcbHtrXGc",
+    "length": "2:05:35"
+   },
+   {
+    "n": 48,
+    "title": "Process Complexity: Foundations and Implications",
+    "guests": [
+     "Jean Boulton"
+    ],
+    "url": "https://www.youtube.com/watch?v=XkDSgJOnQkk",
+    "length": "1:45:05"
+   },
+   {
+    "n": 49,
+    "title": "Mechanism and Autonomy in the Life Sciences",
+    "guests": [
+     "Matteo Mossio"
+    ],
+    "url": "https://www.youtube.com/watch?v=xfxQ11gSly8",
+    "length": "1:41:40"
+   },
+   {
+    "n": 59,
+    "title": "A Conversation About Context, Philosophy, & Complexity",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=cr6aBaXvRY0",
+    "length": "2:36:11"
+   },
+   {
+    "n": 62,
+    "title": "The Nature of Everything",
+    "guests": [
+     "Karl Friston"
+    ],
+    "url": "https://www.youtube.com/watch?v=UsxzgvGujLk",
+    "length": "2:15:50"
+   }
   ]
  },
  {
@@ -290,7 +753,7 @@
   "cluster": "Relational, Indigenous, and meaning",
   "overview": "Knowing through relationships rather than parts. Attends to how contexts shape each other and questions the human-centered, modern frame itself.",
   "road": "Gregory Bateson (Steps to an Ecology of Mind) → Nora Bateson (Warm Data, Combining) → Bayo Akomolafe (These Wilds Beyond Our Fences) → Vanessa Machado de Oliveira (Hospicing Modernity)",
-  "mix": "Tyson Yunkaporta (Sand Talk), Donna Haraway (Staying with the Trouble), Karen Barad (agential realism), Isabelle Stengers. Joanna Macy (†2025) bridged systems theory, Buddhism, and deep ecology.",
+  "mix": "Tyson Yunkaporta (Sand Talk), Donna Haraway (Staying with the Trouble), Karen Barad (agential realism), Isabelle Stengers. Joanna Macy (†2025) bridged systems theory, Buddhism, and deep ecology; Anna Tsing, Rosi Braidotti, María Puig de la Bellacasa, Bruno Latour",
   "policy": "Shows how policy categories fragment lived lives. Warm Data Labs with public teams, and the practice of hospicing institutions that no longer serve.",
   "links": [
    {
@@ -436,7 +899,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Nora Bateson and Warm Data",
@@ -571,7 +1035,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Indigenous and land-based knowledge",
@@ -707,7 +1172,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Presencing, Theory U, and Social Presencing Theater",
@@ -848,7 +1314,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "The metacrisis and meaning",
@@ -983,7 +1450,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Semiotics: signs, codes, and meaning-making",
@@ -1138,14 +1606,15 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Living systems and regeneration",
   "cluster": "Living systems",
   "overview": "Life as self-producing and interdependent, applied to ecological resilience and regenerative design of cultures and economies.",
   "road": "Maturana and Varela (autopoiesis) → Fritjof Capra → Daniel Christian Wahl (Designing Regenerative Cultures), alongside C.S. Holling → Carl Folke (resilience)",
-  "mix": "Donella Meadows, Joanna Macy",
+  "mix": "Donella Meadows, Joanna Macy; Bill Mollison and David Holmgren (permaculture), Daniel Walsh, Zita Cobb, Christina Bowen",
   "policy": "Resilience planning, climate adaptation, and bioregional thinking that treats places as living systems.",
   "links": [
    {
@@ -1274,6 +1743,35 @@
     "people": [
      "Carl Folke"
     ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 20,
+    "title": "Permaculture: Principles for Working with Complexity",
+    "guests": [
+     "Daniel Walsh"
+    ],
+    "url": "https://www.youtube.com/watch?v=GdnSP1nQWH4",
+    "length": "1:14:06"
+   },
+   {
+    "n": 38,
+    "title": "The Living Organization: Bridging Complexity Theory",
+    "guests": [
+     "Christina Bowen"
+    ],
+    "url": "https://www.youtube.com/watch?v=IZx5IfPQDsg",
+    "length": "1:39:57"
+   },
+   {
+    "n": 56,
+    "title": "Humberto Maturana’s Time: Living in the Present",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=0AHYfbmT5_Q",
+    "length": "2:13:38"
    }
   ]
  },
@@ -1433,6 +1931,17 @@
      "Terrence Deacon"
     ]
    }
+  ],
+  "watch": [
+   {
+    "n": 49,
+    "title": "Mechanism and Autonomy in the Life Sciences",
+    "guests": [
+     "Matteo Mossio"
+    ],
+    "url": "https://www.youtube.com/watch?v=xfxQ11gSly8",
+    "length": "1:41:40"
+   }
   ]
  },
  {
@@ -1440,7 +1949,7 @@
   "cluster": "Organizing and sensemaking",
   "overview": "Practical frameworks for telling ordered problems from complex ones and acting through small, safe-to-fail probes.",
   "road": "W. Ross Ashby → Karl Weick (†2026) → Alicia Juarrero → Dave Snowden (Cynefin) → Glenda Eoyang (Human Systems Dynamics)",
-  "mix": "Stacey and Shaw's complex responsive processes",
+  "mix": "Stacey and Shaw's complex responsive processes; Sonja Blignaut, Tony Quinlan, Zhen Goh, Michael Cheveldave, Mary Boone, Viv Read and Julie Cunningham, John Boyd (the OODA loop), Trent Hone, Riva Greenberg",
   "policy": "Cynefin in policy and national risk work, safe-to-fail probes instead of big pilots, and distributed citizen narratives as live evidence.",
   "links": [
    {
@@ -1470,7 +1979,8 @@
   "id": "sensemaking-and-acting-in-uncertainty",
   "orgs": [
    "cynefin",
-   "hsd"
+   "hsd",
+   "complexity-lounge"
   ],
   "cases": [
    "rahs"
@@ -1560,7 +2070,9 @@
     "name": "Alicia Juarrero",
     "note": "",
     "years": "",
-    "people": []
+    "people": [
+     "Alicia Juarrero"
+    ]
    },
    {
     "name": "Dave Snowden",
@@ -1574,7 +2086,204 @@
     "name": "Glenda Eoyang",
     "note": "Human Systems Dynamics",
     "years": "",
-    "people": []
+    "people": [
+     "Glenda Eoyang"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 0,
+    "title": "Cynefin & Complexity: A Gentle Introduction (2015)",
+    "guests": [
+     "Jocko Selberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=dZyl6pzg7Gw",
+    "length": "1:05:47"
+   },
+   {
+    "n": 1,
+    "title": "A Brief Introduction to Cynefin",
+    "guests": [
+     "Jocko Selberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=YFzY45JJOVA",
+    "length": "1:41:11"
+   },
+   {
+    "n": 2,
+    "title": "Complexity Science Changed My Life with Type 1 Diabetes",
+    "guests": [
+     "Riva Greenberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+    "length": "1:38:05"
+   },
+   {
+    "n": 3,
+    "title": "Confused by Cynefin? Welcome to the Confused Domain",
+    "guests": [
+     "Zhen Goh"
+    ],
+    "url": "https://www.youtube.com/watch?v=wBNK0ilnRXE",
+    "length": "1:22:22"
+   },
+   {
+    "n": 4,
+    "title": "Cynefin & Safety",
+    "guests": [
+     "Michael Cheveldave"
+    ],
+    "url": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+    "length": "1:49:38"
+   },
+   {
+    "n": 5,
+    "title": "What are Constraints in a Complex System?",
+    "guests": [
+     "Chris Corrigan"
+    ],
+    "url": "https://www.youtube.com/watch?v=oLN_mjR0wxA",
+    "length": "1:38:01"
+   },
+   {
+    "n": 7,
+    "title": "The Problem with Problems",
+    "guests": [
+     "Bruce Waltuck"
+    ],
+    "url": "https://www.youtube.com/watch?v=_aIC5yCsx8w",
+    "length": "1:21:53"
+   },
+   {
+    "n": 9,
+    "title": "Becoming Modern Day Way(s)finders",
+    "guests": [
+     "Sonja Blignaut"
+    ],
+    "url": "https://www.youtube.com/watch?v=BytjhY3r7yI",
+    "length": "1:44:46"
+   },
+   {
+    "n": 12,
+    "title": "The Latest from the Cynefin Centre",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=RziJzC6bYeE",
+    "length": "1:44:30"
+   },
+   {
+    "n": 17,
+    "title": "Transformation, Is it a Thing?",
+    "guests": [
+     "Greg Brougham"
+    ],
+    "url": "https://www.youtube.com/watch?v=xw5jCH-u1QM",
+    "length": "1:40:43"
+   },
+   {
+    "n": 21,
+    "title": "Cause and Constraints",
+    "guests": [
+     "Alicia Juarrero"
+    ],
+    "url": "https://www.youtube.com/watch?v=AIlSGHivdgE",
+    "length": "1:44:43"
+   },
+   {
+    "n": 24,
+    "title": "Complex Facilitation & Sense-making (part 1)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=VefzETBLJ04",
+    "length": "1:44:04"
+   },
+   {
+    "n": 25,
+    "title": "Complex Facilitation (part 2)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZFMOXPJTW9g",
+    "length": "1:25:54"
+   },
+   {
+    "n": 30,
+    "title": "Complexity on One Slide",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=wAasuwQVfLM",
+    "length": "1:49:48"
+   },
+   {
+    "n": 32,
+    "title": "The Fog of Complexity",
+    "guests": [
+     "Thomas Vander Wal"
+    ],
+    "url": "https://www.youtube.com/watch?v=oP0NMdKR77U",
+    "length": "2:11:10"
+   },
+   {
+    "n": 33,
+    "title": "Complexity, Talking the Talk",
+    "guests": [
+     "Tony Quinlan"
+    ],
+    "url": "https://www.youtube.com/watch?v=rsngslaoYy4",
+    "length": "55:36"
+   },
+   {
+    "n": 34,
+    "title": "Explaining the Value of Complexity Approaches to Leaders",
+    "guests": [
+     "Mary Boone"
+    ],
+    "url": "https://www.youtube.com/watch?v=_3w5KACw-CA",
+    "length": "1:18:48"
+   },
+   {
+    "n": 40,
+    "title": "Narrative Assemblages",
+    "guests": [
+     "Ellie Snowden",
+     "Anna Panagiotou",
+     "Beth Smith"
+    ],
+    "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+    "length": "1:37:30"
+   },
+   {
+    "n": 43,
+    "title": "Sole Fide",
+    "guests": [
+     "Dave Snowden"
+    ],
+    "url": "https://www.youtube.com/watch?v=WFJ5L6xonJI",
+    "length": "1:53:46"
+   },
+   {
+    "n": 46,
+    "title": "My Life at Boeing",
+    "guests": [
+     "Dave Noll"
+    ],
+    "url": "https://www.youtube.com/watch?v=yjQb2gVUQOM",
+    "length": "1:53:00"
+   },
+   {
+    "n": 64,
+    "title": "Pattern Logic in Complex Adaptive Systems",
+    "guests": [
+     "Glenda Eoyang"
+    ],
+    "url": "https://www.youtube.com/watch?v=k6nv2J_N0PI",
+    "length": "1:48:56"
    }
   ]
  },
@@ -1719,6 +2428,200 @@
      "Elinor Ostrom"
     ]
    }
+  ],
+  "watch": [
+   {
+    "n": 13,
+    "title": "Organization as Discovery",
+    "guests": [
+     "Marc Burgauer"
+    ],
+    "url": "https://www.youtube.com/watch?v=zvg4WipiXPA",
+    "length": "2:10:12"
+   },
+   {
+    "n": 38,
+    "title": "The Living Organization: Bridging Complexity Theory",
+    "guests": [
+     "Christina Bowen"
+    ],
+    "url": "https://www.youtube.com/watch?v=IZx5IfPQDsg",
+    "length": "1:39:57"
+   }
+  ]
+ },
+ {
+  "name": "Complex responsive processes",
+  "cluster": "Organizing and sensemaking",
+  "kind": "Lineage",
+  "overview": "Organizations are not systems that managers stand outside and design. They are patterns of conversation and power between people, continually reproduced and changed in everyday interaction. Change happens in local relating, not in plans.",
+  "road": "Norbert Elias (figurations: people bound together in shifting webs of interdependence) → George Herbert Mead (the self arises in social gesture and response) → Ralph Stacey (complex responsive processes of relating, with Patricia Shaw and Douglas Griffin) → Patricia Shaw (changing conversations in organizations) → Christopher Mowles (reflexive practice, Doctor of Management at Hertfordshire) → Chris Rodgers (informal coalitions)",
+  "mix": "Karl Weick, Group Relations, Bohm Dialogue, Cynefin",
+  "policy": "Treating policy and reform as conversations that shift what people take for granted, paying attention to power and anxiety in meetings, and building reflection into how public managers learn.",
+  "links": [
+   {
+    "t": "Complexity and Management blog (University of Hertfordshire staff group)",
+    "u": "https://complexityandmanagement.com/about/"
+   },
+   {
+    "t": "Ralph D. Stacey (overview)",
+    "u": "https://en.wikipedia.org/wiki/Ralph_D._Stacey"
+   },
+   {
+    "t": "Christopher Mowles, University of Hertfordshire",
+    "u": "https://researchprofiles.herts.ac.uk/en/persons/christopher-mowles/"
+   }
+  ],
+  "terms": [
+   "complex responsive",
+   "stacey",
+   "mowles",
+   "patricia shaw",
+   "elias",
+   "reflexiv",
+   "conversation",
+   "relating"
+  ],
+  "caps": [
+   "Leading in Complexity",
+   "Critical Consciousness"
+  ],
+  "id": "complex-responsive-processes",
+  "orgs": [
+   "complexity-lounge",
+   "complexity-management-herts"
+  ],
+  "cases": [
+   "gp-chronic-care"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "crp",
+  "short_name": "Complex responsive processes",
+  "family": "sci",
+  "sectors": [
+   "biz",
+   "gov",
+   "ngo"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "int"
+  ],
+  "goals": [
+   "others"
+  ],
+  "lens": "Complexity as relating: global patterns in an organization arise only from local interaction between people, so no one, including leaders, can step outside the game to control it.",
+  "lens_status": "draft",
+  "explainer": [
+   "Complex responsive processes is a way of seeing organizations developed at the University of Hertfordshire by Ralph Stacey, Patricia Shaw and Douglas Griffin around 2000. It borrows from complexity science but rejects the idea that an organization is a system someone can stand outside and design. What we call an organization is the ongoing pattern of people talking, negotiating, cooperating and competing.",
+   "Drawing on the sociologist Norbert Elias and the philosopher George Herbert Mead, it pays close attention to power, identity and anxiety in everyday interaction. Change does not roll out from a plan; it emerges as many local conversations shift what people take for granted. Christopher Mowles and colleagues teach it through reflexive practice: managers study their own experience of work, with others."
+  ],
+  "practice": [
+   "Keep a short journal of a meeting that mattered: who spoke, who didn't, what shifted, how you felt.",
+   "Notice the gap between the official plan and what people actually talk about in corridors. That gap is where change is happening.",
+   "Ask a colleague to read your account and tell you what they notice that you didn't.",
+   "Next time a change programme stalls, ask whose identity or standing it threatens, not only what the process is missing."
+  ],
+  "sector_notes": {
+   "biz": "Managers use it to make sense of why strategies drift and how informal coalitions really shape decisions.",
+   "ngo": "Helps organizations see partnership work as ongoing negotiation rather than delivery of a shared plan.",
+   "health": "Studies of change in general practice and hospitals use it to explain improvement that no plan predicted.",
+   "edu": "Taught through the Doctor of Management at Hertfordshire as reflexive, practice-based research.",
+   "com": "Shows community change as shifts in everyday relating and power, not the output of a project."
+  },
+  "key_ideas": [
+   {
+    "term": "complex responsive processes",
+    "defn": "Seeing an organization as ongoing patterns of relating between people, not a system that can be designed from outside."
+   },
+   {
+    "term": "figuration",
+    "defn": "Norbert Elias's term for webs of interdependent people whose patterns no one controls."
+   },
+   {
+    "term": "reflexivity",
+    "defn": "Thinking about how your own position and assumptions shape what you notice and do."
+   },
+   {
+    "term": "informal coalitions",
+    "defn": "The shifting, unofficial groupings through which much of an organization's real work and change happens."
+   }
+  ],
+  "plain_overview": "Organizations as everyday conversations and power between people, where change happens in local relating rather than plans.",
+  "plain_policy": "Treating reform as conversations that shift what people take for granted, with attention to power and reflection.",
+  "stops": [
+   {
+    "name": "Norbert Elias",
+    "note": "figurations: people bound together in shifting webs of interdependence",
+    "years": "1897–1990",
+    "people": [
+     "Norbert Elias"
+    ]
+   },
+   {
+    "name": "George Herbert Mead",
+    "note": "the self arises in social gesture and response",
+    "years": "1863–1931",
+    "people": [
+     "George Herbert Mead"
+    ]
+   },
+   {
+    "name": "Ralph Stacey",
+    "note": "complex responsive processes of relating, with Patricia Shaw and Douglas Griffin",
+    "years": "d. 2021",
+    "people": [
+     "Ralph Stacey"
+    ]
+   },
+   {
+    "name": "Patricia Shaw",
+    "note": "changing conversations in organizations",
+    "years": "",
+    "people": [
+     "Patricia Shaw"
+    ]
+   },
+   {
+    "name": "Christopher Mowles",
+    "note": "reflexive practice, Doctor of Management at Hertfordshire",
+    "years": "",
+    "people": [
+     "Christopher Mowles"
+    ]
+   },
+   {
+    "name": "Chris Rodgers",
+    "note": "informal coalitions",
+    "years": "",
+    "people": [
+     "Chris Rodgers"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 54,
+    "title": "Complexity and Change",
+    "guests": [
+     "Christopher Mowles"
+    ],
+    "url": "https://www.youtube.com/watch?v=kG83GJTkjJ0",
+    "length": "1:54:56"
+   },
+   {
+    "n": 63,
+    "title": "The Wiggly World of Organizations",
+    "guests": [
+     "Chris Rodgers"
+    ],
+    "url": "https://www.youtube.com/watch?v=0FtPO-7MS6s",
+    "length": "1:51:24"
+   }
   ]
  },
  {
@@ -1850,14 +2753,15 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Hosting and participatory practice",
   "cluster": "Movements and hosting",
   "overview": "Methods for convening groups so that collective intelligence and new patterns can emerge from the room.",
   "road": "Harrison Owen (Open Space) → Juanita Brown and David Isaacs (World Café) → Art of Hosting (Toke Møller, Chris Corrigan) → Liberating Structures (Lipmanowicz and McCandless) → Warm Data Labs",
-  "mix": "David Bohm (On Dialogue), sociocracy, Social Presencing Theater",
+  "mix": "David Bohm (On Dialogue), sociocracy, Social Presencing Theater; Chris Corrigan",
   "policy": "Participatory processes, citizens' assemblies, and deliberative forums, with Art of Hosting methods long used in public institutions.",
   "links": [
    {
@@ -1991,6 +2895,37 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": [
+   {
+    "n": 5,
+    "title": "What are Constraints in a Complex System?",
+    "guests": [
+     "Chris Corrigan"
+    ],
+    "url": "https://www.youtube.com/watch?v=oLN_mjR0wxA",
+    "length": "1:38:01"
+   },
+   {
+    "n": 24,
+    "title": "Complex Facilitation & Sense-making (part 1)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=VefzETBLJ04",
+    "length": "1:44:04"
+   },
+   {
+    "n": 25,
+    "title": "Complex Facilitation (part 2)",
+    "guests": [
+     "Viv Read",
+     "Julie Cunningham"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZFMOXPJTW9g",
+    "length": "1:25:54"
+   }
   ]
  },
  {
@@ -2117,7 +3052,8 @@
      "Peter Senge"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "T-groups and sensitivity training",
@@ -2242,7 +3178,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Group Relations",
@@ -2360,7 +3297,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Appreciative Inquiry",
@@ -2472,7 +3410,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Work That Reconnects",
@@ -2589,7 +3528,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Somatic and embodied practice",
@@ -2725,7 +3665,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Power analysis",
@@ -2854,7 +3795,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Narrative change",
@@ -2992,6 +3934,28 @@
     "people": [
      "Marshall Ganz"
     ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 33,
+    "title": "Complexity, Talking the Talk",
+    "guests": [
+     "Tony Quinlan"
+    ],
+    "url": "https://www.youtube.com/watch?v=rsngslaoYy4",
+    "length": "55:36"
+   },
+   {
+    "n": 40,
+    "title": "Narrative Assemblages",
+    "guests": [
+     "Ellie Snowden",
+     "Anna Panagiotou",
+     "Beth Smith"
+    ],
+    "url": "https://www.youtube.com/watch?v=yHjhCJ6Yz1E",
+    "length": "1:37:30"
    }
   ]
  },
@@ -3136,6 +4100,187 @@
      "Marshall Rosenberg"
     ]
    }
+  ],
+  "watch": [
+   {
+    "n": 51,
+    "title": "Polarity Thinking: Patterns that Illuminate Complexity",
+    "guests": [
+     "Gemma Jiang"
+    ],
+    "url": "https://www.youtube.com/watch?v=uDNelJ2uGQE",
+    "length": "1:58:44"
+   }
+  ]
+ },
+ {
+  "name": "Technology, AI, and complexity",
+  "cluster": "Power, narrative, and conflict",
+  "kind": "Field",
+  "overview": "What happens when automated systems meet complex social life. Models trained on the past freeze patterns in place, measure what is easy rather than what matters, and fall hardest on people who are already marginalized, so the question is who is harmed, not only how accurate the model is.",
+  "road": "Norbert Wiener (warnings about automation) → Abeba Birhane (relational ethics, complexity and machine learning) → Timnit Gebru and Emily M. Bender (the stochastic parrots paper) → Kate Crawford (<i>Atlas of AI</i>)",
+  "mix": "John Willis on Deming and AI, Dave Snowden and Simon Wardley on AI, power analysis, measurement and accountability",
+  "policy": "Impact assessment and redress before automated decisions touch benefits, policing or health; banning protected characteristics as risk factors; keeping humans accountable for decisions a model informs.",
+  "links": [
+   {
+    "t": "Birhane and Cummins: Algorithmic Injustices, towards a relational ethics (arXiv)",
+    "u": "https://arxiv.org/abs/1912.07376"
+   },
+   {
+    "t": "Distributed AI Research Institute (DAIR)",
+    "u": "https://www.dair-institute.org/"
+   },
+   {
+    "t": "Amnesty International: Xenophobic machines (2021)",
+    "u": "https://www.amnesty.org/en/documents/eur35/4686/2021/en/"
+   }
+  ],
+  "terms": [
+   "artificial intelligence",
+   "machine learning",
+   "algorithm",
+   "ai ethics",
+   "birhane",
+   "data",
+   "automation",
+   "bias"
+  ],
+  "caps": [
+   "Critical Consciousness",
+   "Positionality & Power Analysis"
+  ],
+  "id": "technology-ai-and-complexity",
+  "orgs": [
+   "dair"
+  ],
+  "cases": [
+   "dutch-benefits"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "techai",
+  "short_name": "Technology and AI",
+  "family": "chg",
+  "sectors": [
+   "biz",
+   "gov",
+   "com"
+  ],
+  "scales": [
+   "pol",
+   "org"
+  ],
+  "work_kinds": [
+   "pol",
+   "att"
+  ],
+  "goals": [
+   "policy",
+   "power"
+  ],
+  "lens": "Complexity as entanglement: AI systems are part of the social systems they model, so they change the patterns they predict, and their harms show up unevenly, far from where they were built.",
+  "lens_status": "draft",
+  "explainer": [
+   "AI and machine learning systems learn patterns from past data and use them to predict or decide. In complex social settings, the past contains the injustices of the past, and a model can freeze them in place. Abeba Birhane argues for a relational ethics: start from the people most likely to be harmed and their context, rather than from abstract fairness metrics.",
+   "Timnit Gebru, Emily M. Bender and colleagues warned in 2021 about the costs and risks of ever larger language models. Kate Crawford's Atlas of AI traces the labour, data and minerals behind AI. In the Complexity Lounge, John Willis applies Deming's system of profound knowledge to AI, and Dave Snowden and Simon Wardley discuss what AI does to sensemaking and strategy."
+  ],
+  "practice": [
+   "Before using a model to make decisions about people, ask who could be harmed and how they could appeal.",
+   "Check whether any input stands in for a protected characteristic, as nationality did in the Dutch benefits scandal.",
+   "Keep a human accountable for each decision a model informs, with the authority to overrule it.",
+   "Treat AI output as a hypothesis to test in context, not an answer."
+  ],
+  "sector_notes": {
+   "biz": "Companies face growing duties to assess AI risks, document data and explain automated decisions.",
+   "ngo": "Civil society groups audit public algorithms and support people harmed by them.",
+   "health": "Diagnostic and triage models need testing on the populations they will actually serve.",
+   "edu": "AI literacy for students and teachers: what models can and cannot know.",
+   "com": "Communities organize to demand transparency about systems used in policing, housing and benefits."
+  },
+  "key_ideas": [
+   {
+    "term": "relational ethics",
+    "defn": "Starting AI ethics from relationships and the people most likely to be harmed, rather than abstract principles."
+   },
+   {
+    "term": "algorithmic bias",
+    "defn": "Systematic unfairness in an automated system, often inherited from past data."
+   },
+   {
+    "term": "proxy discrimination",
+    "defn": "When an input like postcode or nationality stands in for a protected characteristic."
+   },
+   {
+    "term": "human in the loop",
+    "defn": "Keeping a person accountable for decisions an automated system informs."
+   }
+  ],
+  "plain_overview": "What happens when automated systems meet complex social life, and who gets harmed.",
+  "plain_policy": "Impact checks and a way to appeal before automated decisions touch benefits, policing or health.",
+  "stops": [
+   {
+    "name": "Norbert Wiener",
+    "note": "warnings about automation",
+    "years": "1894–1964",
+    "people": [
+     "Norbert Wiener"
+    ]
+   },
+   {
+    "name": "Abeba Birhane",
+    "note": "relational ethics, complexity and machine learning",
+    "years": "",
+    "people": [
+     "Abeba Birhane"
+    ]
+   },
+   {
+    "name": "Timnit Gebru and Emily M. Bender",
+    "note": "the stochastic parrots paper",
+    "years": "b. 1973",
+    "people": [
+     "Timnit Gebru",
+     "Emily M. Bender"
+    ]
+   },
+   {
+    "name": "Kate Crawford",
+    "note": "Atlas of AI",
+    "years": "",
+    "people": [
+     "Kate Crawford"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 15,
+    "title": "Complexity and Machine Learning",
+    "guests": [
+     "Abeba Birhane"
+    ],
+    "url": "https://www.youtube.com/watch?v=msuFdJe0rtI",
+    "length": "1:39:56"
+   },
+   {
+    "n": 55,
+    "title": "Deming’s System of Profound Knowledge as a Framework for AI",
+    "guests": [
+     "John Willis"
+    ],
+    "url": "https://www.youtube.com/watch?v=_VcGb-dmIq8",
+    "length": "2:21:57"
+   },
+   {
+    "n": 57,
+    "title": "An AI Rant",
+    "guests": [
+     "Dave Snowden",
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=KC9-_Gt--Gk",
+    "length": "2:20:07"
+   }
   ]
  },
  {
@@ -3180,7 +4325,8 @@
    "nhc"
   ],
   "cases": [
-   "sva"
+   "sva",
+   "columbia-caib"
   ],
   "gov": true,
   "reading": [],
@@ -3284,6 +4430,17 @@
     "people": [
      "Dean Spade"
     ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 8,
+    "title": "Framing Complex Systems: Reality, Language, and Flow",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=zgCI95nKb88",
+    "length": "1:46:41"
    }
   ]
  },
@@ -3422,6 +4579,200 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": []
+ },
+ {
+  "name": "Resilience engineering and safety science",
+  "cluster": "Crisis and transition",
+  "kind": "Field",
+  "overview": "Why things usually go right, not only why they go wrong. Safety comes from people adapting to messy, changing work, so organizations learn more from everyday work and near misses than from blame after accidents.",
+  "road": "Diane Vaughan (normalization of deviance) → Erik Hollnagel (Safety-II: learning from what goes right) → David Woods (resilience engineering) → Richard Cook (<i>How Complex Systems Fail</i>) → Sidney Dekker (just culture, drift into failure) → Ron Westrum (a typology of organizational cultures)",
+  "mix": "Karl Weick and high reliability organizing, Gary Klein (naturalistic decision making), Cynefin's work on safety, the crisis pathway",
+  "policy": "Incident reviews that ask how work is really done, not who to blame; regulators and health systems moving from counting errors to learning from everyday adaptation.",
+  "links": [
+   {
+    "t": "Richard Cook: How Complex Systems Fail",
+    "u": "https://how.complexsystems.fail/"
+   },
+   {
+    "t": "Hollnagel, Wears and Braithwaite: From Safety-I to Safety-II, a white paper (NHS England, PDF)",
+    "u": "https://www.england.nhs.uk/signuptosafety/wp-content/uploads/sites/16/2015/10/safety-1-safety-2-whte-papr.pdf"
+   },
+   {
+    "t": "DORA: generative organizational culture (Westrum's typology)",
+    "u": "https://dora.dev/capabilities/generative-organizational-culture/"
+   }
+  ],
+  "terms": [
+   "resilience",
+   "safety",
+   "safety-ii",
+   "hollnagel",
+   "dekker",
+   "westrum",
+   "just culture",
+   "incident",
+   "accident",
+   "near miss"
+  ],
+  "caps": [
+   "Leading in Complexity",
+   "Data Analysis & Evaluation"
+  ],
+  "id": "resilience-engineering-and-safety-science",
+  "orgs": [
+   "complexity-lounge",
+   "dora"
+  ],
+  "cases": [
+   "columbia-caib"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "resil",
+  "short_name": "Resilience engineering",
+  "family": "chg",
+  "sectors": [
+   "gov",
+   "biz"
+  ],
+  "scales": [
+   "org",
+   "pol"
+  ],
+  "work_kinds": [
+   "car"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as constant adaptation: complex systems run in a degraded mode all the time, and safety is something people actively create in the gap between how work is imagined and how it is done.",
+  "lens_status": "draft",
+  "explainer": [
+   "Resilience engineering grew out of studies of accidents in aviation, nuclear power, health care and space flight. Researchers such as Erik Hollnagel, David Woods and Richard Cook noticed that complex systems are always partly broken, and that things usually go right because people constantly adjust: they spot trouble, improvise, and work around gaps in procedures.",
+   "Safety-II, Hollnagel's term, means learning from that everyday adaptation, not only counting failures. Sidney Dekker added just culture: blaming the person closest to an accident hides the pressures that made the error likely. Ron Westrum showed that how information flows (pathological, bureaucratic or generative cultures) predicts how safely organizations perform."
+  ],
+  "practice": [
+   "After an incident, ask 'how did this make sense to the people at the time?' before asking what they did wrong.",
+   "Study a normal day's work: where do people adapt procedures to get the job done? Those adaptations are your safety.",
+   "Run a short learning review after successes as well as failures.",
+   "Check how bad news travels in your team. If messengers are shot, you are in what Westrum calls a pathological culture."
+  ],
+  "sector_notes": {
+   "biz": "Software and operations teams use blameless postmortems and Westrum's culture model, validated by DORA research.",
+   "ngo": "Humanitarian and field teams learn from near misses in insecure settings.",
+   "health": "Safety-II is now part of patient safety policy, shifting attention from errors to how care usually goes right.",
+   "edu": "Taught in human factors, engineering and medical education.",
+   "com": "Community emergency groups use after-action reviews to learn without blame."
+  },
+  "key_ideas": [
+   {
+    "term": "safety-ii",
+    "defn": "Learning from how things usually go right, not only investigating what went wrong."
+   },
+   {
+    "term": "just culture",
+    "defn": "Treating errors as information about the system rather than reasons to punish individuals, while still holding reckless behaviour to account."
+   },
+   {
+    "term": "normalization of deviance",
+    "defn": "Diane Vaughan's term for how small departures from safe practice become accepted as normal over time."
+   },
+   {
+    "term": "generative culture",
+    "defn": "Ron Westrum's name for organizations where information flows freely to whoever needs it and messengers are trained, not blamed."
+   }
+  ],
+  "plain_overview": "Why things usually go right, and how to learn from everyday work and near misses instead of blaming people after accidents.",
+  "plain_policy": "Incident reviews that learn rather than blame, and safety regulation that studies how work is really done.",
+  "stops": [
+   {
+    "name": "Diane Vaughan",
+    "note": "normalization of deviance",
+    "years": "",
+    "people": [
+     "Diane Vaughan"
+    ]
+   },
+   {
+    "name": "Erik Hollnagel",
+    "note": "Safety-II: learning from what goes right",
+    "years": "",
+    "people": [
+     "Erik Hollnagel"
+    ]
+   },
+   {
+    "name": "David Woods",
+    "note": "resilience engineering",
+    "years": "",
+    "people": [
+     "David Woods"
+    ]
+   },
+   {
+    "name": "Richard Cook",
+    "note": "How Complex Systems Fail",
+    "years": "",
+    "people": [
+     "Richard Cook"
+    ]
+   },
+   {
+    "name": "Sidney Dekker",
+    "note": "just culture, drift into failure",
+    "years": "b. 1969",
+    "people": [
+     "Sidney Dekker"
+    ]
+   },
+   {
+    "name": "Ron Westrum",
+    "note": "a typology of organizational cultures",
+    "years": "b. 1945",
+    "people": [
+     "Ron Westrum"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 4,
+    "title": "Cynefin & Safety",
+    "guests": [
+     "Michael Cheveldave"
+    ],
+    "url": "https://www.youtube.com/watch?v=rx2-QbpAYCI",
+    "length": "1:49:38"
+   },
+   {
+    "n": 8,
+    "title": "Framing Complex Systems: Reality, Language, and Flow",
+    "guests": [
+     "Gregory Vigneaux"
+    ],
+    "url": "https://www.youtube.com/watch?v=zgCI95nKb88",
+    "length": "1:46:41"
+   },
+   {
+    "n": 23,
+    "title": "Perspectives on Resilient People and Systems",
+    "guests": [
+     "Ian Snape"
+    ],
+    "url": "https://www.youtube.com/watch?v=K-IIYCnlO-o",
+    "length": "1:37:14"
+   },
+   {
+    "n": 42,
+    "title": "A Talk on Hidden Events",
+    "guests": [
+     "Ron Westrum"
+    ],
+    "url": "https://www.youtube.com/watch?v=t2tah6EyixI",
+    "length": "1:52:43"
+   }
   ]
  },
  {
@@ -3429,7 +4780,7 @@
   "cluster": "Policy, systemic design, and economics",
   "overview": "Moving public management from targets and linear delivery toward learning, relationships, experimentation, and adaptive stewardship.",
   "road": "Rittel and Webber (wicked problems) → Donella Meadows (leverage points) → Geoff Mulgan (collective intelligence, public imagination) → Toby Lowe (Human Learning Systems) → Hilary Cottam (Radical Help, the relational state)",
-  "mix": "Mariana Mazzucato (mission-oriented policy), Christian Bason (design for policy), Indy Johar (Dark Matter Labs), Bill Sharpe (Three Horizons), UNDP's portfolio approach to systems change",
+  "mix": "Mariana Mazzucato (mission-oriented policy), Christian Bason (design for policy), Indy Johar (Dark Matter Labs), Bill Sharpe (Three Horizons), UNDP's portfolio approach to systems change; Thea Snow (relational government)",
   "policy": "This is the home field for the policy lens. Read it alongside the Strategy, money, and accountability cluster, where budgets, contracts, and metrics decide whether any of this survives contact with a real institution.",
   "links": [
    {
@@ -3600,7 +4951,8 @@
      "Hilary Cottam"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Systemic design and futures",
@@ -3741,7 +5093,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Complexity economics and new economic models",
@@ -3877,7 +5230,8 @@
      "Kate Raworth"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Strategy under uncertainty",
@@ -4004,7 +5358,9 @@
     "name": "Simon Wardley",
     "note": "Wardley Mapping",
     "years": "",
-    "people": []
+    "people": [
+     "Simon Wardley"
+    ]
    },
    {
     "name": "Nassim Nicholas Taleb",
@@ -4013,6 +5369,45 @@
     "people": [
      "Nassim Nicholas Taleb"
     ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 10,
+    "title": "Accelerated Learning at Scale: The U.S. Navy, 1898-1945",
+    "guests": [
+     "Trent Hone"
+    ],
+    "url": "https://www.youtube.com/watch?v=7gM2rqK4MEI",
+    "length": "1:54:53"
+   },
+   {
+    "n": 11,
+    "title": "The Complexity Jigsaw",
+    "guests": [
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=PJxC06o9S4Q",
+    "length": "1:45:28"
+   },
+   {
+    "n": 35,
+    "title": "X Marks the Spot: Navigating Possible Futures",
+    "guests": [
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=0S64uQzI62M",
+    "length": "2:13:46"
+   },
+   {
+    "n": 57,
+    "title": "An AI Rant",
+    "guests": [
+     "Dave Snowden",
+     "Simon Wardley"
+    ],
+    "url": "https://www.youtube.com/watch?v=KC9-_Gt--Gk",
+    "length": "2:20:07"
    }
   ]
  },
@@ -4151,7 +5546,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Measurement and accountability",
@@ -4191,7 +5587,8 @@
   ],
   "cases": [
    "hls-cases",
-   "strive"
+   "strive",
+   "dutch-benefits"
   ],
   "gov": true,
   "reading": [],
@@ -4283,7 +5680,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Government plumbing",
@@ -4329,7 +5727,8 @@
   ],
   "cases": [
    "plymouth",
-   "gds"
+   "gds",
+   "portsmouth-repairs"
   ],
   "gov": true,
   "reading": [],
@@ -4423,7 +5822,8 @@
      "Jennifer Pahlka"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Teams and learning cultures",
@@ -4431,7 +5831,7 @@
   "kind": "Method",
   "overview": "The team-level conditions that let people surface bad news, learn fast, and organize around flow instead of hierarchy.",
   "road": "Amy Edmondson (psychological safety, teaming) → Jeff Gothelf and Josh Seiden (<i>Sense and Respond</i>) → Matthew Skelton and Manuel Pais (<i>Team Topologies</i>)",
-  "mix": "Deming, sociocracy, T-groups",
+  "mix": "Deming, sociocracy, T-groups; Nelson Repenning (Dynamic Work Design), Mary Uhl-Bien (complexity leadership), Gemma Jiang and Barry Johnson (polarity thinking), Tiani Jones",
   "policy": "Blameless reviews in public agencies, product teams that own a service end to end, and outcomes over outputs in digital delivery.",
   "links": [
    {
@@ -4460,7 +5860,8 @@
    "teamtop"
   ],
   "cases": [
-   "buurtzorg"
+   "buurtzorg",
+   "dora-research"
   ],
   "gov": false,
   "reading": [],
@@ -4544,6 +5945,90 @@
     "note": "Team Topologies",
     "years": "",
     "people": []
+   }
+  ],
+  "watch": [
+   {
+    "n": 6,
+    "title": "The Flow System",
+    "guests": [
+     "Nigel Thurlow",
+     "John Turner"
+    ],
+    "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+    "length": "1:49:38"
+   },
+   {
+    "n": 10,
+    "title": "Accelerated Learning at Scale: The U.S. Navy, 1898-1945",
+    "guests": [
+     "Trent Hone"
+    ],
+    "url": "https://www.youtube.com/watch?v=7gM2rqK4MEI",
+    "length": "1:54:53"
+   },
+   {
+    "n": 13,
+    "title": "Organization as Discovery",
+    "guests": [
+     "Marc Burgauer"
+    ],
+    "url": "https://www.youtube.com/watch?v=zvg4WipiXPA",
+    "length": "2:10:12"
+   },
+   {
+    "n": 16,
+    "title": "Mayhem Loves Company",
+    "guests": [
+     "Jim Benson"
+    ],
+    "url": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+    "length": "1:56:59"
+   },
+   {
+    "n": 27,
+    "title": "Patterns, Anti-Patterns, and Behaviors",
+    "guests": [
+     "Tiani Jones"
+    ],
+    "url": "https://www.youtube.com/watch?v=KwvDB1YP02M",
+    "length": "1:49:58"
+   },
+   {
+    "n": 36,
+    "title": "That’s Not My Agile",
+    "guests": [
+     "Karl Scotland"
+    ],
+    "url": "https://www.youtube.com/watch?v=KyAxWXQIrZ4",
+    "length": "1:42:48"
+   },
+   {
+    "n": 39,
+    "title": "Adopting Complexity Thinking in Organizations",
+    "guests": [
+     "Ebenezer Ikonne"
+    ],
+    "url": "https://www.youtube.com/watch?v=Zx-u98JTmeo",
+    "length": "1:54:19"
+   },
+   {
+    "n": 51,
+    "title": "Polarity Thinking: Patterns that Illuminate Complexity",
+    "guests": [
+     "Gemma Jiang"
+    ],
+    "url": "https://www.youtube.com/watch?v=uDNelJ2uGQE",
+    "length": "1:58:44"
+   },
+   {
+    "n": 52,
+    "title": "An Introduction to Dynamic Work Design",
+    "guests": [
+     "Nelson Repenning"
+    ],
+    "url": "https://www.youtube.com/watch?v=ttC7wK6Huco",
+    "length": "2:10:45"
    }
   ]
  },
@@ -4682,6 +6167,35 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": [
+   {
+    "n": 17,
+    "title": "Transformation, Is it a Thing?",
+    "guests": [
+     "Greg Brougham"
+    ],
+    "url": "https://www.youtube.com/watch?v=xw5jCH-u1QM",
+    "length": "1:40:43"
+   },
+   {
+    "n": 46,
+    "title": "My Life at Boeing",
+    "guests": [
+     "Dave Noll"
+    ],
+    "url": "https://www.youtube.com/watch?v=yjQb2gVUQOM",
+    "length": "1:53:00"
+   },
+   {
+    "n": 47,
+    "title": "Exaptation, Complexity & Technological Innovation",
+    "guests": [
+     "Pierpaolo Andriani"
+    ],
+    "url": "https://www.youtube.com/watch?v=0q8p5rqagBg",
+    "length": "2:01:55"
+   }
   ]
  },
  {
@@ -4802,7 +6316,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Design thinking",
@@ -4940,14 +6455,15 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Service design",
   "cluster": "Design and practice",
   "overview": "Services as journeys across touchpoints, with frontstage experience and backstage systems designed together.",
   "road": "Lynn Shostack (service blueprinting) → Birgit Mager (Köln) → Marc Stickdorn (This Is Service Design Doing) → Lou Downe (Good Services)",
-  "mix": "UK Government Digital Service, US Digital Service, 18F (closed 2025)",
+  "mix": "UK Government Digital Service, US Digital Service, 18F (closed 2025); Jen Briselli and Kyle Godbey (complexity in service design)",
   "policy": "End-to-end benefit and permit journeys, service standards, and blueprints that expose the policy and system constraints behind a bad experience.",
   "links": [
    {
@@ -5065,6 +6581,37 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": [
+   {
+    "n": 53,
+    "title": "Participatory Design & Complexity Science",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+    "length": "1:52:34"
+   },
+   {
+    "n": 58,
+    "title": "Participatory Design & Complexity Science 2",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=3mThT2Jzqhc",
+    "length": "2:08:54"
+   },
+   {
+    "n": 60,
+    "title": "Service Design & Social Complexity",
+    "guests": [
+     "Cameron Tonkinwise"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZJuwJN8kYvY",
+    "length": "1:52:51"
+   }
   ]
  },
  {
@@ -5072,7 +6619,7 @@
   "cluster": "Design and practice",
   "overview": "Designing with people rather than for them, with power named and shared in the process.",
   "road": "Scandinavian participatory design (Pelle Ehn, Kristen Nygaard) → Elizabeth Sanders (co-design) → Ezio Manzini (Design, When Everybody Designs) → Sasha Costanza-Chock (Design Justice) → Arturo Escobar (Designs for the Pluriverse)",
-  "mix": "The relational and Indigenous pathways",
+  "mix": "The relational and Indigenous pathways; Christopher Alexander (pattern languages), Jen Briselli and Kyle Godbey, Dori Tunstall (decolonizing design)",
   "policy": "Co-designing programs with the residents they serve, with explicit attention to who holds decision power.",
   "links": [
    {
@@ -5203,6 +6750,28 @@
      "Arturo Escobar"
     ]
    }
+  ],
+  "watch": [
+   {
+    "n": 53,
+    "title": "Participatory Design & Complexity Science",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=zikRwfDfbUs",
+    "length": "1:52:34"
+   },
+   {
+    "n": 58,
+    "title": "Participatory Design & Complexity Science 2",
+    "guests": [
+     "Jen Briselli",
+     "Kyle Godbey"
+    ],
+    "url": "https://www.youtube.com/watch?v=3mThT2Jzqhc",
+    "length": "2:08:54"
+   }
   ]
  },
  {
@@ -5304,7 +6873,20 @@
     "name": "Terry Irwin, Gideon Kossoff, and Cameron Tonkinwise",
     "note": "Carnegie Mellon",
     "years": "",
-    "people": []
+    "people": [
+     "Cameron Tonkinwise"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 60,
+    "title": "Service Design & Social Complexity",
+    "guests": [
+     "Cameron Tonkinwise"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZJuwJN8kYvY",
+    "length": "1:52:51"
    }
   ]
  },
@@ -5431,14 +7013,15 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Improvement and adaptive management",
   "cluster": "Design and practice",
   "overview": "Learning cycles built into daily operations, treating the organization as a system to be continually improved.",
   "road": "W. Edwards Deming (System of Profound Knowledge) → Toyota and Lean → Don Berwick and IHI (PDSA cycles) → Agile",
-  "mix": "Plexus Institute's healthcare work, Brenda Zimmerman",
+  "mix": "Plexus Institute's healthcare work, Brenda Zimmerman; Trisha Greenhalgh and Paul Plsek (complexity in health care), John Willis",
   "policy": "PDSA cycles in public health and service delivery, and continuous improvement units inside agencies.",
   "links": [
    {
@@ -5561,6 +7144,53 @@
     "years": "",
     "people": []
    }
+  ],
+  "watch": [
+   {
+    "n": 2,
+    "title": "Complexity Science Changed My Life with Type 1 Diabetes",
+    "guests": [
+     "Riva Greenberg"
+    ],
+    "url": "https://www.youtube.com/watch?v=tPjU3Tyx5BU",
+    "length": "1:38:05"
+   },
+   {
+    "n": 7,
+    "title": "The Problem with Problems",
+    "guests": [
+     "Bruce Waltuck"
+    ],
+    "url": "https://www.youtube.com/watch?v=_aIC5yCsx8w",
+    "length": "1:21:53"
+   },
+   {
+    "n": 28,
+    "title": "Re-contextualising 20+ Years of Learning",
+    "guests": [
+     "Chris McDermott"
+    ],
+    "url": "https://www.youtube.com/watch?v=PwWpJoQvm3Y",
+    "length": "1:56:56"
+   },
+   {
+    "n": 52,
+    "title": "An Introduction to Dynamic Work Design",
+    "guests": [
+     "Nelson Repenning"
+    ],
+    "url": "https://www.youtube.com/watch?v=ttC7wK6Huco",
+    "length": "2:10:45"
+   },
+   {
+    "n": 55,
+    "title": "Deming’s System of Profound Knowledge as a Framework for AI",
+    "guests": [
+     "John Willis"
+    ],
+    "url": "https://www.youtube.com/watch?v=_VcGb-dmIq8",
+    "length": "2:21:57"
+   }
   ]
  },
  {
@@ -5678,7 +7308,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Action research",
@@ -5797,7 +7428,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Positive deviance",
@@ -5896,6 +7528,262 @@
     "note": "",
     "years": "",
     "people": []
+   }
+  ],
+  "watch": []
+ },
+ {
+  "name": "Software, flow, and architecture",
+  "cluster": "Design and practice",
+  "kind": "Hybrid",
+  "overview": "Complexity as it shows up in building software: work flows or gets stuck, forecasts beat estimates, culture predicts delivery, and architectures should be designed to survive stresses nobody predicted.",
+  "road": "Taiichi Ohno (the Toyota Production System) → W. Edwards Deming (systems of profound knowledge) → Donald Reinertsen (<i>The Principles of Product Development Flow</i>) → Nicole Forsgren, Jez Humble and Gene Kim (<i>Accelerate</i>, DORA research) → Barry O'Reilly (residuality theory)",
+  "mix": "Simon Wardley, Troy Magennis (forecasting with flow data), Jim Benson (Personal Kanban, Lean Coffee), Nigel Thurlow and John Turner (The Flow System), Chris Matts (real options), Michael Feathers (legacy code), Christopher Alexander (pattern languages)",
+  "policy": "Digital service teams that measure flow and recovery rather than output, fund products not projects, and design public platforms to keep working when conditions change.",
+  "links": [
+   {
+    "t": "DORA research program",
+    "u": "https://dora.dev/research/"
+   },
+   {
+    "t": "The Flow System",
+    "u": "https://theflowsystem.com/"
+   },
+   {
+    "t": "DevOps Research and Assessment (overview)",
+    "u": "https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment"
+   }
+  ],
+  "terms": [
+   "flow",
+   "kanban",
+   "devops",
+   "software",
+   "architecture",
+   "lean",
+   "agile",
+   "forecast",
+   "residuality"
+  ],
+  "caps": [
+   "Experimenting & Building",
+   "Data Analysis & Evaluation"
+  ],
+  "id": "software-flow-and-architecture",
+  "orgs": [
+   "complexity-lounge",
+   "dora"
+  ],
+  "cases": [
+   "dora-research"
+  ],
+  "gov": false,
+  "reading": [],
+  "short": "flow",
+  "short_name": "Software and flow",
+  "family": "prc",
+  "sectors": [
+   "biz",
+   "gov"
+  ],
+  "scales": [
+   "grp",
+   "org"
+  ],
+  "work_kinds": [
+   "cra",
+   "adm"
+  ],
+  "goals": [
+   "uncertain"
+  ],
+  "lens": "Complexity as flow under uncertainty: you cannot predict how software work or its environment will change, so you design for fast feedback, small batches and architectures that survive surprises.",
+  "lens_status": "draft",
+  "explainer": [
+   "Software work is a complex system: requirements shift, dependencies surprise, and queues hide everywhere. The lean tradition from Taiichi Ohno and W. Edwards Deming, carried into software by Donald Reinertsen, focuses on flow: how work moves, where it waits, and what that delay costs. Forecasting from real flow data, as Troy Magennis teaches, usually beats estimating.",
+   "DORA's research, led by Nicole Forsgren, Jez Humble and Gene Kim, found that delivery performance and a generative culture go together. Barry O'Reilly's residuality theory takes complexity into architecture: instead of designing for predicted requirements, stress the design with many random scenarios and keep what survives. The Complexity Lounge has hosted many of these practitioners."
+  ],
+  "practice": [
+   "Visualize your team's work on a board and find where items wait the longest.",
+   "Limit work in progress and measure how long items take from start to done.",
+   "Forecast with your own throughput data (for example a simple Monte Carlo) instead of estimating each task.",
+   "Stress a design with a dozen unlikely scenarios and change it until it survives most of them."
+  ],
+  "sector_notes": {
+   "biz": "DORA metrics, kanban and flow-based forecasting are widespread in technology companies.",
+   "ngo": "Small digital teams in charities use kanban to manage too much work with too few people.",
+   "health": "Hospital IT and digital health teams use flow and blameless reviews for safer releases.",
+   "edu": "Software engineering courses now teach flow, DevOps and architecture under uncertainty.",
+   "com": "Civic tech volunteers use lightweight flow practices to keep projects moving."
+  },
+  "key_ideas": [
+   {
+    "term": "flow",
+    "defn": "How smoothly work moves from idea to done, and where it waits."
+   },
+   {
+    "term": "work in progress limit",
+    "defn": "A cap on how many items a team works on at once, to reduce waiting and switching."
+   },
+   {
+    "term": "residuality",
+    "defn": "Barry O'Reilly's idea: design architectures that keep working after unpredicted stresses, by testing them against many random scenarios."
+   },
+   {
+    "term": "generative culture",
+    "defn": "Ron Westrum's name for organizations where information flows freely and messengers are trained, not blamed."
+   }
+  ],
+  "plain_overview": "Complexity in software work: flow, forecasting, culture and architectures that survive surprises.",
+  "plain_policy": "Digital teams that measure flow and recovery, fund products not projects, and build platforms that cope with change.",
+  "stops": [
+   {
+    "name": "Taiichi Ohno",
+    "note": "the Toyota Production System",
+    "years": "1912–1990",
+    "people": [
+     "Taiichi Ohno"
+    ]
+   },
+   {
+    "name": "W. Edwards Deming",
+    "note": "systems of profound knowledge",
+    "years": "1900–1993",
+    "people": [
+     "W. Edwards Deming"
+    ]
+   },
+   {
+    "name": "Donald Reinertsen",
+    "note": "The Principles of Product Development Flow",
+    "years": "",
+    "people": [
+     "Donald Reinertsen"
+    ]
+   },
+   {
+    "name": "Nicole Forsgren, Jez Humble and Gene Kim",
+    "note": "Accelerate, DORA research",
+    "years": "b. 1978",
+    "people": [
+     "Nicole Forsgren",
+     "Jez Humble",
+     "Gene Kim"
+    ]
+   },
+   {
+    "name": "Barry O'Reilly",
+    "note": "residuality theory",
+    "years": "",
+    "people": [
+     "Barry O'Reilly"
+    ]
+   }
+  ],
+  "watch": [
+   {
+    "n": 6,
+    "title": "The Flow System",
+    "guests": [
+     "Nigel Thurlow",
+     "John Turner"
+    ],
+    "url": "https://www.youtube.com/watch?v=QJ7H6qtYq6Q",
+    "length": "1:49:38"
+   },
+   {
+    "n": 11,
+    "title": "The Complexity Jigsaw",
+    "guests": [
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=PJxC06o9S4Q",
+    "length": "1:45:28"
+   },
+   {
+    "n": 16,
+    "title": "Mayhem Loves Company",
+    "guests": [
+     "Jim Benson"
+    ],
+    "url": "https://www.youtube.com/watch?v=FTsWCeCcBSM",
+    "length": "1:56:59"
+   },
+   {
+    "n": 18,
+    "title": "Forms: An Experiment in Behavioral and Structural Abstraction",
+    "guests": [
+     "Michael Feathers"
+    ],
+    "url": "https://www.youtube.com/watch?v=S2WMvLZNnIc",
+    "length": "1:37:48"
+   },
+   {
+    "n": 19,
+    "title": "Constraints, Materiality, and Higher Order Systems",
+    "guests": [
+     "Trent Hone",
+     "Greg Brougham",
+     "Marc Burgauer",
+     "Chris Combe",
+     "Chris Matts"
+    ],
+    "url": "https://www.youtube.com/watch?v=mMx2oQiG5HU",
+    "length": "1:43:23"
+   },
+   {
+    "n": 22,
+    "title": "Residuality Theory: Philosophy and Practice",
+    "guests": [
+     "Barry O'Reilly"
+    ],
+    "url": "https://www.youtube.com/watch?v=iqcIzLL-nhY",
+    "length": "1:58:36"
+   },
+   {
+    "n": 28,
+    "title": "Re-contextualising 20+ Years of Learning",
+    "guests": [
+     "Chris McDermott"
+    ],
+    "url": "https://www.youtube.com/watch?v=PwWpJoQvm3Y",
+    "length": "1:56:56"
+   },
+   {
+    "n": 29,
+    "title": "Agile Physics, The Math of Flow",
+    "guests": [
+     "Troy Magennis"
+    ],
+    "url": "https://www.youtube.com/watch?v=LneIyW9K7LQ",
+    "length": "1:50:34"
+   },
+   {
+    "n": 36,
+    "title": "That’s Not My Agile",
+    "guests": [
+     "Karl Scotland"
+    ],
+    "url": "https://www.youtube.com/watch?v=KyAxWXQIrZ4",
+    "length": "1:42:48"
+   },
+   {
+    "n": 37,
+    "title": "Emergence and Abundance",
+    "guests": [
+     "JD Carlston"
+    ],
+    "url": "https://www.youtube.com/watch?v=rXx6XJAYuQ4",
+    "length": "1:42:30"
+   },
+   {
+    "n": 45,
+    "title": "The Architect’s Paradox",
+    "guests": [
+     "Barry O'Reilly"
+    ],
+    "url": "https://www.youtube.com/watch?v=Qq8x7KIV4W8",
+    "length": "2:01:06"
    }
   ]
  },
@@ -6033,7 +7921,8 @@
      "Donald Schön"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Transformative learning",
@@ -6153,6 +8042,17 @@
     "note": "threshold concepts and troublesome knowledge",
     "years": "",
     "people": []
+   }
+  ],
+  "watch": [
+   {
+    "n": 61,
+    "title": "A Generalized Modeling Approach to Learning and Creativity",
+    "guests": [
+     "Yağmur Denizhan"
+    ],
+    "url": "https://www.youtube.com/watch?v=yZyI0LZvEks",
+    "length": "1:41:23"
    }
   ]
  },
@@ -6290,7 +8190,8 @@
      "bell hooks"
     ]
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Communities of practice and action learning",
@@ -6417,7 +8318,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Adult development and immunity to change",
@@ -6547,7 +8449,8 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  },
  {
   "name": "Complexity and education",
@@ -6681,6 +8584,7 @@
     "years": "",
     "people": []
    }
-  ]
+  ],
+  "watch": []
  }
 ]

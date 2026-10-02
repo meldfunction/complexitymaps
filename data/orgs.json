@@ -1429,5 +1429,125 @@
     "u": "https://www.semioticsocietyofamerica.org/"
    }
   ]
+ },
+ {
+  "id": "complexity-lounge",
+  "name": "The Complexity Lounge",
+  "url": "https://www.youtube.com/@ComplexityLounge/videos",
+  "summary": "A practitioner meetup, started in New York, that has posted 65 recorded talks on complexity science, Cynefin, constraints, flow and organizational change, with guests from Dave Snowden to Karl Friston.",
+  "pathways": [
+   "sensemaking-and-acting-in-uncertainty",
+   "mind-life-and-constraints",
+   "software-flow-and-architecture",
+   "resilience-engineering-and-safety-science",
+   "complex-responsive-processes",
+   "systems-thinking-traditions-hard-soft-and-critical"
+  ],
+  "media": [
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #12: The Latest from the Cynefin Centre (Dave Snowden)",
+    "u": "https://www.youtube.com/watch?v=RziJzC6bYeE"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #21: Cause and Constraints (Alicia Juarrero)",
+    "u": "https://www.youtube.com/watch?v=AIlSGHivdgE"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #62: The Nature of Everything (Karl Friston)",
+    "u": "https://www.youtube.com/watch?v=UsxzgvGujLk"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #54: Complexity and Change (Christopher Mowles)",
+    "u": "https://www.youtube.com/watch?v=kG83GJTkjJ0"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #41: Systems Thinking & The Management of Complexity (Michael C. Jackson)",
+    "u": "https://www.youtube.com/watch?v=rAiKvalPhkY"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #42: A Talk on Hidden Events (Ron Westrum)",
+    "u": "https://www.youtube.com/watch?v=t2tah6EyixI"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #15: Complexity and Machine Learning (Abeba Birhane)",
+    "u": "https://www.youtube.com/watch?v=msuFdJe0rtI"
+   }
+  ]
+ },
+ {
+  "id": "complexity-management-herts",
+  "name": "Complexity and Management (University of Hertfordshire)",
+  "url": "https://complexityandmanagement.com/about/",
+  "summary": "Blog of the staff group on Hertfordshire's Doctor of Management, which teaches organizations as complex responsive processes of relating through reflexive research on practitioners' own work.",
+  "pathways": [
+   "complex-responsive-processes"
+  ],
+  "media": [
+   {
+    "kind": "Article",
+    "title": "About the blog",
+    "u": "https://complexityandmanagement.com/about/"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #54: Complexity and Change (Christopher Mowles)",
+    "u": "https://www.youtube.com/watch?v=kG83GJTkjJ0"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #63: The Wiggly World of Organizations (Chris Rodgers)",
+    "u": "https://www.youtube.com/watch?v=0FtPO-7MS6s"
+   }
+  ]
+ },
+ {
+  "id": "dora",
+  "name": "DORA (DevOps Research and Assessment)",
+  "url": "https://dora.dev/",
+  "summary": "Research program on software delivery performance and culture, founded by Nicole Forsgren, Jez Humble and Gene Kim and now part of Google Cloud.",
+  "pathways": [
+   "software-flow-and-architecture",
+   "resilience-engineering-and-safety-science"
+  ],
+  "media": [
+   {
+    "kind": "Research",
+    "title": "DORA research program",
+    "u": "https://dora.dev/research/"
+   },
+   {
+    "kind": "Guide",
+    "title": "Generative organizational culture",
+    "u": "https://dora.dev/capabilities/generative-organizational-culture/"
+   }
+  ]
+ },
+ {
+  "id": "dair",
+  "name": "Distributed AI Research Institute (DAIR)",
+  "url": "https://www.dair-institute.org/",
+  "summary": "Independent, community-rooted AI research institute founded by Timnit Gebru, studying the harms of AI and alternatives to it.",
+  "pathways": [
+   "technology-ai-and-complexity"
+  ],
+  "media": [
+   {
+    "kind": "Paper",
+    "title": "Birhane and Cummins: Algorithmic Injustices, towards a relational ethics",
+    "u": "https://arxiv.org/abs/1912.07376"
+   },
+   {
+    "kind": "Video",
+    "title": "Complexity Lounge #15: Complexity and Machine Learning (Abeba Birhane)",
+    "u": "https://www.youtube.com/watch?v=msuFdJe0rtI"
+   }
+  ]
  }
 ]

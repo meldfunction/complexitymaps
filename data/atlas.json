@@ -181,6 +181,74 @@
   [
    "biosem",
    "cyb"
+  ],
+  [
+   "crp",
+   "sense"
+  ],
+  [
+   "crp",
+   "grel"
+  ],
+  [
+   "crp",
+   "bohm"
+  ],
+  [
+   "resil",
+   "crisis"
+  ],
+  [
+   "resil",
+   "sense"
+  ],
+  [
+   "resil",
+   "teams"
+  ],
+  [
+   "systhink",
+   "cyb"
+  ],
+  [
+   "systhink",
+   "sysdes"
+  ],
+  [
+   "systhink",
+   "improve"
+  ],
+  [
+   "mindlife",
+   "cyb"
+  ],
+  [
+   "mindlife",
+   "biosem"
+  ],
+  [
+   "mindlife",
+   "livsys"
+  ],
+  [
+   "techai",
+   "power"
+  ],
+  [
+   "techai",
+   "meas"
+  ],
+  [
+   "flow",
+   "improve"
+  ],
+  [
+   "flow",
+   "teams"
+  ],
+  [
+   "flow",
+   "strat"
   ]
  ],
  "metro": [
@@ -367,7 +435,9 @@
     "relational-transcontextual-and-post-humanist-knowing",
     "complexity-and-education",
     "biosemiotics-and-the-umwelt",
-    "semiotics-signs-codes-and-meaning-making"
+    "semiotics-signs-codes-and-meaning-making",
+    "systems-thinking-traditions-hard-soft-and-critical",
+    "mind-life-and-constraints"
    ]
   },
   {
@@ -380,7 +450,9 @@
     "crisis-disaster-and-high-reliability",
     "systemic-design-and-futures",
     "improvement-and-adaptive-management",
-    "corporate-innovation-and-renewal"
+    "corporate-innovation-and-renewal",
+    "resilience-engineering-and-safety-science",
+    "software-flow-and-architecture"
    ]
   },
   {
@@ -396,7 +468,8 @@
     "appreciative-inquiry",
     "teams-and-learning-cultures",
     "communities-of-practice-and-action-learning",
-    "governance-and-self-organizing-structures"
+    "governance-and-self-organizing-structures",
+    "complex-responsive-processes"
    ]
   },
   {
@@ -412,7 +485,9 @@
     "funding-and-budgeting-for-adaptation",
     "measurement-and-accountability",
     "developmental-evaluation",
-    "collaboration-across-boundaries"
+    "collaboration-across-boundaries",
+    "technology-ai-and-complexity",
+    "systems-thinking-traditions-hard-soft-and-critical"
    ]
   },
   {
@@ -425,7 +500,8 @@
     "narrative-change",
     "critical-and-popular-education",
     "action-research",
-    "participatory-design-and-design-justice"
+    "participatory-design-and-design-justice",
+    "technology-ai-and-complexity"
    ]
   },
   {

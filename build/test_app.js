@@ -22,7 +22,7 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
     check((await p.textContent('#status-text')).includes('loads when you ask'), `[${mode}] idle status on load`);
     check(await p.textContent('h1.art-title') === 'Power analysis', `[${mode}] wiki article renders`);
     for (const h of ['#/','#/wiki','#/path','#/map','#/map?view=metro','#/map?view=tree&p=bohm-dialogue','#/map?view=treemap','#/map?view=mine','#/map?view=time','#/map?view=universe&links=shared','#/map?view=universe&zoom=found&links=shared',
-        '#/people/nora-bateson','#/contribute','#/about','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
+        '#/people/nora-bateson','#/people/karl-friston','#/wiki/technology-ai-and-complexity','#/contribute','#/about','#/orgs','#/orgs/hls','#/cases','#/cases/porto-alegre']) await go(p, h);
     check(gets.length === 0, `[${mode}] browsing every route makes no request`);
     if (mode === 'live') {
       await go(p, '#/map?view=universe'); check(await p.locator('.stage .conn').count() === 0, '[live] universe shows no connection lines by default');
@@ -38,6 +38,13 @@ const go = (p, h) => p.evaluate(x => location.hash = x, h).then(() => p.waitForT
       check((await p.textContent('.known')).includes('action research') && await p.locator('.stubnote').count() === 1, '[live] a person without a full profile shows a short entry with a source');
       await go(p, '#/people/elinor-ostrom');
       check(await p.locator('.q blockquote').count() >= 2 && !(await p.textContent('main')).includes('Needs citations'), '[live] critiques carry quotes and sources');
+      await go(p, '#/wiki/mind-life-and-constraints');
+      check(await p.locator('#s-watch').count() === 1 && await p.locator('.eps .ep').count() >= 5, '[live] articles list Complexity Lounge talks to watch');
+      check((await p.locator('.eps .ep a.ept').first().getAttribute('href')).startsWith('https://www.youtube.com/watch?v='), '[live] talks link to YouTube');
+      await go(p, '#/people/karl-friston');
+      check(await p.locator('.featured-ep .ep.big').count() === 1, '[live] a guest profile features their episode');
+      await go(p, '#/people/dave-snowden');
+      check(await p.locator('.featured-ep .ep').count() >= 4, '[live] full profiles feature episodes too');
       await go(p, '#/');
       check(await p.locator('#how .visit').count() === 3, '[live] home shows how to use the site: three kinds of visit');
       check(await p.locator('#how .visit a.btn').evaluateAll(a => a.map(x => x.getAttribute('href')).join()) === '#/wiki,#/path,#/map', '[live] each visit ends in a clear call to action');
