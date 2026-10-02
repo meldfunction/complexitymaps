@@ -58,7 +58,7 @@ story = [Paragraph("Pathways into Complexity", title), Paragraph(escape(D["about
          Spacer(1, 6)]
 
 story += section("Orientations")
-story.append(Paragraph("Our orientations, each drawn from a lineage on this map. Use them as questions at hard junctions, not as badges.", body))
+story.append(Paragraph("Our orientations, each drawn from a lineage on this map. Use them as questions at hard junctions, not as badges, a way of holding orientations we learned from the Systems Change Learning Guide by Jaya Ramchandani and Raisa Mirza.", body))
 for o in D["orientations"]:
     story.append(KeepTogether([Paragraph(f"<b>{escape(o['name'])}.</b> {escape(o['line'])}", body),
                                Paragraph(f"<i>Ask: {escape(o['ask'])}</i> From {escape(o['source'])}.", small), Spacer(1, 3)]))
